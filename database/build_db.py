@@ -794,6 +794,130 @@ def build_database():
          "First recorded dodecahedron; exhibited at SAL meeting 28 June 1739 by George North; "
          "described as twelve-sided bronze object from a field in Aston, Hertfordshire; "
          "measurements and current location not stated in archival record"),
+
+        # RD-0008: Near Market Lavington, Wiltshire (PAS WILT-37C5E1)
+        # Fragment: one complete edge + two cylindrical lugs + four short edge sections
+        # Discovered 2014 by metal detector; date range AD 100-300 (tighter than most)
+        ("RD-0008", "Near Market Lavington dodecahedron fragment",
+         "Near Market Lavington, Wiltshire", "United Kingdom", "Britannia",
+         "Unknown", 100, 300,
+         "Wiltshire Heritage Museum", "Devizes", "United Kingdom",
+         "PAS:WILT-37C5E1; WHM:1591",
+         "Copper alloy", "Cast",
+         None, 26.15, None, 27.13, None, 13.05,  # width and knob from fragment
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None,
+         None,
+         None, "PUB-0006", "B", None, None,
+         "Fragment: one edge + 2 cylindrical lugs (13.05mm and 12.40mm dia) + 4 short edge sections; "
+         "fragment measures 37.65 x 26.15 x 21.05mm; "
+         "interior concave and crudely cast; exterior relatively smooth"),
+
+        # RD-0009: Stamford Bridge, East Riding of Yorkshire (PAS YORYM-E841F9)
+        # Very small fragment: one complete edge + two spherical lugs
+        # Discovered by metal detector; museum ref YMT: E05656
+        ("RD-0009", "Stamford Bridge dodecahedron fragment",
+         "Stamford Bridge, East Riding of Yorkshire", "United Kingdom", "Britannia",
+         "Unknown", 43, 410,
+         "Yorkshire Museum", "York", "United Kingdom",
+         "PAS:YORYM-E841F9; YMT:E05656",
+         "Copper alloy", "Cast",
+         7.2, 18.7, None, 3.8, None, None,  # height=thickness, width from fragment
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         "Incised",
+         "Double incised border around two visible hole edges (= two concentric rings)",
+         "Metal worn; mid-green patina",
+         None, "PUB-0006", "B", None, None,
+         "Tiny fragment: one edge + 2 spherical lugs; edges of 3 circles visible; "
+         "29.5 x 18.7 x 7.2mm; interior hollow, undecorated"),
+
+        # RD-0010: Yelnow, Bedford (PAS PUBLIC-959804)
+        # Very small fragment: one corner only (3 faces converge + spherical knob)
+        # Discovered 12 Feb 2011, depth 0-10cm, by metal detector
+        ("RD-0010", "Yelnow dodecahedron fragment",
+         "Yelnow, Bedford", "United Kingdom", "Britannia",
+         "Unknown", 43, 410,
+         None, None, None,  # returned to finder
+         "PAS:PUBLIC-959804",
+         "Copper alloy", "Cast",
+         8.7, 10.0, None, 1.67, None, None,  # height and width from fragment
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         "Incised",
+         "Incised grooved decoration on two surviving face portions, forming two rings "
+         "as outer boundary of pentagonal faces",
+         None,
+         None, "PUB-0006", "B", None, None,
+         "Smallest PAS fragment: 12.5 x 10 x 8.7mm; one corner where 3 faces meet; "
+         "single spherical knob intact; depth of discovery 0-10cm"),
+
+        # RD-0011: Llandow, Vale of Glamorgan, Wales (PAS NMGW-063819)
+        # Fragment: one complete edge, two knops, partial faces including two opposing face holes
+        # XRF: Cu, Sn, trace Fe, Pb (qualitative); museum ref NMWPA 2024.110.5
+        # KEY OBSERVATION: two opposing holes of very different diameters (9.4mm vs 22.6mm)
+        ("RD-0011", "Llandow dodecahedron fragment",
+         "Llandow, Vale of Glamorgan", "United Kingdom", "Britannia",
+         "Unknown", 43, 410,
+         "National Museum Wales", "Cardiff", "United Kingdom",
+         "PAS:NMGW-063819; NMWPA:2024.110.5",
+         "Copper alloy", "Cast",
+         11.6, 24.5, None, 7.73, 1.1, 6.0,  # depth, width, wall_thickness, knob
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         "Incised",
+         "Smaller face (9.4mm hole): circumferential groove at aperture edge + two concentric "
+         "grooves on outer margin; larger face (~22.6mm hole): crudely finished, no decoration",
+         None,
+         None, "PUB-0006", "B", None, None,
+         "Two opposing faces preserved: 9.4mm and ~22.6mm holes; stark size difference; "
+         "knop: 6.0 x 5.7mm high, neck 4.5mm; XRF: Cu, Sn, trace Fe, Pb (qualitative); "
+         "dark blackish-green patina with lighter green patches"),
+
+        # RD-0012: Alveston, South Gloucestershire (PAS GLO-9EE34F)
+        # Tiny fragment: single corner/knob only
+        # Object certainty: 'Possibly' (uncertain identification)
+        # Date range AD 100-300; interior crudely cast; exterior smooth
+        ("RD-0012", "Alveston dodecahedron fragment",
+         "Alveston, South Gloucestershire", "United Kingdom", "Britannia",
+         "Unknown", 100, 300,
+         None, None, None,
+         "PAS:GLO-9EE34F",
+         "Copper alloy", "Cast",
+         None, 20.0, None, 34.51, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None,
+         None,
+         None, "PUB-0006", "B", None, None,
+         "Object certainty: 'Possibly' dodecahedron; one globular knob + short corner sections; "
+         "25 x 20 x 36mm; weight 34.51g; interior concave and crudely finished; "
+         "exterior relatively smooth"),
+
+        # RD-0013: Minting, East Lindsey, Lincolnshire (PAS LIN-F437DA)
+        # FOUR SEPARATE CORNER FRAGMENTS from one probable specimen; plough damage
+        # Fragment 1: L33.50mm, knob 14.28mm, plate 3.33mm, wt 20.37g
+        # Fragment 2: L27.61mm, knob 13.92mm, plate 3.55mm, wt 17.41g
+        # Fragment 3: L26.77mm, knob 13.46mm, plate 3.26mm, wt 12.01g
+        # Fragment 4: L27.91mm, knob 14.01mm, plate 3mm,    wt 16.63g
+        # Total weight: 66.42g; object certainty 'Probably'
+        ("RD-0013", "Minting dodecahedron fragments",
+         "Minting, East Lindsey, Lincolnshire", "United Kingdom", "Britannia",
+         "Unknown", 43, 410,
+         None, None, None,
+         "PAS:LIN-F437DA",
+         "Copper alloy", "Cast",
+         None, None, None, 66.42, 3.29, 13.92,  # weight=all 4 fragments; wall=avg; knob=avg
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None,
+         "Iron corrosion on underside of knobs in fragments 1 and 4; plough damage on all",
+         None, "PUB-0006", "B", None, None,
+         "Object certainty: 'Probably' dodecahedron; 4 separate corner fragments; "
+         "knob diameters: 14.28, 13.92, 13.46, 14.01mm (very consistent); "
+         "plate thickness: 3.33, 3.55, 3.26, 3.0mm; "
+         "found nearby LIN-8D3A01; mid-green patina with brown patches"),
     ]
     cur.executemany(
         """INSERT INTO specimens VALUES (
@@ -964,6 +1088,161 @@ def build_database():
          "A field in Aston, Hertfordshire; rural agricultural context (pre-excavation era find)",
          "A", "PUB-0007", "SAL/02/003/117", None, "2026-08-07",
          "Only contextual information available from archival record"),
+
+        # --- RD-0008: Near Market Lavington, Wiltshire (PAS WILT-37C5E1) ---
+        ("RD-0008", "EV002",
+         "27.13 g (fragment: one edge + two lugs + four short sections)",
+         "B", "PUB-0006", "WILT-37C5E1", None, "2026-08-07", None),
+        ("RD-0008", "EV003",
+         "Not directly stated; plate visible in fragment",
+         "B", "PUB-0006", "WILT-37C5E1", None, "2026-08-07",
+         "Fragment dimensions: 37.65 x 26.15 x 21.05mm"),
+        ("RD-0008", "EV004",
+         "Edges of three circles visible; described as each face having a hole of different size",
+         "B", "PUB-0006", "WILT-37C5E1", None, "2026-08-07",
+         "Holes not individually measurable from this fragment"),
+        ("RD-0008", "EV008",
+         "Two cylindrical lugs: 13.05mm and 12.40mm diameter",
+         "B", "PUB-0006", "WILT-37C5E1", None, "2026-08-07",
+         "Note: described as cylindrical rather than spherical; two surviving knobs"),
+        ("RD-0008", "EV012",
+         "Interior concave and crudely cast; exterior relatively smooth",
+         "B", "PUB-0006", "WILT-37C5E1", None, "2026-08-07", None),
+        ("RD-0008", "EV025",
+         "Cultivated land; metal detector find; exact Roman context unknown",
+         "B", "PUB-0006", "WILT-37C5E1", None, "2026-08-07",
+         "Findspot: Near Market Lavington, Wiltshire; date range AD 100-300"),
+        ("RD-0008", "EV029",
+         "AD 100-300 (tighter range than most PAS records, which use AD 43-410)",
+         "B", "PUB-0006", "WILT-37C5E1", None, "2026-08-07", None),
+
+        # --- RD-0009: Stamford Bridge, Yorkshire (PAS YORYM-E841F9) ---
+        ("RD-0009", "EV002",
+         "3.8 g (tiny fragment: one edge + two spherical lugs)",
+         "B", "PUB-0006", "YORYM-E841F9", None, "2026-08-07", None),
+        ("RD-0009", "EV004",
+         "Edges of three circular holes visible; individual diameters not measurable",
+         "B", "PUB-0006", "YORYM-E841F9", None, "2026-08-07",
+         "Fragment too small for diameter measurement"),
+        ("RD-0009", "EV012",
+         "Reverse hollow and undecorated; exterior described as worn",
+         "B", "PUB-0006", "YORYM-E841F9", None, "2026-08-07", None),
+        ("RD-0009", "EV014",
+         "Double incised border around two of the hole edges; presumably two concentric rings",
+         "B", "PUB-0006", "YORYM-E841F9", None, "2026-08-07", None),
+        ("RD-0009", "EV018",
+         "Metal described as worn; mid-green patina",
+         "B", "PUB-0006", "YORYM-E841F9", None, "2026-08-07", None),
+        ("RD-0009", "EV025",
+         "Cultivated land; metal detector find; exact Roman context unknown",
+         "B", "PUB-0006", "YORYM-E841F9", None, "2026-08-07",
+         "Findspot: Stamford Bridge, East Riding of Yorkshire"),
+
+        # --- RD-0010: Yelnow, Bedford (PAS PUBLIC-959804) ---
+        ("RD-0010", "EV002",
+         "1.67 g (very tiny fragment: one corner only)",
+         "B", "PUB-0006", "PUBLIC-959804", None, "2026-08-07", None),
+        ("RD-0010", "EV014",
+         "Incised grooved decoration on surviving face portions, forming two rings "
+         "as outer boundary of pentagonal faces",
+         "B", "PUB-0006", "PUBLIC-959804", None, "2026-08-07", None),
+        ("RD-0010", "EV025",
+         "Cultivated land (disturbed); metal detector; depth 0-10cm; "
+         "exact Roman context unknown",
+         "B", "PUB-0006", "PUBLIC-959804", None, "2026-08-07",
+         "Findspot: Yelnow, Bedford; discovery 12 Feb 2011"),
+
+        # --- RD-0011: Llandow, Vale of Glamorgan (PAS NMGW-063819) ---
+        # Critical EV005 observation: two preserved opposing face holes differ dramatically
+        ("RD-0011", "EV002",
+         "7.73 g (fragment: one edge, two knops, partial faces)",
+         "B", "PUB-0006", "NMGW-063819", None, "2026-08-07", None),
+        ("RD-0011", "EV003",
+         "1.1 mm (wall thickness of smaller preserved face)",
+         "B", "PUB-0006", "NMGW-063819", None, "2026-08-07",
+         "Described as 'very thin'; measured on the smaller-hole face"),
+        ("RD-0011", "EV004",
+         "Two holes partially visible: 9.4mm (with decoration) and approx. 22.6mm (crudely finished); "
+         "PAS description states perforations are of different sizes across faces",
+         "B", "PUB-0006", "NMGW-063819", None, "2026-08-07",
+         "Only two of twelve face holes partially preserved; full diameter range unknown"),
+        ("RD-0011", "EV005",
+         "Two preserved faces described as 'opposing': smaller hole 9.4mm vs larger hole approx. 22.6mm; "
+         "opposing faces have markedly different hole diameters",
+         "B", "PUB-0006", "NMGW-063819", None, "2026-08-07",
+         "NOTE: PAS record uses term 'opposing face'; geometric verification not possible "
+         "from fragment alone; observation should be treated as provisional pending "
+         "3D reconstruction"),
+        ("RD-0011", "EV006",
+         "Smaller face (9.4mm): circumferential groove at aperture edge; "
+         "larger face (~22.6mm): crudely finished aperture",
+         "B", "PUB-0006", "NMGW-063819", None, "2026-08-07",
+         "Different finishing quality between small and large holes on same specimen"),
+        ("RD-0011", "EV008",
+         "Knop diameter 6.0mm x 5.7mm high; neck diameter 4.5mm; integrally cast",
+         "B", "PUB-0006", "NMGW-063819", None, "2026-08-07", None),
+        ("RD-0011", "EV011",
+         "XRF results: Cu, Sn, trace Fe, Pb (qualitative only; percentages not reported)",
+         "B", "PUB-0006", "NMGW-063819", None, "2026-08-07",
+         "Semi-quantitative XRF; quantitative analysis not available from PAS record"),
+        ("RD-0011", "EV012",
+         "Interior: reverse concave with rough and unfinished surface; "
+         "exterior: well-defined knops and incised decoration on smaller face",
+         "B", "PUB-0006", "NMGW-063819", None, "2026-08-07", None),
+        ("RD-0011", "EV014",
+         "Smaller face: circumferential groove at aperture + two concentric grooves on outer margin; "
+         "end faces: curving incised grooves; "
+         "larger (~22.6mm) face: no decoration",
+         "B", "PUB-0006", "NMGW-063819", None, "2026-08-07",
+         "Decorative treatment varies with hole size: smaller hole decorated, larger hole plain"),
+        ("RD-0011", "EV025",
+         "Cultivated land; metal detector find; exact Roman context unknown",
+         "B", "PUB-0006", "NMGW-063819", None, "2026-08-07",
+         "Findspot: Llandow, Vale of Glamorgan, Wales"),
+
+        # --- RD-0012: Alveston, South Gloucestershire (PAS GLO-9EE34F) ---
+        ("RD-0012", "EV002",
+         "34.51 g (one corner knob fragment)",
+         "B", "PUB-0006", "GLO-9EE34F", None, "2026-08-07",
+         "High weight for small fragment; dense globular knob contributes most of mass"),
+        ("RD-0012", "EV012",
+         "Interior: concave, crudely finished; exterior: relatively smooth",
+         "B", "PUB-0006", "GLO-9EE34F", None, "2026-08-07", None),
+        ("RD-0012", "EV025",
+         "Cultivated land; metal detector find; exact Roman context unknown",
+         "B", "PUB-0006", "GLO-9EE34F", None, "2026-08-07",
+         "Findspot: Alveston, South Gloucestershire; date range AD 100-300; "
+         "object certainty: 'Possibly' dodecahedron"),
+
+        # --- RD-0013: Minting, Lincolnshire (PAS LIN-F437DA) ---
+        ("RD-0013", "EV002",
+         "Total fragment weight 66.42 g (four corner pieces: 20.37 + 17.41 + 12.01 + 16.63 g)",
+         "B", "PUB-0006", "LIN-F437DA", None, "2026-08-07",
+         "Four separate fragments probably from same specimen"),
+        ("RD-0013", "EV003",
+         "Plate thickness: 3.33, 3.55, 3.26, 3.0mm across four fragments (mean ~3.3mm)",
+         "B", "PUB-0006", "LIN-F437DA", None, "2026-08-07",
+         "Consistent wall thickness across all four fragments supports single-specimen origin"),
+        ("RD-0013", "EV008",
+         "Knob diameters: 14.28, 13.92, 13.46, 14.01mm across four fragments "
+         "(range 13.46-14.28mm; mean ~13.9mm; very consistent)",
+         "B", "PUB-0006", "LIN-F437DA", None, "2026-08-07",
+         "Consistency of knob diameters across all four fragments strongly supports "
+         "single-specimen origin; globular form confirmed"),
+        ("RD-0013", "EV012",
+         "Each fragment: interior concave triangular underside; exterior mid-green patina "
+         "with developed brown patches; plough damage on all",
+         "B", "PUB-0006", "LIN-F437DA", None, "2026-08-07", None),
+        ("RD-0013", "EV015",
+         "Iron corrosion on underside of knobs in fragments 1 and 4; "
+         "described as possible repair or iron ore in soil",
+         "B", "PUB-0006", "LIN-F437DA", None, "2026-08-07",
+         "Possible ancient iron repair; ambiguous: could be soil contamination"),
+        ("RD-0013", "EV025",
+         "Cultivated land; metal detector find; exact Roman context unknown",
+         "B", "PUB-0006", "LIN-F437DA", None, "2026-08-07",
+         "Findspot: Minting, East Lindsey, Lincolnshire; "
+         "nearby find LIN-8D3A01 warrants cross-reference"),
     ]
     cur.executemany(
         """INSERT INTO artifact_observations
