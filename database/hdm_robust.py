@@ -58,12 +58,19 @@ SCORED_OBS = {
     "EV012": ("confirmed", "B"),   # interior rough, exterior smooth
     "EV014": ("confirmed", "B"),   # concentric ring decoration confirmed
     "EV018": ("ambiguous", "B"),   # mixed wear evidence (3 with, 1 without)
-    "EV025": ("ambiguous", "A"),   # mixed context (Jublains A, others B/D)
-    "EV033": ("confirmed", "C"),   # rod fit confirmed (derived from B data)
+    # EV025: 2 military (Corbridge, Arbeia) + 2 civilian baths (Jublains, Arles)
+    #         + 1 near villa (Norton Disney) + 15 unknown/cultivated land
+    # Overall still ambiguous but baths pattern (2/7 known) slightly informs
+    "EV025": ("ambiguous", "A"),
+    "EV033": ("confirmed", "C"),   # rod fit confirmed (derived)
     "EV034": ("confirmed", "C"),   # rope routing feasible (derived)
     "EV035": ("confirmed", "C"),   # structural stability (derived)
     "EV036": ("confirmed", "C"),   # load transfer feasible (derived)
     "EV037": ("absent",    "C"),   # assembly absent: 3x size range (derived)
+    # EV039: within-specimen CV = 40% (highly variable); no arithmetic progression
+    # between-specimen: only one ~18mm cluster (2 specimens); no common standard
+    # → standardisation is ABSENT; contradicts H002 (measuring gauge)
+    "EV039": ("absent",    "B"),
 }
 
 # ── Weighted partial scores ───────────────────────────────────────────────────
