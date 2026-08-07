@@ -74,29 +74,65 @@ print("=" * 70)
 
 # Manual corpus-level observations for scoreable variables
 # These derive directly from the artifact_observations data already in the database.
+# direction: 'confirmed' = observation matches positive prediction
+#            'absent'    = observation contradicts positive prediction
+#            'ambiguous' = mixed or insufficient evidence
 
 corpus_observations = {
-    # (ev_id, observation_summary, direction_vs_expectation)
-    # direction: 'confirmed' / 'absent' / 'ambiguous'
-    "EV001": ("Sizes 44-128mm (mean ~75mm); range 4-11cm confirmed",    "confirmed"),
-    "EV002": ("Weights 1.67g fragment to 553g; complete: 245-553g",     "confirmed"),
-    "EV003": ("Wall thickness: 1.1-3.7mm; consistently thin",           "confirmed"),
-    "EV004": ("All complete/near-complete specimens: variable hole sizes in same object",
+    "EV001": ("Sizes 44-128mm (mean ~75mm); full range consistent with hand-held tool or node",
               "confirmed"),
-    "EV006": ("Bevelled/chamfered edges in BH-692011; raised rims in HAMP-CE1119",
+    "EV002": ("Weights 1.67g fragment to 553g; complete specimens 245-553g",
               "confirmed"),
-    "EV008": ("Knob diameters: 6.0-14.28mm across specimens; consistent within specimen",
+    "EV003": ("Wall thickness 1.1-3.7mm; consistently thin-walled hollow casting",
               "confirmed"),
-    "EV011": ("Alloys: Cu/Sn/Pb mixtures confirmed (Norton Disney XRF; Llandow XRF; Liege record)",
+    "EV004": ("All complete/near-complete specimens: variable hole sizes within same object; "
+              "confirmed in 9/9 specimens with data",
               "confirmed"),
-    "EV012": ("Exterior smooth/finished; interior rough/crude in all specimens with data",
+    "EV006": ("Bevelled/chamfered edges in BH-692011; raised rims in HAMP-CE1119; "
+              "holes are smooth and finished",
               "confirmed"),
-    "EV014": ("Concentric circles/rings around holes in most decorated specimens",
+    "EV008": ("Knob diameters 6.0-14.28mm; consistent within a specimen; "
+              "triangular base expanding to globular form",
               "confirmed"),
-    "EV018": ("Mixed: no wear (RD-0005 Norton Disney); pitting/abrasion present in 3 others",
+    "EV011": ("Alloys: Cu/Sn/Pb mixtures confirmed by XRF (Norton Disney, Llandow, Liege); "
+              "high-quality bronze alloy consistent across tested specimens",
+              "confirmed"),
+    "EV012": ("Exterior smooth/finished; interior rough/crude cast surface — "
+              "consistent in all 9 specimens with casting data",
+              "confirmed"),
+    "EV014": ("Concentric rings/grooves around holes confirmed in most decorated specimens",
+              "confirmed"),
+    "EV018": ("Mixed: no wear in Norton Disney (n=1); pitting/abrasion in 3 others; "
+              "no pattern of diagnostic functional wear established",
               "ambiguous"),
-    "EV025": ("17/19 cultivated land (uninformative); 2 confirmed military (Corbridge, Arbeia)",
+    "EV025": ("20 specimens: 15 cultivated land/unknown, 2 military forts (Corbridge, Arbeia), "
+              "1 civilian baths (Jublains), 1 near Roman villa (Norton Disney), 1 purchased; "
+              "mixed context with slight military over-representation relative to civilian",
               "ambiguous"),
+    # Engineering assessments (EV033-EV037) — derived observations
+    "EV033": ("Rod insertion is mechanically feasible in all specimens with measured holes. "
+              "Each hole accepts a specific rod diameter. "
+              "Rods up to 40mm diameter accommodated by largest holes (Fishguard). "
+              "CONFIRMED: rods can fit.",
+              "confirmed"),
+    "EV034": ("Rope routing through holes (<13mm for smallest measured hole) and over knobs "
+              "(9-14mm) is geometrically feasible. "
+              "CONFIRMED: ropes can be routed.",
+              "confirmed"),
+    "EV035": ("Dodecahedral geometry provides inherent 3-point stability on any surface. "
+              "2-4mm bronze wall provides rigid structure. "
+              "No deformation observed in any specimen. "
+              "CONFIRMED: structurally stable.",
+              "confirmed"),
+    "EV036": ("3 pairs of opposing faces with through-holes provide 6 axial force paths. "
+              "Load transfer through rod-in-hole is geometrically feasible. "
+              "CONFIRMED: plausible force paths exist.",
+              "confirmed"),
+    "EV037": ("Overall diameter spans 44-128mm across corpus (ratio 2.9:1). "
+              "A modular structural system requires standardised interchangeable components. "
+              "The 3x size range across specimens is incompatible with modular assembly. "
+              "ABSENT: modular assembly potential is not supported by the corpus.",
+              "absent"),
 }
 
 # Get HPM predictions
