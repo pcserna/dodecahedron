@@ -219,6 +219,24 @@ SOURCES = [
      "Une fouille en bordure des thermes de Jublains (Mayenne): enfin un dodecaedre en contexte archeologique!",
      "Journal", "10.4000/rao.680", None, "A",
      "Revue archeologique de l'Ouest 25: 269-289; first dodecahedron in secure excavation context"),
+    ("PUB-0011", "KIK-IRPA (Royal Institute for Cultural Heritage, Belgium)", 2003,
+     "BALaT database — dodecaedre (object 10140871)",
+     "Database", None,
+     "https://hdl.handle.net/20.500.14037/object.10140871",
+     "B",
+     "Musee Curtius, Liege; inv. I.7108; cite: KIK-IRPA 2003; CC0 metadata"),
+    ("PUB-0012", "British Museum", 2024,
+     "British Museum Collection Online",
+     "Database", None,
+     "https://www.britishmuseum.org/collection",
+     "B",
+     "Primary source for BM-held specimens; cite individual registration number in page field"),
+    ("PUB-0013", "English Heritage / Google Arts & Culture", 2024,
+     "Copper alloy dodecahedron — Corbridge Roman Museum",
+     "Online", None,
+     "https://artsandculture.google.com/asset/copper-alloy-dodecahedron/9QHFN8rTLq2bgg",
+     "C",
+     "English Heritage object record via Google Arts & Culture; no measurements given"),
 ]
 
 # Maps freetext labels used in evidence_register_v1.csv to source_ids
@@ -918,6 +936,120 @@ def build_database():
          "knob diameters: 14.28, 13.92, 13.46, 14.01mm (very consistent); "
          "plate thickness: 3.33, 3.55, 3.26, 3.0mm; "
          "found nearby LIN-8D3A01; mid-green patina with brown patches"),
+
+        # RD-0014: Potterspury, West Northamptonshire (PAS NARC1474)
+        # Fragment: V-shaped piece (one edge + two corners); cast-in-one-piece
+        # Discovery: 2000-2001, metal detector; "bun feet" knobs
+        ("RD-0014", "Potterspury dodecahedron fragment",
+         "Potterspury, West Northamptonshire", "United Kingdom", "Britannia",
+         "Unknown", 43, 410,
+         None, None, None,
+         "PAS:NARC1474",
+         "Copper alloy", "Cast",
+         None, 17.74, None, 4.33, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         "Incised",
+         "Multiple incised concentric circles on two surviving face portions",
+         None,
+         None, "PUB-0006", "B", None, None,
+         "Fragment: V-shaped cross-section, one edge + two corners; "
+         "two small spherical knobs resembling bun feet; "
+         "30.14 x 17.74mm; cast-in-one-piece construction noted"),
+
+        # RD-0015: Couthuin or Bassenge, Liege province, Belgium (Musee Curtius / KIK-IRPA)
+        # 4th-century specimen; bronze and lead alloy; diameter 44mm
+        # Provenance uncertain: Couthuin (Heron commune) or Bassenge (both Liege province)
+        ("RD-0015", "Couthuin/Bassenge dodecahedron",
+         "Couthuin or Bassenge, Liege province", "Belgium", "Gallia Belgica",
+         "Unknown", 301, 399,
+         "Musee Curtius", "Liege", "Belgium",
+         "I.7108",
+         "Bronze and lead", "Cast",
+         None, None, 44.0, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None,
+         None, "PUB-0011", "B", None, None,
+         "KIK-IRPA object number 10140871; inv. I.7108; "
+         "provenance: 'Couthuin ou Bassenge' (Liege province); "
+         "dated AD 301-399 per KIK-IRPA record; alloy: bronze and lead; "
+         "CC0 metadata license"),
+
+        # RD-0016: British Isles, location unknown (BM 1878,0311.48)
+        # Object certainty: '?' in BM catalogue; donated via Sir Augustus Wollaston Franks
+        # Previous owners: Rev. Dr William Sparrow Simpson; Frederick Bousfield
+        ("RD-0016", "British Museum dodecahedron (1878)",
+         "British Isles (exact location unknown)", "United Kingdom", None,
+         "Unknown", None, None,
+         "British Museum", "London", "United Kingdom",
+         "1878,0311.48",
+         "Copper alloy", None,
+         None, None, 56.4, 39.83, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None,
+         None, "PUB-0012", "B", None, None,
+         "BM registration 1878,0311.48; object certainty marked '?' in BM catalogue; "
+         "aperture diameter range 12.45-17.73mm; "
+         "donated by Sir Augustus Wollaston Franks; "
+         "previous owners: Rev. Dr W.S. Simpson; Frederick Bousfield; "
+         "not on display"),
+
+        # RD-0017: Fishguard, Pembrokeshire, Wales (BM 1924,0411.1)
+        # Exceptionally large specimen: 127.71mm diameter, 553.20g
+        # Purchased from Thomas James 1924; referenced in Roman Britain guide 1964
+        ("RD-0017", "Fishguard dodecahedron",
+         "Fishguard, Pembrokeshire", "United Kingdom", "Britannia",
+         "Unknown", None, None,
+         "British Museum", "London", "United Kingdom",
+         "1924,0411.1",
+         "Copper alloy", None,
+         None, None, 127.71, 553.2, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None,
+         None, "PUB-0012", "B", None, None,
+         "BM registration 1924,0411.1; among the largest known Roman dodecahedra at 127.71mm; "
+         "aperture diameter range 27.67-40.55mm; "
+         "purchased from Thomas James 1924; "
+         "reference: Roman Britain 1964 Guide p.78, fig.40.5; not on display"),
+
+        # RD-0018: Corbridge Roman town (Corstopitum), Northumberland (English Heritage)
+        # At Corbridge Roman Museum; referenced in Allason-Jones & Miket 1984
+        # No measurements available from accessible sources
+        ("RD-0018", "Corbridge dodecahedron",
+         "Corbridge Roman town (Corstopitum), Northumberland", "United Kingdom", "Britannia",
+         "Military", None, None,
+         "Corbridge Roman Museum (English Heritage)", "Corbridge", "United Kingdom",
+         None,
+         "Copper alloy", None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None,
+         None, "PUB-0013", "C", None, None,
+         "Displayed at Corbridge Roman Museum; confirmed via English Heritage / Google Arts & Culture; "
+         "referenced in Allason-Jones & Miket 1984 and multiple PAS records (BH-692011, YORYM-41CD72); "
+         "no measurements available from accessible online sources"),
+
+        # RD-0019: South Shields Roman fort (Arbeia), Tyne and Wear (secondary citation via PAS)
+        # Accession 1923.13 at Great North Museum / Arbeia; military context
+        # Face measurements from secondary citation in PAS YORYM-41CD72
+        ("RD-0019", "South Shields (Arbeia) dodecahedron",
+         "South Shields Roman fort (Arbeia), Tyne and Wear", "United Kingdom", "Britannia",
+         "Military", None, None,
+         "Great North Museum", "Newcastle upon Tyne", "United Kingdom",
+         "1923.13",
+         "Copper alloy", None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None,
+         None, "PUB-0009", "D", None, None,
+         "Accession 1923.13; found at South Shields Roman fort (Arbeia); "
+         "face width 52mm, face length 48mm per museum website cited in PAS YORYM-41CD72; "
+         "Allason-Jones & Miket 1984 no. 3.741; military site context confirmed"),
     ]
     cur.executemany(
         """INSERT INTO specimens VALUES (
@@ -1243,6 +1375,117 @@ def build_database():
          "B", "PUB-0006", "LIN-F437DA", None, "2026-08-07",
          "Findspot: Minting, East Lindsey, Lincolnshire; "
          "nearby find LIN-8D3A01 warrants cross-reference"),
+
+        # --- RD-0014: Potterspury, West Northamptonshire (PAS NARC1474) ---
+        ("RD-0014", "EV002",
+         "4.33 g (V-shaped fragment: one edge + two corners)",
+         "B", "PUB-0006", "NARC1474", None, "2026-08-07", None),
+        ("RD-0014", "EV008",
+         "Two small spherical knobs described as resembling bun feet; "
+         "one at each end of the surviving edge",
+         "B", "PUB-0006", "NARC1474", None, "2026-08-07", None),
+        ("RD-0014", "EV012",
+         "Cast-in-one-piece construction explicitly noted in PAS description",
+         "B", "PUB-0006", "NARC1474", None, "2026-08-07",
+         "This is an important manufacturing observation: "
+         "most specimens have separately soldered knobs; cast-in-one-piece is unusual"),
+        ("RD-0014", "EV014",
+         "Multiple incised concentric circles on two surviving face portions "
+         "(one set either side of the central ridge)",
+         "B", "PUB-0006", "NARC1474", None, "2026-08-07", None),
+        ("RD-0014", "EV025",
+         "Cultivated land; metal detector find; exact Roman context unknown",
+         "B", "PUB-0006", "NARC1474", None, "2026-08-07",
+         "Findspot: Potterspury, West Northamptonshire"),
+
+        # --- RD-0015: Couthuin/Bassenge, Liege, Belgium (KIK-IRPA 10140871) ---
+        ("RD-0015", "EV001",
+         "Diameter 44mm (overall); among the smaller known specimens",
+         "B", "PUB-0011", "10140871", None, "2026-08-07",
+         "Source: KIK-IRPA BALaT; only dimension given is diameter 4.4cm"),
+        ("RD-0015", "EV011",
+         "Alloy: bronze and lead (plomb); both listed as materials in KIK-IRPA record",
+         "B", "PUB-0011", "10140871", None, "2026-08-07",
+         "Lead content in alloy; quantitative composition not given"),
+        ("RD-0015", "EV025",
+         "Provenance: Couthuin or Bassenge, Liege province, Belgium; "
+         "specific context not given in source",
+         "B", "PUB-0011", "10140871", None, "2026-08-07",
+         "Couthuin is in Heron commune; Bassenge is a separate municipality; "
+         "exact site type unknown"),
+        ("RD-0015", "EV026",
+         "Roman province Gallia Belgica; Liege province, Belgium",
+         "B", "PUB-0011", "10140871", None, "2026-08-07", None),
+        ("RD-0015", "EV029",
+         "AD 301-399 (4th century); tighter date range than most specimens",
+         "B", "PUB-0011", "10140871", None, "2026-08-07",
+         "Date from KIK-IRPA record; dating method not specified"),
+
+        # --- RD-0016: British Isles unknown location (BM 1878,0311.48) ---
+        ("RD-0016", "EV001",
+         "Overall diameter 56.40mm",
+         "B", "PUB-0012", "1878,0311.48", None, "2026-08-07", None),
+        ("RD-0016", "EV002",
+         "39.83 g",
+         "B", "PUB-0012", "1878,0311.48", None, "2026-08-07", None),
+        ("RD-0016", "EV004",
+         "Aperture diameter range 12.45-17.73mm (BM catalogue lists as range, not per-face)",
+         "B", "PUB-0012", "1878,0311.48", None, "2026-08-07",
+         "Object certainty marked '?' in BM catalogue; identification may be uncertain"),
+        ("RD-0016", "EV025",
+         "Findspot: British Isles (no specific location recorded in BM catalogue)",
+         "B", "PUB-0012", "1878,0311.48", None, "2026-08-07",
+         "Donated via Sir A.W. Franks; provenance unknown beyond 'British Isles'"),
+
+        # --- RD-0017: Fishguard, Pembrokeshire, Wales (BM 1924,0411.1) ---
+        ("RD-0017", "EV001",
+         "Overall diameter 127.71mm; one of the largest Roman dodecahedra known",
+         "B", "PUB-0012", "1924,0411.1", None, "2026-08-07",
+         "127.71mm exceeds the commonly cited upper limit of 110mm; "
+         "warrants further verification against primary measurement"),
+        ("RD-0017", "EV002",
+         "553.20 g; among the heaviest known specimens",
+         "B", "PUB-0012", "1924,0411.1", None, "2026-08-07",
+         "Consistent with large overall diameter; Wikipedia cites max ~1kg for an unstated specimen"),
+        ("RD-0017", "EV004",
+         "Aperture diameter range 27.67-40.55mm; absolute values proportionally larger "
+         "than most specimens, consistent with overall large size",
+         "B", "PUB-0012", "1924,0411.1", None, "2026-08-07",
+         "Range of 12.88mm between smallest and largest hole; "
+         "comparable percentage variation to smaller specimens"),
+        ("RD-0017", "EV025",
+         "Purchased; no excavation context recorded",
+         "B", "PUB-0012", "1924,0411.1", None, "2026-08-07",
+         "Purchased from Thomas James, Fishguard, 1924; "
+         "exact find circumstances unknown"),
+        ("RD-0017", "EV026",
+         "Roman province Britannia; Pembrokeshire, Wales",
+         "B", "PUB-0012", "1924,0411.1", None, "2026-08-07", None),
+
+        # --- RD-0018: Corbridge Roman town (English Heritage) ---
+        ("RD-0018", "EV025",
+         "Roman town and fort (Corstopitum); known military and civilian settlement on Hadrian's Wall",
+         "C", "PUB-0013", None, None, "2026-08-07",
+         "Corbridge was a significant supply base and settlement on Dere Street"),
+        ("RD-0018", "EV031",
+         "Military association confirmed: Corbridge was a Roman fort and supply base",
+         "C", "PUB-0013", None, None, "2026-08-07",
+         "Site has both military and civilian Roman occupation phases"),
+
+        # --- RD-0019: South Shields (Arbeia) Roman fort (secondary citation) ---
+        ("RD-0019", "EV001",
+         "Face width 52mm, face length 48mm (cited from museum website in PAS YORYM-41CD72)",
+         "D", "PUB-0009", "p.218-219 no.3.741", None, "2026-08-07",
+         "Secondary citation: measurements from museum website as quoted in PAS record; "
+         "not directly from primary catalogue; confidence D pending direct verification"),
+        ("RD-0019", "EV025",
+         "Roman fort (Arbeia), South Shields; confirmed military context",
+         "B", "PUB-0009", "p.218-219 no.3.741", None, "2026-08-07",
+         "Arbeia is a well-documented Roman auxiliary fort at mouth of River Tyne"),
+        ("RD-0019", "EV031",
+         "Military association: found at Roman auxiliary fort",
+         "B", "PUB-0009", "p.218-219 no.3.741", None, "2026-08-07",
+         "One of the few British dodecahedra with confirmed military fort provenance"),
     ]
     cur.executemany(
         """INSERT INTO artifact_observations
