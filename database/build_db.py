@@ -237,6 +237,44 @@ SOURCES = [
      "https://artsandculture.google.com/asset/copper-alloy-dodecahedron/9QHFN8rTLq2bgg",
      "C",
      "English Heritage object record via Google Arts & Culture; no measurements given"),
+    ("PUB-0014", "Wikimedia Commons / Wikidata (Rama, photographer)", 2019,
+     "Dodecahedron X-37086 — Musee departemental de l'Arles antique (Wikidata Q62511455)",
+     "Online", None,
+     "https://commons.wikimedia.org/wiki/File:Dodecaedron-X-37086-IMG_9257.jpeg",
+     "C",
+     "CC-BY-SA; confirms findspot (thermae, 1939), museum, inventory X-37086, material bronze, date 3rd c."),
+    ("PUB-0015", "Benoit, F.", 1957,
+     "Deux enigmes archeologiques: dodecaedre perle d'Arles et anneau octogonal boulète de Vichy",
+     "Journal", None, None, "B",
+     "OGAM 9: 104-114; primary publication of the Arles dodecahedron; measurements likely present"),
+    ("PUB-0016", "Anonymous", 1924,
+     "Roman dodecahedron from Wales",
+     "Journal", "10.1017/S0003581500091459", None, "B",
+     "Antiquaries Journal, July 1924; likely primary publication of Fishguard (BM 1924,0411.1) specimen"),
+    ("PUB-0017", "Duval, Paul-Marie", 1981,
+     "Comment decrire les dodecaedres gallo-romains, en vue d'une etude comparee",
+     "Journal", "10.3406/galia.1981.1829",
+     "https://www.persee.fr/doc/galia_0016-4119_1981_num_39_2_1829",
+     "B",
+     "Gallia 39(2): 195-200; defines measurement protocol for comparative study; KEY METHODOLOGICAL PAPER"),
+    ("PUB-0018", "Greiner, Bernhard A.", 1996,
+     "Romische Dodekaeder: Untersuchungen zur Typologie, Herstellung, Verbreitung, und Funktion",
+     "Journal", None, None, "B",
+     "Carnuntum Jahrbuch 1995: 9-44; German analysis of typology, manufacture, distribution, function"),
+    ("PUB-0019", "Sparavigna, Amelia Carolina", 2012,
+     "Roman dodecahedron as dioptron: analysis of freely available data",
+     "Preprint", "10.48550/arXiv.1206.0946",
+     "https://arxiv.org/abs/1206.0946",
+     "D",
+     "arXiv:1206.0946; analyzes hole diameter data from freely available sources; argues for rangefinder use"),
+    ("PUB-0020", "Hill, Christopher", 1994,
+     "Gallo-Roman Dodecahedra: A Progress Report",
+     "Journal", "10.1017/s0003581500024458", None, "B",
+     "Antiquaries Journal 74: 289-292; review article with Carmarthen/SAL specimen data"),
+    ("PUB-0021", "Guggenberger, Michael", 2013,
+     "The Gallo-Roman Dodecahedron",
+     "Journal", "10.1007/s00283-013-9403-7", None, "B",
+     "Mathematical Intelligencer 35(4): 56-60; overview with specimen data; first recorded specimen documented"),
 ]
 
 # Maps freetext labels used in evidence_register_v1.csv to source_ids
@@ -1072,6 +1110,27 @@ def build_database():
          "this is the only Roman dodecahedron from a verified, controlled excavation context; "
          "measurements not accessible from available online sources; "
          "context: civilian public baths complex, not military"),
+
+        # RD-0021: Arles (Arelate), Bouches-du-Rhone, France (Wikidata Q62511455 / Commons)
+        # Found 1939 at the Roman thermae (baths) of Arelate; Musee de l'Arles antique
+        # SECOND BATHS-CONTEXT SPECIMEN alongside Jublains (RD-0020)
+        # Primary publication: Benoit 1957 (OGAM 9: 104-114) — not yet accessed
+        ("RD-0021", "Arles (thermae) dodecahedron",
+         "Arelate (Arles), thermae, Bouches-du-Rhone", "France", "Gallia Narbonensis",
+         "Civilian", None, None,
+         "Musee departemental de l'Arles antique", "Arles", "France",
+         "X-37086",
+         "Bronze", None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None,
+         None, "PUB-0014", "C", None, None,
+         "Wikidata Q62511455; Commons CC-BY-SA photo by Rama 2019; "
+         "discovered 1939 at Roman thermae of Arelate (Arles); "
+         "primary publication: Benoit 1957 OGAM 9: 104-114 (not yet accessed); "
+         "3rd century AD; Gallia Narbonensis; "
+         "PATTERN: second baths-context specimen alongside Jublains (RD-0020)"),
     ]
     cur.executemany(
         """INSERT INTO specimens VALUES (
@@ -1636,13 +1695,28 @@ def build_database():
         # EV040 Regional variation — corpus-level contextual assessment
         # -----------------------------------------------------------------------
         ("RD-0001", "EV040",
-         "ASSESSMENT (corpus-level): Current corpus is predominantly British (17/20 specimens). "
-         "Only 2 Belgian (Tongeren, Liege) and 1 French (Jublains) specimens entered. "
+         "ASSESSMENT (corpus-level): Current corpus is predominantly British (17/21 specimens). "
+         "2 Belgian (Tongeren, Liege) and 2 French (Jublains, Arles) specimens entered. "
          "Insufficient continental coverage for systematic regional variation analysis. "
          "Pending: data from German, Dutch, Swiss, Luxembourg and Austrian museum collections.",
          "C", "PUB-0006", "BH-692011", None, "2026-08-07",
          "Corpus-level observation; geographic bias in current dataset due to PAS coverage; "
          "full analysis requires Guggenberger & Nouwen catalogue data"),
+
+        # --- RD-0021: Arles (thermae), France (Wikidata Q62511455) ---
+        ("RD-0021", "EV025",
+         "Roman thermae (public baths) at Arelate (Arles); civilian public infrastructure; "
+         "discovered 1939 during work at or near the thermal baths",
+         "C", "PUB-0014", "Q62511455", None, "2026-08-07",
+         "PATTERN: second baths-context specimen alongside Jublains (RD-0020); "
+         "thermal baths = civilian public building, not military or ritual context"),
+        ("RD-0021", "EV026",
+         "Roman province Gallia Narbonensis; Arelate (Arles) was a major Roman colony",
+         "C", "PUB-0014", "Q62511455", None, "2026-08-07", None),
+        ("RD-0021", "EV029",
+         "3rd century AD (per Wikidata record)",
+         "C", "PUB-0014", "Q62511455", None, "2026-08-07",
+         "Dating method not specified in Wikidata record"),
     ]
     cur.executemany(
         """INSERT INTO artifact_observations
