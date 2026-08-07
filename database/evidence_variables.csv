@@ -1,0 +1,11 @@
+EvidenceID,Variable,Category
+EV001,Hole diameter variation,Geometry
+EV002,Opposite-hole relationships,Geometry
+EV003,Wall thickness,Geometry
+EV004,Knob geometry,Geometry
+EV005,Mechanical wear,Wear
+EV006,Rope wear,Wear
+EV007,Thermal residue,Residue
+EV008,Casting precision,Manufacturing
+EV009,Archaeological context,Context
+EV010,Associated finds,Context

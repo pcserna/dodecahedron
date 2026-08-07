@@ -1,0 +1,41 @@
+EvidenceID,Category,Evidence Variable,Definition,Unit/Type,Source Type,Discriminatory Power,Most Relevant Hypotheses
+EV001,Geometry,Overall dimensions,"Overall height, width and bounding dimensions",mm,Measurement,High,All
+EV002,Geometry,Mass,Artifact weight,g,Measurement,High,All
+EV003,Geometry,Wall thickness,Average and local wall thickness,mm,Measurement,High,All
+EV004,Geometry,Hole diameter distribution,Diameters of all 12 openings,mm,Measurement,Very High,"Structural, Measuring"
+EV005,Geometry,Opposite-hole relationships,Pairing and correspondence of opposite holes,Categorical,Measurement,Very High,"Structural, Measuring"
+EV006,Geometry,Hole profile,"Cylindrical, tapered or irregular",Categorical,Observation,High,All
+EV007,Geometry,Hole edge radius,Chamfers and edge finishing,mm,Observation,Medium,Manufacturing
+EV008,Geometry,Knob diameter,Diameter of vertex knobs,mm,Measurement,Medium,Structural
+EV009,Geometry,Knob symmetry,Regularity of knob placement,Categorical,Measurement,Medium,Structural
+EV010,Geometry,Face symmetry,Deviation from regular geometry,Numeric,Measurement,High,Manufacturing
+EV011,Manufacturing,Alloy composition,Chemical composition,XRF,Analysis,High,Manufacturing
+EV012,Manufacturing,Casting quality,General casting quality,Ordinal,Observation,High,All
+EV013,Manufacturing,Casting defects,"Voids, seams, miscasts",Text,Observation,High,Manufacturing
+EV014,Manufacturing,Surface finishing,"Grinding, polishing, scraping",Text,Observation,Medium,All
+EV015,Manufacturing,Repair evidence,Ancient repairs,Boolean,Observation,Medium,Reuse
+EV016,Manufacturing,Tool marks,Secondary machining traces,Text,Observation,High,Manufacturing
+EV017,Wear,Internal hole wear,Wear inside openings,Ordinal,Observation,Very High,Structural
+EV018,Wear,External wear,Wear on external surfaces,Ordinal,Observation,High,All
+EV019,Wear,Rope wear,Grooves or polish from rope,Boolean,Observation,Very High,Structural
+EV020,Wear,Rotational wear,Evidence of repeated rotation,Boolean,Observation,Very High,Mechanical
+EV021,Wear,Impact damage,Mechanical impacts,Text,Observation,Medium,All
+EV022,Wear,Abrasion,Surface abrasion,Ordinal,Observation,Medium,All
+EV023,Wear,Thermal alteration,"Heat damage, soot, wax",Boolean,Observation,Very High,Candlestick
+EV024,Wear,Residues,Organic/inorganic residues,Analysis,Analysis,Very High,Multiple
+EV025,Context,Site type,"Military, villa, town, temple, etc.",Enum,Publication,Very High,All
+EV026,Context,Roman province,Roman administrative region,Enum,Publication,Medium,Distribution
+EV027,Context,Associated finds,Objects found together,Text,Publication,Very High,All
+EV028,Context,Stratigraphy,Stratigraphic context,Text,Publication,High,Dating
+EV029,Context,Dating,Chronological range,Years,Publication,Very High,All
+EV030,Context,Number at site,Single or multiple dodecahedra,Integer,Publication,Medium,Distribution
+EV031,Context,Military association,Direct military evidence,Boolean,Publication,High,Military
+EV032,Context,Ritual association,Direct ritual evidence,Boolean,Publication,High,Ritual
+EV033,Engineering,Rod compatibility,Can rods fit securely?,Assessment,Derived,Very High,Structural
+EV034,Engineering,Rope compatibility,Can ropes be routed?,Assessment,Derived,Very High,Structural
+EV035,Engineering,Structural stability,Stable under load,Assessment,Derived,Very High,Structural
+EV036,Engineering,Load transfer,Plausible force paths,Assessment,Derived,High,Structural
+EV037,Engineering,Assembly potential,Supports modular construction,Assessment,Derived,High,Structural
+EV038,Engineering,Orientation dependence,Requires fixed orientation,Assessment,Derived,High,Measuring
+EV039,Comparative,Standardisation,Similarity across artifacts,Statistic,Derived,High,All
+EV040,Comparative,Regional variation,Geographic patterns,Statistic,Derived,High,All

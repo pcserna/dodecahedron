@@ -1,0 +1,31 @@
+EvidenceID,Category,EvidenceStatement,EvidenceType,Confidence,RelevantHypotheses,PrimaryObservable,RepresentativeSources
+E001,Geometry,Roman dodecahedra are hollow cast copper-alloy objects.,Observed,High,All,"Material, manufacturing",Wikipedia; English Heritage
+E002,Geometry,Complete specimens have 12 pentagonal faces.,Observed,High,All,Overall geometry,Wikipedia; English Heritage
+E003,Geometry,Each face contains one circular opening.,Observed,High,All,Face openings,Wikipedia; English Heritage
+E004,Geometry,Hole diameters usually vary within a specimen.,Observed,High,Structural Connector; Measuring Instrument,Hole size distribution,Wikipedia; English Heritage
+E005,Geometry,Twenty knobs occur at the vertices.,Observed,High,All,Vertex morphology,Wikipedia; English Heritage
+E006,Geometry,Typical size is approximately 4–11 cm.,Observed,High,All,Overall dimensions,ADS report; English Heritage
+E007,Geometry,Specimens differ in overall dimensions.,Observed,High,All,Dimensional variability,English Heritage
+E008,Manufacturing,Objects were produced by casting.,Observed,High,All,Casting,English Heritage
+E009,Manufacturing,High manufacturing skill was required.,Constraint,High,All,Craftsmanship,English Heritage
+E010,Manufacturing,Surface finishing is commonly present.,Observed,Medium,All,Surface treatment,English Heritage
+E011,Decoration,Concentric rings commonly surround holes.,Observed,High,All,Decoration,ADS report
+E012,Decoration,Decoration varies between specimens.,Observed,High,All,Variation,English Heritage
+E013,Epigraphy,No authenticated inscriptions or numerals are known.,Observed,High,All,Epigraphy,Wikipedia
+E014,Documentation,No ancient text securely explains the function.,Observed,High,All,Historical sources,Wikipedia
+E015,Documentation,No undisputed ancient depiction of use is known.,Observed,High,All,Iconography,Wikipedia
+E016,Distribution,Finds cluster in north-western Roman provinces.,Observed,High,All,Geographic distribution,Wikipedia
+E017,Distribution,No confirmed finds are known from Italy.,Observed,High,All,Negative distribution,Wikipedia
+E018,Chronology,Most finds date to the 2nd–4th centuries AD.,Observed,High,All,Dating,Wikipedia
+E019,Context,Artifacts occur in military contexts.,Observed,High,Military; Structural,Site context,Wikipedia
+E020,Context,Artifacts occur in civilian settlements.,Observed,High,All,Site context,Wikipedia
+E021,Context,Artifacts occur in funerary contexts.,Observed,Medium,Ritual,Site context,Wikipedia
+E022,Context,Artifacts occur in hoards and river deposits.,Observed,Medium,Ritual,Depositional context,Wikipedia
+E023,Context,No single archaeological context dominates.,Constraint,High,All,Context diversity,English Heritage
+E024,Corpus,About 130 known specimens exist.,Observed,High,All,Corpus size,Wikipedia
+E025,Corpus,Roman Britain accounts for roughly one quarter of known finds.,Observed,High,Distribution,Regional corpus,ADS report
+E026,Wear,Published wear evidence is limited and inconsistent.,Observed,Medium,Structural,Wear studies,Literature synthesis
+E027,Wear,No universal pattern of rope wear has been demonstrated.,Observed,Medium,Structural Connector,Wear,Literature synthesis
+E028,Residue,No widespread evidence of soot or wax residues has been published.,Observed,Medium,Candlestick,Residues,Literature synthesis
+E029,Metrology,No accepted metrological standard has been demonstrated.,Constraint,Medium,Measuring Instrument,Measurements,Literature synthesis
+E030,Research,More than fifty functional hypotheses have been proposed.,Observed,High,Research,Hypothesis landscape,Wikipedia; English Heritage
