@@ -181,8 +181,8 @@ SOURCES = [
      "Updated comprehensive catalogue; primary reference for Guggenberger numbers"),
     ("PUB-0003", "Guggenberger & Leach", 2025,
      "The Gallo-Roman Dodecahedron and the Receptacle of All Becoming",
-     "Journal", None, None, "B",
-     "Recent synthesis of evidence and hypotheses"),
+     "Journal", "10.1017/S000358152510036X", None, "B",
+     "The Antiquaries Journal 105: 31-54; recent synthesis"),
     ("PUB-0004", "Wikipedia contributors", 2024,
      "Roman dodecahedron — Wikipedia",
      "Online", None,
@@ -193,12 +193,32 @@ SOURCES = [
      "Roman Dodecahedra — English Heritage summary",
      "Online", None, None, "C",
      "Institutional archaeological summary for British context"),
-    ("PUB-0006", "Portable Antiquities Scheme / ADS", 2024,
-     "Roman Dodecahedra finds — ADS / PAS database",
+    ("PUB-0006", "Portable Antiquities Scheme", 2024,
+     "Portable Antiquities Scheme database — Roman dodecahedra records",
      "Database", None,
-     "https://archaeologydataservice.ac.uk",
+     "https://finds.org.uk/pas/recorded-find/search/?object_types=dodecahedron&broad_period=Roman",
      "B",
-     "Archaeological dataset; primary source for British finds and context data"),
+     "Primary source for British PAS-recorded specimens; cite individual record ID in page field"),
+    ("PUB-0007", "Society of Antiquaries of London", 1739,
+     "Minutes of meeting, 28 June 1739 (SAL/02/003/117)",
+     "Archive", None,
+     "https://collections.sal.org.uk/sal.02.003.117",
+     "A",
+     "First recorded Roman dodecahedron; George North exhibits object from Aston, Hertfordshire"),
+    ("PUB-0008", "Tipper, Samantha", 2024,
+     "Beautifully crafted Roman dodecahedron discovered in Lincoln - but what were they for?",
+     "Article", "10.64628/AB.3gxryddu3",
+     "https://theconversation.com/beautifully-crafted-roman-dodecahedron-discovered-in-lincoln-but-what-were-they-for-229131",
+     "C",
+     "The Conversation; describes Norton Disney 2023 find; author is NDAG treasurer"),
+    ("PUB-0009", "Allason-Jones, L. and Miket, R.", 1984,
+     "Catalogue of Small Finds from South Shields Roman Fort",
+     "Book", None, None, "B",
+     "Gloucester: Society of Antiquaries of London; no. 3.741 covers the South Shields dodecahedron"),
+    ("PUB-0010", "Guillier, G.; Delage, R.; Besombes, P.-A.", 2008,
+     "Une fouille en bordure des thermes de Jublains (Mayenne): enfin un dodecaedre en contexte archeologique!",
+     "Journal", "10.4000/rao.680", None, "A",
+     "Revue archeologique de l'Ouest 25: 269-289; first dodecahedron in secure excavation context"),
 ]
 
 # Maps freetext labels used in evidence_register_v1.csv to source_ids
@@ -636,6 +656,321 @@ def build_database():
     cur.executemany(
         "INSERT INTO hpm(hypothesis_id, ev_id, prediction, rationale) VALUES (?,?,?,?)",
         HPM_DATA
+    )
+
+    # Specimens: one row per physical artifact
+    # Columns: rd_id, specimen_name, findspot, country, roman_province,
+    #   context_category, date_from, date_to, museum_name, museum_city,
+    #   museum_country, inventory_number, material, manufacturing_method,
+    #   height_mm, width_mm, max_diameter_mm, weight_g, wall_thickness_mm,
+    #   knob_diameter_mm, hole_01..12_mm, decoration_type, decoration_desc,
+    #   wear_notes, associated_finds, primary_source_id, confidence,
+    #   nouwen_number, guggenberger_number, notes
+    SPECIMENS = [
+        # RD-0001: Much Hadham, Hertfordshire (PAS BH-692011)
+        # Complete specimen; discovered 22 Aug 2018 by metal detector
+        ("RD-0001", "Much Hadham dodecahedron",
+         "Much Hadham, East Hertfordshire", "United Kingdom", "Britannia",
+         "Unknown", 43, 410,
+         None, None, None,                 # museum: returned to finder
+         "PAS:BH-692011",                  # inventory_number used for PAS ID
+         "Copper alloy", "Cast",
+         None, None, 82.0, 247.23, 3.0, 9.5,  # height, width, max_diam, weight, wall, knob_avg
+         None, None, None, None, None, None,   # holes 1-6
+         None, None, None, None, None, None,   # holes 7-12 (individual unknown)
+         "Geometric",
+         "Faint double-lined circumferential border surrounding each hole",
+         "Patchy mid-green and brown patina; pitting and gouging on several faces; "
+         "abrasion around base of most knobs; one knob partially detached but attached",
+         None, "PUB-0006", "B", None, None,
+         "Smallest hole 13.7mm, largest 20mm; all holes bevelled; "
+         "possibly the most complete specimen known from Britannia per PAS record"),
+
+        # RD-0002: Fridaythorpe, East Riding of Yorkshire (PAS YORYM-41CD72)
+        # Incomplete; 6 complete + parts of 5 further faces; discovered 5 Dec 2008
+        ("RD-0002", "Fridaythorpe dodecahedron",
+         "Fridaythorpe, East Riding of Yorkshire", "United Kingdom", "Britannia",
+         "Unknown", 1, 400,
+         None, None, None,
+         "PAS:YORYM-41CD72",
+         "Copper alloy", "Cast",
+         None, 82.4, None, 270.0, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None,
+         "Some holes surrounded by incised pentagonal line",
+         "One knob broken off (loose); metal mid greyish-green; rough broken edges",
+         None, "PUB-0006", "B", None, None,
+         "Incomplete: 6 complete faces + half of 5 more; "
+         "interior crudely cast; holes of different sizes irregularly cut; "
+         "face width ~42mm, face length ~38mm"),
+
+        # RD-0003: Compton, Surrey (PAS SUR-729950)
+        # Fragment: two joining pieces forming most of one face + parts of 5 adjacent
+        # Discovered 1 Apr 2009 by metal detector
+        ("RD-0003", "Compton dodecahedron fragment",
+         "Compton, Guildford, Surrey", "United Kingdom", "Britannia",
+         "Unknown", 43, 410,
+         None, None, None,
+         "PAS:SUR-729950",
+         "Copper alloy", "Cast",
+         None, None, None, 82.0, None, 13.5,  # weight=82g is FRAGMENT weight
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None,
+         None,
+         None, "PUB-0006", "B", None, None,
+         "Fragment weight 82g; one complete face hole ~15.75mm; "
+         "no additional decoration; interior roughcast; "
+         "only dodecahedron known from southern England outside London per PAS 2009"),
+
+        # RD-0004: Stockbridge, Hampshire (PAS HAMP-CE1119)
+        # Fragment: 2 complete faces + remains of 6; metal detector find
+        ("RD-0004", "Stockbridge dodecahedron fragment",
+         "Stockbridge, Test Valley, Hampshire", "United Kingdom", "Britannia",
+         "Unknown", 43, 410,
+         "Hampshire Cultural Trust", "Winchester", "United Kingdom",
+         "PAS:HAMP-CE1119; HCT:WINCM 629",
+         "Copper alloy", "Cast",
+         29.1, 48.7, None, 46.79, 3.7, None,  # height=depth, width, weight are FRAGMENT
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         "Raised rim with sunken surround and inner ring around each hole",
+         "Raised rim around perforations; sunken circular area; raised ring closer to hole than edge",
+         "Metal rather pitted and worn; dark to mid-green patina",
+         None, "PUB-0006", "B", None, None,
+         "Fragment: 2 complete faces + ~half of 6 more; "
+         "face dimension 29-30mm corner to side-centre; "
+         "holes: 10-11mm (complete faces), 18.3mm (adjacent face)"),
+
+        # RD-0005: Norton Disney, Lincolnshire (Tipper 2024 / NDAG excavation)
+        # Complete; discovered June 2023 in archaeological excavation
+        ("RD-0005", "Norton Disney dodecahedron",
+         "Norton Disney, Lincolnshire", "United Kingdom", "Britannia",
+         "Settlement", 43, 410,
+         "The Collection (Lincoln Museum)", "Lincoln", "United Kingdom",
+         None,
+         "Copper alloy", "Cast",
+         None, None, 80.0, 245.0, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None,
+         "No wear; described as completely undamaged with no evidence of any wear at all",
+         None, "PUB-0008", "C", None, None,
+         "Found June 2023 by NDAG in trench 4, large pit; near Roman villa excavated 1935; "
+         "XRF: Cu 75%, Sn 7%, Pb 18% (Gerry McDonnell); "
+         "3D scanned (Univ. Lincoln); sent to Newcastle Univ. for further analysis; "
+         "33rd dodecahedron found in England; first from East Midlands"),
+
+        # RD-0006: Tongeren, Belgium (Wikipedia / Gallo-Roman Museum)
+        # Provenance: Leopoldwal, Tongeren, 1939; museum inv. 4002
+        ("RD-0006", "Tongeren dodecahedron",
+         "Leopoldwal, Tongeren (Atuatuca Tungrorum)", "Belgium", "Gallia Belgica",
+         "Unknown", 150, 400,
+         "Gallo-Roman Museum", "Tongeren", "Belgium",
+         "4002",
+         "Bronze (copper alloy)", "Cast",
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None,
+         None, "PUB-0004", "E", None, None,
+         "Source: Wikipedia image caption; inv. 4002; "
+         "findspot Leopoldwal 1939; measurements not available from this source"),
+
+        # RD-0007: Aston, Hertfordshire (SAL minutes 1739)
+        # First recorded dodecahedron; field find exhibited to Society of Antiquaries
+        ("RD-0007", "Aston (Hertfordshire) dodecahedron",
+         "Aston, Hertfordshire", "United Kingdom", "Britannia",
+         "Unknown", None, None,
+         None, None, None,  # current location unknown from this source
+         None,
+         "Bronze", None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None,
+         None, "PUB-0007", "A", None, None,
+         "First recorded dodecahedron; exhibited at SAL meeting 28 June 1739 by George North; "
+         "described as twelve-sided bronze object from a field in Aston, Hertfordshire; "
+         "measurements and current location not stated in archival record"),
+    ]
+    cur.executemany(
+        """INSERT INTO specimens VALUES (
+            ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,
+            ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+        )""",
+        SPECIMENS
+    )
+
+    # Artifact observations: one row per specimen × evidence variable × source
+    # Columns: rd_id, ev_id, observed_value, confidence, source_id, page, figure,
+    #          extraction_date, notes
+    OBSERVATIONS = [
+        # --- RD-0001: Much Hadham (PAS BH-692011) ---
+        ("RD-0001", "EV001", "82mm maximum diameter; face dimensions 38mm x 38mm",
+         "B", "PUB-0006", "BH-692011", None, "2026-08-07", None),
+        ("RD-0001", "EV002", "247.23 g",
+         "B", "PUB-0006", "BH-692011", None, "2026-08-07", None),
+        ("RD-0001", "EV003", "3 mm (plate thickness)",
+         "B", "PUB-0006", "BH-692011", None, "2026-08-07", None),
+        ("RD-0001", "EV004",
+         "Smallest hole 13.7mm; largest hole 20mm; all 12 faces perforated with varying diameters",
+         "B", "PUB-0006", "BH-692011", None, "2026-08-07",
+         "Individual face-by-face diameters not listed in PAS record"),
+        ("RD-0001", "EV006",
+         "Slightly bevelled rounded edges on all perforations",
+         "B", "PUB-0006", "BH-692011", None, "2026-08-07", None),
+        ("RD-0001", "EV008",
+         "Knob height approx. 9mm; diameter 9-10mm; triangular cross-section at base, sub-spherical form",
+         "B", "PUB-0006", "BH-692011", None, "2026-08-07",
+         "20 knobs present; upper layer missing on several, revealing red corrosion"),
+        ("RD-0001", "EV009",
+         "All 20 knobs triangular-base sub-spherical; consistent form across specimen",
+         "B", "PUB-0006", "BH-692011", None, "2026-08-07", None),
+        ("RD-0001", "EV010",
+         "All 12 faces described as equally sized (38mm x 38mm); smoothed",
+         "B", "PUB-0006", "BH-692011", None, "2026-08-07", None),
+        ("RD-0001", "EV012",
+         "Exterior well-finished and smoothed; interior surfaces more roughly cast; preservation grade 2",
+         "B", "PUB-0006", "BH-692011", None, "2026-08-07", None),
+        ("RD-0001", "EV013",
+         "Upper layer of metal absent on several knobs, revealing red corrosion; casting not perfect",
+         "B", "PUB-0006", "BH-692011", None, "2026-08-07", None),
+        ("RD-0001", "EV014",
+         "Exterior surfaces smoothed; explicitly stated as smoothed in PAS description",
+         "B", "PUB-0006", "BH-692011", None, "2026-08-07", None),
+        ("RD-0001", "EV018",
+         "Several faces pitted or gouged; abrasion around base of most knobs; patchy patina",
+         "B", "PUB-0006", "BH-692011", None, "2026-08-07", None),
+        ("RD-0001", "EV022",
+         "Abrasion present around the base of most knobs",
+         "B", "PUB-0006", "BH-692011", None, "2026-08-07", None),
+        ("RD-0001", "EV025",
+         "Cultivated land; metal detector find; exact Roman context unknown",
+         "B", "PUB-0006", "BH-692011", None, "2026-08-07",
+         "Findspot: Much Hadham, East Hertfordshire"),
+        ("RD-0001", "EV039",
+         "Hole diameters range 13.7-20mm; variation present within single specimen",
+         "B", "PUB-0006", "BH-692011", None, "2026-08-07",
+         "Standardisation across corpus cannot be assessed from a single specimen"),
+
+        # --- RD-0002: Fridaythorpe, Yorkshire (PAS YORYM-41CD72) ---
+        ("RD-0002", "EV001",
+         "Overall width 82.4mm; face width ~42mm, face length ~38mm (approximate)",
+         "B", "PUB-0006", "YORYM-41CD72", None, "2026-08-07",
+         "Specimen incomplete; overall dimensions approximate"),
+        ("RD-0002", "EV002",
+         "270 g (incomplete specimen; true complete weight would be higher)",
+         "B", "PUB-0006", "YORYM-41CD72", None, "2026-08-07",
+         "Weight is of incomplete specimen; 6 complete + ~5 partial faces"),
+        ("RD-0002", "EV004",
+         "Large circular holes of different sizes; holes described as irregularly cut",
+         "B", "PUB-0006", "YORYM-41CD72", None, "2026-08-07",
+         "Individual diameters not listed; variation confirmed"),
+        ("RD-0002", "EV009",
+         "One knob broken off but retained loose; remaining knobs intact",
+         "B", "PUB-0006", "YORYM-41CD72", None, "2026-08-07", None),
+        ("RD-0002", "EV012",
+         "Interior described as crudely cast; exterior not described as finished",
+         "B", "PUB-0006", "YORYM-41CD72", None, "2026-08-07", None),
+        ("RD-0002", "EV016",
+         "Some holes surrounded by incised pentagonal line (post-casting decoration)",
+         "B", "PUB-0006", "YORYM-41CD72", None, "2026-08-07",
+         "Pentagonal incised line around holes; likely post-casting tool work"),
+        ("RD-0002", "EV025",
+         "Cultivated land; metal detector find; exact Roman context unknown",
+         "B", "PUB-0006", "YORYM-41CD72", None, "2026-08-07",
+         "Findspot: Fridaythorpe, East Riding of Yorkshire"),
+
+        # --- RD-0003: Compton, Surrey (PAS SUR-729950) ---
+        ("RD-0003", "EV002",
+         "82 g (fragment weight only; one face + parts of five faces)",
+         "B", "PUB-0006", "SUR-729950", None, "2026-08-07", None),
+        ("RD-0003", "EV004",
+         "Complete face: hole ~15.75mm diameter; edges of three further holes visible but unmeasured",
+         "B", "PUB-0006", "SUR-729950", None, "2026-08-07",
+         "Only one face fully preserved; variation across all 12 faces cannot be assessed"),
+        ("RD-0003", "EV008",
+         "Knob diameter ~13.5mm at each of four surviving corners",
+         "B", "PUB-0006", "SUR-729950", None, "2026-08-07", None),
+        ("RD-0003", "EV012",
+         "Interior left roughcast; no additional decoration noted",
+         "B", "PUB-0006", "SUR-729950", None, "2026-08-07", None),
+        ("RD-0003", "EV025",
+         "Cultivated land; metal detector find; exact Roman context unknown",
+         "B", "PUB-0006", "SUR-729950", None, "2026-08-07",
+         "Findspot: Compton, Guildford, Surrey"),
+
+        # --- RD-0004: Stockbridge, Hampshire (PAS HAMP-CE1119) ---
+        ("RD-0004", "EV002",
+         "46.79 g (fragment weight: 2 complete faces + remains of ~6 faces)",
+         "B", "PUB-0006", "HAMP-CE1119", None, "2026-08-07", None),
+        ("RD-0004", "EV003",
+         "3.7 mm wall thickness",
+         "B", "PUB-0006", "HAMP-CE1119", None, "2026-08-07", None),
+        ("RD-0004", "EV004",
+         "10-11mm on two complete adjacent faces; 18.3mm on a third adjacent face; variation confirmed",
+         "B", "PUB-0006", "HAMP-CE1119", None, "2026-08-07",
+         "Face-to-corner measurement ~7.5mm (similar on known faces); individual diameters partly recorded"),
+        ("RD-0004", "EV006",
+         "Raised rim around perforation; sunken circular area within pentagonal face; "
+         "raised ring between hole and edge",
+         "B", "PUB-0006", "HAMP-CE1119", None, "2026-08-07", None),
+        ("RD-0004", "EV008",
+         "Knob height ~10-11mm; width 6.5-7.5mm; triangular cross-section at base, expanding to globular",
+         "B", "PUB-0006", "HAMP-CE1119", None, "2026-08-07", None),
+        ("RD-0004", "EV018",
+         "Metal described as rather pitted and worn; dark to mid-green patina",
+         "B", "PUB-0006", "HAMP-CE1119", None, "2026-08-07", None),
+        ("RD-0004", "EV025",
+         "Cultivated land; metal detector find; exact Roman context unknown",
+         "B", "PUB-0006", "HAMP-CE1119", None, "2026-08-07",
+         "Findspot: Stockbridge, Test Valley, Hampshire"),
+
+        # --- RD-0005: Norton Disney, Lincolnshire (Tipper 2024) ---
+        ("RD-0005", "EV001",
+         "Approximately 80mm across (stated as 'about 8cm across')",
+         "C", "PUB-0008", None, None, "2026-08-07",
+         "Approximate figure given in popular article; 3D scan exists at Univ. Lincoln"),
+        ("RD-0005", "EV002",
+         "245 g",
+         "C", "PUB-0008", None, None, "2026-08-07", None),
+        ("RD-0005", "EV011",
+         "Cu 75%, Sn 7%, Pb 18% by handheld XRF (analyst: Gerry McDonnell, archaeometallurgist)",
+         "C", "PUB-0008", None, None, "2026-08-07",
+         "Handheld XRF is semi-quantitative; full quantitative analysis planned at Newcastle Univ."),
+        ("RD-0005", "EV017",
+         "No internal hole wear observed; described as completely undamaged",
+         "C", "PUB-0008", None, None, "2026-08-07",
+         "Direct quote: 'no evidence of any wear at all' (Richard Parker, NDAG secretary)"),
+        ("RD-0005", "EV018",
+         "No external wear observed; described as completely undamaged",
+         "C", "PUB-0008", None, None, "2026-08-07",
+         "Same source as EV017"),
+        ("RD-0005", "EV025",
+         "Large pit near Roman villa (excavated 1935); rural settlement context",
+         "C", "PUB-0008", None, None, "2026-08-07",
+         "Pottery from Iron Age to Roman period found across site; Romano-British figurine nearby"),
+
+        # --- RD-0006: Tongeren, Belgium (Wikipedia PUB-0004) ---
+        ("RD-0006", "EV025",
+         "Leopoldwal, Tongeren; context not specified in Wikipedia image caption",
+         "E", "PUB-0004", None, None, "2026-08-07",
+         "Minimum data only from image caption; further source required for all fields"),
+
+        # --- RD-0007: Aston, Hertfordshire (SAL minutes 1739) ---
+        ("RD-0007", "EV025",
+         "A field in Aston, Hertfordshire; rural agricultural context (pre-excavation era find)",
+         "A", "PUB-0007", "SAL/02/003/117", None, "2026-08-07",
+         "Only contextual information available from archival record"),
+    ]
+    cur.executemany(
+        """INSERT INTO artifact_observations
+           (rd_id, ev_id, observed_value, confidence, source_id, page, figure,
+            extraction_date, notes)
+           VALUES (?,?,?,?,?,?,?,?,?)""",
+        OBSERVATIONS
     )
 
     conn.commit()
