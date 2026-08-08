@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*~
+
+# Office lock files
+~$*
+
+# Source publications held locally for extraction.
+# NOT redistributed: most are under publisher copyright. Obtain them from the
+# publisher or from the DOI recorded in database/sources.csv.
+docs/*.pdf
+docs/*.jpg
+docs/*.jpeg
+docs/*.png
+
+# Append-only run history: guaranteed merge conflicts, no value to a reader.
+logs/
+
+# Byte-identical copy of database/rdorp.sqlite, which is tracked.
+exports/sqlite/

@@ -1,0 +1,378 @@
+---
+Document ID: RDORP-013
+Title: Hardening Plan and Next Steps
+Version: 1.0.0
+Status: Draft
+Project: Roman Dodecahedron Open Research Project (RDORP)
+License: CC BY 4.0
+Created: 2026-08-08
+Last Updated: 2026-08-08
+Related Documents:
+  - RDORP-010 Analytical Method
+  - RDORP-011 Geometry Specification
+  - RDORP-012 Results Summary
+---
+
+# Hardening Plan and Next Steps
+
+What is wrong with the current analysis, what would fix it, and in what order.
+
+The project's results are stated in RDORP-012. This document is the adversarial
+companion: it assumes the results are wrong and asks what would show it.
+
+Items are ranked by **how much they would move the answer**, not by effort. Four
+of the top six require no laboratory and no new specimens.
+
+---
+
+## Summary
+
+| # | Item | Kind | Effect if acted on |
+| - | ---- | ---- | ------------------ |
+| **A1** | Correlated evidence is scored as independent | Method | **Largest known distortion. Moves H013 by +10.8, H005 by +6.4, H001 by +4.1** |
+| **A2** | No sensitivity analysis over the weighting scheme | Method | Unknown, and that is the problem |
+| **B1** | Rope wear and rotational wear never observed | Evidence | Decides four refutations |
+| **A3** | Prediction matrices written and scored by the same party | Method | The central validity threat |
+| **B2** | Aperture and ring survey | Evidence | Cheapest decisive test in the project |
+| **A4** | Three scored variables have no source | Method | Removes a rule violation; moves H001 by −2.6 |
+| **B3** | Residue analysis | Evidence | Decides the two leading hypotheses |
+| **C1** | Guggenberger 1999 read directly | Evidence | Underwrites most single-source variables at a stroke |
+| **A5** | Eight variables carry good evidence no hypothesis can be tested against | Method | Recovers the best-quantified evidence in the corpus |
+
+---
+
+## Part A — Methodological hardening
+
+### A1. Correlated evidence is being scored as independent
+
+**The defect.** The scoring sums weighted scores across 32 variables as though
+each were an independent observation. Several are not. The clearest case is the
+wear cluster: `EV017` internal hole wear, `EV018` external wear, `EV019` rope
+wear and `EV020` rotational wear **all cite the same page of the same source**
+(`PUB-0003`, 45), which in turn reports a single statement from Guggenberger
+1999. One sentence is being scored four times, three of them at Very High power.
+
+**The magnitude.** Collapsing the cluster to its single strongest contribution:
+
+| Hypothesis | Current | Wear cluster | Collapsed | Revised |
+| ---------- | ------- | ------------ | --------- | ------- |
+| H013 Rope-laying top | +8.7 | −15.3 | −4.5 | **+19.5** |
+| H005 Textile tool | −0.2 | −10.8 | −4.5 | **+6.2** |
+| H001 Structural connector | +2.3 | −8.6 | −4.5 | **+6.4** |
+| H010 Parasol crown | −9.2 | −10.8 | −4.5 | −2.9 |
+| H009 Tent apex | −34.0 | −12.6 | −4.5 | −25.9 |
+| H012 Cord frame *(leader)* | +24.0 | +0.4 | +2.2 | +25.8 |
+| H014 Wax former *(leader)* | +21.0 | +0.4 | +2.2 | +22.8 |
+
+**This is the largest known distortion in the analysis, and it inflates the
+refutations rather than the leaders** — the same asymmetry the source-corroboration
+audit found (RDORP-012 §2.8). Two independent checks now agree: the positive
+result is robust, the negative result is overstated.
+
+**Other suspected clusters, unquantified:**
+
+| Cluster | Variables | Shared basis |
+| ------- | --------- | ------------ |
+| Aperture dimensions | EV004, EV005, EV039, EV043 | The same measured diameters |
+| Size range | EV037, EV039 | The published 4–10 cm range |
+| Casting artefacts | EV013, EV046 | The production-hole pair *(already caught; EV046 set non-discriminating)* |
+| Geometric irregularity | EV010, EV012, EV013 | The same manufacturing evidence |
+
+**Fix.** Add an `evidence_cluster` column to `corpus_observations`. Variables
+sharing a cluster share a budget: the cluster contributes its single strongest
+cell, or its mean, rather than the sum. Report both the clustered and unclustered
+totals. Declaring clusters is a judgement and must be recorded with reasoning,
+like directions.
+
+**Cost.** Half a day. No new data.
+
+**This should be done before any result is published.** It is not a refinement;
+the current numbers are inflated by a known amount in a known direction.
+
+### A2. No sensitivity analysis over the weighting scheme
+
+**The defect.** Discriminatory power is weighted 3 / 2 / 1, source confidence
+1.0 / 0.9 / 0.75 / 0.5 / 0.25, evidence class 1.0 / 0.75 / 0.5. **These numbers
+were invented and never tested.** The analysis runs seven scenarios over which
+*variables* are included and none over the weights themselves.
+
+**Fix.** Sweep the weight schemes and report the ranking's stability:
+
+- Power: 3/2/1, 5/3/1, 4/2/1, 2/1.5/1, and flat 1/1/1
+- Confidence: as now, linear, and flat
+- Class: 1/0.75/0.5, 1/0.5/0.25, and excluded entirely
+
+Report the fraction of the 45 combinations in which each hypothesis leads. A
+result that survives one weighting and not the rest is a result about the
+weighting.
+
+**Cost.** A few hours. No new data.
+
+### A3. Prediction matrices are written and scored by the same party
+
+**The defect.** Every prediction in the matrix was authored by this project,
+which also assigns every direction and computes every score. There is no
+independent specification, no second rater, and no blind protocol. This is the
+central validity threat for the whole method, and it is unaddressed.
+
+Six of fourteen hypotheses are additionally declared contaminated: H009 to H014
+were specified after the evidence was known.
+
+**Fix, in order of strength.**
+
+1. **Blind specification.** Give a collaborator the hypothesis, the variable
+   list with definitions, and *no observations*. Have them write the 48
+   predictions. Compare against ours and report the disagreement rate.
+2. **Inter-rater reliability on directions.** Have a second person assign
+   directions from the `statement` field alone, without seeing the hypotheses or
+   the scores. Report Cohen's κ.
+3. **Re-specify the six contaminated matrices** blind, by someone who has not
+   read RDORP-012.
+
+**Cost.** Needs one collaborator and perhaps two days of their time. **This is
+the highest-value thing an outside contributor could do.**
+
+### A4. Three scored variables have no source
+
+`EV034` rope compatibility, `EV035` structural stability and `EV036` load
+transfer are this project's own geometric reasoning with **no source at all**, in
+a database whose first rule is that every fact has one. They are discounted to
+half weight and excluded from the observed-only scenario, but they remain in the
+baseline, and removing them drops H001 from +2.3 to −0.3.
+
+**Fix.** Either source them — a published engineering assessment of the form
+would do — or reclassify them as Derived-unsourced and exclude them from the
+baseline, leaving them visible in a separate scenario. Promote the validator
+finding from warning to error.
+
+**Cost.** An hour.
+
+### A5. Eight variables carry evidence no hypothesis can be tested against
+
+Site type, associated finds, dating, province, mass, stratigraphy and two others
+carry corpus evidence and score zero, because the predictions are not specific
+enough to be confirmed or refuted. `EV025` site type is the best-quantified
+variable in the corpus and contributes nothing.
+
+**Fix.** Respecify those predictions to name what each hypothesis expects — which
+site type, which associated finds, which period. **The respecification must be
+written before the observation is consulted**, or the matrix is being tuned to
+the data. Ideally by someone who has not read §3 of RDORP-012.
+
+**Cost.** A day, plus the discipline to do it in the right order.
+
+### A6. Argument from silence has no rule
+
+`EV019` and `EV020` are scored `absent` because no report exists, not because
+anyone looked. This was handled by dropping confidence to C, but by judgement
+rather than by rule.
+
+**Fix.** Add an `observation_basis` field distinguishing *examined and absent*
+from *not reported*. Cap the confidence of not-reported observations, and exclude
+them from a scenario by default.
+
+**Cost.** Two hours.
+
+### A7. The screening threshold is crude
+
+The screen eliminated C-10 on one hard contradiction; promoted to a full
+hypothesis it scored +21.0 and second place. The verdict rule is therefore known
+to produce false negatives.
+
+**Fix.** Replace the binary rule with a reported band — eliminated, marginal,
+promote — and treat any candidate with a positive total as marginal regardless of
+hard contradictions.
+
+**Cost.** An hour.
+
+### A8. No priors
+
+The framework scores likelihood of evidence given each hypothesis and never
+asks how plausible each hypothesis was to begin with. That is defensible — priors
+are where bias enters — but it should be stated as a choice rather than left
+implicit, and the usage-value axis is already doing some of this work informally.
+
+**Fix.** Document the choice in RDORP-010. Consider whether the usage-value axis
+should be formalised as a prior rather than reported separately.
+
+---
+
+## Part B — Evidence acquisition
+
+All three items below could be done in a single museum visit to one
+well-preserved specimen. `RD-0005` Norton Disney is the best candidate:
+excavated, complete, undamaged, institutionally held.
+
+### B1. Rope wear and rotational wear — the two unobserved variables
+
+Two Very High variables currently score from the absence of any report. Nobody
+has ever examined a dodecahedron for either.
+
+**Method.** Low-magnification then SEM examination of the knobs, knob necks,
+aperture rims and interior for grooving, polish or directional striation
+consistent with cord under tension or with rotation.
+
+**Decides.** Whether the refutations of H013, H005, H004 and H010 stand. Those
+four recover by +2.6 to +6.9 points when the uncorroborated wear variables are
+removed (RDORP-012 §2.8), and by more again under A1.
+
+### B2. The aperture and ring survey — cheapest decisive test
+
+**Method.** Measure all twelve aperture diameters and count the engraved rings
+around each **separately**, recording which apertures are opposite which. Follow
+the face-numbering convention in RDORP-011. A ruler, a lens, and an afternoon.
+
+**Decides.** `EV043`. Whether the apertures are individually distinguishable
+(twelve categories), distinguishable only in opposed pairs (six), or not
+systematically distinguishable at all. Recording rings and diameters separately
+is essential because ring count appears to track diameter, and the two must be
+disentangled before either can be said to label anything.
+
+The two measurable specimens currently disagree — Avenches confirms, Vienne
+partly refutes — and both are unexcavated.
+
+### B3. Residue analysis
+
+**Method.** GC-MS or FTIR on interior scrapings and aperture rims of specimens
+that have **not** been cleaned or consolidated. Conservation history must be
+established first; a conserved specimen is worthless for this.
+
+**Decides.** `EV024`, and with it both leading hypotheses. Beeswax and resin
+would support H014 and the soft-material family; a systematic negative would
+remove their only positive evidence.
+
+### B4. Thermal analysis
+
+Interior examination for soot and combustion products. `EV023` is the only
+remaining route to the candlestick and fumigation readings, and a positive result
+would revive H004 almost single-handedly.
+
+### B5. Experimental casting
+
+Reproduce the hollow form by lost wax in an alloy of the recorded composition
+(75 Cu / 7 Sn / 18 Pb), with integral or soldered knobs, and record the failure
+rate. Separately, search museum and excavation records for **any** mould, casting
+waste, sprue or reject.
+
+**Decides.** `EV045` and prediction `P-0010`. The claim that these objects were
+"difficult to cast and thus inherently valuable" is an assertion in the
+literature, and the entire craft-value reading rests on it. No mould or casting
+waste is known anywhere: we do not know where a single dodecahedron was made.
+
+---
+
+## Part C — Corpus expansion
+
+### C1. Read Guggenberger 1999 directly
+
+The single highest-value acquisition. It is the underlying source for the corpus
+measurements, the typology, the knob data, the wear statement and the find-context
+tallies — almost all of which currently reach this project at one remove through
+`PUB-0003`. Reading it would:
+
+- independently underwrite most of the variables now resting on `PUB-0006` alone;
+- supply the per-specimen measurement tables that would populate the geometry
+  variables properly;
+- supply the type attributions needed for `EV048`, which gates the defence of the
+  standardisation finding against the imitation confound.
+
+Nouwen 1993 and Greiner 1996 follow for the same reasons.
+
+### C2. Continental specimens
+
+The recorded corpus is 56 % British against a known corpus about 20 % British.
+Every additional continental specimen with measurements *and* context improves
+representativeness directly.
+
+### C3. Stratified contexts
+
+One dodecahedron in the entire corpus comes from a sealed, dated deposit. Any
+second would roughly double the project's grade-A evidence.
+
+### C4. Authenticity screening
+
+No specimen has been authenticated against forgery. XRF or isotope analysis on
+the unprovenanced private-collection specimens — `RD-0022`, `RD-0035` — would
+either secure or remove two of the three specimens carrying usable aperture data.
+
+---
+
+## Part D — Collaboration and review
+
+The project is set up so that disagreement is cheap to express: change a
+direction, re-run, and see exactly how much the number moves.
+
+**What outside contributors can do that we cannot do ourselves:**
+
+1. **Blind prediction specification** (A3) — needs someone who has not read the
+   results.
+2. **Independent direction assignment** (A3) — needs a second rater.
+3. **Specimen access** (Part B) — needs someone with museum contacts.
+4. **The specialist literature** (C1) — needs library access and German and
+   French.
+5. **Adversarial review of the deductions** in RDORP-012 §7. Those are reasoning,
+   not observation, and have had no external scrutiny.
+
+**What we should stop doing.** Proposing further hypotheses from inside the
+project. Six of fourteen are already contaminated, and each new one is authored
+by a party that knows the answers better than the last. New hypotheses should
+come from outside, or from the literature.
+
+---
+
+## Part E — Publication gates
+
+| Route | Blocked by |
+| ----- | ---------- |
+| Data paper — corpus, pipeline, provenance model | Nothing. A1 and A4 should be fixed first |
+| Short note — the computational refutations (`EXP-0002` to `EXP-0004`) | Nothing. Self-contained and checkable |
+| Methods paper — the framework | A1, A2, A3 |
+| Archaeology paper | Primary data (Part B), C1, and human verification of every judgement recorded here |
+
+---
+
+## Sequencing
+
+**Now, no new data required.** A1 clustering, A2 weight sweep, A4 unsourced
+variables, A6 silence rule, A7 screening band. Together these change the reported
+numbers and should precede any publication or wider circulation.
+
+**Next, one museum visit.** B1, B2 and B3 on a single well-preserved specimen,
+`RD-0005` for preference.
+
+**In parallel, library work.** C1, and A5 respecification by someone who has not
+read the results.
+
+**Then, with a collaborator.** A3 blind specification and inter-rater reliability.
+
+**Later.** B4, B5, C2, C3, C4.
+
+---
+
+## Definition of done
+
+The analysis is hardened when:
+
+1. No variable is scored more than once for the same underlying observation.
+2. The ranking is reported with its stability across weighting schemes, not under
+   one.
+3. At least one prediction matrix has been specified blind and the disagreement
+   rate reported.
+4. No scored variable lacks a source.
+5. Every corpus observation states whether its basis is examination or absence of
+   report.
+6. Rope wear, rotational wear, residues and aperture distinguishability have been
+   measured on at least one specimen.
+7. Guggenberger 1999 has been read.
+8. Every pre-registered prediction has been resolved or is still genuinely open.
+
+None of these requires the answer to be found. They require the analysis to be
+worth trusting when it is.
+
+---
+
+## Revision History
+
+| Version | Date | Description |
+| ------- | ---- | ----------- |
+| 1.0.0 | 2026-08-08 | Initial hardening plan. |

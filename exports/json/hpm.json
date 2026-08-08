@@ -1,0 +1,3398 @@
+[
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV001",
+    "prediction": "+",
+    "rationale": "A structural node needs to be large enough to accept rods; hand-sized range expected"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV001",
+    "prediction": "0",
+    "rationale": "Measuring instrument could work at any scale within hand-held range"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV001",
+    "prediction": "0",
+    "rationale": "Ritual objects vary widely in size"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV001",
+    "prediction": "+",
+    "rationale": "Candle holder must accommodate candles; small to medium size expected"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV001",
+    "prediction": "+",
+    "rationale": "Textile tool must be hand-held; size range consistent"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV001",
+    "prediction": "0",
+    "rationale": "Astronomical instrument size is not strongly constrained"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV001",
+    "prediction": "0",
+    "rationale": "Military equipment size is not strongly constrained by hypothesis alone"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV001",
+    "prediction": "0",
+    "rationale": "Shrine component size is not strongly constrained"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV002",
+    "prediction": "+",
+    "rationale": "Structural node under load benefits from mass"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV002",
+    "prediction": "0",
+    "rationale": "Mass not diagnostically relevant to measuring function"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV002",
+    "prediction": "0",
+    "rationale": "Ritual objects are not constrained by mass"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV002",
+    "prediction": "0",
+    "rationale": "Mass not relevant to candle-holding function"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV002",
+    "prediction": "0",
+    "rationale": "Textile tool mass not diagnostically relevant"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV002",
+    "prediction": "0",
+    "rationale": "Mass not relevant to astronomical function"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV002",
+    "prediction": "+",
+    "rationale": "Military equipment may require durability; higher mass is consistent"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV002",
+    "prediction": "0",
+    "rationale": "Shrine component mass is not constrained"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV003",
+    "prediction": "+",
+    "rationale": "Thicker walls provide greater strength for load-bearing connector"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV003",
+    "prediction": "0",
+    "rationale": "Wall thickness irrelevant to measuring function"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV003",
+    "prediction": "0",
+    "rationale": "Wall thickness irrelevant to ritual use"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV003",
+    "prediction": "0",
+    "rationale": "Wall thickness irrelevant to candle-holding"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV003",
+    "prediction": "0",
+    "rationale": "Wall thickness irrelevant to textile function"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV003",
+    "prediction": "0",
+    "rationale": "Wall thickness irrelevant to astronomical use"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV003",
+    "prediction": "+",
+    "rationale": "Military equipment benefits from robustness"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV003",
+    "prediction": "0",
+    "rationale": "Wall thickness irrelevant to shrine use"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV004",
+    "prediction": "++",
+    "rationale": "Variable hole sizes match rods of different cross-sections in a modular system"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV004",
+    "prediction": "++",
+    "rationale": "Holes of specific sizes serve as diameter gauges; variation is functionally necessary"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV004",
+    "prediction": "0",
+    "rationale": "Ritual use does not require any particular hole size pattern"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV004",
+    "prediction": "-",
+    "rationale": "Candles are manufactured to standard sizes; systematically varying holes are unexpected"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV004",
+    "prediction": "++",
+    "rationale": "Different hole sizes accommodate different yarn thicknesses; variation is expected"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV004",
+    "prediction": "+",
+    "rationale": "Specific hole sizes could serve as sighting apertures at different angular scales"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV004",
+    "prediction": "0",
+    "rationale": "Military function does not predict any particular hole size pattern"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV004",
+    "prediction": "0",
+    "rationale": "Shrine function does not require specific hole sizes"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV005",
+    "prediction": "++",
+    "rationale": "A structural node requires matching opposing holes so rods pass through axially"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV005",
+    "prediction": "+",
+    "rationale": "Opposing pairs of equal diameter would serve as bilateral gauges"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV005",
+    "prediction": "0",
+    "rationale": "Ritual use has no requirement for opposing holes to match"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV005",
+    "prediction": "-",
+    "rationale": "Candle holder needs one upward-facing hole; opposing symmetry is not required"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV005",
+    "prediction": "+",
+    "rationale": "Yarn routing through opposing holes is plausible for textile use"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV005",
+    "prediction": "+",
+    "rationale": "Sighting through opposing holes requires alignment; matching sizes expected"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV005",
+    "prediction": "0",
+    "rationale": "Military function does not predict opposing-hole symmetry"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV005",
+    "prediction": "0",
+    "rationale": "Shrine use does not require opposing-hole symmetry"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV006",
+    "prediction": "++",
+    "rationale": "Rods require cylindrical or gently tapered holes for secure seating"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV006",
+    "prediction": "++",
+    "rationale": "Precision diameter gauging requires consistent hole profiles"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV006",
+    "prediction": "0",
+    "rationale": "Ritual use has no requirement for specific hole profile"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV006",
+    "prediction": "+",
+    "rationale": "Candles require a socket; some profile consistency expected"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV006",
+    "prediction": "+",
+    "rationale": "Yarn routing benefits from smooth, consistent hole profiles"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV006",
+    "prediction": "+",
+    "rationale": "Sighting apertures benefit from clean cylindrical profiles"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV006",
+    "prediction": "0",
+    "rationale": "Military function does not predict specific hole profile"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV006",
+    "prediction": "0",
+    "rationale": "Shrine function does not predict specific hole profile"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV007",
+    "prediction": "+",
+    "rationale": "Chamfers facilitate rod insertion and prevent binding"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV007",
+    "prediction": "-",
+    "rationale": "Chamfered edges reduce gauge precision; not expected on measuring instrument"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV007",
+    "prediction": "0",
+    "rationale": "Chamfers are not diagnostically relevant to ritual use"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV007",
+    "prediction": "+",
+    "rationale": "Chamfered edges prevent candle damage during insertion"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV007",
+    "prediction": "++",
+    "rationale": "Chamfered edges prevent yarn abrasion; strongly expected for textile use"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV007",
+    "prediction": "0",
+    "rationale": "Edge treatment not relevant to astronomical use"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV007",
+    "prediction": "0",
+    "rationale": "Edge treatment not relevant to military function"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV007",
+    "prediction": "0",
+    "rationale": "Edge treatment not relevant to shrine use"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV008",
+    "prediction": "++",
+    "rationale": "Knobs provide locking or spacer function; specific diameter is structurally meaningful"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV008",
+    "prediction": "0",
+    "rationale": "Knob diameter is not required for measuring function"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV008",
+    "prediction": "+",
+    "rationale": "Decorative knobs enhance prestige of ritual object"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV008",
+    "prediction": "+",
+    "rationale": "Knobs could stabilise the object as a stand"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV008",
+    "prediction": "+",
+    "rationale": "Knobs could serve as yarn guides or anchors"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV008",
+    "prediction": "0",
+    "rationale": "Knob diameter not relevant to astronomical use"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV008",
+    "prediction": "0",
+    "rationale": "Knob diameter not relevant to military function"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV008",
+    "prediction": "+",
+    "rationale": "Decorative knobs are consistent with a prestige shrine object"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV009",
+    "prediction": "++",
+    "rationale": "Symmetric knobs ensure isotropic structural behaviour under load"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV009",
+    "prediction": "+",
+    "rationale": "Symmetric knobs support balanced orientation for measuring"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV009",
+    "prediction": "+",
+    "rationale": "Symmetric form enhances aesthetic and ritual value"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV009",
+    "prediction": "+",
+    "rationale": "Symmetry ensures stable resting position"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV009",
+    "prediction": "0",
+    "rationale": "Knob symmetry not required for textile use"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV009",
+    "prediction": "++",
+    "rationale": "Symmetric knobs allow any face to serve as reference plane for sighting"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV009",
+    "prediction": "0",
+    "rationale": "Knob symmetry not required for military use"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV009",
+    "prediction": "+",
+    "rationale": "Symmetric form is aesthetically expected for a shrine component"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV010",
+    "prediction": "+",
+    "rationale": "Regular faces ensure consistent load distribution across connections"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV010",
+    "prediction": "++",
+    "rationale": "Precision instrument requires accurate, regular geometry"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV010",
+    "prediction": "0",
+    "rationale": "Face symmetry is not required for ritual use"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV010",
+    "prediction": "0",
+    "rationale": "Face symmetry not required for candle use"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV010",
+    "prediction": "0",
+    "rationale": "Face symmetry not required for textile use"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV010",
+    "prediction": "++",
+    "rationale": "Accurate geometric form required for reliable astronomical sighting"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV010",
+    "prediction": "0",
+    "rationale": "Face symmetry not required for military use"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV010",
+    "prediction": "0",
+    "rationale": "Face symmetry not required for shrine use"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV011",
+    "prediction": "+",
+    "rationale": "High-tin bronze is harder and stronger; appropriate for a load-bearing node"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV011",
+    "prediction": "0",
+    "rationale": "Alloy composition not diagnostic for measuring function"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV011",
+    "prediction": "+",
+    "rationale": "High-quality alloy is consistent with prestige ritual object"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV011",
+    "prediction": "0",
+    "rationale": "Alloy composition not diagnostic for candle function"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV011",
+    "prediction": "0",
+    "rationale": "Alloy composition not diagnostic for textile function"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV011",
+    "prediction": "0",
+    "rationale": "Alloy composition not diagnostic for astronomical use"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV011",
+    "prediction": "+",
+    "rationale": "Military equipment uses durable, high-quality alloys"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV011",
+    "prediction": "+",
+    "rationale": "Prestige material is consistent with shrine component"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV012",
+    "prediction": "+",
+    "rationale": "Structural integrity requires high casting quality"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV012",
+    "prediction": "++",
+    "rationale": "Precision measuring instrument requires high casting quality"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV012",
+    "prediction": "+",
+    "rationale": "Prestige ritual object expected to be well-cast"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV012",
+    "prediction": "0",
+    "rationale": "Casting quality not strongly required for candle function"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV012",
+    "prediction": "0",
+    "rationale": "Casting quality not strongly required for textile function"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV012",
+    "prediction": "++",
+    "rationale": "Astronomical instrument requires precise casting"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV012",
+    "prediction": "+",
+    "rationale": "Military equipment benefits from high quality"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV012",
+    "prediction": "+",
+    "rationale": "Prestige shrine component expected to be well-cast"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV013",
+    "prediction": "-",
+    "rationale": "Casting defects reduce structural integrity of a connector"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV013",
+    "prediction": "--",
+    "rationale": "Any casting defect would invalidate measuring precision"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV013",
+    "prediction": "0",
+    "rationale": "Minor defects are acceptable in ritual objects"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV013",
+    "prediction": "0",
+    "rationale": "Minor defects do not affect candle-holding function"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV013",
+    "prediction": "0",
+    "rationale": "Minor defects do not affect textile function"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV013",
+    "prediction": "--",
+    "rationale": "Casting defects in sighting holes would invalidate astronomical use"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV013",
+    "prediction": "-",
+    "rationale": "Defects reduce military equipment reliability"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV013",
+    "prediction": "0",
+    "rationale": "Minor defects are acceptable in a shrine component"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV014",
+    "prediction": "0",
+    "rationale": "Surface finishing not required for structural function"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV014",
+    "prediction": "+",
+    "rationale": "Smooth finish reduces manufacturing tolerance errors in gauging"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV014",
+    "prediction": "+",
+    "rationale": "Fine surface finish expected on prestige ritual objects"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV014",
+    "prediction": "0",
+    "rationale": "Surface finish not required for candle function"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV014",
+    "prediction": "+",
+    "rationale": "Smooth finish reduces yarn friction and wear"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV014",
+    "prediction": "+",
+    "rationale": "Smooth finish reduces sighting error"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV014",
+    "prediction": "0",
+    "rationale": "Surface finish not diagnostic for military function"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV014",
+    "prediction": "+",
+    "rationale": "Fine finish expected on prestige shrine component"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV015",
+    "prediction": "+",
+    "rationale": "A valued functional connector would be repaired rather than discarded"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV015",
+    "prediction": "+",
+    "rationale": "A precision measuring tool would be repaired to preserve function"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV015",
+    "prediction": "+",
+    "rationale": "A valuable ritual object would be repaired"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV015",
+    "prediction": "0",
+    "rationale": "Candle holders are not typically repaired"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV015",
+    "prediction": "+",
+    "rationale": "A working tool would be repaired to extend use-life"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV015",
+    "prediction": "+",
+    "rationale": "A precision instrument would be repaired"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV015",
+    "prediction": "+",
+    "rationale": "Military equipment is repaired in the field"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV015",
+    "prediction": "+",
+    "rationale": "A valued shrine component would be repaired"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV016",
+    "prediction": "+",
+    "rationale": "Secondary machining of holes refines rod fit in a structural connector"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV016",
+    "prediction": "++",
+    "rationale": "Lathe-turned or drilled holes are expected for measuring precision"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV016",
+    "prediction": "0",
+    "rationale": "Post-casting machining not required for ritual function"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV016",
+    "prediction": "0",
+    "rationale": "Post-casting machining not required for candle function"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV016",
+    "prediction": "0",
+    "rationale": "Post-casting machining not diagnostic for textile use"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV016",
+    "prediction": "++",
+    "rationale": "Precise sighting holes require secondary machining"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV016",
+    "prediction": "0",
+    "rationale": "Post-casting machining not diagnostic for military use"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV016",
+    "prediction": "0",
+    "rationale": "Post-casting machining not diagnostic for shrine use"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV017",
+    "prediction": "++",
+    "rationale": "Repeated rod insertion and removal produces diagnostic wear inside holes"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV017",
+    "prediction": "+",
+    "rationale": "Gauge use produces wear inside holes from objects being measured"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV017",
+    "prediction": "-",
+    "rationale": "Ritual object with minimal use would show little internal wear"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV017",
+    "prediction": "+",
+    "rationale": "Candle insertion and removal produces internal wear"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV017",
+    "prediction": "++",
+    "rationale": "Yarn passing continuously through holes produces strong internal wear"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV017",
+    "prediction": "0",
+    "rationale": "Astronomical sighting produces no internal wear"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV017",
+    "prediction": "0",
+    "rationale": "Military function does not predict internal hole wear"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV017",
+    "prediction": "-",
+    "rationale": "Shrine component with minimal handling shows little internal wear"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV018",
+    "prediction": "+",
+    "rationale": "Construction use produces external handling wear"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV018",
+    "prediction": "0",
+    "rationale": "External wear not diagnostic for measuring function"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV018",
+    "prediction": "-",
+    "rationale": "Ritual objects are typically handled carefully; low external wear expected"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV018",
+    "prediction": "0",
+    "rationale": "External wear not diagnostic for candle function"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV018",
+    "prediction": "+",
+    "rationale": "Textile tool in regular use shows external wear from handling"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV018",
+    "prediction": "0",
+    "rationale": "External wear not diagnostic for astronomical use"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV018",
+    "prediction": "+",
+    "rationale": "Military equipment in active use shows external wear"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV018",
+    "prediction": "-",
+    "rationale": "Shrine component handled carefully; low external wear expected"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV019",
+    "prediction": "++",
+    "rationale": "Ropes routed through holes or over knobs in a connector produce strong groove wear"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV019",
+    "prediction": "-",
+    "rationale": "Rope wear would not result from measuring use"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV019",
+    "prediction": "0",
+    "rationale": "Rope wear could occur from suspension in ritual contexts"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV019",
+    "prediction": "0",
+    "rationale": "Rope wear is not expected for candle use"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV019",
+    "prediction": "+",
+    "rationale": "Yarn routing over knobs or through holes could produce rope-like wear"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV019",
+    "prediction": "-",
+    "rationale": "Rope wear is not expected from astronomical use"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV019",
+    "prediction": "0",
+    "rationale": "Military use might involve rope but not diagnostically"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV019",
+    "prediction": "0",
+    "rationale": "Shrine component might be suspended by rope but not diagnostically"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV020",
+    "prediction": "-",
+    "rationale": "A structural node is not expected to rotate in service"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV020",
+    "prediction": "-",
+    "rationale": "A measuring instrument is not expected to rotate"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV020",
+    "prediction": "0",
+    "rationale": "Rotational wear could result from spinning ritual use"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV020",
+    "prediction": "+",
+    "rationale": "A candle stand might be rotated for candle adjustment"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV020",
+    "prediction": "+",
+    "rationale": "Textile use could involve rotation of the tool"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV020",
+    "prediction": "0",
+    "rationale": "Astronomical use does not involve continuous rotation"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV020",
+    "prediction": "0",
+    "rationale": "Military use does not predict rotational wear"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV020",
+    "prediction": "0",
+    "rationale": "Shrine use does not predict rotational wear"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV021",
+    "prediction": "+",
+    "rationale": "Construction-site use exposes connector to accidental impacts"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV021",
+    "prediction": "-",
+    "rationale": "A precision measuring tool would be protected from impacts"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV021",
+    "prediction": "-",
+    "rationale": "Ritual object protected from impacts"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV021",
+    "prediction": "0",
+    "rationale": "Candle stand could sustain minor impacts"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV021",
+    "prediction": "0",
+    "rationale": "Textile tool not expected to sustain significant impacts"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV021",
+    "prediction": "-",
+    "rationale": "Precision instrument protected from impacts"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV021",
+    "prediction": "+",
+    "rationale": "Military use in field conditions could produce impact damage"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV021",
+    "prediction": "-",
+    "rationale": "Shrine component protected from impacts"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV022",
+    "prediction": "+",
+    "rationale": "Construction use produces surface abrasion"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV022",
+    "prediction": "0",
+    "rationale": "Abrasion not diagnostic for measuring use"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV022",
+    "prediction": "-",
+    "rationale": "Ritual object not expected to show significant abrasion"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV022",
+    "prediction": "0",
+    "rationale": "Abrasion not diagnostic for candle function"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV022",
+    "prediction": "+",
+    "rationale": "Textile tool in regular use sustains abrasion"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV022",
+    "prediction": "0",
+    "rationale": "Abrasion not diagnostic for astronomical use"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV022",
+    "prediction": "+",
+    "rationale": "Military equipment in field use sustains abrasion"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV022",
+    "prediction": "-",
+    "rationale": "Shrine component not expected to show significant abrasion"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV023",
+    "prediction": "--",
+    "rationale": "Structural connector is not exposed to heat; thermal alteration is contradictory"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV023",
+    "prediction": "--",
+    "rationale": "Measuring instrument would be ruined by thermal alteration"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV023",
+    "prediction": "+",
+    "rationale": "Ritual use may involve fire, incense or heat"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV023",
+    "prediction": "++",
+    "rationale": "Candle holder is in direct contact with flame; soot and wax strongly expected"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV023",
+    "prediction": "--",
+    "rationale": "Textile tool is not exposed to heat; thermal alteration is contradictory"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV023",
+    "prediction": "--",
+    "rationale": "Astronomical instrument not exposed to heat"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV023",
+    "prediction": "-",
+    "rationale": "Military equipment not normally exposed to sustained heat"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV023",
+    "prediction": "+",
+    "rationale": "Shrine component may be associated with ritual fire or candles"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV024",
+    "prediction": "0",
+    "rationale": "Structural connector does not produce diagnostic chemical residues"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV024",
+    "prediction": "0",
+    "rationale": "Measuring use does not produce diagnostic residues"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV024",
+    "prediction": "+",
+    "rationale": "Ritual use may leave incense, oil or other organic residues"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV024",
+    "prediction": "++",
+    "rationale": "Wax residues from candles are strongly expected"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV024",
+    "prediction": "+",
+    "rationale": "Wool grease and fibre residues may survive in holes"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV024",
+    "prediction": "0",
+    "rationale": "Astronomical use does not produce diagnostic residues"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV024",
+    "prediction": "0",
+    "rationale": "Military use does not produce diagnostic chemical residues"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV024",
+    "prediction": "+",
+    "rationale": "Ritual oils or incense residues may be present"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV025",
+    "prediction": "+",
+    "rationale": "Structural connector expected at construction or settlement sites"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV025",
+    "prediction": "0",
+    "rationale": "Measuring instrument could appear at any site type"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV025",
+    "prediction": "+",
+    "rationale": "Ritual object expected at temples, hoards, or votive deposits"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV025",
+    "prediction": "+",
+    "rationale": "Candle holder expected at domestic or villa sites"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV025",
+    "prediction": "+",
+    "rationale": "Textile tool expected at domestic, villa, or civilian settlement sites"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV025",
+    "prediction": "+",
+    "rationale": "Astronomical instrument expected at high-status or administrative sites"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV025",
+    "prediction": "++",
+    "rationale": "Military equipment strongly expected at forts and military sites"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV025",
+    "prediction": "+",
+    "rationale": "Shrine component expected at domestic or religious sites"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV026",
+    "prediction": "0",
+    "rationale": "Structural connectors could appear across the empire; province is not diagnostic"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV026",
+    "prediction": "0",
+    "rationale": "Measuring instruments could appear across the empire"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV026",
+    "prediction": "0",
+    "rationale": "Ritual objects are not geographically constrained"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV026",
+    "prediction": "0",
+    "rationale": "Candle holders are not geographically constrained"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV026",
+    "prediction": "+",
+    "rationale": "North-western provinces had distinct textile traditions; some distribution clustering possible"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV026",
+    "prediction": "0",
+    "rationale": "Astronomical instruments not geographically constrained"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV026",
+    "prediction": "+",
+    "rationale": "Military frontier provinces (Rhine, Danube, Britain) would concentrate military equipment"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV026",
+    "prediction": "0",
+    "rationale": "Shrine components not geographically constrained"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV027",
+    "prediction": "+",
+    "rationale": "Associated construction materials or structural components would support this hypothesis"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV027",
+    "prediction": "+",
+    "rationale": "Associated measuring instruments or surveying tools would support this hypothesis"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV027",
+    "prediction": "++",
+    "rationale": "Associated votive objects, coins, or ritual deposits would strongly support this"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV027",
+    "prediction": "+",
+    "rationale": "Associated lighting equipment would support candle use"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV027",
+    "prediction": "++",
+    "rationale": "Associated spindle whorls, needles, loom weights, or fibre remains strongly support textile use"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV027",
+    "prediction": "+",
+    "rationale": "Associated astronomical or mathematical instruments would support this hypothesis"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV027",
+    "prediction": "++",
+    "rationale": "Associated weapons, armour, or military equipment would strongly support this"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV027",
+    "prediction": "++",
+    "rationale": "Associated religious objects, shrine fittings, or cult items strongly support this"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV028",
+    "prediction": "0",
+    "rationale": "Stratigraphic context is not strongly diagnostic for structural use"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV028",
+    "prediction": "0",
+    "rationale": "Stratigraphic context is not strongly diagnostic for measuring use"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV028",
+    "prediction": "+",
+    "rationale": "Votive deposit or destruction layer stratigraphy supports ritual use"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV028",
+    "prediction": "0",
+    "rationale": "Stratigraphic context is not strongly diagnostic for candle use"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV028",
+    "prediction": "0",
+    "rationale": "Stratigraphic context is not strongly diagnostic for textile use"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV028",
+    "prediction": "0",
+    "rationale": "Stratigraphic context is not strongly diagnostic for astronomical use"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV028",
+    "prediction": "+",
+    "rationale": "Military occupation or destruction layer stratigraphy supports military use"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV028",
+    "prediction": "+",
+    "rationale": "Stratigraphic context near hearth or storage supports domestic shrine use"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV029",
+    "prediction": "0",
+    "rationale": "2nd–4th c. date is consistent with peak of Roman construction; not strongly diagnostic"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV029",
+    "prediction": "0",
+    "rationale": "2nd–4th c. date is not strongly diagnostic for measuring use"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV029",
+    "prediction": "0",
+    "rationale": "2nd–4th c. ritual use is not strongly diagnostic"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV029",
+    "prediction": "0",
+    "rationale": "2nd–4th c. date is not strongly diagnostic for candle use"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV029",
+    "prediction": "0",
+    "rationale": "2nd–4th c. date is not strongly diagnostic for textile use"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV029",
+    "prediction": "0",
+    "rationale": "2nd–4th c. date is not strongly diagnostic for astronomical use"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV029",
+    "prediction": "+",
+    "rationale": "2nd–4th c. is the peak of Roman military presence on northern frontier"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV029",
+    "prediction": "0",
+    "rationale": "2nd–4th c. date is not strongly diagnostic for shrine use"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV030",
+    "prediction": "++",
+    "rationale": "Multiple connectors at one site strongly support a structural system using many nodes"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV030",
+    "prediction": "+",
+    "rationale": "Multiple measuring instruments suggest a standardised tool set"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV030",
+    "prediction": "0",
+    "rationale": "Single or multiple ritual objects are equally plausible"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV030",
+    "prediction": "0",
+    "rationale": "Single or multiple candle holders are equally plausible"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV030",
+    "prediction": "+",
+    "rationale": "Multiple textile tools could indicate workshop context"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV030",
+    "prediction": "0",
+    "rationale": "Single astronomical instrument is expected; multiples are unusual"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV030",
+    "prediction": "+",
+    "rationale": "Multiple identical items suggest military standardised equipment"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV030",
+    "prediction": "0",
+    "rationale": "Single shrine component is the most expected situation"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV031",
+    "prediction": "+",
+    "rationale": "Military construction would use structural connectors"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV031",
+    "prediction": "+",
+    "rationale": "Military surveying uses measuring instruments"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV031",
+    "prediction": "0",
+    "rationale": "Military personnel also engaged in ritual; not strongly diagnostic"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV031",
+    "prediction": "0",
+    "rationale": "Candles were used in military contexts; not strongly diagnostic"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV031",
+    "prediction": "0",
+    "rationale": "Soldiers also engaged in textile work; not strongly diagnostic"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV031",
+    "prediction": "+",
+    "rationale": "Military surveying and artillery used astronomical/geometric instruments"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV031",
+    "prediction": "++",
+    "rationale": "Direct military association is a strong predictor for military equipment"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV031",
+    "prediction": "0",
+    "rationale": "Military shrine use is possible but not distinctive"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV032",
+    "prediction": "-",
+    "rationale": "Ritual context is not expected for a utilitarian structural connector"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV032",
+    "prediction": "-",
+    "rationale": "Ritual context is not expected for a utilitarian measuring instrument"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV032",
+    "prediction": "++",
+    "rationale": "Direct ritual association is the strongest predictor for a ritual object"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV032",
+    "prediction": "+",
+    "rationale": "Candles have ritual uses; some association possible"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV032",
+    "prediction": "-",
+    "rationale": "Textile tools are not typically associated with ritual deposits"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV032",
+    "prediction": "0",
+    "rationale": "Astronomical instruments could be used in ritual contexts"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV032",
+    "prediction": "0",
+    "rationale": "Military objects can be ritually deposited"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV032",
+    "prediction": "++",
+    "rationale": "Direct ritual association is the strongest predictor for a shrine component"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV033",
+    "prediction": "++",
+    "rationale": "Rod compatibility is a prerequisite for the structural connector hypothesis"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV033",
+    "prediction": "+",
+    "rationale": "Rods of known diameter could serve as reference objects for measuring"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV033",
+    "prediction": "0",
+    "rationale": "Ritual objects are not required to accept rods"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV033",
+    "prediction": "+",
+    "rationale": "Candles are effectively cylindrical rods; compatibility expected"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV033",
+    "prediction": "+",
+    "rationale": "Knitting needles or rods could be inserted for textile use"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV033",
+    "prediction": "0",
+    "rationale": "Astronomical sighting does not require rod insertion"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV033",
+    "prediction": "0",
+    "rationale": "Military function does not specifically require rod compatibility"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV033",
+    "prediction": "0",
+    "rationale": "Shrine use does not require rod insertion"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV034",
+    "prediction": "++",
+    "rationale": "Rope routing through holes or over knobs is a core prediction of the connector hypothesis"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV034",
+    "prediction": "-",
+    "rationale": "Rope compatibility is not required for measuring function"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV034",
+    "prediction": "0",
+    "rationale": "Ritual objects can be suspended but rope routing is not diagnostic"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV034",
+    "prediction": "-",
+    "rationale": "Rope routing is not expected for candle use"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV034",
+    "prediction": "+",
+    "rationale": "Yarn (a form of rope) routing through holes is expected for textile use"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV034",
+    "prediction": "-",
+    "rationale": "Rope routing is not expected for astronomical use"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV034",
+    "prediction": "0",
+    "rationale": "Rope use with military equipment is possible but not diagnostic"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV034",
+    "prediction": "0",
+    "rationale": "Rope suspension of shrine component is possible but not diagnostic"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV035",
+    "prediction": "++",
+    "rationale": "Structural stability under load is a core requirement of a connector/node"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV035",
+    "prediction": "0",
+    "rationale": "Structural stability is not required for measuring function"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV035",
+    "prediction": "0",
+    "rationale": "Ritual object does not require structural load-bearing capability"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV035",
+    "prediction": "+",
+    "rationale": "A candle stand requires stability to prevent toppling"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV035",
+    "prediction": "0",
+    "rationale": "Textile tool does not require structural load-bearing capability"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV035",
+    "prediction": "0",
+    "rationale": "Astronomical instrument does not require structural stability under load"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV035",
+    "prediction": "0",
+    "rationale": "Military function does not require structural stability under load"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV035",
+    "prediction": "0",
+    "rationale": "Shrine component does not require structural stability under load"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV036",
+    "prediction": "++",
+    "rationale": "Plausible force paths through the dodecahedron are required for a structural node"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV036",
+    "prediction": "0",
+    "rationale": "Load transfer is not relevant to measuring function"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV036",
+    "prediction": "0",
+    "rationale": "Load transfer is not relevant to ritual use"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV036",
+    "prediction": "0",
+    "rationale": "Load transfer not relevant beyond simple candle weight"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV036",
+    "prediction": "0",
+    "rationale": "Load transfer not relevant to textile function"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV036",
+    "prediction": "0",
+    "rationale": "Load transfer not relevant to astronomical use"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV036",
+    "prediction": "0",
+    "rationale": "Load transfer not specifically relevant to military function"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV036",
+    "prediction": "0",
+    "rationale": "Load transfer not relevant to shrine function"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV037",
+    "prediction": "++",
+    "rationale": "Modular assembly of multiple specimens into a larger structure is the core prediction"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV037",
+    "prediction": "0",
+    "rationale": "Assembly into larger structures is not required for measuring function"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV037",
+    "prediction": "0",
+    "rationale": "Assembly is not required for ritual function"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV037",
+    "prediction": "0",
+    "rationale": "Assembly into candle arrays is possible but not predicted"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV037",
+    "prediction": "0",
+    "rationale": "Assembly not required for textile function"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV037",
+    "prediction": "0",
+    "rationale": "Assembly not required for astronomical function"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV037",
+    "prediction": "0",
+    "rationale": "Assembly not required for military function"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV037",
+    "prediction": "0",
+    "rationale": "Assembly not required for shrine function"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV038",
+    "prediction": "-",
+    "rationale": "An isotropic connector works in any orientation; orientation dependence is unexpected"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV038",
+    "prediction": "++",
+    "rationale": "Measuring function requires consistent orientation relative to the object being measured"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV038",
+    "prediction": "0",
+    "rationale": "Ritual use could require specific orientation or be orientation-independent"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV038",
+    "prediction": "++",
+    "rationale": "Candle holder must remain upright; strong orientation dependence expected"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV038",
+    "prediction": "0",
+    "rationale": "Textile tool orientation is flexible"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV038",
+    "prediction": "++",
+    "rationale": "Astronomical sighting requires precise and repeatable orientation"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV038",
+    "prediction": "0",
+    "rationale": "Military use does not specifically require fixed orientation"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV038",
+    "prediction": "+",
+    "rationale": "Shrine components are often displayed in a specific orientation"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV039",
+    "prediction": "+",
+    "rationale": "A modular structural system benefits from standardised components"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV039",
+    "prediction": "++",
+    "rationale": "A measuring instrument must be standardised to produce reproducible results"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV039",
+    "prediction": "0",
+    "rationale": "Ritual objects vary widely; standardisation is not expected"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV039",
+    "prediction": "0",
+    "rationale": "Candle holders are not required to be standardised"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV039",
+    "prediction": "+",
+    "rationale": "Standardised textile tools produce consistent yarn gauges"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV039",
+    "prediction": "++",
+    "rationale": "Astronomical instruments must be standardised to produce reliable results"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV039",
+    "prediction": "+",
+    "rationale": "Military equipment is typically standardised for logistics"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV039",
+    "prediction": "0",
+    "rationale": "Shrine components are not required to be standardised"
+  },
+  {
+    "hypothesis_id": "H001",
+    "ev_id": "EV040",
+    "prediction": "-",
+    "rationale": "A universal structural system should show low regional variation"
+  },
+  {
+    "hypothesis_id": "H002",
+    "ev_id": "EV040",
+    "prediction": "-",
+    "rationale": "A universal measuring standard should show low regional variation"
+  },
+  {
+    "hypothesis_id": "H003",
+    "ev_id": "EV040",
+    "prediction": "+",
+    "rationale": "Regional cult traditions would produce regional variation in ritual objects"
+  },
+  {
+    "hypothesis_id": "H004",
+    "ev_id": "EV040",
+    "prediction": "0",
+    "rationale": "Regional variation in candle holders is plausible"
+  },
+  {
+    "hypothesis_id": "H005",
+    "ev_id": "EV040",
+    "prediction": "+",
+    "rationale": "Regional textile traditions could produce variation in tool design"
+  },
+  {
+    "hypothesis_id": "H006",
+    "ev_id": "EV040",
+    "prediction": "-",
+    "rationale": "Astronomical phenomena are universal; regional variation is unexpected"
+  },
+  {
+    "hypothesis_id": "H007",
+    "ev_id": "EV040",
+    "prediction": "+",
+    "rationale": "Regional military traditions could produce variation in equipment design"
+  },
+  {
+    "hypothesis_id": "H008",
+    "ev_id": "EV040",
+    "prediction": "+",
+    "rationale": "Regional shrine traditions could produce variation in component design"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV001",
+    "prediction": "+",
+    "rationale": "A hub must be large enough for several rafter ends to converge without fouling, and small enough to carry on campaign"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV002",
+    "prediction": "-",
+    "rationale": "Campaign equipment is transported by mule or on the march; a shelter fitting is under constant pressure to be light. Specific expectation: well under 150 g"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV003",
+    "prediction": "++",
+    "rationale": "The hub is the single point through which rafter compression and fabric tension pass. Wall thickness is the whole of its strength. Specific expectation: substantially over 3 mm"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV004",
+    "prediction": "-",
+    "rationale": "Rafters of a symmetrical tent are cut to one diameter, so their sockets should be interchangeable; systematically varying sockets are not what the function calls for"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV005",
+    "prediction": "+",
+    "rationale": "If a central mast passes through the hub, one opposed pair must match its diameter at both ends"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV006",
+    "prediction": "++",
+    "rationale": "A pole must seat squarely and withdraw without binding, which requires a clean cylindrical or gently tapered socket"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV007",
+    "prediction": "+",
+    "rationale": "Chamfered edges ease repeated insertion and stop the rim shaving the pole end"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV008",
+    "prediction": "0",
+    "rationale": "The function does not call for knobs; they are neither required nor excluded by it"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV009",
+    "prediction": "0",
+    "rationale": "Knob placement is not constrained by the function"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV010",
+    "prediction": "++",
+    "rationale": "A hub that distributes load to rafters at equal angles must itself be geometrically regular, or the tent is pulled out of true"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV011",
+    "prediction": "++",
+    "rationale": "A load-bearing fitting needs a hard, strong alloy. A high-lead casting alloy creeps and deforms under sustained load and would be the wrong choice. Specific expectation: high-tin, low-lead bronze"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV012",
+    "prediction": "+",
+    "rationale": "Sound casting matters where the object is structural"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV013",
+    "prediction": "--",
+    "rationale": "Voids, seams and miscasts sit directly in the load path of a hub and are a failure risk; they should have been rejected at manufacture"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV014",
+    "prediction": "0",
+    "rationale": "Surface finish is irrelevant to a fitting hidden at the top of a tent"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV015",
+    "prediction": "++",
+    "rationale": "Equipment in continuous field use is repaired rather than discarded; a campaign fitting should show ancient repairs"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV016",
+    "prediction": "0",
+    "rationale": "Secondary machining is not required by the function"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV017",
+    "prediction": "++",
+    "rationale": "THE CENTRAL PREDICTION OF A MOBILE FITTING. Poles are driven in and withdrawn every time camp is struck. Repeated hardwood-on-bronze contact inside the sockets must leave wear"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV018",
+    "prediction": "++",
+    "rationale": "Struck, bundled, loaded and unloaded at every move; abrasion in transport is unavoidable"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV019",
+    "prediction": "++",
+    "rationale": "Guy lines bearing on the body under tension leave grooves or polish"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV020",
+    "prediction": "0",
+    "rationale": "Nothing in the function requires the hub to rotate"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV021",
+    "prediction": "+",
+    "rationale": "Field equipment is dropped and knocked; impact damage is expected"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV022",
+    "prediction": "+",
+    "rationale": "Abrasion follows from packing and transport"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV023",
+    "prediction": "0",
+    "rationale": "A tent hub has no relation to heat or flame"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV024",
+    "prediction": "+",
+    "rationale": "Contact with leather, tallow or fabric dressing should leave organic traces in the sockets"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV025",
+    "prediction": "++",
+    "rationale": "Tents belong to armies and travelling parties. Specific expectation: military camps, marching camps and temporary sites should dominate, and permanent civilian settlement should be marginal"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV026",
+    "prediction": "--",
+    "rationale": "Tents accompany the army wherever it goes. Specific expectation: finds across the whole campaigning empire, including Italy, Spain, Africa and the eastern provinces. A distribution confined to a few adjacent north-western provinces would falsify the hypothesis. The form of this argument is not original: PUB-0003, 33 deploys it against a primary military purpose, citing the mobility of Roman soldiers"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV027",
+    "prediction": "++",
+    "rationale": "Specific expectation: association with tent pegs, pole shoes, leather, and military or travelling equipment"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV028",
+    "prediction": "+",
+    "rationale": "Temporary camp surfaces and abandonment layers are where a lost tent fitting would come to rest"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV029",
+    "prediction": "-",
+    "rationale": "The Roman army used leather tents from the late Republic onward. A fitting for them should appear across the imperial period rather than in a narrow late window"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV030",
+    "prediction": "++",
+    "rationale": "A camp holds hundreds of tents. Multiple hubs at one site are strongly expected, and the total surviving population should be large"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV031",
+    "prediction": "++",
+    "rationale": "Direct military association is the core contextual claim"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV032",
+    "prediction": "--",
+    "rationale": "A shelter fitting has no business in temple deposits, graves or rivers; ritual association would count against it"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV033",
+    "prediction": "++",
+    "rationale": "Rafters or a mast must seat in the openings; rod compatibility is a prerequisite"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV034",
+    "prediction": "++",
+    "rationale": "Guy lines must be attachable to or routable through the fitting"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV035",
+    "prediction": "++",
+    "rationale": "The hub must hold its shape under the combined thrust of the rafters"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV036",
+    "prediction": "++",
+    "rationale": "Force must pass from each rafter through the body to the others; plausible load paths are required"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV037",
+    "prediction": "0",
+    "rationale": "One hub serves one tent; assembly of multiple dodecahedra into a larger structure is not part of this hypothesis. This is what separates H009 from H001"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV038",
+    "prediction": "++",
+    "rationale": "A tent apex has a definite top and bottom and a defined axis; the fitting must be orientable"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV039",
+    "prediction": "++",
+    "rationale": "Issued equipment is standardised so that any rafter fits any hub and damaged parts can be swapped in the field"
+  },
+  {
+    "hypothesis_id": "H009",
+    "ev_id": "EV040",
+    "prediction": "--",
+    "rationale": "Army equipment is uniform across the provinces; strong regional variation would indicate local craft production rather than issue"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV001",
+    "prediction": "+",
+    "rationale": "The crown of a hand-carried canopy must be small; anything larger than a fist becomes unwieldy at the top of a shaft"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV002",
+    "prediction": "--",
+    "rationale": "Mass at the crown sits at the far end of a lever held at arm's length, so every gram is multiplied. A hand-carried shade is under severe pressure to be light. Specific expectation: well under 100 g"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV003",
+    "prediction": "-",
+    "rationale": "Canopy loads are fabric weight and wind only. Heavy walls buy nothing and cost weight where weight matters most; thin walls are expected"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV004",
+    "prediction": "--",
+    "rationale": "THE CENTRAL PREDICTION AGAINST THIS HYPOTHESIS. The ribs of a radially symmetrical canopy are identical, so their sockets must be identical. Sockets of systematically differing diameter would mean ribs of differing thickness, and the canopy would pull unevenly and hang askew"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV005",
+    "prediction": "++",
+    "rationale": "A shaft passing through the crown requires one opposed pair matched to its diameter at both ends"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV006",
+    "prediction": "++",
+    "rationale": "Rib ends must seat cleanly and squarely in their sockets"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV007",
+    "prediction": "++",
+    "rationale": "Ribs bear and flex against the socket rim; a sharp edge would cut into wooden or cane ribs at the point of highest stress"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV008",
+    "prediction": "-",
+    "rationale": "Projections at every vertex sit directly under the canopy fabric drawn over the crown and would chafe and tear it"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV009",
+    "prediction": "0",
+    "rationale": "Knob placement is not constrained by the function"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV010",
+    "prediction": "++",
+    "rationale": "Radial symmetry of the canopy requires a regular hub; an irregular crown produces an irregular canopy"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV011",
+    "prediction": "0",
+    "rationale": "The fitting is not load-critical, so alloy choice is not diagnostic"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV012",
+    "prediction": "+",
+    "rationale": "A visible fitting on a status accessory is expected to be well cast"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV013",
+    "prediction": "-",
+    "rationale": "Visible casting flaws on a display object would be rejected"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV014",
+    "prediction": "++",
+    "rationale": "The crown is the most visible part of an object carried above head height; fine finish and decoration are strongly expected"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV015",
+    "prediction": "+",
+    "rationale": "A valued personal possession is repaired rather than discarded"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV016",
+    "prediction": "+",
+    "rationale": "Decorative secondary working is expected on a display fitting"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV017",
+    "prediction": "++",
+    "rationale": "Ribs seat, bear and, if the shade folds or is dismantled for storage, move within the sockets. Wood against bronze at the load points must leave wear"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV018",
+    "prediction": "+",
+    "rationale": "Carried, handled and stored; surface contact is constant"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV019",
+    "prediction": "+",
+    "rationale": "Stretcher cords or a tie holding the canopy furled bear on the fitting"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV020",
+    "prediction": "+",
+    "rationale": "A shade is turned on its shaft to follow the sun"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV021",
+    "prediction": "0",
+    "rationale": "Impact damage is not specifically predicted"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV022",
+    "prediction": "+",
+    "rationale": "Fabric drawn repeatedly over the crown abrades it"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV023",
+    "prediction": "--",
+    "rationale": "Nothing in the function of a shade involves heat, flame or wax"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV024",
+    "prediction": "+",
+    "rationale": "Textile or leather fibres and canopy dressing should remain in the sockets and under the rim"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV025",
+    "prediction": "++",
+    "rationale": "Specific expectation: urban civilian settlements and elite domestic contexts, where a personal luxury accessory is used and lost. NOT military camps"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV026",
+    "prediction": "-",
+    "rationale": "A sunshade is most useful where the sun is strongest, so a sun-shade reading predicts finds concentrated in Italy, Spain, Africa and the eastern provinces. AGAINST THIS: a rain shade predicts the opposite, and the north-western provinces are wet. Set at '-' rather than '--' because the two readings of the same object point in opposite directions and the hypothesis does not choose between them"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV027",
+    "prediction": "++",
+    "rationale": "Specific expectation: a shaft or handle, ribs of wood, cane, bone or metal, textile or leather from the canopy, and personal or toilet items"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV028",
+    "prediction": "0",
+    "rationale": "No particular stratigraphy follows from the function"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV029",
+    "prediction": "0",
+    "rationale": "Shades are attested across the imperial period; no narrow window is predicted"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV030",
+    "prediction": "-",
+    "rationale": "A personal accessory is lost singly; concentrations at one site are not expected"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV031",
+    "prediction": "--",
+    "rationale": "A parasol is the antithesis of field equipment. A substantial share of finds from military camps counts against the hypothesis"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV032",
+    "prediction": "0",
+    "rationale": "A personal possession placed in a grave is ambiguous between ritual deposition and ordinary furnishing, so this is not diagnostic"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV033",
+    "prediction": "++",
+    "rationale": "Ribs and a shaft must seat in the openings; rod compatibility is a prerequisite"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV034",
+    "prediction": "+",
+    "rationale": "Stretcher cords or a furling tie must be attachable"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV035",
+    "prediction": "+",
+    "rationale": "The crown must hold its shape under modest canopy and wind load"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV036",
+    "prediction": "+",
+    "rationale": "Rib thrust must pass through the crown to the shaft"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV037",
+    "prediction": "0",
+    "rationale": "One crown serves one canopy; assembling several dodecahedra into a larger structure is no part of this hypothesis"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV038",
+    "prediction": "++",
+    "rationale": "A canopy crown has an unambiguous top, bottom and axis: the shaft below, the fabric above"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV039",
+    "prediction": "-",
+    "rationale": "A bespoke luxury accessory made by individual craftsmen need not conform to any standard, and variation between makers is expected. THIS IS WHERE H010 DIFFERS SHARPLY FROM H009: nothing about a parasol requires issued, interchangeable parts"
+  },
+  {
+    "hypothesis_id": "H010",
+    "ev_id": "EV040",
+    "prediction": "+",
+    "rationale": "Craft production of a fashion accessory varies by region and workshop"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV001",
+    "prediction": "+",
+    "rationale": "Must be held at arm's length and carried on the person; hand-sized"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV002",
+    "prediction": "-",
+    "rationale": "Carried on the body, probably on a cord, and raised repeatedly; light is better"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV003",
+    "prediction": "-",
+    "rationale": "A thick wall turns each aperture into a tube, which restricts the field of view and blurs the coincidence between near and far rims. A thin wall gives the crisp aperture edge the method depends on"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV004",
+    "prediction": "++",
+    "rationale": "Apertures of differing size ARE the instrument: each pair covers a different range bracket. Uniform holes would make the device useless"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV005",
+    "prediction": "++",
+    "rationale": "The user sights through a PAIR, so the relationship between the near and far aperture of each pair is the quantity being read. That relationship must be systematic and known across the six pairs, or the brackets do not form a usable series"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV006",
+    "prediction": "++",
+    "rationale": "A clean circular aperture is required for a crisp sight picture"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV007",
+    "prediction": "--",
+    "rationale": "Chamfers and rounded rims destroy the sharp edge the eye judges coincidence against"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV008",
+    "prediction": "+",
+    "rationale": "Knobs give a firm grip, keep the object from rolling, and protect the aperture rims on which the calibration depends"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV009",
+    "prediction": "0",
+    "rationale": "Knob placement is not constrained by the function"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV010",
+    "prediction": "++",
+    "rationale": "Range is computed from the separation of the two apertures, so the face-to-opposite-face distance is the instrument's baseline. It must be accurate and identical on every axis, or every reading carries an error"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV011",
+    "prediction": "0",
+    "rationale": "Alloy is not diagnostic for an optical device"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV012",
+    "prediction": "++",
+    "rationale": "A measuring instrument is only as good as its manufacture"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV013",
+    "prediction": "--",
+    "rationale": "Casting flaws on or near the apertures corrupt the calibration directly"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV014",
+    "prediction": "+",
+    "rationale": "Marking is expected on a graduated instrument"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV015",
+    "prediction": "+",
+    "rationale": "A calibrated personal instrument is worth repairing"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV016",
+    "prediction": "++",
+    "rationale": "Engraved rings around the apertures are exactly what a graduated instrument needs, whether as calibration marks or as an index of which pair is which"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV017",
+    "prediction": "-",
+    "rationale": "NOTHING PASSES THROUGH THE HOLES. An optical device predicts no internal wear, and its absence would count in favour of the hypothesis. This is the variable on which H011 differs most sharply from H001, H009 and H010"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV018",
+    "prediction": "+",
+    "rationale": "Carried and handled constantly in the field"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV019",
+    "prediction": "+",
+    "rationale": "Suspension on a cord or chain at the neck or belt bears on the object"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV020",
+    "prediction": "0",
+    "rationale": "Selecting a pair means turning the object in the hand, not rotating it on an axis; no rotational wear pattern is predicted"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV021",
+    "prediction": "+",
+    "rationale": "Field carriage means knocks"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV022",
+    "prediction": "+",
+    "rationale": "Handling and suspension abrade the surface"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV023",
+    "prediction": "--",
+    "rationale": "Nothing in optical ranging involves heat or flame"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV024",
+    "prediction": "--",
+    "rationale": "Any substance in the apertures would obstruct the sight line; the holes must be kept clear"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV025",
+    "prediction": "++",
+    "rationale": "Specific expectation: military camps, frontier posts and hunting or rural contexts, where archers operate. Urban civilian settlement is not where a ranging aid is used or lost"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV026",
+    "prediction": "--",
+    "rationale": "Archers served across the whole empire, and a device that genuinely improved shooting would spread with them. Confinement to a few adjacent north-western provinces would falsify the hypothesis"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV027",
+    "prediction": "++",
+    "rationale": "Specific expectation: arrowheads, bow fittings, quiver mounts, or other military or hunting equipment"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV028",
+    "prediction": "0",
+    "rationale": "No particular stratigraphy follows"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV029",
+    "prediction": "0",
+    "rationale": "Archery spans the imperial period; no narrow window is predicted"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV030",
+    "prediction": "+",
+    "rationale": "A unit of archers implies several devices at one site"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV031",
+    "prediction": "++",
+    "rationale": "Direct military association is the core contextual claim"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV032",
+    "prediction": "--",
+    "rationale": "A field instrument has no place in temple deposits, graves or rivers"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV033",
+    "prediction": "0",
+    "rationale": "Nothing is inserted; rod compatibility is neither required nor excluded"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV034",
+    "prediction": "+",
+    "rationale": "A suspension cord is expected"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV035",
+    "prediction": "0",
+    "rationale": "Structural load bearing is irrelevant"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV036",
+    "prediction": "0",
+    "rationale": "Load transfer is irrelevant"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV037",
+    "prediction": "0",
+    "rationale": "Assembly into larger structures is no part of this hypothesis"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV038",
+    "prediction": "++",
+    "rationale": "The device must be held in a known orientation with a known pair aligned to the eye; which pair is in use must be identifiable at a glance"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV039",
+    "prediction": "++",
+    "rationale": "A ranging device that is not calibrated returns wrong ranges. The aperture series must be regular within an object and reproducible between objects if the training is to transfer between archers"
+  },
+  {
+    "hypothesis_id": "H011",
+    "ev_id": "EV040",
+    "prediction": "-",
+    "rationale": "Strong regional variation would mean each device reads differently, and no transferable ranging practice could exist"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV001",
+    "prediction": "+",
+    "rationale": "Held in one hand and worked with the other; hand-sized"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV002",
+    "prediction": "+",
+    "rationale": "Mass steadies the frame against yarn tension while it is worked"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV003",
+    "prediction": "-",
+    "rationale": "The shell only has to carry the knobs. Yarn tension is trivial, so heavy walls buy nothing"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV004",
+    "prediction": "++",
+    "rationale": "Each opening sets the bore of the tube worked over the knobs around it. A graded set of openings is a graded set of tube diameters, which is the functional point of the object"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV005",
+    "prediction": "0",
+    "rationale": "Each face is worked on its own. NEUTRAL BECAUSE THE MECHANISM IS INDIFFERENT: no yarn passes from one face to its opposite, so what the opposite opening measures is irrelevant. This is the variable on which H001 and H011 lose heavily and H012 has no stake"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV006",
+    "prediction": "+",
+    "rationale": "The worked tube passes out through the opening; a clean profile avoids snagging"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV007",
+    "prediction": "++",
+    "rationale": "A rounded or bevelled lip is essential where yarn is drawn over the edge under tension. A sharp rim would cut it"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV008",
+    "prediction": "++",
+    "rationale": "Knob diameter and neck form ARE the working surface. Each must hold a loop and release it when lifted"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV009",
+    "prediction": "++",
+    "rationale": "The five knobs around a worked face must be uniform, or the stitches come out uneven"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV010",
+    "prediction": "0",
+    "rationale": "NEUTRAL BECAUSE THE MECHANISM IS INDIFFERENT: only the local pentagon being worked matters. Departure from overall regularity does not affect the work"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV011",
+    "prediction": "0",
+    "rationale": "Alloy is not diagnostic for a tool under negligible load"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV012",
+    "prediction": "+",
+    "rationale": "A snag-free working surface matters more than structural soundness"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV013",
+    "prediction": "0",
+    "rationale": "NEUTRAL BECAUSE THE MECHANISM IS INDIFFERENT: the two production holes are simply not worked. The commonest type has ten ringed openings plus one opposed unringed pair, which leaves exactly ten usable faces"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV014",
+    "prediction": "+",
+    "rationale": "Decoration is expected on a personal possession"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV015",
+    "prediction": "+",
+    "rationale": "A working tool is repaired rather than replaced"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV016",
+    "prediction": "+",
+    "rationale": "Finishing of the lips and knob necks to avoid snagging"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV017",
+    "prediction": "-",
+    "rationale": "NOTHING PASSES THROUGH THE BORE UNDER LOAD; the worked tube hangs free. Internal hole wear is not expected, and its absence counts in favour. THIS IS THE PREDICTION THAT SEPARATES H012 FROM H005, which predicts '++' here"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV018",
+    "prediction": "+",
+    "rationale": "Constant handling of the body of the tool"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV019",
+    "prediction": "0",
+    "rationale": "NEUTRAL BECAUSE THE TERMS DIFFER: EV019 records grooves or polish from rope. Fine yarn is not rope, and the surface it bears on is the knob, which is EV041"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV020",
+    "prediction": "0",
+    "rationale": "The frame is turned in the hand as work proceeds round a face; there is no axle and no rotating contact, so no rotational wear pattern forms"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV021",
+    "prediction": "0",
+    "rationale": "Impact damage is not predicted by domestic use"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV022",
+    "prediction": "++",
+    "rationale": "Yarn drawn repeatedly over and down the knob necks abrades them at the base"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV023",
+    "prediction": "--",
+    "rationale": "Nothing in cord work involves heat, flame or wax"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV024",
+    "prediction": "+",
+    "rationale": "Textile fibres should remain in the knob necks and against the lips"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV042",
+    "prediction": "-",
+    "rationale": "Microwear will show contact on the outer lip where yarn is drawn over the edge, and NOT inside the bore. NOTE: H001-H011 are deliberately silent on EV042 because they were specified before the variable existed. Their predictions for it MUST be authored before the microwear study is read, not afterwards"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV041",
+    "prediction": "++",
+    "rationale": "THE CENTRAL PREDICTION OF THIS HYPOTHESIS. Years of yarn drawn over the knobs must leave polish, grooving or abrasion on the knobs and their necks. This is the variable that decides H012, and it did not exist in the evidence set before the hypothesis was written"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV025",
+    "prediction": "+",
+    "rationale": "Specific expectation: domestic and settlement contexts, where cord work is done"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV026",
+    "prediction": "+",
+    "rationale": "A craft technique is culturally transmitted and may be confined to the region that practises it"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV027",
+    "prediction": "+",
+    "rationale": "Specific expectation: spindle whorls, loom weights, needles or other textile equipment"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV028",
+    "prediction": "0",
+    "rationale": "No particular stratigraphy follows from domestic use"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV029",
+    "prediction": "0",
+    "rationale": "No narrow chronological window follows from the mechanism"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV030",
+    "prediction": "0",
+    "rationale": "A personal tool is lost singly, but a workshop could hold several"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV031",
+    "prediction": "0",
+    "rationale": "Soldiers mend and make clothing, so a military presence neither supports nor contradicts"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV032",
+    "prediction": "-",
+    "rationale": "A working tool in temple deposits and rivers is not what the mechanism predicts"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV033",
+    "prediction": "0",
+    "rationale": "Nothing is inserted; rod compatibility is irrelevant either way"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV034",
+    "prediction": "+",
+    "rationale": "Yarn must pass over the knobs and out through the opening"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV035",
+    "prediction": "+",
+    "rationale": "The frame must sit or be held steady while worked"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV036",
+    "prediction": "0",
+    "rationale": "No load is transferred across the object"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV037",
+    "prediction": "0",
+    "rationale": "Assembly into larger structures is no part of this hypothesis"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV038",
+    "prediction": "0",
+    "rationale": "NEUTRAL BECAUSE THE MECHANISM IS INDIFFERENT: whichever face is being worked is turned downward for the moment; there is no fixed global orientation and none is required"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV039",
+    "prediction": "-",
+    "rationale": "A personal craft tool need not conform to any standard. The gauge wanted varies with the work and the worker, so variation between objects is what the mechanism predicts"
+  },
+  {
+    "hypothesis_id": "H012",
+    "ev_id": "EV040",
+    "prediction": "+",
+    "rationale": "Craft traditions and their tools vary by region"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV001",
+    "prediction": "+",
+    "rationale": "Must be gripped and turned in the hand while the work advances"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV002",
+    "prediction": "+",
+    "rationale": "Mass gives the turning tool inertia and helps hold steady tension"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV003",
+    "prediction": "-",
+    "rationale": "Strand tension in hand-laid cord is modest; heavy walls buy nothing"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV004",
+    "prediction": "++",
+    "rationale": "Each aperture suits a different core and finished-rope diameter. A graded set of apertures is a graded set of cord gauges, which is the functional point of the object"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV005",
+    "prediction": "0",
+    "rationale": "NEUTRAL BECAUSE THE MECHANISM IS INDIFFERENT: only one aperture is in use at a time and the core does not continue to the opposite face, so what the opposite aperture measures is irrelevant"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV006",
+    "prediction": "++",
+    "rationale": "The core runs through the aperture under tension while the object turns; a clean, true profile is required or the core binds and chafes"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV007",
+    "prediction": "++",
+    "rationale": "The rim must be rounded, because the core bears against it continuously and a sharp edge would cut the fibre"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV008",
+    "prediction": "++",
+    "rationale": "THE KNOBS ARE THE STRAND GUIDES. Their diameter and spacing set the angle at which each strand meets the core, which is what determines the lay of the finished rope"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV009",
+    "prediction": "++",
+    "rationale": "The five knobs around the working aperture must be uniform and regularly placed, or the strands are laid at unequal angles and the rope is uneven"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV010",
+    "prediction": "+",
+    "rationale": "Even strand spacing requires a regular pentagon around the working face"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV011",
+    "prediction": "0",
+    "rationale": "Alloy is not diagnostic for a tool under fibre tension"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV012",
+    "prediction": "+",
+    "rationale": "A smooth surface is needed so the fibre is not abraded as it runs"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV013",
+    "prediction": "0",
+    "rationale": "NEUTRAL BECAUSE THE MECHANISM IS INDIFFERENT: the two production holes are simply not chosen as the working aperture"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV014",
+    "prediction": "+",
+    "rationale": "Decoration is expected on a personal working tool"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV015",
+    "prediction": "+",
+    "rationale": "A tool in continuous use is repaired rather than replaced"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV016",
+    "prediction": "+",
+    "rationale": "Finishing of the rim and knobs so that fibre does not snag"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV017",
+    "prediction": "++",
+    "rationale": "THE DECISIVE PREDICTION. A tensioned core passes through the aperture while the object is turned against it. Bore wear is unavoidable and should be circumferential. THIS IS WHERE H013 AND H012 SEPARATE: H012 predicts '-' here because nothing passes through its bore"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV018",
+    "prediction": "+",
+    "rationale": "Constant handling of the body of the tool"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV019",
+    "prediction": "++",
+    "rationale": "Every strand bears on a knob and on the aperture rim under tension throughout the work. If any hypothesis predicts rope wear, this one does"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV020",
+    "prediction": "++",
+    "rationale": "The object is turned repeatedly under load and the contact between cord and object is rotational by construction"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV021",
+    "prediction": "0",
+    "rationale": "Impact damage is not predicted by workshop use"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV022",
+    "prediction": "++",
+    "rationale": "Fibre running under tension abrades the knobs and the aperture rim"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV023",
+    "prediction": "--",
+    "rationale": "Nothing in cord laying involves heat, flame or wax"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV024",
+    "prediction": "+",
+    "rationale": "Fibre traces should remain against the rim and in the knob necks"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV041",
+    "prediction": "++",
+    "rationale": "Strands are guided by the knobs under tension throughout; knob wear is predicted as strongly here as by H012"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV042",
+    "prediction": "+",
+    "rationale": "Microwear should show contact INSIDE the bore, and circumferentially. This is the exact opposite of H012's prediction, which is why the pre-registered prediction P-0004 discriminates between them"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV025",
+    "prediction": "+",
+    "rationale": "Specific expectation: settlement, domestic and workshop contexts, where cordage is made"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV026",
+    "prediction": "+",
+    "rationale": "A craft technique is culturally transmitted and may be confined to the region that practises it"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV027",
+    "prediction": "+",
+    "rationale": "Specific expectation: fibre-processing equipment, spindle whorls, raw fibre, or finished cordage"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV028",
+    "prediction": "0",
+    "rationale": "No particular stratigraphy follows from workshop use"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV029",
+    "prediction": "0",
+    "rationale": "Cordage is made in every period; no narrow window is predicted"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV030",
+    "prediction": "0",
+    "rationale": "A personal tool is lost singly, but a workshop could hold several"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV031",
+    "prediction": "0",
+    "rationale": "Rope is needed by armies and civilians alike, so a military presence neither supports nor contradicts"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV032",
+    "prediction": "-",
+    "rationale": "A working tool in temple deposits and rivers is not what the mechanism predicts"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV033",
+    "prediction": "0",
+    "rationale": "Nothing rigid is inserted; rod compatibility is irrelevant either way"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV034",
+    "prediction": "++",
+    "rationale": "A core routed through an aperture and strands routed over the knobs is entirely a claim about cord routing"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV035",
+    "prediction": "+",
+    "rationale": "The body must hold its form against the combined pull of the strands"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV036",
+    "prediction": "0",
+    "rationale": "No structural load is transferred across the object"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV037",
+    "prediction": "0",
+    "rationale": "Assembly into larger structures is no part of this hypothesis"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV038",
+    "prediction": "+",
+    "rationale": "There is a working axis while the tool is in use - the core through the chosen aperture, about which the object turns - though which aperture provides it is free"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV039",
+    "prediction": "-",
+    "rationale": "A personal craft tool need not conform to any standard; the gauge wanted varies with the work"
+  },
+  {
+    "hypothesis_id": "H013",
+    "ev_id": "EV040",
+    "prediction": "+",
+    "rationale": "Craft traditions and their tools vary by region"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV001",
+    "prediction": "+",
+    "rationale": "Held in one hand while wax is pressed with the other; hand-sized"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV002",
+    "prediction": "+",
+    "rationale": "Mass steadies the tool against the pressing force"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV003",
+    "prediction": "-",
+    "rationale": "The shell contains soft wax and carries no structural load; thin walls are sufficient and expected"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV004",
+    "prediction": "++",
+    "rationale": "Graded apertures take cords of differing thickness, which is the functional claim of the hypothesis (PUB-0041)"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV005",
+    "prediction": "0",
+    "rationale": "NEUTRAL: the cord is knotted within the object rather than drawn through an axis, and the source does not specify that it exits an opposite face"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV006",
+    "prediction": "+",
+    "rationale": "A clean aperture lets the cord seat and the formed piece release"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV007",
+    "prediction": "+",
+    "rationale": "A rounded lip releases wax cleanly and does not cut the cord"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV008",
+    "prediction": "++",
+    "rationale": "THE KNOBS ARE THE SPACERS that limit compression and set the thickness of the formed piece. This is the mechanism's explicit claim (PUB-0041) and it is the only hypothesis in the set that assigns the knobs a primary working role rather than a protective or decorative one"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV009",
+    "prediction": "++",
+    "rationale": "Spacers must be uniform, or the thickness of the formed piece varies around its perimeter"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV010",
+    "prediction": "+",
+    "rationale": "A regular body gives a consistent formed shape"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV011",
+    "prediction": "0",
+    "rationale": "Alloy is not diagnostic for working soft wax"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV012",
+    "prediction": "+",
+    "rationale": "A smooth surface releases wax without tearing it"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV013",
+    "prediction": "0",
+    "rationale": "NEUTRAL: a face carrying casting flaws is simply not used as the working face"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV014",
+    "prediction": "++",
+    "rationale": "Decoration around the aperture would IMPRESS ITSELF ON THE WAX. On this hypothesis the concentric rings are not ornament at all but the device that marks the sealing, which is what a bulla is for"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV015",
+    "prediction": "+",
+    "rationale": "A working tool is repaired rather than replaced"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV016",
+    "prediction": "++",
+    "rationale": "The engraved rings are the marking surface, and engraving them after casting is exactly the secondary working EV016 records"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV017",
+    "prediction": "-",
+    "rationale": "Wax is soft and the cord is knotted rather than drawn under tension. No bore wear is predicted and its absence counts in favour"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV018",
+    "prediction": "+",
+    "rationale": "Constant handling of the body of the tool"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV019",
+    "prediction": "0",
+    "rationale": "NEUTRAL: cords are knotted in place, not routed under tension"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV020",
+    "prediction": "0",
+    "rationale": "Nothing in the mechanism rotates"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV021",
+    "prediction": "0",
+    "rationale": "Impact damage is not predicted by desk use"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV022",
+    "prediction": "0",
+    "rationale": "Wax is softer than bronze and does not abrade it"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV023",
+    "prediction": "-",
+    "rationale": "Wax is worked soft, not melted in the object. Thermal alteration would count AGAINST the hypothesis, which is what distinguishes it from H004"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV024",
+    "prediction": "++",
+    "rationale": "THE DECISIVE PREDICTION. Beeswax and resin worked in the object should leave recoverable residue on the interior and around the apertures. EV024 has never been measured"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV025",
+    "prediction": "++",
+    "rationale": "Specific expectation: urban, administrative and commercial contexts, matching the distribution of seal boxes (PUB-0041)"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV026",
+    "prediction": "+",
+    "rationale": "Seal boxes are themselves concentrated in Britain and the north-western provinces, so regional confinement is what the hypothesis predicts. NOTE THIS IS UNUSUAL: every other utilitarian hypothesis is damaged by the restricted distribution, and this one expects it"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV027",
+    "prediction": "++",
+    "rationale": "Specific expectation: seal boxes, styli, writing tablets, document fittings or other administrative equipment"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV028",
+    "prediction": "0",
+    "rationale": "No particular stratigraphy follows"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV029",
+    "prediction": "0",
+    "rationale": "Sealing practice spans the imperial period"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV030",
+    "prediction": "0",
+    "rationale": "An office might hold one or several"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV031",
+    "prediction": "0",
+    "rationale": "Seal boxes occur in administrative AND military contexts, so a military presence neither supports nor contradicts"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV032",
+    "prediction": "-",
+    "rationale": "A desk tool in temple deposits, graves and rivers is not predicted"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV033",
+    "prediction": "0",
+    "rationale": "Nothing rigid is inserted"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV034",
+    "prediction": "+",
+    "rationale": "Cords must pass into the object and be knotted within it"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV035",
+    "prediction": "+",
+    "rationale": "The body must not deform under the pressing force"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV036",
+    "prediction": "0",
+    "rationale": "No structural load is transferred across the object"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV037",
+    "prediction": "0",
+    "rationale": "Assembly into larger structures is no part of this hypothesis"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV038",
+    "prediction": "+",
+    "rationale": "A working face is chosen and presented upward while wax is pressed, though which face is free"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV039",
+    "prediction": "+",
+    "rationale": "Bullae are described by the hypothesis as standardised, so some consistency between tools is expected. THIS IS THE HYPOTHESIS'S WEAKEST POINT and it is not negotiable: the corpus is not standardised"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV040",
+    "prediction": "+",
+    "rationale": "Regional workshops producing an administrative accessory would vary"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV041",
+    "prediction": "0",
+    "rationale": "The knobs are pressed into soft wax, not drawn over by cord under tension; no knob wear is predicted either way"
+  },
+  {
+    "hypothesis_id": "H014",
+    "ev_id": "EV042",
+    "prediction": "-",
+    "rationale": "Microwear should show no bore contact"
+  }
+]

@@ -1,0 +1,449 @@
+hypothesis_id,ev_id,score,confidence,dp_weight,conf_weight,class_weight,weighted_score,notes
+H001,EV001,1.0,B,2.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p31
+H001,EV003,-1.0,B,2.0,0.9,1.0,-1.8,direction=absent; class=Observed; source=PUB-0003 p39
+H001,EV004,2.0,B,3.0,0.9,1.0,5.4,direction=confirmed; class=Observed; source=PUB-0003 p31
+H001,EV005,-1.0,B,3.0,0.9,1.0,-2.7,direction=weak_absent; class=Observed; source=PUB-0003 p31
+H001,EV006,2.0,B,2.0,0.9,1.0,3.6,direction=confirmed; class=Observed; source=PUB-0003 p32
+H001,EV008,2.0,B,1.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H001,EV009,2.0,B,1.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H001,EV010,-1.0,B,2.0,0.9,1.0,-1.8,direction=absent; class=Observed; source=PUB-0010 ppara 48
+H001,EV011,1.0,C,2.0,0.75,1.0,1.5,direction=confirmed; class=Observed; source=PUB-0003 p31
+H001,EV012,0.5,B,2.0,0.9,1.0,0.9,direction=weak_confirmed; class=Observed; source=PUB-0003 p32
+H001,EV013,-1.0,B,2.0,0.9,1.0,-1.8,direction=confirmed; class=Observed; source=PUB-0003 p32
+H001,EV014,0.0,B,1.0,0.9,1.0,0.0,"direction=confirmed; class=Observed; source=PUB-0003 p32, 36"
+H001,EV016,1.0,B,2.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p32
+H001,EV017,-2.0,C,3.0,0.75,1.0,-4.5,direction=absent; class=Observed; source=PUB-0003 p45
+H001,EV018,-1.0,B,2.0,0.9,1.0,-1.8,direction=absent; class=Observed; source=PUB-0003 p45
+H001,EV019,-2.0,C,3.0,0.75,1.0,-4.5,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H001,EV020,1.0,C,3.0,0.75,1.0,2.25,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H001,EV025,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p33
+H001,EV026,0.0,B,1.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H001,EV027,0.0,C,3.0,0.75,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p34-6
+H001,EV029,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H001,EV031,0.5,B,2.0,0.9,1.0,0.9,direction=weak_confirmed; class=Observed; source=PUB-0003 p33
+H001,EV032,-0.5,C,2.0,0.75,1.0,-0.75,direction=weak_confirmed; class=Observed; source=PUB-0003 p33-5
+H001,EV033,2.0,C,3.0,0.75,0.5,2.25,direction=confirmed; class=Derived; source=PUB-0003 p35-6
+H001,EV034,2.0,C,3.0,0.75,0.5,2.25,direction=confirmed; class=Derived; source=NONE
+H001,EV035,1.0,C,3.0,0.75,0.5,1.125,direction=weak_confirmed; class=Derived; source=NONE
+H001,EV036,1.0,C,2.0,0.75,0.5,0.75,direction=weak_confirmed; class=Derived; source=NONE
+H001,EV037,-2.0,B,2.0,0.9,1.0,-3.6,direction=absent; class=Observed; source=PUB-0003 p31
+H001,EV038,0.5,C,2.0,0.75,1.0,0.75,"direction=weak_absent; class=Observed; source=PUB-0003 p37-8, 40"
+H001,EV039,-1.0,B,2.0,0.9,1.0,-1.8,"direction=absent; class=Observed; source=PUB-0003 p31, 32, 39-40"
+H001,EV040,-1.0,C,2.0,0.75,1.0,-1.5,direction=confirmed; class=Observed; source=PUB-0003 p32
+H001,EV044,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0006 pPAS records
+H002,EV001,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p31
+H002,EV003,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p39
+H002,EV004,2.0,B,3.0,0.9,1.0,5.4,direction=confirmed; class=Observed; source=PUB-0003 p31
+H002,EV005,-0.5,B,3.0,0.9,1.0,-1.35,direction=weak_absent; class=Observed; source=PUB-0003 p31
+H002,EV006,2.0,B,2.0,0.9,1.0,3.6,direction=confirmed; class=Observed; source=PUB-0003 p32
+H002,EV008,0.0,B,1.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H002,EV009,1.0,B,1.0,0.9,1.0,0.9,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H002,EV010,-2.0,B,2.0,0.9,1.0,-3.6,direction=absent; class=Observed; source=PUB-0010 ppara 48
+H002,EV011,0.0,C,2.0,0.75,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p31
+H002,EV012,1.0,B,2.0,0.9,1.0,1.8,direction=weak_confirmed; class=Observed; source=PUB-0003 p32
+H002,EV013,-2.0,B,2.0,0.9,1.0,-3.6,direction=confirmed; class=Observed; source=PUB-0003 p32
+H002,EV014,1.0,B,1.0,0.9,1.0,0.9,"direction=confirmed; class=Observed; source=PUB-0003 p32, 36"
+H002,EV016,2.0,B,2.0,0.9,1.0,3.6,direction=confirmed; class=Observed; source=PUB-0003 p32
+H002,EV017,-1.0,C,3.0,0.75,1.0,-2.25,direction=absent; class=Observed; source=PUB-0003 p45
+H002,EV018,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p45
+H002,EV019,1.0,C,3.0,0.75,1.0,2.25,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H002,EV020,1.0,C,3.0,0.75,1.0,2.25,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H002,EV025,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p33
+H002,EV026,0.0,B,1.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H002,EV027,0.0,C,3.0,0.75,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p34-6
+H002,EV029,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H002,EV031,0.5,B,2.0,0.9,1.0,0.9,direction=weak_confirmed; class=Observed; source=PUB-0003 p33
+H002,EV032,-0.5,C,2.0,0.75,1.0,-0.75,direction=weak_confirmed; class=Observed; source=PUB-0003 p33-5
+H002,EV033,1.0,C,3.0,0.75,0.5,1.125,direction=confirmed; class=Derived; source=PUB-0003 p35-6
+H002,EV034,-1.0,C,3.0,0.75,0.5,-1.125,direction=confirmed; class=Derived; source=NONE
+H002,EV035,0.0,C,3.0,0.75,0.5,0.0,direction=weak_confirmed; class=Derived; source=NONE
+H002,EV036,0.0,C,2.0,0.75,0.5,0.0,direction=weak_confirmed; class=Derived; source=NONE
+H002,EV037,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p31
+H002,EV038,-1.0,C,2.0,0.75,1.0,-1.5,"direction=weak_absent; class=Observed; source=PUB-0003 p37-8, 40"
+H002,EV039,-2.0,B,2.0,0.9,1.0,-3.6,"direction=absent; class=Observed; source=PUB-0003 p31, 32, 39-40"
+H002,EV040,-1.0,C,2.0,0.75,1.0,-1.5,direction=confirmed; class=Observed; source=PUB-0003 p32
+H002,EV044,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0006 pPAS records
+H003,EV001,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p31
+H003,EV003,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p39
+H003,EV004,0.0,B,3.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p31
+H003,EV005,0.0,B,3.0,0.9,1.0,0.0,direction=weak_absent; class=Observed; source=PUB-0003 p31
+H003,EV006,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p32
+H003,EV008,1.0,B,1.0,0.9,1.0,0.9,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H003,EV009,1.0,B,1.0,0.9,1.0,0.9,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H003,EV010,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0010 ppara 48
+H003,EV011,1.0,C,2.0,0.75,1.0,1.5,direction=confirmed; class=Observed; source=PUB-0003 p31
+H003,EV012,0.5,B,2.0,0.9,1.0,0.9,direction=weak_confirmed; class=Observed; source=PUB-0003 p32
+H003,EV013,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p32
+H003,EV014,1.0,B,1.0,0.9,1.0,0.9,"direction=confirmed; class=Observed; source=PUB-0003 p32, 36"
+H003,EV016,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p32
+H003,EV017,1.0,C,3.0,0.75,1.0,2.25,direction=absent; class=Observed; source=PUB-0003 p45
+H003,EV018,1.0,B,2.0,0.9,1.0,1.8,direction=absent; class=Observed; source=PUB-0003 p45
+H003,EV019,0.0,C,3.0,0.75,1.0,0.0,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H003,EV020,0.0,C,3.0,0.75,1.0,0.0,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H003,EV025,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p33
+H003,EV026,0.0,B,1.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H003,EV027,0.0,C,3.0,0.75,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p34-6
+H003,EV029,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H003,EV031,0.0,B,2.0,0.9,1.0,0.0,direction=weak_confirmed; class=Observed; source=PUB-0003 p33
+H003,EV032,1.0,C,2.0,0.75,1.0,1.5,direction=weak_confirmed; class=Observed; source=PUB-0003 p33-5
+H003,EV033,0.0,C,3.0,0.75,0.5,0.0,direction=confirmed; class=Derived; source=PUB-0003 p35-6
+H003,EV034,0.0,C,3.0,0.75,0.5,0.0,direction=confirmed; class=Derived; source=NONE
+H003,EV035,0.0,C,3.0,0.75,0.5,0.0,direction=weak_confirmed; class=Derived; source=NONE
+H003,EV036,0.0,C,2.0,0.75,0.5,0.0,direction=weak_confirmed; class=Derived; source=NONE
+H003,EV037,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p31
+H003,EV038,0.0,C,2.0,0.75,1.0,0.0,"direction=weak_absent; class=Observed; source=PUB-0003 p37-8, 40"
+H003,EV039,0.0,B,2.0,0.9,1.0,0.0,"direction=absent; class=Observed; source=PUB-0003 p31, 32, 39-40"
+H003,EV040,1.0,C,2.0,0.75,1.0,1.5,direction=confirmed; class=Observed; source=PUB-0003 p32
+H003,EV044,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0006 pPAS records
+H004,EV001,1.0,B,2.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p31
+H004,EV003,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p39
+H004,EV004,-1.0,B,3.0,0.9,1.0,-2.7,direction=confirmed; class=Observed; source=PUB-0003 p31
+H004,EV005,0.5,B,3.0,0.9,1.0,1.35,direction=weak_absent; class=Observed; source=PUB-0003 p31
+H004,EV006,1.0,B,2.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p32
+H004,EV008,1.0,B,1.0,0.9,1.0,0.9,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H004,EV009,1.0,B,1.0,0.9,1.0,0.9,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H004,EV010,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0010 ppara 48
+H004,EV011,0.0,C,2.0,0.75,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p31
+H004,EV012,0.0,B,2.0,0.9,1.0,0.0,direction=weak_confirmed; class=Observed; source=PUB-0003 p32
+H004,EV013,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p32
+H004,EV014,0.0,B,1.0,0.9,1.0,0.0,"direction=confirmed; class=Observed; source=PUB-0003 p32, 36"
+H004,EV016,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p32
+H004,EV017,-1.0,C,3.0,0.75,1.0,-2.25,direction=absent; class=Observed; source=PUB-0003 p45
+H004,EV018,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p45
+H004,EV019,0.0,C,3.0,0.75,1.0,0.0,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H004,EV020,-1.0,C,3.0,0.75,1.0,-2.25,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H004,EV025,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p33
+H004,EV026,0.0,B,1.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H004,EV027,0.0,C,3.0,0.75,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p34-6
+H004,EV029,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H004,EV031,0.0,B,2.0,0.9,1.0,0.0,direction=weak_confirmed; class=Observed; source=PUB-0003 p33
+H004,EV032,0.5,C,2.0,0.75,1.0,0.75,direction=weak_confirmed; class=Observed; source=PUB-0003 p33-5
+H004,EV033,1.0,C,3.0,0.75,0.5,1.125,direction=confirmed; class=Derived; source=PUB-0003 p35-6
+H004,EV034,-1.0,C,3.0,0.75,0.5,-1.125,direction=confirmed; class=Derived; source=NONE
+H004,EV035,0.5,C,3.0,0.75,0.5,0.5625,direction=weak_confirmed; class=Derived; source=NONE
+H004,EV036,0.0,C,2.0,0.75,0.5,0.0,direction=weak_confirmed; class=Derived; source=NONE
+H004,EV037,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p31
+H004,EV038,-1.0,C,2.0,0.75,1.0,-1.5,"direction=weak_absent; class=Observed; source=PUB-0003 p37-8, 40"
+H004,EV039,0.0,B,2.0,0.9,1.0,0.0,"direction=absent; class=Observed; source=PUB-0003 p31, 32, 39-40"
+H004,EV040,0.0,C,2.0,0.75,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p32
+H004,EV044,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0006 pPAS records
+H005,EV001,1.0,B,2.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p31
+H005,EV003,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p39
+H005,EV004,2.0,B,3.0,0.9,1.0,5.4,direction=confirmed; class=Observed; source=PUB-0003 p31
+H005,EV005,-0.5,B,3.0,0.9,1.0,-1.35,direction=weak_absent; class=Observed; source=PUB-0003 p31
+H005,EV006,1.0,B,2.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p32
+H005,EV008,1.0,B,1.0,0.9,1.0,0.9,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H005,EV009,0.0,B,1.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H005,EV010,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0010 ppara 48
+H005,EV011,0.0,C,2.0,0.75,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p31
+H005,EV012,0.0,B,2.0,0.9,1.0,0.0,direction=weak_confirmed; class=Observed; source=PUB-0003 p32
+H005,EV013,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p32
+H005,EV014,1.0,B,1.0,0.9,1.0,0.9,"direction=confirmed; class=Observed; source=PUB-0003 p32, 36"
+H005,EV016,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p32
+H005,EV017,-2.0,C,3.0,0.75,1.0,-4.5,direction=absent; class=Observed; source=PUB-0003 p45
+H005,EV018,-1.0,B,2.0,0.9,1.0,-1.8,direction=absent; class=Observed; source=PUB-0003 p45
+H005,EV019,-1.0,C,3.0,0.75,1.0,-2.25,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H005,EV020,-1.0,C,3.0,0.75,1.0,-2.25,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H005,EV025,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p33
+H005,EV026,0.0,B,1.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H005,EV027,0.0,C,3.0,0.75,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p34-6
+H005,EV029,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H005,EV031,0.0,B,2.0,0.9,1.0,0.0,direction=weak_confirmed; class=Observed; source=PUB-0003 p33
+H005,EV032,-0.5,C,2.0,0.75,1.0,-0.75,direction=weak_confirmed; class=Observed; source=PUB-0003 p33-5
+H005,EV033,1.0,C,3.0,0.75,0.5,1.125,direction=confirmed; class=Derived; source=PUB-0003 p35-6
+H005,EV034,1.0,C,3.0,0.75,0.5,1.125,direction=confirmed; class=Derived; source=NONE
+H005,EV035,0.0,C,3.0,0.75,0.5,0.0,direction=weak_confirmed; class=Derived; source=NONE
+H005,EV036,0.0,C,2.0,0.75,0.5,0.0,direction=weak_confirmed; class=Derived; source=NONE
+H005,EV037,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p31
+H005,EV038,0.0,C,2.0,0.75,1.0,0.0,"direction=weak_absent; class=Observed; source=PUB-0003 p37-8, 40"
+H005,EV039,-1.0,B,2.0,0.9,1.0,-1.8,"direction=absent; class=Observed; source=PUB-0003 p31, 32, 39-40"
+H005,EV040,1.0,C,2.0,0.75,1.0,1.5,direction=confirmed; class=Observed; source=PUB-0003 p32
+H005,EV044,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0006 pPAS records
+H006,EV001,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p31
+H006,EV003,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p39
+H006,EV004,1.0,B,3.0,0.9,1.0,2.7,direction=confirmed; class=Observed; source=PUB-0003 p31
+H006,EV005,-0.5,B,3.0,0.9,1.0,-1.35,direction=weak_absent; class=Observed; source=PUB-0003 p31
+H006,EV006,1.0,B,2.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p32
+H006,EV008,0.0,B,1.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H006,EV009,2.0,B,1.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H006,EV010,-2.0,B,2.0,0.9,1.0,-3.6,direction=absent; class=Observed; source=PUB-0010 ppara 48
+H006,EV011,0.0,C,2.0,0.75,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p31
+H006,EV012,1.0,B,2.0,0.9,1.0,1.8,direction=weak_confirmed; class=Observed; source=PUB-0003 p32
+H006,EV013,-2.0,B,2.0,0.9,1.0,-3.6,direction=confirmed; class=Observed; source=PUB-0003 p32
+H006,EV014,1.0,B,1.0,0.9,1.0,0.9,"direction=confirmed; class=Observed; source=PUB-0003 p32, 36"
+H006,EV016,2.0,B,2.0,0.9,1.0,3.6,direction=confirmed; class=Observed; source=PUB-0003 p32
+H006,EV017,0.0,C,3.0,0.75,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p45
+H006,EV018,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p45
+H006,EV019,1.0,C,3.0,0.75,1.0,2.25,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H006,EV020,0.0,C,3.0,0.75,1.0,0.0,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H006,EV025,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p33
+H006,EV026,0.0,B,1.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H006,EV027,0.0,C,3.0,0.75,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p34-6
+H006,EV029,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H006,EV031,0.5,B,2.0,0.9,1.0,0.9,direction=weak_confirmed; class=Observed; source=PUB-0003 p33
+H006,EV032,0.0,C,2.0,0.75,1.0,0.0,direction=weak_confirmed; class=Observed; source=PUB-0003 p33-5
+H006,EV033,0.0,C,3.0,0.75,0.5,0.0,direction=confirmed; class=Derived; source=PUB-0003 p35-6
+H006,EV034,-1.0,C,3.0,0.75,0.5,-1.125,direction=confirmed; class=Derived; source=NONE
+H006,EV035,0.0,C,3.0,0.75,0.5,0.0,direction=weak_confirmed; class=Derived; source=NONE
+H006,EV036,0.0,C,2.0,0.75,0.5,0.0,direction=weak_confirmed; class=Derived; source=NONE
+H006,EV037,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p31
+H006,EV038,-1.0,C,2.0,0.75,1.0,-1.5,"direction=weak_absent; class=Observed; source=PUB-0003 p37-8, 40"
+H006,EV039,-2.0,B,2.0,0.9,1.0,-3.6,"direction=absent; class=Observed; source=PUB-0003 p31, 32, 39-40"
+H006,EV040,-1.0,C,2.0,0.75,1.0,-1.5,direction=confirmed; class=Observed; source=PUB-0003 p32
+H006,EV044,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0006 pPAS records
+H007,EV001,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p31
+H007,EV003,-1.0,B,2.0,0.9,1.0,-1.8,direction=absent; class=Observed; source=PUB-0003 p39
+H007,EV004,0.0,B,3.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p31
+H007,EV005,0.0,B,3.0,0.9,1.0,0.0,direction=weak_absent; class=Observed; source=PUB-0003 p31
+H007,EV006,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p32
+H007,EV008,0.0,B,1.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H007,EV009,0.0,B,1.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H007,EV010,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0010 ppara 48
+H007,EV011,1.0,C,2.0,0.75,1.0,1.5,direction=confirmed; class=Observed; source=PUB-0003 p31
+H007,EV012,0.5,B,2.0,0.9,1.0,0.9,direction=weak_confirmed; class=Observed; source=PUB-0003 p32
+H007,EV013,-1.0,B,2.0,0.9,1.0,-1.8,direction=confirmed; class=Observed; source=PUB-0003 p32
+H007,EV014,0.0,B,1.0,0.9,1.0,0.0,"direction=confirmed; class=Observed; source=PUB-0003 p32, 36"
+H007,EV016,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p32
+H007,EV017,0.0,C,3.0,0.75,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p45
+H007,EV018,-1.0,B,2.0,0.9,1.0,-1.8,direction=absent; class=Observed; source=PUB-0003 p45
+H007,EV019,0.0,C,3.0,0.75,1.0,0.0,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H007,EV020,0.0,C,3.0,0.75,1.0,0.0,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H007,EV025,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p33
+H007,EV026,0.0,B,1.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H007,EV027,0.0,C,3.0,0.75,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p34-6
+H007,EV029,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H007,EV031,1.0,B,2.0,0.9,1.0,1.8,direction=weak_confirmed; class=Observed; source=PUB-0003 p33
+H007,EV032,0.0,C,2.0,0.75,1.0,0.0,direction=weak_confirmed; class=Observed; source=PUB-0003 p33-5
+H007,EV033,0.0,C,3.0,0.75,0.5,0.0,direction=confirmed; class=Derived; source=PUB-0003 p35-6
+H007,EV034,0.0,C,3.0,0.75,0.5,0.0,direction=confirmed; class=Derived; source=NONE
+H007,EV035,0.0,C,3.0,0.75,0.5,0.0,direction=weak_confirmed; class=Derived; source=NONE
+H007,EV036,0.0,C,2.0,0.75,0.5,0.0,direction=weak_confirmed; class=Derived; source=NONE
+H007,EV037,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p31
+H007,EV038,0.0,C,2.0,0.75,1.0,0.0,"direction=weak_absent; class=Observed; source=PUB-0003 p37-8, 40"
+H007,EV039,-1.0,B,2.0,0.9,1.0,-1.8,"direction=absent; class=Observed; source=PUB-0003 p31, 32, 39-40"
+H007,EV040,1.0,C,2.0,0.75,1.0,1.5,direction=confirmed; class=Observed; source=PUB-0003 p32
+H007,EV044,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0006 pPAS records
+H008,EV001,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p31
+H008,EV003,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p39
+H008,EV004,0.0,B,3.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p31
+H008,EV005,0.0,B,3.0,0.9,1.0,0.0,direction=weak_absent; class=Observed; source=PUB-0003 p31
+H008,EV006,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p32
+H008,EV008,1.0,B,1.0,0.9,1.0,0.9,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H008,EV009,1.0,B,1.0,0.9,1.0,0.9,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H008,EV010,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0010 ppara 48
+H008,EV011,1.0,C,2.0,0.75,1.0,1.5,direction=confirmed; class=Observed; source=PUB-0003 p31
+H008,EV012,0.5,B,2.0,0.9,1.0,0.9,direction=weak_confirmed; class=Observed; source=PUB-0003 p32
+H008,EV013,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p32
+H008,EV014,1.0,B,1.0,0.9,1.0,0.9,"direction=confirmed; class=Observed; source=PUB-0003 p32, 36"
+H008,EV016,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p32
+H008,EV017,1.0,C,3.0,0.75,1.0,2.25,direction=absent; class=Observed; source=PUB-0003 p45
+H008,EV018,1.0,B,2.0,0.9,1.0,1.8,direction=absent; class=Observed; source=PUB-0003 p45
+H008,EV019,0.0,C,3.0,0.75,1.0,0.0,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H008,EV020,0.0,C,3.0,0.75,1.0,0.0,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H008,EV025,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p33
+H008,EV026,0.0,B,1.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H008,EV027,0.0,C,3.0,0.75,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p34-6
+H008,EV029,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H008,EV031,0.0,B,2.0,0.9,1.0,0.0,direction=weak_confirmed; class=Observed; source=PUB-0003 p33
+H008,EV032,1.0,C,2.0,0.75,1.0,1.5,direction=weak_confirmed; class=Observed; source=PUB-0003 p33-5
+H008,EV033,0.0,C,3.0,0.75,0.5,0.0,direction=confirmed; class=Derived; source=PUB-0003 p35-6
+H008,EV034,0.0,C,3.0,0.75,0.5,0.0,direction=confirmed; class=Derived; source=NONE
+H008,EV035,0.0,C,3.0,0.75,0.5,0.0,direction=weak_confirmed; class=Derived; source=NONE
+H008,EV036,0.0,C,2.0,0.75,0.5,0.0,direction=weak_confirmed; class=Derived; source=NONE
+H008,EV037,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p31
+H008,EV038,-0.5,C,2.0,0.75,1.0,-0.75,"direction=weak_absent; class=Observed; source=PUB-0003 p37-8, 40"
+H008,EV039,0.0,B,2.0,0.9,1.0,0.0,"direction=absent; class=Observed; source=PUB-0003 p31, 32, 39-40"
+H008,EV040,1.0,C,2.0,0.75,1.0,1.5,direction=confirmed; class=Observed; source=PUB-0003 p32
+H008,EV044,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0006 pPAS records
+H009,EV001,1.0,B,2.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p31
+H009,EV003,-2.0,B,2.0,0.9,1.0,-3.6,direction=absent; class=Observed; source=PUB-0003 p39
+H009,EV004,-1.0,B,3.0,0.9,1.0,-2.7,direction=confirmed; class=Observed; source=PUB-0003 p31
+H009,EV005,-0.5,B,3.0,0.9,1.0,-1.35,direction=weak_absent; class=Observed; source=PUB-0003 p31
+H009,EV006,2.0,B,2.0,0.9,1.0,3.6,direction=confirmed; class=Observed; source=PUB-0003 p32
+H009,EV008,0.0,B,1.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H009,EV009,0.0,B,1.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H009,EV010,-2.0,B,2.0,0.9,1.0,-3.6,direction=absent; class=Observed; source=PUB-0010 ppara 48
+H009,EV011,2.0,C,2.0,0.75,1.0,3.0,direction=confirmed; class=Observed; source=PUB-0003 p31
+H009,EV012,0.5,B,2.0,0.9,1.0,0.9,direction=weak_confirmed; class=Observed; source=PUB-0003 p32
+H009,EV013,-2.0,B,2.0,0.9,1.0,-3.6,direction=confirmed; class=Observed; source=PUB-0003 p32
+H009,EV014,0.0,B,1.0,0.9,1.0,0.0,"direction=confirmed; class=Observed; source=PUB-0003 p32, 36"
+H009,EV016,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p32
+H009,EV017,-2.0,C,3.0,0.75,1.0,-4.5,direction=absent; class=Observed; source=PUB-0003 p45
+H009,EV018,-2.0,B,2.0,0.9,1.0,-3.6,direction=absent; class=Observed; source=PUB-0003 p45
+H009,EV019,-2.0,C,3.0,0.75,1.0,-4.5,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H009,EV020,0.0,C,3.0,0.75,1.0,0.0,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H009,EV025,-2.0,B,3.0,0.9,1.0,-5.4,direction=ambiguous; class=Observed; source=PUB-0003 p33
+H009,EV026,-2.0,B,1.0,0.9,1.0,-1.8,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H009,EV027,-2.0,C,3.0,0.75,1.0,-4.5,direction=ambiguous; class=Observed; source=PUB-0003 p34-6
+H009,EV029,-1.0,B,3.0,0.9,1.0,-2.7,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H009,EV031,1.0,B,2.0,0.9,1.0,1.8,direction=weak_confirmed; class=Observed; source=PUB-0003 p33
+H009,EV032,-1.0,C,2.0,0.75,1.0,-1.5,direction=weak_confirmed; class=Observed; source=PUB-0003 p33-5
+H009,EV033,2.0,C,3.0,0.75,0.5,2.25,direction=confirmed; class=Derived; source=PUB-0003 p35-6
+H009,EV034,2.0,C,3.0,0.75,0.5,2.25,direction=confirmed; class=Derived; source=NONE
+H009,EV035,1.0,C,3.0,0.75,0.5,1.125,direction=weak_confirmed; class=Derived; source=NONE
+H009,EV036,1.0,C,2.0,0.75,0.5,0.75,direction=weak_confirmed; class=Derived; source=NONE
+H009,EV037,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p31
+H009,EV038,-1.0,C,2.0,0.75,1.0,-1.5,"direction=weak_absent; class=Observed; source=PUB-0003 p37-8, 40"
+H009,EV039,-2.0,B,2.0,0.9,1.0,-3.6,"direction=absent; class=Observed; source=PUB-0003 p31, 32, 39-40"
+H009,EV040,-2.0,C,2.0,0.75,1.0,-3.0,direction=confirmed; class=Observed; source=PUB-0003 p32
+H009,EV044,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0006 pPAS records
+H010,EV001,1.0,B,2.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p31
+H010,EV003,1.0,B,2.0,0.9,1.0,1.8,direction=absent; class=Observed; source=PUB-0003 p39
+H010,EV004,-2.0,B,3.0,0.9,1.0,-5.4,direction=confirmed; class=Observed; source=PUB-0003 p31
+H010,EV005,-1.0,B,3.0,0.9,1.0,-2.7,direction=weak_absent; class=Observed; source=PUB-0003 p31
+H010,EV006,2.0,B,2.0,0.9,1.0,3.6,direction=confirmed; class=Observed; source=PUB-0003 p32
+H010,EV008,-1.0,B,1.0,0.9,1.0,-0.9,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H010,EV009,0.0,B,1.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H010,EV010,-2.0,B,2.0,0.9,1.0,-3.6,direction=absent; class=Observed; source=PUB-0010 ppara 48
+H010,EV011,0.0,C,2.0,0.75,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p31
+H010,EV012,0.5,B,2.0,0.9,1.0,0.9,direction=weak_confirmed; class=Observed; source=PUB-0003 p32
+H010,EV013,-1.0,B,2.0,0.9,1.0,-1.8,direction=confirmed; class=Observed; source=PUB-0003 p32
+H010,EV014,2.0,B,1.0,0.9,1.0,1.8,"direction=confirmed; class=Observed; source=PUB-0003 p32, 36"
+H010,EV016,1.0,B,2.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p32
+H010,EV017,-2.0,C,3.0,0.75,1.0,-4.5,direction=absent; class=Observed; source=PUB-0003 p45
+H010,EV018,-1.0,B,2.0,0.9,1.0,-1.8,direction=absent; class=Observed; source=PUB-0003 p45
+H010,EV019,-1.0,C,3.0,0.75,1.0,-2.25,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H010,EV020,-1.0,C,3.0,0.75,1.0,-2.25,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H010,EV025,2.0,B,3.0,0.9,1.0,5.4,direction=ambiguous; class=Observed; source=PUB-0003 p33
+H010,EV026,-1.0,B,1.0,0.9,1.0,-0.9,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H010,EV027,-2.0,C,3.0,0.75,1.0,-4.5,direction=ambiguous; class=Observed; source=PUB-0003 p34-6
+H010,EV029,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H010,EV031,-1.0,B,2.0,0.9,1.0,-1.8,direction=weak_confirmed; class=Observed; source=PUB-0003 p33
+H010,EV032,0.0,C,2.0,0.75,1.0,0.0,direction=weak_confirmed; class=Observed; source=PUB-0003 p33-5
+H010,EV033,2.0,C,3.0,0.75,0.5,2.25,direction=confirmed; class=Derived; source=PUB-0003 p35-6
+H010,EV034,1.0,C,3.0,0.75,0.5,1.125,direction=confirmed; class=Derived; source=NONE
+H010,EV035,0.5,C,3.0,0.75,0.5,0.5625,direction=weak_confirmed; class=Derived; source=NONE
+H010,EV036,0.5,C,2.0,0.75,0.5,0.375,direction=weak_confirmed; class=Derived; source=NONE
+H010,EV037,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p31
+H010,EV038,-1.0,C,2.0,0.75,1.0,-1.5,"direction=weak_absent; class=Observed; source=PUB-0003 p37-8, 40"
+H010,EV039,1.0,B,2.0,0.9,1.0,1.8,"direction=absent; class=Observed; source=PUB-0003 p31, 32, 39-40"
+H010,EV040,1.0,C,2.0,0.75,1.0,1.5,direction=confirmed; class=Observed; source=PUB-0003 p32
+H010,EV044,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0006 pPAS records
+H011,EV001,1.0,B,2.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p31
+H011,EV003,1.0,B,2.0,0.9,1.0,1.8,direction=absent; class=Observed; source=PUB-0003 p39
+H011,EV004,2.0,B,3.0,0.9,1.0,5.4,direction=confirmed; class=Observed; source=PUB-0003 p31
+H011,EV005,-1.0,B,3.0,0.9,1.0,-2.7,direction=weak_absent; class=Observed; source=PUB-0003 p31
+H011,EV006,2.0,B,2.0,0.9,1.0,3.6,direction=confirmed; class=Observed; source=PUB-0003 p32
+H011,EV008,1.0,B,1.0,0.9,1.0,0.9,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H011,EV009,0.0,B,1.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H011,EV010,-2.0,B,2.0,0.9,1.0,-3.6,direction=absent; class=Observed; source=PUB-0010 ppara 48
+H011,EV011,0.0,C,2.0,0.75,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p31
+H011,EV012,1.0,B,2.0,0.9,1.0,1.8,direction=weak_confirmed; class=Observed; source=PUB-0003 p32
+H011,EV013,-2.0,B,2.0,0.9,1.0,-3.6,direction=confirmed; class=Observed; source=PUB-0003 p32
+H011,EV014,1.0,B,1.0,0.9,1.0,0.9,"direction=confirmed; class=Observed; source=PUB-0003 p32, 36"
+H011,EV016,2.0,B,2.0,0.9,1.0,3.6,direction=confirmed; class=Observed; source=PUB-0003 p32
+H011,EV017,1.0,C,3.0,0.75,1.0,2.25,direction=absent; class=Observed; source=PUB-0003 p45
+H011,EV018,-1.0,B,2.0,0.9,1.0,-1.8,direction=absent; class=Observed; source=PUB-0003 p45
+H011,EV019,-1.0,C,3.0,0.75,1.0,-2.25,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H011,EV020,0.0,C,3.0,0.75,1.0,0.0,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H011,EV025,-2.0,B,3.0,0.9,1.0,-5.4,direction=ambiguous; class=Observed; source=PUB-0003 p33
+H011,EV026,-2.0,B,1.0,0.9,1.0,-1.8,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H011,EV027,-2.0,C,3.0,0.75,1.0,-4.5,direction=ambiguous; class=Observed; source=PUB-0003 p34-6
+H011,EV029,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H011,EV031,1.0,B,2.0,0.9,1.0,1.8,direction=weak_confirmed; class=Observed; source=PUB-0003 p33
+H011,EV032,-1.0,C,2.0,0.75,1.0,-1.5,direction=weak_confirmed; class=Observed; source=PUB-0003 p33-5
+H011,EV033,0.0,C,3.0,0.75,0.5,0.0,direction=confirmed; class=Derived; source=PUB-0003 p35-6
+H011,EV034,1.0,C,3.0,0.75,0.5,1.125,direction=confirmed; class=Derived; source=NONE
+H011,EV035,0.0,C,3.0,0.75,0.5,0.0,direction=weak_confirmed; class=Derived; source=NONE
+H011,EV036,0.0,C,2.0,0.75,0.5,0.0,direction=weak_confirmed; class=Derived; source=NONE
+H011,EV037,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p31
+H011,EV038,-1.0,C,2.0,0.75,1.0,-1.5,"direction=weak_absent; class=Observed; source=PUB-0003 p37-8, 40"
+H011,EV039,-2.0,B,2.0,0.9,1.0,-3.6,"direction=absent; class=Observed; source=PUB-0003 p31, 32, 39-40"
+H011,EV040,-1.0,C,2.0,0.75,1.0,-1.5,direction=confirmed; class=Observed; source=PUB-0003 p32
+H011,EV044,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0006 pPAS records
+H012,EV001,1.0,B,2.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p31
+H012,EV003,1.0,B,2.0,0.9,1.0,1.8,direction=absent; class=Observed; source=PUB-0003 p39
+H012,EV004,2.0,B,3.0,0.9,1.0,5.4,direction=confirmed; class=Observed; source=PUB-0003 p31
+H012,EV005,0.0,B,3.0,0.9,1.0,0.0,direction=weak_absent; class=Observed; source=PUB-0003 p31
+H012,EV006,1.0,B,2.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p32
+H012,EV008,2.0,B,1.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H012,EV009,2.0,B,1.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H012,EV010,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0010 ppara 48
+H012,EV011,0.0,C,2.0,0.75,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p31
+H012,EV012,0.5,B,2.0,0.9,1.0,0.9,direction=weak_confirmed; class=Observed; source=PUB-0003 p32
+H012,EV013,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p32
+H012,EV014,1.0,B,1.0,0.9,1.0,0.9,"direction=confirmed; class=Observed; source=PUB-0003 p32, 36"
+H012,EV016,1.0,B,2.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p32
+H012,EV017,1.0,C,3.0,0.75,1.0,2.25,direction=absent; class=Observed; source=PUB-0003 p45
+H012,EV018,-1.0,B,2.0,0.9,1.0,-1.8,direction=absent; class=Observed; source=PUB-0003 p45
+H012,EV019,0.0,C,3.0,0.75,1.0,0.0,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H012,EV020,0.0,C,3.0,0.75,1.0,0.0,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H012,EV025,1.0,B,3.0,0.9,1.0,2.7,direction=ambiguous; class=Observed; source=PUB-0003 p33
+H012,EV026,1.0,B,1.0,0.9,1.0,0.9,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H012,EV027,-1.0,C,3.0,0.75,1.0,-2.25,direction=ambiguous; class=Observed; source=PUB-0003 p34-6
+H012,EV029,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H012,EV031,0.0,B,2.0,0.9,1.0,0.0,direction=weak_confirmed; class=Observed; source=PUB-0003 p33
+H012,EV032,-0.5,C,2.0,0.75,1.0,-0.75,direction=weak_confirmed; class=Observed; source=PUB-0003 p33-5
+H012,EV033,0.0,C,3.0,0.75,0.5,0.0,direction=confirmed; class=Derived; source=PUB-0003 p35-6
+H012,EV034,1.0,C,3.0,0.75,0.5,1.125,direction=confirmed; class=Derived; source=NONE
+H012,EV035,0.5,C,3.0,0.75,0.5,0.5625,direction=weak_confirmed; class=Derived; source=NONE
+H012,EV036,0.0,C,2.0,0.75,0.5,0.0,direction=weak_confirmed; class=Derived; source=NONE
+H012,EV037,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p31
+H012,EV038,0.0,C,2.0,0.75,1.0,0.0,"direction=weak_absent; class=Observed; source=PUB-0003 p37-8, 40"
+H012,EV039,1.0,B,2.0,0.9,1.0,1.8,"direction=absent; class=Observed; source=PUB-0003 p31, 32, 39-40"
+H012,EV040,1.0,C,2.0,0.75,1.0,1.5,direction=confirmed; class=Observed; source=PUB-0003 p32
+H012,EV044,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0006 pPAS records
+H013,EV001,1.0,B,2.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p31
+H013,EV003,1.0,B,2.0,0.9,1.0,1.8,direction=absent; class=Observed; source=PUB-0003 p39
+H013,EV004,2.0,B,3.0,0.9,1.0,5.4,direction=confirmed; class=Observed; source=PUB-0003 p31
+H013,EV005,0.0,B,3.0,0.9,1.0,0.0,direction=weak_absent; class=Observed; source=PUB-0003 p31
+H013,EV006,2.0,B,2.0,0.9,1.0,3.6,direction=confirmed; class=Observed; source=PUB-0003 p32
+H013,EV008,2.0,B,1.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H013,EV009,2.0,B,1.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H013,EV010,-1.0,B,2.0,0.9,1.0,-1.8,direction=absent; class=Observed; source=PUB-0010 ppara 48
+H013,EV011,0.0,C,2.0,0.75,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p31
+H013,EV012,0.5,B,2.0,0.9,1.0,0.9,direction=weak_confirmed; class=Observed; source=PUB-0003 p32
+H013,EV013,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p32
+H013,EV014,1.0,B,1.0,0.9,1.0,0.9,"direction=confirmed; class=Observed; source=PUB-0003 p32, 36"
+H013,EV016,1.0,B,2.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p32
+H013,EV017,-2.0,C,3.0,0.75,1.0,-4.5,direction=absent; class=Observed; source=PUB-0003 p45
+H013,EV018,-1.0,B,2.0,0.9,1.0,-1.8,direction=absent; class=Observed; source=PUB-0003 p45
+H013,EV019,-2.0,C,3.0,0.75,1.0,-4.5,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H013,EV020,-2.0,C,3.0,0.75,1.0,-4.5,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H013,EV025,1.0,B,3.0,0.9,1.0,2.7,direction=ambiguous; class=Observed; source=PUB-0003 p33
+H013,EV026,1.0,B,1.0,0.9,1.0,0.9,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H013,EV027,-1.0,C,3.0,0.75,1.0,-2.25,direction=ambiguous; class=Observed; source=PUB-0003 p34-6
+H013,EV029,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H013,EV031,0.0,B,2.0,0.9,1.0,0.0,direction=weak_confirmed; class=Observed; source=PUB-0003 p33
+H013,EV032,-0.5,C,2.0,0.75,1.0,-0.75,direction=weak_confirmed; class=Observed; source=PUB-0003 p33-5
+H013,EV033,0.0,C,3.0,0.75,0.5,0.0,direction=confirmed; class=Derived; source=PUB-0003 p35-6
+H013,EV034,2.0,C,3.0,0.75,0.5,2.25,direction=confirmed; class=Derived; source=NONE
+H013,EV035,0.5,C,3.0,0.75,0.5,0.5625,direction=weak_confirmed; class=Derived; source=NONE
+H013,EV036,0.0,C,2.0,0.75,0.5,0.0,direction=weak_confirmed; class=Derived; source=NONE
+H013,EV037,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p31
+H013,EV038,-0.5,C,2.0,0.75,1.0,-0.75,"direction=weak_absent; class=Observed; source=PUB-0003 p37-8, 40"
+H013,EV039,1.0,B,2.0,0.9,1.0,1.8,"direction=absent; class=Observed; source=PUB-0003 p31, 32, 39-40"
+H013,EV040,1.0,C,2.0,0.75,1.0,1.5,direction=confirmed; class=Observed; source=PUB-0003 p32
+H013,EV044,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0006 pPAS records
+H014,EV001,1.0,B,2.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p31
+H014,EV003,1.0,B,2.0,0.9,1.0,1.8,direction=absent; class=Observed; source=PUB-0003 p39
+H014,EV004,2.0,B,3.0,0.9,1.0,5.4,direction=confirmed; class=Observed; source=PUB-0003 p31
+H014,EV005,0.0,B,3.0,0.9,1.0,0.0,direction=weak_absent; class=Observed; source=PUB-0003 p31
+H014,EV006,1.0,B,2.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p32
+H014,EV008,2.0,B,1.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H014,EV009,2.0,B,1.0,0.9,1.0,1.8,direction=confirmed; class=Observed; source=PUB-0003 p39-40
+H014,EV010,-1.0,B,2.0,0.9,1.0,-1.8,direction=absent; class=Observed; source=PUB-0010 ppara 48
+H014,EV011,0.0,C,2.0,0.75,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p31
+H014,EV012,0.5,B,2.0,0.9,1.0,0.9,direction=weak_confirmed; class=Observed; source=PUB-0003 p32
+H014,EV013,0.0,B,2.0,0.9,1.0,0.0,direction=confirmed; class=Observed; source=PUB-0003 p32
+H014,EV014,2.0,B,1.0,0.9,1.0,1.8,"direction=confirmed; class=Observed; source=PUB-0003 p32, 36"
+H014,EV016,2.0,B,2.0,0.9,1.0,3.6,direction=confirmed; class=Observed; source=PUB-0003 p32
+H014,EV017,1.0,C,3.0,0.75,1.0,2.25,direction=absent; class=Observed; source=PUB-0003 p45
+H014,EV018,-1.0,B,2.0,0.9,1.0,-1.8,direction=absent; class=Observed; source=PUB-0003 p45
+H014,EV019,0.0,C,3.0,0.75,1.0,0.0,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H014,EV020,0.0,C,3.0,0.75,1.0,0.0,"direction=absent; class=Observed; source=PUB-0003 p45, 52"
+H014,EV025,2.0,B,3.0,0.9,1.0,5.4,direction=ambiguous; class=Observed; source=PUB-0003 p33
+H014,EV026,1.0,B,1.0,0.9,1.0,0.9,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H014,EV027,-2.0,C,3.0,0.75,1.0,-4.5,direction=ambiguous; class=Observed; source=PUB-0003 p34-6
+H014,EV029,0.0,B,3.0,0.9,1.0,0.0,direction=ambiguous; class=Observed; source=PUB-0003 p32
+H014,EV031,0.0,B,2.0,0.9,1.0,0.0,direction=weak_confirmed; class=Observed; source=PUB-0003 p33
+H014,EV032,-0.5,C,2.0,0.75,1.0,-0.75,direction=weak_confirmed; class=Observed; source=PUB-0003 p33-5
+H014,EV033,0.0,C,3.0,0.75,0.5,0.0,direction=confirmed; class=Derived; source=PUB-0003 p35-6
+H014,EV034,1.0,C,3.0,0.75,0.5,1.125,direction=confirmed; class=Derived; source=NONE
+H014,EV035,0.5,C,3.0,0.75,0.5,0.5625,direction=weak_confirmed; class=Derived; source=NONE
+H014,EV036,0.0,C,2.0,0.75,0.5,0.0,direction=weak_confirmed; class=Derived; source=NONE
+H014,EV037,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0003 p31
+H014,EV038,-0.5,C,2.0,0.75,1.0,-0.75,"direction=weak_absent; class=Observed; source=PUB-0003 p37-8, 40"
+H014,EV039,-1.0,B,2.0,0.9,1.0,-1.8,"direction=absent; class=Observed; source=PUB-0003 p31, 32, 39-40"
+H014,EV040,1.0,C,2.0,0.75,1.0,1.5,direction=confirmed; class=Observed; source=PUB-0003 p32
+H014,EV044,0.0,B,2.0,0.9,1.0,0.0,direction=absent; class=Observed; source=PUB-0006 pPAS records

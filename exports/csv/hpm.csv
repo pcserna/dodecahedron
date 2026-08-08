@@ -1,0 +1,567 @@
+hypothesis_id,ev_id,prediction,rationale
+H001,EV001,+,A structural node needs to be large enough to accept rods; hand-sized range expected
+H002,EV001,0,Measuring instrument could work at any scale within hand-held range
+H003,EV001,0,Ritual objects vary widely in size
+H004,EV001,+,Candle holder must accommodate candles; small to medium size expected
+H005,EV001,+,Textile tool must be hand-held; size range consistent
+H006,EV001,0,Astronomical instrument size is not strongly constrained
+H007,EV001,0,Military equipment size is not strongly constrained by hypothesis alone
+H008,EV001,0,Shrine component size is not strongly constrained
+H001,EV002,+,Structural node under load benefits from mass
+H002,EV002,0,Mass not diagnostically relevant to measuring function
+H003,EV002,0,Ritual objects are not constrained by mass
+H004,EV002,0,Mass not relevant to candle-holding function
+H005,EV002,0,Textile tool mass not diagnostically relevant
+H006,EV002,0,Mass not relevant to astronomical function
+H007,EV002,+,Military equipment may require durability; higher mass is consistent
+H008,EV002,0,Shrine component mass is not constrained
+H001,EV003,+,Thicker walls provide greater strength for load-bearing connector
+H002,EV003,0,Wall thickness irrelevant to measuring function
+H003,EV003,0,Wall thickness irrelevant to ritual use
+H004,EV003,0,Wall thickness irrelevant to candle-holding
+H005,EV003,0,Wall thickness irrelevant to textile function
+H006,EV003,0,Wall thickness irrelevant to astronomical use
+H007,EV003,+,Military equipment benefits from robustness
+H008,EV003,0,Wall thickness irrelevant to shrine use
+H001,EV004,++,Variable hole sizes match rods of different cross-sections in a modular system
+H002,EV004,++,Holes of specific sizes serve as diameter gauges; variation is functionally necessary
+H003,EV004,0,Ritual use does not require any particular hole size pattern
+H004,EV004,-,Candles are manufactured to standard sizes; systematically varying holes are unexpected
+H005,EV004,++,Different hole sizes accommodate different yarn thicknesses; variation is expected
+H006,EV004,+,Specific hole sizes could serve as sighting apertures at different angular scales
+H007,EV004,0,Military function does not predict any particular hole size pattern
+H008,EV004,0,Shrine function does not require specific hole sizes
+H001,EV005,++,A structural node requires matching opposing holes so rods pass through axially
+H002,EV005,+,Opposing pairs of equal diameter would serve as bilateral gauges
+H003,EV005,0,Ritual use has no requirement for opposing holes to match
+H004,EV005,-,Candle holder needs one upward-facing hole; opposing symmetry is not required
+H005,EV005,+,Yarn routing through opposing holes is plausible for textile use
+H006,EV005,+,Sighting through opposing holes requires alignment; matching sizes expected
+H007,EV005,0,Military function does not predict opposing-hole symmetry
+H008,EV005,0,Shrine use does not require opposing-hole symmetry
+H001,EV006,++,Rods require cylindrical or gently tapered holes for secure seating
+H002,EV006,++,Precision diameter gauging requires consistent hole profiles
+H003,EV006,0,Ritual use has no requirement for specific hole profile
+H004,EV006,+,Candles require a socket; some profile consistency expected
+H005,EV006,+,"Yarn routing benefits from smooth, consistent hole profiles"
+H006,EV006,+,Sighting apertures benefit from clean cylindrical profiles
+H007,EV006,0,Military function does not predict specific hole profile
+H008,EV006,0,Shrine function does not predict specific hole profile
+H001,EV007,+,Chamfers facilitate rod insertion and prevent binding
+H002,EV007,-,Chamfered edges reduce gauge precision; not expected on measuring instrument
+H003,EV007,0,Chamfers are not diagnostically relevant to ritual use
+H004,EV007,+,Chamfered edges prevent candle damage during insertion
+H005,EV007,++,Chamfered edges prevent yarn abrasion; strongly expected for textile use
+H006,EV007,0,Edge treatment not relevant to astronomical use
+H007,EV007,0,Edge treatment not relevant to military function
+H008,EV007,0,Edge treatment not relevant to shrine use
+H001,EV008,++,Knobs provide locking or spacer function; specific diameter is structurally meaningful
+H002,EV008,0,Knob diameter is not required for measuring function
+H003,EV008,+,Decorative knobs enhance prestige of ritual object
+H004,EV008,+,Knobs could stabilise the object as a stand
+H005,EV008,+,Knobs could serve as yarn guides or anchors
+H006,EV008,0,Knob diameter not relevant to astronomical use
+H007,EV008,0,Knob diameter not relevant to military function
+H008,EV008,+,Decorative knobs are consistent with a prestige shrine object
+H001,EV009,++,Symmetric knobs ensure isotropic structural behaviour under load
+H002,EV009,+,Symmetric knobs support balanced orientation for measuring
+H003,EV009,+,Symmetric form enhances aesthetic and ritual value
+H004,EV009,+,Symmetry ensures stable resting position
+H005,EV009,0,Knob symmetry not required for textile use
+H006,EV009,++,Symmetric knobs allow any face to serve as reference plane for sighting
+H007,EV009,0,Knob symmetry not required for military use
+H008,EV009,+,Symmetric form is aesthetically expected for a shrine component
+H001,EV010,+,Regular faces ensure consistent load distribution across connections
+H002,EV010,++,"Precision instrument requires accurate, regular geometry"
+H003,EV010,0,Face symmetry is not required for ritual use
+H004,EV010,0,Face symmetry not required for candle use
+H005,EV010,0,Face symmetry not required for textile use
+H006,EV010,++,Accurate geometric form required for reliable astronomical sighting
+H007,EV010,0,Face symmetry not required for military use
+H008,EV010,0,Face symmetry not required for shrine use
+H001,EV011,+,High-tin bronze is harder and stronger; appropriate for a load-bearing node
+H002,EV011,0,Alloy composition not diagnostic for measuring function
+H003,EV011,+,High-quality alloy is consistent with prestige ritual object
+H004,EV011,0,Alloy composition not diagnostic for candle function
+H005,EV011,0,Alloy composition not diagnostic for textile function
+H006,EV011,0,Alloy composition not diagnostic for astronomical use
+H007,EV011,+,"Military equipment uses durable, high-quality alloys"
+H008,EV011,+,Prestige material is consistent with shrine component
+H001,EV012,+,Structural integrity requires high casting quality
+H002,EV012,++,Precision measuring instrument requires high casting quality
+H003,EV012,+,Prestige ritual object expected to be well-cast
+H004,EV012,0,Casting quality not strongly required for candle function
+H005,EV012,0,Casting quality not strongly required for textile function
+H006,EV012,++,Astronomical instrument requires precise casting
+H007,EV012,+,Military equipment benefits from high quality
+H008,EV012,+,Prestige shrine component expected to be well-cast
+H001,EV013,-,Casting defects reduce structural integrity of a connector
+H002,EV013,--,Any casting defect would invalidate measuring precision
+H003,EV013,0,Minor defects are acceptable in ritual objects
+H004,EV013,0,Minor defects do not affect candle-holding function
+H005,EV013,0,Minor defects do not affect textile function
+H006,EV013,--,Casting defects in sighting holes would invalidate astronomical use
+H007,EV013,-,Defects reduce military equipment reliability
+H008,EV013,0,Minor defects are acceptable in a shrine component
+H001,EV014,0,Surface finishing not required for structural function
+H002,EV014,+,Smooth finish reduces manufacturing tolerance errors in gauging
+H003,EV014,+,Fine surface finish expected on prestige ritual objects
+H004,EV014,0,Surface finish not required for candle function
+H005,EV014,+,Smooth finish reduces yarn friction and wear
+H006,EV014,+,Smooth finish reduces sighting error
+H007,EV014,0,Surface finish not diagnostic for military function
+H008,EV014,+,Fine finish expected on prestige shrine component
+H001,EV015,+,A valued functional connector would be repaired rather than discarded
+H002,EV015,+,A precision measuring tool would be repaired to preserve function
+H003,EV015,+,A valuable ritual object would be repaired
+H004,EV015,0,Candle holders are not typically repaired
+H005,EV015,+,A working tool would be repaired to extend use-life
+H006,EV015,+,A precision instrument would be repaired
+H007,EV015,+,Military equipment is repaired in the field
+H008,EV015,+,A valued shrine component would be repaired
+H001,EV016,+,Secondary machining of holes refines rod fit in a structural connector
+H002,EV016,++,Lathe-turned or drilled holes are expected for measuring precision
+H003,EV016,0,Post-casting machining not required for ritual function
+H004,EV016,0,Post-casting machining not required for candle function
+H005,EV016,0,Post-casting machining not diagnostic for textile use
+H006,EV016,++,Precise sighting holes require secondary machining
+H007,EV016,0,Post-casting machining not diagnostic for military use
+H008,EV016,0,Post-casting machining not diagnostic for shrine use
+H001,EV017,++,Repeated rod insertion and removal produces diagnostic wear inside holes
+H002,EV017,+,Gauge use produces wear inside holes from objects being measured
+H003,EV017,-,Ritual object with minimal use would show little internal wear
+H004,EV017,+,Candle insertion and removal produces internal wear
+H005,EV017,++,Yarn passing continuously through holes produces strong internal wear
+H006,EV017,0,Astronomical sighting produces no internal wear
+H007,EV017,0,Military function does not predict internal hole wear
+H008,EV017,-,Shrine component with minimal handling shows little internal wear
+H001,EV018,+,Construction use produces external handling wear
+H002,EV018,0,External wear not diagnostic for measuring function
+H003,EV018,-,Ritual objects are typically handled carefully; low external wear expected
+H004,EV018,0,External wear not diagnostic for candle function
+H005,EV018,+,Textile tool in regular use shows external wear from handling
+H006,EV018,0,External wear not diagnostic for astronomical use
+H007,EV018,+,Military equipment in active use shows external wear
+H008,EV018,-,Shrine component handled carefully; low external wear expected
+H001,EV019,++,Ropes routed through holes or over knobs in a connector produce strong groove wear
+H002,EV019,-,Rope wear would not result from measuring use
+H003,EV019,0,Rope wear could occur from suspension in ritual contexts
+H004,EV019,0,Rope wear is not expected for candle use
+H005,EV019,+,Yarn routing over knobs or through holes could produce rope-like wear
+H006,EV019,-,Rope wear is not expected from astronomical use
+H007,EV019,0,Military use might involve rope but not diagnostically
+H008,EV019,0,Shrine component might be suspended by rope but not diagnostically
+H001,EV020,-,A structural node is not expected to rotate in service
+H002,EV020,-,A measuring instrument is not expected to rotate
+H003,EV020,0,Rotational wear could result from spinning ritual use
+H004,EV020,+,A candle stand might be rotated for candle adjustment
+H005,EV020,+,Textile use could involve rotation of the tool
+H006,EV020,0,Astronomical use does not involve continuous rotation
+H007,EV020,0,Military use does not predict rotational wear
+H008,EV020,0,Shrine use does not predict rotational wear
+H001,EV021,+,Construction-site use exposes connector to accidental impacts
+H002,EV021,-,A precision measuring tool would be protected from impacts
+H003,EV021,-,Ritual object protected from impacts
+H004,EV021,0,Candle stand could sustain minor impacts
+H005,EV021,0,Textile tool not expected to sustain significant impacts
+H006,EV021,-,Precision instrument protected from impacts
+H007,EV021,+,Military use in field conditions could produce impact damage
+H008,EV021,-,Shrine component protected from impacts
+H001,EV022,+,Construction use produces surface abrasion
+H002,EV022,0,Abrasion not diagnostic for measuring use
+H003,EV022,-,Ritual object not expected to show significant abrasion
+H004,EV022,0,Abrasion not diagnostic for candle function
+H005,EV022,+,Textile tool in regular use sustains abrasion
+H006,EV022,0,Abrasion not diagnostic for astronomical use
+H007,EV022,+,Military equipment in field use sustains abrasion
+H008,EV022,-,Shrine component not expected to show significant abrasion
+H001,EV023,--,Structural connector is not exposed to heat; thermal alteration is contradictory
+H002,EV023,--,Measuring instrument would be ruined by thermal alteration
+H003,EV023,+,"Ritual use may involve fire, incense or heat"
+H004,EV023,++,Candle holder is in direct contact with flame; soot and wax strongly expected
+H005,EV023,--,Textile tool is not exposed to heat; thermal alteration is contradictory
+H006,EV023,--,Astronomical instrument not exposed to heat
+H007,EV023,-,Military equipment not normally exposed to sustained heat
+H008,EV023,+,Shrine component may be associated with ritual fire or candles
+H001,EV024,0,Structural connector does not produce diagnostic chemical residues
+H002,EV024,0,Measuring use does not produce diagnostic residues
+H003,EV024,+,"Ritual use may leave incense, oil or other organic residues"
+H004,EV024,++,Wax residues from candles are strongly expected
+H005,EV024,+,Wool grease and fibre residues may survive in holes
+H006,EV024,0,Astronomical use does not produce diagnostic residues
+H007,EV024,0,Military use does not produce diagnostic chemical residues
+H008,EV024,+,Ritual oils or incense residues may be present
+H001,EV025,+,Structural connector expected at construction or settlement sites
+H002,EV025,0,Measuring instrument could appear at any site type
+H003,EV025,+,"Ritual object expected at temples, hoards, or votive deposits"
+H004,EV025,+,Candle holder expected at domestic or villa sites
+H005,EV025,+,"Textile tool expected at domestic, villa, or civilian settlement sites"
+H006,EV025,+,Astronomical instrument expected at high-status or administrative sites
+H007,EV025,++,Military equipment strongly expected at forts and military sites
+H008,EV025,+,Shrine component expected at domestic or religious sites
+H001,EV026,0,Structural connectors could appear across the empire; province is not diagnostic
+H002,EV026,0,Measuring instruments could appear across the empire
+H003,EV026,0,Ritual objects are not geographically constrained
+H004,EV026,0,Candle holders are not geographically constrained
+H005,EV026,+,North-western provinces had distinct textile traditions; some distribution clustering possible
+H006,EV026,0,Astronomical instruments not geographically constrained
+H007,EV026,+,"Military frontier provinces (Rhine, Danube, Britain) would concentrate military equipment"
+H008,EV026,0,Shrine components not geographically constrained
+H001,EV027,+,Associated construction materials or structural components would support this hypothesis
+H002,EV027,+,Associated measuring instruments or surveying tools would support this hypothesis
+H003,EV027,++,"Associated votive objects, coins, or ritual deposits would strongly support this"
+H004,EV027,+,Associated lighting equipment would support candle use
+H005,EV027,++,"Associated spindle whorls, needles, loom weights, or fibre remains strongly support textile use"
+H006,EV027,+,Associated astronomical or mathematical instruments would support this hypothesis
+H007,EV027,++,"Associated weapons, armour, or military equipment would strongly support this"
+H008,EV027,++,"Associated religious objects, shrine fittings, or cult items strongly support this"
+H001,EV028,0,Stratigraphic context is not strongly diagnostic for structural use
+H002,EV028,0,Stratigraphic context is not strongly diagnostic for measuring use
+H003,EV028,+,Votive deposit or destruction layer stratigraphy supports ritual use
+H004,EV028,0,Stratigraphic context is not strongly diagnostic for candle use
+H005,EV028,0,Stratigraphic context is not strongly diagnostic for textile use
+H006,EV028,0,Stratigraphic context is not strongly diagnostic for astronomical use
+H007,EV028,+,Military occupation or destruction layer stratigraphy supports military use
+H008,EV028,+,Stratigraphic context near hearth or storage supports domestic shrine use
+H001,EV029,0,2nd–4th c. date is consistent with peak of Roman construction; not strongly diagnostic
+H002,EV029,0,2nd–4th c. date is not strongly diagnostic for measuring use
+H003,EV029,0,2nd–4th c. ritual use is not strongly diagnostic
+H004,EV029,0,2nd–4th c. date is not strongly diagnostic for candle use
+H005,EV029,0,2nd–4th c. date is not strongly diagnostic for textile use
+H006,EV029,0,2nd–4th c. date is not strongly diagnostic for astronomical use
+H007,EV029,+,2nd–4th c. is the peak of Roman military presence on northern frontier
+H008,EV029,0,2nd–4th c. date is not strongly diagnostic for shrine use
+H001,EV030,++,Multiple connectors at one site strongly support a structural system using many nodes
+H002,EV030,+,Multiple measuring instruments suggest a standardised tool set
+H003,EV030,0,Single or multiple ritual objects are equally plausible
+H004,EV030,0,Single or multiple candle holders are equally plausible
+H005,EV030,+,Multiple textile tools could indicate workshop context
+H006,EV030,0,Single astronomical instrument is expected; multiples are unusual
+H007,EV030,+,Multiple identical items suggest military standardised equipment
+H008,EV030,0,Single shrine component is the most expected situation
+H001,EV031,+,Military construction would use structural connectors
+H002,EV031,+,Military surveying uses measuring instruments
+H003,EV031,0,Military personnel also engaged in ritual; not strongly diagnostic
+H004,EV031,0,Candles were used in military contexts; not strongly diagnostic
+H005,EV031,0,Soldiers also engaged in textile work; not strongly diagnostic
+H006,EV031,+,Military surveying and artillery used astronomical/geometric instruments
+H007,EV031,++,Direct military association is a strong predictor for military equipment
+H008,EV031,0,Military shrine use is possible but not distinctive
+H001,EV032,-,Ritual context is not expected for a utilitarian structural connector
+H002,EV032,-,Ritual context is not expected for a utilitarian measuring instrument
+H003,EV032,++,Direct ritual association is the strongest predictor for a ritual object
+H004,EV032,+,Candles have ritual uses; some association possible
+H005,EV032,-,Textile tools are not typically associated with ritual deposits
+H006,EV032,0,Astronomical instruments could be used in ritual contexts
+H007,EV032,0,Military objects can be ritually deposited
+H008,EV032,++,Direct ritual association is the strongest predictor for a shrine component
+H001,EV033,++,Rod compatibility is a prerequisite for the structural connector hypothesis
+H002,EV033,+,Rods of known diameter could serve as reference objects for measuring
+H003,EV033,0,Ritual objects are not required to accept rods
+H004,EV033,+,Candles are effectively cylindrical rods; compatibility expected
+H005,EV033,+,Knitting needles or rods could be inserted for textile use
+H006,EV033,0,Astronomical sighting does not require rod insertion
+H007,EV033,0,Military function does not specifically require rod compatibility
+H008,EV033,0,Shrine use does not require rod insertion
+H001,EV034,++,Rope routing through holes or over knobs is a core prediction of the connector hypothesis
+H002,EV034,-,Rope compatibility is not required for measuring function
+H003,EV034,0,Ritual objects can be suspended but rope routing is not diagnostic
+H004,EV034,-,Rope routing is not expected for candle use
+H005,EV034,+,Yarn (a form of rope) routing through holes is expected for textile use
+H006,EV034,-,Rope routing is not expected for astronomical use
+H007,EV034,0,Rope use with military equipment is possible but not diagnostic
+H008,EV034,0,Rope suspension of shrine component is possible but not diagnostic
+H001,EV035,++,Structural stability under load is a core requirement of a connector/node
+H002,EV035,0,Structural stability is not required for measuring function
+H003,EV035,0,Ritual object does not require structural load-bearing capability
+H004,EV035,+,A candle stand requires stability to prevent toppling
+H005,EV035,0,Textile tool does not require structural load-bearing capability
+H006,EV035,0,Astronomical instrument does not require structural stability under load
+H007,EV035,0,Military function does not require structural stability under load
+H008,EV035,0,Shrine component does not require structural stability under load
+H001,EV036,++,Plausible force paths through the dodecahedron are required for a structural node
+H002,EV036,0,Load transfer is not relevant to measuring function
+H003,EV036,0,Load transfer is not relevant to ritual use
+H004,EV036,0,Load transfer not relevant beyond simple candle weight
+H005,EV036,0,Load transfer not relevant to textile function
+H006,EV036,0,Load transfer not relevant to astronomical use
+H007,EV036,0,Load transfer not specifically relevant to military function
+H008,EV036,0,Load transfer not relevant to shrine function
+H001,EV037,++,Modular assembly of multiple specimens into a larger structure is the core prediction
+H002,EV037,0,Assembly into larger structures is not required for measuring function
+H003,EV037,0,Assembly is not required for ritual function
+H004,EV037,0,Assembly into candle arrays is possible but not predicted
+H005,EV037,0,Assembly not required for textile function
+H006,EV037,0,Assembly not required for astronomical function
+H007,EV037,0,Assembly not required for military function
+H008,EV037,0,Assembly not required for shrine function
+H001,EV038,-,An isotropic connector works in any orientation; orientation dependence is unexpected
+H002,EV038,++,Measuring function requires consistent orientation relative to the object being measured
+H003,EV038,0,Ritual use could require specific orientation or be orientation-independent
+H004,EV038,++,Candle holder must remain upright; strong orientation dependence expected
+H005,EV038,0,Textile tool orientation is flexible
+H006,EV038,++,Astronomical sighting requires precise and repeatable orientation
+H007,EV038,0,Military use does not specifically require fixed orientation
+H008,EV038,+,Shrine components are often displayed in a specific orientation
+H001,EV039,+,A modular structural system benefits from standardised components
+H002,EV039,++,A measuring instrument must be standardised to produce reproducible results
+H003,EV039,0,Ritual objects vary widely; standardisation is not expected
+H004,EV039,0,Candle holders are not required to be standardised
+H005,EV039,+,Standardised textile tools produce consistent yarn gauges
+H006,EV039,++,Astronomical instruments must be standardised to produce reliable results
+H007,EV039,+,Military equipment is typically standardised for logistics
+H008,EV039,0,Shrine components are not required to be standardised
+H001,EV040,-,A universal structural system should show low regional variation
+H002,EV040,-,A universal measuring standard should show low regional variation
+H003,EV040,+,Regional cult traditions would produce regional variation in ritual objects
+H004,EV040,0,Regional variation in candle holders is plausible
+H005,EV040,+,Regional textile traditions could produce variation in tool design
+H006,EV040,-,Astronomical phenomena are universal; regional variation is unexpected
+H007,EV040,+,Regional military traditions could produce variation in equipment design
+H008,EV040,+,Regional shrine traditions could produce variation in component design
+H009,EV001,+,"A hub must be large enough for several rafter ends to converge without fouling, and small enough to carry on campaign"
+H009,EV002,-,Campaign equipment is transported by mule or on the march; a shelter fitting is under constant pressure to be light. Specific expectation: well under 150 g
+H009,EV003,++,The hub is the single point through which rafter compression and fabric tension pass. Wall thickness is the whole of its strength. Specific expectation: substantially over 3 mm
+H009,EV004,-,"Rafters of a symmetrical tent are cut to one diameter, so their sockets should be interchangeable; systematically varying sockets are not what the function calls for"
+H009,EV005,+,"If a central mast passes through the hub, one opposed pair must match its diameter at both ends"
+H009,EV006,++,"A pole must seat squarely and withdraw without binding, which requires a clean cylindrical or gently tapered socket"
+H009,EV007,+,Chamfered edges ease repeated insertion and stop the rim shaving the pole end
+H009,EV008,0,The function does not call for knobs; they are neither required nor excluded by it
+H009,EV009,0,Knob placement is not constrained by the function
+H009,EV010,++,"A hub that distributes load to rafters at equal angles must itself be geometrically regular, or the tent is pulled out of true"
+H009,EV011,++,"A load-bearing fitting needs a hard, strong alloy. A high-lead casting alloy creeps and deforms under sustained load and would be the wrong choice. Specific expectation: high-tin, low-lead bronze"
+H009,EV012,+,Sound casting matters where the object is structural
+H009,EV013,--,"Voids, seams and miscasts sit directly in the load path of a hub and are a failure risk; they should have been rejected at manufacture"
+H009,EV014,0,Surface finish is irrelevant to a fitting hidden at the top of a tent
+H009,EV015,++,Equipment in continuous field use is repaired rather than discarded; a campaign fitting should show ancient repairs
+H009,EV016,0,Secondary machining is not required by the function
+H009,EV017,++,THE CENTRAL PREDICTION OF A MOBILE FITTING. Poles are driven in and withdrawn every time camp is struck. Repeated hardwood-on-bronze contact inside the sockets must leave wear
+H009,EV018,++,"Struck, bundled, loaded and unloaded at every move; abrasion in transport is unavoidable"
+H009,EV019,++,Guy lines bearing on the body under tension leave grooves or polish
+H009,EV020,0,Nothing in the function requires the hub to rotate
+H009,EV021,+,Field equipment is dropped and knocked; impact damage is expected
+H009,EV022,+,Abrasion follows from packing and transport
+H009,EV023,0,A tent hub has no relation to heat or flame
+H009,EV024,+,"Contact with leather, tallow or fabric dressing should leave organic traces in the sockets"
+H009,EV025,++,"Tents belong to armies and travelling parties. Specific expectation: military camps, marching camps and temporary sites should dominate, and permanent civilian settlement should be marginal"
+H009,EV026,--,"Tents accompany the army wherever it goes. Specific expectation: finds across the whole campaigning empire, including Italy, Spain, Africa and the eastern provinces. A distribution confined to a few adjacent north-western provinces would falsify the hypothesis. The form of this argument is not original: PUB-0003, 33 deploys it against a primary military purpose, citing the mobility of Roman soldiers"
+H009,EV027,++,"Specific expectation: association with tent pegs, pole shoes, leather, and military or travelling equipment"
+H009,EV028,+,Temporary camp surfaces and abandonment layers are where a lost tent fitting would come to rest
+H009,EV029,-,The Roman army used leather tents from the late Republic onward. A fitting for them should appear across the imperial period rather than in a narrow late window
+H009,EV030,++,"A camp holds hundreds of tents. Multiple hubs at one site are strongly expected, and the total surviving population should be large"
+H009,EV031,++,Direct military association is the core contextual claim
+H009,EV032,--,"A shelter fitting has no business in temple deposits, graves or rivers; ritual association would count against it"
+H009,EV033,++,Rafters or a mast must seat in the openings; rod compatibility is a prerequisite
+H009,EV034,++,Guy lines must be attachable to or routable through the fitting
+H009,EV035,++,The hub must hold its shape under the combined thrust of the rafters
+H009,EV036,++,Force must pass from each rafter through the body to the others; plausible load paths are required
+H009,EV037,0,One hub serves one tent; assembly of multiple dodecahedra into a larger structure is not part of this hypothesis. This is what separates H009 from H001
+H009,EV038,++,A tent apex has a definite top and bottom and a defined axis; the fitting must be orientable
+H009,EV039,++,Issued equipment is standardised so that any rafter fits any hub and damaged parts can be swapped in the field
+H009,EV040,--,Army equipment is uniform across the provinces; strong regional variation would indicate local craft production rather than issue
+H010,EV001,+,The crown of a hand-carried canopy must be small; anything larger than a fist becomes unwieldy at the top of a shaft
+H010,EV002,--,"Mass at the crown sits at the far end of a lever held at arm's length, so every gram is multiplied. A hand-carried shade is under severe pressure to be light. Specific expectation: well under 100 g"
+H010,EV003,-,Canopy loads are fabric weight and wind only. Heavy walls buy nothing and cost weight where weight matters most; thin walls are expected
+H010,EV004,--,"THE CENTRAL PREDICTION AGAINST THIS HYPOTHESIS. The ribs of a radially symmetrical canopy are identical, so their sockets must be identical. Sockets of systematically differing diameter would mean ribs of differing thickness, and the canopy would pull unevenly and hang askew"
+H010,EV005,++,A shaft passing through the crown requires one opposed pair matched to its diameter at both ends
+H010,EV006,++,Rib ends must seat cleanly and squarely in their sockets
+H010,EV007,++,Ribs bear and flex against the socket rim; a sharp edge would cut into wooden or cane ribs at the point of highest stress
+H010,EV008,-,Projections at every vertex sit directly under the canopy fabric drawn over the crown and would chafe and tear it
+H010,EV009,0,Knob placement is not constrained by the function
+H010,EV010,++,Radial symmetry of the canopy requires a regular hub; an irregular crown produces an irregular canopy
+H010,EV011,0,"The fitting is not load-critical, so alloy choice is not diagnostic"
+H010,EV012,+,A visible fitting on a status accessory is expected to be well cast
+H010,EV013,-,Visible casting flaws on a display object would be rejected
+H010,EV014,++,The crown is the most visible part of an object carried above head height; fine finish and decoration are strongly expected
+H010,EV015,+,A valued personal possession is repaired rather than discarded
+H010,EV016,+,Decorative secondary working is expected on a display fitting
+H010,EV017,++,"Ribs seat, bear and, if the shade folds or is dismantled for storage, move within the sockets. Wood against bronze at the load points must leave wear"
+H010,EV018,+,"Carried, handled and stored; surface contact is constant"
+H010,EV019,+,Stretcher cords or a tie holding the canopy furled bear on the fitting
+H010,EV020,+,A shade is turned on its shaft to follow the sun
+H010,EV021,0,Impact damage is not specifically predicted
+H010,EV022,+,Fabric drawn repeatedly over the crown abrades it
+H010,EV023,--,"Nothing in the function of a shade involves heat, flame or wax"
+H010,EV024,+,Textile or leather fibres and canopy dressing should remain in the sockets and under the rim
+H010,EV025,++,"Specific expectation: urban civilian settlements and elite domestic contexts, where a personal luxury accessory is used and lost. NOT military camps"
+H010,EV026,-,"A sunshade is most useful where the sun is strongest, so a sun-shade reading predicts finds concentrated in Italy, Spain, Africa and the eastern provinces. AGAINST THIS: a rain shade predicts the opposite, and the north-western provinces are wet. Set at '-' rather than '--' because the two readings of the same object point in opposite directions and the hypothesis does not choose between them"
+H010,EV027,++,"Specific expectation: a shaft or handle, ribs of wood, cane, bone or metal, textile or leather from the canopy, and personal or toilet items"
+H010,EV028,0,No particular stratigraphy follows from the function
+H010,EV029,0,Shades are attested across the imperial period; no narrow window is predicted
+H010,EV030,-,A personal accessory is lost singly; concentrations at one site are not expected
+H010,EV031,--,A parasol is the antithesis of field equipment. A substantial share of finds from military camps counts against the hypothesis
+H010,EV032,0,"A personal possession placed in a grave is ambiguous between ritual deposition and ordinary furnishing, so this is not diagnostic"
+H010,EV033,++,Ribs and a shaft must seat in the openings; rod compatibility is a prerequisite
+H010,EV034,+,Stretcher cords or a furling tie must be attachable
+H010,EV035,+,The crown must hold its shape under modest canopy and wind load
+H010,EV036,+,Rib thrust must pass through the crown to the shaft
+H010,EV037,0,One crown serves one canopy; assembling several dodecahedra into a larger structure is no part of this hypothesis
+H010,EV038,++,"A canopy crown has an unambiguous top, bottom and axis: the shaft below, the fabric above"
+H010,EV039,-,"A bespoke luxury accessory made by individual craftsmen need not conform to any standard, and variation between makers is expected. THIS IS WHERE H010 DIFFERS SHARPLY FROM H009: nothing about a parasol requires issued, interchangeable parts"
+H010,EV040,+,Craft production of a fashion accessory varies by region and workshop
+H011,EV001,+,Must be held at arm's length and carried on the person; hand-sized
+H011,EV002,-,"Carried on the body, probably on a cord, and raised repeatedly; light is better"
+H011,EV003,-,"A thick wall turns each aperture into a tube, which restricts the field of view and blurs the coincidence between near and far rims. A thin wall gives the crisp aperture edge the method depends on"
+H011,EV004,++,Apertures of differing size ARE the instrument: each pair covers a different range bracket. Uniform holes would make the device useless
+H011,EV005,++,"The user sights through a PAIR, so the relationship between the near and far aperture of each pair is the quantity being read. That relationship must be systematic and known across the six pairs, or the brackets do not form a usable series"
+H011,EV006,++,A clean circular aperture is required for a crisp sight picture
+H011,EV007,--,Chamfers and rounded rims destroy the sharp edge the eye judges coincidence against
+H011,EV008,+,"Knobs give a firm grip, keep the object from rolling, and protect the aperture rims on which the calibration depends"
+H011,EV009,0,Knob placement is not constrained by the function
+H011,EV010,++,"Range is computed from the separation of the two apertures, so the face-to-opposite-face distance is the instrument's baseline. It must be accurate and identical on every axis, or every reading carries an error"
+H011,EV011,0,Alloy is not diagnostic for an optical device
+H011,EV012,++,A measuring instrument is only as good as its manufacture
+H011,EV013,--,Casting flaws on or near the apertures corrupt the calibration directly
+H011,EV014,+,Marking is expected on a graduated instrument
+H011,EV015,+,A calibrated personal instrument is worth repairing
+H011,EV016,++,"Engraved rings around the apertures are exactly what a graduated instrument needs, whether as calibration marks or as an index of which pair is which"
+H011,EV017,-,"NOTHING PASSES THROUGH THE HOLES. An optical device predicts no internal wear, and its absence would count in favour of the hypothesis. This is the variable on which H011 differs most sharply from H001, H009 and H010"
+H011,EV018,+,Carried and handled constantly in the field
+H011,EV019,+,Suspension on a cord or chain at the neck or belt bears on the object
+H011,EV020,0,"Selecting a pair means turning the object in the hand, not rotating it on an axis; no rotational wear pattern is predicted"
+H011,EV021,+,Field carriage means knocks
+H011,EV022,+,Handling and suspension abrade the surface
+H011,EV023,--,Nothing in optical ranging involves heat or flame
+H011,EV024,--,Any substance in the apertures would obstruct the sight line; the holes must be kept clear
+H011,EV025,++,"Specific expectation: military camps, frontier posts and hunting or rural contexts, where archers operate. Urban civilian settlement is not where a ranging aid is used or lost"
+H011,EV026,--,"Archers served across the whole empire, and a device that genuinely improved shooting would spread with them. Confinement to a few adjacent north-western provinces would falsify the hypothesis"
+H011,EV027,++,"Specific expectation: arrowheads, bow fittings, quiver mounts, or other military or hunting equipment"
+H011,EV028,0,No particular stratigraphy follows
+H011,EV029,0,Archery spans the imperial period; no narrow window is predicted
+H011,EV030,+,A unit of archers implies several devices at one site
+H011,EV031,++,Direct military association is the core contextual claim
+H011,EV032,--,"A field instrument has no place in temple deposits, graves or rivers"
+H011,EV033,0,Nothing is inserted; rod compatibility is neither required nor excluded
+H011,EV034,+,A suspension cord is expected
+H011,EV035,0,Structural load bearing is irrelevant
+H011,EV036,0,Load transfer is irrelevant
+H011,EV037,0,Assembly into larger structures is no part of this hypothesis
+H011,EV038,++,The device must be held in a known orientation with a known pair aligned to the eye; which pair is in use must be identifiable at a glance
+H011,EV039,++,A ranging device that is not calibrated returns wrong ranges. The aperture series must be regular within an object and reproducible between objects if the training is to transfer between archers
+H011,EV040,-,"Strong regional variation would mean each device reads differently, and no transferable ranging practice could exist"
+H012,EV001,+,Held in one hand and worked with the other; hand-sized
+H012,EV002,+,Mass steadies the frame against yarn tension while it is worked
+H012,EV003,-,"The shell only has to carry the knobs. Yarn tension is trivial, so heavy walls buy nothing"
+H012,EV004,++,"Each opening sets the bore of the tube worked over the knobs around it. A graded set of openings is a graded set of tube diameters, which is the functional point of the object"
+H012,EV005,0,"Each face is worked on its own. NEUTRAL BECAUSE THE MECHANISM IS INDIFFERENT: no yarn passes from one face to its opposite, so what the opposite opening measures is irrelevant. This is the variable on which H001 and H011 lose heavily and H012 has no stake"
+H012,EV006,+,The worked tube passes out through the opening; a clean profile avoids snagging
+H012,EV007,++,A rounded or bevelled lip is essential where yarn is drawn over the edge under tension. A sharp rim would cut it
+H012,EV008,++,Knob diameter and neck form ARE the working surface. Each must hold a loop and release it when lifted
+H012,EV009,++,"The five knobs around a worked face must be uniform, or the stitches come out uneven"
+H012,EV010,0,NEUTRAL BECAUSE THE MECHANISM IS INDIFFERENT: only the local pentagon being worked matters. Departure from overall regularity does not affect the work
+H012,EV011,0,Alloy is not diagnostic for a tool under negligible load
+H012,EV012,+,A snag-free working surface matters more than structural soundness
+H012,EV013,0,"NEUTRAL BECAUSE THE MECHANISM IS INDIFFERENT: the two production holes are simply not worked. The commonest type has ten ringed openings plus one opposed unringed pair, which leaves exactly ten usable faces"
+H012,EV014,+,Decoration is expected on a personal possession
+H012,EV015,+,A working tool is repaired rather than replaced
+H012,EV016,+,Finishing of the lips and knob necks to avoid snagging
+H012,EV017,-,"NOTHING PASSES THROUGH THE BORE UNDER LOAD; the worked tube hangs free. Internal hole wear is not expected, and its absence counts in favour. THIS IS THE PREDICTION THAT SEPARATES H012 FROM H005, which predicts '++' here"
+H012,EV018,+,Constant handling of the body of the tool
+H012,EV019,0,"NEUTRAL BECAUSE THE TERMS DIFFER: EV019 records grooves or polish from rope. Fine yarn is not rope, and the surface it bears on is the knob, which is EV041"
+H012,EV020,0,"The frame is turned in the hand as work proceeds round a face; there is no axle and no rotating contact, so no rotational wear pattern forms"
+H012,EV021,0,Impact damage is not predicted by domestic use
+H012,EV022,++,Yarn drawn repeatedly over and down the knob necks abrades them at the base
+H012,EV023,--,"Nothing in cord work involves heat, flame or wax"
+H012,EV024,+,Textile fibres should remain in the knob necks and against the lips
+H012,EV042,-,"Microwear will show contact on the outer lip where yarn is drawn over the edge, and NOT inside the bore. NOTE: H001-H011 are deliberately silent on EV042 because they were specified before the variable existed. Their predictions for it MUST be authored before the microwear study is read, not afterwards"
+H012,EV041,++,"THE CENTRAL PREDICTION OF THIS HYPOTHESIS. Years of yarn drawn over the knobs must leave polish, grooving or abrasion on the knobs and their necks. This is the variable that decides H012, and it did not exist in the evidence set before the hypothesis was written"
+H012,EV025,+,"Specific expectation: domestic and settlement contexts, where cord work is done"
+H012,EV026,+,A craft technique is culturally transmitted and may be confined to the region that practises it
+H012,EV027,+,"Specific expectation: spindle whorls, loom weights, needles or other textile equipment"
+H012,EV028,0,No particular stratigraphy follows from domestic use
+H012,EV029,0,No narrow chronological window follows from the mechanism
+H012,EV030,0,"A personal tool is lost singly, but a workshop could hold several"
+H012,EV031,0,"Soldiers mend and make clothing, so a military presence neither supports nor contradicts"
+H012,EV032,-,A working tool in temple deposits and rivers is not what the mechanism predicts
+H012,EV033,0,Nothing is inserted; rod compatibility is irrelevant either way
+H012,EV034,+,Yarn must pass over the knobs and out through the opening
+H012,EV035,+,The frame must sit or be held steady while worked
+H012,EV036,0,No load is transferred across the object
+H012,EV037,0,Assembly into larger structures is no part of this hypothesis
+H012,EV038,0,NEUTRAL BECAUSE THE MECHANISM IS INDIFFERENT: whichever face is being worked is turned downward for the moment; there is no fixed global orientation and none is required
+H012,EV039,-,"A personal craft tool need not conform to any standard. The gauge wanted varies with the work and the worker, so variation between objects is what the mechanism predicts"
+H012,EV040,+,Craft traditions and their tools vary by region
+H013,EV001,+,Must be gripped and turned in the hand while the work advances
+H013,EV002,+,Mass gives the turning tool inertia and helps hold steady tension
+H013,EV003,-,Strand tension in hand-laid cord is modest; heavy walls buy nothing
+H013,EV004,++,"Each aperture suits a different core and finished-rope diameter. A graded set of apertures is a graded set of cord gauges, which is the functional point of the object"
+H013,EV005,0,"NEUTRAL BECAUSE THE MECHANISM IS INDIFFERENT: only one aperture is in use at a time and the core does not continue to the opposite face, so what the opposite aperture measures is irrelevant"
+H013,EV006,++,"The core runs through the aperture under tension while the object turns; a clean, true profile is required or the core binds and chafes"
+H013,EV007,++,"The rim must be rounded, because the core bears against it continuously and a sharp edge would cut the fibre"
+H013,EV008,++,"THE KNOBS ARE THE STRAND GUIDES. Their diameter and spacing set the angle at which each strand meets the core, which is what determines the lay of the finished rope"
+H013,EV009,++,"The five knobs around the working aperture must be uniform and regularly placed, or the strands are laid at unequal angles and the rope is uneven"
+H013,EV010,+,Even strand spacing requires a regular pentagon around the working face
+H013,EV011,0,Alloy is not diagnostic for a tool under fibre tension
+H013,EV012,+,A smooth surface is needed so the fibre is not abraded as it runs
+H013,EV013,0,NEUTRAL BECAUSE THE MECHANISM IS INDIFFERENT: the two production holes are simply not chosen as the working aperture
+H013,EV014,+,Decoration is expected on a personal working tool
+H013,EV015,+,A tool in continuous use is repaired rather than replaced
+H013,EV016,+,Finishing of the rim and knobs so that fibre does not snag
+H013,EV017,++,THE DECISIVE PREDICTION. A tensioned core passes through the aperture while the object is turned against it. Bore wear is unavoidable and should be circumferential. THIS IS WHERE H013 AND H012 SEPARATE: H012 predicts '-' here because nothing passes through its bore
+H013,EV018,+,Constant handling of the body of the tool
+H013,EV019,++,"Every strand bears on a knob and on the aperture rim under tension throughout the work. If any hypothesis predicts rope wear, this one does"
+H013,EV020,++,The object is turned repeatedly under load and the contact between cord and object is rotational by construction
+H013,EV021,0,Impact damage is not predicted by workshop use
+H013,EV022,++,Fibre running under tension abrades the knobs and the aperture rim
+H013,EV023,--,"Nothing in cord laying involves heat, flame or wax"
+H013,EV024,+,Fibre traces should remain against the rim and in the knob necks
+H013,EV041,++,Strands are guided by the knobs under tension throughout; knob wear is predicted as strongly here as by H012
+H013,EV042,+,"Microwear should show contact INSIDE the bore, and circumferentially. This is the exact opposite of H012's prediction, which is why the pre-registered prediction P-0004 discriminates between them"
+H013,EV025,+,"Specific expectation: settlement, domestic and workshop contexts, where cordage is made"
+H013,EV026,+,A craft technique is culturally transmitted and may be confined to the region that practises it
+H013,EV027,+,"Specific expectation: fibre-processing equipment, spindle whorls, raw fibre, or finished cordage"
+H013,EV028,0,No particular stratigraphy follows from workshop use
+H013,EV029,0,Cordage is made in every period; no narrow window is predicted
+H013,EV030,0,"A personal tool is lost singly, but a workshop could hold several"
+H013,EV031,0,"Rope is needed by armies and civilians alike, so a military presence neither supports nor contradicts"
+H013,EV032,-,A working tool in temple deposits and rivers is not what the mechanism predicts
+H013,EV033,0,Nothing rigid is inserted; rod compatibility is irrelevant either way
+H013,EV034,++,A core routed through an aperture and strands routed over the knobs is entirely a claim about cord routing
+H013,EV035,+,The body must hold its form against the combined pull of the strands
+H013,EV036,0,No structural load is transferred across the object
+H013,EV037,0,Assembly into larger structures is no part of this hypothesis
+H013,EV038,+,"There is a working axis while the tool is in use - the core through the chosen aperture, about which the object turns - though which aperture provides it is free"
+H013,EV039,-,A personal craft tool need not conform to any standard; the gauge wanted varies with the work
+H013,EV040,+,Craft traditions and their tools vary by region
+H014,EV001,+,Held in one hand while wax is pressed with the other; hand-sized
+H014,EV002,+,Mass steadies the tool against the pressing force
+H014,EV003,-,The shell contains soft wax and carries no structural load; thin walls are sufficient and expected
+H014,EV004,++,"Graded apertures take cords of differing thickness, which is the functional claim of the hypothesis (PUB-0041)"
+H014,EV005,0,"NEUTRAL: the cord is knotted within the object rather than drawn through an axis, and the source does not specify that it exits an opposite face"
+H014,EV006,+,A clean aperture lets the cord seat and the formed piece release
+H014,EV007,+,A rounded lip releases wax cleanly and does not cut the cord
+H014,EV008,++,THE KNOBS ARE THE SPACERS that limit compression and set the thickness of the formed piece. This is the mechanism's explicit claim (PUB-0041) and it is the only hypothesis in the set that assigns the knobs a primary working role rather than a protective or decorative one
+H014,EV009,++,"Spacers must be uniform, or the thickness of the formed piece varies around its perimeter"
+H014,EV010,+,A regular body gives a consistent formed shape
+H014,EV011,0,Alloy is not diagnostic for working soft wax
+H014,EV012,+,A smooth surface releases wax without tearing it
+H014,EV013,0,NEUTRAL: a face carrying casting flaws is simply not used as the working face
+H014,EV014,++,"Decoration around the aperture would IMPRESS ITSELF ON THE WAX. On this hypothesis the concentric rings are not ornament at all but the device that marks the sealing, which is what a bulla is for"
+H014,EV015,+,A working tool is repaired rather than replaced
+H014,EV016,++,"The engraved rings are the marking surface, and engraving them after casting is exactly the secondary working EV016 records"
+H014,EV017,-,Wax is soft and the cord is knotted rather than drawn under tension. No bore wear is predicted and its absence counts in favour
+H014,EV018,+,Constant handling of the body of the tool
+H014,EV019,0,"NEUTRAL: cords are knotted in place, not routed under tension"
+H014,EV020,0,Nothing in the mechanism rotates
+H014,EV021,0,Impact damage is not predicted by desk use
+H014,EV022,0,Wax is softer than bronze and does not abrade it
+H014,EV023,-,"Wax is worked soft, not melted in the object. Thermal alteration would count AGAINST the hypothesis, which is what distinguishes it from H004"
+H014,EV024,++,THE DECISIVE PREDICTION. Beeswax and resin worked in the object should leave recoverable residue on the interior and around the apertures. EV024 has never been measured
+H014,EV025,++,"Specific expectation: urban, administrative and commercial contexts, matching the distribution of seal boxes (PUB-0041)"
+H014,EV026,+,"Seal boxes are themselves concentrated in Britain and the north-western provinces, so regional confinement is what the hypothesis predicts. NOTE THIS IS UNUSUAL: every other utilitarian hypothesis is damaged by the restricted distribution, and this one expects it"
+H014,EV027,++,"Specific expectation: seal boxes, styli, writing tablets, document fittings or other administrative equipment"
+H014,EV028,0,No particular stratigraphy follows
+H014,EV029,0,Sealing practice spans the imperial period
+H014,EV030,0,An office might hold one or several
+H014,EV031,0,"Seal boxes occur in administrative AND military contexts, so a military presence neither supports nor contradicts"
+H014,EV032,-,"A desk tool in temple deposits, graves and rivers is not predicted"
+H014,EV033,0,Nothing rigid is inserted
+H014,EV034,+,Cords must pass into the object and be knotted within it
+H014,EV035,+,The body must not deform under the pressing force
+H014,EV036,0,No structural load is transferred across the object
+H014,EV037,0,Assembly into larger structures is no part of this hypothesis
+H014,EV038,+,"A working face is chosen and presented upward while wax is pressed, though which face is free"
+H014,EV039,+,"Bullae are described by the hypothesis as standardised, so some consistency between tools is expected. THIS IS THE HYPOTHESIS'S WEAKEST POINT and it is not negotiable: the corpus is not standardised"
+H014,EV040,+,Regional workshops producing an administrative accessory would vary
+H014,EV041,0,"The knobs are pressed into soft wax, not drawn over by cord under tension; no knob wear is predicted either way"
+H014,EV042,-,Microwear should show no bore contact

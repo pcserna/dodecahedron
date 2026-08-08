@@ -1,0 +1,135 @@
+candidate_id,ev_id,prediction,reading,rationale
+C-17,EV046,++,,"A levelling sight must present a known axis, and the object marks one. NOTE: C-17 IS THE FIRST CANDIDATE SCORED ON EV046, which was added after every hypothesis had been specified. This advantages it relative to H001-H014, all of which are silent on the variable"
+C-17,EV006,++,,A through-sight needs truly circular apertures at both ends
+C-17,EV003,-,,Thin walls give a sharper sight; a thick wall makes a tube
+C-17,EV017,-,,"Optical use; nothing passes through, so the absence of bore wear counts in favour"
+C-17,EV010,++,,"The readings are angles; departure from regular geometry is direct instrument error, and EXP-0004 shows the margin is already too thin to absorb any"
+C-17,EV039,++,,"A level must give the same reading in any workman's hands. The corpus varies 2.5:1 in size and its pair differences, which set the precision, vary from 0.3 to 10.2 mm between specimens"
+C-17,EV019,++,,Suspension from a cord is required by the mechanism and must bear on the object
+C-17,EV025,+,confirmed,"Predicts urban and engineering contexts, which the corpus shows"
+C-17,EV027,++,absent,"Predicts association with surveying or levelling equipment - a chorobates, dioptra, groma, libra, or a plumb bob. None is recorded with any dodecahedron"
+C-17,EV026,--,confirmed,"Aqueducts were built across the whole empire, and most spectacularly in Italy, Africa and the East. An instrument for building them had no reason to stay in the north-western provinces; the confinement is present"
+C-15,EV006,++,,A shadowless disc is a null reading and needs truly circular apertures at both ends of the sight line
+C-15,EV003,-,,Thin walls give a sharper null; a thick wall turns the aperture into a tube and blurs the alignment
+C-15,EV017,-,,"Optical use; nothing passes through, so the absence of bore wear counts in favour"
+C-15,EV039,-,,"THE CANDIDATE'S DISTINCTIVE STRENGTH. The face-axis angles are fixed by the polyhedron and are identical in a 40 mm and a 100 mm specimen, so the instrument needs no standardisation at all. It is the only proposal in the project for which the absence of a standard is predicted rather than merely tolerated"
+C-15,EV010,++,,"The readings ARE angles, so departure from regular geometry is direct instrument error"
+C-15,EV004,0,,"NEUTRAL, AND A DEBIT RATHER THAN A DODGE: the mechanism does not need graded apertures at all. Aperture size affects only the tolerance of the null, not which elevation is read. The candidate leaves the single strongest feature of the corpus unexplained"
+C-15,EV005,+,,"Opposite apertures should be near-matched, since their difference sets the angular tolerance of the null: about 1 to 3 degrees for the observed 2 to 4.5 mm pair differences over a 50 mm path"
+C-15,EV019,++,,Repeated suspension from a cord must bear on the knob and leave rope wear
+C-15,EV041,++,,The suspension cord bears directly on whichever knob is used
+C-15,EV012,+,,Clean aperture edges are needed for a sharp null
+C-15,EV025,+,confirmed,"Predicts urban and domestic contexts, which the corpus shows"
+C-15,EV027,++,absent,Predicts association with calendrical or astronomical equipment; none is recorded with any dodecahedron
+C-15,EV026,-,confirmed,"EXP-0003 shows the four noon-reachable elevations are identical from 43.7 to 55 degrees north, so the instrument is latitude-insensitive across the empire and had no reason to remain in the north-western provinces. Confinement therefore counts against it"
+C-14,EV004,++,,Twelve apertures for twelve zodiac months is the functional claim
+C-14,EV010,++,,"A dial reads angles. Geometric fidelity is the whole instrument, and EXP-0002 shows irregularity degrades the resolution further"
+C-14,EV039,++,,A dial is calibrated for one latitude and must be reproducible; the corpus spans 43 to 55 degrees north with no systematic geometric variation and no standardisation at all
+C-14,EV038,++,,"A dial must be oriented to the meridian and held fixed. No specimen has a base, a suspension loop or any distinguished axis; the knobs let it rest on any face"
+C-14,EV044,++,,"The interior IS the projection surface. It must be smoothed and it must carry engraved declination curves, as every Roman zodiac dial does. The corpus interiors are rough, unfinished and unmarked"
+C-14,EV012,++,,"The interior is the projection surface and must be smooth and true. The PAS records in this database consistently describe interiors as roughly or crudely cast and unfinished (RD-0001, RD-0002, RD-0003, RD-0008, RD-0011, RD-0012)"
+C-14,EV014,++,,"Every Roman zodiac dial carries engraved declination curves ON THE PROJECTION SURFACE. The engraving on these objects is entirely on the EXTERIOR, around the apertures; no specimen has interior markings"
+C-14,EV017,-,,"Optical use; nothing passes through the apertures, so the absence of bore wear counts in favour"
+C-14,EV025,+,confirmed,"Predicts urban and domestic contexts, which the corpus shows"
+C-14,EV027,++,absent,Predicts association with other timekeeping or astronomical equipment. None is recorded with any dodecahedron
+C-14,EV026,+,confirmed,"A latitude-calibrated instrument would be confined to a band of latitudes, which is the one argument in this candidate's favour. WEAK: the corpus spans 43 to 55 degrees north, some 12 degrees, which is far too wide for a single calibration"
+C-13,EV004,++,,A graded set of apertures IS a graded set of garment sizes. This is the whole functional claim
+C-13,EV006,++,,A gauge aperture must be truly circular or the size it reports is wrong
+C-13,EV007,++,,"The lip must be rounded, because cloth or leather is drawn against it and a sharp rim would snag or cut the work"
+C-13,EV017,-,,"Only soft material passes the aperture, and briefly. Absence of bore wear counts in favour. NOTE this is the same premise as C-12 and it was chosen knowing the wear result"
+C-13,EV013,-,,A casting flaw on a working aperture distorts the size it reports
+C-13,EV016,+,,"Engraved rings around an aperture could serve to identify which size it is, which a graded set needs"
+C-13,EV003,-,,A gauge carries no load; thin walls suffice
+C-13,EV008,0,,"NEUTRAL, AND THIS IS THE CANDIDATE'S WEAK POINT RATHER THAN A DODGE: a sizing gauge does not need knobs at all, let alone twenty of them. The hypothesis leaves the most distinctive feature of the object unexplained, which is exactly what H014 and C-12 do explain"
+C-13,EV010,0,,"NEUTRAL: each aperture is independently a gauge, so overall regularity of the body is irrelevant. This is a genuine indifference and is what separates C-13 from C-11, where the references are relations BETWEEN knobs and global regularity does matter"
+C-13,EV039,+,,"A workshop gauge need only be self-consistent to make matched pairs, so standardisation between objects is expected but not required. Predicted at '+' rather than '++' for that reason"
+C-13,EV025,+,confirmed,"Predicts urban workshop and domestic contexts, which the corpus shows"
+C-13,EV026,+,confirmed,"Garment forms were regionally specific in a way that artillery and fishing were not. The north-western provinces had a distinctive and high-value textile tradition: the birrus Britannicus is named in Diocletian's Price Edict of AD 301, mid-window, at 6,000 denarii, and hooded garments are a Gallic and north-western style (PUB-0043). A tool for a regionally specific garment may legitimately be regionally confined"
+C-13,EV027,++,absent,"Predicts needles, shears, thimbles, awls, spindle whorls, loom weights or cloth alongside. None is recorded with any dodecahedron"
+C-13,EV040,+,,Regional garment traditions imply regionally varying tools
+C-13,EV024,+,,Textile or leather fibres should remain against the aperture lips
+C-11,EV039,++,,A distance or angle gauge that varies between objects transfers no measurement. DECISIVE: overall diameter varies 2.5:1 across the corpus
+C-11,EV010,++,,Inter-knob distances must be predictable from the form; an irregular body gives unpredictable references
+C-11,EV013,--,,Casting distortion displaces the reference points and corrupts every measurement taken from them
+C-11,EV009,++,,The reference points must be uniform in size and placement
+C-11,EV008,++,,Knob diameter must be consistent or the contact point shifts
+C-11,EV017,-,,"Nothing passes through the apertures; absence of bore wear counts in favour, as it does for H011"
+C-11,EV025,+,confirmed,"Predicts urban, architectural and workshop contexts, which the corpus shows"
+C-11,EV027,++,absent,"Predicts association with surveying or drafting equipment - groma, dividers, rules, styli. None is recorded with any dodecahedron"
+C-11,EV026,--,confirmed,"Measurement practice was empire-wide; confinement to the north-west would falsify, and the confinement is present"
+C-12,EV017,--,,"THE UNIFYING PREMISE. Nothing harder than bronze ever contacts the tool, so no bore wear can form. All four wear predictions below follow deductively from this one premise rather than being chosen separately"
+C-12,EV018,-,,Soft material cannot abrade the exterior
+C-12,EV019,-,,No cord is drawn under tension across the object
+C-12,EV020,-,,Nothing rotates against the object
+C-12,EV004,++,,Graded apertures suit different work sizes
+C-12,EV008,++,,The knobs are standoffs that set the thickness of the formed piece
+C-12,EV009,++,,Standoffs must be uniform or thickness varies across the work
+C-12,EV003,-,,The tool carries no structural load; thin walls suffice
+C-12,EV014,++,,"Relief around an aperture impresses itself into soft material, which makes the decoration a working surface rather than ornament"
+C-12,EV016,++,,Engraving after casting creates that impressing surface
+C-12,EV039,-,,A craft tool need not conform to any standard; the gauge wanted varies with the work
+C-12,EV040,+,,Craft traditions and their tools vary by region
+C-12,EV025,+,confirmed,"Predicts workshop and urban domestic contexts, which the corpus shows"
+C-12,EV026,+,confirmed,A regionally transmitted craft may be regionally confined. WEAK: almost any culturally specific explanation predicts this
+C-12,EV027,++,absent,"Predicts craft equipment alongside - awls, punches, offcuts, scrap foil, raw material. None is recorded with any dodecahedron. THIS IS THE CANDIDATE'S ONLY HARD CONTRADICTION and it is the same one that costs H014 its largest single loss"
+C-12,EV024,++,,Residues of whatever was worked should remain on the interior and around the apertures. THE DECISIVE AND UNMEASURED TEST
+C-01,EV039,++,,A gauge that is not standardised sorts nothing; two gauges must agree
+C-01,EV017,++,,Stone or lead shot dragged through bronze apertures abrades them
+C-01,EV003,++,,A gauge handled with shot must be robust
+C-01,EV010,++,,Aperture geometry must be true or the calibration is wrong
+C-01,EV025,++,absent,"Predicts military dominance; corpus is more than half urban settlement and under one-fifth military (PUB-0003, 33)"
+C-01,EV026,--,confirmed,"Artillery served empire-wide; confinement to the north-west would falsify. The confinement is present (PUB-0003, 32)"
+C-01,EV027,++,absent,"Predicts shot, artillery fittings or military kit alongside; none is recorded with any dodecahedron"
+C-02,EV019,++,,Straps and traces under draught tension bear on the fitting constantly
+C-02,EV017,++,,Anything routed through an aperture under draught load wears the bore
+C-02,EV003,++,,A draught fitting carries real load and must be substantial
+C-02,EV035,++,,Must not deform under harness tension
+C-02,EV039,++,,Harness parts are replaced and must interchange
+C-02,EV025,++,absent,Predicts military and rural dominance; the corpus is urban civilian
+C-02,EV027,++,absent,"Predicts harness fittings, bits or vehicle parts alongside; none is recorded"
+C-03,EV039,++,,A mesh gauge that varies between objects produces unusable netting
+C-03,EV019,++,,Cord is drawn round the gauge under tension at every mesh
+C-03,EV041,++,,Cord bearing on the knobs at every mesh must wear them
+C-03,EV026,--,confirmed,"Fishing and fowling are practised across the empire; confinement to the north-west would falsify, and the confinement is present"
+C-03,EV025,++,absent,"Predicts coastal, riverine and lacustrine sites; the corpus is inland urban settlement"
+C-03,EV027,++,absent,"Predicts net weights, floats or hooks alongside; none is recorded"
+C-04,EV019,++,,A fairlead exists to take rope load; rope wear is its defining trace
+C-04,EV017,++,,Rope running through an aperture under load grooves the bore
+C-04,EV003,++,,Rigging loads are large; thin walls would collapse
+C-04,EV036,++,,Must transfer load between rope and hull or spar
+C-04,EV025,++,absent,"Predicts ports, wrecks and riverine sites; the corpus is inland urban"
+C-04,EV026,--,confirmed,"Shipping is Mediterranean above all; absence from Italy, Spain, Africa and the East falsifies"
+C-05,EV039,++,,A measure that is not standardised measures nothing. THIS IS DECISIVE: overall diameter varies 2.5:1 across the corpus
+C-05,EV010,++,,Internal volume must be true and reproducible
+C-05,EV013,--,,Casting voids alter internal volume and would be rejected
+C-05,EV004,--,,Apertures perforating the vessel make it unable to hold anything measurable. THIS ALONE ELIMINATES THE CANDIDATE
+C-05,EV026,--,confirmed,Roman measures were empire-wide; regional confinement falsifies
+C-06,EV018,++,,Pressed into soil repeatedly; abrasive wear is unavoidable
+C-06,EV021,++,,Contact with stones in tilled soil chips and dents
+C-06,EV039,++,,Spacing must be reproducible between tools
+C-06,EV025,++,absent,Predicts rural and agricultural contexts; the corpus is urban settlement
+C-06,EV003,++,,A tool pressed into soil must be robust; the corpus is 0.5-4 mm
+C-07,EV017,++,,A clapper striking the interior leaves impact traces around the apertures and inside
+C-07,EV021,++,,A bell on a beast is knocked constantly
+C-07,EV019,++,,Suspension from a collar or strap wears the suspension point
+C-07,EV018,++,,"Constant contact with hide, vegetation and other stock"
+C-07,EV025,++,absent,Predicts rural and pastoral contexts; the corpus is urban settlement
+C-07,EV038,++,,A hung bell has a fixed orientation and needs a suspension loop; no dodecahedron has one
+C-08,EV019,++,,A tether point exists to take rope load under an animal's pull
+C-08,EV017,++,,Rope through an aperture under an animal's weight grooves the bore
+C-08,EV003,++,,Must resist the pull of a large animal; 0.5-4 mm of leaded bronze would not
+C-08,EV035,++,,Must not deform or burst under shock loading
+C-08,EV025,++,absent,"Predicts rural, pastoral and military-transport contexts"
+C-09,EV023,++,,Smouldering material inside must leave soot and heat alteration. THIS IS THE CANDIDATE'S DECISIVE AND CURRENTLY UNTESTED PREDICTION
+C-09,EV024,++,,Combustion residues should remain on the interior
+C-09,EV018,+,,Handled and hung in use
+C-09,EV025,++,absent,"Predicts rural, byre and apiary contexts; the corpus is urban settlement"
+C-09,EV011,++,,Repeated heating of an 18 per cent lead alloy would be a poor choice; lead melts at 327 degrees Celsius
+C-10,EV008,++,,"The knobs act as spacers limiting compression, per PUB-0041"
+C-10,EV004,++,,"Graded apertures accommodate cords of varying thickness, per PUB-0041"
+C-10,EV017,-,,"Wax is soft and cords are knotted rather than drawn; no bore wear is predicted, and its absence counts in favour"
+C-10,EV024,++,,Beeswax and resin worked in the object should leave recoverable residue. THIS IS THE CANDIDATE'S DECISIVE AND CURRENTLY UNTESTED PREDICTION
+C-10,EV039,+,,"Bullae are described as standardised, so some consistency between tools is expected"
+C-10,EV025,++,confirmed,"Predicts administrative and urban contexts, comparable to seal boxes. More than half of located finds are from cities and settlements"
+C-10,EV027,++,absent,"Predicts seal boxes, styli, writing equipment or document fittings alongside; none is recorded with any dodecahedron"
+C-10,EV023,-,,"Wax is worked soft, not melted in the object; absence of thermal alteration counts in favour"

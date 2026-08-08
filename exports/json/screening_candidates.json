@@ -1,0 +1,130 @@
+[
+  {
+    "candidate_id": "C-01",
+    "name": "Artillery shot gauge",
+    "domain": "Military",
+    "description": "Stone or lead shot is passed through the apertures to sort it into calibrated sizes for ballistae and catapults.",
+    "creates": "Calibrated ammunition of consistent weight",
+    "notes": "The graded apertures are the obvious attraction of this idea."
+  },
+  {
+    "candidate_id": "C-02",
+    "name": "Harness or yoke junction fitting",
+    "domain": "Military / Farming",
+    "description": "A junction block through which traces, reins or yoke straps are routed and held apart on a draught or cavalry harness.",
+    "creates": null,
+    "notes": "Would explain the apertures and the knobs as routing and spacing."
+  },
+  {
+    "candidate_id": "C-03",
+    "name": "Net-making mesh gauge",
+    "domain": "Maritime",
+    "description": "Cord is passed round the object to set a constant mesh while netting is worked; different apertures give different mesh sizes.",
+    "creates": "Fishing or fowling net of standard mesh",
+    "notes": "The closest maritime analogue to the graded-aperture idea."
+  },
+  {
+    "candidate_id": "C-04",
+    "name": "Rigging fairlead or lead block",
+    "domain": "Maritime",
+    "description": "Standing or running rigging is led through the apertures to change direction without chafing.",
+    "creates": null,
+    "notes": "Would explain apertures, hollow form and bronze."
+  },
+  {
+    "candidate_id": "C-05",
+    "name": "Volumetric grain or liquid measure",
+    "domain": "Farming / Commerce",
+    "description": "The hollow interior serves as a fixed measure; apertures fill and empty it.",
+    "creates": "A measured quantity of grain, seed or liquid",
+    "notes": "The one candidate for which the Jublains balance association is suggestive."
+  },
+  {
+    "candidate_id": "C-06",
+    "name": "Seed-sowing or dibbing gauge",
+    "domain": "Farming",
+    "description": "Pressed into tilled soil to set seed spacing and depth, or used to meter seed.",
+    "creates": "Evenly spaced sowing",
+    "notes": "Would explain the knobs as depth stops."
+  },
+  {
+    "candidate_id": "C-07",
+    "name": "Livestock bell or rattle",
+    "domain": "Animal husbandry",
+    "description": "A hollow body containing a loose clapper, hung on a beast so it can be located; knobs protect the body.",
+    "creates": "Sound",
+    "notes": "The hollow form and protective knobs are the attraction."
+  },
+  {
+    "candidate_id": "C-08",
+    "name": "Tether or hobble ring",
+    "domain": "Animal husbandry",
+    "description": "A rope junction to which an animal is tied, or through which hobble ropes are routed.",
+    "creates": null,
+    "notes": "Would explain apertures, knobs and bronze."
+  },
+  {
+    "candidate_id": "C-09",
+    "name": "Byre or beehive fumigation holder",
+    "domain": "Animal husbandry",
+    "description": "Holds smouldering material to smoke a byre, hive or store against insects; apertures admit air and let smoke out.",
+    "creates": "Smoke",
+    "notes": "The only candidate that predicts thermal alteration, which makes it cheaply testable."
+  },
+  {
+    "candidate_id": "C-17",
+    "name": "Levelling sight for water engineering",
+    "domain": "Engineering / Surveying",
+    "description": "Suspended so that gravity fixes the vertical, the object presents a face-pair axis at a known elevation - including exactly 0 degrees when hung from an edge - and is sighted through to set a level or a gradient for an aqueduct, channel or drain.",
+    "creates": "A levelled line or a set gradient",
+    "notes": "THE FIRST CANDIDATE TO MAKE USE OF EV046, the marked axis, and therefore the first to be scored on it. Refuted on precision by EXP-0004 and on documentation by the fact that Vitruvius names the instruments actually used for this task."
+  },
+  {
+    "candidate_id": "C-15",
+    "name": "Suspended solar altitude sight",
+    "domain": "Astronomical",
+    "description": "The object is hung from a knob so that gravity fixes the vertical. When the sun's altitude matches a face-pair axis, light passes cleanly through both opposite apertures and throws a shadowless disc of light inside the object's shadow. Which pair aligns, and when, indicates the season.",
+    "creates": "A reading of solar altitude, and hence of the date",
+    "notes": "THE BEST-CONSTRUCTED MECHANICAL PROPOSAL IN THE PROJECT, and the only one whose central quantity is SCALE-INVARIANT: the axis angles are fixed by the polyhedron regardless of the object's size, which is exactly what the deduction in the results summary says the function must be. Refuted by computation rather than by the corpus - see EXP-0003."
+  },
+  {
+    "candidate_id": "C-14",
+    "name": "Zodiac sundial by internal light projection",
+    "domain": "Astronomical",
+    "description": "Held or mounted in a fixed orientation, sunlight entering one aperture projects a patch onto the interior wall. The position of the patch at local noon indicates the solar declination and hence the zodiac month, in the manner of the zodiac declination curves carried by Roman conical and hemispherical dials.",
+    "creates": "A reading of the date or zodiac sign",
+    "notes": "The only candidate in the project refuted by computation rather than by the corpus alone. See EXP-0002."
+  },
+  {
+    "candidate_id": "C-13",
+    "name": "Garment or tailoring size gauge",
+    "domain": "Craft / Textile",
+    "description": "Each aperture is a fixed gauge against which a tubular garment part - a glove finger, cuff, hose or sleeve opening - is checked or sized during cutting and making up. The graded apertures form a graded set of sizes.",
+    "creates": "Garment parts made to a repeatable size",
+    "notes": "DISTINCT FROM H012, H014 AND C-12: a gauge CHECKS a size, it does not FORM anything. That single difference changes what the mechanism needs and, crucially, leaves the knobs unexplained."
+  },
+  {
+    "candidate_id": "C-11",
+    "name": "Knob-based dividers or angle gauge",
+    "domain": "Metrology / Surveying",
+    "description": "The twenty vertex knobs provide a fixed set of inter-knob distances and angles. The object is used like a set of dividers or a three-dimensional template to step distances or set angles on a workpiece or on the ground.",
+    "creates": "Marked-out distances and angles",
+    "notes": "Distinct from H002 and H011, which use the apertures optically. Here the KNOBS are the working reference points and the apertures are irrelevant. NOTE ON THE MARITIME FRAMING: there were no sea charts in the Roman world. Navigation used the periplus, a written pilot book; the first portolan charts appear in the late 13th century. A divider used against a chart therefore has no chart to work on, and the candidate is screened only in its land-surveying and workshop framing."
+  },
+  {
+    "candidate_id": "C-12",
+    "name": "Soft-material forming and handling tool",
+    "domain": "Craft",
+    "description": "The object forms, shapes or holds material softer than bronze - leather, wax, foil, soft metal sheet or another precious soft substance. The knobs act as standoffs and spacers setting thickness; the graded apertures suit different work sizes; relief around the apertures impresses into the material.",
+    "creates": "Formed pieces of leather, wax, foil or soft metal",
+    "notes": "THE GENERALISATION OF H014. Where H014 names the material (wax) and the product (sealing bullae), this candidate names only the property that matters mechanically: everything the tool touched was softer than it. READ THE SCREEN SCORE WITH GREAT CARE - see the notes on this candidate in the report."
+  },
+  {
+    "candidate_id": "C-10",
+    "name": "Wax bulla or seal former",
+    "domain": "Administrative",
+    "description": "Softened wax is pressed within the object around a knotted cord to form a standardised sealing element; knobs act as spacers limiting compression.",
+    "creates": "Standardised wax bullae securing cords on documents",
+    "notes": "The hypothesis of PUB-0041 (Lamb 2026), tested experimentally on a replica. Screened here; not yet promoted to a scored hypothesis."
+  }
+]

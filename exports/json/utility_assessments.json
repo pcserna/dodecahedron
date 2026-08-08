@@ -1,0 +1,192 @@
+[
+  {
+    "subject_id": "H001",
+    "subject_type": "hypothesis",
+    "product": "A modular structure assembled from rods",
+    "substitute": "Carpentry joints and iron fittings, cheaper and far stronger",
+    "product_value": -1,
+    "craft_value": 0,
+    "experience_value": 0,
+    "rationale": "A structural node is useful, but 0.5-4 mm of leaded bronze cannot carry load, and the joinery it would replace was solved cheaply everywhere in wood and iron. Nothing about a hidden structural fitting rewards fine finishing or engraving"
+  },
+  {
+    "subject_id": "H002",
+    "subject_type": "hypothesis",
+    "product": "An estimate of distance",
+    "substitute": "The groma and the dioptra, both documented, plus trained pacing",
+    "product_value": -2,
+    "craft_value": 0,
+    "experience_value": 0,
+    "rationale": "Distance measurement mattered greatly, which is why Rome had named, standardised, written-up instruments for it. An unstandardised object cannot compete with a groma"
+  },
+  {
+    "subject_id": "H003",
+    "subject_type": "hypothesis",
+    "product": "Symbolic or ritual efficacy, and standing",
+    "substitute": "None: the object IS the product",
+    "product_value": 2,
+    "craft_value": 2,
+    "experience_value": 2,
+    "rationale": "SCORES ON ALL THREE, AND IS THE ONLY FAMILY THAT DOES. The expense is functional rather than anomalous: difficulty of manufacture ADDS to the worth of a votive or prestige object instead of subtracting from it; the absence of standardisation is what individual commissioning looks like; and the value is delivered in the using, not in an output"
+  },
+  {
+    "subject_id": "H004",
+    "subject_type": "hypothesis",
+    "product": "Light",
+    "substitute": "A pottery lamp, near-free and in every house",
+    "product_value": -2,
+    "craft_value": 0,
+    "experience_value": 1,
+    "rationale": "Light was valuable and already had a cheap universal solution. A costly lamp holder could carry display value, but no thermal evidence supports the function at all"
+  },
+  {
+    "subject_id": "H005",
+    "subject_type": "hypothesis",
+    "product": "Looped or knitted fabric",
+    "substitute": "A wooden or bone spool, effectively free",
+    "product_value": -1,
+    "craft_value": 0,
+    "experience_value": 0,
+    "rationale": "The product is useful; the material is unexplained"
+  },
+  {
+    "subject_id": "H006",
+    "subject_type": "hypothesis",
+    "product": "Celestial measurement",
+    "substitute": "Documented instruments; and see EXP-0002 and EXP-0003",
+    "product_value": -2,
+    "craft_value": 0,
+    "experience_value": 1,
+    "rationale": "Cannot deliver the product at all on the computed geometry"
+  },
+  {
+    "subject_id": "H007",
+    "subject_type": "hypothesis",
+    "product": "Unspecified military function",
+    "substitute": "Unclear, because the product is unclear",
+    "product_value": -1,
+    "craft_value": 0,
+    "experience_value": 0,
+    "rationale": "A hypothesis that does not name its product cannot be assessed for worth"
+  },
+  {
+    "subject_id": "H008",
+    "subject_type": "hypothesis",
+    "product": "A focus for domestic or personal cult",
+    "substitute": "None: the object IS the product",
+    "product_value": 2,
+    "craft_value": 2,
+    "experience_value": 2,
+    "rationale": "As H003. The making and the holding are the point"
+  },
+  {
+    "subject_id": "H009",
+    "subject_type": "hypothesis",
+    "product": "A pitched shelter",
+    "substitute": "Rope lashing or a turned wooden hub, trivially cheaper",
+    "product_value": -2,
+    "craft_value": 0,
+    "experience_value": 0,
+    "rationale": "Shelter is valuable and Rome solved it with leather, rope and wood"
+  },
+  {
+    "subject_id": "H010",
+    "subject_type": "hypothesis",
+    "product": "Shade or rain cover",
+    "substitute": "A turned wooden crown",
+    "product_value": -1,
+    "craft_value": 0,
+    "experience_value": 1,
+    "rationale": "A canopy crown carries almost no load and has no reason to be bronze, though a visible fitting on a status accessory could carry display value"
+  },
+  {
+    "subject_id": "H011",
+    "subject_type": "hypothesis",
+    "product": "A range estimate for shooting",
+    "substitute": "Trained instinct, which is how archers actually shoot",
+    "product_value": -2,
+    "craft_value": 0,
+    "experience_value": 0,
+    "rationale": "An instrument that must be raised, oriented and read is slower than the shot it serves"
+  },
+  {
+    "subject_id": "H012",
+    "subject_type": "hypothesis",
+    "product": "Looped cord tubes, gloves or hose",
+    "substitute": "A wooden or bone spool, effectively free",
+    "product_value": -1,
+    "craft_value": 0,
+    "experience_value": 0,
+    "rationale": "THE STRONGEST EVIDENTIAL HYPOTHESIS IS AMONG THE WEAKEST ON WORTH. Peg-frames for looped cord work are made of scrap wood in every culture that does this. Nothing about the task rewards leaded bronze, fine finishing or engraved rings, and the work itself is ordinary labour"
+  },
+  {
+    "subject_id": "H013",
+    "subject_type": "hypothesis",
+    "product": "Laid cord or rope",
+    "substitute": "Hand-laying, or a wooden laying top",
+    "product_value": -1,
+    "craft_value": 0,
+    "experience_value": 0,
+    "rationale": "As H012, with the added cost of a tool that must be turned under tension"
+  },
+  {
+    "subject_id": "H014",
+    "subject_type": "hypothesis",
+    "product": "Standardised wax sealings for documents",
+    "substitute": "A simple mould, or forming the wax freehand",
+    "product_value": 0,
+    "craft_value": 1,
+    "experience_value": 1,
+    "rationale": "The most defensible utilitarian case. Administrative consistency has real institutional value, an office could afford bronze, and a durable former outlasts a mould. Some craft value attaches to a fine office instrument, and sealing is a small ceremony with its own standing. But the corpus is NOT standardised, which is exactly the value the product should deliver"
+  },
+  {
+    "subject_id": "C-12",
+    "subject_type": "candidate",
+    "product": "Formed leather, wax, foil or soft metal",
+    "substitute": "Wooden or bone formers, and simple moulds",
+    "product_value": 0,
+    "craft_value": 1,
+    "experience_value": 0,
+    "rationale": "Inherits H014's position. Bronze is defensible for a former that must keep its shape through many pressings, which is the one genuine argument for the material anywhere in the utilitarian family"
+  },
+  {
+    "subject_id": "C-13",
+    "subject_type": "candidate",
+    "product": "Garment parts made to a repeatable size",
+    "substitute": "A knotted cord or a marked stick, effectively free",
+    "product_value": -1,
+    "craft_value": 0,
+    "experience_value": 0,
+    "rationale": "Sizing is real work and the cheapest possible instrument to improvise"
+  },
+  {
+    "subject_id": "C-14",
+    "subject_type": "candidate",
+    "product": "A reading of the date or zodiac sign",
+    "substitute": "Sundials, surviving in their hundreds and described by Vitruvius, and the public fasti posted in every town",
+    "product_value": -2,
+    "craft_value": 0,
+    "experience_value": 1,
+    "rationale": "TIME AS A PRODUCT, ASSESSED. The date was valuable AND already available, free, more precisely and more conveniently. Some experience value could attach to a personal instrument of the heavens"
+  },
+  {
+    "subject_id": "C-15",
+    "subject_type": "candidate",
+    "product": "A reading of solar altitude, hence the season",
+    "substitute": "Sundials, the public fasti, and the agricultural calendar preserved in Columella and Palladius",
+    "product_value": -2,
+    "craft_value": 0,
+    "experience_value": 1,
+    "rationale": "Delivers eight irregular events a year with a blind window of 2.2 months at Arles rising to 4.6 months at Corbridge, at roughly four days' precision near the equinoxes and far worse near the solstices, and needs three different modes of support. A sundial on a wall is cheaper, continuous and better"
+  },
+  {
+    "subject_id": "C-16",
+    "subject_type": "candidate",
+    "product": "The making itself: a demonstration of mastery, and an object to be possessed, handled and shown",
+    "substitute": "None: no cheaper object demonstrates the same mastery",
+    "product_value": 0,
+    "craft_value": 2,
+    "experience_value": 2,
+    "rationale": "PROPOSED IN RESPONSE TO THE OBSERVATION THAT THE CRAFTING IS ITSELF THE VALUE. The reading is the chef-d'oeuvre or masterpiece interpretation recorded by Coulon 1910 and cited in PUB-0019: these objects are 'des exercices de maitres, des sortes de chefs-d'oeuvre'. It predicts, without strain, every corpus property that embarrasses the utilitarian family: expensive material, difficult casting, fine finishing, engraving concentrated where it is most visible, NO standardisation because each is its own achievement, no wear because it is handled and shown rather than worked, no toolkit because it is not a tool, deposition in graves and hoards as a valued possession, one per owner, and no mention in technical literature because it belongs to no trade. ITS WEAKNESS IS THE MIRROR OF ITS STRENGTH: it is consistent with everything and forbids almost nothing. Its one real test is EV045"
+  }
+]

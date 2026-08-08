@@ -1,0 +1,482 @@
+[
+  {
+    "ev_id": "EV001",
+    "variable": "Overall dimensions",
+    "category": "Geometry",
+    "definition": "Overall height, width and bounding dimensions",
+    "unit": "mm",
+    "source_type": "Measurement",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "All"
+  },
+  {
+    "ev_id": "EV002",
+    "variable": "Mass",
+    "category": "Geometry",
+    "definition": "Artifact weight",
+    "unit": "g",
+    "source_type": "Measurement",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "All"
+  },
+  {
+    "ev_id": "EV003",
+    "variable": "Wall thickness",
+    "category": "Geometry",
+    "definition": "Average and local wall thickness",
+    "unit": "mm",
+    "source_type": "Measurement",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "All"
+  },
+  {
+    "ev_id": "EV004",
+    "variable": "Hole diameter distribution",
+    "category": "Geometry",
+    "definition": "Diameters of all 12 openings",
+    "unit": "mm",
+    "source_type": "Measurement",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "Structural, Measuring"
+  },
+  {
+    "ev_id": "EV005",
+    "variable": "Opposite-hole relationships",
+    "category": "Geometry",
+    "definition": "Pairing and correspondence of opposite holes",
+    "unit": "Categorical",
+    "source_type": "Measurement",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "Structural, Measuring"
+  },
+  {
+    "ev_id": "EV006",
+    "variable": "Hole profile",
+    "category": "Geometry",
+    "definition": "Cylindrical, tapered or irregular",
+    "unit": "Categorical",
+    "source_type": "Observation",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "All"
+  },
+  {
+    "ev_id": "EV007",
+    "variable": "Hole edge radius",
+    "category": "Geometry",
+    "definition": "Chamfers and edge finishing",
+    "unit": "mm",
+    "source_type": "Observation",
+    "discriminatory_power": "Medium",
+    "most_relevant_hypotheses": "Manufacturing"
+  },
+  {
+    "ev_id": "EV008",
+    "variable": "Knob diameter",
+    "category": "Geometry",
+    "definition": "Diameter of vertex knobs",
+    "unit": "mm",
+    "source_type": "Measurement",
+    "discriminatory_power": "Medium",
+    "most_relevant_hypotheses": "Structural"
+  },
+  {
+    "ev_id": "EV009",
+    "variable": "Knob symmetry",
+    "category": "Geometry",
+    "definition": "Regularity of knob placement",
+    "unit": "Categorical",
+    "source_type": "Measurement",
+    "discriminatory_power": "Medium",
+    "most_relevant_hypotheses": "Structural"
+  },
+  {
+    "ev_id": "EV010",
+    "variable": "Face symmetry",
+    "category": "Geometry",
+    "definition": "Deviation from regular geometry",
+    "unit": "Numeric",
+    "source_type": "Measurement",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "Manufacturing"
+  },
+  {
+    "ev_id": "EV011",
+    "variable": "Alloy composition",
+    "category": "Manufacturing",
+    "definition": "Chemical composition",
+    "unit": "XRF",
+    "source_type": "Analysis",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "Manufacturing"
+  },
+  {
+    "ev_id": "EV012",
+    "variable": "Casting quality",
+    "category": "Manufacturing",
+    "definition": "General casting quality",
+    "unit": "Ordinal",
+    "source_type": "Observation",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "All"
+  },
+  {
+    "ev_id": "EV013",
+    "variable": "Casting defects",
+    "category": "Manufacturing",
+    "definition": "Voids, seams, miscasts",
+    "unit": "Text",
+    "source_type": "Observation",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "Manufacturing"
+  },
+  {
+    "ev_id": "EV014",
+    "variable": "Surface finishing",
+    "category": "Manufacturing",
+    "definition": "Grinding, polishing, scraping",
+    "unit": "Text",
+    "source_type": "Observation",
+    "discriminatory_power": "Medium",
+    "most_relevant_hypotheses": "All"
+  },
+  {
+    "ev_id": "EV015",
+    "variable": "Repair evidence",
+    "category": "Manufacturing",
+    "definition": "Ancient repairs",
+    "unit": "Boolean",
+    "source_type": "Observation",
+    "discriminatory_power": "Medium",
+    "most_relevant_hypotheses": "Reuse"
+  },
+  {
+    "ev_id": "EV016",
+    "variable": "Tool marks",
+    "category": "Manufacturing",
+    "definition": "Secondary machining traces",
+    "unit": "Text",
+    "source_type": "Observation",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "Manufacturing"
+  },
+  {
+    "ev_id": "EV017",
+    "variable": "Internal hole wear",
+    "category": "Wear",
+    "definition": "Wear inside openings",
+    "unit": "Ordinal",
+    "source_type": "Observation",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "Structural"
+  },
+  {
+    "ev_id": "EV018",
+    "variable": "External wear",
+    "category": "Wear",
+    "definition": "Wear on external surfaces",
+    "unit": "Ordinal",
+    "source_type": "Observation",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "All"
+  },
+  {
+    "ev_id": "EV019",
+    "variable": "Rope wear",
+    "category": "Wear",
+    "definition": "Grooves or polish from rope",
+    "unit": "Boolean",
+    "source_type": "Observation",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "Structural"
+  },
+  {
+    "ev_id": "EV020",
+    "variable": "Rotational wear",
+    "category": "Wear",
+    "definition": "Evidence of repeated rotation",
+    "unit": "Boolean",
+    "source_type": "Observation",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "Mechanical"
+  },
+  {
+    "ev_id": "EV021",
+    "variable": "Impact damage",
+    "category": "Wear",
+    "definition": "Mechanical impacts",
+    "unit": "Text",
+    "source_type": "Observation",
+    "discriminatory_power": "Medium",
+    "most_relevant_hypotheses": "All"
+  },
+  {
+    "ev_id": "EV022",
+    "variable": "Abrasion",
+    "category": "Wear",
+    "definition": "Surface abrasion",
+    "unit": "Ordinal",
+    "source_type": "Observation",
+    "discriminatory_power": "Medium",
+    "most_relevant_hypotheses": "All"
+  },
+  {
+    "ev_id": "EV023",
+    "variable": "Thermal alteration",
+    "category": "Wear",
+    "definition": "Heat damage, soot, wax",
+    "unit": "Boolean",
+    "source_type": "Observation",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "Candlestick"
+  },
+  {
+    "ev_id": "EV024",
+    "variable": "Residues",
+    "category": "Wear",
+    "definition": "Organic/inorganic residues",
+    "unit": "Analysis",
+    "source_type": "Analysis",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "Multiple"
+  },
+  {
+    "ev_id": "EV025",
+    "variable": "Site type",
+    "category": "Context",
+    "definition": "Military, villa, town, temple, etc.",
+    "unit": "Enum",
+    "source_type": "Publication",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "All"
+  },
+  {
+    "ev_id": "EV026",
+    "variable": "Roman province",
+    "category": "Context",
+    "definition": "Roman administrative region",
+    "unit": "Enum",
+    "source_type": "Publication",
+    "discriminatory_power": "Medium",
+    "most_relevant_hypotheses": "Distribution"
+  },
+  {
+    "ev_id": "EV027",
+    "variable": "Associated finds",
+    "category": "Context",
+    "definition": "Objects found together",
+    "unit": "Text",
+    "source_type": "Publication",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "All"
+  },
+  {
+    "ev_id": "EV028",
+    "variable": "Stratigraphy",
+    "category": "Context",
+    "definition": "Stratigraphic context",
+    "unit": "Text",
+    "source_type": "Publication",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "Dating"
+  },
+  {
+    "ev_id": "EV029",
+    "variable": "Dating",
+    "category": "Context",
+    "definition": "Chronological range",
+    "unit": "Years",
+    "source_type": "Publication",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "All"
+  },
+  {
+    "ev_id": "EV030",
+    "variable": "Number at site",
+    "category": "Context",
+    "definition": "Single or multiple dodecahedra",
+    "unit": "Integer",
+    "source_type": "Publication",
+    "discriminatory_power": "Medium",
+    "most_relevant_hypotheses": "Distribution"
+  },
+  {
+    "ev_id": "EV031",
+    "variable": "Military association",
+    "category": "Context",
+    "definition": "Direct military evidence",
+    "unit": "Boolean",
+    "source_type": "Publication",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "Military"
+  },
+  {
+    "ev_id": "EV032",
+    "variable": "Ritual association",
+    "category": "Context",
+    "definition": "Direct ritual evidence",
+    "unit": "Boolean",
+    "source_type": "Publication",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "Ritual"
+  },
+  {
+    "ev_id": "EV033",
+    "variable": "Rod compatibility",
+    "category": "Engineering",
+    "definition": "Can rods fit securely?",
+    "unit": "Assessment",
+    "source_type": "Derived",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "Structural"
+  },
+  {
+    "ev_id": "EV034",
+    "variable": "Rope compatibility",
+    "category": "Engineering",
+    "definition": "Can ropes be routed?",
+    "unit": "Assessment",
+    "source_type": "Derived",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "Structural"
+  },
+  {
+    "ev_id": "EV035",
+    "variable": "Structural stability",
+    "category": "Engineering",
+    "definition": "Stable under load",
+    "unit": "Assessment",
+    "source_type": "Derived",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "Structural"
+  },
+  {
+    "ev_id": "EV036",
+    "variable": "Load transfer",
+    "category": "Engineering",
+    "definition": "Plausible force paths",
+    "unit": "Assessment",
+    "source_type": "Derived",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "Structural"
+  },
+  {
+    "ev_id": "EV037",
+    "variable": "Assembly potential",
+    "category": "Engineering",
+    "definition": "Supports modular construction",
+    "unit": "Assessment",
+    "source_type": "Derived",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "Structural"
+  },
+  {
+    "ev_id": "EV038",
+    "variable": "Orientation dependence",
+    "category": "Engineering",
+    "definition": "Requires fixed orientation",
+    "unit": "Assessment",
+    "source_type": "Derived",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "Measuring"
+  },
+  {
+    "ev_id": "EV039",
+    "variable": "Standardisation",
+    "category": "Comparative",
+    "definition": "Similarity across artifacts",
+    "unit": "Statistic",
+    "source_type": "Derived",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "All"
+  },
+  {
+    "ev_id": "EV040",
+    "variable": "Regional variation",
+    "category": "Comparative",
+    "definition": "Geographic patterns",
+    "unit": "Statistic",
+    "source_type": "Derived",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "All"
+  },
+  {
+    "ev_id": "EV041",
+    "variable": "Knob wear",
+    "category": "Wear",
+    "definition": "Wear, polish, grooving or abrasion on the knobs and knob necks, as distinct from wear on faces or inside the openings",
+    "unit": "Ordinal",
+    "source_type": "Direct observation",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "H005;H012"
+  },
+  {
+    "ev_id": "EV042",
+    "variable": "Microwear location",
+    "category": "Wear",
+    "definition": "Microscopic wear analysis distinguishing contact inside the bore of an opening from contact on its outer lip, as against the macroscopic impression recorded by EV017 and EV018",
+    "unit": "Ordinal",
+    "source_type": "Analysis",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "H001;H005;H011;H012"
+  },
+  {
+    "ev_id": "EV043",
+    "variable": "Aperture distinguishability",
+    "category": "Geometry",
+    "definition": "Whether every aperture on a single specimen can be told apart from every other, by diameter or by the number of concentric rings engraved around it. Distinct from EV004, which records the distribution of diameters, and from EV039, which records whether diameters conform to a standard between objects",
+    "unit": "Boolean",
+    "source_type": "Direct observation",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "H003;H008"
+  },
+  {
+    "ev_id": "EV044",
+    "variable": "Interior finish and marking",
+    "category": "Manufacturing",
+    "definition": "Condition of the internal surface: whether it is smoothed or left as cast, and whether it carries any engraving, scale or marking. Distinct from EV012, which records casting quality overall, and EV014, which records decoration of the exterior",
+    "unit": "Ordinal",
+    "source_type": "Direct observation",
+    "discriminatory_power": "High",
+    "most_relevant_hypotheses": "H003;H004;H014"
+  },
+  {
+    "ev_id": "EV045",
+    "variable": "Manufacturing difficulty",
+    "category": "Manufacturing",
+    "definition": "How hard the object actually was to produce: the failure rate of lost-wax casting at this geometry, the skill demanded, and the presence or absence of moulds, casting waste, rejects or workshop debris anywhere in the record",
+    "unit": "Assessment",
+    "source_type": "Experimental archaeology",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "H003;H008;C-16"
+  },
+  {
+    "ev_id": "EV046",
+    "variable": "Marked axis",
+    "category": "Geometry",
+    "definition": "Whether the object carries a visual marking that singles out one axis or one face, as distinct from a structural feature such as a base or suspension loop. Distinct from EV038, which asks whether the FUNCTION requires a fixed orientation, and from EV014, which records the presence of decoration",
+    "unit": "Boolean",
+    "source_type": "Direct observation",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "H013;H014;C-15"
+  },
+  {
+    "ev_id": "EV047",
+    "variable": "Authenticity and provenance security",
+    "category": "Documentation",
+    "definition": "Security of a specimen as an authentic ancient object: whether it has an excavated findspot, a documented collection history, and any metallurgical or technical authentication. Also whether it may be an ANCIENT local imitation of a classic type, as distinct from a modern forgery",
+    "unit": "Ordinal",
+    "source_type": "Direct observation",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "All"
+  },
+  {
+    "ev_id": "EV048",
+    "variable": "Within-type standardisation",
+    "category": "Comparative",
+    "definition": "Whether specimens of a single Greiner/Guggenberger type are more uniform in overall diameter, aperture set and wall thickness than the pooled corpus. Distinct from EV039, which measures standardisation across the corpus as one population and cannot detect type-mixing",
+    "unit": "Statistic",
+    "source_type": "Analysis",
+    "discriminatory_power": "Very High",
+    "most_relevant_hypotheses": "H002;H006;H011"
+  }
+]

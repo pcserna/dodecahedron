@@ -1,0 +1,37 @@
+rd_id,completeness,provenance_grade,measurement_grade,admit_mass,admit_geometry,admit_context,outlier,note
+RD-0001,complete,C,direct,1,1,1,0,"PAS detector find, cultivated land; complete and directly measured"
+RD-0002,incomplete,C,direct,0,1,1,0,SIX COMPLETE FACES AND HALF OF FIVE MORE despite the name carrying no 'fragment' label. Its 270 g is the weight of an incomplete object and is inadmissible for mass
+RD-0003,fragment,C,direct,0,0,1,0,Two joining pieces
+RD-0004,fragment,C,direct,0,0,1,0,Fragment
+RD-0005,complete,B,direct,1,1,1,0,"Excavated 2023 in Trench 4, feature recorded, museum-held. Complete, undamaged; the best-preserved specimen in the corpus"
+RD-0006,unknown,E,none,0,0,0,0,"REJECTED FOR ALL SCORING. Sole source is PUB-0004, a Wikipedia article, confidence E. The only E-grade specimen. Retained as a corpus entry and as the possible subject of the PUB-0019 tab IV measurements, an attribution that is itself unconfirmed"
+RD-0007,unknown,B,none,0,0,1,0,"1739 archival record, the first dodecahedron ever reported; no measurements survive"
+RD-0008,fragment,C,direct,0,0,1,0,Fragment
+RD-0009,fragment,C,direct,0,0,1,0,Fragment
+RD-0010,fragment,C,direct,0,0,1,0,"Fragment, 1.7 g"
+RD-0011,fragment,C,direct,0,0,1,0,Fragment; supplies the 9.4 / 22.6 mm opposing-hole pair
+RD-0012,fragment,C,direct,0,0,1,0,Fragment
+RD-0013,fragment,C,direct,0,0,1,0,Four fragments
+RD-0014,fragment,C,direct,0,0,1,0,Fragment
+RD-0015,unknown,D,one_remove,0,1,0,0,"Museum record; findspot given as 'Couthuin OR Bassenge', unresolved"
+RD-0016,complete,D,one_remove,1,1,0,0,"British Museum, acquired 1878; findspot 'British Isles', no location"
+RD-0017,complete,D,one_remove,1,0,0,1,"OUTLIER, REJECTED FROM GEOMETRY. Maximum diameter 127.71 mm exceeds the published corpus maximum of about 110 mm including knobs (PUB-0003, 31 n 2), and 553.2 g is 2.2 times the next heaviest complete specimen. Purchased, no excavation context. Either the measurement includes something the corpus figures exclude, or the object is atypical of the class. Retained for mass with the outlier flag so its effect is visible, excluded from geometry"
+RD-0018,unknown,C,none,0,0,1,0,"Museum record, no measurements"
+RD-0019,unknown,D,none,0,0,1,0,"Catalogue entry, confidence D"
+RD-0020,complete,A,direct,1,1,1,0,"THE REFERENCE SPECIMEN. Excavated 1995 from sealed destruction layer F1058, peer-reviewed excavation report, museum-held, complete apart from a barely visible crack. The only specimen whose authenticity is secured by context"
+RD-0021,unknown,C,none,0,0,1,0,Museum record via Wikidata
+RD-0022,complete,E,direct,1,1,0,0,"PROVENANCE E: no findspot of any kind, private collection, unpublished until 2025. Measurements are direct and detailed, so it is admitted for mass and geometry, but every statistic it enters must be reported with and without it"
+RD-0023,unknown,C,one_remove,0,1,1,0,Grave context reported at one remove; two production-hole diameters
+RD-0024,unknown,C,one_remove,0,0,1,0,Context at one remove
+RD-0025,unknown,C,one_remove,0,0,1,0,Context at one remove
+RD-0026,fragment,C,one_remove,0,0,1,0,"Fragment, temple site"
+RD-0027,fragment,C,one_remove,0,0,1,0,"Fragment, cache"
+RD-0028,unknown,C,one_remove,0,0,1,0,"Detector find, statuette association"
+RD-0029,unknown,C,one_remove,0,0,1,0,Context classification conflicts between settlement and hoard
+RD-0030,unknown,C,one_remove,0,0,1,0,"Grave, at one remove"
+RD-0031,unknown,C,one_remove,0,0,1,0,Supplies the contested yellow-wax residue record
+RD-0032,unknown,C,one_remove,0,0,1,0,Findspot only
+RD-0033,unknown,C,one_remove,0,0,1,0,Findspot only
+RD-0034,complete,D,one_remove,0,1,0,0,"Museum-held but findspot not stated in the source read, and the twelve measured diameters reach this project through PUB-0019 rather than from the museum. Admitted for geometry, on which it is the single most important specimen, and excluded from mass, which is not recorded"
+RD-0035,complete,E,direct,0,1,0,0,"PROVENANCE E: collection piece with no known archaeological context, published by its owner. Admitted for geometry because the measurements are direct and carefully made, and because it is the only specimen that tests EV043 against RD-0034. Mass not recorded"
+RD-0036,unknown,D,two_removes,0,0,0,0,"REJECTED FOR GEOMETRY. Aperture pairs reach this project at two removes, PUB-0039 via PUB-0038 via PUB-0019, and no source states a tolerance"

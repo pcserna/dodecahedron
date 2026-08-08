@@ -1,0 +1,425 @@
+[
+  {
+    "evidence_id": "E001",
+    "category": "Geometry",
+    "evidence_statement": "Roman dodecahedra are hollow cast copper-alloy objects.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Material, manufacturing"
+  },
+  {
+    "evidence_id": "E002",
+    "category": "Geometry",
+    "evidence_statement": "Complete specimens have 12 pentagonal faces.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Overall geometry"
+  },
+  {
+    "evidence_id": "E003",
+    "category": "Geometry",
+    "evidence_statement": "Each face contains one circular opening.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Face openings"
+  },
+  {
+    "evidence_id": "E004",
+    "category": "Geometry",
+    "evidence_statement": "Hole diameters usually vary within a specimen.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "Structural Connector; Measuring Instrument",
+    "primary_observable": "Hole size distribution"
+  },
+  {
+    "evidence_id": "E005",
+    "category": "Geometry",
+    "evidence_statement": "Twenty knobs occur at the vertices.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Vertex morphology"
+  },
+  {
+    "evidence_id": "E006",
+    "category": "Geometry",
+    "evidence_statement": "Typical size is approximately 4–11 cm.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Overall dimensions"
+  },
+  {
+    "evidence_id": "E007",
+    "category": "Geometry",
+    "evidence_statement": "Specimens differ in overall dimensions.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Dimensional variability"
+  },
+  {
+    "evidence_id": "E008",
+    "category": "Manufacturing",
+    "evidence_statement": "Objects were produced by casting.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Casting"
+  },
+  {
+    "evidence_id": "E009",
+    "category": "Manufacturing",
+    "evidence_statement": "High manufacturing skill was required.",
+    "evidence_type": "Constraint",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Craftsmanship"
+  },
+  {
+    "evidence_id": "E010",
+    "category": "Manufacturing",
+    "evidence_statement": "Surface finishing is commonly present.",
+    "evidence_type": "Observed",
+    "confidence": "Medium",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Surface treatment"
+  },
+  {
+    "evidence_id": "E011",
+    "category": "Decoration",
+    "evidence_statement": "Concentric rings commonly surround holes.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Decoration"
+  },
+  {
+    "evidence_id": "E012",
+    "category": "Decoration",
+    "evidence_statement": "Decoration varies between specimens.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Variation"
+  },
+  {
+    "evidence_id": "E013",
+    "category": "Epigraphy",
+    "evidence_statement": "No authenticated inscriptions or numerals are known.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Epigraphy"
+  },
+  {
+    "evidence_id": "E014",
+    "category": "Documentation",
+    "evidence_statement": "No ancient text securely explains the function.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Historical sources"
+  },
+  {
+    "evidence_id": "E015",
+    "category": "Documentation",
+    "evidence_statement": "No undisputed ancient depiction of use is known.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Iconography"
+  },
+  {
+    "evidence_id": "E016",
+    "category": "Distribution",
+    "evidence_statement": "Finds cluster in north-western Roman provinces.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Geographic distribution"
+  },
+  {
+    "evidence_id": "E017",
+    "category": "Distribution",
+    "evidence_statement": "No confirmed finds are known from Italy.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Negative distribution"
+  },
+  {
+    "evidence_id": "E018",
+    "category": "Chronology",
+    "evidence_statement": "Most finds date to the 2nd–4th centuries AD.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Dating"
+  },
+  {
+    "evidence_id": "E019",
+    "category": "Context",
+    "evidence_statement": "Artifacts occur in military contexts.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "Military; Structural",
+    "primary_observable": "Site context"
+  },
+  {
+    "evidence_id": "E020",
+    "category": "Context",
+    "evidence_statement": "Artifacts occur in civilian settlements.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Site context"
+  },
+  {
+    "evidence_id": "E021",
+    "category": "Context",
+    "evidence_statement": "Artifacts occur in funerary contexts.",
+    "evidence_type": "Observed",
+    "confidence": "Medium",
+    "relevant_hypotheses": "Ritual",
+    "primary_observable": "Site context"
+  },
+  {
+    "evidence_id": "E022",
+    "category": "Context",
+    "evidence_statement": "Artifacts occur in hoards and river deposits.",
+    "evidence_type": "Observed",
+    "confidence": "Medium",
+    "relevant_hypotheses": "Ritual",
+    "primary_observable": "Depositional context"
+  },
+  {
+    "evidence_id": "E023",
+    "category": "Context",
+    "evidence_statement": "No single archaeological context dominates.",
+    "evidence_type": "Constraint",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Context diversity"
+  },
+  {
+    "evidence_id": "E024",
+    "category": "Corpus",
+    "evidence_statement": "About 130 known specimens exist.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "Corpus size"
+  },
+  {
+    "evidence_id": "E025",
+    "category": "Corpus",
+    "evidence_statement": "Roman Britain accounts for roughly one quarter of known finds.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "Distribution",
+    "primary_observable": "Regional corpus"
+  },
+  {
+    "evidence_id": "E026",
+    "category": "Wear",
+    "evidence_statement": "Published wear evidence is limited and inconsistent.",
+    "evidence_type": "Observed",
+    "confidence": "Medium",
+    "relevant_hypotheses": "Structural",
+    "primary_observable": "Wear studies"
+  },
+  {
+    "evidence_id": "E027",
+    "category": "Wear",
+    "evidence_statement": "No universal pattern of rope wear has been demonstrated.",
+    "evidence_type": "Observed",
+    "confidence": "Medium",
+    "relevant_hypotheses": "Structural Connector",
+    "primary_observable": "Wear"
+  },
+  {
+    "evidence_id": "E028",
+    "category": "Residue",
+    "evidence_statement": "No widespread evidence of soot or wax residues has been published.",
+    "evidence_type": "Observed",
+    "confidence": "Medium",
+    "relevant_hypotheses": "Candlestick",
+    "primary_observable": "Residues"
+  },
+  {
+    "evidence_id": "E029",
+    "category": "Metrology",
+    "evidence_statement": "No accepted metrological standard has been demonstrated.",
+    "evidence_type": "Constraint",
+    "confidence": "Medium",
+    "relevant_hypotheses": "Measuring Instrument",
+    "primary_observable": "Measurements"
+  },
+  {
+    "evidence_id": "E030",
+    "category": "Research",
+    "evidence_statement": "More than fifty functional hypotheses have been proposed.",
+    "evidence_type": "Observed",
+    "confidence": "High",
+    "relevant_hypotheses": "Research",
+    "primary_observable": "Hypothesis landscape"
+  },
+  {
+    "evidence_id": "EI-0001",
+    "category": "Comparative Analysis",
+    "evidence_statement": "AUTHOR INTERPRETATION (Guggenberger and Leach 2025, 33): given that the overwhelming majority of dodecahedra derive from civilian contexts and that the distribution is geographically limited despite the mobility of Roman soldiers, a primary military purpose can be ruled out.",
+    "evidence_type": "Interpretation",
+    "confidence": "High",
+    "relevant_hypotheses": "H007",
+    "primary_observable": "EV025; EV031"
+  },
+  {
+    "evidence_id": "EI-0002",
+    "category": "Comparative Analysis",
+    "evidence_statement": "AUTHOR INTERPRETATION (Guggenberger and Leach 2025, 36, citing Thompson 1970, 93-5): the suggested use as a distance-measuring device must be rejected, having been conclusively refuted.",
+    "evidence_type": "Interpretation",
+    "confidence": "High",
+    "relevant_hypotheses": "H002",
+    "primary_observable": "EV039; EV038"
+  },
+  {
+    "evidence_id": "EI-0003",
+    "category": "Comparative Analysis",
+    "evidence_statement": "AUTHOR INTERPRETATION (Guggenberger and Leach 2025, 37): there is nowadays fairly broad consensus that the purpose cannot be found without considering the symbolism of the shape, and it is often assumed to be some kind of ritual object, possibly used in divination, perhaps in combination with a light source.",
+    "evidence_type": "Interpretation",
+    "confidence": "Medium",
+    "relevant_hypotheses": "H003; H008",
+    "primary_observable": "EV025; EV032"
+  },
+  {
+    "evidence_id": "EI-0004",
+    "category": "Comparative Analysis",
+    "evidence_statement": "AUTHOR INTERPRETATION (Guggenberger and Leach 2025, 35-6): the position of the Gelduba dodecahedron immediately adjacent to a bone object suggests a functional connection between the two, and there may perhaps have been a temporary mounting of the dodecahedron upon a kind of handle passing through its pair of production holes.",
+    "evidence_type": "Interpretation",
+    "confidence": "Medium",
+    "relevant_hypotheses": "H001; H004; H008",
+    "primary_observable": "EV027; EV033"
+  },
+  {
+    "evidence_id": "EI-0005",
+    "category": "Comparative Analysis",
+    "evidence_statement": "AUTHOR INTERPRETATION (Guggenberger and Leach 2025, 40): the primary function of the knobs seems to be to provide support, stability and protection to the dodecahedron, indicating a purpose beyond decoration, and hints at a usage distinct from that of Roman dice, which never feature knobs.",
+    "evidence_type": "Interpretation",
+    "confidence": "Medium",
+    "relevant_hypotheses": "H003; H008",
+    "primary_observable": "EV008; EV009"
+  },
+  {
+    "evidence_id": "EI-0006",
+    "category": "Comparative Analysis",
+    "evidence_statement": "AUTHOR INTERPRETATION (Guggenberger and Leach 2025, 34, citing Hitchens 2023 and Henig 2025): the Norton Disney specimen could have been placed on top of the pit in order to close it ritually, and may originate from a shrine.",
+    "evidence_type": "Interpretation",
+    "confidence": "Medium",
+    "relevant_hypotheses": "H003; H008",
+    "primary_observable": "EV025"
+  },
+  {
+    "evidence_id": "EI-0007",
+    "category": "Comparative Analysis",
+    "evidence_statement": "AUTHOR INTERPRETATION (Guggenberger and Leach 2025, 51-2): the dodecahedron's inspiration may have been the receptacle of all becoming in Plato's Timaeus, realised in abstract form, and it may have been used as a receptacle in theurgic divination by Gallo-Roman Druids and a wider circle of initiates. The authors state this is not yet proven.",
+    "evidence_type": "Interpretation",
+    "confidence": "Low",
+    "relevant_hypotheses": "H003; H008",
+    "primary_observable": "EV025; EV032"
+  },
+  {
+    "evidence_id": "EI-0009",
+    "category": "Archaeological Context",
+    "evidence_statement": "AUTHOR INTERPRETATION (Guillier, Delage and Besombes 2008, para 62): depending on whether greater importance is given to the balance or to the dodecahedron, the Jublains building may have been the shop of a merchant or craftsman - a money changer, goldsmith, bronzesmith, or dealer in spices or precious materials - or else the den of a diviner or seer, the two not being incompatible.",
+    "evidence_type": "Interpretation",
+    "confidence": "High",
+    "relevant_hypotheses": "H002; H003; H008",
+    "primary_observable": "EV025; EV027"
+  },
+  {
+    "evidence_id": "EI-0010",
+    "category": "Comparative Analysis",
+    "evidence_statement": "AUTHOR INTERPRETATION (Duval 1981, 200): the two largest opposed openings of the Vienne dodecahedron have a periphery that appears less regularly cut than the others, as if worn by friction from a stick passing through both simultaneously. The author states that no conclusion can be drawn from the analysis of a single dodecahedron.",
+    "evidence_type": "Interpretation",
+    "confidence": "Medium",
+    "relevant_hypotheses": "H001; H004",
+    "primary_observable": "EV017; EV033"
+  },
+  {
+    "evidence_id": "EI-0011",
+    "category": "Comparative Analysis",
+    "evidence_statement": "AUTHOR INTERPRETATION (Sparavigna 2012): the common features of the analysed dodecahedra allow the conclusion that the object was probably a dioptron used as a coincidence rangefinder, with distance given by L = GH x B / (D - D'). The same author records, against her own thesis, that it does not seem that a standard or rule for these instruments existed, and that a Roman dodecahedron cannot have been used for sorting because it is a biased body.",
+    "evidence_type": "Interpretation",
+    "confidence": "Low",
+    "relevant_hypotheses": "H002",
+    "primary_observable": "EV004; EV005; EV039"
+  },
+  {
+    "evidence_id": "EI-0012",
+    "category": "Comparative Analysis",
+    "evidence_statement": "AUTHOR INTERPRETATION (Sparavigna 2012, 4): the presence of wax inside a dodecahedron does not imply a candle holder, because Romans used wax tablets for writing and calculation, so wax may simply have been used by the owner.",
+    "evidence_type": "Interpretation",
+    "confidence": "Low",
+    "relevant_hypotheses": "H004",
+    "primary_observable": "EV023; EV024"
+  },
+  {
+    "evidence_id": "EI-0013",
+    "category": "Documentation",
+    "evidence_statement": "AUTHOR STATEMENT OF METHOD (Duval 1981, 195-199): a comparative study of dodecahedra requires flat projections drawn to a single principle. Face 1 is the face with the largest opening; the object is set on the face opposite it; the remaining upper faces are numbered 2 to 6 anticlockwise viewed from above, in decreasing order of opening diameter; opposite faces take the numbers 1' to 6'; and the twenty vertices are lettered a-j and a'-j'. The author notes that the answer to whether any rhythm exists in the openings has never been given, nor even sought, for want of such records.",
+    "evidence_type": "Constraint",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "EV004; EV005; EV010; EV039"
+  },
+  {
+    "evidence_id": "EI-0014",
+    "category": "Experimental Archaeology",
+    "evidence_statement": "AUTHOR INTERPRETATION (Lamb 2026): Roman dodecahedra were forming aids for the production of standardised wax elements such as bullae used to secure cords on administrative documents. The author reports that the protruding knobs act as functional spacers limiting compression and ensuring consistent thickness, and that the variable apertures accommodate cords of varying thickness and allow finger access into the hollow interior for release.",
+    "evidence_type": "Interpretation",
+    "confidence": "Medium",
+    "relevant_hypotheses": "H003; H008",
+    "primary_observable": "EV008; EV004; EV023; EV024"
+  },
+  {
+    "evidence_id": "EI-0015",
+    "category": "Experimental Archaeology",
+    "evidence_statement": "EXPERIMENTAL RESULT, REPLICA ONLY (Lamb 2026): ten wax tokens produced in one session with a 3D-printed replica of external diameter c 65 mm and a wax mixture of about 80 per cent beeswax and 20 per cent pine resin gave perimeter thicknesses of approximately 4.0 to 4.5 mm across all examples, which the author reports as consistent depth control independent of user variation.",
+    "evidence_type": "Experimental",
+    "confidence": "Medium",
+    "relevant_hypotheses": "H003; H008",
+    "primary_observable": "EV008"
+  },
+  {
+    "evidence_id": "EI-0016",
+    "category": "Documentation",
+    "evidence_statement": "REASONING BY THIS PROJECT, NOT AN OBSERVATION. PUB-0003, 36 records that there is no contemporaneous description of the Gallo-Roman dodecahedron and not even a depiction. That silence is not uniform across the proposed functions, and the asymmetry is informative. Roman technical literature catalogues the equipment of some domains exhaustively and of others hardly at all: military equipment (Vegetius), agriculture (Columella, Palladius), architecture and surveying (Vitruvius, the Corpus Agrimensorum), water engineering with its calibrated pipe apertures (Frontinus), and traded commodities and craft wages (Diocletian's Price Edict of AD 301, some 1,200 entries, from the middle of the dodecahedron window and naming garments down to the birrus Britannicus). Provincial craft practice, Gaulish religion and domestic work are by contrast barely documented. Documentary silence therefore counts heavily against the domains that have surviving technical literature and hardly at all against those that do not. THIS PROJECT HAS NOT READ THOSE TREATISES and does not assert the individual absences from first-hand reading; the argument is offered as a structural one about where silence is and is not evidence.",
+    "evidence_type": "Constraint",
+    "confidence": "Medium",
+    "relevant_hypotheses": "All",
+    "primary_observable": "EV025; EV026; EV029"
+  },
+  {
+    "evidence_id": "EI-0017",
+    "category": "Comparative Analysis",
+    "evidence_statement": "REASONING BY THIS PROJECT, NOT AN OBSERVATION. Frontinus describes the Roman calibrated water-pipe apertures (the quinaria system). It is the closest Roman analogue to a graded set of apertures used as a standard, and it is named, standardised and written down. The Gallo-Roman dodecahedron is none of those three. What a genuine Roman graded-aperture gauge looks like in the record is therefore known, and the dodecahedron does not look like it.",
+    "evidence_type": "Constraint",
+    "confidence": "Medium",
+    "relevant_hypotheses": "H002; H006; H011",
+    "primary_observable": "EV039"
+  },
+  {
+    "evidence_id": "EI-0008",
+    "category": "Documentation",
+    "evidence_statement": "AUTHOR STATEMENT OF OPEN QUESTIONS (Guggenberger and Leach 2025, 52): to make further progress, archaeology must determine whether there is any trace of another substance inside or outside some dodecahedra, whether there are any microscopic signs of wear, and whether broken specimens were broken deliberately or accidentally.",
+    "evidence_type": "Constraint",
+    "confidence": "High",
+    "relevant_hypotheses": "All",
+    "primary_observable": "EV017; EV019; EV020; EV023; EV024"
+  }
+]

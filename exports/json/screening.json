@@ -1,0 +1,940 @@
+[
+  {
+    "candidate_id": "C-17",
+    "ev_id": "EV046",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A levelling sight must present a known axis, and the object marks one. NOTE: C-17 IS THE FIRST CANDIDATE SCORED ON EV046, which was added after every hypothesis had been specified. This advantages it relative to H001-H014, all of which are silent on the variable"
+  },
+  {
+    "candidate_id": "C-17",
+    "ev_id": "EV006",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A through-sight needs truly circular apertures at both ends"
+  },
+  {
+    "candidate_id": "C-17",
+    "ev_id": "EV003",
+    "prediction": "-",
+    "reading": null,
+    "rationale": "Thin walls give a sharper sight; a thick wall makes a tube"
+  },
+  {
+    "candidate_id": "C-17",
+    "ev_id": "EV017",
+    "prediction": "-",
+    "reading": null,
+    "rationale": "Optical use; nothing passes through, so the absence of bore wear counts in favour"
+  },
+  {
+    "candidate_id": "C-17",
+    "ev_id": "EV010",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "The readings are angles; departure from regular geometry is direct instrument error, and EXP-0004 shows the margin is already too thin to absorb any"
+  },
+  {
+    "candidate_id": "C-17",
+    "ev_id": "EV039",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A level must give the same reading in any workman's hands. The corpus varies 2.5:1 in size and its pair differences, which set the precision, vary from 0.3 to 10.2 mm between specimens"
+  },
+  {
+    "candidate_id": "C-17",
+    "ev_id": "EV019",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Suspension from a cord is required by the mechanism and must bear on the object"
+  },
+  {
+    "candidate_id": "C-17",
+    "ev_id": "EV025",
+    "prediction": "+",
+    "reading": "confirmed",
+    "rationale": "Predicts urban and engineering contexts, which the corpus shows"
+  },
+  {
+    "candidate_id": "C-17",
+    "ev_id": "EV027",
+    "prediction": "++",
+    "reading": "absent",
+    "rationale": "Predicts association with surveying or levelling equipment - a chorobates, dioptra, groma, libra, or a plumb bob. None is recorded with any dodecahedron"
+  },
+  {
+    "candidate_id": "C-17",
+    "ev_id": "EV026",
+    "prediction": "--",
+    "reading": "confirmed",
+    "rationale": "Aqueducts were built across the whole empire, and most spectacularly in Italy, Africa and the East. An instrument for building them had no reason to stay in the north-western provinces; the confinement is present"
+  },
+  {
+    "candidate_id": "C-15",
+    "ev_id": "EV006",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A shadowless disc is a null reading and needs truly circular apertures at both ends of the sight line"
+  },
+  {
+    "candidate_id": "C-15",
+    "ev_id": "EV003",
+    "prediction": "-",
+    "reading": null,
+    "rationale": "Thin walls give a sharper null; a thick wall turns the aperture into a tube and blurs the alignment"
+  },
+  {
+    "candidate_id": "C-15",
+    "ev_id": "EV017",
+    "prediction": "-",
+    "reading": null,
+    "rationale": "Optical use; nothing passes through, so the absence of bore wear counts in favour"
+  },
+  {
+    "candidate_id": "C-15",
+    "ev_id": "EV039",
+    "prediction": "-",
+    "reading": null,
+    "rationale": "THE CANDIDATE'S DISTINCTIVE STRENGTH. The face-axis angles are fixed by the polyhedron and are identical in a 40 mm and a 100 mm specimen, so the instrument needs no standardisation at all. It is the only proposal in the project for which the absence of a standard is predicted rather than merely tolerated"
+  },
+  {
+    "candidate_id": "C-15",
+    "ev_id": "EV010",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "The readings ARE angles, so departure from regular geometry is direct instrument error"
+  },
+  {
+    "candidate_id": "C-15",
+    "ev_id": "EV004",
+    "prediction": "0",
+    "reading": null,
+    "rationale": "NEUTRAL, AND A DEBIT RATHER THAN A DODGE: the mechanism does not need graded apertures at all. Aperture size affects only the tolerance of the null, not which elevation is read. The candidate leaves the single strongest feature of the corpus unexplained"
+  },
+  {
+    "candidate_id": "C-15",
+    "ev_id": "EV005",
+    "prediction": "+",
+    "reading": null,
+    "rationale": "Opposite apertures should be near-matched, since their difference sets the angular tolerance of the null: about 1 to 3 degrees for the observed 2 to 4.5 mm pair differences over a 50 mm path"
+  },
+  {
+    "candidate_id": "C-15",
+    "ev_id": "EV019",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Repeated suspension from a cord must bear on the knob and leave rope wear"
+  },
+  {
+    "candidate_id": "C-15",
+    "ev_id": "EV041",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "The suspension cord bears directly on whichever knob is used"
+  },
+  {
+    "candidate_id": "C-15",
+    "ev_id": "EV012",
+    "prediction": "+",
+    "reading": null,
+    "rationale": "Clean aperture edges are needed for a sharp null"
+  },
+  {
+    "candidate_id": "C-15",
+    "ev_id": "EV025",
+    "prediction": "+",
+    "reading": "confirmed",
+    "rationale": "Predicts urban and domestic contexts, which the corpus shows"
+  },
+  {
+    "candidate_id": "C-15",
+    "ev_id": "EV027",
+    "prediction": "++",
+    "reading": "absent",
+    "rationale": "Predicts association with calendrical or astronomical equipment; none is recorded with any dodecahedron"
+  },
+  {
+    "candidate_id": "C-15",
+    "ev_id": "EV026",
+    "prediction": "-",
+    "reading": "confirmed",
+    "rationale": "EXP-0003 shows the four noon-reachable elevations are identical from 43.7 to 55 degrees north, so the instrument is latitude-insensitive across the empire and had no reason to remain in the north-western provinces. Confinement therefore counts against it"
+  },
+  {
+    "candidate_id": "C-14",
+    "ev_id": "EV004",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Twelve apertures for twelve zodiac months is the functional claim"
+  },
+  {
+    "candidate_id": "C-14",
+    "ev_id": "EV010",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A dial reads angles. Geometric fidelity is the whole instrument, and EXP-0002 shows irregularity degrades the resolution further"
+  },
+  {
+    "candidate_id": "C-14",
+    "ev_id": "EV039",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A dial is calibrated for one latitude and must be reproducible; the corpus spans 43 to 55 degrees north with no systematic geometric variation and no standardisation at all"
+  },
+  {
+    "candidate_id": "C-14",
+    "ev_id": "EV038",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A dial must be oriented to the meridian and held fixed. No specimen has a base, a suspension loop or any distinguished axis; the knobs let it rest on any face"
+  },
+  {
+    "candidate_id": "C-14",
+    "ev_id": "EV044",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "The interior IS the projection surface. It must be smoothed and it must carry engraved declination curves, as every Roman zodiac dial does. The corpus interiors are rough, unfinished and unmarked"
+  },
+  {
+    "candidate_id": "C-14",
+    "ev_id": "EV012",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "The interior is the projection surface and must be smooth and true. The PAS records in this database consistently describe interiors as roughly or crudely cast and unfinished (RD-0001, RD-0002, RD-0003, RD-0008, RD-0011, RD-0012)"
+  },
+  {
+    "candidate_id": "C-14",
+    "ev_id": "EV014",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Every Roman zodiac dial carries engraved declination curves ON THE PROJECTION SURFACE. The engraving on these objects is entirely on the EXTERIOR, around the apertures; no specimen has interior markings"
+  },
+  {
+    "candidate_id": "C-14",
+    "ev_id": "EV017",
+    "prediction": "-",
+    "reading": null,
+    "rationale": "Optical use; nothing passes through the apertures, so the absence of bore wear counts in favour"
+  },
+  {
+    "candidate_id": "C-14",
+    "ev_id": "EV025",
+    "prediction": "+",
+    "reading": "confirmed",
+    "rationale": "Predicts urban and domestic contexts, which the corpus shows"
+  },
+  {
+    "candidate_id": "C-14",
+    "ev_id": "EV027",
+    "prediction": "++",
+    "reading": "absent",
+    "rationale": "Predicts association with other timekeeping or astronomical equipment. None is recorded with any dodecahedron"
+  },
+  {
+    "candidate_id": "C-14",
+    "ev_id": "EV026",
+    "prediction": "+",
+    "reading": "confirmed",
+    "rationale": "A latitude-calibrated instrument would be confined to a band of latitudes, which is the one argument in this candidate's favour. WEAK: the corpus spans 43 to 55 degrees north, some 12 degrees, which is far too wide for a single calibration"
+  },
+  {
+    "candidate_id": "C-13",
+    "ev_id": "EV004",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A graded set of apertures IS a graded set of garment sizes. This is the whole functional claim"
+  },
+  {
+    "candidate_id": "C-13",
+    "ev_id": "EV006",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A gauge aperture must be truly circular or the size it reports is wrong"
+  },
+  {
+    "candidate_id": "C-13",
+    "ev_id": "EV007",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "The lip must be rounded, because cloth or leather is drawn against it and a sharp rim would snag or cut the work"
+  },
+  {
+    "candidate_id": "C-13",
+    "ev_id": "EV017",
+    "prediction": "-",
+    "reading": null,
+    "rationale": "Only soft material passes the aperture, and briefly. Absence of bore wear counts in favour. NOTE this is the same premise as C-12 and it was chosen knowing the wear result"
+  },
+  {
+    "candidate_id": "C-13",
+    "ev_id": "EV013",
+    "prediction": "-",
+    "reading": null,
+    "rationale": "A casting flaw on a working aperture distorts the size it reports"
+  },
+  {
+    "candidate_id": "C-13",
+    "ev_id": "EV016",
+    "prediction": "+",
+    "reading": null,
+    "rationale": "Engraved rings around an aperture could serve to identify which size it is, which a graded set needs"
+  },
+  {
+    "candidate_id": "C-13",
+    "ev_id": "EV003",
+    "prediction": "-",
+    "reading": null,
+    "rationale": "A gauge carries no load; thin walls suffice"
+  },
+  {
+    "candidate_id": "C-13",
+    "ev_id": "EV008",
+    "prediction": "0",
+    "reading": null,
+    "rationale": "NEUTRAL, AND THIS IS THE CANDIDATE'S WEAK POINT RATHER THAN A DODGE: a sizing gauge does not need knobs at all, let alone twenty of them. The hypothesis leaves the most distinctive feature of the object unexplained, which is exactly what H014 and C-12 do explain"
+  },
+  {
+    "candidate_id": "C-13",
+    "ev_id": "EV010",
+    "prediction": "0",
+    "reading": null,
+    "rationale": "NEUTRAL: each aperture is independently a gauge, so overall regularity of the body is irrelevant. This is a genuine indifference and is what separates C-13 from C-11, where the references are relations BETWEEN knobs and global regularity does matter"
+  },
+  {
+    "candidate_id": "C-13",
+    "ev_id": "EV039",
+    "prediction": "+",
+    "reading": null,
+    "rationale": "A workshop gauge need only be self-consistent to make matched pairs, so standardisation between objects is expected but not required. Predicted at '+' rather than '++' for that reason"
+  },
+  {
+    "candidate_id": "C-13",
+    "ev_id": "EV025",
+    "prediction": "+",
+    "reading": "confirmed",
+    "rationale": "Predicts urban workshop and domestic contexts, which the corpus shows"
+  },
+  {
+    "candidate_id": "C-13",
+    "ev_id": "EV026",
+    "prediction": "+",
+    "reading": "confirmed",
+    "rationale": "Garment forms were regionally specific in a way that artillery and fishing were not. The north-western provinces had a distinctive and high-value textile tradition: the birrus Britannicus is named in Diocletian's Price Edict of AD 301, mid-window, at 6,000 denarii, and hooded garments are a Gallic and north-western style (PUB-0043). A tool for a regionally specific garment may legitimately be regionally confined"
+  },
+  {
+    "candidate_id": "C-13",
+    "ev_id": "EV027",
+    "prediction": "++",
+    "reading": "absent",
+    "rationale": "Predicts needles, shears, thimbles, awls, spindle whorls, loom weights or cloth alongside. None is recorded with any dodecahedron"
+  },
+  {
+    "candidate_id": "C-13",
+    "ev_id": "EV040",
+    "prediction": "+",
+    "reading": null,
+    "rationale": "Regional garment traditions imply regionally varying tools"
+  },
+  {
+    "candidate_id": "C-13",
+    "ev_id": "EV024",
+    "prediction": "+",
+    "reading": null,
+    "rationale": "Textile or leather fibres should remain against the aperture lips"
+  },
+  {
+    "candidate_id": "C-11",
+    "ev_id": "EV039",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A distance or angle gauge that varies between objects transfers no measurement. DECISIVE: overall diameter varies 2.5:1 across the corpus"
+  },
+  {
+    "candidate_id": "C-11",
+    "ev_id": "EV010",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Inter-knob distances must be predictable from the form; an irregular body gives unpredictable references"
+  },
+  {
+    "candidate_id": "C-11",
+    "ev_id": "EV013",
+    "prediction": "--",
+    "reading": null,
+    "rationale": "Casting distortion displaces the reference points and corrupts every measurement taken from them"
+  },
+  {
+    "candidate_id": "C-11",
+    "ev_id": "EV009",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "The reference points must be uniform in size and placement"
+  },
+  {
+    "candidate_id": "C-11",
+    "ev_id": "EV008",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Knob diameter must be consistent or the contact point shifts"
+  },
+  {
+    "candidate_id": "C-11",
+    "ev_id": "EV017",
+    "prediction": "-",
+    "reading": null,
+    "rationale": "Nothing passes through the apertures; absence of bore wear counts in favour, as it does for H011"
+  },
+  {
+    "candidate_id": "C-11",
+    "ev_id": "EV025",
+    "prediction": "+",
+    "reading": "confirmed",
+    "rationale": "Predicts urban, architectural and workshop contexts, which the corpus shows"
+  },
+  {
+    "candidate_id": "C-11",
+    "ev_id": "EV027",
+    "prediction": "++",
+    "reading": "absent",
+    "rationale": "Predicts association with surveying or drafting equipment - groma, dividers, rules, styli. None is recorded with any dodecahedron"
+  },
+  {
+    "candidate_id": "C-11",
+    "ev_id": "EV026",
+    "prediction": "--",
+    "reading": "confirmed",
+    "rationale": "Measurement practice was empire-wide; confinement to the north-west would falsify, and the confinement is present"
+  },
+  {
+    "candidate_id": "C-12",
+    "ev_id": "EV017",
+    "prediction": "--",
+    "reading": null,
+    "rationale": "THE UNIFYING PREMISE. Nothing harder than bronze ever contacts the tool, so no bore wear can form. All four wear predictions below follow deductively from this one premise rather than being chosen separately"
+  },
+  {
+    "candidate_id": "C-12",
+    "ev_id": "EV018",
+    "prediction": "-",
+    "reading": null,
+    "rationale": "Soft material cannot abrade the exterior"
+  },
+  {
+    "candidate_id": "C-12",
+    "ev_id": "EV019",
+    "prediction": "-",
+    "reading": null,
+    "rationale": "No cord is drawn under tension across the object"
+  },
+  {
+    "candidate_id": "C-12",
+    "ev_id": "EV020",
+    "prediction": "-",
+    "reading": null,
+    "rationale": "Nothing rotates against the object"
+  },
+  {
+    "candidate_id": "C-12",
+    "ev_id": "EV004",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Graded apertures suit different work sizes"
+  },
+  {
+    "candidate_id": "C-12",
+    "ev_id": "EV008",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "The knobs are standoffs that set the thickness of the formed piece"
+  },
+  {
+    "candidate_id": "C-12",
+    "ev_id": "EV009",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Standoffs must be uniform or thickness varies across the work"
+  },
+  {
+    "candidate_id": "C-12",
+    "ev_id": "EV003",
+    "prediction": "-",
+    "reading": null,
+    "rationale": "The tool carries no structural load; thin walls suffice"
+  },
+  {
+    "candidate_id": "C-12",
+    "ev_id": "EV014",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Relief around an aperture impresses itself into soft material, which makes the decoration a working surface rather than ornament"
+  },
+  {
+    "candidate_id": "C-12",
+    "ev_id": "EV016",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Engraving after casting creates that impressing surface"
+  },
+  {
+    "candidate_id": "C-12",
+    "ev_id": "EV039",
+    "prediction": "-",
+    "reading": null,
+    "rationale": "A craft tool need not conform to any standard; the gauge wanted varies with the work"
+  },
+  {
+    "candidate_id": "C-12",
+    "ev_id": "EV040",
+    "prediction": "+",
+    "reading": null,
+    "rationale": "Craft traditions and their tools vary by region"
+  },
+  {
+    "candidate_id": "C-12",
+    "ev_id": "EV025",
+    "prediction": "+",
+    "reading": "confirmed",
+    "rationale": "Predicts workshop and urban domestic contexts, which the corpus shows"
+  },
+  {
+    "candidate_id": "C-12",
+    "ev_id": "EV026",
+    "prediction": "+",
+    "reading": "confirmed",
+    "rationale": "A regionally transmitted craft may be regionally confined. WEAK: almost any culturally specific explanation predicts this"
+  },
+  {
+    "candidate_id": "C-12",
+    "ev_id": "EV027",
+    "prediction": "++",
+    "reading": "absent",
+    "rationale": "Predicts craft equipment alongside - awls, punches, offcuts, scrap foil, raw material. None is recorded with any dodecahedron. THIS IS THE CANDIDATE'S ONLY HARD CONTRADICTION and it is the same one that costs H014 its largest single loss"
+  },
+  {
+    "candidate_id": "C-12",
+    "ev_id": "EV024",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Residues of whatever was worked should remain on the interior and around the apertures. THE DECISIVE AND UNMEASURED TEST"
+  },
+  {
+    "candidate_id": "C-01",
+    "ev_id": "EV039",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A gauge that is not standardised sorts nothing; two gauges must agree"
+  },
+  {
+    "candidate_id": "C-01",
+    "ev_id": "EV017",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Stone or lead shot dragged through bronze apertures abrades them"
+  },
+  {
+    "candidate_id": "C-01",
+    "ev_id": "EV003",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A gauge handled with shot must be robust"
+  },
+  {
+    "candidate_id": "C-01",
+    "ev_id": "EV010",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Aperture geometry must be true or the calibration is wrong"
+  },
+  {
+    "candidate_id": "C-01",
+    "ev_id": "EV025",
+    "prediction": "++",
+    "reading": "absent",
+    "rationale": "Predicts military dominance; corpus is more than half urban settlement and under one-fifth military (PUB-0003, 33)"
+  },
+  {
+    "candidate_id": "C-01",
+    "ev_id": "EV026",
+    "prediction": "--",
+    "reading": "confirmed",
+    "rationale": "Artillery served empire-wide; confinement to the north-west would falsify. The confinement is present (PUB-0003, 32)"
+  },
+  {
+    "candidate_id": "C-01",
+    "ev_id": "EV027",
+    "prediction": "++",
+    "reading": "absent",
+    "rationale": "Predicts shot, artillery fittings or military kit alongside; none is recorded with any dodecahedron"
+  },
+  {
+    "candidate_id": "C-02",
+    "ev_id": "EV019",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Straps and traces under draught tension bear on the fitting constantly"
+  },
+  {
+    "candidate_id": "C-02",
+    "ev_id": "EV017",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Anything routed through an aperture under draught load wears the bore"
+  },
+  {
+    "candidate_id": "C-02",
+    "ev_id": "EV003",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A draught fitting carries real load and must be substantial"
+  },
+  {
+    "candidate_id": "C-02",
+    "ev_id": "EV035",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Must not deform under harness tension"
+  },
+  {
+    "candidate_id": "C-02",
+    "ev_id": "EV039",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Harness parts are replaced and must interchange"
+  },
+  {
+    "candidate_id": "C-02",
+    "ev_id": "EV025",
+    "prediction": "++",
+    "reading": "absent",
+    "rationale": "Predicts military and rural dominance; the corpus is urban civilian"
+  },
+  {
+    "candidate_id": "C-02",
+    "ev_id": "EV027",
+    "prediction": "++",
+    "reading": "absent",
+    "rationale": "Predicts harness fittings, bits or vehicle parts alongside; none is recorded"
+  },
+  {
+    "candidate_id": "C-03",
+    "ev_id": "EV039",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A mesh gauge that varies between objects produces unusable netting"
+  },
+  {
+    "candidate_id": "C-03",
+    "ev_id": "EV019",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Cord is drawn round the gauge under tension at every mesh"
+  },
+  {
+    "candidate_id": "C-03",
+    "ev_id": "EV041",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Cord bearing on the knobs at every mesh must wear them"
+  },
+  {
+    "candidate_id": "C-03",
+    "ev_id": "EV026",
+    "prediction": "--",
+    "reading": "confirmed",
+    "rationale": "Fishing and fowling are practised across the empire; confinement to the north-west would falsify, and the confinement is present"
+  },
+  {
+    "candidate_id": "C-03",
+    "ev_id": "EV025",
+    "prediction": "++",
+    "reading": "absent",
+    "rationale": "Predicts coastal, riverine and lacustrine sites; the corpus is inland urban settlement"
+  },
+  {
+    "candidate_id": "C-03",
+    "ev_id": "EV027",
+    "prediction": "++",
+    "reading": "absent",
+    "rationale": "Predicts net weights, floats or hooks alongside; none is recorded"
+  },
+  {
+    "candidate_id": "C-04",
+    "ev_id": "EV019",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A fairlead exists to take rope load; rope wear is its defining trace"
+  },
+  {
+    "candidate_id": "C-04",
+    "ev_id": "EV017",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Rope running through an aperture under load grooves the bore"
+  },
+  {
+    "candidate_id": "C-04",
+    "ev_id": "EV003",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Rigging loads are large; thin walls would collapse"
+  },
+  {
+    "candidate_id": "C-04",
+    "ev_id": "EV036",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Must transfer load between rope and hull or spar"
+  },
+  {
+    "candidate_id": "C-04",
+    "ev_id": "EV025",
+    "prediction": "++",
+    "reading": "absent",
+    "rationale": "Predicts ports, wrecks and riverine sites; the corpus is inland urban"
+  },
+  {
+    "candidate_id": "C-04",
+    "ev_id": "EV026",
+    "prediction": "--",
+    "reading": "confirmed",
+    "rationale": "Shipping is Mediterranean above all; absence from Italy, Spain, Africa and the East falsifies"
+  },
+  {
+    "candidate_id": "C-05",
+    "ev_id": "EV039",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A measure that is not standardised measures nothing. THIS IS DECISIVE: overall diameter varies 2.5:1 across the corpus"
+  },
+  {
+    "candidate_id": "C-05",
+    "ev_id": "EV010",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Internal volume must be true and reproducible"
+  },
+  {
+    "candidate_id": "C-05",
+    "ev_id": "EV013",
+    "prediction": "--",
+    "reading": null,
+    "rationale": "Casting voids alter internal volume and would be rejected"
+  },
+  {
+    "candidate_id": "C-05",
+    "ev_id": "EV004",
+    "prediction": "--",
+    "reading": null,
+    "rationale": "Apertures perforating the vessel make it unable to hold anything measurable. THIS ALONE ELIMINATES THE CANDIDATE"
+  },
+  {
+    "candidate_id": "C-05",
+    "ev_id": "EV026",
+    "prediction": "--",
+    "reading": "confirmed",
+    "rationale": "Roman measures were empire-wide; regional confinement falsifies"
+  },
+  {
+    "candidate_id": "C-06",
+    "ev_id": "EV018",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Pressed into soil repeatedly; abrasive wear is unavoidable"
+  },
+  {
+    "candidate_id": "C-06",
+    "ev_id": "EV021",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Contact with stones in tilled soil chips and dents"
+  },
+  {
+    "candidate_id": "C-06",
+    "ev_id": "EV039",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Spacing must be reproducible between tools"
+  },
+  {
+    "candidate_id": "C-06",
+    "ev_id": "EV025",
+    "prediction": "++",
+    "reading": "absent",
+    "rationale": "Predicts rural and agricultural contexts; the corpus is urban settlement"
+  },
+  {
+    "candidate_id": "C-06",
+    "ev_id": "EV003",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A tool pressed into soil must be robust; the corpus is 0.5-4 mm"
+  },
+  {
+    "candidate_id": "C-07",
+    "ev_id": "EV017",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A clapper striking the interior leaves impact traces around the apertures and inside"
+  },
+  {
+    "candidate_id": "C-07",
+    "ev_id": "EV021",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A bell on a beast is knocked constantly"
+  },
+  {
+    "candidate_id": "C-07",
+    "ev_id": "EV019",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Suspension from a collar or strap wears the suspension point"
+  },
+  {
+    "candidate_id": "C-07",
+    "ev_id": "EV018",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Constant contact with hide, vegetation and other stock"
+  },
+  {
+    "candidate_id": "C-07",
+    "ev_id": "EV025",
+    "prediction": "++",
+    "reading": "absent",
+    "rationale": "Predicts rural and pastoral contexts; the corpus is urban settlement"
+  },
+  {
+    "candidate_id": "C-07",
+    "ev_id": "EV038",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A hung bell has a fixed orientation and needs a suspension loop; no dodecahedron has one"
+  },
+  {
+    "candidate_id": "C-08",
+    "ev_id": "EV019",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "A tether point exists to take rope load under an animal's pull"
+  },
+  {
+    "candidate_id": "C-08",
+    "ev_id": "EV017",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Rope through an aperture under an animal's weight grooves the bore"
+  },
+  {
+    "candidate_id": "C-08",
+    "ev_id": "EV003",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Must resist the pull of a large animal; 0.5-4 mm of leaded bronze would not"
+  },
+  {
+    "candidate_id": "C-08",
+    "ev_id": "EV035",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Must not deform or burst under shock loading"
+  },
+  {
+    "candidate_id": "C-08",
+    "ev_id": "EV025",
+    "prediction": "++",
+    "reading": "absent",
+    "rationale": "Predicts rural, pastoral and military-transport contexts"
+  },
+  {
+    "candidate_id": "C-09",
+    "ev_id": "EV023",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Smouldering material inside must leave soot and heat alteration. THIS IS THE CANDIDATE'S DECISIVE AND CURRENTLY UNTESTED PREDICTION"
+  },
+  {
+    "candidate_id": "C-09",
+    "ev_id": "EV024",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Combustion residues should remain on the interior"
+  },
+  {
+    "candidate_id": "C-09",
+    "ev_id": "EV018",
+    "prediction": "+",
+    "reading": null,
+    "rationale": "Handled and hung in use"
+  },
+  {
+    "candidate_id": "C-09",
+    "ev_id": "EV025",
+    "prediction": "++",
+    "reading": "absent",
+    "rationale": "Predicts rural, byre and apiary contexts; the corpus is urban settlement"
+  },
+  {
+    "candidate_id": "C-09",
+    "ev_id": "EV011",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Repeated heating of an 18 per cent lead alloy would be a poor choice; lead melts at 327 degrees Celsius"
+  },
+  {
+    "candidate_id": "C-10",
+    "ev_id": "EV008",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "The knobs act as spacers limiting compression, per PUB-0041"
+  },
+  {
+    "candidate_id": "C-10",
+    "ev_id": "EV004",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Graded apertures accommodate cords of varying thickness, per PUB-0041"
+  },
+  {
+    "candidate_id": "C-10",
+    "ev_id": "EV017",
+    "prediction": "-",
+    "reading": null,
+    "rationale": "Wax is soft and cords are knotted rather than drawn; no bore wear is predicted, and its absence counts in favour"
+  },
+  {
+    "candidate_id": "C-10",
+    "ev_id": "EV024",
+    "prediction": "++",
+    "reading": null,
+    "rationale": "Beeswax and resin worked in the object should leave recoverable residue. THIS IS THE CANDIDATE'S DECISIVE AND CURRENTLY UNTESTED PREDICTION"
+  },
+  {
+    "candidate_id": "C-10",
+    "ev_id": "EV039",
+    "prediction": "+",
+    "reading": null,
+    "rationale": "Bullae are described as standardised, so some consistency between tools is expected"
+  },
+  {
+    "candidate_id": "C-10",
+    "ev_id": "EV025",
+    "prediction": "++",
+    "reading": "confirmed",
+    "rationale": "Predicts administrative and urban contexts, comparable to seal boxes. More than half of located finds are from cities and settlements"
+  },
+  {
+    "candidate_id": "C-10",
+    "ev_id": "EV027",
+    "prediction": "++",
+    "reading": "absent",
+    "rationale": "Predicts seal boxes, styli, writing equipment or document fittings alongside; none is recorded with any dodecahedron"
+  },
+  {
+    "candidate_id": "C-10",
+    "ev_id": "EV023",
+    "prediction": "-",
+    "reading": null,
+    "rationale": "Wax is worked soft, not melted in the object; absence of thermal alteration counts in favour"
+  }
+]
