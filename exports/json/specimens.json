@@ -39,7 +39,8 @@
     "primary_source_id": "PUB-0006",
     "confidence": "B",
     "nouwen_number": null,
-    "guggenberger_number": null,
+    "guggenberger_number": 118,
+    "guggenberger_type": "1a?",
     "notes": "Smallest hole 13.7mm, largest 20mm; all holes bevelled; possibly the most complete specimen known from Britannia per PAS record"
   },
   {
@@ -83,6 +84,7 @@
     "confidence": "B",
     "nouwen_number": null,
     "guggenberger_number": null,
+    "guggenberger_type": null,
     "notes": "Incomplete: 6 complete faces + half of 5 more; interior crudely cast; holes of different sizes irregularly cut; face width ~42mm, face length ~38mm"
   },
   {
@@ -125,7 +127,8 @@
     "primary_source_id": "PUB-0006",
     "confidence": "B",
     "nouwen_number": null,
-    "guggenberger_number": null,
+    "guggenberger_number": 115,
+    "guggenberger_type": "6",
     "notes": "Fragment weight 82g; one complete face hole ~15.75mm; no additional decoration; interior roughcast; only dodecahedron known from southern England outside London per PAS 2009"
   },
   {
@@ -168,7 +171,8 @@
     "primary_source_id": "PUB-0006",
     "confidence": "B",
     "nouwen_number": null,
-    "guggenberger_number": null,
+    "guggenberger_number": 119,
+    "guggenberger_type": "1a",
     "notes": "Fragment: 2 complete faces + ~half of 6 more; face dimension 29-30mm corner to side-centre; holes: 10-11mm (complete faces), 18.3mm (adjacent face)"
   },
   {
@@ -212,6 +216,7 @@
     "confidence": "C",
     "nouwen_number": null,
     "guggenberger_number": 132,
+    "guggenberger_type": null,
     "notes": "Found June 2023 by NDAG in trench 4, large pit; near Roman villa excavated 1935; XRF: Cu 75%, Sn 7%, Pb 18% (Gerry McDonnell); 3D scanned (Univ. Lincoln); sent to Newcastle Univ. for further analysis; 33rd dodecahedron found in England; first from East Midlands"
   },
   {
@@ -254,7 +259,8 @@
     "primary_source_id": "PUB-0004",
     "confidence": "E",
     "nouwen_number": null,
-    "guggenberger_number": null,
+    "guggenberger_number": 4,
+    "guggenberger_type": "4",
     "notes": "Source: Wikipedia image caption; inv. 4002; findspot Leopoldwal 1939; measurements not available from this source"
   },
   {
@@ -298,6 +304,7 @@
     "confidence": "A",
     "nouwen_number": null,
     "guggenberger_number": 59,
+    "guggenberger_type": "?",
     "notes": "First recorded dodecahedron; exhibited at SAL meeting 28 June 1739 by George North; described as twelve-sided bronze object from a field in Aston, Hertfordshire; measurements and current location not stated in archival record"
   },
   {
@@ -341,6 +348,7 @@
     "confidence": "B",
     "nouwen_number": null,
     "guggenberger_number": null,
+    "guggenberger_type": null,
     "notes": "Fragment: one edge + 2 cylindrical lugs (13.05mm and 12.40mm dia) + 4 short edge sections; fragment measures 37.65 x 26.15 x 21.05mm; interior concave and crudely cast; exterior relatively smooth"
   },
   {
@@ -383,7 +391,8 @@
     "primary_source_id": "PUB-0006",
     "confidence": "B",
     "nouwen_number": null,
-    "guggenberger_number": null,
+    "guggenberger_number": 120,
+    "guggenberger_type": "1a",
     "notes": "Tiny fragment: one edge + 2 spherical lugs; edges of 3 circles visible; 29.5 x 18.7 x 7.2mm; interior hollow, undecorated"
   },
   {
@@ -427,6 +436,7 @@
     "confidence": "B",
     "nouwen_number": null,
     "guggenberger_number": null,
+    "guggenberger_type": null,
     "notes": "Smallest PAS fragment: 12.5 x 10 x 8.7mm; one corner where 3 faces meet; single spherical knob intact; depth of discovery 0-10cm"
   },
   {
@@ -470,6 +480,7 @@
     "confidence": "B",
     "nouwen_number": null,
     "guggenberger_number": null,
+    "guggenberger_type": null,
     "notes": "Two opposing faces preserved: 9.4mm and ~22.6mm holes; stark size difference; knop: 6.0 x 5.7mm high, neck 4.5mm; XRF: Cu, Sn, trace Fe, Pb (qualitative); dark blackish-green patina with lighter green patches"
   },
   {
@@ -513,6 +524,7 @@
     "confidence": "B",
     "nouwen_number": null,
     "guggenberger_number": null,
+    "guggenberger_type": null,
     "notes": "Object certainty: 'Possibly' dodecahedron; one globular knob + short corner sections; 25 x 20 x 36mm; weight 34.51g; interior concave and crudely finished; exterior relatively smooth"
   },
   {
@@ -556,6 +568,7 @@
     "confidence": "B",
     "nouwen_number": null,
     "guggenberger_number": null,
+    "guggenberger_type": null,
     "notes": "Object certainty: 'Probably' dodecahedron; 4 separate corner fragments; knob diameters: 14.28, 13.92, 13.46, 14.01mm (very consistent); plate thickness: 3.33, 3.55, 3.26, 3.0mm; found nearby LIN-8D3A01; mid-green patina with brown patches"
   },
   {
@@ -599,6 +612,7 @@
     "confidence": "B",
     "nouwen_number": null,
     "guggenberger_number": null,
+    "guggenberger_type": null,
     "notes": "Fragment: V-shaped cross-section, one edge + two corners; two small spherical knobs resembling bun feet; 30.14 x 17.74mm; cast-in-one-piece construction noted"
   },
   {
@@ -642,6 +656,7 @@
     "confidence": "B",
     "nouwen_number": null,
     "guggenberger_number": null,
+    "guggenberger_type": null,
     "notes": "KIK-IRPA object number 10140871; inv. I.7108; provenance: 'Couthuin ou Bassenge' (Liege province); dated AD 301-399 per KIK-IRPA record; alloy: bronze and lead; CC0 metadata license"
   },
   {
@@ -685,6 +700,7 @@
     "confidence": "B",
     "nouwen_number": null,
     "guggenberger_number": null,
+    "guggenberger_type": null,
     "notes": "BM registration 1878,0311.48; object certainty marked '?' in BM catalogue; aperture diameter range 12.45-17.73mm; donated by Sir Augustus Wollaston Franks; previous owners: Rev. Dr W.S. Simpson; Frederick Bousfield; not on display"
   },
   {
@@ -727,7 +743,8 @@
     "primary_source_id": "PUB-0012",
     "confidence": "B",
     "nouwen_number": null,
-    "guggenberger_number": null,
+    "guggenberger_number": 62,
+    "guggenberger_type": "5a",
     "notes": "BM registration 1924,0411.1; among the largest known Roman dodecahedra at 127.71mm; aperture diameter range 27.67-40.55mm; purchased from Thomas James 1924; reference: Roman Britain 1964 Guide p.78, fig.40.5; not on display"
   },
   {
@@ -770,7 +787,8 @@
     "primary_source_id": "PUB-0013",
     "confidence": "C",
     "nouwen_number": null,
-    "guggenberger_number": null,
+    "guggenberger_number": 61,
+    "guggenberger_type": "6?",
     "notes": "Displayed at Corbridge Roman Museum; confirmed via English Heritage / Google Arts & Culture; referenced in Allason-Jones & Miket 1984 and multiple PAS records (BH-692011, YORYM-41CD72); no measurements available from accessible online sources"
   },
   {
@@ -813,7 +831,8 @@
     "primary_source_id": "PUB-0009",
     "confidence": "D",
     "nouwen_number": null,
-    "guggenberger_number": null,
+    "guggenberger_number": 69,
+    "guggenberger_type": "1a",
     "notes": "Accession 1923.13; found at South Shields Roman fort (Arbeia); face width 52mm, face length 48mm per museum website cited in PAS YORYM-41CD72; Allason-Jones & Miket 1984 no. 3.741; military site context confirmed"
   },
   {
@@ -857,6 +876,7 @@
     "confidence": "A",
     "nouwen_number": null,
     "guggenberger_number": 98,
+    "guggenberger_type": "1a",
     "notes": "PUB-0010, 269-289. THE ONLY DODECAHEDRON FROM A SEALED, DATED, STRATIFIED CONTEXT. Height 59 mm as it stands but only 48-52 mm face to face; maximum diameter 74 mm; 81 g; twelve pentagonal faces of 21 mm edge; ten circular openings of 10.5-22 mm; two opposed oval openings of 21x26 mm; a small ball of about 5-6 mm at each vertex, soldered to the body. Knob diameter and individual hole diameters left NULL because the report gives ranges, not per-face values; the ranges are recorded as observations. Per-face diameters read off PUB-0010 fig 12 by PUB-0019 are recorded as separate D-grade observations and deliberately NOT merged into this A-grade row."
   },
   {
@@ -899,7 +919,8 @@
     "primary_source_id": "PUB-0014",
     "confidence": "C",
     "nouwen_number": null,
-    "guggenberger_number": null,
+    "guggenberger_number": 29,
+    "guggenberger_type": "1a",
     "notes": "Wikidata Q62511455; Commons CC-BY-SA photo by Rama 2019; discovered 1939 at Roman thermae of Arelate (Arles); primary publication: Benoit 1957 OGAM 9: 104-114 (not yet accessed); 3rd century AD; Gallia Narbonensis; PATTERN: second baths-context specimen alongside Jublains (RD-0020)"
   },
   {
@@ -943,6 +964,7 @@
     "confidence": "B",
     "nouwen_number": null,
     "guggenberger_number": 134,
+    "guggenberger_type": null,
     "notes": "PUB-0003, 36 fig 4. Complete. Diameter 5.5 cm face to opposite face without knobs. Eight remaining holes stated only as a range (c 1.0-c 1.25 cm) and therefore left NULL rather than estimated. Only fully measured specimen added in batch 002."
   },
   {
@@ -986,6 +1008,7 @@
     "confidence": "C",
     "nouwen_number": null,
     "guggenberger_number": 11,
+    "guggenberger_type": null,
     "notes": "PUB-0003, 35-6 and n 33-4. Grave of a wealthy woman, d c AD 350. The adjacent bone object ('rod') was in very poor condition, was not preserved, and is known only from a drawing of the grave. Production holes 2.4 cm and 2.3 cm."
   },
   {
@@ -1029,6 +1052,7 @@
     "confidence": "C",
     "nouwen_number": null,
     "guggenberger_number": 20,
+    "guggenberger_type": "1a",
     "notes": "PUB-0003, 35 and n 30 (citing Winkelmann 1933, 137-8 tab 16; Guggenberger 1999, 20, 178). Listed by PUB-0003 n 18 among find contexts with plausible sacred connections despite the limes location."
   },
   {
@@ -1072,6 +1096,7 @@
     "confidence": "C",
     "nouwen_number": null,
     "guggenberger_number": 21,
+    "guggenberger_type": "1a",
     "notes": "PUB-0003, 35 and n 31 (citing Kolling 1993, 124). Found 'near' the sacrificial shafts of an urban Gallo-Roman cult precinct; the source's quotation marks around 'near' are preserved as stated proximity only."
   },
   {
@@ -1115,6 +1140,7 @@
     "confidence": "C",
     "nouwen_number": null,
     "guggenberger_number": 68,
+    "guggenberger_type": "1a",
     "notes": "PUB-0003, 34 and n 28 (citing Wheeler and Wheeler 1932, 86 fig 20). Fragmented. From the site of the temple complex of the local god Nodens, but PUB-0003 states the exact find context is unknown."
   },
   {
@@ -1158,6 +1184,7 @@
     "confidence": "C",
     "nouwen_number": null,
     "guggenberger_number": 122,
+    "guggenberger_type": null,
     "notes": "PUB-0003, 34 and n 27 (citing Coombe and Henig 2020, 234, 238 fig 9, 259-60). Fragmented. Temple attribution of the cache is the cited authors' identification, not a stratigraphic observation."
   },
   {
@@ -1201,6 +1228,7 @@
     "confidence": "C",
     "nouwen_number": null,
     "guggenberger_number": 110,
+    "guggenberger_type": null,
     "notes": "PUB-0003, 35 and n 29 (citing Berton 2007). Metal-detector find inside a 'modest Gallo-Roman domestic structure'. Deity identification as Juno is queried in the source and is preserved with its question mark."
   },
   {
@@ -1244,6 +1272,7 @@
     "confidence": "C",
     "nouwen_number": null,
     "guggenberger_number": 60,
+    "guggenberger_type": "5a",
     "notes": "PUB-0003, 35 fig 3 (photo, SAL). CONFLICT: PUB-0003 n 16 lists no 60 among finds from cities or other settlements and n 21 lists no 60 among coin or bronze hoards. Both classifications preserved; context_category set to Hoard as the more specific of the two."
   },
   {
@@ -1287,6 +1316,7 @@
     "confidence": "C",
     "nouwen_number": null,
     "guggenberger_number": 5,
+    "guggenberger_type": null,
     "notes": "PUB-0003, 35 and n 32 (citing Barthel 1909, 94; Nouwen 1993, 31-2, 35; Guggenberger 1999, 152, 154, 163-4). One of three dodecahedra from richly furnished graves. PUB-0003 n 13 notes the dating is uncertain and may be 2nd century."
   },
   {
@@ -1330,6 +1360,7 @@
     "confidence": "C",
     "nouwen_number": null,
     "guggenberger_number": 10,
+    "guggenberger_type": "1a",
     "notes": "PUB-0003, 45 and n 103, n 105. Found 1892. Recorded as having traces of yellow wax; PUB-0003 states explicitly that this observation may not be fully reliable (Guggenberger 1999, 61-2, 144, 162). Listed by PUB-0003 n 17 among military-camp finds. Dating uncertain, possibly 2nd century (n 13). ONLY RESIDUE OBSERVATION IN THE CORPUS."
   },
   {
@@ -1373,6 +1404,7 @@
     "confidence": "C",
     "nouwen_number": null,
     "guggenberger_number": 92,
+    "guggenberger_type": "1a",
     "notes": "PUB-0003, 32. Easternmost known find. Recorded here to document the outer limit of the distribution; no measurements available."
   },
   {
@@ -1416,7 +1448,184 @@
     "confidence": "C",
     "nouwen_number": null,
     "guggenberger_number": 130,
+    "guggenberger_type": null,
     "notes": "PUB-0003, 32 and n 11 (citing Vujovic 2021). Outlying south-eastern find; no measurements available."
+  },
+  {
+    "rd_id": "RD-0037",
+    "specimen_name": "Louvre dodecahedron",
+    "findspot": "France (?), attributed to Gaul (?)",
+    "country": "France",
+    "roman_province": null,
+    "context_category": "Unknown",
+    "date_from": null,
+    "date_to": null,
+    "museum_name": "Musee du Louvre",
+    "museum_city": "Paris",
+    "museum_country": "France",
+    "inventory_number": "ED 4271; INV 2699; Br 1602",
+    "material": "Bronze",
+    "manufacturing_method": "Hollow cast, with soldered knobs",
+    "height_mm": 71.0,
+    "width_mm": 82.0,
+    "max_diameter_mm": 85.0,
+    "weight_g": null,
+    "wall_thickness_mm": null,
+    "knob_diameter_mm": null,
+    "hole_01_mm": null,
+    "hole_02_mm": null,
+    "hole_03_mm": null,
+    "hole_04_mm": null,
+    "hole_05_mm": null,
+    "hole_06_mm": null,
+    "hole_07_mm": null,
+    "hole_08_mm": null,
+    "hole_09_mm": null,
+    "hole_10_mm": null,
+    "hole_11_mm": null,
+    "hole_12_mm": null,
+    "decoration_type": "Concentric circles",
+    "decoration_desc": "Ten faces decorated with concentric circles of varying size; two faces remain smooth. Knobs attached by soldering",
+    "wear_notes": "Bronze surface shows corrosion",
+    "associated_finds": null,
+    "primary_source_id": "PUB-0044",
+    "confidence": "B",
+    "nouwen_number": null,
+    "guggenberger_number": null,
+    "guggenberger_type": null,
+    "notes": "Purchased 1825 from the Durand collection. Height 7.1 cm between the smooth faces including the feet, 6.2 cm without; width 8.2 cm; depth 8.5 cm. No weight recorded. Not currently on display. THE MUSEUM'S OWN PHRASE 'height between the smooth faces' implies the two undecorated faces are opposite one another, which corroborates the marked-axis observation independently of PUB-0010."
+  },
+  {
+    "rd_id": "RD-0038",
+    "specimen_name": "Elst (Overbetuwe) dodecahedron",
+    "findspot": "Elst, Overbetuwe, Gelderland",
+    "country": "Netherlands",
+    "roman_province": "Germania inferior",
+    "context_category": "Unknown",
+    "date_from": 1,
+    "date_to": 300,
+    "museum_name": "Rijksmuseum van Oudheden",
+    "museum_city": "Leiden",
+    "museum_country": "Netherlands",
+    "inventory_number": null,
+    "material": "Bronze",
+    "manufacturing_method": null,
+    "height_mm": 75.0,
+    "width_mm": null,
+    "max_diameter_mm": null,
+    "weight_g": null,
+    "wall_thickness_mm": null,
+    "knob_diameter_mm": null,
+    "hole_01_mm": null,
+    "hole_02_mm": null,
+    "hole_03_mm": null,
+    "hole_04_mm": null,
+    "hole_05_mm": null,
+    "hole_06_mm": null,
+    "hole_07_mm": null,
+    "hole_08_mm": null,
+    "hole_09_mm": null,
+    "hole_10_mm": null,
+    "hole_11_mm": null,
+    "hole_12_mm": null,
+    "decoration_type": null,
+    "decoration_desc": null,
+    "wear_notes": null,
+    "associated_finds": null,
+    "primary_source_id": "PUB-0045",
+    "confidence": "C",
+    "nouwen_number": null,
+    "guggenberger_number": 75,
+    "guggenberger_type": "2a",
+    "notes": "FIRST NETHERLANDS SPECIMEN IN THE DATABASE. Donated November 1876. Height 7.5 cm. Museum dating given as 1-300 AD, which is EARLIER than the corpus window of c AD 200-400 recorded at EV029; museum period ranges are commonly loose and this is recorded as a conflict rather than as a correction. SOURCE CAVEAT: the museum page returned HTTP 403 and these values come from a search-engine extract of it, not from the page itself."
+  },
+  {
+    "rd_id": "RD-0039",
+    "specimen_name": "MAN68333 (Reims?) dodecahedron",
+    "findspot": "Reims (?), Marne",
+    "country": "France",
+    "roman_province": "Gallia Belgica",
+    "context_category": "Unknown",
+    "date_from": null,
+    "date_to": null,
+    "museum_name": "Musee d'Archeologie nationale",
+    "museum_city": "Saint-Germain-en-Laye",
+    "museum_country": "France",
+    "inventory_number": "MAN68333",
+    "material": "Copper alloy",
+    "manufacturing_method": null,
+    "height_mm": null,
+    "width_mm": null,
+    "max_diameter_mm": null,
+    "weight_g": null,
+    "wall_thickness_mm": null,
+    "knob_diameter_mm": null,
+    "hole_01_mm": null,
+    "hole_02_mm": null,
+    "hole_03_mm": null,
+    "hole_04_mm": null,
+    "hole_05_mm": null,
+    "hole_06_mm": null,
+    "hole_07_mm": null,
+    "hole_08_mm": null,
+    "hole_09_mm": null,
+    "hole_10_mm": null,
+    "hole_11_mm": null,
+    "hole_12_mm": null,
+    "decoration_type": null,
+    "decoration_desc": null,
+    "wear_notes": null,
+    "associated_finds": null,
+    "primary_source_id": "PUB-0046",
+    "confidence": "C",
+    "nouwen_number": null,
+    "guggenberger_number": null,
+    "guggenberger_type": null,
+    "notes": "From the Joseph de Baye collection; findspot given by the museum with a query. NO MEASUREMENTS PUBLISHED in the source consulted. The same source states the MAN holds FOUR dodecahedra in total, so three further specimens exist in that collection and are not yet recorded here. An online 3D model is advertised and would supply geometry if retrieved."
+  },
+  {
+    "rd_id": "RD-0040",
+    "specimen_name": "Hunt Museum (Limerick) dodecahedron",
+    "findspot": "Unknown; catalogued as 'not Ireland'",
+    "country": "Unknown",
+    "roman_province": null,
+    "context_category": "Unknown",
+    "date_from": null,
+    "date_to": null,
+    "museum_name": "The Hunt Museum",
+    "museum_city": "Limerick",
+    "museum_country": "Ireland",
+    "inventory_number": "HCM157",
+    "material": "Copper alloy",
+    "manufacturing_method": null,
+    "height_mm": null,
+    "width_mm": null,
+    "max_diameter_mm": null,
+    "weight_g": null,
+    "wall_thickness_mm": null,
+    "knob_diameter_mm": null,
+    "hole_01_mm": null,
+    "hole_02_mm": null,
+    "hole_03_mm": null,
+    "hole_04_mm": null,
+    "hole_05_mm": null,
+    "hole_06_mm": null,
+    "hole_07_mm": null,
+    "hole_08_mm": null,
+    "hole_09_mm": null,
+    "hole_10_mm": null,
+    "hole_11_mm": null,
+    "hole_12_mm": null,
+    "decoration_type": "Concentric circles",
+    "decoration_desc": "Multiple concentric rings engraved around each aperture; dark green-brown patina over faces and recesses",
+    "wear_notes": "Bright unpatinated metal exposed on the crown of every visible knob; see the EV041 observations for what this does and does not show",
+    "associated_finds": null,
+    "primary_source_id": "PUB-0048",
+    "confidence": "C",
+    "nouwen_number": null,
+    "guggenberger_number": 126,
+    "guggenberger_type": null,
+    "notes": "Guggenberger no 126, type 1a. Held in Ireland, which was never Roman, so the object is a collection acquisition; PUB-0023 records the findspot explicitly as 'unknown (not Ireland)'. Acquired before 1985. No measurements available. Added because its photograph is the clearest surface-condition image in the project."
   },
   {
     "rd_id": "RD-0034",
@@ -1458,7 +1667,8 @@
     "primary_source_id": "PUB-0019",
     "confidence": "C",
     "nouwen_number": null,
-    "guggenberger_number": null,
+    "guggenberger_number": 86,
+    "guggenberger_type": "1a",
     "notes": "Measured by Sandrine Bosse Buchanan, Musee romain d'Avenches (PUB-0040), reproduced in PUB-0019 Appendix B tab B1, which is where this project read them. Confidence C rather than B because the values reach us at one remove. Face 1' is recorded as probably elliptic (24.16 and 25.08 mm); the smaller value is stored and the ellipticity is recorded as an observation. Faces 6, 2', 4' and 5' are given as a range with the source's own stated midpoint, which is what is stored; no midpoint has been computed here. PUB-0019 reports an overall diameter of '58.5 cm', which is impossible and inconsistent with the 46.5 mm face-to-face distance given in the same sentence; max_diameter_mm is therefore left NULL rather than corrected."
   },
   {
@@ -1501,7 +1711,8 @@
     "primary_source_id": "PUB-0017",
     "confidence": "B",
     "nouwen_number": null,
-    "guggenberger_number": null,
+    "guggenberger_number": 58,
+    "guggenberger_type": "1a",
     "notes": "PUB-0017, 199-200 and figs 3-4. External diameter excluding knobs 55 mm; twelve holes ranging 13.5-24 mm. Individual per-face diameters appear on fig 3, which is not legible in the available scan, so only the values stated in the running text are recorded as observations and the hole columns are left NULL. 'Piece de collection sans contexte archeologique connu' - no archaeological context."
   },
   {
@@ -1545,6 +1756,7 @@
     "confidence": "D",
     "nouwen_number": null,
     "guggenberger_number": null,
+    "guggenberger_type": null,
     "notes": "PUB-0019 tab III, quoting PUB-0038, which reports measurements made by Kurzweil (PUB-0039). Confidence D: the values reach this project at two removes and none of the three states a tolerance. Six opposite-hole pairs are recorded as observations; face-to-face distance given as 40 mm."
   }
 ]

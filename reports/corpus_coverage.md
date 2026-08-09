@@ -3,7 +3,7 @@
 | Field | Value |
 | ----- | ----- |
 | Document ID | RDORP-COV |
-| Generated | 2026-08-08 |
+| Generated | 2026-08-09 |
 | Database | `database\rdorp.sqlite` |
 | Generator | `database/reports.py` |
 
@@ -11,9 +11,9 @@ Generated file. Do not edit by hand: change the master data in `database/build_d
 
 ## 1. Coverage
 
-- Specimens recorded: **36**
+- Specimens recorded: **40**
 - Known corpus: about **134** (PUB-0003, 32)
-- Coverage: **27 per cent**
+- Coverage: **30 per cent**
 
 ## 2. Geographic representativeness
 
@@ -21,15 +21,16 @@ The known corpus is about 70 per cent Gallic and Germanic and about 20 per cent 
 
 | Country | Recorded | Share |
 | ------- | -------- | ----- |
-| United Kingdom | 20 | 56% |
-| Germany | 5 | 14% |
-| France | 4 | 11% |
-| Belgium | 2 | 6% |
-| Unknown | 1 | 3% |
-| Switzerland | 1 | 3% |
-| Serbia | 1 | 3% |
-| Hungary | 1 | 3% |
-| Austria | 1 | 3% |
+| United Kingdom | 20 | 50% |
+| France | 6 | 15% |
+| Germany | 5 | 12% |
+| Unknown | 2 | 5% |
+| Belgium | 2 | 5% |
+| Switzerland | 1 | 2% |
+| Serbia | 1 | 2% |
+| Netherlands | 1 | 2% |
+| Hungary | 1 | 2% |
+| Austria | 1 | 2% |
 
 ## 3. Archaeological context
 
@@ -37,7 +38,7 @@ The known corpus, among specimens with a recorded find location, is more than ha
 
 | Context category | Recorded |
 | ---------------- | -------- |
-| Unknown | 22 |
+| Unknown | 26 |
 | Military | 4 |
 | Temple | 2 |
 | Settlement | 2 |
@@ -50,8 +51,8 @@ The known corpus, among specimens with a recorded find location, is more than ha
 | Grade | Specimens |
 | ----- | --------- |
 | A | 2 |
-| B | 16 |
-| C | 15 |
+| B | 17 |
+| C | 18 |
 | D | 2 |
 | E | 1 |
 
@@ -59,22 +60,22 @@ The known corpus, among specimens with a recorded find location, is more than ha
 
 | EV | Variable | Power | Specimen observations |
 | -- | -------- | ----- | --------------------- |
-| EV001 | Overall dimensions | High | 10 |
+| EV001 | Overall dimensions | High | 12 |
 | EV002 | Mass | High | 16 |
 | EV003 | Wall thickness | High | 6 |
-| EV004 | Hole diameter distribution | Very High | 16 |
+| EV004 | Hole diameter distribution | Very High | 17 |
 | EV005 | Opposite-hole relationships | Very High | 8 |
 | EV006 | Hole profile | High | 5 |
-| EV007 | Hole edge radius | Medium | 0 |
+| EV007 | Hole edge radius | Medium | 1 |
 | EV008 | Knob diameter | Medium | 9 |
 | EV009 | Knob symmetry | Medium | 2 |
-| EV010 | Face symmetry | High | 1 |
-| EV011 | Alloy composition | High | 4 |
+| EV010 | Face symmetry | High | 2 |
+| EV011 | Alloy composition | High | 6 |
 | EV012 | Casting quality | High | 12 |
 | EV013 | Casting defects | High | 1 |
-| EV014 | Surface finishing | Medium | 9 |
+| EV014 | Surface finishing | Medium | 11 |
 | EV015 | Repair evidence | Medium | 2 |
-| EV016 | Tool marks | High | 2 |
+| EV016 | Tool marks | High | 3 |
 | EV017 | Internal hole wear | Very High | 2 |
 | EV018 | External wear | High | 5 |
 | EV019 | Rope wear | Very High | 0 |
@@ -83,12 +84,12 @@ The known corpus, among specimens with a recorded find location, is more than ha
 | EV022 | Abrasion | Medium | 1 |
 | EV023 | Thermal alteration | Very High | 0 |
 | EV024 | Residues | Very High | 1 |
-| EV025 | Site type | Very High | 39 |
+| EV025 | Site type | Very High | 42 |
 | EV026 | Roman province | Medium | 6 |
 | EV027 | Associated finds | Very High | 6 |
 | EV028 | Stratigraphy | High | 2 |
-| EV029 | Dating | Very High | 8 |
-| EV030 | Number at site | Medium | 0 |
+| EV029 | Dating | Very High | 11 |
+| EV030 | Number at site | Medium | 1 |
 | EV031 | Military association | High | 4 |
 | EV032 | Ritual association | High | 3 |
 | EV033 | Rod compatibility | Very High | 4 |
@@ -99,13 +100,13 @@ The known corpus, among specimens with a recorded find location, is more than ha
 | EV038 | Orientation dependence | High | 0 |
 | EV039 | Standardisation | High | 2 |
 | EV040 | Regional variation | High | 1 |
-| EV041 | Knob wear | Very High | 4 |
+| EV041 | Knob wear | Very High | 6 |
 | EV042 | Microwear location | Very High | 0 |
 | EV043 | Aperture distinguishability | Very High | 3 |
 | EV044 | Interior finish and marking | High | 0 |
 | EV045 | Manufacturing difficulty | Very High | 0 |
-| EV046 | Marked axis | Very High | 0 |
-| EV047 | Authenticity and provenance security | Very High | 4 |
+| EV046 | Marked axis | Very High | 1 |
+| EV047 | Authenticity and provenance security | Very High | 5 |
 | EV048 | Within-type standardisation | Very High | 0 |
 
 ## 6. What would most improve the corpus

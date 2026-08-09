@@ -1,5 +1,49 @@
 [
   {
+    "rd_id": "RD-0037",
+    "completeness": "complete",
+    "provenance_grade": "D",
+    "measurement_grade": "one_remove",
+    "admit_mass": 0,
+    "admit_geometry": 1,
+    "admit_context": 0,
+    "outlier": 0,
+    "note": "Louvre catalogue record; purchased 1825, provenance queried by the museum. No weight published"
+  },
+  {
+    "rd_id": "RD-0038",
+    "completeness": "unknown",
+    "provenance_grade": "D",
+    "measurement_grade": "two_removes",
+    "admit_mass": 0,
+    "admit_geometry": 0,
+    "admit_context": 1,
+    "outlier": 0,
+    "note": "REJECTED FOR GEOMETRY. Findspot is recorded, but the museum page could not be loaded and the height reaches this project through a search-engine extract"
+  },
+  {
+    "rd_id": "RD-0039",
+    "completeness": "unknown",
+    "provenance_grade": "D",
+    "measurement_grade": "none",
+    "admit_mass": 0,
+    "admit_geometry": 0,
+    "admit_context": 1,
+    "outlier": 0,
+    "note": "No measurements published in the source consulted"
+  },
+  {
+    "rd_id": "RD-0040",
+    "completeness": "unknown",
+    "provenance_grade": "E",
+    "measurement_grade": "none",
+    "admit_mass": 0,
+    "admit_geometry": 0,
+    "admit_context": 0,
+    "outlier": 0,
+    "note": "Collection piece with no findspot, held in a country that was never Roman. No measurements. Contributes only the surface-condition photograph"
+  },
+  {
     "rd_id": "RD-0001",
     "completeness": "complete",
     "provenance_grade": "C",
@@ -184,7 +228,7 @@
     "admit_geometry": 0,
     "admit_context": 0,
     "outlier": 1,
-    "note": "OUTLIER, REJECTED FROM GEOMETRY. Maximum diameter 127.71 mm exceeds the published corpus maximum of about 110 mm including knobs (PUB-0003, 31 n 2), and 553.2 g is 2.2 times the next heaviest complete specimen. Purchased, no excavation context. Either the measurement includes something the corpus figures exclude, or the object is atypical of the class. Retained for mass with the outlier flag so its effect is visible, excluded from geometry"
+    "note": "OUTLIER ON DIAMETER ONLY, REJECTED FROM GEOMETRY. Maximum diameter 127.71 mm exceeds the published corpus maximum of about 110 mm including knobs (PUB-0003, 31 n 2) and the 40-100 mm height range given without knobs by PUB-0023. Either the museum figure includes what the corpus figures exclude, or the object is atypical. THE WEIGHT ARGUMENT PREVIOUSLY MADE HERE WAS WRONG AND IS WITHDRAWN: this record formerly called 553.2 g anomalous at 2.2 times the next heaviest complete specimen in THIS database, a sample of five. PUB-0023 gives the corpus weight range as 35-580 g with one specimen over 1000 g, so 553.2 g sits inside the published range and is not remarkable. The error came from treating this project's own small sample as the reference population. Guggenberger no 62, type 5a"
   },
   {
     "rd_id": "RD-0018",

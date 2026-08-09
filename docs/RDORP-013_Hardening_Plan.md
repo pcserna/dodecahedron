@@ -1,7 +1,7 @@
 ---
 Document ID: RDORP-013
 Title: Hardening Plan and Next Steps
-Version: 1.0.0
+Version: 1.1.0
 Status: Draft
 Project: Roman Dodecahedron Open Research Project (RDORP)
 License: CC BY 4.0
@@ -38,6 +38,8 @@ of the top six require no laboratory and no new specimens.
 | **B3** | Residue analysis | Evidence | Decides the two leading hypotheses |
 | **C1** | Guggenberger 1999 read directly | Evidence | Underwrites most single-source variables at a stroke |
 | **A5** | Eight variables carry good evidence no hypothesis can be tested against | Method | Recovers the best-quantified evidence in the corpus |
+| A9 | The two evidence layers cannot contradict each other | Method | **Done.** Found four scored variables with no specimen beneath them |
+| A10 | Predictions do not see accumulating evidence | Method | **Done.** Six of eleven open predictions are now testable |
 
 ---
 
@@ -184,6 +186,53 @@ promote — and treat any candidate with a positive total as marginal regardless
 hard contradictions.
 
 **Cost.** An hour.
+
+### A9. The two evidence layers cannot contradict each other — DONE
+
+**The defect.** Scoring reads only `corpus_observations`. Specimen evidence never
+propagates upward, so a corpus observation can stand indefinitely while the
+specimens beneath it say something else, and nothing notices. This was found by
+adding three specimens and eighteen observations and watching **every score stay
+byte-identical**.
+
+**Fix, implemented in `validate.py`.** Three checks:
+
+- `corpus-without-specimen` — a corpus observation that scores but rests on no
+  specimen at all. **Four found**, and they are not minor: `EV019` rope wear and
+  `EV020` rotational wear score `absent` at Very High power, `EV038` and `EV044`
+  at High power, and nothing in the corpus can currently contradict any of them.
+- `specimen-without-corpus` — specimen evidence on a variable the corpus does
+  not cover, so none of it reaches the scoring. **Seven found.**
+- `recorded-conflict` — conflicts recorded in prose are surfaced rather than
+  buried in a notes field. **Nine found.**
+
+**Still outstanding.** The checks report the asymmetry; they do not resolve it.
+A corpus observation contradicted by its own specimens still scores unchanged.
+
+### A10. Predictions do not see accumulating evidence — DONE
+
+**The defect.** `check_predictions` errors only when a prediction's variable
+acquires a *corpus* observation. Specimen evidence can accumulate indefinitely
+without anyone noticing that a registered prediction has become testable.
+
+`P-0005` predicted bevelled aperture lips. A PAS record states that "all of the
+apertures have slightly bevelled rounded edges" — the first `EV007` observation
+in the project, bearing directly on an open prediction. Nothing noticed.
+
+**Fix, implemented in `validate.py`.** `prediction-testable` reports every open
+prediction that now has specimen evidence. **Six of eleven do:**
+
+| Prediction | Variable | Specimen observations |
+| ---------- | -------- | --------------------- |
+| P-0001 | EV041 knob wear | 4 |
+| P-0009 | EV043 aperture distinguishability | 3 |
+| P-0006 | EV015 repair evidence | 2 |
+| P-0002 | EV024 residues | 1 |
+| P-0005 | EV007 hole edge radius | 1 |
+| P-0007 | EV030 number at site | 1 |
+
+Each should now be resolved, or explicitly declared still too thin to resolve.
+Leaving the position implicit is what the check exists to prevent.
 
 ### A8. No priors
 
@@ -375,4 +424,5 @@ worth trusting when it is.
 
 | Version | Date | Description |
 | ------- | ---- | ----------- |
+| 1.1.0 | 2026-08-08 | Added A9 layer consistency and A10 prediction watch, both implemented in validate.py. |
 | 1.0.0 | 2026-08-08 | Initial hardening plan. |

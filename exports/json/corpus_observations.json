@@ -14,15 +14,15 @@
   },
   {
     "ev_id": "EV002",
-    "statement": "Complete specimens recorded at 246 g (Mainz 3), 247 g (Much Hadham), 245 g (Norton Disney) and 553 g (Fishguard); fragments range from 1.67 g to 82 g",
+    "statement": "The reference catalogue gives the corpus weight range as 35-580 g, with one specimen over 1000 g (PUB-0023). Complete specimens in this database fall within it: 81 g (Jublains), 246 g (Mainz 3), 247 g (Much Hadham), 245 g (Norton Disney), 553 g (Fishguard). Fragment weights of 1.67 g to 82 g are recorded separately and are inadmissible for mass",
     "direction": "ambiguous",
     "confidence": "B",
     "evidence_class": "Observed",
     "discriminating": 0,
-    "source_id": "PUB-0003",
-    "page": "36",
-    "figure": "fig 4",
-    "extraction_date": "2026-08-07",
+    "source_id": "PUB-0023",
+    "page": "header",
+    "figure": null,
+    "extraction_date": "2026-08-08",
     "notes": "HPM DEFECT: H001 and H007 predict '+' for mass on the reasoning that a load-bearing or military object 'benefits from mass', but no threshold mass is specified, so no measurement can confirm or refute the prediction. Scored 0 until the HPM specifies a mass expectation"
   },
   {
@@ -117,6 +117,19 @@
     "notes": "ADDED AFTER THE QUESTION WAS ASKED WHETHER PART OF THE CORPUS MIGHT BE IMITATION OR FORGERY. Scored 0: no hypothesis predicts anything about authenticity, so the variable cannot discriminate between them. It is recorded because it bears on the RELIABILITY OF OTHER VARIABLES rather than on any hypothesis. THE SERIOUS CONSEQUENCE IS FOR EV039. The absence of standardisation is among the most load-bearing findings in this project - it is the main reason every gauging and measuring hypothesis fails - and it is measured by POOLING the whole corpus. If part of that corpus consists of local imitations of a classic type, as PUB-0003 reports Greiner proposing, then some of the observed variability is variability BETWEEN a type and its copies rather than within a class of originals. Standardisation has never been tested WITHIN a Greiner/Guggenberger type. Until it has, EV039's direction carries an unquantified confound. See prediction P-0011"
   },
   {
+    "ev_id": "EV048",
+    "statement": "Type attributions are now known for the whole reference corpus: of 129 catalogued specimens, 82 are type 1a, 17 are untyped, 6 are 2a, 4 each are 3a and 1b, and the remainder are single or double instances of types 2b, 3b, 4, 5a, 5b and 6 (PUB-0023). Twenty specimens in this database now carry a type, twelve of them 1a. MEASUREMENTS PER TYPE ARE NOT AVAILABLE: only two type-1a specimens in this database have an admissible overall diameter, which is far too few to compare within-type variability against the pooled figure",
+    "direction": "ambiguous",
+    "confidence": "B",
+    "evidence_class": "Observed",
+    "discriminating": 0,
+    "source_id": "PUB-0023",
+    "page": "complete list of finds",
+    "figure": null,
+    "extraction_date": "2026-08-08",
+    "notes": "PREDICTION P-0011 CANNOT YET BE RESOLVED, and this observation records exactly why. The reference catalogue supplies the TYPE of every known specimen but not its MEASUREMENTS; those are in Guggenberger 1999 (PUB-0022), which remains unread. With n = 2 for type 1a against n = 8 pooled, the coefficients of variation computed here (20.8 per cent against 23.4 per cent) are not meaningful and are recorded only to show the test was attempted. The confound on EV039 identified at RDORP-012 section 2.6 therefore remains unquantified, and acquiring PUB-0022 is now the single action that would resolve it"
+  },
+  {
     "ev_id": "EV046",
     "statement": "A single axis is marked out on the great majority of specimens, by the ABSENCE of decoration rather than its presence. The commonest type engraves circles around ten apertures and leaves two bare, and those two are OPPOSITE one another, so the pair defines a unique axis through the solid. On the only stratified specimen the same two faces also differ in form - their openings are oval, 21x26 mm, where the other ten are circular - and the excavators record that they are 'placed in opposition on the object, possibly materialising a top and a bottom'. The same 10-of-12 pattern is recorded on Guggenberger no 11 and on Vienne, where the two largest opposed openings carry no fillets",
     "direction": "confirmed",
@@ -205,7 +218,7 @@
     "page": "32, 36",
     "figure": "fig 4",
     "extraction_date": "2026-08-07",
-    "notes": "Decoration is present and deliberate throughout the corpus, and its COVERAGE is highly regular even though its PATTERN is not: the undecorated faces are the production-hole pair, so the decoration marks the ten deliberately made apertures and skips the two casting artefacts. TWO WITHIN-SPECIMEN REGULARITIES ARE ALSO RECORDED, and both bear on EV043: (a) ring count rises as hole diameter falls - 4 and 6 fillets for the 14 mm holes, 3 for the 22 mm, none for the 23 and 24 mm on RD-0035 - which Duval judges probably empirical, the smaller hole simply leaving more room; (b) on RD-0020 each pair of OPPOSITE holes is reported to carry the same decoration (PUB-0019, 9, read off a figure, confidence D)"
+    "notes": "Decoration is present and deliberate throughout the corpus, and its COVERAGE is highly regular even though its PATTERN is not: the undecorated faces are the production-hole pair, so the decoration marks the ten deliberately made apertures and skips the two casting artefacts. TWO WITHIN-SPECIMEN REGULARITIES ARE ALSO RECORDED, and both bear on EV043: (a) on RD-0035 ring count rises as hole diameter falls - 4 and 6 fillets for the 14 mm holes, 3 for the 22 mm, none for the 23 and 24 mm - which Duval judges probably empirical, the smaller hole simply leaving more room; (b) on RD-0020 each pair of OPPOSITE holes is reported to carry the same decoration (PUB-0019, 9, read off a figure, confidence D). BUT THE FIRST REGULARITY IS NOT UNIVERSAL: RD-0020 carries three rings on all ten decorated faces irrespective of aperture size. EXP-0005 shows these are two different workshop rules - constant pitch with variable count, against constant count with variable pitch - and that under EITHER rule the rings carry no labelling information independent of aperture diameter."
   },
   {
     "ev_id": "EV016",

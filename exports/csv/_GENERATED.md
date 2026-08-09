@@ -1,6 +1,6 @@
 # Generated files
 
-Generated on 2026-08-08 by `database/export.py` from `database/rdorp.sqlite`.
+Generated on 2026-08-09 by `database/export.py` from `database/rdorp.sqlite`.
 
 Do not edit these files. Change the master data in `database/build_db.py`, then re-run `python run_pipeline.py`.
 

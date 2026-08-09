@@ -271,6 +271,77 @@ class Validator:
                          f"registered {row['registered_on']} against "
                          f"{row['ev_id']}; awaiting measurement")
 
+    def check_layer_consistency(self) -> None:
+        """A9. The specimen layer and the corpus layer must be able to disagree.
+
+        Scoring reads only ``corpus_observations``. Specimen evidence never
+        propagates upward, so a corpus observation can stand indefinitely while
+        the specimens beneath it say something else, and nothing notices. These
+        checks make the two layers answerable to each other.
+        """
+        # A corpus observation that scores but rests on no specimen at all.
+        for row in self.conn.execute(
+            """SELECT co.ev_id, co.direction, co.confidence, v.discriminatory_power
+               FROM corpus_observations co
+               JOIN evidence_variables v ON v.ev_id = co.ev_id
+               WHERE co.discriminating = 1
+                 AND co.ev_id NOT IN (SELECT DISTINCT ev_id FROM artifact_observations)"""
+        ):
+            self.add("WARNING", "corpus-without-specimen", row["ev_id"],
+                     f"scores '{row['direction']}' at {row['discriminatory_power']} "
+                     f"power on a corpus statement alone, with no specimen "
+                     f"observation anywhere beneath it. Nothing in the corpus can "
+                     f"currently contradict it")
+
+        # A conflict recorded in prose, surfaced rather than buried in a note.
+        for row in self.conn.execute(
+            """SELECT observation_id, rd_id, ev_id, notes
+               FROM artifact_observations
+               WHERE notes LIKE '%CONFLICT%' OR notes LIKE '%CONTRADICT%'
+                  OR notes LIKE '%conflicts with%'"""
+        ):
+            self.add("NOTE", "recorded-conflict", f"{row['rd_id']} x {row['ev_id']}",
+                     "a conflict is recorded in this observation's notes; it is "
+                     "preserved rather than resolved, per the project rule, and "
+                     "is listed here so it is visible rather than buried")
+
+        # A specimen observation on a variable the corpus does not cover.
+        for row in self.conn.execute(
+            """SELECT o.ev_id, COUNT(*) n, v.discriminatory_power
+               FROM artifact_observations o
+               JOIN evidence_variables v ON v.ev_id = o.ev_id
+               WHERE o.ev_id NOT IN (SELECT ev_id FROM corpus_observations)
+               GROUP BY o.ev_id"""
+        ):
+            self.add("NOTE", "specimen-without-corpus", row["ev_id"],
+                     f"{row['n']} specimen observation(s) exist on a "
+                     f"{row['discriminatory_power']} power variable that carries "
+                     f"no corpus observation, so none of it reaches the scoring")
+
+    def check_prediction_watch(self) -> None:
+        """A10. Report evidence accumulating against open predictions.
+
+        ``check_predictions`` errors only when a prediction's variable acquires
+        a CORPUS observation. Specimen evidence can accumulate indefinitely
+        without anyone noticing that a registered prediction is now testable.
+        """
+        for row in self.conn.execute(
+            """SELECT p.prediction_id, p.ev_id, p.status,
+                      (SELECT COUNT(*) FROM artifact_observations o
+                        WHERE o.ev_id = p.ev_id) n
+               FROM predictions p
+               WHERE p.status = 'open'
+               ORDER BY n DESC, p.prediction_id"""
+        ):
+            if row["n"] == 0:
+                continue
+            self.add("WARNING", "prediction-testable", row["prediction_id"],
+                     f"{row['n']} specimen observation(s) now exist on "
+                     f"{row['ev_id']} while the prediction is still open. It may "
+                     f"be resolvable, or the evidence may be too thin to resolve "
+                     f"it; either way the position should be stated rather than "
+                     f"left implicit")
+
     def check_interpretations_not_scored(self) -> None:
         """MASTER_PROMPT: interpretation must never be recorded as evidence."""
         for row in self.conn.execute(
@@ -336,6 +407,8 @@ class Validator:
             self.check_confidence_grades,
             self.check_scoring_provenance,
             self.check_predictions,
+            self.check_layer_consistency,
+            self.check_prediction_watch,
             self.check_interpretations_not_scored,
             self.check_corpus_coverage,
             self.check_evidence_gaps,

@@ -3,7 +3,7 @@
 | Field | Value |
 | ----- | ----- |
 | Document ID | RDORP-HDM |
-| Generated | 2026-08-08 |
+| Generated | 2026-08-09 |
 | Database | `database\rdorp.sqlite` |
 | Generator | `database/reports.py` |
 
@@ -13,7 +13,7 @@ Generated file. Do not edit by hand: change the master data in `database/build_d
 
 This report applies the method defined in RDORP-010 to the evidence currently in the database. It is a comparison of how well each hypothesis accounts for the evidence collected so far. It is **not** a conclusion about the function of Roman dodecahedra, and the corpus it rests on covers a minority of known specimens.
 
-Variables scored: **32 of 48**. Variables with corpus evidence but non-specific predictions: **8**. Variables with no corpus evidence at all: **12**.
+Variables scored: **32 of 48**. Variables with corpus evidence but non-specific predictions: **9**. Variables with no corpus evidence at all: **11**.
 
 ## 2. Ranking
 
@@ -305,7 +305,7 @@ These are defects in the HPM, not gaps in the evidence. They must be repaired by
 
 | EV | Variable | Power | Corpus evidence held |
 | -- | -------- | ----- | -------------------- |
-| EV002 | Mass | High | Complete specimens recorded at 246 g (Mainz 3), 247 g (Much Hadham), 245 g (Norton Disney) and 553 g (Fishguard); fragments range from 1.67 g to 82 g... |
+| EV002 | Mass | High | The reference catalogue gives the corpus weight range as 35-580 g, with one specimen over 1000 g (PUB-0023). Complete specimens in this database fall ... |
 | EV025 | Site type | Very High | Of the dodecahedra with a recorded find location: more than half come from cities or other settlements; just under one-fifth from military camps; c 8.... |
 | EV026 | Roman province | Medium | c 70 per cent of finds come from the Gallic and Germanic provinces, especially the territory of the former Gallia Comata, and c 20 per cent from Brita... |
 | EV027 | Associated finds | Very High | Documented associations include a bronze statuette of a goddess one metre away (Guggenberger no 110), a bronze statuette of Mercury as Hermes-Thoth in... |
@@ -313,6 +313,7 @@ These are defects in the HPM, not gaps in the evidence. They must be repaired by
 | EV029 | Dating | Very High | Dodecahedra were used from around AD 200 to the late fourth century AD; the stratified Jublains specimen was deposited in the first half of the 3rd ce... |
 | EV046 | Marked axis | Very High | A single axis is marked out on the great majority of specimens, by the ABSENCE of decoration rather than its presence. The commonest type engraves cir... |
 | EV047 | Authenticity and provenance security | Very High | No dodecahedron in this database has been authenticated by metallurgical or technical analysis against forgery, and none of the sources read raises th... |
+| EV048 | Within-type standardisation | Very High | Type attributions are now known for the whole reference corpus: of 129 catalogued specimens, 82 are type 1a, 17 are untyped, 6 are 2a, 4 each are 3a a... |
 
 ### No corpus evidence at all
 
@@ -329,7 +330,6 @@ These are defects in the HPM, not gaps in the evidence. They must be repaired by
 | EV042 | Microwear location | Very High | +/- 4.5 |
 | EV043 | Aperture distinguishability | Very High | +/- 4.5 |
 | EV045 | Manufacturing difficulty | Very High | +/- 4.5 |
-| EV048 | Within-type standardisation | Very High | +/- 4.5 |
 
 ## 6. Stated limitations
 

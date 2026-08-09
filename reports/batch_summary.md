@@ -3,7 +3,7 @@
 | Field | Value |
 | ----- | ----- |
 | Document ID | RDORP-BATCH |
-| Generated | 2026-08-08 |
+| Generated | 2026-08-09 |
 | Database | `database\rdorp.sqlite` |
 | Generator | `database/reports.py` |
 
@@ -13,14 +13,14 @@ Generated file. Do not edit by hand: change the master data in `database/build_d
 
 | Table | Rows |
 | ----- | ---- |
-| `sources` | 43 |
-| `specimens` | 36 |
-| `artifact_observations` | 203 |
-| `corpus_observations` | 36 |
+| `sources` | 48 |
+| `specimens` | 40 |
+| `artifact_observations` | 224 |
+| `corpus_observations` | 37 |
 | `evidence_register` | 47 |
 | `hdm_scores` | 448 |
 | `results` | 14 |
-| `experiments` | 4 |
+| `experiments` | 7 |
 
 ## Most recent batch: 002 — Guggenberger and Leach 2025 (PUB-0003)
 

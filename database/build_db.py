@@ -96,6 +96,7 @@ CREATE TABLE specimens (
     confidence          TEXT CHECK(confidence IN ('A','B','C','D','E')),
     nouwen_number       INTEGER,
     guggenberger_number INTEGER,
+    guggenberger_type   TEXT,
     notes               TEXT
 );
 
@@ -400,7 +401,7 @@ SOURCES = [
      "https://doi.org/10.1017/S000358152510036X",
      "B",
      "The Antiquaries Journal 105: 31-54; published online 17 Nov 2025. "
-     "Full text held at docs/galloroman_dodecahedron_and_the_receptacle_of_all_becoming.pdf. "
+     "Full text held at docs/sources/galloroman_dodecahedron_and_the_receptacle_of_all_becoming.pdf. "
      "Co-author Guggenberger maintains the reference catalogue, so corpus statistics "
      "reported here are catalogue-grade (B); the paper's Platonic/Pythagorean argument "
      "is author interpretation and is NOT extracted as evidence."),
@@ -442,7 +443,7 @@ SOURCES = [
      "https://journals.openedition.org/rao/680",
      "A",
      "Revue archeologique de l'Ouest 25: 269-289. DIRECTLY CONSULTED; full text "
-     "held at docs/GuillierEtAl_2008_RAO_25_269_289_DOI.pdf. Excavation report "
+     "held at docs/sources/GuillierEtAl_2008_RAO_25_269_289_DOI.pdf. Excavation report "
      "for the only dodecahedron recovered from a sealed, dated, stratified "
      "context. Highest-grade source in the database."),
     ("PUB-0011", "KIK-IRPA (Royal Institute for Cultural Heritage, Belgium)", 2003,
@@ -491,7 +492,7 @@ SOURCES = [
      "https://www.persee.fr/doc/galia_0016-4119_1981_num_39_2_1829",
      "B",
      "Gallia 39(2): 195-200. DIRECTLY CONSULTED; full text held at "
-     "docs/galia_0016-4119_1981_num_39_2_1829.pdf. Defines the face-numbering "
+     "docs/sources/galia_0016-4119_1981_num_39_2_1829.pdf. Defines the face-numbering "
      "and recording convention adopted by this project as its standard "
      "face-ordering convention (see docs/GEOMETRY_SPECIFICATION.md). Also "
      "publishes the Vienne (Isere) specimen."),
@@ -505,7 +506,7 @@ SOURCES = [
      "https://arxiv.org/abs/1206.0946",
      "D",
      "arXiv:1206.0946v2. DIRECTLY CONSULTED; full text held at "
-     "docs/1206.0946v2.pdf. ADVOCACY SOURCE: the author argues for the "
+     "docs/sources/1206.0946v2.pdf. ADVOCACY SOURCE: the author argues for the "
      "rangefinder interpretation (H002), so its argument is treated as "
      "interpretation. Its VALUE to this project is the measurement tables it "
      "reproduces for Jublains, Avenches, Carnuntum, Tongres and Vienne. "
@@ -538,13 +539,22 @@ SOURCES = [
      "corpus statistics on measurements (193-207, tabs 9-26), typology (50-4), "
      "knobs (37-40), wear (33-4, 61-2) and find contexts (tab 8). HIGHEST-PRIORITY "
      "ACQUISITION: most corpus-level values currently rest on it at one remove."),
-    ("PUB-0023", "Guggenberger, Michael", 2024,
-     "Ongoing catalogue of Gallo-Roman dodecahedra (list I-X)",
+    ("PUB-0023", "Guggenberger, Michael", 2021,
+     "Das gallo-roemische Dodekaeder / The Gallo-Roman Dodecahedron - complete list of finds, Guggenberger No 1-129",
      "Catalogue", None,
      "http://saegewerk.org/laboratory/dodekaeder-dodecahedron",
      "B",
-     "NOT DIRECTLY CONSULTED - cited in PUB-0003. Source of the Guggenberger "
-     "specimen numbers and of the find-context tallies on p 33."),
+     "DIRECTLY CONSULTED, August 2026, from a copy supplied by the project "
+     "owner after the site returned an SSL error to automated retrieval; held "
+     "at docs/sources/Das_galloroemische_Dodekaeder_Saegewerk.pdf. "
+     "THE REFERENCE CATALOGUE, compiled 1992-2021, last updated 12 January "
+     "2021. Complete list of 129 specimens with findspot, year of discovery "
+     "and TYPE. Nos 1-92 correspond to Greiner 1996; nos 1-101 appear in "
+     "Guggenberger 1999. Supplies the type attributions that EV048 requires "
+     "and the catalogue numbers for eighteen specimens in this database. "
+     "Header figures: 129 finds; dating 2nd/3rd-4th century AD; hole "
+     "diameters 6-40 mm; height without knobs 40-100 mm; weight 35-580 g with "
+     "one over 1000 g; nine countries."),
     ("PUB-0024", "Thompson, F H", 1970,
      "Dodecahedrons again",
      "Journal", None, None, "B",
@@ -665,6 +675,53 @@ SOURCES = [
      "observation, and are recorded as such. This is also an untested "
      "hypothesis in its own right (a wax-forming tool) that is not yet in the "
      "hypothesis set."),
+    ("PUB-0044", "Musee du Louvre", 2024,
+     "Collections en ligne - Dodecaedre (ED 4271; INV 2699; Br 1602)",
+     "Database", None,
+     "https://collections.louvre.fr/en/ark:/53355/cl010257522",
+     "B",
+     "DIRECTLY CONSULTED, August 2026; full record also held at docs/sources/Louvre_ED_4271.txt. Departement des Antiquites grecques, "
+     "etrusques et romaines. Full catalogue record with dimensions, "
+     "construction and decoration. INDEPENDENTLY CORROBORATES the ten-of-twelve "
+     "decoration rule and the soldered-knob construction, from a source "
+     "unconnected to PUB-0003, PUB-0010 and PUB-0017."),
+    ("PUB-0045", "Rijksmuseum van Oudheden", 2024,
+     "Collectie topstukken - Twaalfhoek (Dodecaeder), Elst",
+     "Database", None,
+     "https://www.rmo.nl/collectie/topstukken/twaalfhoek/",
+     "B",
+     "DIRECTLY CONSULTED, August 2026, from a copy supplied by the project owner after the page returned HTTP 403 to automated retrieval; held at docs/sources/Twaalfhoek.txt. UPGRADED FROM C TO B: the earlier record rested on a search-engine extract and is now replaced by the museum text. First Netherlands specimen in the database. The museum cites P van der Heijden, Grens van het Romeinse Rijk. De Limes in Gelderland, 2016, 131."),
+    ("PUB-0046", "Musee d'Archeologie nationale", 2023,
+     "L'objet du mois: le dodecaedre boulete, un objet etonnant et mysterieux",
+     "Online", None,
+     "https://musee-archeologienationale.fr/sites/archeonat/files/documents/ODM23Juin03.pdf",
+     "C",
+     "DIRECTLY CONSULTED, August 2026; held at docs/sources/ODM23Juin03.pdf. Museum object-of-the-month sheet, a "
+     "public-outreach document rather than a catalogue entry, hence C. States "
+     "that the MAN holds FOUR dodecahedra, of which only MAN68333 is named "
+     "here. An online 3D model is advertised and has not been retrieved."),
+    ("PUB-0048", "The Hunt Museum / Europeana", 2024,
+     "Roman dodecahedron, Hunt Museum Limerick, HCM157 (Europeana 325/HCM157)",
+     "Database", None,
+     "https://www.huntmuseum.com/stories/objects-in-focus/roman-empire-dodecahedron/",
+     "C",
+     "PHOTOGRAPH DIRECTLY EXAMINED, August 2026, supplied by the project owner. "
+     "High-resolution colour image of Guggenberger no 126, catalogued by "
+     "PUB-0023 with place of discovery 'unknown (not Ireland)', before 1985, "
+     "type 1a. Ireland was never part of the Roman empire, so the object is a "
+     "collection acquisition and not an Irish find. No measurements published "
+     "in the material consulted."),
+    ("PUB-0047", "KIK-IRPA / Europeana", 2024,
+     "Musee Curtius, Liege - dodecaedre, inv. I.7108 (Europeana AP_10295723)",
+     "Database", None,
+     "https://www.europeana.eu/item/2048001/AP_10295723",
+     "C",
+     "DIRECTLY CONSULTED, August 2026, from a copy supplied by the project "
+     "owner; held at docs/sources/I_7108.txt. Aggregator record for the specimen "
+     "already held as RD-0015 from PUB-0011. Adds a date range of AD 301-399 "
+     "and a material statement of lead and bronze. Graded C because the "
+     "aggregator record carries no measurements and no findspot beyond the "
+     "inventory number."),
     ("PUB-0043", "Diocletian (Edictum de pretiis rerum venalium)", 301,
      "Edict on Maximum Prices",
      "Archive", None,
@@ -2142,11 +2199,13 @@ CORPUS_OBSERVATIONS = [
      "range is hand-held. Ultimate reference: Guggenberger 1999, 34"),
 
     ("EV002",
-     "Complete specimens recorded at 246 g (Mainz 3), 247 g (Much Hadham), "
-     "245 g (Norton Disney) and 553 g (Fishguard); fragments range from 1.67 g "
-     "to 82 g",
+     "The reference catalogue gives the corpus weight range as 35-580 g, with "
+     "one specimen over 1000 g (PUB-0023). Complete specimens in this database "
+     "fall within it: 81 g (Jublains), 246 g (Mainz 3), 247 g (Much Hadham), "
+     "245 g (Norton Disney), 553 g (Fishguard). Fragment weights of 1.67 g to "
+     "82 g are recorded separately and are inadmissible for mass",
      "ambiguous", "B", "Observed", 0,
-     "PUB-0003", "36", "fig 4", "2026-08-07",
+     "PUB-0023", "header", None, "2026-08-08",
      "HPM DEFECT: H001 and H007 predict '+' for mass on the reasoning that a "
      "load-bearing or military object 'benefits from mass', but no threshold "
      "mass is specified, so no measurement can confirm or refute the "
@@ -2249,6 +2308,27 @@ CORPUS_OBSERVATIONS = [
      "copies rather than within a class of originals. Standardisation has never "
      "been tested WITHIN a Greiner/Guggenberger type. Until it has, EV039's "
      "direction carries an unquantified confound. See prediction P-0011"),
+
+    ("EV048",
+     "Type attributions are now known for the whole reference corpus: of 129 "
+     "catalogued specimens, 82 are type 1a, 17 are untyped, 6 are 2a, 4 each "
+     "are 3a and 1b, and the remainder are single or double instances of "
+     "types 2b, 3b, 4, 5a, 5b and 6 (PUB-0023). Twenty specimens in this "
+     "database now carry a type, twelve of them 1a. MEASUREMENTS PER TYPE ARE "
+     "NOT AVAILABLE: only two type-1a specimens in this database have an "
+     "admissible overall diameter, which is far too few to compare "
+     "within-type variability against the pooled figure",
+     "ambiguous", "B", "Observed", 0,
+     "PUB-0023", "complete list of finds", None, "2026-08-08",
+     "PREDICTION P-0011 CANNOT YET BE RESOLVED, and this observation records "
+     "exactly why. The reference catalogue supplies the TYPE of every known "
+     "specimen but not its MEASUREMENTS; those are in Guggenberger 1999 "
+     "(PUB-0022), which remains unread. With n = 2 for type 1a against n = 8 "
+     "pooled, the coefficients of variation computed here (20.8 per cent "
+     "against 23.4 per cent) are not meaningful and are recorded only to show "
+     "the test was attempted. The confound on EV039 identified at RDORP-012 "
+     "section 2.6 therefore remains unquantified, and acquiring PUB-0022 is "
+     "now the single action that would resolve it"),
 
     ("EV046",
      "A single axis is marked out on the great majority of specimens, by the "
@@ -2386,11 +2466,11 @@ CORPUS_OBSERVATIONS = [
      "undecorated faces are the production-hole pair, so the decoration marks "
      "the ten deliberately made apertures and skips the two casting artefacts. "
      "TWO WITHIN-SPECIMEN REGULARITIES ARE ALSO RECORDED, and both bear on "
-     "EV043: (a) ring count rises as hole diameter falls - 4 and 6 fillets for "
-     "the 14 mm holes, 3 for the 22 mm, none for the 23 and 24 mm on RD-0035 - "
-     "which Duval judges probably empirical, the smaller hole simply leaving "
+     "EV043: (a) on RD-0035 ring count rises as hole diameter falls - 4 and 6 "
+     "fillets for the 14 mm holes, 3 for the 22 mm, none for the 23 and 24 mm "
+     "- which Duval judges probably empirical, the smaller hole simply leaving "
      "more room; (b) on RD-0020 each pair of OPPOSITE holes is reported to "
-     "carry the same decoration (PUB-0019, 9, read off a figure, confidence D)"),
+     "carry the same decoration (PUB-0019, 9, read off a figure, confidence D). BUT THE FIRST REGULARITY IS NOT UNIVERSAL: RD-0020 carries three rings on all ten decorated faces irrespective of aperture size. EXP-0005 shows these are two different workshop rules - constant pitch with variable count, against constant count with variable pitch - and that under EITHER rule the rings carry no labelling information independent of aperture diameter."),
 
     ("EV016",
      "Concentric circles are engraved into the metal after casting",
@@ -3566,6 +3646,19 @@ UTILITY = [
 F = "fragment"
 
 SPECIMEN_QUALITY = [
+    ("RD-0037", "complete",   "D", "one_remove",  0, 1, 0, 0,
+     "Louvre catalogue record; purchased 1825, provenance queried by the "
+     "museum. No weight published"),
+    ("RD-0038", "unknown",    "D", "two_removes", 0, 0, 1, 0,
+     "REJECTED FOR GEOMETRY. Findspot is recorded, but the museum page could "
+     "not be loaded and the height reaches this project through a "
+     "search-engine extract"),
+    ("RD-0039", "unknown",    "D", "none",        0, 0, 1, 0,
+     "No measurements published in the source consulted"),
+    ("RD-0040", "unknown",    "E", "none",        0, 0, 0, 0,
+     "Collection piece with no findspot, held in a country that was never "
+     "Roman. No measurements. Contributes only the surface-condition "
+     "photograph"),
     ("RD-0001", "complete",   "C", "direct",      1, 1, 1, 0,
      "PAS detector find, cultivated land; complete and directly measured"),
     ("RD-0002", "incomplete", "C", "direct",      0, 1, 1, 0,
@@ -3598,13 +3691,18 @@ SPECIMEN_QUALITY = [
     ("RD-0016", "complete",   "D", "one_remove",  1, 1, 0, 0,
      "British Museum, acquired 1878; findspot 'British Isles', no location"),
     ("RD-0017", "complete",   "D", "one_remove",  1, 0, 0, 1,
-     "OUTLIER, REJECTED FROM GEOMETRY. Maximum diameter 127.71 mm exceeds the "
-     "published corpus maximum of about 110 mm including knobs (PUB-0003, 31 "
-     "n 2), and 553.2 g is 2.2 times the next heaviest complete specimen. "
-     "Purchased, no excavation context. Either the measurement includes "
-     "something the corpus figures exclude, or the object is atypical of the "
-     "class. Retained for mass with the outlier flag so its effect is "
-     "visible, excluded from geometry"),
+     "OUTLIER ON DIAMETER ONLY, REJECTED FROM GEOMETRY. Maximum diameter "
+     "127.71 mm exceeds the published corpus maximum of about 110 mm including "
+     "knobs (PUB-0003, 31 n 2) and the 40-100 mm height range given without "
+     "knobs by PUB-0023. Either the museum figure includes what the corpus "
+     "figures exclude, or the object is atypical. "
+     "THE WEIGHT ARGUMENT PREVIOUSLY MADE HERE WAS WRONG AND IS WITHDRAWN: "
+     "this record formerly called 553.2 g anomalous at 2.2 times the next "
+     "heaviest complete specimen in THIS database, a sample of five. PUB-0023 "
+     "gives the corpus weight range as 35-580 g with one specimen over "
+     "1000 g, so 553.2 g sits inside the published range and is not "
+     "remarkable. The error came from treating this project's own small "
+     "sample as the reference population. Guggenberger no 62, type 5a"),
     ("RD-0018", "unknown",    "C", "none",        0, 0, 1, 0, "Museum record, no measurements"),
     ("RD-0019", "unknown",    "D", "none",        0, 0, 1, 0, "Catalogue entry, confidence D"),
     ("RD-0020", "complete",   "A", "direct",      1, 1, 1, 0,
@@ -3658,6 +3756,111 @@ SPECIMEN_QUALITY = [
 # Format: (exp_id, hypothesis_ids, objective, protocol, outcome, notes)
 # ---------------------------------------------------------------------------
 EXPERIMENTS = [
+    ("EXP-0005", "H003; H008",
+     "Test whether the number and diameter of the concentric rings engraved "
+     "around each aperture are determined by the geometry of the face, and "
+     "whether the two undecorated faces are undecorated for want of room.",
+     "Analytical. For a regular dodecahedron of edge e, the pentagonal face has "
+     "circumradius R = e/(2 sin 36) = 0.85065 e, which is the distance from "
+     "face centre to knob, and apothem a = e/(2 tan 36) = 0.68819 e, which is "
+     "the largest radius a complete circle can occupy before the pentagon edges "
+     "cut it. Hence a/R = cos 36 = 0.80902. The annulus available for rings is "
+     "the band between the aperture radius and a. Ring counts were then "
+     "predicted at a uniform 2 mm pitch and compared with the two specimens for "
+     "which per-face ring counts are published.",
+     "THE CONSTRAINT: no complete ring can exceed 80.9 per cent of the distance "
+     "from the face centre to the knobs, on any dodecahedron of any size. "
+     "THE MODEL WORKS ON DECORATED FACES. Vienne (RD-0035, edge 24.70 mm "
+     "derived from 55 mm face to face): the 14 mm apertures leave a 10.0 mm "
+     "annulus, room for about 5 rings, and Duval records 4 and 6; the 22 mm "
+     "apertures leave 6.0 mm, room for about 3, and he records 3. "
+     "IT FAILS DECISIVELY ON THE UNDECORATED PAIR. The 23 and 24 mm apertures "
+     "leave 5.5 and 5.0 mm, room for 2 to 3 rings, and both carry NONE. "
+     "TWO WORKSHOP RULES, NOT ONE. Jublains (RD-0020, edge stated as 21 mm) "
+     "carries three rings on all ten decorated faces regardless of aperture "
+     "size, including a 22 mm aperture whose 3.45 mm annulus fits only about "
+     "1.7 rings at the same pitch. Vienne varies the count and holds the pitch; "
+     "Jublains holds the count and tightens the pitch.",
+     "COMPUTED BY THIS PROJECT, August 2026; regular geometry assumed, and "
+     "EV010 records that the objects are not regular, so the figures are "
+     "nominal. TWO CONSEQUENCES. First, the zero ring count on the opposed "
+     "pair is NOT explained by lack of space, which is quantitative support for "
+     "the production-hole reading: those faces were skipped because they are "
+     "casting artefacts, not because the engraver ran out of room. Second, "
+     "because one workshop rule makes ring count constant and the other makes "
+     "it a function of aperture diameter, THE RINGS CARRY NO INDEPENDENT "
+     "LABELLING INFORMATION UNDER EITHER RULE - constant count distinguishes "
+     "nothing, and count-determined-by-diameter is redundant with diameter. "
+     "This bears directly on EV043 and on prediction P-0009."),
+
+    ("EXP-0007", "H013; H014; C-15; C-17",
+     "Test whether the decoration determines an orientation of the "
+     "dodecahedron, as distinct from merely marking an axis.",
+     "Group theory, verified by explicit construction. The rotation group of "
+     "the dodecahedron was built as permutations of the twelve faces and "
+     "confirmed to have order 60. The stabiliser of a single unordered opposed "
+     "face-pair was then computed, and the stabiliser of a labelling in which "
+     "that pair is distinguished and the other ten faces are identical.",
+     "MARKING AN AXIS IS NOT DETERMINING AN ORIENTATION. Distinguishing one "
+     "opposed pair out of six reduces the 60 rotations to 10: it fixes WHICH "
+     "AXIS but leaves five rotations about that axis and a flip exchanging its "
+     "two ends. "
+     "IF THE REMAINING TEN FACES CARRY IDENTICAL DECORATION, nothing further "
+     "is broken and all 10 orientations survive. That is the Jublains case "
+     "(RD-0020), which carries three rings on every decorated face. "
+     "ON SPECIMENS WHOSE FACES DIFFER, orientation is fully determined - but "
+     "trivially, because the faces are individually distinguishable. Any "
+     "sufficiently irregular object determines its own orientation in that "
+     "sense, and it is not evidence of design. "
+     "NOTHING OBSERVED DISTINGUISHES THE TWO ENDS OF THE AXIS. The two "
+     "undecorated faces are equivalent to each other on every specimen "
+     "recorded, so there is no up and no down.",
+     "COMPUTED BY THIS PROJECT, August 2026, on the regular solid; EV010 "
+     "records that the objects are not regular, which can only reduce symmetry "
+     "further and therefore strengthens the trivial-determination point rather "
+     "than the design point. THE CONCLUSION BEARS ON EV038 AND EV046: the "
+     "decoration marks an axis at most, and on at least one specimen not even "
+     "that much beyond the axis. Combined with the finding at EV046 that the "
+     "marked axis is most probably a casting scar, there is no evidence that "
+     "any dodecahedron was designed to be held in a particular orientation."),
+
+    ("EXP-0006", "H003; H008; H006",
+     "Test whether the concentric rings engraved around the apertures could "
+     "encode the twelve signs of the zodiac, or any twelve-fold scheme, by "
+     "assigning a distinct ring count to each face.",
+     "Counting argument against the published ring counts. The observed range "
+     "of ring counts anywhere in the corpus is 0 to 6 (PUB-0003 n 4, which "
+     "records up to six and cites Guggenberger no 11 as carrying two to five; "
+     "PUB-0017, 200 records 0, 3, 4 and 6 on one object). That is at most seven "
+     "distinct values available to label twelve faces.",
+     "NO. By the pigeonhole principle, twelve faces distributed over at most "
+     "seven values force at least five faces to share a count with another "
+     "face, on every specimen. Ring count alone can therefore never uniquely "
+     "label twelve signs on any dodecahedron in the known corpus. "
+     "THE ONE SPECIMEN WITH PUBLISHED PER-FACE COUNTS BEARS THIS OUT DIRECTLY. "
+     "On Vienne (RD-0035) the seven published faces already repeat: faces 2, 3 "
+     "prime and 5 prime all carry three rings, and faces 1 and 1 prime both "
+     "carry none. Five faces are unpublished and cannot rescue it, because the "
+     "repetition is already present. "
+     "NOR DOES PAIRING RING COUNT WITH APERTURE DIAMETER RESCUE IT. On Vienne "
+     "the rings conspicuously fail to separate the three faces that share a "
+     "22 mm aperture, all of which carry three rings. THE RINGS ARE NOT WHOLLY "
+     "REDUNDANT, HOWEVER, AND AN EARLIER VERSION OF THIS RECORD OVERSTATED "
+     "THAT: faces 4 prime and 6 prime share a 14 mm aperture and carry FOUR "
+     "and SIX rings respectively, so on that pair the rings do break a tie "
+     "that diameter does not, and the space-filling model of EXP-0005 does not "
+     "account for the difference either. The residual variation is real but "
+     "small, and it falls far short of the twelve distinct values a twelve-fold "
+     "scheme would need.",
+     "COMPUTED BY THIS PROJECT, August 2026. THE DECISIVE COMPARISON IS "
+     "EXTERNAL: a Roman dodecahedron bearing the zodiac does exist - the Geneva "
+     "specimen (PUB-0037), solid lead coated with silver, with a sign of the "
+     "zodiac ENGRAVED ON EACH FACE. When a Roman wanted the zodiac on a "
+     "dodecahedron he cut the signs. The hollow knobbed objects carry rings "
+     "instead, and rings cannot do that work. No hollow knobbed dodecahedron "
+     "has ever been recorded with a zodiac sign, a month name, a numeral or any "
+     "inscription."),
+
     ("EXP-0004", "C-17",
      "Test whether a suspended dodecahedron could level an aqueduct or set the "
      "gradient of a water channel, using a sight through a pair of opposite "
@@ -3953,6 +4156,67 @@ INTERPRETATIONS = [
      "Constraint", "High", "All", "EV017; EV019; EV020; EV023; EV024", "PUB-0003"),
 ]
 
+
+# ---------------------------------------------------------------------------
+# Greiner/Guggenberger type attributions, from the reference catalogue
+# (PUB-0023). Matched to this database by findspot, and only where the
+# catalogue entry is UNIQUE for that findspot.
+#
+# DELIBERATELY NOT ASSIGNED:
+#   RD-0022 Mainz 3      the catalogue of January 2021 lists Mainz 1, Mainz 2
+#                        and Mombach but no Mainz 3, which was first published
+#                        in 2025 as Guggenberger no 134. The keyword match to
+#                        Mainz 1 (no 16) is wrong and is not made.
+#   RD-0036 Carnuntum    the catalogue lists THREE Carnuntum specimens
+#                        (nos 78, 79, 80) and the measurement chain behind
+#                        RD-0036 does not say which was examined.
+#   RD-0033 Deonica      not in the 2021 catalogue; published by Vujovic 2021.
+# ---------------------------------------------------------------------------
+GUGGENBERGER_TYPE = {
+    "RD-0001": "1a?",
+    "RD-0003": "6",
+    "RD-0004": "1a",
+    "RD-0006": "4",
+    "RD-0007": "?",
+    "RD-0009": "1a",
+    "RD-0017": "5a",
+    "RD-0018": "6?",
+    "RD-0019": "1a",
+    "RD-0020": "1a",
+    "RD-0021": "1a",
+    "RD-0024": "1a",
+    "RD-0025": "1a",
+    "RD-0026": "1a",
+    "RD-0029": "5a",
+    "RD-0031": "1a",
+    "RD-0032": "1a",
+    "RD-0034": "1a",
+    "RD-0035": "1a",
+    "RD-0038": "2a",
+}
+GUGGENBERGER_NUMBER = {
+    
+    "RD-0001": "118",
+    "RD-0003": "115",
+    "RD-0004": "119",
+    "RD-0006": "4",
+    "RD-0007": "59",
+    "RD-0009": "120",
+    "RD-0017": "62",
+    "RD-0018": "61",
+    "RD-0019": "69",
+    "RD-0020": "98",
+    "RD-0021": "29",
+    "RD-0024": "20",
+    "RD-0025": "21",
+    "RD-0026": "68",
+    "RD-0029": "60",
+    "RD-0031": "10",
+    "RD-0032": "92",
+    "RD-0034": "86",
+    "RD-0035": "58",
+    "RD-0038": "75",
+}
 
 def build_database():
     if os.path.exists(DB_PATH):
@@ -4680,6 +4944,89 @@ def build_database():
          "PUB-0003, 32 and n 11 (citing Vujovic 2021). Outlying south-eastern "
          "find; no measurements available."),
 
+
+        # ===================================================================
+        # Batch 005 - museum collection records located by search, Aug 2026
+        # ===================================================================
+        ("RD-0037", "Louvre dodecahedron",
+         "France (?), attributed to Gaul (?)", "France", None,
+         "Unknown", None, None,
+         "Musee du Louvre", "Paris", "France",
+         "ED 4271; INV 2699; Br 1602",
+         "Bronze", "Hollow cast, with soldered knobs",
+         71.0, 82.0, 85.0, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         "Concentric circles",
+         "Ten faces decorated with concentric circles of varying size; two "
+         "faces remain smooth. Knobs attached by soldering",
+         "Bronze surface shows corrosion",
+         None, "PUB-0044", "B", None, None,
+         "Purchased 1825 from the Durand collection. Height 7.1 cm between the "
+         "smooth faces including the feet, 6.2 cm without; width 8.2 cm; depth "
+         "8.5 cm. No weight recorded. Not currently on display. THE MUSEUM'S "
+         "OWN PHRASE 'height between the smooth faces' implies the two "
+         "undecorated faces are opposite one another, which corroborates the "
+         "marked-axis observation independently of PUB-0010."),
+
+        ("RD-0038", "Elst (Overbetuwe) dodecahedron",
+         "Elst, Overbetuwe, Gelderland", "Netherlands", "Germania inferior",
+         "Unknown", 1, 300,
+         "Rijksmuseum van Oudheden", "Leiden", "Netherlands",
+         None,
+         "Bronze", None,
+         75.0, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None,
+         None, "PUB-0045", "C", None, None,
+         "FIRST NETHERLANDS SPECIMEN IN THE DATABASE. Donated November 1876. "
+         "Height 7.5 cm. Museum dating given as 1-300 AD, which is EARLIER "
+         "than the corpus window of c AD 200-400 recorded at EV029; museum "
+         "period ranges are commonly loose and this is recorded as a conflict "
+         "rather than as a correction. SOURCE CAVEAT: the museum page returned "
+         "HTTP 403 and these values come from a search-engine extract of it, "
+         "not from the page itself."),
+
+        ("RD-0039", "MAN68333 (Reims?) dodecahedron",
+         "Reims (?), Marne", "France", "Gallia Belgica",
+         "Unknown", None, None,
+         "Musee d'Archeologie nationale", "Saint-Germain-en-Laye", "France",
+         "MAN68333",
+         "Copper alloy", None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None,
+         None, "PUB-0046", "C", None, None,
+         "From the Joseph de Baye collection; findspot given by the museum "
+         "with a query. NO MEASUREMENTS PUBLISHED in the source consulted. The "
+         "same source states the MAN holds FOUR dodecahedra in total, so three "
+         "further specimens exist in that collection and are not yet recorded "
+         "here. An online 3D model is advertised and would supply geometry if "
+         "retrieved."),
+
+        ("RD-0040", "Hunt Museum (Limerick) dodecahedron",
+         "Unknown; catalogued as 'not Ireland'", "Unknown", None,
+         "Unknown", None, None,
+         "The Hunt Museum", "Limerick", "Ireland",
+         "HCM157",
+         "Copper alloy", None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         "Concentric circles",
+         "Multiple concentric rings engraved around each aperture; dark "
+         "green-brown patina over faces and recesses",
+         "Bright unpatinated metal exposed on the crown of every visible knob; "
+         "see the EV041 observations for what this does and does not show",
+         None, "PUB-0048", "C", None, "126",
+         "Guggenberger no 126, type 1a. Held in Ireland, which was never Roman, "
+         "so the object is a collection acquisition; PUB-0023 records the "
+         "findspot explicitly as 'unknown (not Ireland)'. Acquired before "
+         "1985. No measurements available. Added because its photograph is the "
+         "clearest surface-condition image in the project."),
+
         # ===================================================================
         # Batch 003 - specimens with measured hole sets, from PUB-0017
         # (Duval 1981) and PUB-0019 (Sparavigna 2012). These are the first
@@ -4759,13 +5106,35 @@ def build_database():
          "opposite-hole pairs are recorded as observations; face-to-face "
          "distance given as 40 mm."),
     ]
+    for rd, num in GUGGENBERGER_NUMBER.items():
+        pass  # applied after insert, below
+
     cur.executemany(
-        """INSERT INTO specimens VALUES (
+        """INSERT INTO specimens (
+            rd_id, specimen_name, findspot, country, roman_province,
+            context_category, date_from, date_to, museum_name, museum_city,
+            museum_country, inventory_number, material, manufacturing_method,
+            height_mm, width_mm, max_diameter_mm, weight_g, wall_thickness_mm,
+            knob_diameter_mm, hole_01_mm, hole_02_mm, hole_03_mm, hole_04_mm,
+            hole_05_mm, hole_06_mm, hole_07_mm, hole_08_mm, hole_09_mm,
+            hole_10_mm, hole_11_mm, hole_12_mm, decoration_type,
+            decoration_desc, wear_notes, associated_finds, primary_source_id,
+            confidence, nouwen_number, guggenberger_number, notes
+        ) VALUES (
             ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,
             ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
         )""",
         SPECIMENS
     )
+
+    # Catalogue number and type from PUB-0023, applied after insert so that the
+    # specimen literals stay readable and the attribution stays auditable.
+    for rd, num in GUGGENBERGER_NUMBER.items():
+        cur.execute("UPDATE specimens SET guggenberger_number=? WHERE rd_id=?",
+                    (num, rd))
+    for rd, typ in GUGGENBERGER_TYPE.items():
+        cur.execute("UPDATE specimens SET guggenberger_type=? WHERE rd_id=?",
+                    (typ, rd))
 
     # Artifact observations: one row per specimen × evidence variable × source
     # Columns: rd_id, ev_id, observed_value, confidence, source_id, page, figure,
@@ -5925,6 +6294,198 @@ def build_database():
          "the remaining eight as a range, and the figures are stated to the "
          "nearest 0.5 cm in places. An apparent duplicate at this resolution "
          "does not establish that two apertures were indistinguishable"),
+
+        # --- Batch 005: museum collection records --------------------------
+        ("RD-0037", "EV014",
+         "Ten faces decorated with concentric circles of varying size; two "
+         "faces remain smooth",
+         "B", "PUB-0044", "ED 4271", None, "2026-08-08",
+         "INDEPENDENT CORROBORATION OF THE TEN-OF-TWELVE RULE, from a museum "
+         "record unconnected to PUB-0003, PUB-0010 or PUB-0017. Until now that "
+         "rule rested on one corpus statement plus two specimens. This is the "
+         "second source the evidence-base audit identified as missing"),
+        ("RD-0037", "EV046",
+         "The museum records the height as 7.1 cm 'between the smooth faces', "
+         "which implies the two undecorated faces lie opposite one another",
+         "B", "PUB-0044", "ED 4271", None, "2026-08-08",
+         "INDEPENDENT CORROBORATION OF THE MARKED AXIS. The phrasing is the "
+         "museum's own and was not written to make any point about "
+         "orientation, which makes it good evidence. EV046 remains "
+         "non-discriminating because it still describes the same physical "
+         "feature as EV013; a second source removes the single-voice problem "
+         "but not the double-counting one"),
+        ("RD-0037", "EV016",
+         "Hollow cast, with the knobs attached by soldering",
+         "B", "PUB-0044", "ED 4271", None, "2026-08-08",
+         "SECOND INDEPENDENT SOURCE FOR SOLDERED KNOBS, after PUB-0010 para 48 "
+         "on the Jublains specimen. This weakens the conflict previously "
+         "recorded against the PAS description of RD-0014 as cast in one "
+         "piece: two institutional records now describe separately attached "
+         "knobs"),
+        ("RD-0037", "EV001",
+         "Height 7.1 cm between the smooth faces including the feet, 6.2 cm "
+         "without the feet; width 8.2 cm; depth 8.5 cm",
+         "B", "PUB-0044", "ED 4271", None, "2026-08-08",
+         "The 6.2 / 7.1 / 8.2 / 8.5 cm spread on a single object is a further "
+         "instance of the departure from regular geometry recorded at EV010"),
+        ("RD-0037", "EV011",
+         "Bronze",
+         "B", "PUB-0044", "ED 4271", None, "2026-08-08", None),
+        ("RD-0037", "EV025",
+         "Provenance given as France (?), attributed to Gaul (?); purchased "
+         "1825 from the Durand collection",
+         "B", "PUB-0044", "ED 4271", None, "2026-08-08",
+         "Both queries are the museum's own. No findspot; an early-19th-century "
+         "collection purchase"),
+
+        ("RD-0038", "EV001", "Height 7.5 cm",
+         "C", "PUB-0045", None, None, "2026-08-08",
+         "Via search-engine extract; the museum page returned HTTP 403"),
+        ("RD-0038", "EV025",
+         "Found at Elst, Overbetuwe, Gelderland; donated to the museum in "
+         "November 1876",
+         "C", "PUB-0045", None, None, "2026-08-08",
+         "First Netherlands findspot in the database. The Netherlands is named "
+         "in PUB-0010 among the countries of the known distribution but was "
+         "unrepresented here"),
+        ("RD-0038", "EV029",
+         "Museum dating: Roman period, 1-300 AD",
+         "C", "PUB-0045", None, None, "2026-08-08",
+         "CONFLICTS WITH EV029, which records the corpus window as c AD 200 to "
+         "the late 4th century. Museum period ranges are commonly loose and "
+         "this is recorded as a conflict, not as a correction to the corpus "
+         "chronology"),
+
+        ("RD-0039", "EV025",
+         "Findspot given by the museum as Reims (?), Marne; from the Joseph de "
+         "Baye collection",
+         "C", "PUB-0046", None, None, "2026-08-08",
+         "The query is the museum's own"),
+        ("RD-0039", "EV030",
+         "The Musee d'Archeologie nationale holds four dodecahedra",
+         "C", "PUB-0046", None, None, "2026-08-08",
+         "RELEVANT TO EV030, which has no corpus observation. Four specimens "
+         "in one institution is a collection fact, not a site fact, and does "
+         "NOT bear on whether multiple specimens occur at one findspot. "
+         "Recorded because three of those four are not yet in this database"),
+
+        # --- Batch 006: records supplied by the project owner --------------
+        ("RD-0001", "EV010",
+         "Each of the twelve faces is 38 mm in length and width; plate "
+         "thickness 3 mm; knobs roughly 9 mm high and 9 to 10 mm in diameter; "
+         "maximum diameter 82 mm",
+         "B", "PUB-0006", "BH-692011", None, "2026-08-08",
+         "Full PAS record, supplied directly. Adds face dimensions and "
+         "confirms the figures previously recorded. The record also states "
+         "Preservation grade 2, method of manufacture Cast, completeness "
+         "Complete, and flags the find as of note with potential for "
+         "inclusion in Britannia"),
+        ("RD-0001", "EV007",
+         "All of the apertures have slightly bevelled rounded edges",
+         "B", "PUB-0006", "BH-692011", None, "2026-08-08",
+         "FIRST OBSERVATION FOR EV007, which had none. Bears on prediction "
+         "P-0005, which expects bevelled rather than square-cut lips"),
+        ("RD-0001", "EV029",
+         "Dated by the recorder to the Roman period as a whole, AD 43-410",
+         "B", "PUB-0006", "BH-692011", None, "2026-08-08",
+         "A default period range for an unstratified detector find, not an "
+         "independent dating. It should not be read as widening the corpus "
+         "window recorded at EV029"),
+
+        ("RD-0015", "EV029",
+         "Dated by the aggregator record to AD 301-399",
+         "C", "PUB-0047", "I.7108", None, "2026-08-08",
+         "FIRST DATING FOR THIS SPECIMEN. Consistent with the corpus window"),
+        ("RD-0015", "EV011",
+         "Material given as lead and bronze",
+         "C", "PUB-0047", "I.7108", None, "2026-08-08",
+         "Corroborates the PUB-0011 record and, with the 18 per cent lead "
+         "measured on RD-0005, supports the reading of the alloy as a casting "
+         "alloy rather than a structural bronze"),
+
+        ("RD-0038", "EV004",
+         "Each face carries one hole, and the holes are of differing size; "
+         "knobs at the intersections",
+         "B", "PUB-0045", None, None, "2026-08-08",
+         "The museum's own description. Independent corroboration of the "
+         "one-aperture-per-face rule and of size variation within an object"),
+        ("RD-0038", "EV047",
+         "Found at Elst; catalogued as Guggenberger no 75, type 2a, year of "
+         "discovery 1875; donated to the museum in November 1876; inventory "
+         "number ENc",
+         "B", "PUB-0023", "no 75", None, "2026-08-08",
+         "Provenance secured by two independent records agreeing on findspot "
+         "and date: the reference catalogue gives discovery in 1875 and the "
+         "museum gives donation in November 1876"),
+
+        ("RD-0040", "EV014",
+         "Rings are engraved as a group at the PERIPHERY of each face, close to "
+         "the pentagon edges, with a broad plain annulus between the aperture "
+         "and the innermost ring. Counted from the photograph, faces with "
+         "larger apertures carry fewer rings, about two, and faces with smaller "
+         "apertures carry more, about three to four. The uppermost face in the "
+         "image appears plain",
+         "D", "PUB-0048", None, "Europeana 325/HCM157", "2026-08-09",
+         "COUNTED FROM A PHOTOGRAPH at oblique angles; the counts are "
+         "approximate and the faces away from the camera cannot be read at all. "
+         "Two points are nonetheless legible. The rings are placed relative to "
+         "the FACE EDGE rather than packed outward from the aperture, which is "
+         "what EXP-0005 predicts if the engraver works inward from the "
+         "geometric limit. And the inverse relation between aperture size and "
+         "ring count follows the Vienne rule (RD-0035) rather than the constant "
+         "count of Jublains (RD-0020). The apparently plain uppermost face is "
+         "consistent with the undecorated opposed pair, but only one of the two "
+         "is visible so this cannot be confirmed"),
+
+        # --- EV041 knob wear: assessment from photographs -------------------
+        # These are the first observations in the project made from images
+        # rather than from a publication. They are graded D and the reasoning
+        # is set out in full, because surface condition read from a photograph
+        # by a non-specialist is the weakest evidence the project holds.
+        ("RD-0040", "EV041",
+         "Bright, unpatinated yellow metal is exposed on the crown of every "
+         "visible knob, against a dark green-brown patina covering all faces, "
+         "recesses and engraved rings. The exposure is confined to the "
+         "outermost point of each knob and is consistent across all knobs "
+         "regardless of their orientation in the photograph",
+         "D", "PUB-0048", None, "Europeana 325/HCM157", "2026-08-09",
+         "OBSERVED FROM A PHOTOGRAPH, NOT FROM THE OBJECT, AND BY A "
+         "NON-SPECIALIST. What is certain is that patina has been lost "
+         "preferentially from the high points. What that means is NOT settled "
+         "by the image, and the most economical explanation is not ancient "
+         "use. PATINA FORMS DURING BURIAL. Wear inflicted in antiquity, before "
+         "deposition, would have been covered by burial patina and would not be "
+         "bright today. Bright metal therefore indicates patina removed AFTER "
+         "excavation - by cleaning, polishing, mounting or handling. This is a "
+         "collection piece with no findspot, acquired before 1985, which is "
+         "precisely the class of object that gets polished. "
+         "THE COUNTER-ARGUMENT, which the image cannot settle: wear leaves a "
+         "SHAPE signature as well as a colour one. Flattening or facetting of "
+         "the knob crowns beyond their cast form would survive burial and "
+         "repatination and could not be produced by dusting. Several crowns "
+         "appear broad and flat in the image, but that cannot be separated "
+         "from casting form and lighting at this resolution. "
+         "WHAT WOULD SETTLE IT: whether any polish is directional, whether it "
+         "cuts through corrosion products or underlies them, and whether the "
+         "crown profile departs from the cast form of the unworn knobs"),
+        ("RD-0001", "EV041",
+         "In six published views the knobs are covered by the same mid-green "
+         "corrosion and pale mineral encrustation as the rest of the object; "
+         "no bright metal is exposed anywhere. Reddish cuprite shows where the "
+         "outer layer has been lost on several knobs",
+         "D", "PUB-0006", "BH-692011", "docs/sources/Roman dodecahedron.jpg", "2026-08-09",
+         "OBSERVED FROM PHOTOGRAPHS. THE CONTROL CASE, and the reason the "
+         "RD-0040 image is worth recording at all. This specimen is a "
+         "ploughsoil metal-detector find that has not been polished, and its "
+         "knobs are indistinguishable in surface condition from its faces. The "
+         "contrast with RD-0040 shows that bright knob crowns are not simply "
+         "how a bronze dodecahedron looks, but it equally shows what an "
+         "uncleaned specimen looks like - which is the state in which the "
+         "microwear question must be asked. NOTE the tension with the PAS "
+         "record's own wording for this object, which reports 'several areas of "
+         "abrasion around the base of most knops': at photographic resolution "
+         "that abrasion is not distinguishable from the general corrosion and "
+         "plough damage the same record describes"),
 
         # --- EV041 Knob wear: the variable added with H012 ------------------
         # These are re-readings of PAS descriptions already held under EV018
