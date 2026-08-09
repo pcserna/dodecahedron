@@ -1,7 +1,7 @@
 ---
 Document ID: RDORP-013
 Title: Hardening Plan and Next Steps
-Version: 1.1.0
+Version: 1.2.0
 Status: Draft
 Project: Roman Dodecahedron Open Research Project (RDORP)
 License: CC BY 4.0
@@ -29,8 +29,8 @@ of the top six require no laboratory and no new specimens.
 
 | # | Item | Kind | Effect if acted on |
 | - | ---- | ---- | ------------------ |
-| **A1** | Correlated evidence is scored as independent | Method | **Largest known distortion. Moves H013 by +10.8, H005 by +6.4, H001 by +4.1** |
-| **A2** | No sensitivity analysis over the weighting scheme | Method | Unknown, and that is the problem |
+| ~~A1~~ | Correlated evidence is scored as independent | Method | **DONE. Changed the leader: H014 now first, H012 second, and the pair is inseparable** |
+| ~~A2~~ | No sensitivity analysis over the weighting scheme | Method | **DONE. 45 combinations; the weights decide nothing, deduplication decides everything** |
 | **B1** | Rope wear and rotational wear never observed | Evidence | Decides four refutations |
 | **A3** | Prediction matrices written and scored by the same party | Method | The central validity threat |
 | **B2** | Aperture and ring survey | Evidence | Cheapest decisive test in the project |
@@ -45,7 +45,7 @@ of the top six require no laboratory and no new specimens.
 
 ## Part A — Methodological hardening
 
-### A1. Correlated evidence is being scored as independent
+### A1. Correlated evidence is being scored as independent — DONE
 
 **The defect.** The scoring sums weighted scores across 32 variables as though
 each were an independent observation. Several are not. The clearest case is the
@@ -86,12 +86,14 @@ cell, or its mean, rather than the sum. Report both the clustered and unclustere
 totals. Declaring clusters is a judgement and must be recorded with reasoning,
 like directions.
 
-**Cost.** Half a day. No new data.
+**Implemented** as `corpus_observations.evidence_cluster` and the `clustered`
+scenario. Five clusters declared on shared evidential basis. **The correction
+changed the leader**: H014 +24.1 against H012 +23.5, where unclustered H012 led
+by three points. H013 rose 8.4 and H005 8.3. The two leaders are now separated
+by less than one point under every weighting and must be reported as a tied
+pair.
 
-**This should be done before any result is published.** It is not a refinement;
-the current numbers are inflated by a known amount in a known direction.
-
-### A2. No sensitivity analysis over the weighting scheme
+### A2. No sensitivity analysis over the weighting scheme — DONE
 
 **The defect.** Discriminatory power is weighted 3 / 2 / 1, source confidence
 1.0 / 0.9 / 0.75 / 0.5 / 0.25, evidence class 1.0 / 0.75 / 0.5. **These numbers
@@ -108,7 +110,12 @@ Report the fraction of the 45 combinations in which each hypothesis leads. A
 result that survives one weighting and not the rest is a result about the
 weighting.
 
-**Cost.** A few hours. No new data.
+**Implemented** as `weight_sweep`, reported in `reports/hdm_analysis.md`.
+**Result: the weighting scheme decides nothing.** Unclustered, the same
+hypothesis leads in all 45 combinations. Clustered, H014 leads in 36 and H012
+in 9, with the margin never exceeding one point. The suspicion that the
+ranking was an artefact of invented weights is not supported; the real
+sensitivity was to correlated evidence, which A1 has now corrected.
 
 ### A3. Prediction matrices are written and scored by the same party
 
@@ -424,5 +431,6 @@ worth trusting when it is.
 
 | Version | Date | Description |
 | ------- | ---- | ----------- |
+| 1.2.0 | 2026-08-09 | A1 and A2 implemented. A1 changed the leader; A2 showed the weights decide nothing. |
 | 1.1.0 | 2026-08-08 | Added A9 layer consistency and A10 prediction watch, both implemented in validate.py. |
 | 1.0.0 | 2026-08-08 | Initial hardening plan. |

@@ -1,7 +1,7 @@
 ---
 Document ID: RDORP-012
 Title: Results Summary
-Version: 1.2.1
+Version: 1.3.0
 Status: Draft
 Project: Roman Dodecahedron Open Research Project (RDORP)
 License: CC BY 4.0
@@ -33,8 +33,18 @@ predictions it staked most heavily. Seventeen further everyday uses across the
 military, maritime, agricultural, pastoral, commercial, administrative,
 metrological and craft domains were screened; fifteen were eliminated.
 
-**1.2** **The refutations are not uniformly secure, and the scores reported
-here overstate them by a known amount.** Two independent checks agree on this.
+**1.2** **The two leading hypotheses are not separable, and which of them
+leads is an artefact of a scoring defect that has now been corrected.** When
+correlated variables are deduplicated so that one underlying observation counts
+once rather than four times, **H014 the wax former overtakes H012 the cord
+frame** (+24.1 against +23.5). Across all 45 combinations of weighting scheme
+the clustered leader is H014 in 36 and H012 in 9, with a margin over second
+place of **at most one point** in every case. The weighting scheme itself
+decides nothing: unclustered, the same hypothesis leads under all 45. Report
+the two as a tied pair.
+
+**1.3** **The refutations are not uniformly secure, and the unclustered scores
+overstate them by a known amount.** Two independent checks agree on this.
 Removing every variable that lacks two independent sources leaves the leading
 hypotheses essentially unchanged and moves several refuted ones substantially,
 one from fifth place to third. Separately, the four wear variables all cite the
@@ -45,34 +55,34 @@ refutations resting on standardisation, context and distribution hold under both
 checks; those resting on the absence of *wear* do not. See 2.7 and 2.8; the
 remedy is item A1 of RDORP-013.
 
-**1.3** The refutations are not independent. Four properties of the corpus
+**1.4** The refutations are not independent. Four properties of the corpus
 defeat the utilitarian family as a class: contexts are predominantly urban and
 civilian; nothing is standardised; walls are too thin to carry load; and no
 functional equipment of any kind has ever been recovered alongside a
 dodecahedron.
 
-**1.4** Every reading in which the object *gauges or measures* is punished by
+**1.5** Every reading in which the object *gauges or measures* is punished by
 the evidence, and every reading in which it *forms or holds material softer than
 itself* is rewarded. The cause is structural: a gauge requires standardisation
 between examples and geometric fidelity within them, and the corpus has neither,
 while a former of soft material requires neither and is positively favoured by
 the absence of wear.
 
-**1.5** No hypothesis is both well supported by the evidence and obviously worth
+**1.6** No hypothesis is both well supported by the evidence and obviously worth
 doing. The leader on evidential fit is among the weakest on functional worth;
 the leaders on worth are mid-table on evidence.
 
-**1.6** No hypothesis is robust. Every one has a worst case below the best case
+**1.7** No hypothesis is robust. Every one has a worst case below the best case
 of a rival, and only one — the tent-apex reading — is decisively eliminated.
 
-**1.7** The single most discriminating result is the corpus-wide absence of use
+**1.8** The single most discriminating result is the corpus-wide absence of use
 wear. It is also macroscopic only: microscopic wear analysis has never been
 performed on any specimen.
 
-**1.8** The object's twelve apertures cannot index the zodiac or any twelve-fold
+**1.9** The object's twelve apertures cannot index the zodiac or any twelve-fold
 calendar by solar means. This is established by computation, not by inference.
 
-**1.9** The corpus is not demonstrably a single population of authentic
+**1.10** The corpus is not demonstrably a single population of authentic
 originals, and the most load-bearing finding in the project — the absence of
 standardisation — has only ever been measured by pooling it.
 
@@ -233,9 +243,36 @@ come from a single specimen.
 Two checks bear on this, and they agree. The first removes uncorroborated
 variables; the second addresses variables that are not independent of one another.
 
-**Correlated evidence.** `EV017`, `EV018`, `EV019` and `EV020` all cite
-`PUB-0003`, 45 — one statement, reported from Guggenberger 1999, scored four
-times. Collapsing the cluster to its strongest single contribution gives:
+**Correlated evidence — now implemented.** Variables that restate one
+underlying observation share a budget in `corpus_observations.evidence_cluster`:
+a cluster contributes its strongest single cell rather than the sum of its
+cells. Five clusters are declared — wear, corpus size range, aperture metrics,
+casting, and this project's own derived engineering assessments — each on
+shared *evidential basis* rather than shared topic.
+
+The wear cluster is the clearest case: `EV017`, `EV018`, `EV019` and `EV020`
+all cite `PUB-0003`, 45 — one statement, reported from Guggenberger 1999,
+scored four times, three of them at Very High power.
+
+**The full clustered result changes the leader:**
+
+| Hypothesis | Unclustered | Clustered | Shift |
+| ---------- | ----------- | --------- | ----- |
+| **H014 Wax bulla former** | +21.0 (2nd) | **+24.1 (1st)** | +3.0 |
+| **H012 Cord-working frame** | +24.0 (1st) | **+23.5 (2nd)** | −0.6 |
+| H013 Rope-laying top | +8.7 (5th) | **+17.1 (3rd)** | +8.4 |
+| H005 Textile tool | −0.2 (8th) | **+8.2 (6th)** | +8.3 |
+| H002 Rangefinder | +3.5 (6th) | −0.4 (9th) | −3.8 |
+| H010 Parasol crown | −9.2 (13th) | −5.0 (12th) | +4.2 |
+| H009 Tent apex | −34.0 (14th) | −31.4 (14th) | +2.6 |
+
+The earlier single-cluster estimate is superseded by these figures.
+
+**Sensitivity to the weighting scheme.** All 45 combinations of five
+power schemes, three confidence schemes and three class schemes were re-scored.
+**Unclustered, H012 leads in 45 of 45.** Clustered, H014 leads in 36 and H012
+in 9, and the margin over second place never exceeds one point. The weights are
+therefore not what decides the answer; deduplication is.
 
 | Hypothesis | Current | Collapsed |
 | ---------- | ------- | --------- |
@@ -473,10 +510,13 @@ currently favours.
 
 ### 5.1 Results
 
-| Rank | Hypothesis | Evidence | Staked | Achieved | Product | Craft | Exp. | Value |
-| ---- | ---------- | -------- | ------ | -------- | ------- | ----- | ---- | ----- |
-| 1 | H012 Spool-knitting / cord-working frame | **+24.0** | 35.8 | 67 % | −1 | 0 | 0 | **−1** |
-| 2 | H014 Wax bulla / seal former | **+21.0** | 46.8 | 45 % | 0 | 1 | 1 | **+2** |
+Evidence is given unclustered and clustered; the clustered figure is the more
+defensible and the two are reported together because they disagree at the top.
+
+| Rank | Hypothesis | Evidence | **Clustered** | Staked | Achieved | Product | Craft | Exp. | Value |
+| ---- | ---------- | -------- | ------------- | ------ | -------- | ------- | ----- | ---- | ----- |
+| =1 | H014 Wax bulla / seal former | +21.0 | **+24.1** | 46.8 | 45 % | 0 | 1 | 1 | **+2** |
+| =1 | H012 Spool-knitting / cord-working frame | **+24.0** | +23.5 | 35.8 | 67 % | −1 | 0 | 0 | **−1** |
 | 3 | H003 Ritual object | +12.2 | 21.8 | 56 % | +2 | 2 | 2 | **+6** |
 | 4 | H008 Portable shrine component | +11.4 | 23.2 | 49 % | +2 | 2 | 2 | **+6** |
 | 5 | H013 Rope-laying top | +8.7 | 53.3 | 16 % | −1 | 0 | 0 | −1 |
@@ -940,6 +980,7 @@ project has identified.
 
 | Version | Date | Description |
 | ------- | ---- | ----------- |
+| 1.3.0 | 2026-08-09 | Implemented evidence clustering (A1) and the weighting sweep (A2). Clustering changes the leader to H014 and the two leaders are reported as a tied pair. |
 | 1.2.1 | 2026-08-08 | Merged the two findings on refutation security into one, renumbered the findings, and corrected the scoping of the conclusions in 2.8. |
 | 1.2.0 | 2026-08-08 | Recorded the correlated-evidence inflation in 1.9 and 2.8, and referenced RDORP-013. |
 | 1.1.0 | 2026-08-08 | Added the evidence-base weakness audit (2.7) and the corroborated-variables-only scenario (2.8), and corrected the finding in 1.1 that the refutations are uniformly secure. |

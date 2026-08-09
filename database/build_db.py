@@ -206,6 +206,7 @@ CREATE TABLE corpus_observations (
     evidence_class  TEXT NOT NULL CHECK(evidence_class IN (
                         'Observed','Derived','Experimental')),
     discriminating  INTEGER NOT NULL CHECK(discriminating IN (0,1)),
+    evidence_cluster TEXT,
     source_id       TEXT REFERENCES sources(source_id),
     page            TEXT,
     figure          TEXT,
@@ -4218,6 +4219,56 @@ GUGGENBERGER_NUMBER = {
     "RD-0038": "75",
 }
 
+# ---------------------------------------------------------------------------
+# Evidence clusters
+#
+# Scoring sums across variables as though each were an independent
+# observation. Several are not: they restate one underlying fact in different
+# terms, or rest on one sentence in one source. Summing them counts that fact
+# once per variable.
+#
+# Variables sharing a cluster share a budget. The cluster contributes its
+# single strongest cell rather than the sum of its cells, so one observation
+# counts once however many variables express it.
+#
+# Cluster membership is a JUDGEMENT about shared evidential basis, not about
+# shared topic, and each is justified below. Unclustered variables stand alone.
+# ---------------------------------------------------------------------------
+EVIDENCE_CLUSTERS = {
+    # One sentence in PUB-0003, 45, reporting one statement from Guggenberger
+    # 1999, expressed as four variables and scored four times, three of them
+    # at Very High power. The largest single distortion in the analysis.
+    "EV017": "wear",
+    "EV018": "wear",
+    "EV019": "wear",
+    "EV020": "wear",
+
+    # All three rest on the same published corpus size range of 4-10 cm
+    # (PUB-0003, 31): that the objects are hand-sized, that they are too
+    # variable to be interchangeable, and that they conform to no standard.
+    "EV001": "corpus_size_range",
+    "EV037": "corpus_size_range",
+    "EV039": "corpus_size_range",
+
+    # The same measured aperture diameters, read once as a distribution and
+    # once as a relation between opposed pairs.
+    "EV004": "aperture_metrics",
+    "EV005": "aperture_metrics",
+
+    # The same manufacturing evidence: casting quality and the production
+    # holes are two readings of how these objects were made.
+    "EV012": "casting",
+    "EV013": "casting",
+
+    # This project's own geometric reasoning about the same measurements,
+    # expressed as four separate assessments. Already discounted as Derived,
+    # but still summed four times.
+    "EV033": "engineering_derived",
+    "EV034": "engineering_derived",
+    "EV035": "engineering_derived",
+    "EV036": "engineering_derived",
+}
+
 def build_database():
     if os.path.exists(DB_PATH):
         os.remove(DB_PATH)
@@ -6542,6 +6593,10 @@ def build_database():
            VALUES (?,?,?,?,?,?,?,?,?,?,?)""",
         CORPUS_OBSERVATIONS
     )
+
+    for ev_id, cluster in EVIDENCE_CLUSTERS.items():
+        cur.execute("UPDATE corpus_observations SET evidence_cluster=? "
+                    "WHERE ev_id=?", (cluster, ev_id))
 
     cur.executemany(
         "INSERT INTO predictions VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",

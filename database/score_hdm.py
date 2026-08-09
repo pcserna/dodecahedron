@@ -141,6 +141,12 @@ def load(conn: sqlite3.Connection):
         for r in conn.execute(
             "SELECT hypothesis_id, ev_id, direction FROM hpm_readings")
     }
+    clusters = {
+        r[0]: r[1]
+        for r in conn.execute(
+            "SELECT ev_id, evidence_cluster FROM corpus_observations "
+            "WHERE evidence_cluster IS NOT NULL")
+    }
     corpus = {
         r[0]: CorpusObservation(
             ev_id=r[0],
@@ -159,7 +165,7 @@ def load(conn: sqlite3.Connection):
                FROM corpus_observations"""
         )
     }
-    return hypotheses, variables, hpm, corpus, readings
+    return hypotheses, variables, hpm, corpus, readings, clusters
 
 
 # --- Scoring -----------------------------------------------------------------
@@ -219,10 +225,33 @@ def score_all(hypotheses, variables, hpm, corpus, readings=None,
     return cells
 
 
-def totals(cells, hypotheses, weighted: bool = True) -> dict[str, float]:
+def totals(cells, hypotheses, weighted: bool = True, clusters=None) -> dict[str, float]:
+    """Sum the scored cells for each hypothesis.
+
+    With ``clusters``, variables that restate one underlying observation share
+    a budget: the cluster contributes its single strongest cell rather than the
+    sum of its cells, so one fact counts once however many variables express
+    it. Unclustered variables stand alone.
+    """
+    idx = 4 if weighted else 0
+    if not clusters:
+        out = {h: 0.0 for h in hypotheses}
+        for (h, _ev), values in cells.items():
+            out[h] += values[idx]
+        return out
+
     out = {h: 0.0 for h in hypotheses}
-    for (h, _ev), values in cells.items():
-        out[h] += values[4] if weighted else values[0]
+    best: dict[tuple[str, str], float] = {}
+    for (h, ev), values in cells.items():
+        c = clusters.get(ev)
+        if c is None:
+            out[h] += values[idx]
+        else:
+            k = (h, c)
+            if abs(values[idx]) > abs(best.get(k, 0.0)):
+                best[k] = values[idx]
+    for (h, _c), v in best.items():
+        out[h] += v
     return out
 
 
@@ -257,10 +286,11 @@ def source_counts(conn) -> dict[str, int]:
 
 
 def build_scenarios(hypotheses, variables, hpm, corpus, readings,
-                    sources=None) -> list[Scenario]:
+                    sources=None, clusters=None) -> list[Scenario]:
     """Score the evidence under each inclusion rule required by RDORP-010 s11."""
     discriminating = scorable(corpus, readings, hypotheses)
     sources = sources or {}
+    clusters = clusters or {}
 
     definitions = [
         ("baseline", "All corpus observations, fully weighted", discriminating),
@@ -288,6 +318,18 @@ def build_scenarios(hypotheses, variables, hpm, corpus, readings,
         sc = Scenario(key, label)
         sc.totals = totals(cells, hypotheses)
         sc.variables_used = sorted(evs)
+        scenarios.append(sc)
+
+    if clusters:
+        cells = score_all(hypotheses, variables, hpm, corpus, readings,
+                          include=discriminating)
+        sc = Scenario(
+            "clustered",
+            "Correlated variables share a budget: a cluster contributes its "
+            "strongest cell, not the sum of its cells",
+        )
+        sc.totals = totals(cells, hypotheses, clusters=clusters)
+        sc.variables_used = sorted(discriminating)
         scenarios.append(sc)
 
     if sources:
@@ -533,6 +575,58 @@ def screen(conn, variables, corpus):
     return sorted(cands.values(), key=lambda c: -c["total"])
 
 
+
+#: Alternative weighting schemes for the sensitivity sweep (A2). The scheme in
+#: use is the first of each list; the others test whether the ranking is a
+#: property of the evidence or of the numbers chosen to weight it.
+POWER_SCHEMES = {
+    "3/2/1 (in use)": {"Very High": 3.0, "High": 2.0, "Medium": 1.0},
+    "5/3/1":          {"Very High": 5.0, "High": 3.0, "Medium": 1.0},
+    "4/2/1":          {"Very High": 4.0, "High": 2.0, "Medium": 1.0},
+    "2/1.5/1":        {"Very High": 2.0, "High": 1.5, "Medium": 1.0},
+    "flat":           {"Very High": 1.0, "High": 1.0, "Medium": 1.0},
+}
+CONF_SCHEMES = {
+    "1/.9/.75/.5/.25 (in use)": {"A": 1.0, "B": 0.9, "C": 0.75, "D": 0.5, "E": 0.25},
+    "linear":                   {"A": 1.0, "B": 0.8, "C": 0.6, "D": 0.4, "E": 0.2},
+    "flat":                     {"A": 1.0, "B": 1.0, "C": 1.0, "D": 1.0, "E": 1.0},
+}
+CLASS_SCHEMES = {
+    "1/.75/.5 (in use)": {"Observed": 1.0, "Experimental": 0.75, "Derived": 0.5},
+    "1/.5/.25":          {"Observed": 1.0, "Experimental": 0.5, "Derived": 0.25},
+    "flat":              {"Observed": 1.0, "Experimental": 1.0, "Derived": 1.0},
+}
+
+
+def weight_sweep(hypotheses, variables, hpm, corpus, readings, include,
+                 clusters=None):
+    """A2. Re-score under every combination of weighting scheme.
+
+    The weights were chosen, not derived. A ranking that holds under one
+    scheme and not the rest is a fact about the scheme. This reports how
+    often each hypothesis leads across all combinations.
+    """
+    global DP_WEIGHT, CONF_WEIGHT, CLASS_WEIGHT
+    keep = (DP_WEIGHT, CONF_WEIGHT, CLASS_WEIGHT)
+    leaders, margins, rows = {}, [], []
+    try:
+        for pn, pw in POWER_SCHEMES.items():
+            for cn, cw in CONF_SCHEMES.items():
+                for kn, kw in CLASS_SCHEMES.items():
+                    DP_WEIGHT, CONF_WEIGHT, CLASS_WEIGHT = pw, cw, kw
+                    cells = score_all(hypotheses, variables, hpm, corpus,
+                                      readings, include=include)
+                    t = totals(cells, hypotheses, clusters=clusters)
+                    order = sorted(t, key=lambda h: -t[h])
+                    leaders[order[0]] = leaders.get(order[0], 0) + 1
+                    margins.append(t[order[0]] - t[order[1]])
+                    rows.append((pn, cn, kn, order[0], t[order[0]], order[1]))
+    finally:
+        DP_WEIGHT, CONF_WEIGHT, CLASS_WEIGHT = keep
+    return {"leaders": leaders, "n": len(rows), "rows": rows,
+            "min_margin": min(margins), "max_margin": max(margins)}
+
+
 def bounds(hypotheses, variables, hpm, corpus):
     """Best and worst case contribution of the variables that are not scored."""
     scored = set(corpus)
@@ -617,7 +711,7 @@ def persist(conn, hypotheses, variables, corpus, cells, baseline, best, worst,
 def run(db_path: str = DB_DEFAULT) -> dict:
     conn = sqlite3.connect(db_path)
     try:
-        hypotheses, variables, hpm, corpus, readings = load(conn)
+        hypotheses, variables, hpm, corpus, readings, clusters = load(conn)
         if not corpus:
             raise RuntimeError(
                 "corpus_observations is empty - run build_db.py before scoring"
@@ -625,7 +719,7 @@ def run(db_path: str = DB_DEFAULT) -> dict:
 
         srccount = source_counts(conn)
         scenarios = build_scenarios(hypotheses, variables, hpm, corpus, readings,
-                                    srccount)
+                                    srccount, clusters)
         baseline = next(s for s in scenarios if s.key == "baseline")
         cells = score_all(
             hypotheses, variables, hpm, corpus, readings,
@@ -658,6 +752,13 @@ def run(db_path: str = DB_DEFAULT) -> dict:
             "unscored": unscored,
             "readings": readings,
             "source_counts": srccount,
+            "clusters": clusters,
+            "weight_sweep": weight_sweep(
+                hypotheses, variables, hpm, corpus, readings,
+                baseline.variables_used),
+            "weight_sweep_clustered": weight_sweep(
+                hypotheses, variables, hpm, corpus, readings,
+                baseline.variables_used, clusters),
             "leave_one_out": leave_one_out(
                 hypotheses, variables, hpm, corpus, readings, baseline
             ),

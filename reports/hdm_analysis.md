@@ -90,6 +90,7 @@ RDORP-010 section 11 requires that a hypothesis be considered robustly supported
 | Archaeological observations only (this project's derived engineering assessments excluded) | 28 | H012 (+22.4)  >  H014 (+19.3)  >  H003 (+12.2)  >  H008 (+11.4) |
 | Confidence A-C only (low-confidence observations excluded) | 32 | H012 (+24.0)  >  H014 (+21.0)  >  H003 (+12.2)  >  H008 (+11.4) |
 | Very High discriminatory-power variables only | 11 | H014 (+10.2)  >  H012 (+9.8)  >  H002 (+6.3)  >  H006 (+2.5) |
+| Correlated variables share a budget: a cluster contributes its strongest cell, not the sum of its cells | 32 | H014 (+24.1)  >  H012 (+23.5)  >  H013 (+17.1)  >  H003 (+10.3) |
 | All corpus observations, no weighting applied | 32 | H012 (+15.5)  >  H014 (+14.0)  >  H013 (+9.0)  >  H003 (+8.5) |
 | Corroborated variables only: at least two independent sources stand behind the observation | 25 | H012 (+22.4)  >  H014 (+20.1)  >  H013 (+15.6)  >  H003 (+12.2) |
 | Per-cell readings ignored, so every hypothesis is judged only on the variables all of them can be judged on | 28 | H012 (+22.7)  >  H014 (+19.2)  >  H003 (+12.2)  >  H008 (+11.4) |
@@ -109,6 +110,18 @@ Margin between H012 and H014: **+3.0**, against a largest single-variable contri
 Every scored HPM prediction was shifted by one level in each direction. Shifts that cannot move, because the prediction is already at the end of the scale, are skipped rather than counted as evidence of stability.
 
 No single-prediction change moves the top position.
+
+### Sensitivity to the weighting scheme
+
+The weights were chosen, not derived. Every combination of five discriminatory-power schemes, three source-confidence schemes and three evidence-class schemes was re-scored: 45 in all.
+
+| Basis | Leader | Frequency | Margin over 2nd |
+| ----- | ------ | --------- | --------------- |
+| Unclustered | H012 | 45/45 (100%) | +0.9 to +6.5 |
+| Clustered | H014 | 36/45 (80%) | +0.0 to +1.0 |
+| Clustered | H012 | 9/45 (20%) | +0.0 to +1.0 |
+
+**The weighting scheme is not what decides the result.** Unclustered, the leader is the same under all 45 combinations. What decides it is whether correlated evidence is deduplicated: clustering changes the leader, and once clustered the top two are separated by at most one point under any weighting.
 
 ### Uncertainty bounds over unscored variables
 

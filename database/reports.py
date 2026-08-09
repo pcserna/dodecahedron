@@ -250,6 +250,33 @@ def hdm_analysis(report: dict, db_path: str) -> list[str]:
 
     lines += [
         "",
+        "### Sensitivity to the weighting scheme",
+        "",
+        "The weights were chosen, not derived. Every combination of five "
+        "discriminatory-power schemes, three source-confidence schemes and "
+        "three evidence-class schemes was re-scored: 45 in all.",
+        "",
+        "| Basis | Leader | Frequency | Margin over 2nd |",
+        "| ----- | ------ | --------- | --------------- |",
+    ]
+    for key, lab in (("weight_sweep", "Unclustered"),
+                     ("weight_sweep_clustered", "Clustered")):
+        w = report.get(key)
+        if not w:
+            continue
+        for h, n in sorted(w["leaders"].items(), key=lambda x: -x[1]):
+            lines.append(
+                f"| {lab} | {h} | {n}/{w['n']} ({n / w['n'] * 100:.0f}%) | "
+                f"{w['min_margin']:+.1f} to {w['max_margin']:+.1f} |")
+
+    lines += [
+        "",
+        "**The weighting scheme is not what decides the result.** Unclustered, "
+        "the leader is the same under all 45 combinations. What decides it is "
+        "whether correlated evidence is deduplicated: clustering changes the "
+        "leader, and once clustered the top two are separated by at most one "
+        "point under any weighting.",
+        "",
         "### Uncertainty bounds over unscored variables",
         "",
         "Best case assumes every unscored variable resolves in a hypothesis's "
