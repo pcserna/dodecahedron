@@ -1,7 +1,7 @@
 ---
 Document ID: RDORP-013
 Title: Hardening Plan and Next Steps
-Version: 1.6.0
+Version: 1.7.0
 Status: Draft
 Project: Roman Dodecahedron Open Research Project (RDORP)
 License: CC BY 4.0
@@ -23,14 +23,16 @@ companion: it assumes the results are wrong and asks what would show it.
 Items are ranked by **how much they would move the answer**, not by effort. Four
 of the top six require no laboratory and no new specimens.
 
-**Six items are now closed and two of them changed the result.** Clustering
-correlated evidence (A1) moved the leader; the weight sweep (A2) showed the
-weights decide nothing. The blind protocols (A3, A5) were run and **measured**
+**Seven items are now closed and one of them was reported wrongly.**
+Clustering correlated evidence (A1) does *not* move the leader, as this
+document claimed until A16 was found; what it does is return four to eight
+points to the hypotheses the project had refuted. The weight sweep (A2) showed
+the weights decide nothing. The blind protocols (A3, A5) were run and **measured**
 the central validity threat rather than removing it. What they measured is bad
 enough that the items they generated — A11, A12 and A13 — now sit above
 everything else in this document, including the museum work. **A15 joins them**:
-the scale does not say where indifference ends and prediction begins, and that
-alone decides which of the two leading hypotheses is reported first.
+the scale does not say where indifference ends and prediction begins, and the
+cells that turn on it are worth +4.1 to the leader and nothing to its rival.
 
 ---
 
@@ -39,7 +41,8 @@ alone decides which of the two leading hypotheses is reported first.
 | # | Item | Kind | Effect if acted on |
 | - | ---- | ---- | ------------------ |
 | **A11** | Half the evidence variables do not state which pole is positive | Method | **Blocks everything below. Direction assignment is not reproducible until this is fixed** |
-| **A15** | No rule separates *the mechanism forbids this* from *the mechanism does not care* | Method | **Decides which of the two leaders is first. Worth +4.1 to H012, the unclustered leader, and nothing to H014** |
+| ~~A16~~ | The cluster tie-break depended on dictionary iteration order | Method | **FIXED. It had reversed the reported leader. Five hypotheses moved; a regression test now guards it** |
+| **A15** | No rule separates *the mechanism forbids this* from *the mechanism does not care* | Method | **Worth +4.1 to H012 and nothing to H014, so it inflates the margin between the leading pair** |
 | **A12** | The 84 blind predictions still need blind directions | Method | **Blocks A5 from being loaded. Without it a blind specification is scored by a contaminated scorer** |
 | **A13** | The A3a prompt leaks which hypotheses lead | Method | **Blocks the remaining blind runs. Makes 52 % an optimistic figure and the prompt unusable as written** |
 | **B1** | Rope wear and rotational wear never observed | Evidence | Decides four refutations |
@@ -50,8 +53,8 @@ alone decides which of the two leading hypotheses is reported first.
 | **A14** | Reported figures are maintained by hand | Method | Every rework has found stale numbers; generating them would end a recurring class of error |
 | A6 | Argument from silence has no rule | Method | Separates *examined and absent* from *never looked* |
 | A7 | The screening threshold is crude | Method | The rule is known to produce false negatives |
-| ~~A1~~ | Correlated evidence is scored as independent | Method | **DONE. Changed the leader: H014 first, H012 second, and the pair is inseparable** |
-| ~~A2~~ | No sensitivity analysis over the weighting scheme | Method | **DONE. 45 combinations; the weights decide nothing, deduplication decides everything** |
+| ~~A1~~ | Correlated evidence is scored as independent | Method | **DONE, and its headline was wrong.** It does not change the leader; it returns 4 to 8 points to the refuted hypotheses |
+| ~~A2~~ | No sensitivity analysis over the weighting scheme | Method | **DONE. 45 combinations; H012 leads in all 45, clustered and unclustered** |
 | ~~A3~~ | Prediction matrices written and scored by the same party | Method | **RUN, on one hypothesis of three. 52 % cell agreement, 46 % direction agreement. The threat is real and measured** |
 | ~~A5~~ | Eight variables carry evidence no hypothesis can be tested against | Method | **SPECIFIED. 84 blind predictions written, 51 changed. Cannot be scored until A11 and A12 are done** |
 | ~~A9~~ | The two evidence layers cannot contradict each other | Method | **DONE.** Found four scored variables with no specimen beneath them |
@@ -317,6 +320,67 @@ should be formalised as a prior rather than reported separately.
 
 Recorded in full because two of them changed the result, and because a method document that deletes its own history cannot be audited.
 
+### A16. The cluster tie-break depended on iteration order — FIXED
+
+**The defect.** A cluster contributes "its single strongest cell", implemented
+as `if abs(value) > abs(best)`. **Strictly greater, so an exact tie in
+magnitude was won by whichever cell happened to be iterated first.** No rule
+was ever stated, because the implementer did not notice a tie was possible.
+
+Ties are not rare here. Six hypothesis/cluster pairs hold two cells of **equal
+magnitude and opposite sign**:
+
+| Hypothesis | Cluster | Tied cells |
+| ---------- | ------- | ---------- |
+| **H014** | corpus_size_range | EV001 **+1.80**, EV039 **−1.80** |
+| H005 | corpus_size_range | EV001 +1.80, EV039 −1.80 |
+| H002 | wear | EV017 −2.25, EV019 +2.25, EV020 +2.25 |
+| H002 | engineering_derived | EV033 +1.12, EV034 −1.12 |
+| H004 | engineering_derived | EV033 +1.12, EV034 −1.12 |
+| H011 | wear | EV017 +2.25, EV019 −2.25 |
+
+**What it cost.** H014's clustered total was decided by which of `EV001` and
+`EV039` the dictionary yielded first. Reversing the iteration order moved H014
+by **3.6 points and reversed the leadership**:
+
+```
+as iterated:     H012 +23.48   H014 +24.08   -> H014 first
+reversed order:  H012 +23.48   H014 +20.48   -> H012 first
+```
+
+Under every deterministic rule considered, **H012 leads**:
+
+| Tie rule | H012 | H014 | Leader |
+| -------- | ---- | ---- | ------ |
+| Favourable to the hypothesis *(what the code did by accident)* | +23.5 | **+24.1** | H014 |
+| **Conservative** *(adopted)* | **+23.5** | +20.5 | **H012** |
+| Mean of the tied cells | **+23.5** | +22.3 | **H012** |
+| Mean of all cells in the cluster | **+16.9** | +16.3 | **H012** |
+
+**Fix, implemented.** `totals()` now groups a cluster's cells, sorts them by
+`ev_id` so the outcome cannot depend on insertion order, and takes an explicit
+`tie_rule`. The default is **conservative**: where the variables expressing one
+underlying observation point both ways for a hypothesis, the hypothesis is not
+credited with the favourable reading. This is the same discipline the project
+applies to argument from silence, where confidence is capped rather than
+assumed. `clustered_favourable` is reported alongside as the upper bound, so
+the judgement stays visible.
+
+**Guarded.** `database/test_scoring.py` asserts that every tie rule gives
+identical totals under forward, reversed and ev-sorted iteration, and prints
+the six opposite-sign ties so they cannot go unnoticed again.
+
+**What it invalidated.** The claim that clustering changed the leader, which
+had been the headline of A1 and appeared in RDORP-012's findings chapter, its
+2.7 and its 5.1. **H012 leads on every basis except `very_high_power` and
+`clustered_favourable`.**
+
+**How it was found.** A reader asked which features made H014 first. Tracing it
+to a single variable, and then to a tie inside a single cluster, exposed the
+defect. **Nothing in the pipeline could have caught it** — the validator checks
+data, not determinism, and the result was stable run to run because Python
+dictionaries preserve insertion order. It took a question about *why*.
+
 ### A1. Correlated evidence is being scored as independent — DONE
 
 **The defect.** The scoring sums weighted scores across 32 variables as though
@@ -366,11 +430,17 @@ totals. Declaring clusters is a judgement and must be recorded with reasoning,
 like directions.
 
 **Implemented** as `corpus_observations.evidence_cluster` and the `clustered`
-scenario. Five clusters declared on shared evidential basis. **The correction
-changed the leader**: H014 +24.1 against H012 +23.5, where unclustered H012 led
-by three points. H013 rose 8.4 and H005 8.3. The two leaders are now separated
-by less than one point under every weighting and must be reported as a tied
-pair.
+scenario. Five clusters declared on shared evidential basis.
+
+**The result first reported here was wrong.** It stated that clustering changed
+the leader, giving H014 +24.1 against H012 +23.5. That figure came from an
+undeclared tie-break — see A16 — and does not survive a deterministic rule.
+Clustered, **H012 leads by +3.0**, and leads in all 45 weighting combinations.
+
+What clustering does do is unchanged and is the finding worth keeping: **H013
+rises 8.4 and H005 8.3**, and every hypothesis moving more than four points
+moves upward. Deduplication does not pick a different winner; **it returns
+points to the hypotheses this project had refuted**.
 
 ### A2. No sensitivity analysis over the weighting scheme — DONE
 
@@ -390,11 +460,12 @@ result that survives one weighting and not the rest is a result about the
 weighting.
 
 **Implemented** as `weight_sweep`, reported in `reports/hdm_analysis.md`.
-**Result: the weighting scheme decides nothing.** Unclustered, the same
-hypothesis leads in all 45 combinations. Clustered, H014 leads in 36 and H012
-in 9, with the margin never exceeding one point. The suspicion that the
-ranking was an artefact of invented weights is not supported; the real
-sensitivity was to correlated evidence, which A1 has now corrected.
+**Result: the weighting scheme decides nothing.** H012 leads in all 45
+combinations unclustered, and in all 45 clustered. The suspicion that the
+ranking was an artefact of invented weights is not supported.
+
+An earlier version of this section reported H014 leading 36 of 45 clustered.
+That was the tie-break defect of A16, not the weights.
 
 ### A3. Prediction matrices are written and scored by the same party — RUN
 
@@ -756,6 +827,7 @@ worth trusting when it is.
 
 | Version | Date | Description |
 | ------- | ---- | ----------- |
+| 1.7.0 | 2026-08-09 | Added A16 and corrected A1 and A2. The cluster tie-break depended on dictionary iteration order and had reversed the reported leader; clustering does not change the leader. Regression test added. |
 | 1.6.0 | 2026-08-09 | Added A15: indifference scored as prediction. Worth +4.1 to H012 and nothing to H014, so it bears directly on which of the tied pair is reported first. Inert under clustering. |
 | 1.5.0 | 2026-08-09 | Priorities reordered: A11, A12 and A13 now block everything else. Added A13 (the leaked prompt) and A14 (hand-maintained figures). A1 table replaced with the implemented clustered results. Sequencing, publication gates and definition of done rewritten against actual status. |
 | 1.4.0 | 2026-08-09 | All three blind protocols run and results recorded. Added A11 (variable polarity) and A12 (blind directions), both discovered by the exercise and both blocking A5 from being loaded. |

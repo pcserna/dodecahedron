@@ -269,13 +269,34 @@ def hdm_analysis(report: dict, db_path: str) -> list[str]:
                 f"| {lab} | {h} | {n}/{w['n']} ({n / w['n'] * 100:.0f}%) | "
                 f"{w['min_margin']:+.1f} to {w['max_margin']:+.1f} |")
 
-    lines += [
+    # Do not assert which way the sweep came out - derive it, so the sentence
+    # cannot outlive the numbers. An earlier hand-written version claimed
+    # clustering changes the leader; that was true only under an undeclared
+    # tie rule, and it survived two documents after it stopped being true.
+    verdict = ["", "**The weighting scheme is not what decides the result.**"]
+    for key, lab in (("weight_sweep", "Unclustered"),
+                     ("weight_sweep_clustered", "Clustered")):
+        w = report.get(key)
+        if not w:
+            continue
+        top = sorted(w["leaders"].items(), key=lambda x: -x[1])
+        if len(top) == 1:
+            verdict.append(
+                f"{lab}, **{top[0][0]} leads under all {w['n']} combinations**, "
+                f"by {w['min_margin']:+.1f} to {w['max_margin']:+.1f}.")
+        else:
+            verdict.append(
+                f"{lab}, the leader is not stable: "
+                + ", ".join(f"{h} in {n}/{w['n']}" for h, n in top)
+                + f", with margins of {w['min_margin']:+.1f} to "
+                  f"{w['max_margin']:+.1f}.")
+    lines += verdict + [
         "",
-        "**The weighting scheme is not what decides the result.** Unclustered, "
-        "the leader is the same under all 45 combinations. What decides it is "
-        "whether correlated evidence is deduplicated: clustering changes the "
-        "leader, and once clustered the top two are separated by at most one "
-        "point under any weighting.",
+        "Where clustering is applied, note that the **tie rule** is a separate "
+        "judgement from the weights: six hypothesis/cluster pairs hold two "
+        "cells of equal magnitude and opposite sign, and the "
+        "`clustered_favourable` scenario above is the upper bound of that "
+        "judgement. See RDORP-013 item A16.",
         "",
         "### Uncertainty bounds over unscored variables",
         "",

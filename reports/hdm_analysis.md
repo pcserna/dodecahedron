@@ -90,7 +90,8 @@ RDORP-010 section 11 requires that a hypothesis be considered robustly supported
 | Archaeological observations only (this project's derived engineering assessments excluded) | 28 | H012 (+22.4)  >  H014 (+19.3)  >  H003 (+12.2)  >  H008 (+11.4) |
 | Confidence A-C only (low-confidence observations excluded) | 32 | H012 (+24.0)  >  H014 (+21.0)  >  H003 (+12.2)  >  H008 (+11.4) |
 | Very High discriminatory-power variables only | 11 | H014 (+10.2)  >  H012 (+9.8)  >  H002 (+6.3)  >  H006 (+2.5) |
-| Correlated variables share a budget: a cluster contributes its strongest cell, not the sum of its cells | 32 | H014 (+24.1)  >  H012 (+23.5)  >  H013 (+17.1)  >  H003 (+10.3) |
+| Correlated variables share a budget: a cluster contributes its strongest cell, not the sum of its cells; a tie in magnitude is resolved against the hypothesis | 32 | H012 (+23.5)  >  H014 (+20.5)  >  H013 (+17.1)  >  H003 (+10.3) |
+| As clustered, but a tie in magnitude is resolved in the hypothesis's favour - the upper bound of the clustering judgement | 32 | H014 (+24.1)  >  H012 (+23.5)  >  H013 (+17.1)  >  H003 (+10.3) |
 | All corpus observations, no weighting applied | 32 | H012 (+15.5)  >  H014 (+14.0)  >  H013 (+9.0)  >  H003 (+8.5) |
 | Corroborated variables only: at least two independent sources stand behind the observation | 25 | H012 (+22.4)  >  H014 (+20.1)  >  H013 (+15.6)  >  H003 (+12.2) |
 | Per-cell readings ignored, so every hypothesis is judged only on the variables all of them can be judged on | 28 | H012 (+22.7)  >  H014 (+19.2)  >  H003 (+12.2)  >  H008 (+11.4) |
@@ -118,10 +119,13 @@ The weights were chosen, not derived. Every combination of five discriminatory-p
 | Basis | Leader | Frequency | Margin over 2nd |
 | ----- | ------ | --------- | --------------- |
 | Unclustered | H012 | 45/45 (100%) | +0.9 to +6.5 |
-| Clustered | H014 | 36/45 (80%) | +0.0 to +1.0 |
-| Clustered | H012 | 9/45 (20%) | +0.0 to +1.0 |
+| Clustered | H012 | 45/45 (100%) | +0.1 to +6.5 |
 
-**The weighting scheme is not what decides the result.** Unclustered, the leader is the same under all 45 combinations. What decides it is whether correlated evidence is deduplicated: clustering changes the leader, and once clustered the top two are separated by at most one point under any weighting.
+**The weighting scheme is not what decides the result.**
+Unclustered, **H012 leads under all 45 combinations**, by +0.9 to +6.5.
+Clustered, **H012 leads under all 45 combinations**, by +0.1 to +6.5.
+
+Where clustering is applied, note that the **tie rule** is a separate judgement from the weights: six hypothesis/cluster pairs hold two cells of equal magnitude and opposite sign, and the `clustered_favourable` scenario above is the upper bound of that judgement. See RDORP-013 item A16.
 
 ### Uncertainty bounds over unscored variables
 

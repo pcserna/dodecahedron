@@ -1,7 +1,7 @@
 ---
 Document ID: RDORP-012
 Title: Results Summary
-Version: 1.6.0
+Version: 1.7.0
 Status: Draft
 Project: Roman Dodecahedron Open Research Project (RDORP)
 License: CC BY 4.0
@@ -73,11 +73,18 @@ an axis but leaves ten orientations, so nothing determines a way up.
 
 ### 1.3 What is not stable
 
-**Which hypothesis leads depends on a scoring decision.** Deduplicating
-correlated evidence — so that one observation cited by four variables counts
-once — moves H014 above H012. Across all 45 weighting schemes the clustered
-leader is H014 in 36 and H012 in 9, with the margin over second place never
-exceeding one point. **They are a tied pair and should be reported as one.**
+**Which hypothesis leads is stable; how far ahead is not.** H012 leads under
+all 45 weighting schemes, clustered and unclustered. But the margin is small
+and two identified defects both inflate it in the same direction: the
+prediction scale pays H012 +4.1 for cells that state indifference rather than
+expectation and pays H014 nothing (RDORP-013 A15), and the aperture and ring
+survey — the cheapest outstanding test — bears directly on the variables that
+separate them. **H012 and H014 should be read as a leading pair, with H012
+ahead by less than the matrix currently says.**
+
+*An earlier version of this document reported H014 as the clustered leader.
+That was an artefact of an undeclared tie-break inside the clustering rule,
+found and fixed as RDORP-013 item A16; see 2.7.*
 
 **The refutations are less secure than the leaders.** Two independent checks
 agree. Removing every variable that lacks two independent sources leaves the
@@ -285,12 +292,12 @@ The wear cluster is the clearest case: `EV017`, `EV018`, `EV019` and `EV020`
 all cite `PUB-0003`, 45 — one statement, reported from Guggenberger 1999,
 scored four times, three of them at Very High power.
 
-**The full clustered result changes the leader:**
+**The full clustered result — which does *not* change the leader:**
 
 | Hypothesis | Unclustered | Clustered | Shift |
 | ---------- | ----------- | --------- | ----- |
-| **H014 Wax bulla former** | +21.0 (2nd) | **+24.1 (1st)** | +3.0 |
-| **H012 Cord-working frame** | +24.0 (1st) | **+23.5 (2nd)** | −0.6 |
+| **H012 Cord-working frame** | +24.0 (1st) | **+23.5 (1st)** | −0.6 |
+| **H014 Wax bulla former** | +21.0 (2nd) | **+20.5 (2nd)** | −0.6 |
 | H013 Rope-laying top | +8.7 (5th) | **+17.1 (3rd)** | +8.4 |
 | H005 Textile tool | −0.2 (8th) | **+8.2 (6th)** | +8.3 |
 | H002 Rangefinder | +3.5 (6th) | −0.4 (9th) | −3.8 |
@@ -310,11 +317,32 @@ were inflated by counting one source statement several times; the leaders were
 not.** This is the same asymmetry the source-corroboration audit finds below,
 reached by an independent route.
 
+**The tie-break inside the cluster rule was undefined, and it mattered.** A
+cluster contributes its strongest single cell. Where two cells have equal
+magnitude and opposite sign, "strongest" does not pick one — and the
+implementation kept whichever it saw first, making the result depend on
+dictionary iteration order. Six hypothesis/cluster pairs hold such a tie.
+H014's `corpus_size_range` cluster holds `EV001` at +1.80 and `EV039` at
+−1.80, so reversing the iteration order moved H014 by 3.6 points and reversed
+the leadership.
+
+The rule is now explicit and order-independent: **a tie is resolved against the
+hypothesis**, the same discipline applied to argument from silence. The
+favourable reading is reported alongside as `clustered_favourable`, the upper
+bound of the judgement. A regression test asserts order-independence under
+every rule (RDORP-013 A16).
+
+| Tie rule | H012 | H014 | Leader |
+| -------- | ---- | ---- | ------ |
+| Conservative *(adopted)* | **+23.5** | +20.5 | **H012** |
+| Mean of the tied cells | **+23.5** | +22.3 | **H012** |
+| Mean of all cells in the cluster | **+16.9** | +16.3 | **H012** |
+| Favourable *(the accidental behaviour)* | +23.5 | **+24.1** | H014 |
+
 **Sensitivity to the weighting scheme.** All 45 combinations of five power
 schemes, three confidence schemes and three class schemes were re-scored.
-**Unclustered, H012 leads in 45 of 45.** Clustered, H014 leads in 36 and H012
-in 9, and the margin over second place never exceeds one point. The weights are
-therefore not what decides the answer; deduplication is.
+**H012 leads in 45 of 45 unclustered and 45 of 45 clustered.** Neither the
+weights nor deduplication changes which hypothesis is first.
 
 **Source corroboration.**
 
@@ -552,12 +580,14 @@ precision. Within a band, no ordering is claimed.
 
 Evidence is given clustered — one observation counted once however many
 variables express it — because that is the more defensible basis. The
-unclustered figure is shown for comparison, and the two disagree at the top.
+unclustered figure is shown for comparison. **The two now agree at the top**;
+they did not in earlier versions of this document, and the disagreement was a
+defect rather than a finding (2.7).
 
 | Band | Hypothesis | Clustered | Unclustered | Staked | Value |
 | ---- | ---------- | --------- | ----------- | ------ | ----- |
-| **Leading pair** | H014 Wax bulla / seal former | **+24** | +21 | 47 | +2 |
-| | H012 Spool-knitting / cord-working frame | **+24** | +24 | 36 | −1 |
+| **Leading pair** | H012 Spool-knitting / cord-working frame | **+24** | +24 | 36 | −1 |
+| | H014 Wax bulla / seal former | **+21** | +21 | 47 | +2 |
 | **Consistent but weakly testable** | H003 Ritual object | +10 | +12 | 22 | +6 |
 | | H008 Portable shrine component | +10 | +11 | 23 | +6 |
 | **Partly supported** | H013 Rope-laying top | +17 | +9 | 53 | −1 |
@@ -981,9 +1011,8 @@ Whatever the explanation, it has to account for that silence.
    line consistently. Thirteen cells on scored variables are `-` on the strength
    of rationales reading *need not* or *not required*, while forty-one cells
    saying the same kind of thing are `0`. **The largest beneficiary is H012, at
-   +4.1, and H014 gains nothing** — so this bears directly on which of the
-   tied pair is reported first. It is inert under clustering (RDORP-013 item
-   A15).
+   +4.1, and H014 gains nothing** — so it inflates the margin between the
+   leading pair. It is inert under clustering (RDORP-013 item A15).
 11. **Six hypotheses are contaminated** (5.2).
 12. **Eight variables carry corpus evidence that no hypothesis is specific enough
    to be tested against**, including site type and associated finds — the
@@ -1072,10 +1101,11 @@ project has identified.
 
 | Version | Date | Description |
 | ------- | ---- | ----------- |
+| 1.7.0 | 2026-08-09 | Withdrew the finding that clustering changes the leader. It rested on an undeclared tie-break that depended on dictionary iteration order (RDORP-013 A16). H012 leads on every basis except very_high_power. |
 | 1.6.0 | 2026-08-09 | Removed a superseded projection table from 2.7; recorded the indifference-scored-as-prediction defect in the limits (RDORP-013 A15); corrected the single-source share to 40 % and renumbered the limits list. |
 | 1.5.0 | 2026-08-09 | Reworked: findings restructured to lead with the measured reliability of the method; results reported in bands rather than as a rank order; corpus figures brought current; clustered scoring made the primary basis. |
 | 1.4.0 | 2026-08-09 | Recorded the blind-protocol results: 52 % cell agreement on predictions, 46 % on directions. The limits chapter now carries the reliability figures. |
-| 1.3.0 | 2026-08-09 | Implemented evidence clustering (A1) and the weighting sweep (A2). Clustering changes the leader to H014 and the two leaders are reported as a tied pair. |
+| 1.3.0 | 2026-08-09 | Implemented evidence clustering (A1) and the weighting sweep (A2). *Reported that clustering changes the leader to H014 — withdrawn at 1.7.0; it was a tie-break artefact.* |
 | 1.2.1 | 2026-08-08 | Merged the two findings on refutation security into one, renumbered the findings, and corrected the scoping of the conclusions in 2.8. |
 | 1.2.0 | 2026-08-08 | Recorded the correlated-evidence inflation in 1.9 and 2.8, and referenced RDORP-013. |
 | 1.1.0 | 2026-08-08 | Added the evidence-base weakness audit (2.7) and the corroborated-variables-only scenario (2.8), and corrected the finding in 1.1 that the refutations are uniformly secure. |

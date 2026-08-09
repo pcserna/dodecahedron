@@ -225,33 +225,67 @@ def score_all(hypotheses, variables, hpm, corpus, readings=None,
     return cells
 
 
-def totals(cells, hypotheses, weighted: bool = True, clusters=None) -> dict[str, float]:
+#: How a cluster resolves an exact tie in magnitude between its cells.
+#:
+#: This is not a detail. Six hypotheses have two cells of equal magnitude and
+#: OPPOSITE SIGN inside one cluster, so the rule decides their score, and for
+#: the leading pair it decided which came first. The original implementation
+#: had no rule: it kept the first cell seen, which made the result depend on
+#: dictionary iteration order. Reversing that order moved H014 by 3.6 points
+#: and reversed the leadership.
+#:
+#: ``conservative`` is the default. When the variables expressing one
+#: underlying observation point both ways for a hypothesis, the hypothesis is
+#: not credited with the favourable reading — the same discipline applied to
+#: argument from silence, where confidence is capped rather than assumed.
+TIE_RULES = ("conservative", "favourable", "mean_tied", "mean_all")
+
+
+def totals(cells, hypotheses, weighted: bool = True, clusters=None,
+           tie_rule: str = "conservative") -> dict[str, float]:
     """Sum the scored cells for each hypothesis.
 
     With ``clusters``, variables that restate one underlying observation share
     a budget: the cluster contributes its single strongest cell rather than the
     sum of its cells, so one fact counts once however many variables express
     it. Unclustered variables stand alone.
+
+    ``tie_rule`` resolves an exact tie in magnitude within a cluster. It is
+    order-independent under every setting; see ``TIE_RULES``.
     """
     idx = 4 if weighted else 0
+    out = {h: 0.0 for h in hypotheses}
     if not clusters:
-        out = {h: 0.0 for h in hypotheses}
         for (h, _ev), values in cells.items():
             out[h] += values[idx]
         return out
 
-    out = {h: 0.0 for h in hypotheses}
-    best: dict[tuple[str, str], float] = {}
+    if tie_rule not in TIE_RULES:
+        raise ValueError(f"unknown tie_rule {tie_rule!r}; expected one of {TIE_RULES}")
+
+    grouped: dict[tuple[str, str], list[tuple[str, float]]] = {}
     for (h, ev), values in cells.items():
         c = clusters.get(ev)
         if c is None:
             out[h] += values[idx]
         else:
-            k = (h, c)
-            if abs(values[idx]) > abs(best.get(k, 0.0)):
-                best[k] = values[idx]
-    for (h, _c), v in best.items():
-        out[h] += v
+            grouped.setdefault((h, c), []).append((ev, values[idx]))
+
+    for (h, _c), members in grouped.items():
+        # Sort by ev_id so the outcome cannot depend on insertion order.
+        members.sort()
+        vals = [w for _ev, w in members]
+        if tie_rule == "mean_all":
+            out[h] += sum(vals) / len(vals)
+            continue
+        top = max(abs(w) for w in vals)
+        tied = [w for w in vals if abs(w) == top]
+        if tie_rule == "conservative":
+            out[h] += min(tied)
+        elif tie_rule == "favourable":
+            out[h] += max(tied)
+        else:  # mean_tied
+            out[h] += sum(tied) / len(tied)
     return out
 
 
@@ -326,9 +360,23 @@ def build_scenarios(hypotheses, variables, hpm, corpus, readings,
         sc = Scenario(
             "clustered",
             "Correlated variables share a budget: a cluster contributes its "
-            "strongest cell, not the sum of its cells",
+            "strongest cell, not the sum of its cells; a tie in magnitude is "
+            "resolved against the hypothesis",
         )
-        sc.totals = totals(cells, hypotheses, clusters=clusters)
+        sc.totals = totals(cells, hypotheses, clusters=clusters,
+                           tie_rule="conservative")
+        sc.variables_used = sorted(discriminating)
+        scenarios.append(sc)
+
+        # The tie rule is a judgement and it moves five hypotheses, so it is
+        # reported as its own scenario rather than buried in the default.
+        sc = Scenario(
+            "clustered_favourable",
+            "As clustered, but a tie in magnitude is resolved in the "
+            "hypothesis's favour - the upper bound of the clustering judgement",
+        )
+        sc.totals = totals(cells, hypotheses, clusters=clusters,
+                           tie_rule="favourable")
         sc.variables_used = sorted(discriminating)
         scenarios.append(sc)
 
