@@ -13,14 +13,14 @@ Generated file. Do not edit by hand: change the master data in `database/build_d
 
 | Table | Rows |
 | ----- | ---- |
-| `sources` | 48 |
+| `sources` | 49 |
 | `specimens` | 40 |
 | `artifact_observations` | 224 |
 | `corpus_observations` | 37 |
 | `evidence_register` | 47 |
 | `hdm_scores` | 448 |
 | `results` | 14 |
-| `experiments` | 7 |
+| `experiments` | 8 |
 
 ## Most recent batch: 002 — Guggenberger and Leach 2025 (PUB-0003)
 

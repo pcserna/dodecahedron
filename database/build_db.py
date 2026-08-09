@@ -701,6 +701,17 @@ SOURCES = [
      "public-outreach document rather than a catalogue entry, hence C. States "
      "that the MAN holds FOUR dodecahedra, of which only MAN68333 is named "
      "here. An online 3D model is advertised and has not been retrieved."),
+    ("PUB-0049", "RDORP blind protocol runs", 2026,
+     "A3a blind matrix for H012; A3b independent direction ratings; A5 blind respecification",
+     "Personal communication", None, None, "B",
+     "Produced August 2026 by separate Claude Code sessions working only from "
+     "the prompts at docs/A3a_BLIND_MATRIX_PROMPT.md, "
+     "docs/A3b_DIRECTION_RATING_PROMPT.md and "
+     "docs/A5_BLIND_SPECIFICATION_PROMPT.md. Results held at "
+     "docs/A3a_BLIND_MATRIX_H012.md, docs/A3b_DIRECTION_RATINGS.md and "
+     "docs/A5_BLIND_SPECIFICATION.md. Each run declared what it had opened. "
+     "These are METHOD results, not evidence about dodecahedra, and none of "
+     "them is used as the source of any observation."),
     ("PUB-0048", "The Hunt Museum / Europeana", 2024,
      "Roman dodecahedron, Hunt Museum Limerick, HCM157 (Europeana 325/HCM157)",
      "Database", None,
@@ -3793,6 +3804,48 @@ EXPERIMENTS = [
      "LABELLING INFORMATION UNDER EITHER RULE - constant count distinguishes "
      "nothing, and count-determined-by-diameter is redundant with diameter. "
      "This bears directly on EV043 and on prediction P-0009."),
+
+    ("EXP-0008", "H012",
+     "Measure how far the analysis depends on who specified it, by having the "
+     "prediction matrix and the corpus directions produced independently under "
+     "blind protocols (RDORP-013 items A3 and A5).",
+     "Three prompts were written so that each runner needed nothing from the "
+     "repository, and each named the files and tables that must not be opened. "
+     "A3a: specify all 48 predictions for H012 while blind to the observations. "
+     "A3b: assign a direction and confidence to all 28 scored corpus "
+     "observations while blind to the hypotheses and the scores - the opposite "
+     "blindfold. A5: respecify six vague variables across all 14 hypotheses "
+     "while blind to the observations. Each result was then compared cell by "
+     "cell with the values already in the project, and the blind H012 matrix "
+     "was scored against the corpus.",
+     "THE ANALYSIS DEPENDS HEAVILY ON WHO SPECIFIED IT. "
+     "A3a: the independent matrix agrees with the existing one on 22 of 42 "
+     "comparable cells, 52 per cent, with six disagreements of two levels or "
+     "more. Scored against the corpus the blind matrix gives H012 +16.4 "
+     "unclustered and +17.7 clustered, against +22.7 and +22.1 for the "
+     "existing matrix - a loss of about six points. "
+     "A3b: direction agreement 13 of 28, 46 per cent; confidence agreement 15 "
+     "of 28, 54 per cent; both agreeing on only 7 of 28, 25 per cent. Four "
+     "ratings are outright polarity reversals. "
+     "A5: 51 of 84 cells were respecified, so 61 per cent of the vague "
+     "predictions changed once someone was asked to make them specific.",
+     "RUN BY SEPARATE SESSIONS OF THE SAME MODEL FAMILY, which the A3a runner "
+     "flagged unprompted: this is a second specifier sharing the project's "
+     "priors, not an independent discipline. Two further caveats are on the "
+     "record because the runners raised them. FIRST, THE A3a PROMPT LEAKED: it "
+     "stated that H012 and H014 are the two currently leading hypotheses, so "
+     "the specifier knew before writing a cell that this hypothesis scores "
+     "well. That was a fault in the prompt, not in the response, and it makes "
+     "the 52 per cent agreement an OPTIMISTIC figure. SECOND, the A5 runner "
+     "grepped the hardening plan for its own item name and saw two lines "
+     "stating that these variables carry good evidence. "
+     "WHERE THE LOSS FALLS IS THE POINT. The blind matrix costs H012 most on "
+     "EV017 internal hole wear (4.5), EV003 wall thickness (3.6) and EV019 "
+     "rope wear (2.2). On each, the existing matrix predicts the ABSENCE that "
+     "the corpus records, and the independent specifier working from the "
+     "mechanism alone predicted the presence. That is the signature of "
+     "specification informed by the answer, and it is the bias the exercise "
+     "was built to detect."),
 
     ("EXP-0007", "H013; H014; C-15; C-17",
      "Test whether the decoration determines an orientation of the "

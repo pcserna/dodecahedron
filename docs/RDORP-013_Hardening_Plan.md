@@ -1,7 +1,7 @@
 ---
 Document ID: RDORP-013
 Title: Hardening Plan and Next Steps
-Version: 1.3.0
+Version: 1.4.0
 Status: Draft
 Project: Roman Dodecahedron Open Research Project (RDORP)
 License: CC BY 4.0
@@ -32,12 +32,14 @@ of the top six require no laboratory and no new specimens.
 | ~~A1~~ | Correlated evidence is scored as independent | Method | **DONE. Changed the leader: H014 now first, H012 second, and the pair is inseparable** |
 | ~~A2~~ | No sensitivity analysis over the weighting scheme | Method | **DONE. 45 combinations; the weights decide nothing, deduplication decides everything** |
 | **B1** | Rope wear and rotational wear never observed | Evidence | Decides four refutations |
-| **A3** | Prediction matrices written and scored by the same party | Method | The central validity threat |
+| ~~A3~~ | Prediction matrices written and scored by the same party | Method | **RUN. 52 % cell agreement, 46 % direction agreement. The threat is real and measured** |
+| **A11** | Half the evidence variables do not state which pole is positive | Method | **New, found by A3. Causes spurious disagreement and blocks A5 from being loaded** |
 | **B2** | Aperture and ring survey | Evidence | Cheapest decisive test in the project |
 | **A4** | Three scored variables have no source | Method | Removes a rule violation; moves H001 by −2.6 |
 | **B3** | Residue analysis | Evidence | Decides the two leading hypotheses |
 | **C1** | Guggenberger 1999 read directly | Evidence | Underwrites most single-source variables at a stroke |
-| **A5** | Eight variables carry good evidence no hypothesis can be tested against | Method | Recovers the best-quantified evidence in the corpus |
+| ~~A5~~ | Eight variables carry good evidence no hypothesis can be tested against | Method | **SPECIFIED. 84 blind predictions written, 51 changed. Cannot be scored until A11 and A12 are done** |
+| **A12** | The blind predictions still need blind directions | Method | **New. A5's predictions cannot be scored without directions only the contaminated party can currently assign** |
 | A9 | The two evidence layers cannot contradict each other | Method | **Done.** Found four scored variables with no specimen beneath them |
 | A10 | Predictions do not see accumulating evidence | Method | **Done.** Six of eleven open predictions are now testable |
 
@@ -153,6 +155,105 @@ never needs to touch the repository:
 Note that A3b's blindfold points the **opposite way** to the other two: the
 rater sees the evidence and must not see the hypotheses. Running A3a and A3b
 in the same session would defeat both.
+
+### A3 — RESULTS
+
+All three protocols were run in separate sessions, each working only from its
+prompt.
+
+| Protocol | Measure | Result |
+| -------- | ------- | ------ |
+| **A3a** blind matrix for H012 | Cell agreement with the existing matrix | **22 of 42 — 52 %**, with six disagreements of two levels or more |
+| **A3a** scored | H012 under the blind matrix | **+16.4** unclustered, **+17.7** clustered, against +22.7 and +22.1 |
+| **A3b** direction rating | Direction agreement | **13 of 28 — 46 %** |
+| **A3b** | Confidence agreement | 15 of 28 — 54 % |
+| **A3b** | Both agreeing | **7 of 28 — 25 %** |
+| **A5** | Vague predictions changed once made specific | **51 of 84 — 61 %** |
+
+**The central validity threat is confirmed and quantified.** Two specifiers
+working from the same hypothesis definitions agree on barely half the cells,
+and two raters reading the same sourced statements agree on the direction less
+than half the time.
+
+**Where the loss falls is the finding.** The blind matrix costs H012 most on
+EV017 internal hole wear (−4.5), EV003 wall thickness (−3.6) and EV019 rope
+wear (−2.2). On each of the three, the existing matrix predicts the *absence*
+that the corpus records, while the independent specifier, working from the
+mechanism alone, predicted the *presence*. **That is the signature of a matrix
+written by someone who already knew the answer**, and it is exactly what the
+exercise was built to detect.
+
+**Three caveats, all raised by the runners themselves and none by this
+project:**
+
+1. **Partial independence.** All three runs used the same model family as the
+   original. The A3a runner flagged this unprompted: a second specifier sharing
+   the project's priors, not an independent discipline.
+2. **The A3a prompt leaked.** It stated that H012 and H014 are "the two
+   currently leading" hypotheses, so the specifier knew before writing a cell
+   that this hypothesis scores well. That is a fault in the prompt. **It makes
+   52 % an optimistic figure**, and the prompt must be corrected before reuse.
+3. The A5 runner grepped the hardening plan for its own item name and saw two
+   lines stating these variables carry good evidence.
+
+**Still outstanding under A3:** H014 and H003 have not been blind-specified,
+and must be done in sessions that have not read the H012 result.
+
+### A11. Half the variables do not state which pole is positive — NEW
+
+Found by A3, and it explains a large share of the disagreement.
+
+The direction scale runs `confirmed` to `absent`, which is unambiguous for a
+variable naming a feature whose presence is at issue — *rope wear*, *repair
+evidence*. It is ambiguous for a variable naming a **quantity**:
+
+| Variable | The question it does not answer |
+| -------- | ------------------------------- |
+| EV002 Mass | Does `confirmed` mean mass is recorded, or that it is high? |
+| EV003 Wall thickness | Thin walls present, or thick walls present? |
+| EV010 Face symmetry | Symmetry present, or deviation present? |
+| EV012 Casting quality | Quality good, or quality poor? |
+| EV035 Structural stability | Stable, or unstable? |
+| EV042 Microwear location | Bore wear, or lip wear? |
+| EV044 Interior finish | Finished, or unfinished? |
+
+The independent rater named EV012 explicitly: *"whether the variable means
+'quality is good' or 'quality is poor'."* Four of the twenty-one A3b
+disagreements are outright polarity reversals on such variables — EV003, EV010,
+EV012, EV044 — and one of the two three-level disagreements in A3a is EV042,
+where both specifiers described **the same physical expectation** and assigned
+opposite signs.
+
+**So the reliability figures above are pessimistic in one direction and
+optimistic in the other**: some disagreement is spurious and would vanish with
+clearer definitions, while the prompt leak inflates agreement.
+
+**Fix.** Restate every ambiguous variable so the positive pole is explicit —
+*Wall thickness: substantial (over 3 mm)* rather than *Wall thickness* — then
+re-run A3b against the corrected definitions. Until then, direction assignment
+is not reproducible, and no reliability figure from it should be published.
+
+**Cost.** Half a day. Must precede any further direction work.
+
+### A12. Blind predictions still need blind directions — NEW
+
+A5 produced 84 specific predictions for the six variables that currently score
+nothing. **They cannot be loaded yet**, and the reason is structural.
+
+Scoring a prediction requires a **direction** for its variable. For
+distribution variables such as site type and associated finds, a single
+corpus-wide direction cannot serve every hypothesis — that is why
+`hpm_readings` exists, holding a direction per hypothesis per variable. Those
+readings would have to be written by this project, which knows the evidence.
+
+**Loading A5 without blind readings would reintroduce, at the direction step,
+exactly the contamination A5 removed at the prediction step.** The blind
+predictions would be scored by a contaminated scorer, and the exercise would
+be worth nothing.
+
+**Fix.** A fourth prompt: give a blind runner the 84 predictions and the corpus
+statements for those six variables, and have them assign the per-cell readings
+without seeing the scores or the ranking. Only then can A5 be loaded.
 
 ### A4. Three scored variables have no source
 
@@ -445,6 +546,7 @@ worth trusting when it is.
 
 | Version | Date | Description |
 | ------- | ---- | ----------- |
+| 1.4.0 | 2026-08-09 | All three blind protocols run and results recorded. Added A11 (variable polarity) and A12 (blind directions), both discovered by the exercise and both blocking A5 from being loaded. |
 | 1.3.0 | 2026-08-09 | Wrote the three blind-protocol prompts for A3 and A5, each self-contained. |
 | 1.2.0 | 2026-08-09 | A1 and A2 implemented. A1 changed the leader; A2 showed the weights decide nothing. |
 | 1.1.0 | 2026-08-08 | Added A9 layer consistency and A10 prediction watch, both implemented in validate.py. |

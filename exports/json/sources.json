@@ -484,6 +484,17 @@
     "notes": "DIRECTLY CONSULTED, August 2026; held at docs/sources/ODM23Juin03.pdf. Museum object-of-the-month sheet, a public-outreach document rather than a catalogue entry, hence C. States that the MAN holds FOUR dodecahedra, of which only MAN68333 is named here. An online 3D model is advertised and has not been retrieved."
   },
   {
+    "source_id": "PUB-0049",
+    "authors": "RDORP blind protocol runs",
+    "year": 2026,
+    "title": "A3a blind matrix for H012; A3b independent direction ratings; A5 blind respecification",
+    "type": "Personal communication",
+    "doi": null,
+    "url": null,
+    "confidence": "B",
+    "notes": "Produced August 2026 by separate Claude Code sessions working only from the prompts at docs/A3a_BLIND_MATRIX_PROMPT.md, docs/A3b_DIRECTION_RATING_PROMPT.md and docs/A5_BLIND_SPECIFICATION_PROMPT.md. Results held at docs/A3a_BLIND_MATRIX_H012.md, docs/A3b_DIRECTION_RATINGS.md and docs/A5_BLIND_SPECIFICATION.md. Each run declared what it had opened. These are METHOD results, not evidence about dodecahedra, and none of them is used as the source of any observation."
+  },
+  {
     "source_id": "PUB-0048",
     "authors": "The Hunt Museum / Europeana",
     "year": 2024,

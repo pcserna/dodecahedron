@@ -1,7 +1,7 @@
 ---
 Document ID: RDORP-012
 Title: Results Summary
-Version: 1.3.0
+Version: 1.4.0
 Status: Draft
 Project: Roman Dodecahedron Open Research Project (RDORP)
 License: CC BY 4.0
@@ -890,17 +890,27 @@ Whatever the explanation, it has to account for that silence.
    have no second voice — three of them no source at all (2.7).
 5. **Residues are unmeasured.** The only record in the corpus is described by its
    own source as possibly unreliable.
-6. **Directions are judgements.** The direction assigned to each corpus
-   observation is this project's classification of a sourced fact, not an
-   observation. Directions are stored with their reasoning so they can be
-   challenged independently of the evidence.
-7. **Six hypotheses are contaminated** (5.2).
-8. **Eight variables carry corpus evidence that no hypothesis is specific enough
+6. **Directions are judgements, and they are now known to be unreliable.** An
+   independent rater, blind to the hypotheses and scores, agreed with the
+   recorded direction on **13 of 28 observations (46 %)** and with the
+   confidence grade on 15 of 28; both agreed on only 7. Four ratings were
+   outright polarity reversals.
+7. **The predictions depend on who wrote them.** An independent specification
+   of H012's full matrix, blind to the evidence, agreed on **22 of 42 cells
+   (52 %)** and scored the hypothesis **six points lower**. The loss falls on
+   EV017, EV003 and EV019 — three variables where the recorded matrix predicts
+   the absence that the corpus shows and the blind specifier predicted its
+   presence. See RDORP-013 item A3.
+8. **Roughly half the variables do not state which pole is positive**, which
+   makes some of the disagreement above spurious and direction assignment
+   irreproducible until it is fixed (RDORP-013 item A11).
+9. **Six hypotheses are contaminated** (5.2).
+10. **Eight variables carry corpus evidence that no hypothesis is specific enough
    to be tested against**, including site type and associated finds — the
    best-quantified evidence in the corpus. These are defects in the prediction
    matrix, not gaps in the evidence, and repairing them requires respecifying
    predictions *without reference to the observations that exposed them*.
-9. **Twelve variables have no corpus evidence at all**, including three rated
+11. **Twelve variables have no corpus evidence at all**, including three rated
    Very High.
 
 ---
@@ -980,6 +990,7 @@ project has identified.
 
 | Version | Date | Description |
 | ------- | ---- | ----------- |
+| 1.4.0 | 2026-08-09 | Recorded the blind-protocol results: 52 % cell agreement on predictions, 46 % on directions. The limits chapter now carries the reliability figures. |
 | 1.3.0 | 2026-08-09 | Implemented evidence clustering (A1) and the weighting sweep (A2). Clustering changes the leader to H014 and the two leaders are reported as a tied pair. |
 | 1.2.1 | 2026-08-08 | Merged the two findings on refutation security into one, renumbered the findings, and corrected the scoping of the conclusions in 2.8. |
 | 1.2.0 | 2026-08-08 | Recorded the correlated-evidence inflation in 1.9 and 2.8, and referenced RDORP-013. |
