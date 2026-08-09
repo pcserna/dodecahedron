@@ -1,7 +1,7 @@
 ---
 Document ID: RDORP-012
 Title: Results Summary
-Version: 1.8.0
+Version: 1.9.0
 Status: Draft
 Project: Roman Dodecahedron Open Research Project (RDORP)
 License: CC BY 4.0
@@ -249,7 +249,9 @@ surface finds. Two sources account for 61 %.
 
 **Seven scored variables have no second voice.** Counting the corpus
 observation's own source together with any per-specimen sources, seven of the
-thirty-two scored variables rest on one source or none:
+thirty-two scored variables rest on one source or none. (Thirty-two is itself
+one too many: `EV044` is counted as scored but carries no prediction from any
+hypothesis and discriminates nothing — see limit 11.)
 
 | Variable | Power | Problem |
 | -------- | ----- | ------- |
@@ -1028,13 +1030,22 @@ Whatever the explanation, it has to account for that silence.
    saying the same kind of thing are `0`. **The largest beneficiary is H012, at
    +4.1, and H014 gains nothing** — so it inflates the margin between the
    leading pair. It is inert under clustering (RDORP-013 item A15).
-11. **Six hypotheses are contaminated** (5.2).
-12. **Eight variables carry corpus evidence that no hypothesis is specific enough
+11. **One of the thirty-two scored variables carries no predictions at all.**
+   `EV044` interior finish has a corpus observation at High power and is
+   counted among the scored variables throughout this document, but no
+   hypothesis has ever been given a prediction for it. All fourteen of its
+   cells default to `0` and it discriminates nothing. Three further variables
+   are in the same state and are at least flagged non-discriminating. **The
+   headline "32 of 48 variables scored" is therefore one variable optimistic**,
+   and every *staked* figure in 5.1 counts four unwritten cells as deliberate
+   abstentions (RDORP-013 item A18).
+12. **Six hypotheses are contaminated** (5.2).
+13. **Eight variables carry corpus evidence that no hypothesis is specific enough
    to be tested against**, including site type and associated finds — the
    best-quantified evidence in the corpus. These are defects in the prediction
    matrix, not gaps in the evidence, and repairing them requires respecifying
    predictions *without reference to the observations that exposed them*.
-13. **Twelve variables have no corpus evidence at all**, including three rated
+14. **Twelve variables have no corpus evidence at all**, including three rated
    Very High.
 
 ---
@@ -1116,6 +1127,7 @@ project has identified.
 
 | Version | Date | Description |
 | ------- | ---- | ----------- |
+| 1.9.0 | 2026-08-09 | Recorded in the limits that EV044 is counted among the scored variables while carrying no prediction from any hypothesis, so the 32-of-48 headline is one variable optimistic (RDORP-013 A18). |
 | 1.8.0 | 2026-08-09 | Project-wide sanity check. Regenerated the 5.1 and 2.7 tables from the database after the A16 fix; five hypotheses still carried pre-fix clustered scores. Corrected H013's name, truncated in the source CSV. Stated that the bands are not ordered by score alone. |
 | 1.7.0 | 2026-08-09 | Withdrew the finding that clustering changes the leader. It rested on an undeclared tie-break that depended on dictionary iteration order (RDORP-013 A16). H012 leads on every basis except very_high_power. |
 | 1.6.0 | 2026-08-09 | Removed a superseded projection table from 2.7; recorded the indifference-scored-as-prediction defect in the limits (RDORP-013 A15); corrected the single-source share to 40 % and renumbered the limits list. |
