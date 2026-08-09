@@ -1,7 +1,7 @@
 ---
 Document ID: RDORP-013
 Title: Hardening Plan and Next Steps
-Version: 1.5.0
+Version: 1.6.0
 Status: Draft
 Project: Roman Dodecahedron Open Research Project (RDORP)
 License: CC BY 4.0
@@ -27,8 +27,10 @@ of the top six require no laboratory and no new specimens.
 correlated evidence (A1) moved the leader; the weight sweep (A2) showed the
 weights decide nothing. The blind protocols (A3, A5) were run and **measured**
 the central validity threat rather than removing it. What they measured is bad
-enough that the three items they generated — A11, A12 and A13 — now sit above
-everything else in this document, including the museum work.
+enough that the items they generated — A11, A12 and A13 — now sit above
+everything else in this document, including the museum work. **A15 joins them**:
+the scale does not say where indifference ends and prediction begins, and that
+alone decides which of the two leading hypotheses is reported first.
 
 ---
 
@@ -37,6 +39,7 @@ everything else in this document, including the museum work.
 | # | Item | Kind | Effect if acted on |
 | - | ---- | ---- | ------------------ |
 | **A11** | Half the evidence variables do not state which pole is positive | Method | **Blocks everything below. Direction assignment is not reproducible until this is fixed** |
+| **A15** | No rule separates *the mechanism forbids this* from *the mechanism does not care* | Method | **Decides which of the two leaders is first. Worth +4.1 to H012, the unclustered leader, and nothing to H014** |
 | **A12** | The 84 blind predictions still need blind directions | Method | **Blocks A5 from being loaded. Without it a blind specification is scored by a contaminated scorer** |
 | **A13** | The A3a prompt leaks which hypotheses lead | Method | **Blocks the remaining blind runs. Makes 52 % an optimistic figure and the prompt unusable as written** |
 | **B1** | Rope wear and rotational wear never observed | Evidence | Decides four refutations |
@@ -64,7 +67,10 @@ in their own sections and not listed here.
 
 ### Blocking — nothing else should be done first
 
-All three were found by the blind protocols themselves, and all three were found by the runners rather than by this project. None needs a laboratory, a specimen or a collaborator.
+Three of the four were found by the blind protocols, and by the runners rather
+than by this project; the fourth was found by a reader's objection. **None needs
+a laboratory, a specimen or a collaborator**, and between them they decide which
+hypothesis is reported first.
 
 ### A11. Half the variables do not state which pole is positive — NEW
 
@@ -142,6 +148,93 @@ which has read the first H012 result.
 
 **Cost.** An hour to fix, three sessions to run. Must precede the remaining A3
 work.
+
+### A15. Indifference is being scored as prediction — NEW
+
+**The defect.** The prediction scale defines `0` as *"the mechanism is genuinely
+indifferent"* and `-` as *"unexpected"*. **Nothing states where one ends and the
+other begins**, and the matrix does not draw the line consistently.
+
+`EV039` standardisation is the clearest case. Five hypotheses make what is
+recognisably the same claim, and two of them are paid for it:
+
+| | Prediction | Rationale |
+| - | ---------- | --------- |
+| H012 Cord-working frame | `-` | "A personal craft tool **need not** conform to any standard" |
+| H013 Rope-laying top | `-` | "A personal craft tool **need not** conform to any standard" |
+| H003 Ritual object | `0` | "Ritual objects vary widely; standardisation **is not expected**" |
+| H004 Candlestick | `0` | "Candle holders **are not required** to be standardised" |
+| H008 Shrine component | `0` | "Shrine components **are not required** to be standardised" |
+
+The corpus records `absent`, so the two `-` cells earn **+1.80** each and the
+three `0` cells earn nothing. The distinction is drawn on the wording of the
+rationale, not on any rule.
+
+**There is a real distinction underneath, and it is not the one being drawn.**
+A mechanism can *forbid* a feature or merely *not require* it, and only the
+first is a prediction:
+
+- `H012 / EV017` — *"nothing passes through the bore under load; the worked tube
+  hangs free"*. The mechanism **forbids** internal wear. `-` is right, and the
+  cell is doing exactly what the method is for.
+- `H012 / EV039` — *"a personal craft tool need not conform to any standard"*.
+  The mechanism **permits** variation. It also permits uniformity. Nothing is
+  forbidden, and `0` is arguably right.
+
+Both are written as "not expected", and both are scored `-`.
+
+**The scope.** Across the 32 scored variables, **13 cells are scored `-` on
+indifference language and 41 cells are scored `0` on language of the same kind**.
+The weighted magnitude riding on the 13 is 20.6 points. The net effect:
+
+| Hypothesis | Net from these cells |
+| ---------- | -------------------- |
+| **H012** | **+4.05** |
+| H010 | +1.80 |
+| H013 | +1.80 |
+| H001 | +1.50 |
+| H006 | +1.12 |
+| H002 | +0.38 |
+| H004 | +0.23 |
+| **H014** | **0.00** |
+
+Not all 13 are wrong — several, like `H012 / EV017`, are genuine
+mechanism-forbids predictions. But **the largest beneficiary is the unclustered
+leader, and the hypothesis it leads gains nothing**, so the defect points the
+same way as the margin it decides.
+
+**What it costs.** Repairing `EV039` either way shrinks H012's unclustered lead
+over H014:
+
+| | H012 | H014 | H003 | H008 |
+| - | ---- | ---- | ---- | ---- |
+| As recorded | **+24.0** | +21.0 | +12.2 | +11.4 |
+| H012 and H013 set to `0` | **+22.2** | +21.0 | +12.2 | +11.4 |
+| H003, H004 and H008 set to `-` | **+24.0** | +21.0 | +14.0 | +13.2 |
+
+**Clustered, nothing moves at all.** `EV039` sits in the `corpus_size_range`
+cluster and is not its strongest cell, so it contributes nothing once the
+published size range stops being counted three times. The basis this project
+already treats as primary is immune, which is a third independent argument for
+preferring it.
+
+**It also undermines the commitment metric.** A hypothesis that predicts *no
+pattern* is rewarded when no pattern is found — but absence of pattern is the
+default state of a hand-made object. That is a cheap point to earn, and the
+staked-points figure counts it as though it had been risked.
+
+**Fix.** State the rule: `-` requires that the mechanism make the feature
+*less likely than it would otherwise be*; permission is `0`. Then re-read all
+13 cells against it, and record the reasoning for each as is done for
+directions. **This is a judgement, and which repair is correct is not obvious**
+— it should be made explicitly and visibly, not by silently re-scoring.
+
+**Cost.** Half a day. Belongs with A11: both are defects in what the scale
+*means* rather than in the evidence.
+
+**Found by** a reader objecting that rope-making would not have needed
+standardised tools in this period. The objection is correct, the matrix already
+agreed with it — and checking why exposed this.
 
 ### Outstanding
 
@@ -606,8 +699,9 @@ identified.
 
 ## Sequencing
 
-**First, and blocking.** A11 variable polarity, A13 the leaked prompt, then A12
-blind directions. None needs a laboratory, a specimen or a collaborator. Until
+**First, and blocking.** A11 variable polarity and A15 the prediction/indifference
+boundary — both are defects in what the scale means and should be fixed together
+— then A13 the leaked prompt, then A12 blind directions. None needs a laboratory, a specimen or a collaborator. Until
 A11 is done, no direction assignment in this project is reproducible; until A13
 is done, no further blind run is worth commissioning; until A12 is done, the 84
 predictions already written cannot be scored.
@@ -644,6 +738,7 @@ The analysis is hardened when:
 | 2 | The ranking is reported with its stability across weighting schemes, not under one | **Met.** 45 combinations swept; results now reported in bands |
 | 3 | At least one prediction matrix has been specified blind and the disagreement rate reported | **Met once, and must be repeated.** The prompt leaked (A13) |
 | 4 | Every variable states which pole is positive | **Not met.** A11 |
+| 4b | The scale states where indifference ends and prediction begins | **Not met.** A15 |
 | 5 | No scored variable lacks a source | **Not met.** Three remain (A4) |
 | 6 | Every corpus observation states whether its basis is examination or absence of report | **Not met.** A6 |
 | 7 | Rope wear, rotational wear, residues and aperture distinguishability measured on at least one specimen | **Not met.** Part B |
@@ -661,6 +756,7 @@ worth trusting when it is.
 
 | Version | Date | Description |
 | ------- | ---- | ----------- |
+| 1.6.0 | 2026-08-09 | Added A15: indifference scored as prediction. Worth +4.1 to H012 and nothing to H014, so it bears directly on which of the tied pair is reported first. Inert under clustering. |
 | 1.5.0 | 2026-08-09 | Priorities reordered: A11, A12 and A13 now block everything else. Added A13 (the leaked prompt) and A14 (hand-maintained figures). A1 table replaced with the implemented clustered results. Sequencing, publication gates and definition of done rewritten against actual status. |
 | 1.4.0 | 2026-08-09 | All three blind protocols run and results recorded. Added A11 (variable polarity) and A12 (blind directions), both discovered by the exercise and both blocking A5 from being loaded. |
 | 1.3.0 | 2026-08-09 | Wrote the three blind-protocol prompts for A3 and A5, each self-contained. |

@@ -1,7 +1,7 @@
 ---
 Document ID: RDORP-012
 Title: Results Summary
-Version: 1.5.0
+Version: 1.6.0
 Status: Draft
 Project: Roman Dodecahedron Open Research Project (RDORP)
 License: CC BY 4.0
@@ -957,31 +957,40 @@ Whatever the explanation, it has to account for that silence.
    Microscopic analysis has never been performed, and rope wear and rotational
    wear are scored from the absence of any report rather than from examination
    (2.7).
-4a. **42 % of observations come from one source**, and seven scored variables
-   have no second voice — three of them no source at all (2.7).
-5. **Residues are unmeasured.** The only record in the corpus is described by its
+5. **40 % of all 224 observations come from one source**, and seven scored
+   variables have no second voice — three of them no source at all (2.7).
+6. **Residues are unmeasured.** The only record in the corpus is described by its
    own source as possibly unreliable.
-6. **Directions are judgements, and they are now known to be unreliable.** An
+7. **Directions are judgements, and they are now known to be unreliable.** An
    independent rater, blind to the hypotheses and scores, agreed with the
    recorded direction on **13 of 28 observations (46 %)** and with the
    confidence grade on 15 of 28; both agreed on only 7. Four ratings were
    outright polarity reversals.
-7. **The predictions depend on who wrote them.** An independent specification
+8. **The predictions depend on who wrote them.** An independent specification
    of H012's full matrix, blind to the evidence, agreed on **22 of 42 cells
    (52 %)** and scored the hypothesis **six points lower**. The loss falls on
    EV017, EV003 and EV019 — three variables where the recorded matrix predicts
    the absence that the corpus shows and the blind specifier predicted its
    presence. See RDORP-013 item A3.
-8. **Roughly half the variables do not state which pole is positive**, which
+9. **Roughly half the variables do not state which pole is positive**, which
    makes some of the disagreement above spurious and direction assignment
    irreproducible until it is fixed (RDORP-013 item A11).
-9. **Six hypotheses are contaminated** (5.2).
-10. **Eight variables carry corpus evidence that no hypothesis is specific enough
+10. **The scale does not say where indifference ends and prediction begins.**
+   `0` means the mechanism does not care and `-` means the feature is
+   unexpected, but no rule separates them, and the matrix does not draw the
+   line consistently. Thirteen cells on scored variables are `-` on the strength
+   of rationales reading *need not* or *not required*, while forty-one cells
+   saying the same kind of thing are `0`. **The largest beneficiary is H012, at
+   +4.1, and H014 gains nothing** — so this bears directly on which of the
+   tied pair is reported first. It is inert under clustering (RDORP-013 item
+   A15).
+11. **Six hypotheses are contaminated** (5.2).
+12. **Eight variables carry corpus evidence that no hypothesis is specific enough
    to be tested against**, including site type and associated finds — the
    best-quantified evidence in the corpus. These are defects in the prediction
    matrix, not gaps in the evidence, and repairing them requires respecifying
    predictions *without reference to the observations that exposed them*.
-11. **Twelve variables have no corpus evidence at all**, including three rated
+13. **Twelve variables have no corpus evidence at all**, including three rated
    Very High.
 
 ---
@@ -1063,6 +1072,7 @@ project has identified.
 
 | Version | Date | Description |
 | ------- | ---- | ----------- |
+| 1.6.0 | 2026-08-09 | Removed a superseded projection table from 2.7; recorded the indifference-scored-as-prediction defect in the limits (RDORP-013 A15); corrected the single-source share to 40 % and renumbered the limits list. |
 | 1.5.0 | 2026-08-09 | Reworked: findings restructured to lead with the measured reliability of the method; results reported in bands rather than as a rank order; corpus figures brought current; clustered scoring made the primary basis. |
 | 1.4.0 | 2026-08-09 | Recorded the blind-protocol results: 52 % cell agreement on predictions, 46 % on directions. The limits chapter now carries the reliability figures. |
 | 1.3.0 | 2026-08-09 | Implemented evidence clustering (A1) and the weighting sweep (A2). Clustering changes the leader to H014 and the two leaders are reported as a tied pair. |
