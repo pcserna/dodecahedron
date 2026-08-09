@@ -1,7 +1,7 @@
 ---
 Document ID: RDORP-013
 Title: Hardening Plan and Next Steps
-Version: 1.8.0
+Version: 1.9.0
 Status: Draft
 Project: Roman Dodecahedron Open Research Project (RDORP)
 License: CC BY 4.0
@@ -53,6 +53,7 @@ cells that turn on it are worth +4.1 to the leader and nothing to its rival.
 | **A4** | Three scored variables have no source | Method | Removes a rule violation; moves H001 by −2.6 |
 | **B3** | Residue analysis | Evidence | Decides the two leading hypotheses |
 | **C1** | Guggenberger 1999 read directly | Evidence | Underwrites most single-source variables at a stroke |
+| **C2** | The three easternmost specimens have one observation each | Evidence | **They are the only thing keeping the eastern distribution visible, and the skew claim rests on them** |
 | **A14** | Reported figures are maintained by hand | Method | Every rework has found stale numbers; generating them would end a recurring class of error |
 | A6 | Argument from silence has no rule | Method | Separates *examined and absent* from *never looked* |
 | A7 | The screening threshold is crude | Method | The rule is known to produce false negatives |
@@ -64,7 +65,7 @@ cells that turn on it are worth +4.1 to the leader and nothing to its rival.
 | ~~A10~~ | Predictions do not see accumulating evidence | Method | **DONE.** Six of eleven open predictions are now testable |
 
 Items below the threshold of moving the answer — A8 priors, B4 thermal
-analysis, B5 experimental casting, and C2 to C4 corpus expansion — are set out
+analysis, B5 experimental casting, and C3 to C4 corpus expansion — are set out
 in their own sections and not listed here.
 
 ---
@@ -769,11 +770,51 @@ tallies — almost all of which currently reach this project at one remove throu
 
 Nouwen 1993 and Greiner 1996 follow for the same reasons.
 
-### C2. Continental specimens
+### C2. Continental specimens — three named targets
 
 The recorded corpus is 50 % British against a known corpus about 20 % British.
 Every additional continental specimen with measurements *and* context improves
 representativeness directly.
+
+**The skew is worse than the head-count suggests.** British specimens average
+6.3 observations each; continental ones average 4.8, and the three that mark
+the eastern edge of the distribution average **one**.
+
+| Specimen | Country | Gugg. | Conf | Obs | What exists |
+| -------- | ------- | ----- | ---- | --- | ----------- |
+| `RD-0032` Brigetio | Hungary | 92, type 1a | C | **1** | Findspot only, at one remove via `PUB-0003`, 32 |
+| `RD-0033` Deonica | Serbia | 130 | C | **1** | Findspot only, same route |
+| `RD-0036` Carnuntum | Austria | — | D | **1** | Six opposed-hole pairs at **two** removes; no catalogue number |
+
+These three are the thinnest records in the corpus, and they are load-bearing
+in one specific way: **they are the only thing keeping the eastern half of the
+distribution visible.** The claim that the recorded corpus is unrepresentative
+rests on them, and each is a single line in a 2025 summary of an unpublished
+catalogue.
+
+**`RD-0032` Brigetio is the most tractable of the three.** Brigetio (Sőny, near
+Komárom) is a legionary fortress and civil town with a long excavation history
+and a substantial Hungarian literature, so this is a **documentation gap, not
+an evidence gap**: the object was found, reported and presumably accessioned,
+and none of that has reached this project.
+
+What is needed, in order of value:
+
+1. **The original find report.** Guggenberger's catalogue number 92 is the
+   route to the citation, which makes this dependent on C1.
+2. **An inventory number and a holding institution.** The plausible candidates
+   are the Hungarian National Museum and the Kuny Domokos Múzeum, Tata.
+3. **Measurements.** Any diameter, mass or wall thickness would move it from
+   `admit_context` alone to the geometry variables. At present
+   `admit_mass = 0` and `admit_geometry = 0`, and removing the specimen
+   entirely would change no score.
+4. **A context category.** Recorded as `Unknown`; a legionary or civil-town
+   attribution would feed `EV025`, which A5 has already respecified blind.
+
+The same three questions apply to Deonica and Carnuntum. Carnuntum is the
+weakest of the three — confidence D, two removes, no catalogue number — and it
+is also the only one already carrying measurements, so a direct museum enquiry
+would improve it more than a library search would.
 
 ### C3. Stratified contexts
 
@@ -899,6 +940,7 @@ worth trusting when it is.
 
 | Version | Date | Description |
 | ------- | ---- | ----------- |
+| 1.9.0 | 2026-08-09 | Named three acquisition targets under C2: Brigetio, Deonica and Carnuntum, the three easternmost records, each carrying a single observation. Brigetio identified as the most tractable. |
 | 1.8.0 | 2026-08-09 | Project-wide sanity check. Regenerated the A1 table after the A16 fix. Added A17 (ragged CSV rows, found truncating a hypothesis name) and A18 (four scored variables carry no predictions at all). |
 | 1.7.0 | 2026-08-09 | Added A16 and corrected A1 and A2. The cluster tie-break depended on dictionary iteration order and had reversed the reported leader; clustering does not change the leader. Regression test added. |
 | 1.6.0 | 2026-08-09 | Added A15: indifference scored as prediction. Worth +4.1 to H012 and nothing to H014, so it bears directly on which of the tied pair is reported first. Inert under clustering. |
