@@ -1,0 +1,18 @@
+# The pipeline writes LF unconditionally (csv.writer with lineterminator="\n",
+# and Python's default text mode elsewhere). Without this file, Git checks the
+# generated CSVs out as CRLF on Windows, the next `python run_pipeline.py`
+# rewrites them as LF, and the working tree goes dirty with a 34-file diff that
+# contains no actual change. Forcing LF in the working tree keeps a fresh clone
+# byte-identical to a freshly generated one.
+* text=auto eol=lf
+
+# Binary: never touch these. The SQLite database in particular would be
+# corrupted by end-of-line conversion.
+*.sqlite binary
+*.pdf     binary
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.tiff    binary
+*.xlsx    binary
+*.docx    binary
