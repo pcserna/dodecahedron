@@ -1,7 +1,7 @@
 ---
 Document ID: RDORP-013
 Title: Hardening Plan and Next Steps
-Version: 1.2.0
+Version: 1.3.0
 Status: Draft
 Project: Roman Dodecahedron Open Research Project (RDORP)
 License: CC BY 4.0
@@ -141,6 +141,19 @@ were specified after the evidence was known.
 **Cost.** Needs one collaborator and perhaps two days of their time. **This is
 the highest-value thing an outside contributor could do.**
 
+**Prompts are written and ready to run**, each self-contained so the runner
+never needs to touch the repository:
+
+| Prompt | Task | Blindfold |
+| ------ | ---- | --------- |
+| `docs/A3a_BLIND_MATRIX_PROMPT.md` | Specify all 48 predictions for one hypothesis | Blind to the observations |
+| `docs/A3b_DIRECTION_RATING_PROMPT.md` | Rate the direction and confidence of all 28 scored corpus observations | Blind to the hypotheses and scores |
+| `docs/A5_BLIND_SPECIFICATION_PROMPT.md` | Respecify six vague variables across all 14 hypotheses | Blind to the observations |
+
+Note that A3b's blindfold points the **opposite way** to the other two: the
+rater sees the evidence and must not see the hypotheses. Running A3a and A3b
+in the same session would defeat both.
+
 ### A4. Three scored variables have no source
 
 `EV034` rope compatibility, `EV035` structural stability and `EV036` load
@@ -168,7 +181,8 @@ site type, which associated finds, which period. **The respecification must be
 written before the observation is consulted**, or the matrix is being tuned to
 the data. Ideally by someone who has not read §3 of RDORP-012.
 
-**Cost.** A day, plus the discipline to do it in the right order.
+**Cost.** A day, plus the discipline to do it in the right order. **Prompt
+ready at `docs/A5_BLIND_SPECIFICATION_PROMPT.md`.**
 
 ### A6. Argument from silence has no rule
 
@@ -431,6 +445,7 @@ worth trusting when it is.
 
 | Version | Date | Description |
 | ------- | ---- | ----------- |
+| 1.3.0 | 2026-08-09 | Wrote the three blind-protocol prompts for A3 and A5, each self-contained. |
 | 1.2.0 | 2026-08-09 | A1 and A2 implemented. A1 changed the leader; A2 showed the weights decide nothing. |
 | 1.1.0 | 2026-08-08 | Added A9 layer consistency and A10 prediction watch, both implemented in validate.py. |
 | 1.0.0 | 2026-08-08 | Initial hardening plan. |
