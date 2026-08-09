@@ -393,6 +393,34 @@ class Validator:
                      f"{row['variable']} ({row['discriminatory_power']}) has no "
                      "corpus-level observation and is therefore unscored")
 
+    def check_unwritten_predictions(self) -> None:
+        """A18. A scored variable no hypothesis has a prediction for.
+
+        ``score_all`` reads ``hpm.get((h, ev_id), "0")``, so a cell nobody ever
+        wrote is scored as deliberate indifference. On a variable that carries
+        corpus evidence this is invisible: the variable is counted among the
+        scored ones and contributes nothing to anybody. EV044 was found this
+        way, sitting inside the published '32 of 48 scored' figure while every
+        one of its fourteen cells was zero by default rather than by judgement.
+        """
+        scored = [r["ev_id"] for r in self.conn.execute(
+            "SELECT ev_id FROM corpus_observations WHERE discriminating = 1")]
+        n_hyp = self.conn.execute("SELECT COUNT(*) FROM hypotheses").fetchone()[0]
+        for ev_id in scored:
+            written = self.conn.execute(
+                "SELECT COUNT(*) FROM hpm WHERE ev_id = ?", (ev_id,)).fetchone()[0]
+            if written == 0:
+                self.add("WARNING", "unwritten-prediction", ev_id,
+                         f"carries scored corpus evidence but no hypothesis has a "
+                         f"prediction for it. All {n_hyp} cells default to '0', so "
+                         f"it is counted among the scored variables and "
+                         f"discriminates nothing")
+            elif written < n_hyp:
+                self.add("NOTE", "unwritten-prediction", ev_id,
+                         f"{n_hyp - written} of {n_hyp} hypotheses have no "
+                         f"prediction here; those cells default to '0' and are "
+                         f"indistinguishable from a deliberate abstention")
+
     # -- driver -------------------------------------------------------------
 
     def run(self) -> list[Finding]:
@@ -412,6 +440,7 @@ class Validator:
             self.check_interpretations_not_scored,
             self.check_corpus_coverage,
             self.check_evidence_gaps,
+            self.check_unwritten_predictions,
         ):
             check()
         return self.findings

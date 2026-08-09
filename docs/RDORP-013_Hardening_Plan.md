@@ -1,7 +1,7 @@
 ---
 Document ID: RDORP-013
 Title: Hardening Plan and Next Steps
-Version: 1.7.0
+Version: 1.8.0
 Status: Draft
 Project: Roman Dodecahedron Open Research Project (RDORP)
 License: CC BY 4.0
@@ -25,8 +25,9 @@ of the top six require no laboratory and no new specimens.
 
 **Seven items are now closed and one of them was reported wrongly.**
 Clustering correlated evidence (A1) does *not* move the leader, as this
-document claimed until A16 was found; what it does is return four to eight
-points to the hypotheses the project had refuted. The weight sweep (A2) showed
+document claimed until A16 was found; what it does is return 8.4 points to
+the rope-laying top, 4.7 to the textile tool and 4.2 to the parasol crown, and
+take 6.1 from the rangefinder. The weight sweep (A2) showed
 the weights decide nothing. The blind protocols (A3, A5) were run and **measured**
 the central validity threat rather than removing it. What they measured is bad
 enough that the items they generated — A11, A12 and A13 — now sit above
@@ -45,6 +46,8 @@ cells that turn on it are worth +4.1 to the leader and nothing to its rival.
 | **A15** | No rule separates *the mechanism forbids this* from *the mechanism does not care* | Method | **Worth +4.1 to H012 and nothing to H014, so it inflates the margin between the leading pair** |
 | **A12** | The 84 blind predictions still need blind directions | Method | **Blocks A5 from being loaded. Without it a blind specification is scored by a contaminated scorer** |
 | **A13** | The A3a prompt leaks which hypotheses lead | Method | **Blocks the remaining blind runs. Makes 52 % an optimistic figure and the prompt unusable as written** |
+| **A18** | Four scored variables carry no predictions at all | Method | **One of them, EV044, is counted among the 32 scored variables and contributes zero to all fourteen** |
+| ~~A17~~ | A ragged CSV row was silently truncated | Data | **FIXED. An unquoted comma cut a hypothesis name in half, and it reached the database, the exports and two documents** |
 | **B1** | Rope wear and rotational wear never observed | Evidence | Decides four refutations |
 | **B2** | Aperture and ring survey | Evidence | Cheapest decisive test in the project |
 | **A4** | Three scored variables have no source | Method | Removes a rule violation; moves H001 by −2.6 |
@@ -53,7 +56,7 @@ cells that turn on it are worth +4.1 to the leader and nothing to its rival.
 | **A14** | Reported figures are maintained by hand | Method | Every rework has found stale numbers; generating them would end a recurring class of error |
 | A6 | Argument from silence has no rule | Method | Separates *examined and absent* from *never looked* |
 | A7 | The screening threshold is crude | Method | The rule is known to produce false negatives |
-| ~~A1~~ | Correlated evidence is scored as independent | Method | **DONE, and its headline was wrong.** It does not change the leader; it returns 4 to 8 points to the refuted hypotheses |
+| ~~A1~~ | Correlated evidence is scored as independent | Method | **DONE, and its headline was wrong.** It does not change the leader; it moves five hypotheses by 4 to 8 points |
 | ~~A2~~ | No sensitivity analysis over the weighting scheme | Method | **DONE. 45 combinations; H012 leads in all 45, clustered and unclustered** |
 | ~~A3~~ | Prediction matrices written and scored by the same party | Method | **RUN, on one hypothesis of three. 52 % cell agreement, 46 % direction agreement. The threat is real and measured** |
 | ~~A5~~ | Eight variables carry evidence no hypothesis can be tested against | Method | **SPECIFIED. 84 blind predictions written, 51 changed. Cannot be scored until A11 and A12 are done** |
@@ -243,6 +246,40 @@ agreed with it — and checking why exposed this.
 
 Ordered by how much each would move the reported answer.
 
+### A18. Four scored variables carry no predictions at all — NEW
+
+**The defect.** `EV044` interior finish, `EV046` marked axis, `EV047`
+authenticity and `EV048` within-type standardisation have **no row in `hpm`
+for any of the fourteen hypotheses**. Fifty-six cells are missing, and
+`score_all` fills the gap with `hpm.get((h, ev_id), "0")` — a silent default
+that makes *never specified* indistinguishable from *deliberately indifferent*.
+
+Three of the four are flagged non-discriminating, so they were never going to
+score. **`EV044` is not.** It carries a corpus observation with direction
+`absent` at High power, it is counted among the **32 scored variables** in every
+report this project publishes, and it contributes **exactly zero to all
+fourteen hypotheses** because nobody ever wrote what any of them predicts.
+
+The headline "32 of 48 variables scored" is therefore one variable optimistic.
+
+**It also corrupts the commitment metric.** `commitment()` reads the same
+default, so an unspecified cell is counted as a deliberate abstention. Every
+*staked* figure in RDORP-012 treats four unwritten cells as considered
+judgements of indifference.
+
+**Fix.** Two parts, in order.
+
+1. **Make the default explicit.** `score_all` and `commitment` should
+   distinguish a missing cell from a written `0`. A missing cell on a scored
+   variable is a **gap in the matrix**, and it should be reported as one rather
+   than absorbed.
+2. **Write the predictions.** `EV044` deserves them: an interior that is
+   unfinished and unmarked is a real constraint, and it bears directly on the
+   readings in which something is measured or read off the inside. This must be
+   done blind of the observation, or it is A5's problem all over again.
+
+**Cost.** An hour for the reporting change; the specification belongs with A12.
+
 ### A4. Three scored variables have no source
 
 `EV034` rope compatibility, `EV035` structural stability and `EV036` load
@@ -320,6 +357,32 @@ should be formalised as a prior rather than reported separately.
 
 Recorded in full because two of them changed the result, and because a method document that deletes its own history cannot be audited.
 
+### A17. A ragged CSV row was silently truncated — FIXED
+
+**The defect.** `database/hypotheses.csv` held
+
+```
+H013,Rope-laying top (rotated, core through one aperture)
+```
+
+The header has two columns. **The unquoted comma made three fields**, and
+`csv.DictReader` puts the surplus under the key `None` without complaint. The
+name reaching the database was **"Rope-laying top (rotated"** — cut in half,
+mid-parenthesis.
+
+It had propagated to `hypotheses` in the database, to every CSV and JSON
+export, and into the generated tables of both RDORP-012 and RDORP-013. Nothing
+objected, because nothing was checking.
+
+**Fix, implemented.** `read_csv` now raises on any row that does not match its
+header, in either direction — surplus fields or missing ones — naming the file,
+the line and the dropped text. The CSV field is quoted. Two other
+hand-maintained CSVs were checked and are clean.
+
+**Why it matters beyond one name.** Three CSVs in this project are edited by
+hand and read without validation. A truncated name is visible; a truncated
+*definition* or a shifted column would not have been.
+
 ### A16. The cluster tie-break depended on iteration order — FIXED
 
 **The defect.** A cluster contributes "its single strongest cell", implemented
@@ -395,14 +458,19 @@ wear and `EV020` rotational wear **all cite the same page of the same source**
 | Hypothesis | Unclustered | Clustered | Change |
 | ---------- | ----------- | --------- | ------ |
 | H013 Rope-laying top | +8.7 | **+17.1** | **+8.4** |
-| H005 Textile tool | −0.2 | **+8.2** | **+8.3** |
-| H010 Parasol crown | −9.2 | −5.0 | +4.2 |
-| H014 Wax former | +21.0 | **+24.1** | +3.0 |
+| H005 Textile | −0.2 | **+4.6** | **+4.7** |
+| H010 Parasol | −9.2 | **−5.0** | **+4.2** |
 | H009 Tent apex | −34.0 | −31.4 | +2.6 |
 | H001 Structural connector | +2.3 | +4.1 | +1.7 |
-| H012 Cord frame | +24.0 | +23.5 | −0.6 |
+| H006 Astronomical instrument | −0.5 | −1.0 | −0.5 |
+| H014 Wax bulla | +21.0 | +20.5 | −0.6 |
+| H012 Spool-knitting | +24.0 | +23.5 | −0.6 |
+| H004 Candlestick | −0.6 | −1.4 | −0.8 |
+| H007 Military equipment | −1.5 | −2.4 | −0.9 |
+| H011 Archery targeting | −8.8 | −10.1 | −1.3 |
+| H008 Portable shrine component | +11.4 | +9.6 | −1.8 |
 | H003 Ritual object | +12.2 | +10.3 | −1.8 |
-| H002 Rangefinder | +3.5 | −0.4 | −3.8 |
+| H002 Rangefinder | +3.5 | **−2.6** | **−6.1** |
 
 Five clusters were declared in the end, not one: wear, corpus size range,
 aperture metrics, casting, and the derived engineering assessments. **Every
@@ -438,9 +506,11 @@ undeclared tie-break — see A16 — and does not survive a deterministic rule.
 Clustered, **H012 leads by +3.0**, and leads in all 45 weighting combinations.
 
 What clustering does do is unchanged and is the finding worth keeping: **H013
-rises 8.4 and H005 8.3**, and every hypothesis moving more than four points
-moves upward. Deduplication does not pick a different winner; **it returns
-points to the hypotheses this project had refuted**.
+rises 8.4, H005 4.7 and H010 4.2**, all three previously refuted or nearly so,
+while **H002 falls 6.1** because its support leaned on the four derived
+engineering variables that now share one budget. Deduplication does not pick a
+different winner; **it redistributes points away from evidence this project
+counted more than once**.
 
 ### A2. No sensitivity analysis over the weighting scheme — DONE
 
@@ -782,8 +852,8 @@ variable definitions, and A3a for H012, H014 and H003 against the corrected
 prompt. The reliability figures currently in this document should be treated as
 provisional until that is done.
 
-**Then, no new data required.** A4 unsourced variables, A6 silence rule, A7
-screening band, A14 generated figures.
+**Then, no new data required.** A18 unwritten predictions, A4 unsourced
+variables, A6 silence rule, A7 screening band, A14 generated figures.
 
 **Then, one museum visit.** B1, B2 and B3 on a single well-preserved specimen,
 `RD-0005` for preference.
@@ -816,6 +886,8 @@ The analysis is hardened when:
 | 8 | Guggenberger 1999 has been read | **Not met.** C1 |
 | 9 | Every pre-registered prediction has been resolved or is still genuinely open | **Not met.** Six of eleven are now testable and unresolved (A10) |
 | 10 | Every reported figure is generated or checked against the database | **Not met.** A14 |
+| 11 | No scored variable relies on an unwritten prediction | **Not met.** A18 |
+| 12 | Hand-maintained input files are validated on read | **Met.** A17 |
 
 
 None of these requires the answer to be found. They require the analysis to be
@@ -827,6 +899,7 @@ worth trusting when it is.
 
 | Version | Date | Description |
 | ------- | ---- | ----------- |
+| 1.8.0 | 2026-08-09 | Project-wide sanity check. Regenerated the A1 table after the A16 fix. Added A17 (ragged CSV rows, found truncating a hypothesis name) and A18 (four scored variables carry no predictions at all). |
 | 1.7.0 | 2026-08-09 | Added A16 and corrected A1 and A2. The cluster tie-break depended on dictionary iteration order and had reversed the reported leader; clustering does not change the leader. Regression test added. |
 | 1.6.0 | 2026-08-09 | Added A15: indifference scored as prediction. Worth +4.1 to H012 and nothing to H014, so it bears directly on which of the tied pair is reported first. Inert under clustering. |
 | 1.5.0 | 2026-08-09 | Priorities reordered: A11, A12 and A13 now block everything else. Added A13 (the leaked prompt) and A14 (hand-maintained figures). A1 table replaced with the implemented clustered results. Sequencing, publication gates and definition of done rewritten against actual status. |

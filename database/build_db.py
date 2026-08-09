@@ -14,9 +14,29 @@ DB_PATH = os.path.join(DB_DIR, "rdorp.sqlite")
 
 
 def read_csv(filename):
+    """Read a hand-maintained CSV, refusing to accept a ragged row.
+
+    ``csv.DictReader`` is silent about rows that do not match the header: extra
+    fields go into ``row[None]`` and missing ones become ``None``. An unquoted
+    comma in `hypotheses.csv` truncated H013's name at the comma and the wrong
+    name reached the database, the exports and two documents without anything
+    objecting. Ragged rows are now a hard failure at build time.
+    """
     path = os.path.join(DB_DIR, filename)
     with open(path, newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
+        reader = csv.DictReader(f)
+        rows = list(reader)
+    for n, row in enumerate(rows, start=2):
+        if None in row:
+            raise ValueError(
+                f"{filename} line {n}: more fields than the header has columns "
+                f"- {row[None]!r} was dropped. Quote any field containing a comma.")
+        short = [k for k, v in row.items() if v is None]
+        if short:
+            raise ValueError(
+                f"{filename} line {n}: fewer fields than the header has columns; "
+                f"{short} are missing.")
+    return rows
 
 
 SCHEMA = """

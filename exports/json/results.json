@@ -62,7 +62,7 @@
     "worst_case": -8.5875,
     "best_case": 25.9125,
     "robust": 0,
-    "notes": "Rope-laying top (rotated; predictions_made=23/32 (strong=8); achieved=+8.7 of a possible 53.3; robust means this hypothesis still leads when every unscored variable resolves against it and in favour of its strongest rival"
+    "notes": "Rope-laying top (rotated, core through one aperture); predictions_made=23/32 (strong=8); achieved=+8.7 of a possible 53.3; robust means this hypothesis still leads when every unscored variable resolves against it and in favour of its strongest rival"
   },
   {
     "hypothesis_id": "H002",

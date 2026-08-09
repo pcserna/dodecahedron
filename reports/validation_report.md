@@ -12,7 +12,7 @@ Generated file. Do not edit by hand; change the master database and re-run the p
 ## Summary
 
 - **Errors: 0** — records violating a stated project rule
-- **Warnings: 21** — admissible but weakening the evidence base
+- **Warnings: 22** — admissible but weakening the evidence base
 - **Notes: 71** — recorded for transparency
 
 Validation never modifies data. Every finding below is reported for a human decision, as required by MASTER_PROMPT.
@@ -21,7 +21,7 @@ Validation never modifies data. Every finding below is reported for a human deci
 
 None.
 
-## Warnings (21)
+## Warnings (22)
 
 | Rule | Entity | Detail |
 | ---- | ------ | ------ |
@@ -46,6 +46,7 @@ None.
 | `source-missing` | corpus observation EV034 | no source_id (evidence_class=Derived). Derived assessments are this project's own reasoning and have no external source by definition, but they are discounted and excluded from the observed-only scenario |
 | `source-missing` | corpus observation EV035 | no source_id (evidence_class=Derived). Derived assessments are this project's own reasoning and have no external source by definition, but they are discounted and excluded from the observed-only scenario |
 | `source-missing` | corpus observation EV036 | no source_id (evidence_class=Derived). Derived assessments are this project's own reasoning and have no external source by definition, but they are discounted and excluded from the observed-only scenario |
+| `unwritten-prediction` | EV044 | carries scored corpus evidence but no hypothesis has a prediction for it. All 14 cells default to '0', so it is counted among the scored variables and discriminates nothing |
 
 ## Notes (71)
 

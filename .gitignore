@@ -30,3 +30,4 @@ exports/sqlite/
 # Source extracts saved for reading. Museum and database records; not redistributed.
 docs/*.txt
 docs/sources/*.*
+database/*.db

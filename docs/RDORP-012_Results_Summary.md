@@ -1,7 +1,7 @@
 ---
 Document ID: RDORP-012
 Title: Results Summary
-Version: 1.7.0
+Version: 1.8.0
 Status: Draft
 Project: Roman Dodecahedron Open Research Project (RDORP)
 License: CC BY 4.0
@@ -296,26 +296,33 @@ scored four times, three of them at Very High power.
 
 | Hypothesis | Unclustered | Clustered | Shift |
 | ---------- | ----------- | --------- | ----- |
-| **H012 Cord-working frame** | +24.0 (1st) | **+23.5 (1st)** | −0.6 |
-| **H014 Wax bulla former** | +21.0 (2nd) | **+20.5 (2nd)** | −0.6 |
-| H013 Rope-laying top | +8.7 (5th) | **+17.1 (3rd)** | +8.4 |
-| H005 Textile tool | −0.2 (8th) | **+8.2 (6th)** | +8.3 |
-| H002 Rangefinder | +3.5 (6th) | −0.4 (9th) | −3.8 |
-| H010 Parasol crown | −9.2 (13th) | −5.0 (12th) | +4.2 |
-| H009 Tent apex | −34.0 (14th) | −31.4 (14th) | +2.6 |
+| **H012 Spool-knitting** | +24.0 (1) | **+23.5 (1)** | −0.6 |
+| **H014 Wax bulla** | +21.0 (2) | **+20.5 (2)** | −0.6 |
+| H013 Rope-laying top | +8.7 (5) | +17.1 (3) | +8.4 |
+| H005 Textile | −0.2 (8) | +4.6 (6) | +4.7 |
+| H002 Rangefinder | +3.5 (6) | −2.6 (11) | −6.1 |
+| H010 Parasol | −9.2 (13) | −5.0 (12) | +4.2 |
+| H009 Tent apex | −34.0 (14) | −31.4 (14) | +2.6 |
 
 **Five clusters are declared, not one**: wear, corpus size range, aperture
 metrics, casting, and this project's own derived engineering assessments. Each
 is declared on shared evidential basis and recorded with its reasoning, so a
 reader who disagrees can remove one and re-run.
 
-**Where the correction falls is the finding.** Every hypothesis that moves by
-more than four points moves *upward*. Deduplication costs the leaders almost
-nothing — H012 loses 0.6, H014 gains 3.0 — and returns between four and eight
-points to hypotheses the unclustered scoring had refuted. **The refutations
-were inflated by counting one source statement several times; the leaders were
-not.** This is the same asymmetry the source-corroboration audit finds below,
-reached by an independent route.
+**Where the correction falls is the finding.** Deduplication costs the leaders
+almost nothing — each loses 0.6 — and returns **8.4 points to the rope-laying
+top, 4.7 to the textile tool and 4.2 to the parasol crown**, all three of them
+hypotheses the unclustered scoring had refuted or nearly refuted. **The
+refutations were inflated by counting one source statement several times; the
+leaders were not.** This is the same asymmetry the source-corroboration audit
+finds below, reached by an independent route.
+
+**One hypothesis moves the other way, and by more than any of them.** The
+rangefinder falls 6.1 points, from +3.5 to −2.6, because its support came
+partly from the four derived engineering variables that this project wrote
+itself and that now share one budget. That is the correction working as
+intended: the reading most dependent on our own reasoning is the one
+deduplication punishes hardest.
 
 **The tie-break inside the cluster rule was undefined, and it mattered.** A
 cluster contributes its strongest single cell. Where two cells have equal
@@ -579,27 +586,35 @@ less than half the time (1.1). A ranking to one decimal place would be false
 precision. Within a band, no ordering is claimed.
 
 Evidence is given clustered — one observation counted once however many
-variables express it — because that is the more defensible basis. The
-unclustered figure is shown for comparison. **The two now agree at the top**;
-they did not in earlier versions of this document, and the disagreement was a
-defect rather than a finding (2.7).
+variables express it — because that is the more defensible basis, and a tie
+inside a cluster is resolved against the hypothesis (2.7). The unclustered
+figure is shown for comparison. **The two now agree at the top**; they did not
+in earlier versions of this document, and the disagreement was a defect rather
+than a finding.
 
 | Band | Hypothesis | Clustered | Unclustered | Staked | Value |
 | ---- | ---------- | --------- | ----------- | ------ | ----- |
-| **Leading pair** | H012 Spool-knitting / cord-working frame | **+24** | +24 | 36 | −1 |
-| | H014 Wax bulla / seal former | **+21** | +21 | 47 | +2 |
+| **Leading pair** | H012 Spool-knitting / cord-working frame | **+23** | +24 | 36 | −1 |
+|  | H014 Wax bulla / seal former | **+20** | +21 | 47 | +2 |
 | **Consistent but weakly testable** | H003 Ritual object | +10 | +12 | 22 | +6 |
-| | H008 Portable shrine component | +10 | +11 | 23 | +6 |
+|  | H008 Portable shrine component | +10 | +11 | 23 | +6 |
 | **Partly supported** | H013 Rope-laying top | +17 | +9 | 53 | −1 |
-| | H005 Textile / knitting tool | +8 | −0 | 39 | −1 |
+|  | H005 Textile / knitting tool | +5 | −0 | 39 | −1 |
 | **Unsupported** | H001 Structural connector | +4 | +2 | 68 | −1 |
-| | H004 Candlestick / lamp support | +1 | −1 | 28 | −1 |
-| | H002 Rangefinder / measuring instrument | −0 | +4 | 51 | −2 |
-| | H006 Astronomical instrument | −1 | −1 | 43 | −1 |
-| | H007 Military equipment | −2 | −2 | 29 | −1 |
-| **Refuted** | H010 Parasol / umbrella crown | −5 | −9 | 67 | 0 |
-| | H011 Archery targeting / ranging aid | −6 | −9 | 68 | −2 |
+|  | H004 Candlestick / lamp support | −1 | −1 | 28 | −1 |
+|  | H002 Rangefinder / measuring instrument | −3 | +3 | 51 | −2 |
+|  | H006 Astronomical instrument | −1 | −1 | 43 | −1 |
+|  | H007 Military equipment | −2 | −2 | 29 | −1 |
+| **Refuted** | H010 Parasol / umbrella crown | −5 | −9 | 66 | 0 |
+|  | H011 Archery targeting / ranging aid | −10 | −9 | 68 | −2 |
 | **Eliminated** | H009 Tent apex / crown fitting | **−31** | −34 | 78 | −2 |
+
+**The bands are not a rank order, and not ordered by score alone.** H013
+scores above H003 and H008 on clustered evidence but sits in a lower band,
+because it staked 53 points and recovered 17 while they staked 22 and 23 and
+recovered 10. A high score earned by predicting almost nothing is not the same
+result as a middling score earned by predicting a great deal, and collapsing
+the two into one column would hide the difference.
 
 *Staked* is the score a hypothesis would have obtained had every prediction
 been confirmed; it measures how much each risked. *Value* is the usage-value
@@ -1101,6 +1116,7 @@ project has identified.
 
 | Version | Date | Description |
 | ------- | ---- | ----------- |
+| 1.8.0 | 2026-08-09 | Project-wide sanity check. Regenerated the 5.1 and 2.7 tables from the database after the A16 fix; five hypotheses still carried pre-fix clustered scores. Corrected H013's name, truncated in the source CSV. Stated that the bands are not ordered by score alone. |
 | 1.7.0 | 2026-08-09 | Withdrew the finding that clustering changes the leader. It rested on an undeclared tie-break that depended on dictionary iteration order (RDORP-013 A16). H012 leads on every basis except very_high_power. |
 | 1.6.0 | 2026-08-09 | Removed a superseded projection table from 2.7; recorded the indifference-scored-as-prediction defect in the limits (RDORP-013 A15); corrected the single-source share to 40 % and renumbered the limits list. |
 | 1.5.0 | 2026-08-09 | Reworked: findings restructured to lead with the measured reliability of the method; results reported in bands rather than as a rank order; corpus figures brought current; clustered scoring made the primary basis. |

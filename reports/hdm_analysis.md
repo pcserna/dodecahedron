@@ -25,7 +25,7 @@ Weighted score = prediction score x discriminatory power x source confidence x e
 | 2 | H014 | Wax bulla / seal former | +21.0 | +14.0 | 21/32 (strong 7) | 46.8 | 45% |
 | 3 | H003 | Ritual object | +12.2 | +8.5 | 11/32 (strong 2) | 21.8 | 56% |
 | 4 | H008 | Portable shrine component | +11.4 | +8.0 | 12/32 (strong 2) | 23.2 | 49% |
-| 5 | H013 | Rope-laying top (rotated | +8.7 | +9.0 | 23/32 (strong 8) | 53.3 | 16% |
+| 5 | H013 | Rope-laying top (rotated, core through one aperture) | +8.7 | +9.0 | 23/32 (strong 8) | 53.3 | 16% |
 | 6 | H002 | Rangefinder / measuring instrument | +3.5 | +1.5 | 20/32 (strong 8) | 50.6 | 7% |
 | 7 | H001 | Structural connector / modular node | +2.3 | +6.0 | 28/32 (strong 12) | 68.2 | 3% |
 | 8 | H005 | Textile / knitting tool | -0.2 | +2.0 | 18/32 (strong 3) | 39.4 | -0% |
@@ -196,7 +196,7 @@ Counted over the profile requirements only, by sign of the prediction.
 | H001 Structural connector / modular node | 15 | 11 | 2 |
 | H012 Spool-knitting / cord-working frame (knob-based) | 14 | 2 | 12 |
 | H014 Wax bulla / seal former | 13 | 5 | 10 |
-| H013 Rope-laying top (rotated | 13 | 7 | 8 |
+| H013 Rope-laying top (rotated, core through one aperture) | 13 | 7 | 8 |
 | H010 Parasol / umbrella crown fitting | 12 | 11 | 5 |
 | H011 Archery targeting / ranging aid | 11 | 9 | 8 |
 | H002 Rangefinder / measuring instrument | 10 | 9 | 9 |
