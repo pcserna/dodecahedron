@@ -1,7 +1,7 @@
 ---
 Document ID: RDORP-012
 Title: Results Summary
-Version: 1.4.0
+Version: 1.5.0
 Status: Draft
 Project: Roman Dodecahedron Open Research Project (RDORP)
 License: CC BY 4.0
@@ -27,66 +27,90 @@ and does not support. Every figure is reproducible by running
 
 ## 1. Findings
 
-**1.1** Every hypothesis in which the dodecahedron bears load, is used in the
-field, or is issued as standard equipment has been tested and refuted, on the
-predictions it staked most heavily. Seventeen further everyday uses across the
-military, maritime, agricultural, pastoral, commercial, administrative,
-metrological and craft domains were screened; fifteen were eliminated.
+### 1.1 How much of this can be trusted
 
-**1.2** **The two leading hypotheses are not separable, and which of them
-leads is an artefact of a scoring defect that has now been corrected.** When
-correlated variables are deduplicated so that one underlying observation counts
-once rather than four times, **H014 the wax former overtakes H012 the cord
-frame** (+24.1 against +23.5). Across all 45 combinations of weighting scheme
-the clustered leader is H014 in 36 and H012 in 9, with a margin over second
-place of **at most one point** in every case. The weighting scheme itself
-decides nothing: unclustered, the same hypothesis leads under all 45. Report
-the two as a tied pair.
+**The method's reliability has been measured, and it is poor.** Three blind
+protocols were run in separate sessions, each working only from a prompt and
+forbidden the project's own files.
 
-**1.3** **The refutations are not uniformly secure, and the unclustered scores
-overstate them by a known amount.** Two independent checks agree on this.
-Removing every variable that lacks two independent sources leaves the leading
-hypotheses essentially unchanged and moves several refuted ones substantially,
-one from fifth place to third. Separately, the four wear variables all cite the
-same page of the same source, so one statement is scored four times, three of
-them at Very High power; collapsing that cluster moves H013 by +10.8, H001 by
-+4.1 and H005 by +6.4 while moving both leaders by under two points. The
-refutations resting on standardisation, context and distribution hold under both
-checks; those resting on the absence of *wear* do not. See 2.7 and 2.8; the
-remedy is item A1 of RDORP-013.
+| Test | Agreement |
+| ---- | --------- |
+| An independent specifier writing H012's full prediction matrix, blind to the evidence | **52 %** of cells (22 of 42) |
+| An independent rater assigning directions to the 28 scored corpus observations, blind to the hypotheses | **46 %** (13 of 28) |
+| The same rater on confidence grades | 54 % (15 of 28) |
+| Both direction and confidence | **25 %** (7 of 28) |
 
-**1.4** The refutations are not independent. Four properties of the corpus
+Scored against the corpus, the independently specified matrix gave H012 **six
+points less** than the recorded one.
+
+**Everything below inherits that uncertainty.** Scores are therefore reported
+in bands rather than as a rank order, and differences of a few points should
+not be read as differences at all.
+
+### 1.2 What is nonetheless stable
+
+**The negative result.** Every hypothesis in which the object bears load, is
+used in the field, or is issued as standard equipment has been tested and
+refuted. Sixteen further everyday uses across the military, maritime,
+agricultural, pastoral, commercial, administrative, metrological and craft
+domains were screened; fourteen were eliminated. Four properties of the corpus
 defeat the utilitarian family as a class: contexts are predominantly urban and
-civilian; nothing is standardised; walls are too thin to carry load; and no
+civilian, nothing is standardised, walls are too thin to carry load, and no
 functional equipment of any kind has ever been recovered alongside a
 dodecahedron.
 
-**1.5** Every reading in which the object *gauges or measures* is punished by
-the evidence, and every reading in which it *forms or holds material softer than
-itself* is rewarded. The cause is structural: a gauge requires standardisation
-between examples and geometric fidelity within them, and the corpus has neither,
-while a former of soft material requires neither and is positively favoured by
-the absence of wear.
+**The gauge–former asymmetry.** Every reading in which the object *gauges or
+measures* is punished by the evidence; every reading in which it *forms or
+holds material softer than itself* is rewarded. The cause is structural: a
+gauge needs standardisation between examples and geometric fidelity within
+them, and the corpus has neither.
 
-**1.6** No hypothesis is both well supported by the evidence and obviously worth
-doing. The leader on evidential fit is among the weakest on functional worth;
-the leaders on worth are mid-table on evidence.
+**What computation settles.** Three candidates are refuted by arithmetic rather
+than by scoring, and those refutations do not depend on any judgement call: the
+object cannot index the zodiac or any twelve-fold calendar by solar means; its
+ring counts cannot encode twelve categories; and marking one opposed pair fixes
+an axis but leaves ten orientations, so nothing determines a way up.
 
-**1.7** No hypothesis is robust. Every one has a worst case below the best case
-of a rival, and only one — the tent-apex reading — is decisively eliminated.
+### 1.3 What is not stable
 
-**1.8** The single most discriminating result is the corpus-wide absence of use
-wear. It is also macroscopic only: microscopic wear analysis has never been
-performed on any specimen.
+**Which hypothesis leads depends on a scoring decision.** Deduplicating
+correlated evidence — so that one observation cited by four variables counts
+once — moves H014 above H012. Across all 45 weighting schemes the clustered
+leader is H014 in 36 and H012 in 9, with the margin over second place never
+exceeding one point. **They are a tied pair and should be reported as one.**
 
-**1.9** The object's twelve apertures cannot index the zodiac or any twelve-fold
-calendar by solar means. This is established by computation, not by inference.
+**The refutations are less secure than the leaders.** Two independent checks
+agree. Removing every variable that lacks two independent sources leaves the
+leaders essentially unchanged and moves several refuted hypotheses
+substantially. Deduplicating correlated evidence does the same. The refutations
+resting on standardisation, context and distribution hold under both; those
+resting on the absence of *wear* do not.
 
-**1.10** The corpus is not demonstrably a single population of authentic
-originals, and the most load-bearing finding in the project — the absence of
-standardisation — has only ever been measured by pooling it.
+**And the wear evidence is the weakest load-bearing thing in the project.** It
+is macroscopic only; two of its four variables have never been examined on any
+specimen and are scored from the absence of a report; and all four cite one
+page of one source.
 
----
+### 1.4 What no hypothesis achieves
+
+**None is robust.** Every one has a worst case over the unscored variables
+below the best case of a rival. Only one — the tent-apex reading — is
+decisively eliminated.
+
+**None is both well supported and obviously worth doing.** On a separate
+usage-value axis, every reading in which the object *makes* something scores
+negative once the cheapest substitute is accounted for, because a wooden spool,
+a pottery lamp, a knotted cord, a groma or a sundial existed in every case.
+Only the readings in which the making and the holding are themselves the point
+score positive — and those are the readings that predict least.
+
+### 1.5 The corpus is not demonstrably one population
+
+No specimen has been authenticated. Two of the three carrying usable aperture
+data are unexcavated private-collection pieces. Ancient local imitation is
+proposed in the literature and untested — and the absence of standardisation,
+the project's most load-bearing finding, has only ever been measured by pooling
+the whole corpus.
 
 ## 2. The corpus: composition, quality and admissibility
 
@@ -94,16 +118,23 @@ standardisation — has only ever been measured by pooling it.
 
 | Measure | Value |
 | ------- | ----- |
-| Specimens recorded | 36 |
-| Known corpus | c 134 (`PUB-0003`, 32) |
-| Coverage | 27 % |
-| Sourced observations | 203 |
-| Sources | 43, of which 21 directly consulted |
+| Specimens recorded | 40 |
+| Known corpus | 129 catalogued to 2021 (`PUB-0023`), c 134 by 2025 (`PUB-0003`) |
+| Coverage | 31 % |
+| Sourced observations | 224 |
+| Sources | 49, of which 31 directly consulted |
 | Evidence variables | 48 |
 | Hypotheses assessed | 14 |
-| Records in the evidence register | 47 |
+| Functional domains screened | 16 |
+| Experiments recorded | 8 |
+| Pre-registered predictions | 11 |
+| Countries represented | 10 |
 
-Geographic distribution of the recorded corpus is **56 % British**, against a
+Twenty specimens now carry a Greiner/Guggenberger catalogue number and type,
+matched against the reference catalogue and assigned only where the catalogue
+entry is unique for that findspot.
+
+Geographic distribution of the recorded corpus is **50 % British**, against a
 known corpus that is about 20 % British and about 70 % Gallic and Germanic. The
 recorded corpus is therefore not representative, and the skew is an artefact of
 accessibility: British Portable Antiquities Scheme records are online and carry
@@ -123,7 +154,7 @@ grade in `specimen_quality`.
 | D | Institutional custody, no findspot | 7 |
 | E | Private hands, or no findspot and no independent publication | 3 |
 
-**Eleven of the thirty-six are fragments**, and one further specimen
+**Eleven of the forty are fragments**, and one further specimen
 (`RD-0002`) is substantially incomplete despite carrying no fragment label.
 
 ### 2.3 Admissibility rules
@@ -205,7 +236,7 @@ been examined for either. They are scored `absent` because no report of them
 exists anywhere — an argument from silence, recorded at confidence C, and still
 contributing −4.5 apiece to the hypotheses that predict them.
 
-**Source concentration.** 42 % of all 203 observations come from a single source,
+**Source concentration.** 40 % of all 224 observations come from a single source,
 `PUB-0006`, the British Portable Antiquities Scheme database of metal-detector
 surface finds. Two sources account for 61 %.
 
@@ -228,7 +259,7 @@ that every fact has one. They are discounted to half weight as Derived evidence
 and excluded from the observed-only scenario, but they are still in the
 baseline.
 
-**Thin specimens.** Median four observations per specimen; **eleven of thirty-six
+**Thin specimens.** Median four observations per specimen; **13 of forty
 have two or fewer**. A dozen entries amount to a findspot and a citation.
 
 **Empty variables.** Twelve of forty-eight have no observation at all, five of
@@ -362,6 +393,16 @@ Guggenberger explains the same feature across the corpus as production holes.
 Both readings are preserved and internal hole wear is scored at confidence C
 rather than B in consequence.
 
+Two photographic observations were added, both at confidence D and both
+recorded with their reasoning, because surface condition read from an image by
+a non-specialist is the weakest evidence the project holds. The Hunt Museum
+specimen shows **bright unpatinated metal on the crown of every knob** against
+a fully patinated body; Much Hadham, an unpolished ploughsoil find, shows none.
+**Patina forms during burial**, so bright metal indicates cleaning after
+excavation rather than Roman use. What an image cannot settle is the *shape*
+question — whether the crowns are flattened beyond their cast form, which would
+survive burial and could not be produced by dusting.
+
 The strongest single support is `RD-0005`: excavated, complete, undamaged, in
 excellent condition, and unworn. Unlike the ploughsoil finds that dominate the
 corpus, that cannot be explained as post-depositional surface loss.
@@ -404,7 +445,7 @@ hoards; c 4 % from rivers (`PUB-0003`, 33).
 
 ### 3.5 Nothing functional has ever been found alongside one
 
-Across thirty-six specimens the recorded associations are bronze statuettes of
+Across forty specimens the recorded associations are bronze statuettes of
 deities, a bone object in a grave, a cache attributed to a temple, rich grave
 goods, and a precision balance. There are no poles, pegs, cordage, nets, hooks,
 floats, rigging, farm tools, harness, shot, arrowheads, seal boxes, styli,
@@ -510,25 +551,39 @@ currently favours.
 
 ### 5.1 Results
 
-Evidence is given unclustered and clustered; the clustered figure is the more
-defensible and the two are reported together because they disagree at the top.
+**Reported in bands, not as a rank order.** An independent specification of one
+matrix moved that hypothesis by six points, and two raters agree on directions
+less than half the time (1.1). A ranking to one decimal place would be false
+precision. Within a band, no ordering is claimed.
 
-| Rank | Hypothesis | Evidence | **Clustered** | Staked | Achieved | Product | Craft | Exp. | Value |
-| ---- | ---------- | -------- | ------------- | ------ | -------- | ------- | ----- | ---- | ----- |
-| =1 | H014 Wax bulla / seal former | +21.0 | **+24.1** | 46.8 | 45 % | 0 | 1 | 1 | **+2** |
-| =1 | H012 Spool-knitting / cord-working frame | **+24.0** | +23.5 | 35.8 | 67 % | −1 | 0 | 0 | **−1** |
-| 3 | H003 Ritual object | +12.2 | 21.8 | 56 % | +2 | 2 | 2 | **+6** |
-| 4 | H008 Portable shrine component | +11.4 | 23.2 | 49 % | +2 | 2 | 2 | **+6** |
-| 5 | H013 Rope-laying top | +8.7 | 53.3 | 16 % | −1 | 0 | 0 | −1 |
-| 6 | H002 Rangefinder / measuring instrument | +3.5 | 50.6 | 7 % | −2 | 0 | 0 | −2 |
-| 7 | H001 Structural connector / modular node | +2.3 | 68.2 | 3 % | −1 | 0 | 0 | −1 |
-| 8 | H005 Textile / knitting tool | −0.2 | 39.4 | 0 % | −1 | 0 | 0 | −1 |
-| 9 | H006 Astronomical instrument | −0.5 | 42.5 | −1 % | −2 | 0 | 1 | −1 |
-| 10 | H004 Candlestick / lamp support | −0.6 | 28.1 | −2 % | −2 | 0 | 1 | −1 |
-| 11 | H007 Military equipment | −1.5 | 29.1 | −5 % | −1 | 0 | 0 | −1 |
-| 12 | H011 Archery targeting / ranging aid | −8.8 | 68.0 | −13 % | −2 | 0 | 0 | −2 |
-| 13 | H010 Parasol / umbrella crown fitting | −9.2 | 66.5 | −14 % | −1 | 0 | 1 | 0 |
-| 14 | H009 Tent apex / crown fitting | −34.0 | 77.8 | −44 % | −2 | 0 | 0 | −2 |
+Evidence is given clustered — one observation counted once however many
+variables express it — because that is the more defensible basis. The
+unclustered figure is shown for comparison, and the two disagree at the top.
+
+| Band | Hypothesis | Clustered | Unclustered | Staked | Value |
+| ---- | ---------- | --------- | ----------- | ------ | ----- |
+| **Leading pair** | H014 Wax bulla / seal former | **+24** | +21 | 47 | +2 |
+| | H012 Spool-knitting / cord-working frame | **+24** | +24 | 36 | −1 |
+| **Consistent but weakly testable** | H003 Ritual object | +10 | +12 | 22 | +6 |
+| | H008 Portable shrine component | +10 | +11 | 23 | +6 |
+| **Partly supported** | H013 Rope-laying top | +17 | +9 | 53 | −1 |
+| | H005 Textile / knitting tool | +8 | −0 | 39 | −1 |
+| **Unsupported** | H001 Structural connector | +4 | +2 | 68 | −1 |
+| | H004 Candlestick / lamp support | +1 | −1 | 28 | −1 |
+| | H002 Rangefinder / measuring instrument | −0 | +4 | 51 | −2 |
+| | H006 Astronomical instrument | −1 | −1 | 43 | −1 |
+| | H007 Military equipment | −2 | −2 | 29 | −1 |
+| **Refuted** | H010 Parasol / umbrella crown | −5 | −9 | 67 | 0 |
+| | H011 Archery targeting / ranging aid | −6 | −9 | 68 | −2 |
+| **Eliminated** | H009 Tent apex / crown fitting | **−31** | −34 | 78 | −2 |
+
+*Staked* is the score a hypothesis would have obtained had every prediction
+been confirmed; it measures how much each risked. *Value* is the usage-value
+axis of section 10, and is judgement rather than evidence.
+
+**H013 rope-laying is the largest mover.** It rises from +9 to +17 on
+clustering, because its refutation rested almost entirely on the four wear
+variables that restate one source statement.
 
 ### 5.2 Contamination status
 
@@ -677,9 +732,31 @@ Aqua Marcia. Levelling accuracy scales with baseline, and Vitruvius's chorobates
 is a bench of about twenty Roman feet — some 120 times the path through a
 dodecahedron.
 
-Computations are recorded in `experiments` as `EXP-0002`, `EXP-0003` and
-`EXP-0004`, and are reproducible from the specimen measurements and standard
-solar geometry.
+**Three further computations bear on the object's own geometry rather than on
+a candidate.**
+
+`EXP-0005`, **the rings**: no complete ring can exceed cos 36° = **80.9 % of
+the distance from face centre to knobs**, on any dodecahedron of any size. A
+space-filling model at 2 mm pitch predicts the decorated faces of Vienne — 5
+rings predicted where 4 and 6 are recorded, 3 where 3 are recorded — and fails
+decisively on the undecorated opposed pair, which had room for two to three
+rings and carries none. That is quantitative support for the production-hole
+reading in 7.2. It also shows two workshop rules rather than one: Vienne holds
+the pitch and varies the count, Jublains holds the count at three and tightens
+the pitch.
+
+`EXP-0006`, **ring counts cannot encode twelve categories**. Observed counts
+span 0 to 6 — seven values for twelve faces — so by pigeonhole at least five
+faces must share a count on every specimen. Vienne's published faces already
+repeat: three carry three rings, two carry none.
+
+`EXP-0007`, **orientation**. The rotation group has order 60. Distinguishing
+one opposed pair reduces it to **10**, and if the remaining ten faces carry
+identical decoration all 10 survive. Marking an axis is not determining an
+orientation, and nothing distinguishes the two ends of the axis.
+
+All eight computations are recorded in `experiments` and are reproducible from
+the specimen measurements and standard geometry.
 
 ---
 
@@ -874,7 +951,7 @@ Whatever the explanation, it has to account for that silence.
 
 ## 9. Limits of the evidence
 
-1. **Coverage.** 27 % of the known corpus, skewed 56 % British against a known
+1. **Coverage.** 31 % of the known corpus, skewed 50 % British against a known
    corpus of about 20 % British.
 2. **Authenticity.** No specimen authenticated; two of the three with usable
    aperture data are unexcavated private-collection pieces; ancient imitation is
@@ -948,7 +1025,7 @@ Whatever the explanation, it has to account for that silence.
   alongside a dodecahedron.
 - **That it was a soft-material former of any kind.** C-12 outscores everything
   and is held back as a fitted construction.
-- **That it served any screened utilitarian use.** Fifteen of seventeen are
+- **That it served any screened utilitarian use.** Fourteen of sixteen are
   eliminated, as a class — but see the next point.
 - **That the eliminations resting on absence of wear are secure.** H013, H005,
   H004 and H010 all recover substantially when uncorroborated variables are
@@ -969,6 +1046,8 @@ precisely is **which measurements would close it, and in what order**.
 
 | # | Action | Decides |
 | - | ------ | ------- |
+| 0 | **Restate every variable whose positive pole is undefined** (RDORP-013 A11), then re-run the direction rating | Direction assignment is not currently reproducible; roughly half the variables do not say whether `confirmed` means the property is high or low. No laboratory, half a day |
+| 0b | **A fourth blind prompt: directions for the A5 predictions** (RDORP-013 A12) | 84 blind predictions are written and cannot be scored, because only the contaminated party can currently assign their directions |
 | 1 | Measure every aperture **and** count its rings separately, on any complete specimen, recording which apertures are opposite which | `EV043`; the labelling and pair questions. A ruler, a lens and an afternoon in a museum store |
 | 2 | **Examine one specimen for rope wear and rotational wear** | `EV019`, `EV020`; converts two Very High variables from silence into observation, and decides whether the refutations of H013, H005, H004 and H010 stand (2.8) |
 | 2b | Microwear on knob necks and aperture lips of the same specimen | `EV041`, `EV042`; decides H012 and separates it from H013 |
@@ -978,7 +1057,7 @@ precisely is **which measurements would close it, and in what order**.
 | 6 | Experimental lost-wax reproduction; and a search for any mould, casting waste or reject | `EV045`, `P-0010`; whether the craft-value reading has a foundation |
 | 7 | Respecify the prediction matrix for site type, associated finds and dating | Three Very High variables with good evidence contributing nothing |
 | 8 | Thermal analysis | `EV023`; the only remaining route to the candlestick and fumigation readings |
-| 9 | Add continental specimens with measurements and context | The 56 % British skew |
+| 9 | Add continental specimens with measurements and context | The 50 % British skew |
 | 10 | A second source for the variables now resting on `PUB-0006` alone | Reduces the dependence of the whole analysis on one database of British surface finds; `PUB-0022` would underwrite most of them at a stroke |
 
 Items 1 and 5 require no laboratory. Item 1 is the cheapest decisive test the
@@ -990,6 +1069,7 @@ project has identified.
 
 | Version | Date | Description |
 | ------- | ---- | ----------- |
+| 1.5.0 | 2026-08-09 | Reworked: findings restructured to lead with the measured reliability of the method; results reported in bands rather than as a rank order; corpus figures brought current; clustered scoring made the primary basis. |
 | 1.4.0 | 2026-08-09 | Recorded the blind-protocol results: 52 % cell agreement on predictions, 46 % on directions. The limits chapter now carries the reliability figures. |
 | 1.3.0 | 2026-08-09 | Implemented evidence clustering (A1) and the weighting sweep (A2). Clustering changes the leader to H014 and the two leaders are reported as a tied pair. |
 | 1.2.1 | 2026-08-08 | Merged the two findings on refutation security into one, renumbered the findings, and corrected the scoping of the conclusions in 2.8. |
