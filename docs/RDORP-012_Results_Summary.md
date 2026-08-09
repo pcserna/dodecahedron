@@ -297,32 +297,24 @@ scored four times, three of them at Very High power.
 | H010 Parasol crown | −9.2 (13th) | −5.0 (12th) | +4.2 |
 | H009 Tent apex | −34.0 (14th) | −31.4 (14th) | +2.6 |
 
-The earlier single-cluster estimate is superseded by these figures.
+**Five clusters are declared, not one**: wear, corpus size range, aperture
+metrics, casting, and this project's own derived engineering assessments. Each
+is declared on shared evidential basis and recorded with its reasoning, so a
+reader who disagrees can remove one and re-run.
 
-**Sensitivity to the weighting scheme.** All 45 combinations of five
-power schemes, three confidence schemes and three class schemes were re-scored.
+**Where the correction falls is the finding.** Every hypothesis that moves by
+more than four points moves *upward*. Deduplication costs the leaders almost
+nothing — H012 loses 0.6, H014 gains 3.0 — and returns between four and eight
+points to hypotheses the unclustered scoring had refuted. **The refutations
+were inflated by counting one source statement several times; the leaders were
+not.** This is the same asymmetry the source-corroboration audit finds below,
+reached by an independent route.
+
+**Sensitivity to the weighting scheme.** All 45 combinations of five power
+schemes, three confidence schemes and three class schemes were re-scored.
 **Unclustered, H012 leads in 45 of 45.** Clustered, H014 leads in 36 and H012
 in 9, and the margin over second place never exceeds one point. The weights are
 therefore not what decides the answer; deduplication is.
-
-| Hypothesis | Current | Collapsed |
-| ---------- | ------- | --------- |
-| H013 Rope-laying top | +8.7 | **+19.5** |
-| H001 Structural connector | +2.3 | **+6.4** |
-| H005 Textile tool | −0.2 | **+6.2** |
-| H010 Parasol crown | −9.2 | −2.9 |
-| H009 Tent apex | −34.0 | −25.9 |
-| H012 Cord frame | +24.0 | +25.8 |
-| H014 Wax former | +21.0 | +22.8 |
-
-Further suspected clusters — aperture dimensions, size range, geometric
-irregularity — are unquantified. The remedy is scheduled as item A1 of RDORP-013
-and is not yet applied: **the figures reported throughout this document are the
-unclustered ones.**
-
-The pattern is already clear from this one cluster: **collapsing correlated
-evidence moves the refuted hypotheses by up to eleven points and the leaders by
-under two.**
 
 **Source corroboration.**
 
@@ -347,7 +339,7 @@ neither changes rank. Nothing in the case for H012 or H014 depends on
 uncorroborated evidence.
 
 **Several refutations are not robust.** H013, the rope-laying top, rises nearly
-seven points and three places, because its elimination rested substantially on
+seven points and two places, because its elimination rested substantially on
 `EV019` and `EV020` — the two variables nobody has ever measured. The
 candlestick, textile-tool and parasol readings recover similarly. **Every one of
 these is a hypothesis refuted primarily by the absence of wear**, and that is
@@ -364,8 +356,10 @@ corpus-level published statement and independent per-specimen observations.
 
 **Both checks point the same way.** The case for the leading hypotheses does not
 depend on weak or duplicated evidence; the case against the refuted ones partly
-does. Any statement of this project's negative results should be qualified
-accordingly until item A1 of RDORP-013 is applied.
+does. Clustering is now applied and is the primary basis for the bands in 5.1,
+but it does not repair the underlying problem: **four hypotheses are still
+refuted largely on wear that nobody has ever examined.** That is an evidence
+gap, and only Part B of RDORP-013 closes it.
 
 ---
 
