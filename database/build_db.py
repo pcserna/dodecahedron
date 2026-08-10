@@ -721,6 +721,24 @@ SOURCES = [
      "public-outreach document rather than a catalogue entry, hence C. States "
      "that the MAN holds FOUR dodecahedra, of which only MAN68333 is named "
      "here. An online 3D model is advertised and has not been retrieved."),
+    ("PUB-0050", "Wagemans, G. M. C.", 2015,
+     "The Roman pentagon dodecahedron: an astronomical measuring instrument "
+     "for determining the sowing date of winter grain",
+     "Web page", None, "https://www.romandodecahedron.com/", "D",
+     "Self-published research site, consulted August 2026. Presents a "
+     "quantitative model: the object rests on a face and light is sighted at "
+     "solar noon through a pair of OPPOSED apertures, the limiting sun angle "
+     "being 26.6 degrees plus arctan((r1+r2)/D). Each pair gives a different "
+     "angle and so a different date, read as the sowing window for winter "
+     "grain. Reports 29 specimens with findspots and measuring periods, and "
+     "per-specimen angle tables for Elst and Hartwerd with average deviations "
+     "of 0.11 and 0.29 degrees. "
+     "CONFIDENCE D: not peer reviewed, no institutional affiliation stated, "
+     "and the specimen measurements it rests on are not reproduced in full. "
+     "IT IS NEVERTHELESS THE MOST QUANTITATIVE PROPOSAL THIS PROJECT HAS "
+     "ENCOUNTERED FROM OUTSIDE THE ACADEMIC LITERATURE, it is built on the "
+     "correct solid, and its central constant is one this project derives "
+     "independently in EXP-0003. It is tested in EXP-0012."),
     ("PUB-0049", "RDORP blind protocol runs", 2026,
      "A3a blind matrix for H012; A3b independent direction ratings; A5 blind respecification",
      "Personal communication", None, None, "B",
@@ -3038,6 +3056,24 @@ SCREENING_CANDIDATES = [
      "Smoke",
      "The only candidate that predicts thermal alteration, which makes it "
      "cheaply testable."),
+    ("C-18", "Sowing-date sight through opposed apertures", "Astronomical / Farming",
+     "The object is set down on a face and, at solar noon, light is sighted "
+     "through a pair of OPPOSED apertures. The limiting sun angle for a pair "
+     "is the face-rest axis elevation of 26.6 degrees plus the angular "
+     "tolerance the two apertures allow, arctan((r1+r2)/D). Because each pair "
+     "has its own diameters, each gives its own angle and so its own date. "
+     "The set of dates is read as the window for sowing winter grain.",
+     "A sowing date, determined centrally and issued to farmers",
+     "PROPOSED FROM OUTSIDE THE PROJECT (PUB-0050, Wagemans). RDORP-013 Part "
+     "D asks that new hypotheses come from outside or from the literature, "
+     "and this is the first that has. THE MECHANISM IS DISTINCT FROM C-14 "
+     "AND C-15: C-14 projects light onto the interior, C-15 hangs the object "
+     "from a knob. This one rests it on a face and sights through the bore. "
+     "Tested in EXP-0012, which finds the evidence offered for it is not "
+     "evidence, and that the model cannot yet be tested properly on the "
+     "corpus. NOT SCORED: specifying it now, knowing the evidence, would "
+     "produce a contaminated matrix, and the variables it turns on are the "
+     "ones RDORP-013 item B2 would supply."),
     ("C-17", "Levelling sight for water engineering", "Engineering / Surveying",
      "Suspended so that gravity fixes the vertical, the object presents a "
      "face-pair axis at a known elevation - including exactly 0 degrees when "
@@ -3824,6 +3860,56 @@ EXPERIMENTS = [
      "LABELLING INFORMATION UNDER EITHER RULE - constant count distinguishes "
      "nothing, and count-determined-by-diameter is redundant with diameter. "
      "This bears directly on EV043 and on prediction P-0009."),
+
+    ("EXP-0012", "H006; C-14; C-15; C-18",
+     "Reproduce and test the Wagemans sowing-calendar model (PUB-0050, "
+     "candidate C-18): the object set down on a face, light sighted at solar "
+     "noon through a pair of opposed apertures, each pair giving a limiting "
+     "sun angle and so a date, the set read as the sowing window for winter "
+     "grain. The mechanism was absent from this project's hypothesis set.",
+     "Analytical computation at database/exp_wagemans.py, tested at "
+     "database/test_exp_wagemans.py. (a) Implement the model: angle = 26.6 + "
+     "arctan((r1+r2)/D) per opposed pair, applied to the three specimens for "
+     "which opposed pairs and a face-to-face distance are both published. "
+     "(b) TEST THE DEVIATION STATISTIC he offers as evidence, by running it "
+     "on random angle sets drawn from the sun's annual range at the same "
+     "latitude. (c) TEST WHETHER THE SOWING WINDOW IS A RESULT OR IS FORCED, "
+     "by drawing random aperture sets over the observed 6-27 mm range and "
+     "computing the dates they produce.",
+     "THE MECHANISM IS SOUND; THE EVIDENCE OFFERED FOR IT IS NOT EVIDENCE. "
+     "(0) His central constant, 26.6 degrees, is exactly arctan(1/2) = 26.565, "
+     "the face-rest elevation this project derives independently in EXP-0003. "
+     "The model is built on the correct solid. "
+     "(a) Applied to Carnuntum, Tongeren and Avenches the model yields six "
+     "reachable angles each, giving dates from 2 August to 3 October. "
+     "(b) THE DEVIATION STATISTIC IS VACUOUS. He reports 0.11 degrees for "
+     "Elst and 0.29 for Hartwerd as the agreement between measuring point and "
+     "sun. The sun sweeps its annual range continuously, so every angle "
+     "inside it has a matching date within a fraction of a degree: the "
+     "residual measures the fineness of the date grid, not a property of the "
+     "object. Random angle sets score 0.081 degrees, and 68, 86 and 97 per "
+     "cent of them do at least as well as the three real specimens. "
+     "(c) THE SOWING WINDOW IS FORCED, NOT FOUND. The axis elevation is fixed "
+     "at 26.6 degrees and an aperture tolerance is necessarily positive, so "
+     "every angle lands above it, and at these latitudes the sun crosses that "
+     "band in late summer. Random aperture sets give 9 August to 25 September "
+     "at Carnuntum, 31 August to 30 September at Tongeren and 3 September to "
+     "7 October at Avenches. A dodecahedron drilled at random would match the "
+     "sowing season just as well.",
+     "NOT A REFUTATION OF THE MECHANISM, AND THE DISTINCTION MATTERS. What is "
+     "refuted is the evidential argument: both statistics offered in support "
+     "are satisfied by chance. The mechanism itself cannot be tested properly "
+     "on the present corpus, because it needs the opposed PAIRING of every "
+     "aperture together with the face-to-face distance on the same specimen, "
+     "and the corpus publishes both for three objects of which two are "
+     "rejected on quality grounds. "
+     "THIS IS THE THIRD FINDING NOW WAITING ON RDORP-013 ITEM B2, after the "
+     "two EXP-0011 left open. Measuring twelve apertures and their pairing on "
+     "one complete specimen would decide all three. "
+     "METHOD NOTE: this is the fourth experiment in which a control was "
+     "needed to stop a free parameter manufacturing a fit - EXP-0009 the "
+     "latitude scan, EXP-0010 the Roman capacity units, EXP-0011 the sort, "
+     "and now the continuity of the sun's own motion."),
 
     ("EXP-0011", "H002; C-01; C-03; C-11; C-13",
      "Test the mechanical requirement shared by every reading in which the "

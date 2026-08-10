@@ -484,6 +484,17 @@
     "notes": "DIRECTLY CONSULTED, August 2026; held at docs/sources/ODM23Juin03.pdf. Museum object-of-the-month sheet, a public-outreach document rather than a catalogue entry, hence C. States that the MAN holds FOUR dodecahedra, of which only MAN68333 is named here. An online 3D model is advertised and has not been retrieved."
   },
   {
+    "source_id": "PUB-0050",
+    "authors": "Wagemans, G. M. C.",
+    "year": 2015,
+    "title": "The Roman pentagon dodecahedron: an astronomical measuring instrument for determining the sowing date of winter grain",
+    "type": "Web page",
+    "doi": null,
+    "url": "https://www.romandodecahedron.com/",
+    "confidence": "D",
+    "notes": "Self-published research site, consulted August 2026. Presents a quantitative model: the object rests on a face and light is sighted at solar noon through a pair of OPPOSED apertures, the limiting sun angle being 26.6 degrees plus arctan((r1+r2)/D). Each pair gives a different angle and so a different date, read as the sowing window for winter grain. Reports 29 specimens with findspots and measuring periods, and per-specimen angle tables for Elst and Hartwerd with average deviations of 0.11 and 0.29 degrees. CONFIDENCE D: not peer reviewed, no institutional affiliation stated, and the specimen measurements it rests on are not reproduced in full. IT IS NEVERTHELESS THE MOST QUANTITATIVE PROPOSAL THIS PROJECT HAS ENCOUNTERED FROM OUTSIDE THE ACADEMIC LITERATURE, it is built on the correct solid, and its central constant is one this project derives independently in EXP-0003. It is tested in EXP-0012."
+  },
+  {
     "source_id": "PUB-0049",
     "authors": "RDORP blind protocol runs",
     "year": 2026,

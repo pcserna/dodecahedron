@@ -202,6 +202,21 @@
    "part": "Part 8 — The computational experiments, from first principles"
   },
   {
+   "finding": "EXP-0012: Wagemans's 26.6 deg constant is exactly the face-rest elevation this project derives",
+   "cell": "exp-0012",
+   "part": "Part 8 — The computational experiments, from first principles"
+  },
+  {
+   "finding": "EXP-0012: his deviation statistic is vacuous - random angle sets score as well or better",
+   "cell": "exp-0012",
+   "part": "Part 8 — The computational experiments, from first principles"
+  },
+  {
+   "finding": "EXP-0012: the sowing-season match is forced by the geometry and latitude, not found",
+   "cell": "exp-0012",
+   "part": "Part 8 — The computational experiments, from first principles"
+  },
+  {
    "finding": "A3b: 13/28 = 46 % direction agreement, 15/28 = 54 % confidence, 7/28 both",
    "cell": "blind-a3b",
    "part": "Part 9 — The blind protocols"

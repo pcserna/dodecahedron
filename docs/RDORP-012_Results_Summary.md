@@ -185,6 +185,9 @@ The index links each finding to the notebook cell that establishes it.
 | EXP-0011: no specimen carries an opening at a lead-shot calibre, refuting C-01 directly |  | [`exp-0011`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0011) |
 | EXP-0011: whether the apertures form a graded series is OPEN - Avenches beats only 83 % of random sets |  | [`exp-0011`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0011) |
 | EXP-0011: one specimen in forty has all twelve apertures measured |  | [`exp-0011`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0011) |
+| EXP-0012: Wagemans's 26.6 deg constant is exactly the face-rest elevation this project derives |  | [`exp-0012`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0012) |
+| EXP-0012: his deviation statistic is vacuous - random angle sets score as well or better |  | [`exp-0012`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0012) |
+| EXP-0012: the sowing-season match is forced by the geometry and latitude, not found |  | [`exp-0012`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0012) |
 | A3b: 13/28 = 46 % direction agreement, 15/28 = 54 % confidence, 7/28 both | Part 9 — The blind protocols | [`blind-a3b`](../notebooks/RDORP_Reproduction.ipynb#cell-blind-a3b) |
 | A3b: four outright polarity reversals |  | [`blind-a3b`](../notebooks/RDORP_Reproduction.ipynb#cell-blind-a3b) |
 | A3a: 52 % cell agreement, and the blind matrix scores H012 six points lower |  | [`blind-a3a`](../notebooks/RDORP_Reproduction.ipynb#cell-blind-a3a) |
@@ -211,11 +214,11 @@ prose and is written by hand.
 | Known corpus | 129 catalogued to 2021 (`PUB-0023`), c 134 by 2025 (`PUB-0003`) |
 | Coverage | 31 % |
 | Sourced observations | 224 |
-| Sources | 49, of which 35 are graded A or B |
+| Sources | 50, of which 35 are graded A or B |
 | Evidence variables | 48 |
 | Hypotheses assessed | 14 |
-| Functional domains screened | 16 |
-| Experiments recorded | 11 |
+| Functional domains screened | 17 |
+| Experiments recorded | 12 |
 | Pre-registered predictions | 11 |
 | Countries represented | 10 |
 | Evidence variables scored | 32 of 48 |
@@ -820,6 +823,7 @@ tents; about 134 dodecahedra are known in total.
 | C-12 | Soft-material forming and handling tool | Craft | **+29.4** | 1 | held back - see 6.2 |
 | C-13 | Garment or tailoring size gauge | Craft / Textile | **+11.8** | 3 | eliminated |
 | C-10 | Wax bulla or seal former | Administrative | **+8.5** | 2 | promoted to H014 |
+| C-18 | Sowing-date sight through opposed apertures | Astronomical / Farming | +0.0 | 0 | promote |
 | C-15 | Suspended solar altitude sight | Astronomical | −1.8 | 3 | eliminated by computation |
 | C-14 | Zodiac sundial by internal light projection | Astronomical | −1.9 | 5 | eliminated by computation |
 | C-09 | Byre or beehive fumigation holder | Animal husbandry | −4.2 | 2 | eliminated |
@@ -908,6 +912,47 @@ information. Across every possible support — 20 knobs, 12 faces, 30 edges — 
 are seven distinct face-axis elevations, of which four are reachable by the noon
 sun and identically so from 43.7° to 55° N. That yields eight calendar events,
 not twelve.
+
+**C-18, the sowing-date sight — the first hypothesis this project has taken
+from outside itself.** RDORP-013 Part D asks that new readings come from
+outside or from the literature rather than from a party that already knows the
+answers. This one does: G.M.C. Wagemans (`PUB-0050`) proposes that the object
+is set down on a face and that light is sighted at solar noon through a pair of
+**opposed** apertures, each pair giving its own limiting sun angle and so its
+own date, the set read as the window for sowing winter grain.
+
+**The mechanism is sound and was missing from this project.** Its central
+constant, 26.6°, is exactly `arctan(1/2) = 26.565°` — the face-rest elevation
+`EXP-0003` derives independently. It is built on the right solid, and it is
+distinct from C-14, which projects light onto the interior, and from C-15,
+which hangs the object from a knob.
+
+**The evidence offered for it is not evidence.** Two statistics are given in
+support and `EXP-0012` shows both are satisfied by chance.
+
+*The deviation.* He reports agreement of 0.11° (Elst) and 0.29° (Hartwerd)
+between a measuring point and the sun on the matching date. But the sun sweeps
+its annual range continuously, so **every** angle inside that range has a date
+matching it to a fraction of a degree: the residual measures the fineness of
+the date grid, not a property of the object. Random angle sets score 0.081°,
+and 68 %, 86 % and 97 % of them do at least as well as the three specimens we
+can test.
+
+*The sowing window.* The predicted dates do fall in late August to early
+October. But the axis elevation is fixed at 26.6° and an aperture tolerance is
+necessarily positive, so every angle must land above it — and at these
+latitudes the sun crosses that band in late summer. **Random aperture sets give
+the same season**: 9 August to 25 September at Carnuntum, 3 September to
+7 October at Avenches. A dodecahedron drilled at random would match the sowing
+season just as well.
+
+**It is not refuted, and the distinction matters.** What is refuted is the
+argument, not the mechanism. Testing the mechanism needs the opposed *pairing*
+of every aperture together with the face-to-face distance on the same specimen,
+and the corpus publishes both for three objects of which two are rejected on
+quality grounds. C-18 is therefore recorded and **deliberately not scored**:
+specifying it now, knowing the evidence, would produce exactly the contaminated
+matrix 5.2 warns about.
 
 **C-05, volumetric grain or liquid measure.** The screen eliminated this at
 −18.0 on standardisation: a measure that varies between examples measures

@@ -72,6 +72,14 @@
     "notes": "The only candidate that predicts thermal alteration, which makes it cheaply testable."
   },
   {
+    "candidate_id": "C-18",
+    "name": "Sowing-date sight through opposed apertures",
+    "domain": "Astronomical / Farming",
+    "description": "The object is set down on a face and, at solar noon, light is sighted through a pair of OPPOSED apertures. The limiting sun angle for a pair is the face-rest axis elevation of 26.6 degrees plus the angular tolerance the two apertures allow, arctan((r1+r2)/D). Because each pair has its own diameters, each gives its own angle and so its own date. The set of dates is read as the window for sowing winter grain.",
+    "creates": "A sowing date, determined centrally and issued to farmers",
+    "notes": "PROPOSED FROM OUTSIDE THE PROJECT (PUB-0050, Wagemans). RDORP-013 Part D asks that new hypotheses come from outside or from the literature, and this is the first that has. THE MECHANISM IS DISTINCT FROM C-14 AND C-15: C-14 projects light onto the interior, C-15 hangs the object from a knob. This one rests it on a face and sights through the bore. Tested in EXP-0012, which finds the evidence offered for it is not evidence, and that the model cannot yet be tested properly on the corpus. NOT SCORED: specifying it now, knowing the evidence, would produce a contaminated matrix, and the variables it turns on are the ones RDORP-013 item B2 would supply."
+  },
+  {
     "candidate_id": "C-17",
     "name": "Levelling sight for water engineering",
     "domain": "Engineering / Surveying",

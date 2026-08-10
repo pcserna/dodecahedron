@@ -952,6 +952,59 @@ print("   reproducibility are NOT, and only B2 can settle them.")
     "EXP-0011: one specimen in forty has all twelve apertures measured",
 ])
 
+md(r"""
+### 8.11 EXP-0012 — the Wagemans sowing-calendar model (C-18)
+
+Proposed outside this project (romandodecahedron.com): the object rests on a
+face and light is sighted at solar noon through a pair of **opposed** apertures.
+Each pair has its own diameters, so each gives its own limiting sun angle and so
+its own date; the set is read as the window for sowing winter grain.
+
+**The mechanism is sound** — its central constant is exactly the face-rest
+elevation 8.3 derives. What this tests is the *evidence offered for it*.
+""")
+
+code(r"""
+import exp_wagemans as WG
+
+print(f"his 26.6 deg = arctan(1/2) = {WG.AXIS_ELEVATION:.3f}; "
+      f"in our elevation set: {any(abs(e - WG.AXIS_ELEVATION) < 0.01 for e in allel)}")
+
+print()
+print("predicted measuring angles and dates:")
+for nm, pairs, dd, wlat, _note in WG.SPECIMENS:
+    wang = sorted(WG.measuring_angle(a, b, dd) for a, b in pairs)
+    wlo, whi = 90 - wlat - WG.OBLIQUITY, 90 - wlat + WG.OBLIQUITY
+    days = [WG.date_for_angle(wlat, a)[0] for a in wang if lo <= a <= hi]
+    print(f"  {nm:22} {', '.join(f'{a:.1f}' for a in wang)}")
+    print(f"  {'':22} -> {', '.join(WG.day_to_date(x) for x in sorted(days))}")
+
+print()
+print("1. is his deviation statistic evidence?")
+dev = {}
+for nm, pairs, dd, wlat, _note in WG.SPECIMENS:
+    wang = [WG.measuring_angle(a, b, dd) for a, b in pairs]
+    wlo, whi = 90 - wlat - WG.OBLIQUITY, 90 - wlat + WG.OBLIQUITY
+    wuse = [a for a in wang if lo <= a <= hi]
+    dev_obs = WG.deviation_for_angles(wlat, wuse)   # NB: not 'obs' - Part 3 binds it
+    wnull = WG.null_deviation(wlat, len(wuse), trials=200)
+    share = sum(1 for x in wnull if x <= dev_obs) / len(wnull)
+    dev[nm] = share
+    print(f"  {nm:22} observed {dev_obs:.3f} deg, random {wnull[len(wnull)//2]:.3f} deg, "
+          f"{share:.0%} of random sets do as well")
+print("  => the residual measures the date grid, not the object")
+
+print()
+print("2. is the sowing window a result, or forced by the geometry?")
+print("  every angle must exceed 26.6 deg, and at 47-51 N the sun crosses")
+print("  that band in late summer - so ANY aperture set gives that season.")
+print("  (EXP-0012 confirms it with random apertures: 9 Aug to 7 Oct)")
+""", cid="exp-0012", reproduces=[
+    "EXP-0012: Wagemans's 26.6 deg constant is exactly the face-rest elevation this project derives",
+    "EXP-0012: his deviation statistic is vacuous - random angle sets score as well or better",
+    "EXP-0012: the sowing-season match is forced by the geometry and latitude, not found",
+])
+
 # --------------------------------------------------------------- Part 9 ---
 md(r"""
 ## Part 9 — The blind protocols
@@ -1206,13 +1259,13 @@ def expect(label, got, want, tol=None):
 
 expect("specimens",                       specimens, 40)
 expect("sourced observations",            observations, 224)
-expect("sources",                         sources, 49)
+expect("sources",                         sources, 50)
 expect("countries",                       countries, 10)
 expect("evidence variables",              q1("SELECT COUNT(*) FROM evidence_variables"), 48)
 expect("hypotheses",                      len(hyps), 14)
-expect("experiments",                     q1("SELECT COUNT(*) FROM experiments"), 11)
+expect("experiments",                     q1("SELECT COUNT(*) FROM experiments"), 12)
 expect("pre-registered predictions",      q1("SELECT COUNT(*) FROM predictions"), 11)
-expect("screened domains",                q1("SELECT COUNT(*) FROM screening_candidates"), 16)
+expect("screened domains",                q1("SELECT COUNT(*) FROM screening_candidates"), 17)
 expect("scored variables",                len(disc), 32)
 expect("British share (%)",               round(100*british/specimens), 50)
 expect("coverage (%)",                    round(100*specimens/KNOWN_CORPUS), 31)
@@ -1283,6 +1336,54 @@ about whether the data is right.
 
 Reproducibility is a floor, not a result.
 """)
+
+
+
+#: Names bound by early cells that later cells must not overwrite. The notebook
+#: shares one namespace, so a cell that rebinds `obs` silently breaks every
+#: later cell that reads it - which happened twice while this notebook was
+#: being written, both times caught only when a downstream cell crashed.
+PROTECTED = (
+    # Loaded once in Parts 1-4 and read by almost every cell after. Rebinding
+    # one of these breaks cells far away, which is how it went unnoticed twice.
+    # Names computed inside a single Part are NOT listed: several cells
+    # legitimately establish and re-establish those, and the assertions in
+    # Part 12 catch it if one is clobbered - which is how `lat` was found.
+    "obs", "corpus", "con", "q", "q1", "cells", "theirs", "mine",
+    "H", "V", "HPM", "CORPUS", "READINGS", "CLUSTERS", "U", "C",
+    "specimens", "observations", "sources", "hyps", "names",
+)
+
+
+def check_no_shadowing() -> list[str]:
+    """Report any cell that assigns to a protected name after it is first set."""
+    import ast
+    problems, established = [], set()
+    for kind, text, cid, _rep in CELLS:
+        if kind != "code":
+            continue
+        try:
+            tree = ast.parse(text)
+        except SyntaxError:
+            continue
+        assigned = set()
+        for node in ast.walk(tree):
+            targets = []
+            if isinstance(node, ast.Assign):
+                targets = node.targets
+            elif isinstance(node, (ast.AugAssign, ast.AnnAssign)):
+                targets = [node.target]
+            elif isinstance(node, ast.For):
+                targets = [node.target]
+            for t in targets:
+                for n in ast.walk(t):
+                    if isinstance(n, ast.Name):
+                        assigned.add(n.id)
+        clash = (assigned & set(PROTECTED)) & established
+        for name in sorted(clash):
+            problems.append(f"cell {cid or '?'} rebinds {name!r}")
+        established |= assigned
+    return problems
 
 
 def build() -> dict:
@@ -1375,6 +1476,10 @@ def main() -> int:
     with open(OUT, "w", encoding="utf-8", newline="\n") as fh:
         json.dump(build(), fh, indent=1, ensure_ascii=False)
         fh.write("\n")
+    shadow = check_no_shadowing()
+    if shadow:
+        raise SystemExit("notebook would shadow a shared name:\n  "
+                         + "\n  ".join(shadow))
     n_code = sum(1 for k, *_ in CELLS if k == "code")
     write_index()
     print(f"wrote {OUT}  ({len(CELLS)} cells, {n_code} code)")

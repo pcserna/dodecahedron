@@ -221,6 +221,7 @@ A candidate is **eliminated** when the corpus contradicts, at full strength, a p
 | C-12 | Soft-material forming and handling tool | Craft | Formed pieces of leather, wax, foil or soft metal | +29.4 | 1 | **ELIMINATED** |
 | C-13 | Garment or tailoring size gauge | Craft / Textile | Garment parts made to a repeatable size | +11.8 | 3 | **ELIMINATED** |
 | C-10 | Wax bulla or seal former | Administrative | Standardised wax bullae securing cords on documents | +8.5 | 2 | **ELIMINATED** |
+| C-18 | Sowing-date sight through opposed apertures | Astronomical / Farming | A sowing date, determined centrally and issued to farmers | +0.0 | 0 | promote |
 | C-15 | Suspended solar altitude sight | Astronomical | A reading of solar altitude, and hence of the date | -1.8 | 3 | **ELIMINATED** |
 | C-14 | Zodiac sundial by internal light projection | Astronomical | A reading of the date or zodiac sign | -1.9 | 5 | **ELIMINATED** |
 | C-09 | Byre or beehive fumigation holder | Animal husbandry | Smoke | -4.2 | 2 | **ELIMINATED** |
