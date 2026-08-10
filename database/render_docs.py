@@ -158,6 +158,59 @@ def block_composition(f: Facts) -> str:
     return "\n".join(f"| {k} | {v} |" for k, v in rows)
 
 
+#: Provenance grades, in order, with the definition the document prints.
+PROVENANCE_GRADES = [
+    ("A", "Excavated from a stratified, dated deposit"),
+    ("B", "Excavated or reported find, documented findspot, institutional custody"),
+    ("C", "Findspot recorded, surface or detector find"),
+    ("D", "Institutional custody, no findspot"),
+    ("E", "Private hands, or no findspot and no independent publication"),
+]
+
+#: Admissibility rules, with the requirement text and the column that records it.
+ADMISSIBILITY_RULES = [
+    ("Mass", "completeness = complete", "admit_mass"),
+    ("Geometry",
+     "completeness ∈ {complete, incomplete} and measurement ∈ {direct, one remove}",
+     "admit_geometry"),
+    ("Context", "recorded findspot and provenance ≤ D", "admit_context"),
+]
+
+
+def block_quality(f: Facts) -> str:
+    counts = {r["provenance_grade"]: r["c"] for r in f.conn.execute(
+        "SELECT provenance_grade, COUNT(*) c FROM specimen_quality GROUP BY 1")}
+    out = ["| Provenance grade | Meaning | Count |",
+           "| ---------------- | ------- | ----- |"]
+    for grade, meaning in PROVENANCE_GRADES:
+        out.append(f"| {grade} | {meaning} | {counts.get(grade, 0)} |")
+    return "\n".join(out)
+
+
+def block_admissibility(f: Facts) -> str:
+    total = f.one("SELECT COUNT(*) FROM specimens")
+    out = ["| Rule | Requirement | Admissible |",
+           "| ---- | ----------- | ---------- |"]
+    for label, requirement, col in ADMISSIBILITY_RULES:
+        n = f.one(f"SELECT COUNT(*) FROM specimen_quality WHERE {col} = 1")
+        out.append(f"| **{label}** | {requirement} | **{n} of {total}** |")
+    return "\n".join(out)
+
+
+def block_concentration(f: Facts) -> str:
+    total = f.one("SELECT COUNT(*) FROM artifact_observations")
+    rows = f.conn.execute(
+        "SELECT source_id, COUNT(*) c FROM artifact_observations "
+        "GROUP BY 1 ORDER BY c DESC LIMIT 2").fetchall()
+    top, second = rows[0], rows[1]
+    two = round(100 * (top["c"] + second["c"]) / total)
+    return (f"**Source concentration.** {round(100 * top['c'] / total)} % of all "
+            f"{total} observations come from a single source, `{top['source_id']}`, "
+            f"the British Portable Antiquities Scheme database of metal-detector "
+            f"surface finds. Together with `{second['source_id']}`, two sources "
+            f"account for {two} %.")
+
+
 def block_bands(f: Facts) -> str:
     out = ["| Band | Hypothesis | Clustered | Unclustered | Staked | Value |",
            "| ---- | ---------- | --------- | ----------- | ------ | ----- |"]
@@ -222,6 +275,9 @@ def block_reproduction(f: Facts) -> str:
 
 BLOCKS = {
     "composition": block_composition,
+    "quality": block_quality,
+    "admissibility": block_admissibility,
+    "concentration": block_concentration,
     "bands": block_bands,
     "clustering": block_clustering,
     "reproduction": block_reproduction,

@@ -32,6 +32,21 @@
    "part": "Part 2 — The corpus"
   },
   {
+   "finding": "The provenance-grade distribution published in section 2.2",
+   "cell": "quality-admissibility",
+   "part": "Part 2 — The corpus"
+  },
+  {
+   "finding": "The admissibility counts published in section 2.3",
+   "cell": "quality-admissibility",
+   "part": "Part 2 — The corpus"
+  },
+  {
+   "finding": "That only 6 specimens are admissible for mass, because 10 of the 16 weighed are fragments",
+   "cell": "quality-admissibility",
+   "part": "Part 2 — The corpus"
+  },
+  {
    "finding": "The scoring formula, recomputed cell by cell and matched three ways",
    "cell": "scoring-formula",
    "part": "Part 3 — The scoring formula, from scratch"

@@ -179,6 +179,28 @@ def test_notebook_was_executed() -> None:
           f"{len(ran)} of {len(cells)} code cells have output")
 
 
+def test_no_cell_errored() -> None:
+    """No cell may have produced an error, and none may be silently empty.
+
+    A cell whose source got mangled at build time can execute to nothing and
+    look fine in a diff. That happened: an escaped newline became a real one,
+    the cell raised, and the only symptom was an empty output.
+    """
+    import json
+    nb_path = os.path.join(os.path.dirname(R.CELL_INDEX), "RDORP_Reproduction.ipynb")
+    if not os.path.exists(nb_path):
+        return
+    with open(nb_path, encoding="utf-8") as fh:
+        cells = [c for c in json.load(fh)["cells"] if c["cell_type"] == "code"]
+    errored = [c.get("id") for c in cells
+               if any(o.get("output_type") == "error" for o in c.get("outputs", []))]
+    check("no cell produced an error", not errored, f"errored: {errored}")
+
+    empty = [c.get("id") for c in cells
+             if "".join(c["source"]).strip() and not c.get("outputs")]
+    check("no executed cell is silently empty", not empty, f"empty: {empty}")
+
+
 def main() -> int:
     if not (os.path.exists(DB) and os.path.exists(DOC)):
         print("database or document missing; run run_pipeline.py first")
@@ -192,6 +214,7 @@ def main() -> int:
     test_every_band_member_exists()
     test_every_referenced_cell_exists()
     test_notebook_was_executed()
+    test_no_cell_errored()
     print(f"\n{len(FAILURES)} failure(s)"
           + (": " + ", ".join(FAILURES) if FAILURES else ""))
     return 1 if FAILURES else 0

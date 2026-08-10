@@ -153,8 +153,14 @@ summarises an unpublished catalogue.
 
 code(r"""
 print("artifact observations by source (top 5):")
-for r in q("SELECT source_id, COUNT(*) c FROM artifact_observations GROUP BY 1 ORDER BY c DESC LIMIT 5"):
+by_source = q("SELECT source_id, COUNT(*) c FROM artifact_observations "
+              "GROUP BY 1 ORDER BY c DESC LIMIT 5")
+for r in by_source:
     print(f"  {r['source_id']}  {r['c']:4}  {100*r['c']/observations:5.1f} %")
+top_src = by_source[0]
+top2_pct = round(100 * (by_source[0]["c"] + by_source[1]["c"]) / observations)
+print(f"\n  top source {100*top_src['c']/observations:.0f} %, "
+      f"top two together {top2_pct} %")
 
 print("\ncorpus-level observations by source:")
 n_corpus = q1("SELECT COUNT(*) FROM corpus_observations")
@@ -175,6 +181,44 @@ for r in q(sql):
 ])
 
 # --------------------------------------------------------------- Part 3 ---
+md(r"""
+### Quality, admissibility and the mass rule
+
+Section 2.2 and 2.3 of RDORP-012 publish these counts. They were typed by hand
+until the coverage audit found all three stale: they still carried denominators
+from when the corpus was 36 specimens.
+""")
+
+code(r"""
+print("provenance grades:")
+for r in q("SELECT provenance_grade g, COUNT(*) c FROM specimen_quality GROUP BY 1 ORDER BY 1"):
+    print(f"  {r['g']}  {r['c']:3}")
+grades = {r["g"]: r["c"] for r in
+          q("SELECT provenance_grade g, COUNT(*) c FROM specimen_quality GROUP BY 1")}
+
+print()
+print("admissibility, per purpose:")
+admit = {}
+for col, label in (("admit_mass", "Mass"), ("admit_geometry", "Geometry"),
+                   ("admit_context", "Context")):
+    admit[label] = q1(f"SELECT COUNT(*) FROM specimen_quality WHERE {col} = 1")
+    print(f"  {label:10} {admit[label]:3} of {specimens}")
+
+weighed = q1("SELECT COUNT(*) FROM specimens WHERE weight_g IS NOT NULL")
+frag_weighed = q1("SELECT COUNT(*) FROM specimens s JOIN specimen_quality sq "
+                  "ON sq.rd_id = s.rd_id WHERE s.weight_g IS NOT NULL "
+                  "AND LOWER(COALESCE(sq.completeness,'')) LIKE '%fragment%'")
+print()
+print(f"the mass rule: {weighed} specimens carry a weight, "
+      f"{frag_weighed} of them fragments")
+print("  a fragment's weight is not a specimen's weight, which is why the")
+print(f"  mass rule admits only {admit['Mass']}")
+""", cid="quality-admissibility", reproduces=[
+    "The provenance-grade distribution published in section 2.2",
+    "The admissibility counts published in section 2.3",
+    "That only 6 specimens are admissible for mass, because 10 of the 16 weighed are fragments",
+])
+
 md(r"""
 ## Part 3 — The scoring formula, from scratch
 
@@ -893,8 +937,10 @@ print(f"  coverage {100*specimens/KNOWN_CORPUS:.0f} % of {KNOWN_CORPUS} catalogu
       f"{100*british/specimens:.0f} % British against a known corpus about 20 % British")
 print(f"  {fragments} fragments; {len(disc)} of {q1('SELECT COUNT(*) FROM evidence_variables')} "
       f"evidence variables scored")
-top_src = q("SELECT source_id, COUNT(*) c FROM artifact_observations GROUP BY 1 ORDER BY c DESC LIMIT 1")[0]
-print(f"  {100*top_src['c']/observations:.0f} % of observations come from {top_src['source_id']} alone")
+print(f"  {100*top_src['c']/observations:.0f} % of observations come from "
+      f"{top_src['source_id']} alone; two sources account for {top2_pct} %")
+print(f"  admissible: mass {admit['Mass']}, geometry {admit['Geometry']}, "
+      f"context {admit['Context']} of {specimens}")
 
 line()
 print("RANKING  (bands are a judgement; scores are not)")
@@ -1013,6 +1059,16 @@ if blind:
     expect("A3b both",                        len(both), 7)
     expect("A3b variables compared",          len(shared), 28)
 
+expect("provenance A",                    grades.get("A", 0), 1)
+expect("provenance C",                    grades.get("C", 0), 24)
+expect("provenance E",                    grades.get("E", 0), 4)
+expect("admissible for mass",             admit["Mass"], 6)
+expect("admissible for geometry",         admit["Geometry"], 11)
+expect("admissible for context",          admit["Context"], 30)
+expect("fragments",                       fragments, 11)
+expect("top-source share (%)",            round(100*top_src["c"]/observations), 40)
+expect("top-two-source share (%)",        top2_pct, 57)
+
 print()
 if FAILURES:
     raise AssertionError(f"{len(FAILURES)} assertion(s) failed: {FAILURES}")
@@ -1117,10 +1173,28 @@ def main() -> int:
     print(f"wrote {OUT}  ({len(CELLS)} cells, {n_code} code)")
 
     if args.execute:
+        # The reproduction index has just been rewritten, and RDORP-012 embeds
+        # it. Render the documents BEFORE executing, or the notebook's own
+        # "is the document current?" check fails on a block this run made
+        # stale. Order matters here for the same reason it does in the
+        # pipeline: derived things must be rebuilt before anything verifies
+        # them.
+        sys.path.insert(0, os.path.join(ROOT, "database"))
+        import render_docs
+        rewritten = render_docs.run(os.path.join(ROOT, "database", "rdorp.sqlite"))
+        if rewritten:
+            print(f"rendered documents first: {', '.join(rewritten)}")
+
         cmd = [sys.executable, "-m", "nbconvert", "--to", "notebook", "--execute",
                "--inplace", "--ExecutePreprocessor.timeout=600", OUT]
         print("executing:", " ".join(cmd[-4:]))
-        return subprocess.call(cmd, cwd=ROOT)
+        rc = subprocess.call(cmd, cwd=ROOT)
+        if rc:
+            print()
+            print("The notebook FAILED. That is the mechanism working: a cell "
+                  "asserted something that no longer holds. Read the traceback "
+                  "above rather than re-running.")
+        return rc
     return 0
 
 

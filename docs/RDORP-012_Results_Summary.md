@@ -151,6 +151,9 @@ The index links each finding to the notebook cell that establishes it.
 | 50 % British against a known corpus about 20 % British |  | [`corpus-composition`](../notebooks/RDORP_Reproduction.ipynb#cell-corpus-composition) |
 | 40 % of all observations come from a single source |  | [`corpus-sources`](../notebooks/RDORP_Reproduction.ipynb#cell-corpus-sources) |
 | British specimens average 6.3 observations, continental 4.8 |  | [`corpus-sources`](../notebooks/RDORP_Reproduction.ipynb#cell-corpus-sources) |
+| The provenance-grade distribution published in section 2.2 |  | [`quality-admissibility`](../notebooks/RDORP_Reproduction.ipynb#cell-quality-admissibility) |
+| The admissibility counts published in section 2.3 |  | [`quality-admissibility`](../notebooks/RDORP_Reproduction.ipynb#cell-quality-admissibility) |
+| That only 6 specimens are admissible for mass, because 10 of the 16 weighed are fragments |  | [`quality-admissibility`](../notebooks/RDORP_Reproduction.ipynb#cell-quality-admissibility) |
 | The scoring formula, recomputed cell by cell and matched three ways | Part 3 — The scoring formula, from scratch | [`scoring-formula`](../notebooks/RDORP_Reproduction.ipynb#cell-scoring-formula) |
 | 56 cells on scored variables have no prediction written (A18) |  | [`unwritten-predictions`](../notebooks/RDORP_Reproduction.ipynb#cell-unwritten-predictions) |
 | The baseline ranking: H012 +24.0 > H014 +21.0 > H003 +12.2 | Part 4 — The ranking, and every scenario | [`ranking-baseline`](../notebooks/RDORP_Reproduction.ipynb#cell-ranking-baseline) |
@@ -224,13 +227,15 @@ has not read directly.
 Each specimen carries a completeness class, a provenance grade and a measurement
 grade in `specimen_quality`.
 
+<!-- RDORP:BEGIN quality -->
 | Provenance grade | Meaning | Count |
 | ---------------- | ------- | ----- |
 | A | Excavated from a stratified, dated deposit | 1 |
-| B | Excavated or reported find, documented findspot, institutional custody | 3 |
-| C | Findspot recorded, surface or detector find | 22 |
-| D | Institutional custody, no findspot | 7 |
-| E | Private hands, or no findspot and no independent publication | 3 |
+| B | Excavated or reported find, documented findspot, institutional custody | 2 |
+| C | Findspot recorded, surface or detector find | 24 |
+| D | Institutional custody, no findspot | 9 |
+| E | Private hands, or no findspot and no independent publication | 4 |
+<!-- RDORP:END quality -->
 
 **Eleven of the forty are fragments**, and one further specimen
 (`RD-0002`) is substantially incomplete despite carrying no fragment label.
@@ -240,11 +245,13 @@ grade in `specimen_quality`.
 Fitness is assessed per purpose rather than admitting or excluding specimens
 wholesale.
 
+<!-- RDORP:BEGIN admissibility -->
 | Rule | Requirement | Admissible |
 | ---- | ----------- | ---------- |
-| **Mass** | completeness = complete | **6 of 36** |
-| **Geometry** | completeness ∈ {complete, incomplete} and measurement ∈ {direct, one remove} | **10 of 36** |
-| **Context** | recorded findspot and provenance ≤ D | **28 of 36** |
+| **Mass** | completeness = complete | **6 of 40** |
+| **Geometry** | completeness ∈ {complete, incomplete} and measurement ∈ {direct, one remove} | **11 of 40** |
+| **Context** | recorded findspot and provenance ≤ D | **30 of 40** |
+<!-- RDORP:END admissibility -->
 
 The mass rule is the most consequential. Sixteen specimens carry a recorded
 weight, but ten of those are fragments: a fragment's weight is not a specimen's
@@ -314,9 +321,9 @@ been examined for either. They are scored `absent` because no report of them
 exists anywhere — an argument from silence, recorded at confidence C, and still
 contributing −4.5 apiece to the hypotheses that predict them.
 
-**Source concentration.** 40 % of all 224 observations come from a single source,
-`PUB-0006`, the British Portable Antiquities Scheme database of metal-detector
-surface finds. Two sources account for 61 %.
+<!-- RDORP:BEGIN concentration -->
+**Source concentration.** 40 % of all 224 observations come from a single source, `PUB-0006`, the British Portable Antiquities Scheme database of metal-detector surface finds. Together with `PUB-0003`, two sources account for 57 %.
+<!-- RDORP:END concentration -->
 
 **Seven scored variables have no second voice.** Counting the corpus
 observation's own source together with any per-specimen sources, seven of the
