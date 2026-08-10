@@ -303,6 +303,7 @@ SCREEN_DECISIONS = {
     "C-14": "eliminated by computation",
     "C-17": "eliminated by precision",
     "C-05": "eliminated by computation",
+    "C-01": "eliminated by computation",
 }
 
 def block_scenarios(f: Facts) -> str:

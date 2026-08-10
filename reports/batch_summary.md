@@ -20,7 +20,7 @@ Generated file. Do not edit by hand: change the master data in `database/build_d
 | `evidence_register` | 47 |
 | `hdm_scores` | 448 |
 | `results` | 14 |
-| `experiments` | 10 |
+| `experiments` | 11 |
 
 ## Most recent batch: 002 — Guggenberger and Leach 2025 (PUB-0003)
 

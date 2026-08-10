@@ -181,6 +181,10 @@ The index links each finding to the notebook cell that establishes it.
 | EXP-0010: internal volumes run 43 to 1298 ml across the measured corpus |  | [`exp-0010`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0010) |
 | EXP-0010: the fit to Roman capacity units is no better than chance (65 % of random volumes as close) |  | [`exp-0010`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0010) |
 | EXP-0010: retained volume is zero in every orientation, which refutes C-05 on the form |  | [`exp-0010`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0010) |
+| EXP-0011: every measured specimen has an aperture step at or below 1 mm, so the object cannot be read as a gauge |  | [`exp-0011`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0011) |
+| EXP-0011: no specimen carries an opening at a lead-shot calibre, refuting C-01 directly |  | [`exp-0011`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0011) |
+| EXP-0011: whether the apertures form a graded series is OPEN - Avenches beats only 83 % of random sets |  | [`exp-0011`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0011) |
+| EXP-0011: one specimen in forty has all twelve apertures measured |  | [`exp-0011`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0011) |
 | A3b: 13/28 = 46 % direction agreement, 15/28 = 54 % confidence, 7/28 both | Part 9 — The blind protocols | [`blind-a3b`](../notebooks/RDORP_Reproduction.ipynb#cell-blind-a3b) |
 | A3b: four outright polarity reversals |  | [`blind-a3b`](../notebooks/RDORP_Reproduction.ipynb#cell-blind-a3b) |
 | A3a: 52 % cell agreement, and the blind matrix scores H012 six points lower |  | [`blind-a3a`](../notebooks/RDORP_Reproduction.ipynb#cell-blind-a3a) |
@@ -211,7 +215,7 @@ prose and is written by hand.
 | Evidence variables | 48 |
 | Hypotheses assessed | 14 |
 | Functional domains screened | 16 |
-| Experiments recorded | 10 |
+| Experiments recorded | 11 |
 | Pre-registered predictions | 11 |
 | Countries represented | 10 |
 | Evidence variables scored | 32 of 48 |
@@ -813,7 +817,7 @@ tents; about 134 dodecahedra are known in total.
 | C-07 | Livestock bell or rattle | Animal husbandry | −19.5 | 5 | eliminated |
 | C-03 | Net-making mesh gauge | Maritime | −19.8 | 4 | eliminated |
 | C-02 | Harness or yoke junction fitting | Military / Farming | −25.0 | 6 | eliminated |
-| C-01 | Artillery shot gauge | Military | −27.0 | 6 | eliminated |
+| C-01 | Artillery shot gauge | Military | −27.0 | 6 | eliminated by computation |
 <!-- RDORP:END screening -->
 
 ### 6.1 The gauge–former asymmetry
@@ -827,6 +831,31 @@ tents; about 134 dodecahedra are known in total.
 The asymmetry is structural and follows from the corpus rather than from any
 mechanism, which is why adding a further utilitarian candidate would not change
 it.
+
+**`EXP-0011` puts a computation under part of this, and withdraws part of it.**
+Every gauge reading needs three things: a graded series of sizes,
+reproducibility between examples, and divisions a user can tell apart.
+
+*Established.* **The object cannot be read as a gauge.** On both specimens
+carrying four or more measured apertures the smallest step between neighbours
+is at or below a millimetre — Avenches 0.30 mm, Mainz 3 **0.00 mm**, two
+apertures of identical recorded diameter. A gauge whose divisions cannot be
+told apart reports nothing, whatever series it follows. And **no specimen
+carries an opening *at* a lead-shot calibre**: glandes of 20–60 g are
+15.0–21.6 mm across, and the apertures produce only the near-misses any spread
+produces, which refutes C-01 directly.
+
+*Withdrawn.* **The claim that the apertures are irregular is not supported by
+computation**, and this document should not imply that it is. Avenches beats
+83 % of random aperture sets on linearity — p = 0.17, not significant and not
+nothing. Whether two examples agree is equally open: the only comparison
+available is Mainz 3, four apertures spanning 3 mm.
+
+*The reason is the evidence.* **One specimen in forty has a full set of twelve
+measured apertures.** Both open questions would be settled at once by measuring
+one complete specimen — RDORP-013 item B2, an afternoon with a ruler and a
+lens — which this raises from the cheapest decisive test to the only route to
+two findings the project currently states more strongly than it can support.
 
 ### 6.2 The strongest candidate, and why it is held back
 

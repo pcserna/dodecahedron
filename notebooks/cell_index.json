@@ -182,6 +182,26 @@
    "part": "Part 8 — The computational experiments, from first principles"
   },
   {
+   "finding": "EXP-0011: every measured specimen has an aperture step at or below 1 mm, so the object cannot be read as a gauge",
+   "cell": "exp-0011",
+   "part": "Part 8 — The computational experiments, from first principles"
+  },
+  {
+   "finding": "EXP-0011: no specimen carries an opening at a lead-shot calibre, refuting C-01 directly",
+   "cell": "exp-0011",
+   "part": "Part 8 — The computational experiments, from first principles"
+  },
+  {
+   "finding": "EXP-0011: whether the apertures form a graded series is OPEN - Avenches beats only 83 % of random sets",
+   "cell": "exp-0011",
+   "part": "Part 8 — The computational experiments, from first principles"
+  },
+  {
+   "finding": "EXP-0011: one specimen in forty has all twelve apertures measured",
+   "cell": "exp-0011",
+   "part": "Part 8 — The computational experiments, from first principles"
+  },
+  {
    "finding": "A3b: 13/28 = 46 % direction agreement, 15/28 = 54 % confidence, 7/28 both",
    "cell": "blind-a3b",
    "part": "Part 9 — The blind protocols"

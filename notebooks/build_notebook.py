@@ -893,6 +893,65 @@ print(f"  cereal grain {EV.GRAIN_MM[0]:.0f}-{EV.GRAIN_MM[1]:.0f} mm against "
     "EXP-0010: retained volume is zero in every orientation, which refutes C-05 on the form",
 ])
 
+md(r"""
+### 8.10 EXP-0011 — do the apertures form a usable gauge series?
+
+Five readings ask the object to *measure* by which aperture a thing passes:
+shot (C-01), net mesh (C-03), dividers (C-11), garment sizes (C-13), range
+(H002). All five need a graded series, agreement between examples, and
+divisions a user can tell apart.
+
+**The null is essential here.** The order statistics of a uniform sample are
+evenly spaced in expectation, so *sorting alone* manufactures a progression.
+Fitting a line to sorted apertures and finding a small residual proves nothing.
+""")
+
+code(r"""
+import exp_gauge as EG
+
+ap_series = EG.measured_apertures(DB)
+for nm, vals in ap_series.items():
+    print(f"  {nm[:44]:44} n={len(vals):2}  {vals[0]:.1f}-{vals[-1]:.1f} mm")
+
+print()
+print("graded series? residual vs a null of sorted random sets")
+graded = {}
+for nm, vals in ap_series.items():
+    resid = EG.linear_residual(vals)   # NB: not 'obs' - Part 3 binds that
+    null = EG.null_linear_residual(len(vals), trials=5000)
+    beats = 1 - sum(1 for x in null if x <= resid) / len(null)
+    graded[nm] = beats
+    print(f"  {nm[:40]:40} residual {resid:.4f}  median random "
+          f"{null[len(null)//2]:.4f}  beats {beats:.0%}")
+
+print()
+print("divisions a user could tell apart?")
+gaps = {}
+for nm, vals in ap_series.items():
+    gaps[nm] = EG.smallest_gap(vals)
+    print(f"  {nm[:40]:40} smallest step {gaps[nm]:.2f} mm  "
+          f"separable: {'yes' if gaps[nm] > EG.EYE_RESOLUTION_MM else 'NO'}")
+
+print()
+gl = EG.glans_diameters_mm()
+print("lead glandes of " + ", ".join(f"{g:.0f}" for g in EG.GLANS_WEIGHTS_G)
+      + " g are " + ", ".join(f"{d:.1f}" for d in gl) + " mm across")
+for nm, vals in ap_series.items():
+    at = sum(1 for g in gl if any(abs(g - v) < 0.5 for v in vals))
+    print(f"  {nm[:40]:40} apertures AT a calibre: {at}/{len(gl)}")
+
+n_twelve = sum(1 for v in ap_series.values() if len(v) == 12)
+print()
+print(f"specimens with all twelve apertures measured: {n_twelve} of {specimens}")
+print("=> readability and the shot calibres are settled; regularity and")
+print("   reproducibility are NOT, and only B2 can settle them.")
+""", cid="exp-0011", reproduces=[
+    "EXP-0011: every measured specimen has an aperture step at or below 1 mm, so the object cannot be read as a gauge",
+    "EXP-0011: no specimen carries an opening at a lead-shot calibre, refuting C-01 directly",
+    "EXP-0011: whether the apertures form a graded series is OPEN - Avenches beats only 83 % of random sets",
+    "EXP-0011: one specimen in forty has all twelve apertures measured",
+])
+
 # --------------------------------------------------------------- Part 9 ---
 md(r"""
 ## Part 9 — The blind protocols
@@ -1106,6 +1165,8 @@ print(f"  zodiac fit {best:.2f}deg vs {median_random:.2f}deg for the median rand
       f"solid; {p_zod:.0%} of random sets fit as well -> the alignment is the scan")
 print(f"  internal volume {min(vols):.0f}-{max(vols):.0f} ml; fit to Roman units no "
       f"better than chance ({p_vol:.0%}); retained volume 0 ml -> not a measure")
+print(f"  smallest aperture step {min(gaps.values()):.2f}mm -> the object cannot be "
+      f"READ as a gauge; but only {n_twelve} specimen has all twelve measured")
 print(f"  best aperture pair levels to {sight_tolerance(14.2,14.5,46.5):.2f}deg "
       f"-> 10x too coarse for Nimes")
 
@@ -1149,7 +1210,7 @@ expect("sources",                         sources, 49)
 expect("countries",                       countries, 10)
 expect("evidence variables",              q1("SELECT COUNT(*) FROM evidence_variables"), 48)
 expect("hypotheses",                      len(hyps), 14)
-expect("experiments",                     q1("SELECT COUNT(*) FROM experiments"), 10)
+expect("experiments",                     q1("SELECT COUNT(*) FROM experiments"), 11)
 expect("pre-registered predictions",      q1("SELECT COUNT(*) FROM predictions"), 11)
 expect("screened domains",                q1("SELECT COUNT(*) FROM screening_candidates"), 16)
 expect("scored variables",                len(disc), 32)
@@ -1177,6 +1238,9 @@ expect("random sets fitting as well (%)", round(100 * p_zod), 94, tol=1)
 expect("volume coefficient",              round(EV.VOL_COEFF, 4), 7.6631)
 expect("largest internal volume (ml)",    round(max(vols)), 1298, tol=1)
 expect("volumes as close to a unit as chance (%)", round(100 * p_vol), 65, tol=2)
+expect("specimens with all 12 apertures", n_twelve, 1)
+expect("Avenches beats this share of random sets (%)",
+       round(100 * max(graded.values())), 83, tol=3)
 
 if blind:
     expect("A3b direction agreement",         len(same_d), 13)
