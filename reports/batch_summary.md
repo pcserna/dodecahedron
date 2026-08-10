@@ -13,9 +13,9 @@ Generated file. Do not edit by hand: change the master data in `database/build_d
 
 | Table | Rows |
 | ----- | ---- |
-| `sources` | 50 |
-| `specimens` | 57 |
-| `artifact_observations` | 224 |
+| `sources` | 51 |
+| `specimens` | 60 |
+| `artifact_observations` | 233 |
 | `corpus_observations` | 37 |
 | `evidence_register` | 47 |
 | `hdm_scores` | 448 |

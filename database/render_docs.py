@@ -139,7 +139,8 @@ def block_composition(f: Facts) -> str:
     consulted = f.one("SELECT COUNT(*) FROM sources WHERE confidence IN ('A','B')")
     rows = [
         ("Specimens recorded", str(specimens)),
-        ("Known corpus", "129 catalogued to 2021 (`PUB-0023`), c 134 by 2025 (`PUB-0003`)"),
+        ("Known corpus", "116 by 2016 (`PUB-0051`), 129 catalogued to 2021 (`PUB-0023`), "
+         "c 134 by 2025 (`PUB-0003`)"),
         ("Coverage", f"{round(100 * specimens / 129)} %"),
         ("Sourced observations", str(observations)),
         ("Sources", f"{f.one('SELECT COUNT(*) FROM sources')}, of which "

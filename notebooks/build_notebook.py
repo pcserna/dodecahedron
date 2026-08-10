@@ -1257,9 +1257,9 @@ def expect(label, got, want, tol=None):
     if not ok:
         FAILURES.append(label)
 
-expect("specimens",                       specimens, 57)
-expect("sourced observations",            observations, 224)
-expect("sources",                         sources, 50)
+expect("specimens",                       specimens, 60)
+expect("sourced observations",            observations, 233)
+expect("sources",                         sources, 51)
 expect("countries",                       countries, 10)
 expect("evidence variables",              q1("SELECT COUNT(*) FROM evidence_variables"), 48)
 expect("hypotheses",                      len(hyps), 14)
@@ -1267,8 +1267,8 @@ expect("experiments",                     q1("SELECT COUNT(*) FROM experiments")
 expect("pre-registered predictions",      q1("SELECT COUNT(*) FROM predictions"), 11)
 expect("screened domains",                q1("SELECT COUNT(*) FROM screening_candidates"), 17)
 expect("scored variables",                len(disc), 32)
-expect("British share (%)",               round(100*british/specimens), 40)
-expect("coverage (%)",                    round(100*specimens/KNOWN_CORPUS), 44)
+expect("British share (%)",               round(100*british/specimens), 38)
+expect("coverage (%)",                    round(100*specimens/KNOWN_CORPUS), 47)
 
 expect("baseline leader",                 base_leader, "H012")
 expect("H012 unclustered",                round(U["H012"], 1), 24.0)
@@ -1302,15 +1302,15 @@ if blind:
     expect("A3b variables compared",          len(shared), 28)
 
 expect("provenance A",                    grades.get("A", 0), 1)
-expect("provenance C",                    grades.get("C", 0), 24)
+expect("provenance C",                    grades.get("C", 0), 27)
 expect("provenance E",                    grades.get("E", 0), 4)
 expect("provenance D",                    grades.get("D", 0), 26)
 expect("admissible for mass",             admit["Mass"], 6)
 expect("admissible for geometry",         admit["Geometry"], 11)
-expect("admissible for context",          admit["Context"], 47)
+expect("admissible for context",          admit["Context"], 50)
 expect("fragments",                       fragments, 11)
-expect("top-source share (%)",            round(100*top_src["c"]/observations), 40)
-expect("top-two-source share (%)",        top2_pct, 57)
+expect("top-source share (%)",            round(100*top_src["c"]/observations), 39)
+expect("top-two-source share (%)",        top2_pct, 55)
 
 print()
 if FAILURES:

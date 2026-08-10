@@ -11,9 +11,9 @@ Generated file. Do not edit by hand: change the master data in `database/build_d
 
 ## 1. Coverage
 
-- Specimens recorded: **57**
+- Specimens recorded: **60**
 - Known corpus: about **134** (PUB-0003, 32)
-- Coverage: **43 per cent**
+- Coverage: **45 per cent**
 
 ## 2. Geographic representativeness
 
@@ -21,13 +21,13 @@ The known corpus is about 70 per cent Gallic and Germanic and about 20 per cent 
 
 | Country | Recorded | Share |
 | ------- | -------- | ----- |
-| United Kingdom | 23 | 40% |
-| Germany | 10 | 18% |
-| France | 10 | 18% |
-| Switzerland | 5 | 9% |
-| Unknown | 2 | 4% |
-| Netherlands | 2 | 4% |
-| Belgium | 2 | 4% |
+| United Kingdom | 23 | 38% |
+| Germany | 11 | 18% |
+| France | 10 | 17% |
+| Switzerland | 6 | 10% |
+| Netherlands | 3 | 5% |
+| Unknown | 2 | 3% |
+| Belgium | 2 | 3% |
 | Serbia | 1 | 2% |
 | Hungary | 1 | 2% |
 | Austria | 1 | 2% |
@@ -38,7 +38,7 @@ The known corpus, among specimens with a recorded find location, is more than ha
 
 | Context category | Recorded |
 | ---------------- | -------- |
-| Unknown | 43 |
+| Unknown | 46 |
 | Military | 4 |
 | Temple | 2 |
 | Settlement | 2 |
@@ -52,7 +52,7 @@ The known corpus, among specimens with a recorded find location, is more than ha
 | ----- | --------- |
 | A | 2 |
 | B | 17 |
-| C | 18 |
+| C | 21 |
 | D | 19 |
 | E | 1 |
 
@@ -60,22 +60,22 @@ The known corpus, among specimens with a recorded find location, is more than ha
 
 | EV | Variable | Power | Specimen observations |
 | -- | -------- | ----- | --------------------- |
-| EV001 | Overall dimensions | High | 12 |
-| EV002 | Mass | High | 16 |
+| EV001 | Overall dimensions | High | 13 |
+| EV002 | Mass | High | 17 |
 | EV003 | Wall thickness | High | 6 |
-| EV004 | Hole diameter distribution | Very High | 17 |
+| EV004 | Hole diameter distribution | Very High | 18 |
 | EV005 | Opposite-hole relationships | Very High | 8 |
 | EV006 | Hole profile | High | 5 |
 | EV007 | Hole edge radius | Medium | 1 |
-| EV008 | Knob diameter | Medium | 9 |
+| EV008 | Knob diameter | Medium | 10 |
 | EV009 | Knob symmetry | Medium | 2 |
 | EV010 | Face symmetry | High | 2 |
-| EV011 | Alloy composition | High | 6 |
+| EV011 | Alloy composition | High | 7 |
 | EV012 | Casting quality | High | 12 |
 | EV013 | Casting defects | High | 1 |
 | EV014 | Surface finishing | Medium | 11 |
 | EV015 | Repair evidence | Medium | 2 |
-| EV016 | Tool marks | High | 3 |
+| EV016 | Tool marks | High | 4 |
 | EV017 | Internal hole wear | Very High | 2 |
 | EV018 | External wear | High | 5 |
 | EV019 | Rope wear | Very High | 0 |
@@ -84,11 +84,11 @@ The known corpus, among specimens with a recorded find location, is more than ha
 | EV022 | Abrasion | Medium | 1 |
 | EV023 | Thermal alteration | Very High | 0 |
 | EV024 | Residues | Very High | 1 |
-| EV025 | Site type | Very High | 42 |
+| EV025 | Site type | Very High | 43 |
 | EV026 | Roman province | Medium | 6 |
-| EV027 | Associated finds | Very High | 6 |
+| EV027 | Associated finds | Very High | 7 |
 | EV028 | Stratigraphy | High | 2 |
-| EV029 | Dating | Very High | 11 |
+| EV029 | Dating | Very High | 12 |
 | EV030 | Number at site | Medium | 1 |
 | EV031 | Military association | High | 4 |
 | EV032 | Ritual association | High | 3 |

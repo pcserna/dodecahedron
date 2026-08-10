@@ -1,4 +1,7 @@
 rd_id,completeness,provenance_grade,measurement_grade,admit_mass,admit_geometry,admit_context,outlier,note
+RD-0058,unknown,C,none,0,0,1,0,"PUB-0051 (Grull 2016), a referenced academic survey. Findspot and material only; admitted for context and for nothing else"
+RD-0059,unknown,C,none,0,0,1,0,"PUB-0051 (Grull 2016), a referenced academic survey. Findspot and material only; admitted for context and for nothing else"
+RD-0060,unknown,C,none,0,0,1,0,"PUB-0051 (Grull 2016), a referenced academic survey. Findspot and material only; admitted for context and for nothing else"
 RD-0041,unknown,D,none,0,0,1,0,"Findspot only, from PUB-0050 at two removes. Admitted for context because a findspot is recorded and provenance is D; contributes to distribution and to nothing else"
 RD-0042,unknown,D,none,0,0,1,0,"Findspot only, from PUB-0050 at two removes. Admitted for context because a findspot is recorded and provenance is D; contributes to distribution and to nothing else"
 RD-0043,unknown,D,none,0,0,1,0,"Findspot only, from PUB-0050 at two removes. Admitted for context because a findspot is recorded and provenance is D; contributes to distribution and to nothing else"

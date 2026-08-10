@@ -1,5 +1,38 @@
 [
   {
+    "rd_id": "RD-0058",
+    "completeness": "unknown",
+    "provenance_grade": "C",
+    "measurement_grade": "none",
+    "admit_mass": 0,
+    "admit_geometry": 0,
+    "admit_context": 1,
+    "outlier": 0,
+    "note": "PUB-0051 (Grull 2016), a referenced academic survey. Findspot and material only; admitted for context and for nothing else"
+  },
+  {
+    "rd_id": "RD-0059",
+    "completeness": "unknown",
+    "provenance_grade": "C",
+    "measurement_grade": "none",
+    "admit_mass": 0,
+    "admit_geometry": 0,
+    "admit_context": 1,
+    "outlier": 0,
+    "note": "PUB-0051 (Grull 2016), a referenced academic survey. Findspot and material only; admitted for context and for nothing else"
+  },
+  {
+    "rd_id": "RD-0060",
+    "completeness": "unknown",
+    "provenance_grade": "C",
+    "measurement_grade": "none",
+    "admit_mass": 0,
+    "admit_geometry": 0,
+    "admit_context": 1,
+    "outlier": 0,
+    "note": "PUB-0051 (Grull 2016), a referenced academic survey. Findspot and material only; admitted for context and for nothing else"
+  },
+  {
     "rd_id": "RD-0041",
     "completeness": "unknown",
     "provenance_grade": "D",

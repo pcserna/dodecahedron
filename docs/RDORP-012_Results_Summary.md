@@ -204,12 +204,12 @@ The index links each finding to the notebook cell that establishes it.
 ### 2.1 Composition
 
 **The corpus now has two tiers, and the composition table pools them.**
-Forty specimens carry measurements, context or both. Seventeen more, added from
-`PUB-0050`, are **findspot-only records at confidence D**: they were taken in
-to improve the distribution evidence, which is where this corpus is weakest,
-and they contribute to nothing else. Grade D has gone from 9 specimens to 26 as
-a result, and every figure about *measurement* still rests on the original
-forty. Section 2.2 gives the breakdown.
+Forty specimens carry measurements, context or both. Twenty more are
+**findspot-only records** — seventeen at confidence D from `PUB-0050` and three
+at C from `PUB-0051` — taken in to improve the distribution evidence, which is
+where this corpus is weakest. They contribute to nothing else. Grade D has gone
+from 9 specimens to 26 as a result, and **every figure about *measurement*
+still rests on the original forty**. Section 2.2 gives the breakdown.
 
 **Tables between `RDORP:BEGIN` and `RDORP:END` markers are generated from the
 database by `database/render_docs.py` and rewritten on every pipeline run.**
@@ -218,11 +218,11 @@ Editing one by hand achieves nothing: the next run overwrites it, and
 prose and is written by hand.
 
 <!-- RDORP:BEGIN composition -->
-| Specimens recorded | 57 |
-| Known corpus | 129 catalogued to 2021 (`PUB-0023`), c 134 by 2025 (`PUB-0003`) |
-| Coverage | 44 % |
-| Sourced observations | 224 |
-| Sources | 50, of which 35 are graded A or B |
+| Specimens recorded | 60 |
+| Known corpus | 116 by 2016 (`PUB-0051`), 129 catalogued to 2021 (`PUB-0023`), c 134 by 2025 (`PUB-0003`) |
+| Coverage | 47 % |
+| Sourced observations | 233 |
+| Sources | 51, of which 36 are graded A or B |
 | Evidence variables | 48 |
 | Hypotheses assessed | 14 |
 | Functional domains screened | 17 |
@@ -236,7 +236,7 @@ Twenty specimens now carry a Greiner/Guggenberger catalogue number and type,
 matched against the reference catalogue and assigned only where the catalogue
 entry is unique for that findspot.
 
-Geographic distribution of the recorded corpus is **40 % British**, against a
+Geographic distribution of the recorded corpus is **38 % British**, against a
 known corpus that is about 20 % British and about 70 % Gallic and Germanic. The
 recorded corpus is therefore not representative, and the skew is an artefact of
 accessibility: British Portable Antiquities Scheme records are online and carry
@@ -253,12 +253,12 @@ grade in `specimen_quality`.
 | ---------------- | ------- | ----- |
 | A | Excavated from a stratified, dated deposit | 1 |
 | B | Excavated or reported find, documented findspot, institutional custody | 2 |
-| C | Findspot recorded, surface or detector find | 24 |
+| C | Findspot recorded, surface or detector find | 27 |
 | D | Institutional custody, no findspot | 26 |
 | E | Private hands, or no findspot and no independent publication | 4 |
 <!-- RDORP:END quality -->
 
-**Eleven of the fifty-seven are fragments**, and one further specimen
+**Eleven of the sixty are fragments**, and one further specimen
 (`RD-0002`) is substantially incomplete despite carrying no fragment label.
 
 ### 2.3 Admissibility rules
@@ -269,9 +269,9 @@ wholesale.
 <!-- RDORP:BEGIN admissibility -->
 | Rule | Requirement | Admissible |
 | ---- | ----------- | ---------- |
-| **Mass** | completeness = complete | **6 of 57** |
-| **Geometry** | completeness ∈ {complete, incomplete} and measurement ∈ {direct, one remove} | **11 of 57** |
-| **Context** | recorded findspot and provenance ≤ D | **47 of 57** |
+| **Mass** | completeness = complete | **6 of 60** |
+| **Geometry** | completeness ∈ {complete, incomplete} and measurement ∈ {direct, one remove} | **11 of 60** |
+| **Context** | recorded findspot and provenance ≤ D | **50 of 60** |
 <!-- RDORP:END admissibility -->
 
 The mass rule is the most consequential. Sixteen specimens carry a recorded
@@ -346,8 +346,27 @@ exists anywhere — an argument from silence, recorded at confidence C, and stil
 contributing −4.5 apiece to the hypotheses that predict them.
 
 <!-- RDORP:BEGIN concentration -->
-**Source concentration.** 40 % of all 224 observations come from a single source, `PUB-0006`, the British Portable Antiquities Scheme database of metal-detector surface finds. Together with `PUB-0003`, two sources account for 57 %.
+**Source concentration.** 39 % of all 233 observations come from a single source, `PUB-0006`, the British Portable Antiquities Scheme database of metal-detector surface finds. Together with `PUB-0003`, two sources account for 55 %.
 <!-- RDORP:END concentration -->
+
+**A second voice on the corpus, from outside the two sources it leans on.**
+`PUB-0051` (Grüll 2016, an edited academic volume) reports the corpus
+independently of `PUB-0003` and `PUB-0006` and reaches the same figures by a
+different route: 4–11 cm across, apertures 6–40 mm, mass 35–580 g with a single
+outlier near 1000 g, and **116 specimens known by 2016** against 129 by 2021
+and c 134 by 2025. That last is the first time this project can see the
+catalogue growing rather than take one figure on trust.
+
+It also corroborates four per-specimen facts this project had from one source
+each: Jublains's mass, its aperture set and its **soldered** knobs, and the
+bone object beside the South Shields find. And it adds the one observation that
+bears on the labelling question directly — **no letters, numbers or characters
+appear on any specimen**, a corpus-level statement made independently of
+`PUB-0006`.
+
+Grüll's own conclusion is a religious one — a device for low-ranking astrology
+or divination — and this project does not adopt it. What it takes from him is
+the corroboration.
 
 **Seven scored variables have no second voice.** Counting the corpus
 observation's own source together with any per-specimen sources, seven of the
@@ -370,7 +389,7 @@ that every fact has one. They are discounted to half weight as Derived evidence
 and excluded from the observed-only scenario, but they are still in the
 baseline.
 
-**Thin specimens.** Median four observations per specimen; **13 of fifty-seven
+**Thin specimens.** Median four observations per specimen; **13 of sixty
 have two or fewer**. A dozen entries amount to a findspot and a citation.
 
 **Empty variables.** Twelve of forty-eight have no observation at all, five of
@@ -878,7 +897,7 @@ computation**, and this document should not imply that it is. Avenches beats
 nothing. Whether two examples agree is equally open: the only comparison
 available is Mainz 3, four apertures spanning 3 mm.
 
-*The reason is the evidence.* **One specimen in fifty-seven has a full set of twelve
+*The reason is the evidence.* **One specimen in sixty has a full set of twelve
 measured apertures.** Both open questions would be settled at once by measuring
 one complete specimen — RDORP-013 item B2, an afternoon with a ruler and a
 lens — which this raises from the cheapest decisive test to the only route to
@@ -1227,7 +1246,7 @@ Whatever the explanation, it has to account for that silence.
 
 ## 9. Limits of the evidence
 
-1. **Coverage.** 44 % of the known corpus, skewed 40 % British against a known
+1. **Coverage.** 47 % of the known corpus, skewed 38 % British against a known
    corpus of about 20 % British.
 2. **Authenticity.** No specimen authenticated; two of the three with usable
    aperture data are unexcavated private-collection pieces; ancient imitation is

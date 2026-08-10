@@ -1,6 +1,114 @@
 [
   {
     "observation_id": 1,
+    "rd_id": "RD-0020",
+    "ev_id": "EV001",
+    "observed_value": "59 mm across excluding the knobs",
+    "confidence": "B",
+    "source_id": "PUB-0051",
+    "page": "153",
+    "figure": null,
+    "extraction_date": "2026-08-10",
+    "notes": "PUB-0003 and this project record 74 mm as the maximum diameter. The two are not necessarily in conflict - Grull states the face-to-face measure without knobs - but the difference is larger than knob height alone would explain and should be resolved against Guillier 2008 directly"
+  },
+  {
+    "observation_id": 2,
+    "rd_id": "RD-0020",
+    "ev_id": "EV002",
+    "observed_value": "81 g",
+    "confidence": "B",
+    "source_id": "PUB-0051",
+    "page": "153",
+    "figure": null,
+    "extraction_date": "2026-08-10",
+    "notes": "Agrees exactly with the figure already held from PUB-0010"
+  },
+  {
+    "observation_id": 3,
+    "rd_id": "RD-0020",
+    "ev_id": "EV004",
+    "observed_value": "Ten circular apertures from 10.5 to 22 mm; two opposed elliptical openings, 26 x 21.5 mm and 22.5 x 21.5 mm",
+    "confidence": "B",
+    "source_id": "PUB-0051",
+    "page": "153",
+    "figure": null,
+    "extraction_date": "2026-08-10",
+    "notes": "Independent of PUB-0010 and PUB-0019, and agrees with both"
+  },
+  {
+    "observation_id": 4,
+    "rd_id": "RD-0020",
+    "ev_id": "EV008",
+    "observed_value": "Knobs soldered to the vertices, 5 to 6 mm across",
+    "confidence": "B",
+    "source_id": "PUB-0051",
+    "page": "153",
+    "figure": null,
+    "extraction_date": "2026-08-10",
+    "notes": "SOLDERED, not cast integrally - a manufacturing claim this project had from one source only"
+  },
+  {
+    "observation_id": 5,
+    "rd_id": "RD-0020",
+    "ev_id": "EV029",
+    "observed_value": "Room and cellar dated by ceramics and coins to the turn of the second-third century AD",
+    "confidence": "B",
+    "source_id": "PUB-0051",
+    "page": "153",
+    "figure": null,
+    "extraction_date": "2026-08-10",
+    "notes": null
+  },
+  {
+    "observation_id": 6,
+    "rd_id": "RD-0019",
+    "ev_id": "EV027",
+    "observed_value": "Found adjacent to a bone object c 30 mm in diameter and c 150 mm long, which could have served as a handle; too poorly preserved to be lifted or conserved",
+    "confidence": "B",
+    "source_id": "PUB-0051",
+    "page": "152",
+    "figure": null,
+    "extraction_date": "2026-08-10",
+    "notes": "A SECOND SOURCE FOR THE ONLY POSSIBLE FUNCTIONAL ASSOCIATION IN THE CORPUS. The same object reaches this project through PUB-0003; Grull cites finds.org.uk and gives the dimensions. It remains unconserved and its identification as a handle is the excavators' suggestion, not an observation"
+  },
+  {
+    "observation_id": 7,
+    "rd_id": "RD-0023",
+    "ev_id": "EV025",
+    "observed_value": "Richly equipped tomb of a woman, fourth century AD",
+    "confidence": "B",
+    "source_id": "PUB-0051",
+    "page": "152",
+    "figure": null,
+    "extraction_date": "2026-08-10",
+    "notes": "Credited to Pirling-Siepen 2000 tab 153. Grull counts this and Jublains as the only two dodecahedra from controlled scientific excavation as of 2016; Norton Disney in 2023 makes a third"
+  },
+  {
+    "observation_id": 8,
+    "rd_id": "RD-0056",
+    "ev_id": "EV016",
+    "observed_value": "Three of the knobs are soldered to each other",
+    "confidence": "B",
+    "source_id": "PUB-0051",
+    "page": "149",
+    "figure": null,
+    "extraction_date": "2026-08-10",
+    "notes": "Manufacturing detail, and the only per-specimen fact this project holds for the London find"
+  },
+  {
+    "observation_id": 9,
+    "rd_id": "RD-0058",
+    "ev_id": "EV011",
+    "observed_value": "Silver",
+    "confidence": "B",
+    "source_id": "PUB-0051",
+    "page": "149",
+    "figure": null,
+    "extraction_date": "2026-08-10",
+    "notes": "The only specimen in a precious metal in a corpus otherwise of copper alloy"
+  },
+  {
+    "observation_id": 10,
     "rd_id": "RD-0001",
     "ev_id": "EV001",
     "observed_value": "82mm maximum diameter; face dimensions 38mm x 38mm",
@@ -12,7 +120,7 @@
     "notes": null
   },
   {
-    "observation_id": 2,
+    "observation_id": 11,
     "rd_id": "RD-0001",
     "ev_id": "EV002",
     "observed_value": "247.23 g",
@@ -24,7 +132,7 @@
     "notes": null
   },
   {
-    "observation_id": 3,
+    "observation_id": 12,
     "rd_id": "RD-0001",
     "ev_id": "EV003",
     "observed_value": "3 mm (plate thickness)",
@@ -36,7 +144,7 @@
     "notes": null
   },
   {
-    "observation_id": 4,
+    "observation_id": 13,
     "rd_id": "RD-0001",
     "ev_id": "EV004",
     "observed_value": "Smallest hole 13.7mm; largest hole 20mm; all 12 faces perforated with varying diameters",
@@ -48,7 +156,7 @@
     "notes": "Individual face-by-face diameters not listed in PAS record"
   },
   {
-    "observation_id": 5,
+    "observation_id": 14,
     "rd_id": "RD-0001",
     "ev_id": "EV006",
     "observed_value": "Slightly bevelled rounded edges on all perforations",
@@ -60,7 +168,7 @@
     "notes": null
   },
   {
-    "observation_id": 6,
+    "observation_id": 15,
     "rd_id": "RD-0001",
     "ev_id": "EV008",
     "observed_value": "Knob height approx. 9mm; diameter 9-10mm; triangular cross-section at base, sub-spherical form",
@@ -72,7 +180,7 @@
     "notes": "20 knobs present; upper layer missing on several, revealing red corrosion"
   },
   {
-    "observation_id": 7,
+    "observation_id": 16,
     "rd_id": "RD-0001",
     "ev_id": "EV009",
     "observed_value": "All 20 knobs triangular-base sub-spherical; consistent form across specimen",
@@ -84,7 +192,7 @@
     "notes": null
   },
   {
-    "observation_id": 8,
+    "observation_id": 17,
     "rd_id": "RD-0001",
     "ev_id": "EV010",
     "observed_value": "All 12 faces described as equally sized (38mm x 38mm); smoothed",
@@ -96,7 +204,7 @@
     "notes": null
   },
   {
-    "observation_id": 9,
+    "observation_id": 18,
     "rd_id": "RD-0001",
     "ev_id": "EV012",
     "observed_value": "Exterior well-finished and smoothed; interior surfaces more roughly cast; preservation grade 2",
@@ -108,7 +216,7 @@
     "notes": null
   },
   {
-    "observation_id": 10,
+    "observation_id": 19,
     "rd_id": "RD-0001",
     "ev_id": "EV013",
     "observed_value": "Upper layer of metal absent on several knobs, revealing red corrosion; casting not perfect",
@@ -120,7 +228,7 @@
     "notes": null
   },
   {
-    "observation_id": 11,
+    "observation_id": 20,
     "rd_id": "RD-0001",
     "ev_id": "EV014",
     "observed_value": "Exterior surfaces smoothed; explicitly stated as smoothed in PAS description",
@@ -132,7 +240,7 @@
     "notes": null
   },
   {
-    "observation_id": 12,
+    "observation_id": 21,
     "rd_id": "RD-0001",
     "ev_id": "EV018",
     "observed_value": "Several faces pitted or gouged; abrasion around base of most knobs; patchy patina",
@@ -144,7 +252,7 @@
     "notes": null
   },
   {
-    "observation_id": 13,
+    "observation_id": 22,
     "rd_id": "RD-0001",
     "ev_id": "EV022",
     "observed_value": "Abrasion present around the base of most knobs",
@@ -156,7 +264,7 @@
     "notes": null
   },
   {
-    "observation_id": 14,
+    "observation_id": 23,
     "rd_id": "RD-0001",
     "ev_id": "EV025",
     "observed_value": "Cultivated land; metal detector find; exact Roman context unknown",
@@ -168,7 +276,7 @@
     "notes": "Findspot: Much Hadham, East Hertfordshire"
   },
   {
-    "observation_id": 15,
+    "observation_id": 24,
     "rd_id": "RD-0001",
     "ev_id": "EV039",
     "observed_value": "Hole diameters range 13.7-20mm; variation present within single specimen",
@@ -180,7 +288,7 @@
     "notes": "Standardisation across corpus cannot be assessed from a single specimen"
   },
   {
-    "observation_id": 16,
+    "observation_id": 25,
     "rd_id": "RD-0002",
     "ev_id": "EV001",
     "observed_value": "Overall width 82.4mm; face width ~42mm, face length ~38mm (approximate)",
@@ -192,7 +300,7 @@
     "notes": "Specimen incomplete; overall dimensions approximate"
   },
   {
-    "observation_id": 17,
+    "observation_id": 26,
     "rd_id": "RD-0002",
     "ev_id": "EV002",
     "observed_value": "270 g (incomplete specimen; true complete weight would be higher)",
@@ -204,7 +312,7 @@
     "notes": "Weight is of incomplete specimen; 6 complete + ~5 partial faces"
   },
   {
-    "observation_id": 18,
+    "observation_id": 27,
     "rd_id": "RD-0002",
     "ev_id": "EV004",
     "observed_value": "Large circular holes of different sizes; holes described as irregularly cut",
@@ -216,7 +324,7 @@
     "notes": "Individual diameters not listed; variation confirmed"
   },
   {
-    "observation_id": 19,
+    "observation_id": 28,
     "rd_id": "RD-0002",
     "ev_id": "EV009",
     "observed_value": "One knob broken off but retained loose; remaining knobs intact",
@@ -228,7 +336,7 @@
     "notes": null
   },
   {
-    "observation_id": 20,
+    "observation_id": 29,
     "rd_id": "RD-0002",
     "ev_id": "EV012",
     "observed_value": "Interior described as crudely cast; exterior not described as finished",
@@ -240,7 +348,7 @@
     "notes": null
   },
   {
-    "observation_id": 21,
+    "observation_id": 30,
     "rd_id": "RD-0002",
     "ev_id": "EV016",
     "observed_value": "Some holes surrounded by incised pentagonal line (post-casting decoration)",
@@ -252,7 +360,7 @@
     "notes": "Pentagonal incised line around holes; likely post-casting tool work"
   },
   {
-    "observation_id": 22,
+    "observation_id": 31,
     "rd_id": "RD-0002",
     "ev_id": "EV025",
     "observed_value": "Cultivated land; metal detector find; exact Roman context unknown",
@@ -264,7 +372,7 @@
     "notes": "Findspot: Fridaythorpe, East Riding of Yorkshire"
   },
   {
-    "observation_id": 23,
+    "observation_id": 32,
     "rd_id": "RD-0003",
     "ev_id": "EV002",
     "observed_value": "82 g (fragment weight only; one face + parts of five faces)",
@@ -276,7 +384,7 @@
     "notes": null
   },
   {
-    "observation_id": 24,
+    "observation_id": 33,
     "rd_id": "RD-0003",
     "ev_id": "EV004",
     "observed_value": "Complete face: hole ~15.75mm diameter; edges of three further holes visible but unmeasured",
@@ -288,7 +396,7 @@
     "notes": "Only one face fully preserved; variation across all 12 faces cannot be assessed"
   },
   {
-    "observation_id": 25,
+    "observation_id": 34,
     "rd_id": "RD-0003",
     "ev_id": "EV008",
     "observed_value": "Knob diameter ~13.5mm at each of four surviving corners",
@@ -300,7 +408,7 @@
     "notes": null
   },
   {
-    "observation_id": 26,
+    "observation_id": 35,
     "rd_id": "RD-0003",
     "ev_id": "EV012",
     "observed_value": "Interior left roughcast; no additional decoration noted",
@@ -312,7 +420,7 @@
     "notes": null
   },
   {
-    "observation_id": 27,
+    "observation_id": 36,
     "rd_id": "RD-0003",
     "ev_id": "EV025",
     "observed_value": "Cultivated land; metal detector find; exact Roman context unknown",
@@ -324,7 +432,7 @@
     "notes": "Findspot: Compton, Guildford, Surrey"
   },
   {
-    "observation_id": 28,
+    "observation_id": 37,
     "rd_id": "RD-0004",
     "ev_id": "EV002",
     "observed_value": "46.79 g (fragment weight: 2 complete faces + remains of ~6 faces)",
@@ -336,7 +444,7 @@
     "notes": null
   },
   {
-    "observation_id": 29,
+    "observation_id": 38,
     "rd_id": "RD-0004",
     "ev_id": "EV003",
     "observed_value": "3.7 mm wall thickness",
@@ -348,7 +456,7 @@
     "notes": null
   },
   {
-    "observation_id": 30,
+    "observation_id": 39,
     "rd_id": "RD-0004",
     "ev_id": "EV004",
     "observed_value": "10-11mm on two complete adjacent faces; 18.3mm on a third adjacent face; variation confirmed",
@@ -360,7 +468,7 @@
     "notes": "Face-to-corner measurement ~7.5mm (similar on known faces); individual diameters partly recorded"
   },
   {
-    "observation_id": 31,
+    "observation_id": 40,
     "rd_id": "RD-0004",
     "ev_id": "EV006",
     "observed_value": "Raised rim around perforation; sunken circular area within pentagonal face; raised ring between hole and edge",
@@ -372,7 +480,7 @@
     "notes": null
   },
   {
-    "observation_id": 32,
+    "observation_id": 41,
     "rd_id": "RD-0004",
     "ev_id": "EV008",
     "observed_value": "Knob height ~10-11mm; width 6.5-7.5mm; triangular cross-section at base, expanding to globular",
@@ -384,7 +492,7 @@
     "notes": null
   },
   {
-    "observation_id": 33,
+    "observation_id": 42,
     "rd_id": "RD-0004",
     "ev_id": "EV018",
     "observed_value": "Metal described as rather pitted and worn; dark to mid-green patina",
@@ -396,7 +504,7 @@
     "notes": null
   },
   {
-    "observation_id": 34,
+    "observation_id": 43,
     "rd_id": "RD-0004",
     "ev_id": "EV025",
     "observed_value": "Cultivated land; metal detector find; exact Roman context unknown",
@@ -408,7 +516,7 @@
     "notes": "Findspot: Stockbridge, Test Valley, Hampshire"
   },
   {
-    "observation_id": 35,
+    "observation_id": 44,
     "rd_id": "RD-0005",
     "ev_id": "EV001",
     "observed_value": "Approximately 80mm across (stated as 'about 8cm across')",
@@ -420,7 +528,7 @@
     "notes": "Approximate figure given in popular article; 3D scan exists at Univ. Lincoln"
   },
   {
-    "observation_id": 36,
+    "observation_id": 45,
     "rd_id": "RD-0005",
     "ev_id": "EV002",
     "observed_value": "245 g",
@@ -432,7 +540,7 @@
     "notes": null
   },
   {
-    "observation_id": 37,
+    "observation_id": 46,
     "rd_id": "RD-0005",
     "ev_id": "EV011",
     "observed_value": "Cu 75%, Sn 7%, Pb 18% by handheld XRF (analyst: Gerry McDonnell, archaeometallurgist)",
@@ -444,7 +552,7 @@
     "notes": "Handheld XRF is semi-quantitative; full quantitative analysis planned at Newcastle Univ."
   },
   {
-    "observation_id": 38,
+    "observation_id": 47,
     "rd_id": "RD-0005",
     "ev_id": "EV017",
     "observed_value": "No internal hole wear observed; described as completely undamaged",
@@ -456,7 +564,7 @@
     "notes": "Direct quote: 'no evidence of any wear at all' (Richard Parker, NDAG secretary)"
   },
   {
-    "observation_id": 39,
+    "observation_id": 48,
     "rd_id": "RD-0005",
     "ev_id": "EV018",
     "observed_value": "No external wear observed; described as completely undamaged",
@@ -468,7 +576,7 @@
     "notes": "Same source as EV017"
   },
   {
-    "observation_id": 40,
+    "observation_id": 49,
     "rd_id": "RD-0005",
     "ev_id": "EV025",
     "observed_value": "Large pit near Roman villa (excavated 1935); rural settlement context",
@@ -480,7 +588,7 @@
     "notes": "Pottery from Iron Age to Roman period found across site; Romano-British figurine nearby"
   },
   {
-    "observation_id": 41,
+    "observation_id": 50,
     "rd_id": "RD-0006",
     "ev_id": "EV025",
     "observed_value": "Leopoldwal, Tongeren; context not specified in Wikipedia image caption",
@@ -492,7 +600,7 @@
     "notes": "Minimum data only from image caption; further source required for all fields"
   },
   {
-    "observation_id": 42,
+    "observation_id": 51,
     "rd_id": "RD-0007",
     "ev_id": "EV025",
     "observed_value": "A field in Aston, Hertfordshire; rural agricultural context (pre-excavation era find)",
@@ -504,7 +612,7 @@
     "notes": "Only contextual information available from archival record"
   },
   {
-    "observation_id": 43,
+    "observation_id": 52,
     "rd_id": "RD-0008",
     "ev_id": "EV002",
     "observed_value": "27.13 g (fragment: one edge + two lugs + four short sections)",
@@ -516,7 +624,7 @@
     "notes": null
   },
   {
-    "observation_id": 44,
+    "observation_id": 53,
     "rd_id": "RD-0008",
     "ev_id": "EV003",
     "observed_value": "Not directly stated; plate visible in fragment",
@@ -528,7 +636,7 @@
     "notes": "Fragment dimensions: 37.65 x 26.15 x 21.05mm"
   },
   {
-    "observation_id": 45,
+    "observation_id": 54,
     "rd_id": "RD-0008",
     "ev_id": "EV004",
     "observed_value": "Edges of three circles visible; described as each face having a hole of different size",
@@ -540,7 +648,7 @@
     "notes": "Holes not individually measurable from this fragment"
   },
   {
-    "observation_id": 46,
+    "observation_id": 55,
     "rd_id": "RD-0008",
     "ev_id": "EV008",
     "observed_value": "Two cylindrical lugs: 13.05mm and 12.40mm diameter",
@@ -552,7 +660,7 @@
     "notes": "Note: described as cylindrical rather than spherical; two surviving knobs"
   },
   {
-    "observation_id": 47,
+    "observation_id": 56,
     "rd_id": "RD-0008",
     "ev_id": "EV012",
     "observed_value": "Interior concave and crudely cast; exterior relatively smooth",
@@ -564,7 +672,7 @@
     "notes": null
   },
   {
-    "observation_id": 48,
+    "observation_id": 57,
     "rd_id": "RD-0008",
     "ev_id": "EV025",
     "observed_value": "Cultivated land; metal detector find; exact Roman context unknown",
@@ -576,7 +684,7 @@
     "notes": "Findspot: Near Market Lavington, Wiltshire; date range AD 100-300"
   },
   {
-    "observation_id": 49,
+    "observation_id": 58,
     "rd_id": "RD-0008",
     "ev_id": "EV029",
     "observed_value": "AD 100-300 (tighter range than most PAS records, which use AD 43-410)",
@@ -588,7 +696,7 @@
     "notes": null
   },
   {
-    "observation_id": 50,
+    "observation_id": 59,
     "rd_id": "RD-0009",
     "ev_id": "EV002",
     "observed_value": "3.8 g (tiny fragment: one edge + two spherical lugs)",
@@ -600,7 +708,7 @@
     "notes": null
   },
   {
-    "observation_id": 51,
+    "observation_id": 60,
     "rd_id": "RD-0009",
     "ev_id": "EV004",
     "observed_value": "Edges of three circular holes visible; individual diameters not measurable",
@@ -612,7 +720,7 @@
     "notes": "Fragment too small for diameter measurement"
   },
   {
-    "observation_id": 52,
+    "observation_id": 61,
     "rd_id": "RD-0009",
     "ev_id": "EV012",
     "observed_value": "Reverse hollow and undecorated; exterior described as worn",
@@ -624,7 +732,7 @@
     "notes": null
   },
   {
-    "observation_id": 53,
+    "observation_id": 62,
     "rd_id": "RD-0009",
     "ev_id": "EV014",
     "observed_value": "Double incised border around two of the hole edges; presumably two concentric rings",
@@ -636,7 +744,7 @@
     "notes": null
   },
   {
-    "observation_id": 54,
+    "observation_id": 63,
     "rd_id": "RD-0009",
     "ev_id": "EV018",
     "observed_value": "Metal described as worn; mid-green patina",
@@ -648,7 +756,7 @@
     "notes": null
   },
   {
-    "observation_id": 55,
+    "observation_id": 64,
     "rd_id": "RD-0009",
     "ev_id": "EV025",
     "observed_value": "Cultivated land; metal detector find; exact Roman context unknown",
@@ -660,7 +768,7 @@
     "notes": "Findspot: Stamford Bridge, East Riding of Yorkshire"
   },
   {
-    "observation_id": 56,
+    "observation_id": 65,
     "rd_id": "RD-0010",
     "ev_id": "EV002",
     "observed_value": "1.67 g (very tiny fragment: one corner only)",
@@ -672,7 +780,7 @@
     "notes": null
   },
   {
-    "observation_id": 57,
+    "observation_id": 66,
     "rd_id": "RD-0010",
     "ev_id": "EV014",
     "observed_value": "Incised grooved decoration on surviving face portions, forming two rings as outer boundary of pentagonal faces",
@@ -684,7 +792,7 @@
     "notes": null
   },
   {
-    "observation_id": 58,
+    "observation_id": 67,
     "rd_id": "RD-0010",
     "ev_id": "EV025",
     "observed_value": "Cultivated land (disturbed); metal detector; depth 0-10cm; exact Roman context unknown",
@@ -696,7 +804,7 @@
     "notes": "Findspot: Yelnow, Bedford; discovery 12 Feb 2011"
   },
   {
-    "observation_id": 59,
+    "observation_id": 68,
     "rd_id": "RD-0011",
     "ev_id": "EV002",
     "observed_value": "7.73 g (fragment: one edge, two knops, partial faces)",
@@ -708,7 +816,7 @@
     "notes": null
   },
   {
-    "observation_id": 60,
+    "observation_id": 69,
     "rd_id": "RD-0011",
     "ev_id": "EV003",
     "observed_value": "1.1 mm (wall thickness of smaller preserved face)",
@@ -720,7 +828,7 @@
     "notes": "Described as 'very thin'; measured on the smaller-hole face"
   },
   {
-    "observation_id": 61,
+    "observation_id": 70,
     "rd_id": "RD-0011",
     "ev_id": "EV004",
     "observed_value": "Two holes partially visible: 9.4mm (with decoration) and approx. 22.6mm (crudely finished); PAS description states perforations are of different sizes across faces",
@@ -732,7 +840,7 @@
     "notes": "Only two of twelve face holes partially preserved; full diameter range unknown"
   },
   {
-    "observation_id": 62,
+    "observation_id": 71,
     "rd_id": "RD-0011",
     "ev_id": "EV005",
     "observed_value": "Two preserved faces described as 'opposing': smaller hole 9.4mm vs larger hole approx. 22.6mm; opposing faces have markedly different hole diameters",
@@ -744,7 +852,7 @@
     "notes": "NOTE: PAS record uses term 'opposing face'; geometric verification not possible from fragment alone; observation should be treated as provisional pending 3D reconstruction"
   },
   {
-    "observation_id": 63,
+    "observation_id": 72,
     "rd_id": "RD-0011",
     "ev_id": "EV006",
     "observed_value": "Smaller face (9.4mm): circumferential groove at aperture edge; larger face (~22.6mm): crudely finished aperture",
@@ -756,7 +864,7 @@
     "notes": "Different finishing quality between small and large holes on same specimen"
   },
   {
-    "observation_id": 64,
+    "observation_id": 73,
     "rd_id": "RD-0011",
     "ev_id": "EV008",
     "observed_value": "Knop diameter 6.0mm x 5.7mm high; neck diameter 4.5mm; integrally cast",
@@ -768,7 +876,7 @@
     "notes": null
   },
   {
-    "observation_id": 65,
+    "observation_id": 74,
     "rd_id": "RD-0011",
     "ev_id": "EV011",
     "observed_value": "XRF results: Cu, Sn, trace Fe, Pb (qualitative only; percentages not reported)",
@@ -780,7 +888,7 @@
     "notes": "Semi-quantitative XRF; quantitative analysis not available from PAS record"
   },
   {
-    "observation_id": 66,
+    "observation_id": 75,
     "rd_id": "RD-0011",
     "ev_id": "EV012",
     "observed_value": "Interior: reverse concave with rough and unfinished surface; exterior: well-defined knops and incised decoration on smaller face",
@@ -792,7 +900,7 @@
     "notes": null
   },
   {
-    "observation_id": 67,
+    "observation_id": 76,
     "rd_id": "RD-0011",
     "ev_id": "EV014",
     "observed_value": "Smaller face: circumferential groove at aperture + two concentric grooves on outer margin; end faces: curving incised grooves; larger (~22.6mm) face: no decoration",
@@ -804,7 +912,7 @@
     "notes": "Decorative treatment varies with hole size: smaller hole decorated, larger hole plain"
   },
   {
-    "observation_id": 68,
+    "observation_id": 77,
     "rd_id": "RD-0011",
     "ev_id": "EV025",
     "observed_value": "Cultivated land; metal detector find; exact Roman context unknown",
@@ -816,7 +924,7 @@
     "notes": "Findspot: Llandow, Vale of Glamorgan, Wales"
   },
   {
-    "observation_id": 69,
+    "observation_id": 78,
     "rd_id": "RD-0012",
     "ev_id": "EV002",
     "observed_value": "34.51 g (one corner knob fragment)",
@@ -828,7 +936,7 @@
     "notes": "High weight for small fragment; dense globular knob contributes most of mass"
   },
   {
-    "observation_id": 70,
+    "observation_id": 79,
     "rd_id": "RD-0012",
     "ev_id": "EV012",
     "observed_value": "Interior: concave, crudely finished; exterior: relatively smooth",
@@ -840,7 +948,7 @@
     "notes": null
   },
   {
-    "observation_id": 71,
+    "observation_id": 80,
     "rd_id": "RD-0012",
     "ev_id": "EV025",
     "observed_value": "Cultivated land; metal detector find; exact Roman context unknown",
@@ -852,7 +960,7 @@
     "notes": "Findspot: Alveston, South Gloucestershire; date range AD 100-300; object certainty: 'Possibly' dodecahedron"
   },
   {
-    "observation_id": 72,
+    "observation_id": 81,
     "rd_id": "RD-0013",
     "ev_id": "EV002",
     "observed_value": "Total fragment weight 66.42 g (four corner pieces: 20.37 + 17.41 + 12.01 + 16.63 g)",
@@ -864,7 +972,7 @@
     "notes": "Four separate fragments probably from same specimen"
   },
   {
-    "observation_id": 73,
+    "observation_id": 82,
     "rd_id": "RD-0013",
     "ev_id": "EV003",
     "observed_value": "Plate thickness: 3.33, 3.55, 3.26, 3.0mm across four fragments (mean ~3.3mm)",
@@ -876,7 +984,7 @@
     "notes": "Consistent wall thickness across all four fragments supports single-specimen origin"
   },
   {
-    "observation_id": 74,
+    "observation_id": 83,
     "rd_id": "RD-0013",
     "ev_id": "EV008",
     "observed_value": "Knob diameters: 14.28, 13.92, 13.46, 14.01mm across four fragments (range 13.46-14.28mm; mean ~13.9mm; very consistent)",
@@ -888,7 +996,7 @@
     "notes": "Consistency of knob diameters across all four fragments strongly supports single-specimen origin; globular form confirmed"
   },
   {
-    "observation_id": 75,
+    "observation_id": 84,
     "rd_id": "RD-0013",
     "ev_id": "EV012",
     "observed_value": "Each fragment: interior concave triangular underside; exterior mid-green patina with developed brown patches; plough damage on all",
@@ -900,7 +1008,7 @@
     "notes": null
   },
   {
-    "observation_id": 76,
+    "observation_id": 85,
     "rd_id": "RD-0013",
     "ev_id": "EV015",
     "observed_value": "Iron corrosion on underside of knobs in fragments 1 and 4; described as possible repair or iron ore in soil",
@@ -912,7 +1020,7 @@
     "notes": "Possible ancient iron repair; ambiguous: could be soil contamination"
   },
   {
-    "observation_id": 77,
+    "observation_id": 86,
     "rd_id": "RD-0013",
     "ev_id": "EV025",
     "observed_value": "Cultivated land; metal detector find; exact Roman context unknown",
@@ -924,7 +1032,7 @@
     "notes": "Findspot: Minting, East Lindsey, Lincolnshire; nearby find LIN-8D3A01 warrants cross-reference"
   },
   {
-    "observation_id": 78,
+    "observation_id": 87,
     "rd_id": "RD-0014",
     "ev_id": "EV002",
     "observed_value": "4.33 g (V-shaped fragment: one edge + two corners)",
@@ -936,7 +1044,7 @@
     "notes": null
   },
   {
-    "observation_id": 79,
+    "observation_id": 88,
     "rd_id": "RD-0014",
     "ev_id": "EV008",
     "observed_value": "Two small spherical knobs described as resembling bun feet; one at each end of the surviving edge",
@@ -948,7 +1056,7 @@
     "notes": null
   },
   {
-    "observation_id": 80,
+    "observation_id": 89,
     "rd_id": "RD-0014",
     "ev_id": "EV012",
     "observed_value": "Cast-in-one-piece construction explicitly noted in PAS description",
@@ -960,7 +1068,7 @@
     "notes": "This is an important manufacturing observation: most specimens have separately soldered knobs; cast-in-one-piece is unusual"
   },
   {
-    "observation_id": 81,
+    "observation_id": 90,
     "rd_id": "RD-0014",
     "ev_id": "EV014",
     "observed_value": "Multiple incised concentric circles on two surviving face portions (one set either side of the central ridge)",
@@ -972,7 +1080,7 @@
     "notes": null
   },
   {
-    "observation_id": 82,
+    "observation_id": 91,
     "rd_id": "RD-0014",
     "ev_id": "EV025",
     "observed_value": "Cultivated land; metal detector find; exact Roman context unknown",
@@ -984,7 +1092,7 @@
     "notes": "Findspot: Potterspury, West Northamptonshire"
   },
   {
-    "observation_id": 83,
+    "observation_id": 92,
     "rd_id": "RD-0015",
     "ev_id": "EV001",
     "observed_value": "Diameter 44mm (overall); among the smaller known specimens",
@@ -996,7 +1104,7 @@
     "notes": "Source: KIK-IRPA BALaT; only dimension given is diameter 4.4cm"
   },
   {
-    "observation_id": 84,
+    "observation_id": 93,
     "rd_id": "RD-0015",
     "ev_id": "EV011",
     "observed_value": "Alloy: bronze and lead (plomb); both listed as materials in KIK-IRPA record",
@@ -1008,7 +1116,7 @@
     "notes": "Lead content in alloy; quantitative composition not given"
   },
   {
-    "observation_id": 85,
+    "observation_id": 94,
     "rd_id": "RD-0015",
     "ev_id": "EV025",
     "observed_value": "Provenance: Couthuin or Bassenge, Liege province, Belgium; specific context not given in source",
@@ -1020,7 +1128,7 @@
     "notes": "Couthuin is in Heron commune; Bassenge is a separate municipality; exact site type unknown"
   },
   {
-    "observation_id": 86,
+    "observation_id": 95,
     "rd_id": "RD-0015",
     "ev_id": "EV026",
     "observed_value": "Roman province Gallia Belgica; Liege province, Belgium",
@@ -1032,7 +1140,7 @@
     "notes": null
   },
   {
-    "observation_id": 87,
+    "observation_id": 96,
     "rd_id": "RD-0015",
     "ev_id": "EV029",
     "observed_value": "AD 301-399 (4th century); tighter date range than most specimens",
@@ -1044,7 +1152,7 @@
     "notes": "Date from KIK-IRPA record; dating method not specified"
   },
   {
-    "observation_id": 88,
+    "observation_id": 97,
     "rd_id": "RD-0016",
     "ev_id": "EV001",
     "observed_value": "Overall diameter 56.40mm",
@@ -1056,7 +1164,7 @@
     "notes": null
   },
   {
-    "observation_id": 89,
+    "observation_id": 98,
     "rd_id": "RD-0016",
     "ev_id": "EV002",
     "observed_value": "39.83 g",
@@ -1068,7 +1176,7 @@
     "notes": null
   },
   {
-    "observation_id": 90,
+    "observation_id": 99,
     "rd_id": "RD-0016",
     "ev_id": "EV004",
     "observed_value": "Aperture diameter range 12.45-17.73mm (BM catalogue lists as range, not per-face)",
@@ -1080,7 +1188,7 @@
     "notes": "Object certainty marked '?' in BM catalogue; identification may be uncertain"
   },
   {
-    "observation_id": 91,
+    "observation_id": 100,
     "rd_id": "RD-0016",
     "ev_id": "EV025",
     "observed_value": "Findspot: British Isles (no specific location recorded in BM catalogue)",
@@ -1092,7 +1200,7 @@
     "notes": "Donated via Sir A.W. Franks; provenance unknown beyond 'British Isles'"
   },
   {
-    "observation_id": 92,
+    "observation_id": 101,
     "rd_id": "RD-0017",
     "ev_id": "EV001",
     "observed_value": "Overall diameter 127.71mm; one of the largest Roman dodecahedra known",
@@ -1104,7 +1212,7 @@
     "notes": "127.71mm exceeds the commonly cited upper limit of 110mm; warrants further verification against primary measurement"
   },
   {
-    "observation_id": 93,
+    "observation_id": 102,
     "rd_id": "RD-0017",
     "ev_id": "EV002",
     "observed_value": "553.20 g; among the heaviest known specimens",
@@ -1116,7 +1224,7 @@
     "notes": "Consistent with large overall diameter; Wikipedia cites max ~1kg for an unstated specimen"
   },
   {
-    "observation_id": 94,
+    "observation_id": 103,
     "rd_id": "RD-0017",
     "ev_id": "EV004",
     "observed_value": "Aperture diameter range 27.67-40.55mm; absolute values proportionally larger than most specimens, consistent with overall large size",
@@ -1128,7 +1236,7 @@
     "notes": "Range of 12.88mm between smallest and largest hole; comparable percentage variation to smaller specimens"
   },
   {
-    "observation_id": 95,
+    "observation_id": 104,
     "rd_id": "RD-0017",
     "ev_id": "EV025",
     "observed_value": "Purchased; no excavation context recorded",
@@ -1140,7 +1248,7 @@
     "notes": "Purchased from Thomas James, Fishguard, 1924; exact find circumstances unknown"
   },
   {
-    "observation_id": 96,
+    "observation_id": 105,
     "rd_id": "RD-0017",
     "ev_id": "EV026",
     "observed_value": "Roman province Britannia; Pembrokeshire, Wales",
@@ -1152,7 +1260,7 @@
     "notes": null
   },
   {
-    "observation_id": 97,
+    "observation_id": 106,
     "rd_id": "RD-0018",
     "ev_id": "EV025",
     "observed_value": "Roman town and fort (Corstopitum); known military and civilian settlement on Hadrian's Wall",
@@ -1164,7 +1272,7 @@
     "notes": "Corbridge was a significant supply base and settlement on Dere Street"
   },
   {
-    "observation_id": 98,
+    "observation_id": 107,
     "rd_id": "RD-0018",
     "ev_id": "EV031",
     "observed_value": "Military association confirmed: Corbridge was a Roman fort and supply base",
@@ -1176,7 +1284,7 @@
     "notes": "Site has both military and civilian Roman occupation phases"
   },
   {
-    "observation_id": 99,
+    "observation_id": 108,
     "rd_id": "RD-0019",
     "ev_id": "EV001",
     "observed_value": "Face width 52mm, face length 48mm (cited from museum website in PAS YORYM-41CD72)",
@@ -1188,7 +1296,7 @@
     "notes": "Secondary citation: measurements from museum website as quoted in PAS record; not directly from primary catalogue; confidence D pending direct verification"
   },
   {
-    "observation_id": 100,
+    "observation_id": 109,
     "rd_id": "RD-0019",
     "ev_id": "EV025",
     "observed_value": "Roman fort (Arbeia), South Shields; confirmed military context",
@@ -1200,7 +1308,7 @@
     "notes": "Arbeia is a well-documented Roman auxiliary fort at mouth of River Tyne"
   },
   {
-    "observation_id": 101,
+    "observation_id": 110,
     "rd_id": "RD-0019",
     "ev_id": "EV031",
     "observed_value": "Military association: found at Roman auxiliary fort",
@@ -1212,7 +1320,7 @@
     "notes": "One of the few British dodecahedra with confirmed military fort provenance"
   },
   {
-    "observation_id": 102,
+    "observation_id": 111,
     "rd_id": "RD-0020",
     "ev_id": "EV025",
     "observed_value": "Edge of Roman thermal baths complex at Jublains (Noeodunum); civilian public building context; not military",
@@ -1224,7 +1332,7 @@
     "notes": "This is the only Roman dodecahedron from a verified, controlled excavation; thermal baths = public civilian infrastructure, not military or ritual"
   },
   {
-    "observation_id": 103,
+    "observation_id": 112,
     "rd_id": "RD-0020",
     "ev_id": "EV028",
     "observed_value": "Found in stratigraphic context during controlled excavation; specific stratigraphic detail requires access to full paper text",
@@ -1236,7 +1344,7 @@
     "notes": "Context verified by professional archaeologists (INRAP); paper sub-title emphasises this is the first properly contextualised find"
   },
   {
-    "observation_id": 104,
+    "observation_id": 113,
     "rd_id": "RD-0020",
     "ev_id": "EV026",
     "observed_value": "Roman province Gallia Lugdunensis; Jublains is civitas capital of the Aulerci Diablintes",
@@ -1248,7 +1356,7 @@
     "notes": null
   },
   {
-    "observation_id": 105,
+    "observation_id": 114,
     "rd_id": "RD-0020",
     "ev_id": "EV032",
     "observed_value": "Thermal baths context does not directly support ritual association; baths were civilian social/hygienic infrastructure",
@@ -1260,7 +1368,7 @@
     "notes": "Context contradicts H003 (ritual) as primary interpretation for this specimen; however one specimen is insufficient to draw corpus conclusions"
   },
   {
-    "observation_id": 106,
+    "observation_id": 115,
     "rd_id": "RD-0001",
     "ev_id": "EV033",
     "observed_value": "ASSESSMENT: Cylindrical rods of 13.5mm diameter fit through all 12 holes. Each hole (13.7-20mm) accepts a specific rod diameter. Rod insertion is mechanically feasible.",
@@ -1272,7 +1380,7 @@
     "notes": "Derived from measured hole diameters 13.7-20mm; Roman wooden dowels/rods in 10-20mm diameter are archaeologically attested"
   },
   {
-    "observation_id": 107,
+    "observation_id": 116,
     "rd_id": "RD-0017",
     "ev_id": "EV033",
     "observed_value": "ASSESSMENT: Holes 27.67-40.55mm accommodate substantial rods/poles or large tool handles. Rod insertion feasible; scale consistent with structural use of large timber.",
@@ -1284,7 +1392,7 @@
     "notes": "Derived from BM catalogue hole range; proportionally similar to smaller specimens"
   },
   {
-    "observation_id": 108,
+    "observation_id": 117,
     "rd_id": "RD-0016",
     "ev_id": "EV033",
     "observed_value": "ASSESSMENT: Holes 12.45-17.73mm accommodate rods of 12-17mm diameter. Rod insertion mechanically feasible.",
@@ -1296,7 +1404,7 @@
     "notes": "Derived from BM catalogue; object certainty '?' noted"
   },
   {
-    "observation_id": 109,
+    "observation_id": 118,
     "rd_id": "RD-0011",
     "ev_id": "EV033",
     "observed_value": "ASSESSMENT: Opposing faces have holes of 9.4mm and ~22.6mm. Rods cannot pass through both opposing holes simultaneously unless two different rod sizes are used. This geometry is incompatible with a through-rod passing axially through opposing holes unless the holes are not geometrically opposing.",
@@ -1308,7 +1416,7 @@
     "notes": "Critical constraint: if 9.4mm and 22.6mm are truly opposing faces, no single rod can pass through both; see EV005 note on geometric verification needed"
   },
   {
-    "observation_id": 110,
+    "observation_id": 119,
     "rd_id": "RD-0001",
     "ev_id": "EV034",
     "observed_value": "ASSESSMENT: Smallest hole 13.7mm allows rope of up to ~12mm diameter to pass through. Knobs (~9.5mm diameter) can serve as anchors or routing guides for rope of 4-8mm diameter. Rope routing through holes and over knobs is geometrically feasible.",
@@ -1320,7 +1428,7 @@
     "notes": "Derived from hole range 13.7-20mm and knob diameter 9-10mm; Roman cordage in 5-15mm diameter is archaeologically attested"
   },
   {
-    "observation_id": 111,
+    "observation_id": 120,
     "rd_id": "RD-0011",
     "ev_id": "EV034",
     "observed_value": "ASSESSMENT: Smaller hole (9.4mm) constrains rope to <8mm diameter. Larger hole (~22.6mm) is permissive. Rope routing is feasible through the larger hole; constrained through the smaller.",
@@ -1332,7 +1440,7 @@
     "notes": "Derived from hole measurements 9.4mm and ~22.6mm"
   },
   {
-    "observation_id": 112,
+    "observation_id": 121,
     "rd_id": "RD-0001",
     "ev_id": "EV035",
     "observed_value": "ASSESSMENT: The dodecahedral form with 20 vertex knobs provides stable 3-point resting on any surface. Wall thickness 3mm with bronze alloy provides rigid structural shell. No deformation evidence in any examined specimen. Structurally stable as a free-standing object.",
@@ -1344,7 +1452,7 @@
     "notes": "Derived from wall thickness 3mm, bronze alloy, dodecahedral geometry; 3-point stability is inherent to the regular form"
   },
   {
-    "observation_id": 113,
+    "observation_id": 122,
     "rd_id": "RD-0001",
     "ev_id": "EV036",
     "observed_value": "ASSESSMENT: Six pairs of opposing faces provide 6 potential through-rod axes. A rod inserted through opposing holes of equal diameter transfers axial load. For RD-0001 (holes 13.7-20mm), varying hole sizes mean only same-diameter opposing pairs can carry through-rods; load transfer is directionally selective, not isotropic. Plausible but requires specific rod sizes per axis.",
@@ -1356,7 +1464,7 @@
     "notes": "Derived from geometry; load capacity depends on rod-hole fit and material properties"
   },
   {
-    "observation_id": 114,
+    "observation_id": 123,
     "rd_id": "RD-0001",
     "ev_id": "EV037",
     "observed_value": "ASSESSMENT (corpus-level): Overall diameters span 44mm to 127.71mm across measured specimens (ratio 2.9:1). A modular structural system requires standardised component sizes. The 3x size range is incompatible with interchangeable modular nodes. Individual specimens can accept rods/ropes, but assembly of multiple dodecahedra into a common structural system is not supported by the current evidence.",
@@ -1368,7 +1476,7 @@
     "notes": "Corpus-level derived assessment; based on 5 specimens with reliable size measurements: RD-0015 (44mm), RD-0016 (56.4mm), RD-0001/RD-0002 (~82mm), RD-0017 (127.71mm)"
   },
   {
-    "observation_id": 115,
+    "observation_id": 124,
     "rd_id": "RD-0001",
     "ev_id": "EV039",
     "observed_value": "ASSESSMENT (corpus-level): No metrological standard detected. Overall diameters: 44, 56.4, ~80, ~82, 127.71mm — no common unit or ratio pattern. Hole diameter ranges: 9.4-40.55mm across specimens with no consistent sizing. Wall thickness: 1.1-3.7mm — wide variation. E013 in evidence register: 'No authenticated inscriptions or numerals are known'. E029: 'No accepted metrological standard has been demonstrated'. Conclusion: absence of standardisation across the corpus.",
@@ -1380,7 +1488,7 @@
     "notes": "Corpus-level derived from 5 specimens with reliable size data; consistent with evidence register E029"
   },
   {
-    "observation_id": 116,
+    "observation_id": 125,
     "rd_id": "RD-0001",
     "ev_id": "EV040",
     "observed_value": "ASSESSMENT (corpus-level): Current corpus is predominantly British (17/21 specimens). 2 Belgian (Tongeren, Liege) and 2 French (Jublains, Arles) specimens entered. Insufficient continental coverage for systematic regional variation analysis. Pending: data from German, Dutch, Swiss, Luxembourg and Austrian museum collections.",
@@ -1392,7 +1500,7 @@
     "notes": "Corpus-level observation; geographic bias in current dataset due to PAS coverage; full analysis requires Guggenberger & Nouwen catalogue data"
   },
   {
-    "observation_id": 117,
+    "observation_id": 126,
     "rd_id": "RD-0021",
     "ev_id": "EV025",
     "observed_value": "Roman thermae (public baths) at Arelate (Arles); civilian public infrastructure; discovered 1939 during work at or near the thermal baths",
@@ -1404,7 +1512,7 @@
     "notes": "PATTERN: second baths-context specimen alongside Jublains (RD-0020); thermal baths = civilian public building, not military or ritual context"
   },
   {
-    "observation_id": 118,
+    "observation_id": 127,
     "rd_id": "RD-0021",
     "ev_id": "EV026",
     "observed_value": "Roman province Gallia Narbonensis; Arelate (Arles) was a major Roman colony",
@@ -1416,7 +1524,7 @@
     "notes": null
   },
   {
-    "observation_id": 119,
+    "observation_id": 128,
     "rd_id": "RD-0021",
     "ev_id": "EV029",
     "observed_value": "3rd century AD (per Wikidata record)",
@@ -1428,7 +1536,7 @@
     "notes": "Dating method not specified in Wikidata record"
   },
   {
-    "observation_id": 120,
+    "observation_id": 129,
     "rd_id": "RD-0022",
     "ev_id": "EV001",
     "observed_value": "Diameter face to opposite face 5.5 cm (55 mm) excluding knobs; complete specimen",
@@ -1440,7 +1548,7 @@
     "notes": "Measured by the cataloguer; first publication of this specimen"
   },
   {
-    "observation_id": 121,
+    "observation_id": 130,
     "rd_id": "RD-0022",
     "ev_id": "EV002",
     "observed_value": "246 g",
@@ -1452,7 +1560,7 @@
     "notes": null
   },
   {
-    "observation_id": 122,
+    "observation_id": 131,
     "rd_id": "RD-0022",
     "ev_id": "EV003",
     "observed_value": "Wall thickness c 1.5 mm",
@@ -1464,7 +1572,7 @@
     "notes": null
   },
   {
-    "observation_id": 123,
+    "observation_id": 132,
     "rd_id": "RD-0022",
     "ev_id": "EV004",
     "observed_value": "One pair of holes 15/17 mm and a second pair 14/15 mm; all other holes in a very small range of c 10.0-12.5 mm",
@@ -1476,7 +1584,7 @@
     "notes": "Individual diameters of the eight remaining holes not given; range recorded verbatim, values NOT interpolated"
   },
   {
-    "observation_id": 124,
+    "observation_id": 133,
     "rd_id": "RD-0022",
     "ev_id": "EV005",
     "observed_value": "Two recorded pairs of opposite holes: 15/17 mm (difference 2 mm) and 14/15 mm (difference 1 mm)",
@@ -1488,7 +1596,7 @@
     "notes": "Within-pair differences fall inside the corpus range of c 2-4.5 mm reported at p 31 n 1"
   },
   {
-    "observation_id": 125,
+    "observation_id": 134,
     "rd_id": "RD-0022",
     "ev_id": "EV008",
     "observed_value": "Knob diameter c 5 mm",
@@ -1500,7 +1608,7 @@
     "notes": null
   },
   {
-    "observation_id": 126,
+    "observation_id": 135,
     "rd_id": "RD-0022",
     "ev_id": "EV014",
     "observed_value": "All faces carry five ring-and-dot motifs; Greiner/Guggenberger type 2a",
@@ -1512,7 +1620,7 @@
     "notes": null
   },
   {
-    "observation_id": 127,
+    "observation_id": 136,
     "rd_id": "RD-0022",
     "ev_id": "EV025",
     "observed_value": "No findspot recorded; known only from the Henryk Klunder collection, Mainz, now in a private collection in Winterthur, Switzerland",
@@ -1524,7 +1632,7 @@
     "notes": "Unprovenanced. Contributes measurements but no context evidence"
   },
   {
-    "observation_id": 128,
+    "observation_id": 137,
     "rd_id": "RD-0023",
     "ev_id": "EV025",
     "observed_value": "Richly furnished grave of a wealthy woman who died around AD 350",
@@ -1536,7 +1644,7 @@
     "notes": "One of only three dodecahedra from richly furnished graves (with Bassenge and Bachem)"
   },
   {
-    "observation_id": 129,
+    "observation_id": 138,
     "rd_id": "RD-0023",
     "ev_id": "EV027",
     "observed_value": "An object of bone, length c 15 cm and diameter c 3 cm, lay immediately adjacent to the dodecahedron in the grave",
@@ -1548,7 +1656,7 @@
     "notes": "OBSERVATION vs INTERPRETATION: the adjacency and dimensions are the observation. PUB-0003's suggestion of 'a functional connection' and of 'temporary mounting upon a kind of handle' is author interpretation and is recorded in evidence_register, not here. The bone object was in very poor condition, was not preserved, and is known only from a drawing of the grave - so it cannot be re-examined"
   },
   {
-    "observation_id": 130,
+    "observation_id": 139,
     "rd_id": "RD-0023",
     "ev_id": "EV004",
     "observed_value": "Pair of production holes 2.4 cm and 2.3 cm (24 and 23 mm)",
@@ -1560,7 +1668,7 @@
     "notes": null
   },
   {
-    "observation_id": 131,
+    "observation_id": 140,
     "rd_id": "RD-0023",
     "ev_id": "EV029",
     "observed_value": "Grave of a woman who died around AD 350",
@@ -1572,7 +1680,7 @@
     "notes": "Dating derives from the grave assemblage as reported"
   },
   {
-    "observation_id": 132,
+    "observation_id": 141,
     "rd_id": "RD-0024",
     "ev_id": "EV025",
     "observed_value": "Found along the Roman Limes, in the same area of a palisade trench near a watchtower",
@@ -1584,7 +1692,7 @@
     "notes": "PUB-0003 n 18 nevertheless lists no 20 among find contexts with plausible sacred connections; both readings preserved"
   },
   {
-    "observation_id": 133,
+    "observation_id": 142,
     "rd_id": "RD-0024",
     "ev_id": "EV027",
     "observed_value": "A bronze statuette of Mercury as Hermes-Thoth was found in the same area",
@@ -1596,7 +1704,7 @@
     "notes": "Ultimate reference: Winkelmann 1933, 137-8 tab 16"
   },
   {
-    "observation_id": 134,
+    "observation_id": 143,
     "rd_id": "RD-0024",
     "ev_id": "EV031",
     "observed_value": "Limes context: palisade trench near a watchtower",
@@ -1608,7 +1716,7 @@
     "notes": null
   },
   {
-    "observation_id": 135,
+    "observation_id": 144,
     "rd_id": "RD-0025",
     "ev_id": "EV025",
     "observed_value": "Found 'near' the sacrificial shafts of an urban Gallo-Roman cult precinct",
@@ -1620,7 +1728,7 @@
     "notes": "Quotation marks around 'near' are the source's own; exact distance not stated. Ultimate reference: Kolling 1993, 124"
   },
   {
-    "observation_id": 136,
+    "observation_id": 145,
     "rd_id": "RD-0025",
     "ev_id": "EV032",
     "observed_value": "Association with the sacrificial shafts of a cult precinct",
@@ -1632,7 +1740,7 @@
     "notes": null
   },
   {
-    "observation_id": 137,
+    "observation_id": 146,
     "rd_id": "RD-0026",
     "ev_id": "EV025",
     "observed_value": "From the site of the temple complex of the local god Nodens at Lydney; the exact find context is unknown",
@@ -1644,7 +1752,7 @@
     "notes": "Ultimate reference: Wheeler and Wheeler 1932, 86 fig 20. Site association only - not a stratified context"
   },
   {
-    "observation_id": 138,
+    "observation_id": 147,
     "rd_id": "RD-0026",
     "ev_id": "EV032",
     "observed_value": "Recovered from a temple site (Nodens), exact context unknown",
@@ -1656,7 +1764,7 @@
     "notes": null
   },
   {
-    "observation_id": 139,
+    "observation_id": 148,
     "rd_id": "RD-0027",
     "ev_id": "EV025",
     "observed_value": "Part of a cache identified as originating from a temple, perhaps the temple of Diana at Gloucester",
@@ -1668,7 +1776,7 @@
     "notes": "Ultimate reference: Coombe and Henig 2020. The temple origin is the cited authors' identification of the cache, not a stratigraphic observation of the dodecahedron"
   },
   {
-    "observation_id": 140,
+    "observation_id": 149,
     "rd_id": "RD-0027",
     "ev_id": "EV027",
     "observed_value": "Recovered as part of a cache of objects",
@@ -1680,7 +1788,7 @@
     "notes": null
   },
   {
-    "observation_id": 141,
+    "observation_id": 150,
     "rd_id": "RD-0028",
     "ev_id": "EV025",
     "observed_value": "Found by a metal detectorist in a 'modest Gallo-Roman domestic structure'",
@@ -1692,7 +1800,7 @@
     "notes": "Ultimate reference: Berton 2007"
   },
   {
-    "observation_id": 142,
+    "observation_id": 151,
     "rd_id": "RD-0028",
     "ev_id": "EV027",
     "observed_value": "A bronze statuette of a goddess (Juno?) lay one metre away",
@@ -1704,7 +1812,7 @@
     "notes": "The identification as Juno is queried in the source and the query is preserved. Distance of one metre is as stated"
   },
   {
-    "observation_id": 143,
+    "observation_id": 152,
     "rd_id": "RD-0029",
     "ev_id": "EV025",
     "observed_value": "CONFLICT: listed both among finds from cities or other settlements (n 16) and among coin or bronze hoards (n 21)",
@@ -1716,7 +1824,7 @@
     "notes": "Both classifications preserved per RDORP conflict rule; a hoard deposited within a settlement would satisfy both"
   },
   {
-    "observation_id": 144,
+    "observation_id": 153,
     "rd_id": "RD-0030",
     "ev_id": "EV025",
     "observed_value": "One of three dodecahedra from richly furnished graves",
@@ -1728,7 +1836,7 @@
     "notes": "Ultimate references: Barthel 1909, 94; Nouwen 1993, 31-2, 35"
   },
   {
-    "observation_id": 145,
+    "observation_id": 154,
     "rd_id": "RD-0030",
     "ev_id": "EV029",
     "observed_value": "Dating uncertain; PUB-0003 notes Bachem among specimens that may date from the 2nd century",
@@ -1740,7 +1848,7 @@
     "notes": "PUB-0003 n 13 states explicitly that the dating of this specimen remains uncertain"
   },
   {
-    "observation_id": 146,
+    "observation_id": 155,
     "rd_id": "RD-0031",
     "ev_id": "EV024",
     "observed_value": "Recorded as having traces of yellow wax",
@@ -1752,7 +1860,7 @@
     "notes": "RELIABILITY EXPLICITLY QUESTIONED BY THE SOURCE: PUB-0003 n 103 states 'this observation may not be fully reliable' (Guggenberger 1999, 61-2, 144, 162). Recorded at confidence D for that reason. This is the only residue observation in the corpus, and it is contested"
   },
   {
-    "observation_id": 147,
+    "observation_id": 156,
     "rd_id": "RD-0031",
     "ev_id": "EV025",
     "observed_value": "Feldberg Roman fort; listed among military-camp find contexts",
@@ -1764,7 +1872,7 @@
     "notes": null
   },
   {
-    "observation_id": 148,
+    "observation_id": 157,
     "rd_id": "RD-0031",
     "ev_id": "EV029",
     "observed_value": "Found 1892; dating uncertain, possibly 2nd century",
@@ -1776,7 +1884,7 @@
     "notes": "PUB-0003 n 13 lists Feldberg among specimens whose dating is uncertain"
   },
   {
-    "observation_id": 149,
+    "observation_id": 158,
     "rd_id": "RD-0032",
     "ev_id": "EV026",
     "observed_value": "Brigetio, Pannonia - the easternmost known findspot",
@@ -1788,7 +1896,7 @@
     "notes": null
   },
   {
-    "observation_id": 150,
+    "observation_id": 159,
     "rd_id": "RD-0033",
     "ev_id": "EV026",
     "observed_value": "Deonica, Moesia superior - outlying south-eastern findspot",
@@ -1800,7 +1908,7 @@
     "notes": "Ultimate reference: Vujovic 2021"
   },
   {
-    "observation_id": 151,
+    "observation_id": 160,
     "rd_id": "RD-0005",
     "ev_id": "EV025",
     "observed_value": "Discovered on the top of a large pit full of building debris, 700 m east of a villa rustica",
@@ -1812,7 +1920,7 @@
     "notes": "More precise than the batch-001 record (PUB-0008), which gave only 'large pit near Roman villa'. Both retained; distance now specified. PUB-0003 also reports Hitchens' suggestion that it may have been placed to ritually close the pit and Guggenberger's/Henig's suggestion that it may originate from a shrine - both are INTERPRETATION and are recorded in evidence_register, not as observations"
   },
   {
-    "observation_id": 152,
+    "observation_id": 161,
     "rd_id": "RD-0007",
     "ev_id": "EV025",
     "observed_value": "First recorded dodecahedron; presented to the Society of Antiquaries of London in 1739; Guggenberger catalogue no 59",
@@ -1824,7 +1932,7 @@
     "notes": "Confirms the batch-001 archival record (PUB-0007) and supplies the catalogue number"
   },
   {
-    "observation_id": 153,
+    "observation_id": 162,
     "rd_id": "RD-0015",
     "ev_id": "EV025",
     "observed_value": "PUB-0003 lists a Bassenge (Belgium) dodecahedron, Guggenberger no 2, as one of three specimens from richly furnished graves",
@@ -1836,7 +1944,7 @@
     "notes": "POSSIBLE IDENTITY, NOT ASSERTED: RD-0015 is recorded by PUB-0011 as from 'Couthuin or Bassenge, Liege province'. Guggenberger no 2 may be the same object, which would give RD-0015 a grave context. The identification is not made by either source and is left unresolved; RD-0015 context_category therefore remains Unknown"
   },
   {
-    "observation_id": 154,
+    "observation_id": 163,
     "rd_id": "RD-0020",
     "ev_id": "EV028",
     "observed_value": "Deposition of the stratified Jublains dodecahedron took place in the first half of the 3rd century",
@@ -1848,7 +1956,7 @@
     "notes": "PUB-0003 n 13, citing Guillier et al 2008, 284. Corroborates the batch-001 record and supplies Guggenberger no 98"
   },
   {
-    "observation_id": 155,
+    "observation_id": 164,
     "rd_id": "RD-0020",
     "ev_id": "EV001",
     "observed_value": "Height 59 mm as it stands, but only 48-52 mm from face to opposite face; maximum diameter 74 mm; twelve pentagonal faces of 21 mm edge",
@@ -1860,7 +1968,7 @@
     "notes": "The 48-52 mm spread across face-to-face axes is itself a measure of the object's departure from a regular dodecahedron"
   },
   {
-    "observation_id": 156,
+    "observation_id": 165,
     "rd_id": "RD-0020",
     "ev_id": "EV002",
     "observed_value": "81 g",
@@ -1872,7 +1980,7 @@
     "notes": "Lightest complete specimen in the database; compare 246 g (RD-0022), 247 g (RD-0001), 245 g (RD-0005), 553 g (RD-0017)"
   },
   {
-    "observation_id": 157,
+    "observation_id": 166,
     "rd_id": "RD-0020",
     "ev_id": "EV004",
     "observed_value": "Ten faces have circular openings varying from 10.5 to 22 mm; the two remaining faces have oval openings of 21x26 mm",
@@ -1884,7 +1992,7 @@
     "notes": "Per-face diameters are not tabulated in the report; the drawing (fig 12) is a Duval rabattement from which PUB-0019 later read values, recorded separately below at lower confidence"
   },
   {
-    "observation_id": 158,
+    "observation_id": 167,
     "rd_id": "RD-0020",
     "ev_id": "EV005",
     "observed_value": "The two faces without concentric circles, which carry the oval openings, are placed in opposition on the object, possibly materialising a 'top' and a 'bottom'",
@@ -1896,7 +2004,7 @@
     "notes": "The excavators' phrase is 'y materialisant eventuellement un haut et un bas' - a hedged suggestion, not an assertion. Relevant to EV038"
   },
   {
-    "observation_id": 159,
+    "observation_id": 168,
     "rd_id": "RD-0020",
     "ev_id": "EV006",
     "observed_value": "Ten openings circular; two openings oval (21x26 mm)",
@@ -1908,7 +2016,7 @@
     "notes": "CONFLICTS WITH NOTHING, but note that PUB-0003, 32 explains the irregular opposed pair across the corpus as production holes"
   },
   {
-    "observation_id": 160,
+    "observation_id": 169,
     "rd_id": "RD-0020",
     "ev_id": "EV008",
     "observed_value": "Each vertex carries a small ball about 5-6 mm in diameter",
@@ -1920,7 +2028,7 @@
     "notes": null
   },
   {
-    "observation_id": 161,
+    "observation_id": 170,
     "rd_id": "RD-0020",
     "ev_id": "EV011",
     "observed_value": "Copper alloy, described by the excavators as 'bronze?' with the query retained",
@@ -1932,7 +2040,7 @@
     "notes": "No analysis was performed; the query is the excavators' own"
   },
   {
-    "observation_id": 162,
+    "observation_id": 171,
     "rd_id": "RD-0020",
     "ev_id": "EV012",
     "observed_value": "Appears to have been cast by the lost-wax process and then carefully trued up ('coule a la cire perdue puis soigneusement rectifie')",
@@ -1944,7 +2052,7 @@
     "notes": "Direct support for post-casting finishing; see EV016"
   },
   {
-    "observation_id": 163,
+    "observation_id": 172,
     "rd_id": "RD-0020",
     "ev_id": "EV014",
     "observed_value": "Ten of the twelve faces have their opening underlined by concentric circles engraved in the metal; the other two faces have none",
@@ -1956,7 +2064,7 @@
     "notes": null
   },
   {
-    "observation_id": 164,
+    "observation_id": 173,
     "rd_id": "RD-0020",
     "ev_id": "EV015",
     "observed_value": "Intact apart from a barely visible crack on one edge",
@@ -1968,7 +2076,7 @@
     "notes": "No repair present; recorded because it establishes that the object was complete when deposited, in a burnt destruction layer"
   },
   {
-    "observation_id": 165,
+    "observation_id": 174,
     "rd_id": "RD-0020",
     "ev_id": "EV016",
     "observed_value": "The vertex balls are soldered to the body of the dodecahedron itself ('soudee au corps meme du dodecaedre')",
@@ -1980,7 +2088,7 @@
     "notes": "CONFLICT: RD-0014 is recorded by PUB-0006 as cast in one piece. Both readings preserved. If knobs were separately made and attached on this specimen, the manufacturing sequence is more complex than single-pour casting and the knobs are a deliberate addition"
   },
   {
-    "observation_id": 166,
+    "observation_id": 175,
     "rd_id": "RD-0020",
     "ev_id": "EV025",
     "observed_value": "Recovered from destruction layer F1058 of a small drystone building over an excavated cellar, on ancient Street 8 at the junction of Cardo A and Decumanus 8, in the shadow of a large public building (the thermae); the building burned at the turn of the 2nd and 3rd centuries",
@@ -1992,7 +2100,7 @@
     "notes": "CORRECTS THE BATCH-001 RECORD, which read this as a baths context because the excavation lay at the edge of the thermae. The building is a separate structure across the street. The excavators state the position was ideal for a commercial establishment. THIS IS THE ONLY SEALED, DATED, STRATIFIED DODECAHEDRON CONTEXT KNOWN"
   },
   {
-    "observation_id": 167,
+    "observation_id": 176,
     "rd_id": "RD-0020",
     "ev_id": "EV027",
     "observed_value": "Found in the same destruction layer as a complete trebuchet (precision balance): beam 225 mm long weighing 20 g, with two tortoise-shell-shaped pans of 59x52x16 mm (12 g) and 49x54x17 mm (11 g), each pierced with three 2 mm holes; the complete pan holds 20 cubic cm level and 36 heaped. The accompanying pottery has a higher proportion of closed vessels and fewer kitchen vessels than contemporary assemblages",
@@ -2004,7 +2112,7 @@
     "notes": "THE STRONGEST ASSOCIATED-FIND RECORD IN THE DATABASE. The excavators note the balance served to check the alloy of a coin or to weigh precious materials, with a capacity not exceeding one Roman pound (327.45 g). Their reading of the assemblage as either a merchant's or craftsman's shop or the den of a diviner, and their remark that the two are not incompatible, is INTERPRETATION and is recorded in evidence_register"
   },
   {
-    "observation_id": 168,
+    "observation_id": 177,
     "rd_id": "RD-0020",
     "ev_id": "EV029",
     "observed_value": "The building was occupied during the first half of the 3rd century and destroyed by fire at the turn of the 2nd and 3rd centuries; the object is judged to have been in use during the first half of the 3rd century",
@@ -2016,7 +2124,7 @@
     "notes": "A coin of Nero beneath the earliest road make-up dates the street grid to the early Flavian period, and a coin of Tetricus attests later activity; the dodecahedron itself is dated by the destruction layer"
   },
   {
-    "observation_id": 169,
+    "observation_id": 178,
     "rd_id": "RD-0020",
     "ev_id": "EV031",
     "observed_value": "No military association: an urban commercial building in a civitas capital",
@@ -2028,7 +2136,7 @@
     "notes": null
   },
   {
-    "observation_id": 170,
+    "observation_id": 179,
     "rd_id": "RD-0020",
     "ev_id": "EV004",
     "observed_value": "Opposite-hole pairs read off the fig 12 rabattement: (1,1') elliptic 26x21.5 and 25.5x21.5 mm; (6',2) 22 and 21.5 mm; (5',3) 17 and 16.5 mm; (4',4) 22 and 21 mm; (3',5) 15.5 and 11.5 mm; (2',6) 10.5 and 17 mm",
@@ -2040,7 +2148,7 @@
     "notes": "SECOND-HAND AND LOWER CONFIDENCE: values read by PUB-0019 from PUB-0010 fig 12, not measured. Recorded separately from the A-grade row above and deliberately not merged with it"
   },
   {
-    "observation_id": 171,
+    "observation_id": 180,
     "rd_id": "RD-0020",
     "ev_id": "EV005",
     "observed_value": "Within-pair differences of the six opposite pairs: 0.5, 0.5, 0.5, 1.0, 4.0 and 6.5 mm",
@@ -2052,7 +2160,7 @@
     "notes": "Derived by PUB-0019 from its own tab I readings. Four pairs are nearly equal and two differ greatly - the mixed pattern PUB-0003, 31 n 1 describes for the corpus"
   },
   {
-    "observation_id": 172,
+    "observation_id": 181,
     "rd_id": "RD-0020",
     "ev_id": "EV014",
     "observed_value": "Each pair of opposite holes carries the same decoration; the decoration is composed of three circles",
@@ -2064,7 +2172,7 @@
     "notes": "PUB-0019 suggests this could be a mnemonic code for calculations; that suggestion is INTERPRETATION and is recorded separately"
   },
   {
-    "observation_id": 173,
+    "observation_id": 182,
     "rd_id": "RD-0034",
     "ev_id": "EV004",
     "observed_value": "Twelve measured hole diameters in mm: 26.5, 15.4, 18.3, 13.4, 10.4, 17.6, 24.2, 20.15, 8.7, 14.5, 20.6, 14.2",
@@ -2076,7 +2184,7 @@
     "notes": "Measured by the Musee romain d'Avenches (PUB-0040) to 0.01 mm and reproduced in PUB-0019. The only complete twelve-hole dataset in the database. Range 8.7-26.5 mm, a factor of 3.0 within a single object"
   },
   {
-    "observation_id": 174,
+    "observation_id": 183,
     "rd_id": "RD-0034",
     "ev_id": "EV005",
     "observed_value": "Opposite-hole pairs and their differences: (1,1') 26.5/24.2 = 2.3 mm; (2,2') 15.4/20.15 = 4.75 mm; (3,3') 18.3/8.7 = 9.6 mm; (4,4') 13.4/14.5 = 1.1 mm; (5,5') 10.4/20.6 = 10.2 mm; (6,6') 17.6/14.2 = 3.4 mm",
@@ -2088,7 +2196,7 @@
     "notes": "Differences computed here from the source's measured diameters; the arithmetic is derived, the diameters are observed. No pair is equal and two differ by more than 9 mm, so no single straight rod could pass through those axes"
   },
   {
-    "observation_id": 175,
+    "observation_id": 184,
     "rd_id": "RD-0034",
     "ev_id": "EV006",
     "observed_value": "Four holes are recorded with two differing diameters, indicating departure from circularity: hole 1 26.46/26.62, hole 6 17.38/17.85, hole 2' 19.9/20.43, hole 4' 14.27/14.68 and hole 5' 20.4/20.83; hole 1' (24.16/25.08) is described as probably elliptic",
@@ -2100,7 +2208,7 @@
     "notes": "Direct evidence that holes are not perfectly circular even on a well-made specimen"
   },
   {
-    "observation_id": 176,
+    "observation_id": 185,
     "rd_id": "RD-0034",
     "ev_id": "EV012",
     "observed_value": "The measured tolerance of the hole diameters is below 0.2 mm",
@@ -2112,7 +2220,7 @@
     "notes": "The source's own assessment of the maker's tolerance. This is the best available evidence of manufacturing precision and it sits alongside the corpus statement that many British specimens are less skilfully made (PUB-0003, 32)"
   },
   {
-    "observation_id": 177,
+    "observation_id": 186,
     "rd_id": "RD-0034",
     "ev_id": "EV025",
     "observed_value": "Aventicum (Avenches); find context not stated in the available source",
@@ -2124,7 +2232,7 @@
     "notes": null
   },
   {
-    "observation_id": 178,
+    "observation_id": 187,
     "rd_id": "RD-0035",
     "ev_id": "EV001",
     "observed_value": "External diameter of the object, excluding the knobs, is 55 mm",
@@ -2136,7 +2244,7 @@
     "notes": null
   },
   {
-    "observation_id": 179,
+    "observation_id": 188,
     "rd_id": "RD-0035",
     "ev_id": "EV004",
     "observed_value": "The twelve hole diameters vary from 13.5 to 24 mm; several are repeated: 22 mm three times (faces 2, 3', 5'), 20 mm twice (faces 4, 6) and 14 mm twice (faces 4', 6')",
@@ -2148,7 +2256,7 @@
     "notes": "Per-face values for the remaining holes appear on fig 3, which is not legible in the available scan, and are therefore not recorded"
   },
   {
-    "observation_id": 180,
+    "observation_id": 189,
     "rd_id": "RD-0035",
     "ev_id": "EV005",
     "observed_value": "In two cases the diameters of opposed openings are equal: 20 mm (faces 4 and 4') and 14 mm (faces 6 and 6'). Beyond these coincidences there is no evident regularity in the general distribution of the openings, either in their juxtaposition or in their opposition",
@@ -2160,7 +2268,7 @@
     "notes": "KEY OBSERVATION FOR EV005 AND EV039. Duval, who devised the comparative recording method precisely in order to look for such regularity, states that none is evident. He also states explicitly that no conclusion can be drawn from a single specimen"
   },
   {
-    "observation_id": 181,
+    "observation_id": 190,
     "rd_id": "RD-0035",
     "ev_id": "EV014",
     "observed_value": "There is no regularity in the distribution of the engraved concentric fillets relative to the openings they surround; the only pattern is that they become more numerous as the hole diameter decreases, leaving more room: 4 and 6 fillets for the 14 mm holes, 3 for the 22 mm holes, none for the 23 and 24 mm holes",
@@ -2172,7 +2280,7 @@
     "notes": "Duval suggests the reason is probably empirical, ie available space rather than meaning"
   },
   {
-    "observation_id": 182,
+    "observation_id": 191,
     "rd_id": "RD-0035",
     "ev_id": "EV017",
     "observed_value": "The two largest opposed openings (23 and 24 mm) have a periphery that appears less regularly cut than the others, as if they had been worn by some friction, due for example to a stick that passed through both of them simultaneously",
@@ -2184,7 +2292,7 @@
     "notes": "CONFLICTS DIRECTLY WITH THE CORPUS-LEVEL RECORD. PUB-0003, 45 states that the surfaces of dodecahedra generally do not look worn, and PUB-0003, 32 explains exactly this feature - an opposed pair of larger, less regular openings without concentric circles - as production holes arising from the casting process, present in about 70 per cent of specimens. BOTH READINGS ARE PRESERVED. Duval's wording is hedged throughout ('parait', 'comme s'ils avaient ete uses'), it is an appearance on one specimen, and he states that no conclusion can be drawn from it. Confidence C rather than B for that reason. This conflict is the reason EV017 is scored at confidence C at corpus level rather than B"
   },
   {
-    "observation_id": 183,
+    "observation_id": 192,
     "rd_id": "RD-0035",
     "ev_id": "EV025",
     "observed_value": "Collection piece with no known archaeological context",
@@ -2196,7 +2304,7 @@
     "notes": null
   },
   {
-    "observation_id": 184,
+    "observation_id": 193,
     "rd_id": "RD-0036",
     "ev_id": "EV005",
     "observed_value": "Six opposite-hole pairs in mm: 20.1/20.3, 13.2/13.7, 21.4/22.4, 25/26.5, 15.3/17.3, 13/10.5; face-to-face distance 40 mm",
@@ -2208,7 +2316,7 @@
     "notes": "Within-pair differences 0.2, 0.5, 1.0, 1.5, 2.0 and 2.5 mm. Values reach this project at two removes (PUB-0039 via PUB-0038 via PUB-0019) and no tolerance is stated by any of them"
   },
   {
-    "observation_id": 185,
+    "observation_id": 194,
     "rd_id": "RD-0006",
     "ev_id": "EV005",
     "observed_value": "Six opposite-hole pairs in mm: 16/16.2, 7.5/8.5, 10.5/12.5, 20/22.5, 12.5/15.5, 16.5/12.5; face-to-face distance 63 mm",
@@ -2220,7 +2328,7 @@
     "notes": "PUB-0019 tab IV, quoting PUB-0038, whose author states he obtained the exact measurements from the director of the Musee gallo-romain de Tongres. Within-pair differences 0.2, 1.0, 2.0, 2.5, 3.0 and 4.0 mm. POSSIBLE BUT UNCONFIRMED MATCH to RD-0006, which is recorded from PUB-0004 as the Tongeren (Leopoldwal) specimen; PUB-0019 does not give a findspot, only the holding museum. If the museum holds more than one specimen this attribution is wrong. Recorded here with that caveat rather than as a new specimen, to avoid creating a duplicate"
   },
   {
-    "observation_id": 186,
+    "observation_id": 195,
     "rd_id": "RD-0006",
     "ev_id": "EV004",
     "observed_value": "Hole diameters range from 7.5 to 22.5 mm within the single object",
@@ -2232,7 +2340,7 @@
     "notes": "Derived from the tab IV pair listing; same attribution caveat"
   },
   {
-    "observation_id": 187,
+    "observation_id": 196,
     "rd_id": "RD-0005",
     "ev_id": "EV025",
     "observed_value": "Found in situ in Trench 4 in June 2023 by a volunteer, without metal detector use, in what appears to be an excavated hole or quarry pit containing 4th century Roman pottery. Re-investigation in 2024 suggested the feature was a sand quarry pit whose fill contained bone, ceramic building material and 3rd century pottery",
@@ -2244,7 +2352,7 @@
     "notes": "EXCAVATOR-GRADE CONTEXT, replacing reliance on a newspaper article. CONFLICTS RECORDED: PUB-0003, 34 describes the feature as 'a large pit full of building debris 700 m east of a villa rustica' and this account calls it a sand quarry pit; PUB-0003 places the object on top of the pit, this account says in situ within it; and the pottery is given as 4th century in association but 3rd century in the fill. All readings preserved. The excavators also note the ceramic building material does not appear to originate from the Norton Disney villa, which weakens the association with the villa"
   },
   {
-    "observation_id": 188,
+    "observation_id": 197,
     "rd_id": "RD-0005",
     "ev_id": "EV027",
     "observed_value": "Fill of the feature contained bone, ceramic building material and 3rd century pottery; 4th century Roman pottery is reported in association with the object",
@@ -2256,7 +2364,7 @@
     "notes": "No functional equipment of any kind was recovered with it - no poles, cordage tools, textile equipment, weapons or instruments"
   },
   {
-    "observation_id": 189,
+    "observation_id": 198,
     "rd_id": "RD-0005",
     "ev_id": "EV029",
     "observed_value": "Associated with 4th century pottery; deposition estimated at about 1700 years before the 2023 excavation; the pit fill contained 3rd century pottery",
@@ -2268,7 +2376,7 @@
     "notes": "The 3rd-century fill and 4th-century association are not reconciled in the source and are recorded as stated"
   },
   {
-    "observation_id": 190,
+    "observation_id": 199,
     "rd_id": "RD-0005",
     "ev_id": "EV012",
     "observed_value": "Well cast, complete with no damage, in excellent condition; an example of very fine craftsmanship, finished to a high standard",
@@ -2280,7 +2388,7 @@
     "notes": "Corroborates the batch-001 record from PUB-0008"
   },
   {
-    "observation_id": 191,
+    "observation_id": 200,
     "rd_id": "RD-0005",
     "ev_id": "EV018",
     "observed_value": "Complete with no damage and in excellent condition",
@@ -2292,7 +2400,7 @@
     "notes": "IMPORTANT NEGATIVE: the best-preserved specimen in the database, recovered by excavation rather than from ploughsoil, shows no wear and no damage. This is the strongest single support for the corpus-level finding at EV017 and EV018, because it cannot be explained away as post-depositional loss of surface"
   },
   {
-    "observation_id": 192,
+    "observation_id": 201,
     "rd_id": "RD-0005",
     "ev_id": "EV041",
     "observed_value": "Complete and undamaged; no knob wear described",
@@ -2304,7 +2412,7 @@
     "notes": "NOT a positive statement that the knobs are unworn - the account was not written to answer that question, and no magnification was used. Recorded because RD-0005 is the specimen on which EV041 could most usefully be tested: excavated, complete, uncorroded and curated"
   },
   {
-    "observation_id": 193,
+    "observation_id": 202,
     "rd_id": "RD-0022",
     "ev_id": "EV047",
     "observed_value": "No findspot of any kind. Known only from the named Henryk Klunder collection, Mainz, now in a private collection in Winterthur. Previously unpublished; published for the first time in 2025",
@@ -2316,7 +2424,7 @@
     "notes": "THE LEAST SECURE SPECIMEN IN THE DATABASE, and one of only three with usable aperture measurements. Unprovenanced, privately held, and first published by a co-author who also maintains the reference catalogue. NO SUGGESTION OF INAUTHENTICITY IS MADE BY ANY SOURCE OR BY THIS PROJECT; the point is that the usual external checks - excavated context, independent publication, institutional custody - are all absent, so nothing corroborates it. It supplies the type 2a case in which all twelve faces are decorated, and one of the two apparent aperture duplicates"
   },
   {
-    "observation_id": 194,
+    "observation_id": 203,
     "rd_id": "RD-0035",
     "ev_id": "EV047",
     "observed_value": "Collection piece with no known archaeological context, in the possession of the author who published it",
@@ -2328,7 +2436,7 @@
     "notes": "Duval is a serious scholar publishing a considered method, and nothing impugns the object. But it is unexcavated and privately held, and it is the specimen that PARTLY REFUTES EV043 and that supplies the wear-appearance conflict at EV017. Two of this project's more consequential observations rest on an unprovenanced object"
   },
   {
-    "observation_id": 195,
+    "observation_id": 204,
     "rd_id": "RD-0034",
     "ev_id": "EV047",
     "observed_value": "Held by the Musee romain d'Avenches; find context not stated in the available source",
@@ -2340,7 +2448,7 @@
     "notes": "Institutional custody, which is the best provenance among the measured specimens, but the findspot is not recorded in the source read and the measurements reach this project at one remove. It supplies the ONLY complete twelve-aperture dataset and the sole confirmation of EV043"
   },
   {
-    "observation_id": 196,
+    "observation_id": 205,
     "rd_id": "RD-0020",
     "ev_id": "EV047",
     "observed_value": "Excavated in 1995 from a sealed destruction layer, published in a peer-reviewed excavation report, held by the Musee archeologique de Jublains",
@@ -2352,7 +2460,7 @@
     "notes": "THE ONLY SPECIMEN IN THE DATABASE WHOSE AUTHENTICITY IS SECURED BY CONTEXT. An object lifted from a stratified burnt layer by excavators cannot be a modern forgery. It is also, and not coincidentally, the specimen this project has most often had to fall back on"
   },
   {
-    "observation_id": 197,
+    "observation_id": 206,
     "rd_id": "RD-0034",
     "ev_id": "EV043",
     "observed_value": "All twelve measured apertures are distinct: 26.5, 15.4, 18.3, 13.4, 10.4, 17.6, 24.2, 20.15, 8.7, 14.5, 20.6 and 14.2 mm. The closest pair differs by 0.3 mm (14.2 and 14.5)",
@@ -2364,7 +2472,7 @@
     "notes": "THE ONLY SPECIMEN IN THE DATABASE WITH A COMPLETE APERTURE SET, and on it no two apertures are the same size. The 0.3 mm minimum separation EXCEEDS the maker's tolerance, which PUB-0019 assesses at below 0.2 mm from the same measurements - so the apertures are separated by more than the workshop's own precision limit. Whether that separation is deliberate or incidental is NOT determined by this observation"
   },
   {
-    "observation_id": 198,
+    "observation_id": 207,
     "rd_id": "RD-0035",
     "ev_id": "EV043",
     "observed_value": "Diameters are duplicated: 22 mm on three faces, 20 mm on two and 14 mm on two. The engraved rings partly compensate - the two 14 mm apertures carry 4 and 6 fillets respectively - but the three 22 mm apertures are all recorded with 3 fillets",
@@ -2376,7 +2484,7 @@
     "notes": "COUNTER-CASE TO RD-0034, and the reason this variable is worth having. Where diameter fails to distinguish two apertures, ring count does so for the 14 mm pair and does NOT for the 22 mm group. Duval's per-face diameters are on fig 3, which is not legible in the available scan, so this rests on his running text alone"
   },
   {
-    "observation_id": 199,
+    "observation_id": 208,
     "rd_id": "RD-0022",
     "ev_id": "EV043",
     "observed_value": "Two of the four recorded apertures are given as 15 mm, in different opposed pairs (15/17 and 14/15)",
@@ -2388,7 +2496,7 @@
     "notes": "WEAK: the source records only four apertures individually and gives the remaining eight as a range, and the figures are stated to the nearest 0.5 cm in places. An apparent duplicate at this resolution does not establish that two apertures were indistinguishable"
   },
   {
-    "observation_id": 200,
+    "observation_id": 209,
     "rd_id": "RD-0037",
     "ev_id": "EV014",
     "observed_value": "Ten faces decorated with concentric circles of varying size; two faces remain smooth",
@@ -2400,7 +2508,7 @@
     "notes": "INDEPENDENT CORROBORATION OF THE TEN-OF-TWELVE RULE, from a museum record unconnected to PUB-0003, PUB-0010 or PUB-0017. Until now that rule rested on one corpus statement plus two specimens. This is the second source the evidence-base audit identified as missing"
   },
   {
-    "observation_id": 201,
+    "observation_id": 210,
     "rd_id": "RD-0037",
     "ev_id": "EV046",
     "observed_value": "The museum records the height as 7.1 cm 'between the smooth faces', which implies the two undecorated faces lie opposite one another",
@@ -2412,7 +2520,7 @@
     "notes": "INDEPENDENT CORROBORATION OF THE MARKED AXIS. The phrasing is the museum's own and was not written to make any point about orientation, which makes it good evidence. EV046 remains non-discriminating because it still describes the same physical feature as EV013; a second source removes the single-voice problem but not the double-counting one"
   },
   {
-    "observation_id": 202,
+    "observation_id": 211,
     "rd_id": "RD-0037",
     "ev_id": "EV016",
     "observed_value": "Hollow cast, with the knobs attached by soldering",
@@ -2424,7 +2532,7 @@
     "notes": "SECOND INDEPENDENT SOURCE FOR SOLDERED KNOBS, after PUB-0010 para 48 on the Jublains specimen. This weakens the conflict previously recorded against the PAS description of RD-0014 as cast in one piece: two institutional records now describe separately attached knobs"
   },
   {
-    "observation_id": 203,
+    "observation_id": 212,
     "rd_id": "RD-0037",
     "ev_id": "EV001",
     "observed_value": "Height 7.1 cm between the smooth faces including the feet, 6.2 cm without the feet; width 8.2 cm; depth 8.5 cm",
@@ -2436,7 +2544,7 @@
     "notes": "The 6.2 / 7.1 / 8.2 / 8.5 cm spread on a single object is a further instance of the departure from regular geometry recorded at EV010"
   },
   {
-    "observation_id": 204,
+    "observation_id": 213,
     "rd_id": "RD-0037",
     "ev_id": "EV011",
     "observed_value": "Bronze",
@@ -2448,7 +2556,7 @@
     "notes": null
   },
   {
-    "observation_id": 205,
+    "observation_id": 214,
     "rd_id": "RD-0037",
     "ev_id": "EV025",
     "observed_value": "Provenance given as France (?), attributed to Gaul (?); purchased 1825 from the Durand collection",
@@ -2460,7 +2568,7 @@
     "notes": "Both queries are the museum's own. No findspot; an early-19th-century collection purchase"
   },
   {
-    "observation_id": 206,
+    "observation_id": 215,
     "rd_id": "RD-0038",
     "ev_id": "EV001",
     "observed_value": "Height 7.5 cm",
@@ -2472,7 +2580,7 @@
     "notes": "Via search-engine extract; the museum page returned HTTP 403"
   },
   {
-    "observation_id": 207,
+    "observation_id": 216,
     "rd_id": "RD-0038",
     "ev_id": "EV025",
     "observed_value": "Found at Elst, Overbetuwe, Gelderland; donated to the museum in November 1876",
@@ -2484,7 +2592,7 @@
     "notes": "First Netherlands findspot in the database. The Netherlands is named in PUB-0010 among the countries of the known distribution but was unrepresented here"
   },
   {
-    "observation_id": 208,
+    "observation_id": 217,
     "rd_id": "RD-0038",
     "ev_id": "EV029",
     "observed_value": "Museum dating: Roman period, 1-300 AD",
@@ -2496,7 +2604,7 @@
     "notes": "CONFLICTS WITH EV029, which records the corpus window as c AD 200 to the late 4th century. Museum period ranges are commonly loose and this is recorded as a conflict, not as a correction to the corpus chronology"
   },
   {
-    "observation_id": 209,
+    "observation_id": 218,
     "rd_id": "RD-0039",
     "ev_id": "EV025",
     "observed_value": "Findspot given by the museum as Reims (?), Marne; from the Joseph de Baye collection",
@@ -2508,7 +2616,7 @@
     "notes": "The query is the museum's own"
   },
   {
-    "observation_id": 210,
+    "observation_id": 219,
     "rd_id": "RD-0039",
     "ev_id": "EV030",
     "observed_value": "The Musee d'Archeologie nationale holds four dodecahedra",
@@ -2520,7 +2628,7 @@
     "notes": "RELEVANT TO EV030, which has no corpus observation. Four specimens in one institution is a collection fact, not a site fact, and does NOT bear on whether multiple specimens occur at one findspot. Recorded because three of those four are not yet in this database"
   },
   {
-    "observation_id": 211,
+    "observation_id": 220,
     "rd_id": "RD-0001",
     "ev_id": "EV010",
     "observed_value": "Each of the twelve faces is 38 mm in length and width; plate thickness 3 mm; knobs roughly 9 mm high and 9 to 10 mm in diameter; maximum diameter 82 mm",
@@ -2532,7 +2640,7 @@
     "notes": "Full PAS record, supplied directly. Adds face dimensions and confirms the figures previously recorded. The record also states Preservation grade 2, method of manufacture Cast, completeness Complete, and flags the find as of note with potential for inclusion in Britannia"
   },
   {
-    "observation_id": 212,
+    "observation_id": 221,
     "rd_id": "RD-0001",
     "ev_id": "EV007",
     "observed_value": "All of the apertures have slightly bevelled rounded edges",
@@ -2544,7 +2652,7 @@
     "notes": "FIRST OBSERVATION FOR EV007, which had none. Bears on prediction P-0005, which expects bevelled rather than square-cut lips"
   },
   {
-    "observation_id": 213,
+    "observation_id": 222,
     "rd_id": "RD-0001",
     "ev_id": "EV029",
     "observed_value": "Dated by the recorder to the Roman period as a whole, AD 43-410",
@@ -2556,7 +2664,7 @@
     "notes": "A default period range for an unstratified detector find, not an independent dating. It should not be read as widening the corpus window recorded at EV029"
   },
   {
-    "observation_id": 214,
+    "observation_id": 223,
     "rd_id": "RD-0015",
     "ev_id": "EV029",
     "observed_value": "Dated by the aggregator record to AD 301-399",
@@ -2568,7 +2676,7 @@
     "notes": "FIRST DATING FOR THIS SPECIMEN. Consistent with the corpus window"
   },
   {
-    "observation_id": 215,
+    "observation_id": 224,
     "rd_id": "RD-0015",
     "ev_id": "EV011",
     "observed_value": "Material given as lead and bronze",
@@ -2580,7 +2688,7 @@
     "notes": "Corroborates the PUB-0011 record and, with the 18 per cent lead measured on RD-0005, supports the reading of the alloy as a casting alloy rather than a structural bronze"
   },
   {
-    "observation_id": 216,
+    "observation_id": 225,
     "rd_id": "RD-0038",
     "ev_id": "EV004",
     "observed_value": "Each face carries one hole, and the holes are of differing size; knobs at the intersections",
@@ -2592,7 +2700,7 @@
     "notes": "The museum's own description. Independent corroboration of the one-aperture-per-face rule and of size variation within an object"
   },
   {
-    "observation_id": 217,
+    "observation_id": 226,
     "rd_id": "RD-0038",
     "ev_id": "EV047",
     "observed_value": "Found at Elst; catalogued as Guggenberger no 75, type 2a, year of discovery 1875; donated to the museum in November 1876; inventory number ENc",
@@ -2604,7 +2712,7 @@
     "notes": "Provenance secured by two independent records agreeing on findspot and date: the reference catalogue gives discovery in 1875 and the museum gives donation in November 1876"
   },
   {
-    "observation_id": 218,
+    "observation_id": 227,
     "rd_id": "RD-0040",
     "ev_id": "EV014",
     "observed_value": "Rings are engraved as a group at the PERIPHERY of each face, close to the pentagon edges, with a broad plain annulus between the aperture and the innermost ring. Counted from the photograph, faces with larger apertures carry fewer rings, about two, and faces with smaller apertures carry more, about three to four. The uppermost face in the image appears plain",
@@ -2616,7 +2724,7 @@
     "notes": "COUNTED FROM A PHOTOGRAPH at oblique angles; the counts are approximate and the faces away from the camera cannot be read at all. Two points are nonetheless legible. The rings are placed relative to the FACE EDGE rather than packed outward from the aperture, which is what EXP-0005 predicts if the engraver works inward from the geometric limit. And the inverse relation between aperture size and ring count follows the Vienne rule (RD-0035) rather than the constant count of Jublains (RD-0020). The apparently plain uppermost face is consistent with the undecorated opposed pair, but only one of the two is visible so this cannot be confirmed"
   },
   {
-    "observation_id": 219,
+    "observation_id": 228,
     "rd_id": "RD-0040",
     "ev_id": "EV041",
     "observed_value": "Bright, unpatinated yellow metal is exposed on the crown of every visible knob, against a dark green-brown patina covering all faces, recesses and engraved rings. The exposure is confined to the outermost point of each knob and is consistent across all knobs regardless of their orientation in the photograph",
@@ -2628,7 +2736,7 @@
     "notes": "OBSERVED FROM A PHOTOGRAPH, NOT FROM THE OBJECT, AND BY A NON-SPECIALIST. What is certain is that patina has been lost preferentially from the high points. What that means is NOT settled by the image, and the most economical explanation is not ancient use. PATINA FORMS DURING BURIAL. Wear inflicted in antiquity, before deposition, would have been covered by burial patina and would not be bright today. Bright metal therefore indicates patina removed AFTER excavation - by cleaning, polishing, mounting or handling. This is a collection piece with no findspot, acquired before 1985, which is precisely the class of object that gets polished. THE COUNTER-ARGUMENT, which the image cannot settle: wear leaves a SHAPE signature as well as a colour one. Flattening or facetting of the knob crowns beyond their cast form would survive burial and repatination and could not be produced by dusting. Several crowns appear broad and flat in the image, but that cannot be separated from casting form and lighting at this resolution. WHAT WOULD SETTLE IT: whether any polish is directional, whether it cuts through corrosion products or underlies them, and whether the crown profile departs from the cast form of the unworn knobs"
   },
   {
-    "observation_id": 220,
+    "observation_id": 229,
     "rd_id": "RD-0001",
     "ev_id": "EV041",
     "observed_value": "In six published views the knobs are covered by the same mid-green corrosion and pale mineral encrustation as the rest of the object; no bright metal is exposed anywhere. Reddish cuprite shows where the outer layer has been lost on several knobs",
@@ -2640,7 +2748,7 @@
     "notes": "OBSERVED FROM PHOTOGRAPHS. THE CONTROL CASE, and the reason the RD-0040 image is worth recording at all. This specimen is a ploughsoil metal-detector find that has not been polished, and its knobs are indistinguishable in surface condition from its faces. The contrast with RD-0040 shows that bright knob crowns are not simply how a bronze dodecahedron looks, but it equally shows what an uncleaned specimen looks like - which is the state in which the microwear question must be asked. NOTE the tension with the PAS record's own wording for this object, which reports 'several areas of abrasion around the base of most knops': at photographic resolution that abrasion is not distinguishable from the general corrosion and plough damage the same record describes"
   },
   {
-    "observation_id": 221,
+    "observation_id": 230,
     "rd_id": "RD-0001",
     "ev_id": "EV041",
     "observed_value": "Abrasion present around the base of most knobs",
@@ -2652,7 +2760,7 @@
     "notes": "THE ONLY POSITIVE KNOB-WEAR RECORD IN THE CORPUS, and the reason EV041 was created. The corpus-wide statement that the surfaces generally do not look worn (PUB-0003, 45) was made about faces and interiors; it does not address the knobs and their necks. Whether this abrasion is use wear or post-depositional damage is NOT determined - the same record describes several faces as pitted or gouged and the patina as patchy, which points to ploughing and corrosion. Recorded as an open question, not as evidence of use"
   },
   {
-    "observation_id": 222,
+    "observation_id": 231,
     "rd_id": "RD-0002",
     "ev_id": "EV041",
     "observed_value": "One knob broken off and retained loose; remaining knobs intact; no wear described",
@@ -2664,7 +2772,7 @@
     "notes": "Absence of a wear description is not a negative observation; the PAS record was not made to answer this question"
   },
   {
-    "observation_id": 223,
+    "observation_id": 232,
     "rd_id": "RD-0013",
     "ev_id": "EV041",
     "observed_value": "Knob diameters 14.28, 13.92, 13.46 and 14.01 mm across four fragments; no wear or asymmetry described",
@@ -2676,7 +2784,7 @@
     "notes": "Recorded because closely matched knob diameters across fragments of one object bear on EV009 and would also bear on differential wear, had any been described"
   },
   {
-    "observation_id": 224,
+    "observation_id": 233,
     "rd_id": "RD-0029",
     "ev_id": "EV025",
     "observed_value": "One of the best British examples is in the Society of Antiquaries collection, from Carmarthen",

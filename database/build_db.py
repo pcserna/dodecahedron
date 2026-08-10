@@ -721,6 +721,22 @@ SOURCES = [
      "public-outreach document rather than a catalogue entry, hence C. States "
      "that the MAN holds FOUR dodecahedra, of which only MAN68333 is named "
      "here. An online 3D model is advertised and has not been retrieved."),
+    ("PUB-0051", "Grull, Tibor", 2016,
+     "The Enigma of the Dodecahedron",
+     "Book chapter", None, None, "B",
+     "In A. Szabo (ed.), From Polites to Magos: Studia Gyorgy Nemeth "
+     "sexagenario dedicata, Hungarian Polis Studies 22, Budapest-Debrecen "
+     "2016, 148-156. Full text held at "
+     "docs/sources/The_enigma_of_the_dodecahedron.pdf. "
+     "A survey chapter in an edited academic volume by a Roman historian at "
+     "the University of Pecs. CONFIDENCE B: peer-reviewed volume, fully "
+     "referenced, but a synthesis rather than primary reporting - almost "
+     "every specimen fact it gives is credited to Guillier 2008, Greiner "
+     "1996, Pirling-Siepen 2000 or Guggenberger. "
+     "ITS VALUE TO THIS PROJECT IS AS A SECOND VOICE. It reports the corpus "
+     "independently of PUB-0003 and PUB-0006, on which this project leans "
+     "heavily, and it reaches the same figures for size, mass and aperture "
+     "range from a different route."),
     ("PUB-0050", "Wagemans, G. M. C.", 2015,
      "The Roman pentagon dodecahedron: an astronomical measuring instrument "
      "for determining the sowing date of winter grain",
@@ -3714,6 +3730,12 @@ UTILITY = [
 F = "fragment"
 
 SPECIMEN_QUALITY = [
+    ("RD-0058", "unknown", "C", "none", 0, 0, 1, 0,
+     "PUB-0051 (Grull 2016), a referenced academic survey. Findspot and material only; admitted for context and for nothing else"),
+    ("RD-0059", "unknown", "C", "none", 0, 0, 1, 0,
+     "PUB-0051 (Grull 2016), a referenced academic survey. Findspot and material only; admitted for context and for nothing else"),
+    ("RD-0060", "unknown", "C", "none", 0, 0, 1, 0,
+     "PUB-0051 (Grull 2016), a referenced academic survey. Findspot and material only; admitted for context and for nothing else"),
     ("RD-0041", "unknown", "D", "none", 0, 0, 1, 0,
      "Findspot only, from PUB-0050 at two removes. Admitted for context because a findspot is recorded and provenance is D; contributes to distribution and to nothing else"),
     ("RD-0042", "unknown", "D", "none", 0, 0, 1, 0,
@@ -5741,6 +5763,50 @@ def build_database():
          None,
          None, "PUB-0050", "D", None, None,
          "PUB-0050 chart 1, which lists 29 findspots with measuring periods and no measurements. FINDSPOT ONLY, AT TWO REMOVES: Wagemans is a self-published secondary source and does not give the original find report. Recorded to improve the distribution evidence, which is where this corpus is weakest; contributes nothing to any geometric or context variable. A primary source is needed before this specimen supports anything else. DISTINCT FROM RD-0019 SOUTH SHIELDS AND RD-0018 CORBRIDGE unless a primary source shows otherwise; all three are Tyne-valley military sites and the risk of double-counting is real"),
+
+        # --- from PUB-0051 (Grull 2016) ---
+        ("RD-0058", "Geneva (Saint-Pierre) silver dodecahedron",
+         "Saint-Pierre, Geneva", "Switzerland", "Germania superior",
+         "Unknown", None, None,
+         None, None, None,
+         None,
+         "Silver", None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None,
+         None,
+         None,
+         None, "PUB-0051", "C", None, None,
+         "THE ONLY KNOWN SPECIMEN IN A PRECIOUS METAL. PUB-0051, 149 citing Cervi-Brunier 1985. Grull draws an inference from its uniqueness that this project does not adopt: that a single silver example argues AGAINST an elite, initiated ownership rather than for it. Recorded here as a findspot and a material; no measurements are given."),
+        ("RD-0059", "Nijmegen river dodecahedron",
+         "Riverbed near Nijmegen", "Netherlands", "Germania inferior",
+         "Unknown", None, None,
+         None, None, None,
+         None,
+         "Copper alloy", None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None,
+         None,
+         None,
+         None, "PUB-0051", "C", None, None,
+         "PUB-0051, 151. One of three river finds Grull groups together - Nijmegen, Trier and Zurich - and reads as possible votive deposition. Findspot only; no measurements published there."),
+        ("RD-0060", "Trier river dodecahedron",
+         "Riverbed near Trier (Augusta Treverorum)", "Germany", "Belgica",
+         "Unknown", None, None,
+         None, None, None,
+         None,
+         "Copper alloy", None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None, None, None, None, None, None,
+         None,
+         None,
+         None,
+         None, "PUB-0051", "C", None, None,
+         "PUB-0051, 151. See RD-0059. Findspot only."),
     ]
     for rd, num in GUGGENBERGER_NUMBER.items():
         pass  # applied after insert, below
@@ -5776,6 +5842,57 @@ def build_database():
     # Columns: rd_id, ev_id, observed_value, confidence, source_id, page, figure,
     #          extraction_date, notes
     OBSERVATIONS = [
+
+        # --- PUB-0051 (Grull 2016): a second voice on specimens this
+        #     project currently reads through PUB-0003 or PUB-0006 alone ---
+        ("RD-0020", "EV001", "59 mm across excluding the knobs",
+         "B", "PUB-0051", "153", None, "2026-08-10",
+         "PUB-0003 and this project record 74 mm as the maximum diameter. "
+         "The two are not necessarily in conflict - Grull states the "
+         "face-to-face measure without knobs - but the difference is larger "
+         "than knob height alone would explain and should be resolved "
+         "against Guillier 2008 directly"),
+        ("RD-0020", "EV002", "81 g",
+         "B", "PUB-0051", "153", None, "2026-08-10",
+         "Agrees exactly with the figure already held from PUB-0010"),
+        ("RD-0020", "EV004",
+         "Ten circular apertures from 10.5 to 22 mm; two opposed elliptical "
+         "openings, 26 x 21.5 mm and 22.5 x 21.5 mm",
+         "B", "PUB-0051", "153", None, "2026-08-10",
+         "Independent of PUB-0010 and PUB-0019, and agrees with both"),
+        ("RD-0020", "EV008", "Knobs soldered to the vertices, 5 to 6 mm across",
+         "B", "PUB-0051", "153", None, "2026-08-10",
+         "SOLDERED, not cast integrally - a manufacturing claim this project "
+         "had from one source only"),
+        ("RD-0020", "EV029",
+         "Room and cellar dated by ceramics and coins to the turn of the "
+         "second-third century AD",
+         "B", "PUB-0051", "153", None, "2026-08-10", None),
+        ("RD-0019", "EV027",
+         "Found adjacent to a bone object c 30 mm in diameter and c 150 mm "
+         "long, which could have served as a handle; too poorly preserved to "
+         "be lifted or conserved",
+         "B", "PUB-0051", "152", None, "2026-08-10",
+         "A SECOND SOURCE FOR THE ONLY POSSIBLE FUNCTIONAL ASSOCIATION IN THE "
+         "CORPUS. The same object reaches this project through PUB-0003; "
+         "Grull cites finds.org.uk and gives the dimensions. It remains "
+         "unconserved and its identification as a handle is the excavators' "
+         "suggestion, not an observation"),
+        ("RD-0023", "EV025",
+         "Richly equipped tomb of a woman, fourth century AD",
+         "B", "PUB-0051", "152", None, "2026-08-10",
+         "Credited to Pirling-Siepen 2000 tab 153. Grull counts this and "
+         "Jublains as the only two dodecahedra from controlled scientific "
+         "excavation as of 2016; Norton Disney in 2023 makes a third"),
+        ("RD-0056", "EV016",
+         "Three of the knobs are soldered to each other",
+         "B", "PUB-0051", "149", None, "2026-08-10",
+         "Manufacturing detail, and the only per-specimen fact this project "
+         "holds for the London find"),
+        ("RD-0058", "EV011", "Silver",
+         "B", "PUB-0051", "149", None, "2026-08-10",
+         "The only specimen in a precious metal in a corpus otherwise of "
+         "copper alloy"),
         # --- RD-0001: Much Hadham (PAS BH-692011) ---
         ("RD-0001", "EV001", "82mm maximum diameter; face dimensions 38mm x 38mm",
          "B", "PUB-0006", "BH-692011", None, "2026-08-07", None),

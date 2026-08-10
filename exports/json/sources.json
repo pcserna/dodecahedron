@@ -484,6 +484,17 @@
     "notes": "DIRECTLY CONSULTED, August 2026; held at docs/sources/ODM23Juin03.pdf. Museum object-of-the-month sheet, a public-outreach document rather than a catalogue entry, hence C. States that the MAN holds FOUR dodecahedra, of which only MAN68333 is named here. An online 3D model is advertised and has not been retrieved."
   },
   {
+    "source_id": "PUB-0051",
+    "authors": "Grull, Tibor",
+    "year": 2016,
+    "title": "The Enigma of the Dodecahedron",
+    "type": "Book chapter",
+    "doi": null,
+    "url": null,
+    "confidence": "B",
+    "notes": "In A. Szabo (ed.), From Polites to Magos: Studia Gyorgy Nemeth sexagenario dedicata, Hungarian Polis Studies 22, Budapest-Debrecen 2016, 148-156. Full text held at docs/sources/The_enigma_of_the_dodecahedron.pdf. A survey chapter in an edited academic volume by a Roman historian at the University of Pecs. CONFIDENCE B: peer-reviewed volume, fully referenced, but a synthesis rather than primary reporting - almost every specimen fact it gives is credited to Guillier 2008, Greiner 1996, Pirling-Siepen 2000 or Guggenberger. ITS VALUE TO THIS PROJECT IS AS A SECOND VOICE. It reports the corpus independently of PUB-0003 and PUB-0006, on which this project leans heavily, and it reaches the same figures for size, mass and aperture range from a different route."
+  },
+  {
     "source_id": "PUB-0050",
     "authors": "Wagemans, G. M. C.",
     "year": 2015,

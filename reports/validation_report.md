@@ -13,7 +13,7 @@ Generated file. Do not edit by hand; change the master database and re-run the p
 
 - **Errors: 0** — records violating a stated project rule
 - **Warnings: 22** — admissible but weakening the evidence base
-- **Notes: 71** — recorded for transparency
+- **Notes: 72** — recorded for transparency
 
 Validation never modifies data. Every finding below is reported for a human decision, as required by MASTER_PROMPT.
 
@@ -25,7 +25,7 @@ None.
 
 | Rule | Entity | Detail |
 | ---- | ------ | ------ |
-| `context-missing` | specimens | 43 of 57 specimens have context_category 'Unknown' and cannot contribute to context variables |
+| `context-missing` | specimens | 46 of 60 specimens have context_category 'Unknown' and cannot contribute to context variables |
 | `corpus-without-specimen` | EV019 | scores 'absent' at Very High power on a corpus statement alone, with no specimen observation anywhere beneath it. Nothing in the corpus can currently contradict it |
 | `corpus-without-specimen` | EV020 | scores 'absent' at Very High power on a corpus statement alone, with no specimen observation anywhere beneath it. Nothing in the corpus can currently contradict it |
 | `corpus-without-specimen` | EV038 | scores 'weak_absent' at High power on a corpus statement alone, with no specimen observation anywhere beneath it. Nothing in the corpus can currently contradict it |
@@ -48,11 +48,11 @@ None.
 | `source-missing` | corpus observation EV036 | no source_id (evidence_class=Derived). Derived assessments are this project's own reasoning and have no external source by definition, but they are discounted and excluded from the observed-only scenario |
 | `unwritten-prediction` | EV044 | carries scored corpus evidence but no hypothesis has a prediction for it. All 14 cells default to '0', so it is counted among the scored variables and discriminates nothing |
 
-## Notes (71)
+## Notes (72)
 
 | Rule | Entity | Detail |
 | ---- | ------ | ------ |
-| `corpus-coverage` | specimens | 57 of about 134 known specimens recorded (43 per cent) |
+| `corpus-coverage` | specimens | 60 of about 134 known specimens recorded (45 per cent) |
 | `evidence-gap` | EV007 | Hole edge radius (Medium) has no corpus-level observation and is therefore unscored |
 | `evidence-gap` | EV015 | Repair evidence (Medium) has no corpus-level observation and is therefore unscored |
 | `evidence-gap` | EV021 | Impact damage (Medium) has no corpus-level observation and is therefore unscored |
@@ -79,23 +79,23 @@ None.
 | `interpretation-recorded` | EI-0011 | published interpretation held separately from evidence and excluded from scoring |
 | `interpretation-recorded` | EI-0012 | published interpretation held separately from evidence and excluded from scoring |
 | `interpretation-recorded` | EI-0014 | published interpretation held separately from evidence and excluded from scoring |
-| `page-missing` | observation 206 | RD-0038 x EV001 cites PUB-0045 (Database), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
-| `page-missing` | observation 207 | RD-0038 x EV025 cites PUB-0045 (Database), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
-| `page-missing` | observation 208 | RD-0038 x EV029 cites PUB-0045 (Database), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
-| `page-missing` | observation 209 | RD-0039 x EV025 cites PUB-0046 (Online), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
-| `page-missing` | observation 210 | RD-0039 x EV030 cites PUB-0046 (Online), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
-| `page-missing` | observation 216 | RD-0038 x EV004 cites PUB-0045 (Database), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
-| `page-missing` | observation 218 | RD-0040 x EV014 cites PUB-0048 (Database), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
-| `page-missing` | observation 219 | RD-0040 x EV041 cites PUB-0048 (Database), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
-| `page-missing` | observation 35 | RD-0005 x EV001 cites PUB-0008 (Article), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
-| `page-missing` | observation 36 | RD-0005 x EV002 cites PUB-0008 (Article), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
-| `page-missing` | observation 37 | RD-0005 x EV011 cites PUB-0008 (Article), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
-| `page-missing` | observation 38 | RD-0005 x EV017 cites PUB-0008 (Article), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
-| `page-missing` | observation 39 | RD-0005 x EV018 cites PUB-0008 (Article), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
-| `page-missing` | observation 40 | RD-0005 x EV025 cites PUB-0008 (Article), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
-| `page-missing` | observation 41 | RD-0006 x EV025 cites PUB-0004 (Online), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
-| `page-missing` | observation 97 | RD-0018 x EV025 cites PUB-0013 (Online), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
-| `page-missing` | observation 98 | RD-0018 x EV031 cites PUB-0013 (Online), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
+| `page-missing` | observation 106 | RD-0018 x EV025 cites PUB-0013 (Online), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
+| `page-missing` | observation 107 | RD-0018 x EV031 cites PUB-0013 (Online), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
+| `page-missing` | observation 215 | RD-0038 x EV001 cites PUB-0045 (Database), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
+| `page-missing` | observation 216 | RD-0038 x EV025 cites PUB-0045 (Database), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
+| `page-missing` | observation 217 | RD-0038 x EV029 cites PUB-0045 (Database), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
+| `page-missing` | observation 218 | RD-0039 x EV025 cites PUB-0046 (Online), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
+| `page-missing` | observation 219 | RD-0039 x EV030 cites PUB-0046 (Online), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
+| `page-missing` | observation 225 | RD-0038 x EV004 cites PUB-0045 (Database), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
+| `page-missing` | observation 227 | RD-0040 x EV014 cites PUB-0048 (Database), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
+| `page-missing` | observation 228 | RD-0040 x EV041 cites PUB-0048 (Database), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
+| `page-missing` | observation 44 | RD-0005 x EV001 cites PUB-0008 (Article), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
+| `page-missing` | observation 45 | RD-0005 x EV002 cites PUB-0008 (Article), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
+| `page-missing` | observation 46 | RD-0005 x EV011 cites PUB-0008 (Article), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
+| `page-missing` | observation 47 | RD-0005 x EV017 cites PUB-0008 (Article), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
+| `page-missing` | observation 48 | RD-0005 x EV018 cites PUB-0008 (Article), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
+| `page-missing` | observation 49 | RD-0005 x EV025 cites PUB-0008 (Article), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
+| `page-missing` | observation 50 | RD-0006 x EV025 cites PUB-0004 (Online), a source type that carries no pagination; record an identifier if the source offers one, otherwise this is a limit of the source, not of the extraction |
 | `prediction-open` | P-0001 | registered 2026-08-08 against EV041; awaiting measurement |
 | `prediction-open` | P-0002 | registered 2026-08-08 against EV024; awaiting measurement |
 | `prediction-open` | P-0003 | registered 2026-08-08 against EV023; awaiting measurement |
@@ -108,6 +108,7 @@ None.
 | `prediction-open` | P-0010 | registered 2026-08-08 against EV045; awaiting measurement |
 | `prediction-open` | P-0011 | registered 2026-08-08 against EV048; awaiting measurement |
 | `recorded-conflict` | RD-0005 x EV025 | a conflict is recorded in this observation's notes; it is preserved rather than resolved, per the project rule, and is listed here so it is visible rather than buried |
+| `recorded-conflict` | RD-0020 x EV001 | a conflict is recorded in this observation's notes; it is preserved rather than resolved, per the project rule, and is listed here so it is visible rather than buried |
 | `recorded-conflict` | RD-0020 x EV006 | a conflict is recorded in this observation's notes; it is preserved rather than resolved, per the project rule, and is listed here so it is visible rather than buried |
 | `recorded-conflict` | RD-0020 x EV016 | a conflict is recorded in this observation's notes; it is preserved rather than resolved, per the project rule, and is listed here so it is visible rather than buried |
 | `recorded-conflict` | RD-0020 x EV032 | a conflict is recorded in this observation's notes; it is preserved rather than resolved, per the project rule, and is listed here so it is visible rather than buried |
