@@ -167,6 +167,21 @@
    "part": "Part 8 — The computational experiments, from first principles"
   },
   {
+   "finding": "EXP-0010: internal volumes run 43 to 1298 ml across the measured corpus",
+   "cell": "exp-0010",
+   "part": "Part 8 — The computational experiments, from first principles"
+  },
+  {
+   "finding": "EXP-0010: the fit to Roman capacity units is no better than chance (65 % of random volumes as close)",
+   "cell": "exp-0010",
+   "part": "Part 8 — The computational experiments, from first principles"
+  },
+  {
+   "finding": "EXP-0010: retained volume is zero in every orientation, which refutes C-05 on the form",
+   "cell": "exp-0010",
+   "part": "Part 8 — The computational experiments, from first principles"
+  },
+  {
    "finding": "A3b: 13/28 = 46 % direction agreement, 15/28 = 54 % confidence, 7/28 both",
    "cell": "blind-a3b",
    "part": "Part 9 — The blind protocols"

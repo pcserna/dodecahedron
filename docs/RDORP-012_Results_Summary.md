@@ -178,6 +178,9 @@ The index links each finding to the notebook cell that establishes it.
 | EXP-0009: best zodiac fit 5.52 deg at 58.0 N, against 7.5 deg expected at random |  | [`exp-0009`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0009) |
 | EXP-0009: 94 % of random elevation sets fit the zodiac at least as well |  | [`exp-0009`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0009) |
 | EXP-0009: the statistic scores 0.0000 on a contrived on-boundary set, so it is sensitive |  | [`exp-0009`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0009) |
+| EXP-0010: internal volumes run 43 to 1298 ml across the measured corpus |  | [`exp-0010`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0010) |
+| EXP-0010: the fit to Roman capacity units is no better than chance (65 % of random volumes as close) |  | [`exp-0010`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0010) |
+| EXP-0010: retained volume is zero in every orientation, which refutes C-05 on the form |  | [`exp-0010`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0010) |
 | A3b: 13/28 = 46 % direction agreement, 15/28 = 54 % confidence, 7/28 both | Part 9 — The blind protocols | [`blind-a3b`](../notebooks/RDORP_Reproduction.ipynb#cell-blind-a3b) |
 | A3b: four outright polarity reversals |  | [`blind-a3b`](../notebooks/RDORP_Reproduction.ipynb#cell-blind-a3b) |
 | A3a: 52 % cell agreement, and the blind matrix scores H012 six points lower |  | [`blind-a3a`](../notebooks/RDORP_Reproduction.ipynb#cell-blind-a3a) |
@@ -208,7 +211,7 @@ prose and is written by hand.
 | Evidence variables | 48 |
 | Hypotheses assessed | 14 |
 | Functional domains screened | 16 |
-| Experiments recorded | 9 |
+| Experiments recorded | 10 |
 | Pre-registered predictions | 11 |
 | Countries represented | 10 |
 | Evidence variables scored | 32 of 48 |
@@ -805,7 +808,7 @@ tents; about 134 dodecahedra are known in total.
 | C-11 | Knob-based dividers or angle gauge | Metrology / Surveying | −8.6 | 4 | eliminated |
 | C-06 | Seed-sowing or dibbing gauge | Farming | −16.2 | 4 | eliminated |
 | C-08 | Tether or hobble ring | Animal husbandry | −16.9 | 4 | eliminated |
-| C-05 | Volumetric grain or liquid measure | Farming / Commerce | −18.0 | 4 | eliminated |
+| C-05 | Volumetric grain or liquid measure | Farming / Commerce | −18.0 | 4 | eliminated by computation |
 | C-04 | Rigging fairlead or lead block | Maritime | −19.1 | 4 | eliminated |
 | C-07 | Livestock bell or rattle | Animal husbandry | −19.5 | 5 | eliminated |
 | C-03 | Net-making mesh gauge | Maritime | −19.8 | 4 | eliminated |
@@ -861,6 +864,23 @@ information. Across every possible support — 20 knobs, 12 faces, 30 edges — 
 are seven distinct face-axis elevations, of which four are reachable by the noon
 sun and identically so from 43.7° to 55° N. That yields eight calendar events,
 not twelve.
+
+**C-05, volumetric grain or liquid measure.** The screen eliminated this at
+−18.0 on standardisation: a measure that varies between examples measures
+nothing. That is an argument about the corpus rather than about the object, and
+a stronger one is available. **Every face carries an aperture at its centre, so
+whichever face is downward its aperture is the lowest point of the cavity: the
+retained volume is zero in every orientation, for every specimen.** A measure
+must retain what it measures. Grain fails for the same reason — cereal
+caryopses are 5–9 mm long against apertures of 6–40 mm.
+
+Nominal capacity turns out to be beside the point, and is worth stating because
+it does *not* refute the reading: internal volumes run 43 ml to 1298 ml and sit
+squarely among the Roman units, within 24.8 % of one on average. But Roman
+capacity units are roughly geometric, so any volume in that range is close to
+one — log-uniform random volumes average 23.0 %, and **65 % of them sit at
+least as close**. The apparent matches (Norton Disney within 9 % of a hemina)
+are what any object of this size produces. `EXP-0010`.
 
 **C-17, levelling for water engineering.** A horizontal sight line does exist —
 hung from an edge, one face-pair axis lies at exactly 0°. But sight tolerance is

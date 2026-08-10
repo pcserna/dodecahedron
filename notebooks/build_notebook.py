@@ -842,6 +842,57 @@ print("   random solid. The apparent alignment is the free latitude scan.")
     "EXP-0009: the statistic scores 0.0000 on a contrived on-boundary set, so it is sensitive",
 ])
 
+md(r"""
+### 8.9 EXP-0010 — could it be a volumetric measure? (C-05)
+
+C-05 was eliminated in the screen at −18.0, argued from standardisation: a
+measure that varies between examples measures nothing. That is an argument
+about the corpus, not about the object. This tests the candidate on its own
+terms — and the null matters, because Roman capacity units are roughly
+geometric, so *any* volume in range sits within some percentage of one.
+""")
+
+code(r"""
+import exp_volume as EV
+
+rows, mean_wall = EV.corpus_rows(DB)
+print(f"volume coefficient (15+7*sqrt5)/4 = {EV.VOL_COEFF:.6f}")
+print(f"mean wall where not recorded      = {mean_wall:.2f} mm")
+print()
+vols = []
+for r in rows:
+    w = r["wall_thickness_mm"] or mean_wall
+    v = EV.internal_volume_ml(r["max_diameter_mm"], w)
+    vols.append(v)
+    unit, rel = EV.nearest_unit(v)
+    print(f"  {r['specimen_name'][:26]:26} {r['max_diameter_mm']:6.1f} mm "
+          f"-> {v:7.1f} ml   nearest {unit} ({rel:+.0%})")
+
+rels = [EV.nearest_unit(v)[1] for v in vols]
+observed_vol = sum(rels) / len(rels)
+null = EV.null_distribution(min(vols), max(vols), n=50000)
+expected_vol = sum(null) / len(null)
+p_vol = sum(1 for x in null if x <= observed_vol) / len(null)
+print()
+print(f"mean distance to the nearest Roman unit  {observed_vol:.1%}")
+print(f"same for log-uniform random volumes      {expected_vol:.1%}")
+print(f"random volumes at least as close         {p_vol:.0%}")
+print("=> nominal capacity is no better than chance")
+
+print()
+print("the decisive point is structural, not numerical:")
+print(f"  liquid retained in any orientation      "
+      f"{EV.retained_volume_ml(60.0, mean_wall):.0f} ml")
+print("  every face carries an aperture at its centre, so whichever face is")
+print("  down, its aperture is the lowest point of the cavity")
+print(f"  cereal grain {EV.GRAIN_MM[0]:.0f}-{EV.GRAIN_MM[1]:.0f} mm against "
+      f"apertures of 6-40 mm -> dry measure fails too")
+""", cid="exp-0010", reproduces=[
+    "EXP-0010: internal volumes run 43 to 1298 ml across the measured corpus",
+    "EXP-0010: the fit to Roman capacity units is no better than chance (65 % of random volumes as close)",
+    "EXP-0010: retained volume is zero in every orientation, which refutes C-05 on the form",
+])
+
 # --------------------------------------------------------------- Part 9 ---
 md(r"""
 ## Part 9 — The blind protocols
@@ -1053,6 +1104,8 @@ print(f"  rotation group order {len(group)}; marking one axis leaves {len(stab)}
       f"-> an axis is not an orientation")
 print(f"  zodiac fit {best:.2f}deg vs {median_random:.2f}deg for the median random "
       f"solid; {p_zod:.0%} of random sets fit as well -> the alignment is the scan")
+print(f"  internal volume {min(vols):.0f}-{max(vols):.0f} ml; fit to Roman units no "
+      f"better than chance ({p_vol:.0%}); retained volume 0 ml -> not a measure")
 print(f"  best aperture pair levels to {sight_tolerance(14.2,14.5,46.5):.2f}deg "
       f"-> 10x too coarse for Nimes")
 
@@ -1096,7 +1149,7 @@ expect("sources",                         sources, 49)
 expect("countries",                       countries, 10)
 expect("evidence variables",              q1("SELECT COUNT(*) FROM evidence_variables"), 48)
 expect("hypotheses",                      len(hyps), 14)
-expect("experiments",                     q1("SELECT COUNT(*) FROM experiments"), 9)
+expect("experiments",                     q1("SELECT COUNT(*) FROM experiments"), 10)
 expect("pre-registered predictions",      q1("SELECT COUNT(*) FROM predictions"), 11)
 expect("screened domains",                q1("SELECT COUNT(*) FROM screening_candidates"), 16)
 expect("scored variables",                len(disc), 32)
@@ -1121,6 +1174,9 @@ expect("zodiac best fit (deg)",           round(best, 2), 5.52)
 expect("zodiac best-fit latitude",        round(lat, 1), 58.0)
 expect("zodiac chance baseline (deg)",    Z.EXPECTED_AT_RANDOM, 7.5)
 expect("random sets fitting as well (%)", round(100 * p_zod), 94, tol=1)
+expect("volume coefficient",              round(EV.VOL_COEFF, 4), 7.6631)
+expect("largest internal volume (ml)",    round(max(vols)), 1298, tol=1)
+expect("volumes as close to a unit as chance (%)", round(100 * p_vol), 65, tol=2)
 
 if blind:
     expect("A3b direction agreement",         len(same_d), 13)
