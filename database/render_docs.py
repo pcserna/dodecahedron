@@ -273,6 +273,148 @@ def block_reproduction(f: Facts) -> str:
     return "\n".join(out)
 
 
+
+# --- blocks added by the coverage audit -------------------------------------
+
+#: Short labels for the scenario keys. The scenario definitions carry a full
+#: sentence, which is right in the generated report and too long for a table.
+SCENARIO_LABELS = {
+    "baseline": "Baseline, fully weighted",
+    "observed_only": "Archaeological observations only",
+    "high_confidence": "Confidence A-C only",
+    "very_high_power": "Very High power variables only",
+    "clustered": "Clustered, ties resolved against the hypothesis",
+    "clustered_favourable": "Clustered, ties resolved in its favour",
+    "unweighted": "Unweighted",
+    "multi_source": "Corroborated variables only",
+    "same_footing": "Per-cell readings ignored",
+}
+
+#: What the screen DID with each candidate, as against what its score alone
+#: would imply. These are decisions, not computations: C-10 was promoted to a
+#: full hypothesis despite two hard contradictions, and C-12 was held back
+#: despite the highest score in the screen because it is the generalisation of
+#: a hypothesis already under test. The rule that produced the raw verdict is
+#: known to be crude (RDORP-013 A7).
+SCREEN_DECISIONS = {
+    "C-10": "promoted to H014",
+    "C-12": "held back - see 6.2",
+    "C-15": "eliminated by computation",
+    "C-14": "eliminated by computation",
+    "C-17": "eliminated by precision",
+}
+
+def block_scenarios(f: Facts) -> str:
+    """Every inclusion scenario and its leader (section 5.4)."""
+    scs = S.build_scenarios(f.hypotheses, f.variables, f.hpm, f.corpus,
+                            f.readings, sources=S.source_counts(f.conn),
+                            clusters=f.clusters)
+    out = ["| Scenario | Leader |", "| -------- | ------ |"]
+    for sc in scs:
+        lead = max(sc.totals, key=lambda h: sc.totals[h])
+        emph = "**" if lead != "H012" else ""
+        label = SCENARIO_LABELS.get(sc.key, sc.label)
+        out.append(f"| {emph}{label}{emph} | {emph}{lead} "
+                   f"({sgn(sc.totals[lead])}){emph} |")
+    return "\n".join(out)
+
+
+def block_multi_source(f: Facts) -> str:
+    """Baseline vs corroborated-only (section 2.8)."""
+    srcs = S.source_counts(f.conn)
+    multi = {e for e in f.scored if srcs.get(e, 0) >= 2}
+    cells = S.score_all(f.hypotheses, f.variables, f.hpm, f.corpus,
+                        f.readings, include=multi)
+    t = S.totals(cells, f.hypotheses)
+    ru = f.rank(clustered=False)
+    rm = {h: i + 1 for i, h in enumerate(sorted(t, key=lambda x: -t[x]))}
+    rows = sorted(f.hypotheses, key=lambda h: -(t[h] - f.unclustered[h]))[:8]
+    out = [f"| Hypothesis | Baseline | Corroborated only ({len(multi)} variables) | Shift |",
+           "| ---------- | -------- | ----------------- | ----- |"]
+    for h in rows:
+        d = t[h] - f.unclustered[h]
+        b = "**" if abs(d) >= 2.5 else ""
+        out.append(f"| {b}{h} {short_name(f.names[h])}{b} | "
+                   f"{sgn(f.unclustered[h])} ({ru[h]}) | "
+                   f"{b}{sgn(t[h])} ({rm[h]}){b} | {b}{sgn(d)}{b} |")
+    return "\n".join(out)
+
+
+def block_tie_rules(f: Facts) -> str:
+    """What each tie rule gives the leading pair (section 2.7)."""
+    order = ["conservative", "mean_tied", "mean_all", "favourable"]
+    label = {"conservative": "Conservative *(adopted)*",
+             "mean_tied": "Mean of the tied cells",
+             "mean_all": "Mean of all cells in the cluster",
+             "favourable": "Favourable *(the accidental behaviour)*"}
+    out = ["| Tie rule | H012 | H014 | Leader |",
+           "| -------- | ---- | ---- | ------ |"]
+    for rule in order:
+        t = S.totals(f.cells, f.hypotheses, clusters=f.clusters, tie_rule=rule)
+        lead = max(t, key=lambda h: t[h])
+        b = "**" if rule == "conservative" else ""
+        out.append(f"| {label[rule]} | {b}{sgn(t['H012'])}{b} | "
+                   f"{b}{sgn(t['H014'])}{b} | {b}{lead}{b} |")
+    return "\n".join(out)
+
+
+def block_screening(f: Facts) -> str:
+    """The sixteen screened functional domains (section 6.1)."""
+    rows = S.screen(f.conn, f.variables, f.corpus)
+    rows.sort(key=lambda r: -r["total"])
+    out = ["| ID | Candidate | Domain | Score | Hard contradictions | Verdict |",
+           "| -- | --------- | ------ | ----- | ------------------- | ------- |"]
+    for r in rows:
+        b = "**" if r["total"] > 0 else ""
+        decision = SCREEN_DECISIONS.get(r["candidate_id"], r["verdict"].lower())
+        out.append(f"| {r['candidate_id']} | {r['name']} | {r['domain']} | "
+                   f"{b}{sgn(r['total'])}{b} | {r['hard']} | {decision} |")
+    return "\n".join(out)
+
+
+def block_bounds(f: Facts) -> str:
+    """Best and worst case over the unscored variables (section 5.5)."""
+    bnd = S.bounds(f.hypotheses, f.variables, f.hpm, f.corpus)
+    rows = bnd[0] if isinstance(bnd, tuple) else bnd
+    out = ["| Hypothesis | Current | Worst case | Best case | Robust |",
+           "| ---------- | ------- | ---------- | --------- | ------ |"]
+    for h in sorted(f.hypotheses, key=lambda x: -f.unclustered[x])[:6]:
+        r = rows[h] if isinstance(rows, dict) else None
+        if r is None:
+            continue
+        worst = r["worst"] if isinstance(r, dict) else r[0]
+        best = r["best"] if isinstance(r, dict) else r[1]
+        out.append(f"| {h} {short_name(f.names[h])} | {sgn(f.unclustered[h])} | "
+                   f"{sgn(worst)} | {sgn(best)} | no |")
+    return "\n".join(out)
+
+
+def block_rejections(f: Facts) -> str:
+    """What the rejections did to the measured ranges (section 2.5)."""
+    def rng(col, admit):
+        rows = [r[0] for r in f.conn.execute(
+            f"SELECT s.{col} FROM specimens s JOIN specimen_quality q "
+            f"ON q.rd_id = s.rd_id WHERE s.{col} IS NOT NULL"
+            + (f" AND q.{admit} = 1" if admit else ""))]
+        return (min(rows), max(rows), len(rows)) if rows else None
+
+    out = ["| Statistic | All recorded | Admissible only |",
+           "| --------- | ------------ | --------------- |"]
+    lo, hi, n = rng("max_diameter_mm", None)
+    alo, ahi, an = rng("max_diameter_mm", "admit_geometry")
+    out.append(f"| Overall diameter | {lo:.1f}–{hi:.1f} mm, ratio "
+               f"{hi/lo:.2f}:1 (n = {n}) | **{alo:.1f}–{ahi:.1f} mm, ratio "
+               f"{ahi/alo:.2f}:1** (n = {an}) |")
+    lo, hi, n = rng("weight_g", None)
+    alo, ahi, an = rng("weight_g", "admit_mass")
+    out.append(f"| Mass | {lo:.1f}–{hi:.1f} g (n = {n}) | "
+               f"**{alo:.1f}–{ahi:.1f} g** (n = {an}) |")
+    lo, hi, n = rng("wall_thickness_mm", None)
+    out.append(f"| Wall thickness | {lo:.1f}–{hi:.1f} mm (n = {n}) | "
+               f"not separately restricted |")
+    return "\n".join(out)
+
+
 BLOCKS = {
     "composition": block_composition,
     "quality": block_quality,
@@ -281,6 +423,11 @@ BLOCKS = {
     "bands": block_bands,
     "clustering": block_clustering,
     "reproduction": block_reproduction,
+    "scenarios": block_scenarios,
+    "multi_source": block_multi_source,
+    "tie_rules": block_tie_rules,
+    "screening": block_screening,
+    "rejections": block_rejections,
 }
 
 

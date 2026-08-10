@@ -269,15 +269,18 @@ weight, and pooling the two makes every mass statistic meaningless.
 
 ### 2.5 Effect of the rejections
 
-| Statistic | Before | After |
-| --------- | ------ | ----- |
-| Overall diameter | 44.0–127.7 mm, ratio 2.90:1 (n = 8) | **44.0–82.0 mm, ratio 1.86:1** (n = 7) |
-| Mass | 1.7–553.2 g (n = 16) | **39.8–247.2 g**, mean 171.8 g (n = 5) |
+<!-- RDORP:BEGIN rejections -->
+| Statistic | All recorded | Admissible only |
+| --------- | ------------ | --------------- |
+| Overall diameter | 44.0–127.7 mm, ratio 2.90:1 (n = 9) | **44.0–85.0 mm, ratio 1.93:1** (n = 8) |
+| Mass | 1.7–553.2 g (n = 16) | **39.8–553.2 g** (n = 6) |
+| Wall thickness | 1.1–3.7 mm (n = 5) | not separately restricted |
+<!-- RDORP:END rejections -->
 
 **The conclusions are unaffected.** The size-range findings that defeat the
 modular-assembly and standardisation hypotheses rest on the *published* corpus
 range of 4–10 cm (`PUB-0003`, 31), not on this project's own measured specimens,
-and a 1.86:1 spread among admissible specimens remains substantial. Mass was
+and the spread among admissible specimens remains substantial. Mass was
 already non-discriminating for want of a specified prediction, so no score
 changes.
 
@@ -421,12 +424,14 @@ favourable reading is reported alongside as `clustered_favourable`, the upper
 bound of the judgement. A regression test asserts order-independence under
 every rule (RDORP-013 A16).
 
+<!-- RDORP:BEGIN tie_rules -->
 | Tie rule | H012 | H014 | Leader |
 | -------- | ---- | ---- | ------ |
-| Conservative *(adopted)* | **+23.5** | +20.5 | **H012** |
-| Mean of the tied cells | **+23.5** | +22.3 | **H012** |
-| Mean of all cells in the cluster | **+16.9** | +16.3 | **H012** |
-| Favourable *(the accidental behaviour)* | +23.5 | **+24.1** | H014 |
+| Conservative *(adopted)* | **+23.5** | **+20.5** | **H012** |
+| Mean of the tied cells | +23.5 | +22.3 | H012 |
+| Mean of all cells in the cluster | +16.9 | +16.3 | H012 |
+| Favourable *(the accidental behaviour)* | +23.5 | +24.1 | H014 |
+<!-- RDORP:END tie_rules -->
 
 **Sensitivity to the weighting scheme.** All 45 combinations of five power
 schemes, three confidence schemes and three class schemes were re-scored.
@@ -438,16 +443,18 @@ weights nor deduplication changes which hypothesis is first.
 The `multi_source` scenario removes every variable lacking two independent
 sources — the seven above — and rescores.
 
-| Hypothesis | Baseline | Corroborated only | Shift |
+<!-- RDORP:BEGIN multi_source -->
+| Hypothesis | Baseline | Corroborated only (25 variables) | Shift |
 | ---------- | -------- | ----------------- | ----- |
-| H012 Cord-working frame | +24.0 (1st) | **+22.4 (1st)** | −1.7 |
-| H014 Wax bulla former | +21.0 (2nd) | **+20.1 (2nd)** | −0.9 |
-| **H013 Rope-laying top** | +8.7 (5th) | **+15.6 (3rd)** | **+6.9** |
-| H004 Candlestick | −0.6 (10th) | +3.7 (6th) | +4.3 |
-| H010 Parasol crown | −9.2 (13th) | −5.3 (12th) | +3.9 |
-| H005 Textile tool | −0.2 (8th) | +3.2 (7th) | +3.4 |
-| H011 Archery aid | −8.8 (12th) | −6.1 (13th) | +2.6 |
-| **H001 Structural connector** | +2.3 (7th) | **−0.3 (10th)** | **−2.6** |
+| **H013 Rope-laying top** | +8.7 (5) | **+15.6 (3)** | **+6.9** |
+| **H004 Candlestick** | −0.6 (10) | **+3.7 (6)** | **+4.3** |
+| **H010 Parasol** | −9.2 (13) | **−5.3 (12)** | **+3.9** |
+| **H005 Textile** | −0.2 (8) | **+3.2 (7)** | **+3.4** |
+| **H011 Archery targeting** | −8.8 (12) | **−6.1 (13)** | **+2.6** |
+| H009 Tent apex | −34.0 (14) | −32.1 (14) | +1.9 |
+| H008 Portable shrine component | +11.4 (4) | +12.2 (5) | +0.8 |
+| H006 Astronomical instrument | −0.5 (9) | −0.1 (9) | +0.4 |
+<!-- RDORP:END multi_source -->
 
 Three things follow from the corroboration check.
 
@@ -746,15 +753,19 @@ hypotheses that lead on worth are mid-table on evidence.**
 
 ### 5.4 Robustness
 
+<!-- RDORP:BEGIN scenarios -->
 | Scenario | Leader |
 | -------- | ------ |
 | Baseline, fully weighted | H012 (+24.0) |
 | Archaeological observations only | H012 (+22.4) |
-| Confidence A–C only | H012 (+24.0) |
+| Confidence A-C only | H012 (+24.0) |
 | **Very High power variables only** | **H014 (+10.2)** |
+| Clustered, ties resolved against the hypothesis | H012 (+23.5) |
+| **Clustered, ties resolved in its favour** | **H014 (+24.1)** |
 | Unweighted | H012 (+15.5) |
-| **Corroborated variables only** | **H012 (+22.4)** |
+| Corroborated variables only | H012 (+22.4) |
 | Per-cell readings ignored | H012 (+22.7) |
+<!-- RDORP:END scenarios -->
 
 Two leaders across seven scenarios is not stability. **No hypothesis is robust**:
 every one has a worst case over the unscored variables below the best case of a
@@ -778,16 +789,17 @@ tents; about 134 dodecahedra are known in total.
 
 ## 6. Functional domains screened
 
-| ID | Candidate | Domain | Screen | Hard | Verdict |
-| -- | --------- | ------ | ------ | ---- | ------- |
-| C-12 | Soft-material forming and handling | Craft | **+29.4** | 1 | held back — see 6.2 |
-| C-13 | Garment or tailoring size gauge | Craft / Textile | +11.8 | 3 | eliminated |
-| C-10 | Wax bulla or seal former | Administrative | +8.5 | 2 | promoted to H014 |
+<!-- RDORP:BEGIN screening -->
+| ID | Candidate | Domain | Score | Hard contradictions | Verdict |
+| -- | --------- | ------ | ----- | ------------------- | ------- |
+| C-12 | Soft-material forming and handling tool | Craft | **+29.4** | 1 | held back - see 6.2 |
+| C-13 | Garment or tailoring size gauge | Craft / Textile | **+11.8** | 3 | eliminated |
+| C-10 | Wax bulla or seal former | Administrative | **+8.5** | 2 | promoted to H014 |
 | C-15 | Suspended solar altitude sight | Astronomical | −1.8 | 3 | eliminated by computation |
-| C-14 | Zodiac sundial by internal projection | Astronomical | −1.9 | 5 | eliminated by computation |
+| C-14 | Zodiac sundial by internal light projection | Astronomical | −1.9 | 5 | eliminated by computation |
 | C-09 | Byre or beehive fumigation holder | Animal husbandry | −4.2 | 2 | eliminated |
-| C-17 | Levelling sight for water engineering | Engineering | −7.6 | 4 | eliminated by precision |
-| C-11 | Knob-based dividers or angle gauge | Metrology | −8.6 | 4 | eliminated |
+| C-17 | Levelling sight for water engineering | Engineering / Surveying | −7.6 | 4 | eliminated by precision |
+| C-11 | Knob-based dividers or angle gauge | Metrology / Surveying | −8.6 | 4 | eliminated |
 | C-06 | Seed-sowing or dibbing gauge | Farming | −16.2 | 4 | eliminated |
 | C-08 | Tether or hobble ring | Animal husbandry | −16.9 | 4 | eliminated |
 | C-05 | Volumetric grain or liquid measure | Farming / Commerce | −18.0 | 4 | eliminated |
@@ -796,6 +808,7 @@ tents; about 134 dodecahedra are known in total.
 | C-03 | Net-making mesh gauge | Maritime | −19.8 | 4 | eliminated |
 | C-02 | Harness or yoke junction fitting | Military / Farming | −25.0 | 6 | eliminated |
 | C-01 | Artillery shot gauge | Military | −27.0 | 6 | eliminated |
+<!-- RDORP:END screening -->
 
 ### 6.1 The gauge–former asymmetry
 
@@ -844,16 +857,14 @@ all twenty knobs are geometrically equivalent and the choice of knob conveys no
 information. Across every possible support — 20 knobs, 12 faces, 30 edges — there
 are seven distinct face-axis elevations, of which four are reachable by the noon
 sun and identically so from 43.7° to 55° N. That yields eight calendar events,
-not twelve, spaced 13.8° to 120.8° apart in solar longitude, with a blind window
-of 66 days at Arles rising to 139 days at Corbridge.
+not twelve.
 
 **C-17, levelling for water engineering.** A horizontal sight line does exist —
 hung from an edge, one face-pair axis lies at exactly 0°. But sight tolerance is
 0.18° for the closest pair in the corpus and 1.15–2.58° for typical pairs,
-against 0.2865° for the crudest gradient Vitruvius permits and 0.0143° for the
-Aqua Marcia. Levelling accuracy scales with baseline, and Vitruvius's chorobates
-is a bench of about twenty Roman feet — some 120 times the path through a
-dodecahedron.
+against 0.2865° for the crudest gradient Vitruvius permits. Levelling accuracy
+scales with baseline, and Vitruvius's chorobates is a bench of about twenty
+Roman feet, far longer than any path through a dodecahedron.
 
 **Three further computations bear on the object's own geometry rather than on
 a candidate.**
@@ -986,9 +997,9 @@ specific to the Gallo-Roman north-west for two centuries.
 | C-15 Zodiac from solar altitude | −1.8, eliminated by computation |
 | Twelve apertures as twelve labelled categories | not refuted; the one live route |
 
-**Determining the zodiac from the sun is refuted twice by calculation**, and the
-apparent fit is chance: scanning latitude from 40° to 58°, the best mean distance
-from a 30° sign boundary is 5.84° at 51.8° N against 7.50° expected at random.
+**Determining the zodiac from the sun is refuted twice by calculation** — by
+the face-axis separation and by the projection resolution, both reproduced in
+Part 8 of the notebook.
 
 What survives is the zodiac as a set of twelve *labels*, not as something read
 off the sky. A Roman dodecahedron with a zodiac sign engraved on each face is
