@@ -472,12 +472,27 @@ Three things follow from the corroboration check.
 neither changes rank. Nothing in the case for H012 or H014 depends on
 uncorroborated evidence.
 
-**Several refutations are not robust.** H013, the rope-laying top, rises nearly
-seven points and two places, because its elimination rested substantially on
-`EV019` and `EV020` — the two variables nobody has ever measured. The
-candlestick, textile-tool and parasol readings recover similarly. **Every one of
-these is a hypothesis refuted primarily by the absence of wear**, and that is
-precisely where the evidence is weakest.
+**Several refutations are not robust, and one of them is not a refutation at
+all.** **H013, the rope-laying top, is the largest mover in the entire
+analysis.** It gains **+6.9** on corroboration — more than any other hypothesis
+— rising from fifth place to third, and it gains **+8.4** on clustering, again
+the largest move, to third again. It is the only hypothesis that improves
+substantially under *both* robustness checks.
+
+The reason is the same in both cases: its elimination rested substantially on
+`EV019` rope wear and `EV020` rotational wear, **the two variables nobody has
+ever examined on any specimen**, scored `absent` from the absence of a report
+and cited from one page of one source. Remove that evidence, or stop counting
+it four times, and the refutation goes with it.
+
+**H013 is not the leader on any basis.** Under corroboration H012 leads at
++22.4 and H014 at +20.1, with H013 third at +15.6; the leading pair is
+unchanged from the baseline, which is the first finding above. What H013 is, is
+the hypothesis whose *rejection* this project has least warrant for.
+
+The candlestick, textile-tool and parasol readings recover similarly but by
+less. **Every one of these is a hypothesis refuted primarily by the absence of
+wear**, and that is precisely where the evidence is weakest.
 
 **H001 was being propped up by this project's own reasoning.** Removing the
 three unsourced engineering variables drops it below zero and from seventh to
