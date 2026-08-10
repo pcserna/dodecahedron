@@ -50,6 +50,12 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import score_hdm as S  # noqa: E402
+import reports as R  # noqa: E402
+
+#: The denominator for every coverage figure, defined once. reports/ and
+#: RDORP-012 used to carry 134 and 129 respectively, so the same corpus was
+#: 45 per cent covered in one file and 47 per cent in the other.
+KNOWN_CORPUS = R.KNOWN_CORPUS
 
 LOG = logging.getLogger("rdorp.render")
 
@@ -139,9 +145,10 @@ def block_composition(f: Facts) -> str:
     consulted = f.one("SELECT COUNT(*) FROM sources WHERE confidence IN ('A','B')")
     rows = [
         ("Specimens recorded", str(specimens)),
-        ("Known corpus", "116 by 2016 (`PUB-0051`), 129 catalogued to 2021 (`PUB-0023`), "
-         "c 134 by 2025 (`PUB-0003`)"),
-        ("Coverage", f"{round(100 * specimens / 129)} %"),
+        ("Known corpus", f"116 by 2016 (`PUB-0051`), 129 catalogued to 2021 "
+                        f"(`PUB-0023`), c {KNOWN_CORPUS} by 2025 (`PUB-0003`)"),
+        ("Coverage", f"{round(100 * specimens / KNOWN_CORPUS)} % of "
+                     f"c {KNOWN_CORPUS}"),
         ("Sourced observations", str(observations)),
         ("Sources", f"{f.one('SELECT COUNT(*) FROM sources')}, of which "
                     f"{consulted} are graded A or B"),

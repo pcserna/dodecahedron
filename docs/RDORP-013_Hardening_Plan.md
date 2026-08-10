@@ -65,7 +65,7 @@ reading is right.
 | **A4** | Three scored variables have no source | Method | Removes a rule violation; moves H001 by −2.6 |
 | **B3** | Residue analysis | Evidence | Decides the two leading hypotheses |
 | **C1** | Guggenberger 1999 read directly | Evidence | Underwrites most single-source variables at a stroke |
-| ~~C2~~ | Continental specimens under-represented | Evidence | **PART DONE. Twenty findspots added from PUB-0050 and PUB-0051; British share 50 % to 38 %, coverage 31 % to 47 %. All are findspot-only** |
+| ~~C2~~ | Continental specimens under-represented | Evidence | **PART DONE. Twenty findspots added from PUB-0050 and PUB-0051; British share 50 % to 38 %, coverage 31 % to 45 %. All are findspot-only** |
 | ~~A14~~ | Reported figures are maintained by hand | Method | **DONE. `render_docs.py` generates them; `--check` fails the build on drift; a notebook recomputes every finding** |
 | A6 | Argument from silence has no rule | Method | Separates *examined and absent* from *never looked* |
 | A7 | The screening threshold is crude | Method | The rule is known to produce false negatives |
@@ -841,7 +841,7 @@ from `PUB-0051`:
 | - | ------ | --- |
 | Specimens | 40 | **60** |
 | British share | 50 % | **38 %** |
-| Coverage | 31 % | **47 %** |
+| Coverage | 31 % | **45 %** |
 
 **What this bought and what it cost.** It bought better evidence for the
 distribution and skew findings, which are load-bearing. It cost quality: every

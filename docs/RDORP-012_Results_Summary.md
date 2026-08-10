@@ -147,7 +147,7 @@ The index links each finding to the notebook cell that establishes it.
 | ------- | ------------- | ---- |
 | Which database every figure below was computed from | Part 1 — Provenance | [`provenance`](../notebooks/RDORP_Reproduction.ipynb#cell-provenance) |
 | 40 specimens, 224 observations, 49 sources, 10 countries | Part 2 — The corpus | [`corpus-composition`](../notebooks/RDORP_Reproduction.ipynb#cell-corpus-composition) |
-| 31 % coverage of the 129 catalogued to 2021 |  | [`corpus-composition`](../notebooks/RDORP_Reproduction.ipynb#cell-corpus-composition) |
+| 45 % coverage of the c 134 known by 2025 |  | [`corpus-composition`](../notebooks/RDORP_Reproduction.ipynb#cell-corpus-composition) |
 | 50 % British against a known corpus about 20 % British |  | [`corpus-composition`](../notebooks/RDORP_Reproduction.ipynb#cell-corpus-composition) |
 | 40 % of all observations come from a single source |  | [`corpus-sources`](../notebooks/RDORP_Reproduction.ipynb#cell-corpus-sources) |
 | British specimens average 6.3 observations, continental 4.8 |  | [`corpus-sources`](../notebooks/RDORP_Reproduction.ipynb#cell-corpus-sources) |
@@ -220,7 +220,7 @@ prose and is written by hand.
 <!-- RDORP:BEGIN composition -->
 | Specimens recorded | 60 |
 | Known corpus | 116 by 2016 (`PUB-0051`), 129 catalogued to 2021 (`PUB-0023`), c 134 by 2025 (`PUB-0003`) |
-| Coverage | 47 % |
+| Coverage | 45 % of c 134 |
 | Sourced observations | 233 |
 | Sources | 51, of which 36 are graded A or B |
 | Evidence variables | 48 |
@@ -1246,7 +1246,7 @@ Whatever the explanation, it has to account for that silence.
 
 ## 9. Limits of the evidence
 
-1. **Coverage.** 47 % of the known corpus, skewed 38 % British against a known
+1. **Coverage.** 45 % of the known corpus, skewed 38 % British against a known
    corpus of about 20 % British.
 2. **Authenticity.** No specimen authenticated; two of the three with usable
    aperture data are unexcavated private-collection pieces; ancient imitation is

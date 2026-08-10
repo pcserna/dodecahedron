@@ -123,7 +123,8 @@ specimens    = q1("SELECT COUNT(*) FROM specimens")
 observations = q1("SELECT COUNT(*) FROM artifact_observations")
 sources      = q1("SELECT COUNT(*) FROM sources")
 countries    = q1("SELECT COUNT(DISTINCT country) FROM specimens WHERE country IS NOT NULL AND country <> ''")
-KNOWN_CORPUS = 129          # catalogued to 2021, PUB-0023
+KNOWN_CORPUS = 134          # c 2025, PUB-0003 - the same denominator
+                            # reports.py and render_docs.py use
 british      = q1("SELECT COUNT(*) FROM specimens WHERE country = 'United Kingdom'")
 fragments    = q1("SELECT COUNT(*) FROM specimen_quality "
                   "WHERE LOWER(COALESCE(completeness,'')) LIKE '%fragment%'")
@@ -141,7 +142,7 @@ for r in q("SELECT country, COUNT(*) c FROM specimens GROUP BY 1 ORDER BY c DESC
     print(f"  {str(r['country']):18} {r['c']:3}")
 """, cid='corpus-composition', reproduces=[
     '40 specimens, 224 observations, 49 sources, 10 countries',
-    '31 % coverage of the 129 catalogued to 2021',
+    '45 % coverage of the c 134 known by 2025',
     '50 % British against a known corpus about 20 % British',
 ])
 
@@ -1268,7 +1269,7 @@ expect("pre-registered predictions",      q1("SELECT COUNT(*) FROM predictions")
 expect("screened domains",                q1("SELECT COUNT(*) FROM screening_candidates"), 17)
 expect("scored variables",                len(disc), 32)
 expect("British share (%)",               round(100*british/specimens), 38)
-expect("coverage (%)",                    round(100*specimens/KNOWN_CORPUS), 47)
+expect("coverage (%)",                    round(100*specimens/KNOWN_CORPUS), 45)
 
 expect("baseline leader",                 base_leader, "H012")
 expect("H012 unclustered",                round(U["H012"], 1), 24.0)
