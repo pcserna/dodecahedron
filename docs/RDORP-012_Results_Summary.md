@@ -17,6 +17,24 @@ Related Documents:
 
 # Results Summary
 
+**Status: a working analysis, not a conclusion.** It reports what fourteen
+hypotheses predict, what the recorded corpus shows, and how far the two agree.
+It does not identify the object, and the strongest thing in it is a negative
+result. The method's own reliability has been measured and is poor; §1.1 gives
+the figures before any result is stated.
+
+**How to check it.** Every table between `RDORP:BEGIN` and `RDORP:END` markers
+is generated from `database/rdorp.sqlite`; every headline figure is recomputed
+and asserted in `notebooks/RDORP_Reproduction.ipynb`; every assumed value is
+listed in §1B.1 with the code it is read from. `python run_pipeline.py`
+rebuilds the lot and `python database/render_docs.py --check` fails if this
+document has drifted from the data.
+
+**What is judgement rather than computation**, and is declared as such: the
+direction assigned to each observation (§9), which hypotheses share an evidence
+cluster (§2.7), which band a hypothesis falls in (§5.1), the usage-value axis
+(§10), and what the screen did with each candidate (§6.1).
+
 A synthesis of the current state of the RDORP evidence base and of what it does
 and does not support. Every figure is reproducible by running
 `python run_pipeline.py`; the generated reports are `reports/hdm_analysis.md`,
@@ -196,6 +214,67 @@ The index links each finding to the notebook cell that establishes it.
 | Every result above, in one place | Part 11 — All results in one place | [`consolidated`](../notebooks/RDORP_Reproduction.ipynb#cell-consolidated) |
 | That every headline figure in the documents matches this notebook | Part 12 — Assertions | [`assertions`](../notebooks/RDORP_Reproduction.ipynb#cell-assertions) |
 <!-- RDORP:END reproduction -->
+
+---
+
+## 1B. What is assumed, and what would overturn it
+
+Two things a reader needs before the results, and neither was in this document
+until an audit went looking.
+
+### 1B.1 Every assumed value
+
+Nothing below is sourced or derived; each is a choice. **The values are read
+live from the code that uses them**, so this table cannot drift from the
+analysis. It exists because an audit found two assumed values that were wrong —
+a face-to-face distance invented while scoping an experiment, and the *modern*
+obliquity of the ecliptic used for second-to-fourth-century sun calculations,
+an error of 0.22° where the precisions under discussion are 0.11° to 0.29°.
+
+<!-- RDORP:BEGIN assumptions -->
+| Assumed value | Now | Basis | Does a conclusion depend on it? |
+| ------------- | --- | ----- | ------------------------------- |
+| Obliquity of the ecliptic | `23.66` | IAU secular expression at AD 250, the mid-point of the corpus date range. The modern 23.44 deg was used until an audit caught it | No. Correcting it moved the zodiac fit from 5.52 to 4.98 deg and left every verdict standing |
+| Zodiac sign arc | `30` | Definitional: twelve equal divisions of the ecliptic | No |
+| Latitude range scanned | `40` | Arles to Corbridge, the latitudes the corpus spans | The optimum sits at the upper edge, which the experiment reports as a boundary artefact |
+| Dodecahedron volume coefficient | `7.663` | Exact: (15 + 7*sqrt5)/4. A scratch calculation used 2.785 and understated every volume by a factor of 2.75 | Yes, and a test now guards it |
+| Roman capacity units | - | Scholarly convention, sextarius = 546 ml, the rest by the Roman fractional system | No. The null shows any volume in range is close to some unit |
+| Cereal grain length | `5.0, 9.0` | 5 to 9 mm, typical wheat and barley caryopses | No. Apertures are 6 to 40 mm, so the margin is wide |
+| Wall thickness where unrecorded | - | Corpus mean of the five specimens that publish one | No |
+| Eye resolution | `1` | 1 mm, a deliberately generous limit for separating two openings by eye | No. The observed smallest gaps are 0.00 to 0.30 mm, well inside it |
+| Lead sling-shot calibres | `20.0, 30.0, 40.0, 50.0, 60.0` | 20 to 60 g, the usual range of Roman glandes | Only for C-01, and the conclusion is that no aperture sits AT a calibre |
+| Jublains baseline | - | 50 mm, the midpoint of the published 48 to 52 mm, which varies by axis | No |
+| Known corpus size | `134` | c 134 by 2025 (PUB-0003). PUB-0051 gives 116 by 2016 and PUB-0023 129 by 2021; all three are printed in 2.1 | It sets the coverage percentage and nothing else |
+| Discriminatory-power weights | `3.0 / 2.0 / 1.0` | Chosen, not derived (RDORP-013 A2) | No. All 45 weighting combinations were swept and the leader is the same in every one |
+| Source-confidence weights | `1.0 / 0.9 / 0.75 / 0.5 / 0.25` | Chosen, not derived | No, for the same reason |
+| Evidence-class weights | `1.0 / 0.75 / 0.5` | Chosen, not derived | No, for the same reason |
+| Cluster tie rule | `conservative` | Conservative: where variables expressing one observation point both ways, the hypothesis is not credited with the favourable reading | IT DECIDED THE REPORTED LEADER until A16. The favourable rule puts H014 first; every other rule puts H012 first |
+<!-- RDORP:END assumptions -->
+
+Neither error changed a conclusion. That is worth stating rather than resting
+on: an assumption that turns out not to matter is a lucky assumption, not a
+sound method, and the table is here so the next one is caught before it is
+load-bearing.
+
+### 1B.2 What would overturn each finding
+
+A claim that nothing could refute is not a result. Each headline below is
+paired with the observation that would end it.
+
+| Finding | What would overturn it |
+| ------- | ---------------------- |
+| The object is not standardised | A metrological series recovered from direct measurement of twelve apertures on several complete specimens (`B2`) |
+| Nothing bears load; the utilitarian family is refuted | A specimen with wear consistent with load, or any functional equipment recovered in association |
+| Four refutations rest on absent wear | Microscopic examination of one specimen finding rope or rotational wear (`B1`) — that alone recovers H013, H005, H004 and H010 |
+| H012 and H014 lead | Removing `EV039` alone reverses the order; so would restating the ~13 indifference-scored cells (`A15`) |
+| The apertures are not a gauge series | Direct measurement showing a regular progression on an excavated specimen — the four sets now used all reach us through one publication |
+| The zodiac cannot be read by solar means | Nothing, short of an error in the geometry: `EXP-0002`, `EXP-0003`, `EXP-0006`, `EXP-0007` and `EXP-0009` depend on no judgement call |
+| Residues are absent | GC-MS or FTIR on an unconserved interior finding beeswax or resin — which would support H014 directly (`B3`) |
+| The corpus is one population | Metallurgical or isotopic evidence of ancient local imitation, which the literature proposes and nobody has tested (`C4`) |
+
+**The reliability figures apply to all of it.** An independent specifier agreed
+with 52 % of one matrix and an independent rater with 46 % of the directions.
+Nothing in this document is more certain than that.
 
 ---
 

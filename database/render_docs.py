@@ -425,6 +425,92 @@ def block_rejections(f: Facts) -> str:
     return "\n".join(out)
 
 
+
+#: Every value the analysis assumes rather than sources or derives, with the
+#: basis for it and whether any conclusion turns on it. VALUES ARE READ LIVE
+#: from the modules that use them, so this table cannot drift from the code.
+#: Added after an audit found two assumed values that were wrong, one of them
+#: - the modern obliquity used for Roman-period sun calculations - carrying an
+#: error larger than every precision the analysis argues about.
+#:
+#: (label, module, attribute or None, basis, does a conclusion depend on it?)
+ASSUMPTIONS = [
+    ("Obliquity of the ecliptic", "exp_zodiac", "OBLIQUITY",
+     "IAU secular expression at AD 250, the mid-point of the corpus date "
+     "range. The modern 23.44 deg was used until an audit caught it",
+     "No. Correcting it moved the zodiac fit from 5.52 to 4.98 deg and left "
+     "every verdict standing"),
+    ("Zodiac sign arc", "exp_zodiac", "SIGN_ARC",
+     "Definitional: twelve equal divisions of the ecliptic", "No"),
+    ("Latitude range scanned", "exp_zodiac", "LAT_MIN",
+     "Arles to Corbridge, the latitudes the corpus spans", 
+     "The optimum sits at the upper edge, which the experiment reports as a "
+     "boundary artefact"),
+    ("Dodecahedron volume coefficient", "exp_volume", "VOL_COEFF",
+     "Exact: (15 + 7*sqrt5)/4. A scratch calculation used 2.785 and "
+     "understated every volume by a factor of 2.75",
+     "Yes, and a test now guards it"),
+    ("Roman capacity units", "exp_volume", None,
+     "Scholarly convention, sextarius = 546 ml, the rest by the Roman "
+     "fractional system", 
+     "No. The null shows any volume in range is close to some unit"),
+    ("Cereal grain length", "exp_volume", "GRAIN_MM",
+     "5 to 9 mm, typical wheat and barley caryopses", 
+     "No. Apertures are 6 to 40 mm, so the margin is wide"),
+    ("Wall thickness where unrecorded", "exp_volume", None,
+     "Corpus mean of the five specimens that publish one", "No"),
+    ("Eye resolution", "exp_gauge", "EYE_RESOLUTION_MM",
+     "1 mm, a deliberately generous limit for separating two openings by eye",
+     "No. The observed smallest gaps are 0.00 to 0.30 mm, well inside it"),
+    ("Lead sling-shot calibres", "exp_gauge", "GLANS_WEIGHTS_G",
+     "20 to 60 g, the usual range of Roman glandes", 
+     "Only for C-01, and the conclusion is that no aperture sits AT a calibre"),
+    ("Jublains baseline", "exp_wagemans", None,
+     "50 mm, the midpoint of the published 48 to 52 mm, which varies by axis",
+     "No"),
+    ("Known corpus size", "reports", "KNOWN_CORPUS",
+     "c 134 by 2025 (PUB-0003). PUB-0051 gives 116 by 2016 and PUB-0023 129 "
+     "by 2021; all three are printed in 2.1",
+     "It sets the coverage percentage and nothing else"),
+    ("Discriminatory-power weights", "score_hdm", "DP_WEIGHT",
+     "Chosen, not derived (RDORP-013 A2)",
+     "No. All 45 weighting combinations were swept and the leader is the same "
+     "in every one"),
+    ("Source-confidence weights", "score_hdm", "CONF_WEIGHT",
+     "Chosen, not derived", "No, for the same reason"),
+    ("Evidence-class weights", "score_hdm", "CLASS_WEIGHT",
+     "Chosen, not derived", "No, for the same reason"),
+    ("Cluster tie rule", "render_docs", "TIE_RULE",
+     "Conservative: where variables expressing one observation point both "
+     "ways, the hypothesis is not credited with the favourable reading",
+     "IT DECIDED THE REPORTED LEADER until A16. The favourable rule puts H014 "
+     "first; every other rule puts H012 first"),
+]
+
+
+def block_assumptions(f: Facts) -> str:
+    import importlib
+    out = ["| Assumed value | Now | Basis | Does a conclusion depend on it? |",
+           "| ------------- | --- | ----- | ------------------------------- |"]
+    for label, mod, attr, basis, depends in ASSUMPTIONS:
+        shown = "-"
+        if attr:
+            try:
+                v = getattr(importlib.import_module(mod), attr)
+                if isinstance(v, float):
+                    shown = f"`{v:.4g}`"
+                elif isinstance(v, (int, str)):
+                    shown = f"`{v}`"
+                elif isinstance(v, dict):
+                    shown = "`" + " / ".join(str(x) for x in v.values()) + "`"
+                elif isinstance(v, tuple):
+                    shown = "`" + ", ".join(str(x) for x in v) + "`"
+            except Exception:
+                shown = "*unreadable*"
+        out.append(f"| {label} | {shown} | {basis} | {depends} |")
+    return chr(10).join(out)
+
+
 BLOCKS = {
     "composition": block_composition,
     "quality": block_quality,
@@ -438,6 +524,7 @@ BLOCKS = {
     "tie_rules": block_tie_rules,
     "screening": block_screening,
     "rejections": block_rejections,
+    "assumptions": block_assumptions,
 }
 
 
