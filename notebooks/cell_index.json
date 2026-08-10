@@ -152,12 +152,12 @@
    "part": "Part 8 — The computational experiments, from first principles"
   },
   {
-   "finding": "EXP-0009: best zodiac fit 5.52 deg at 58.0 N, against 7.5 deg expected at random",
+   "finding": "EXP-0009: best zodiac fit 4.98 deg at 58.0 N, against 7.5 deg expected at random",
    "cell": "exp-0009",
    "part": "Part 8 — The computational experiments, from first principles"
   },
   {
-   "finding": "EXP-0009: 94 % of random elevation sets fit the zodiac at least as well",
+   "finding": "EXP-0009: 84 % of random elevation sets fit the zodiac at least as well",
    "cell": "exp-0009",
    "part": "Part 8 — The computational experiments, from first principles"
   },
@@ -192,12 +192,12 @@
    "part": "Part 8 — The computational experiments, from first principles"
   },
   {
-   "finding": "EXP-0011: whether the apertures form a graded series is OPEN - Avenches beats only 83 % of random sets",
+   "finding": "EXP-0011: on four specimens the apertures are NOT a graded series - three are less regular than random",
    "cell": "exp-0011",
    "part": "Part 8 — The computational experiments, from first principles"
   },
   {
-   "finding": "EXP-0011: one specimen in forty has all twelve apertures measured",
+   "finding": "EXP-0011: four specimens now carry four or more measured apertures, all through PUB-0019",
    "cell": "exp-0011",
    "part": "Part 8 — The computational experiments, from first principles"
   },

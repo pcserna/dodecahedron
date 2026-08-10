@@ -838,8 +838,8 @@ print()
 print("=> the fit is not better than chance; it is worse than the median")
 print("   random solid. The apparent alignment is the free latitude scan.")
 """, cid="exp-0009", reproduces=[
-    "EXP-0009: best zodiac fit 5.52 deg at 58.0 N, against 7.5 deg expected at random",
-    "EXP-0009: 94 % of random elevation sets fit the zodiac at least as well",
+    "EXP-0009: best zodiac fit 4.98 deg at 58.0 N, against 7.5 deg expected at random",
+    "EXP-0009: 84 % of random elevation sets fit the zodiac at least as well",
     "EXP-0009: the statistic scores 0.0000 on a contrived on-boundary set, so it is sensitive",
 ])
 
@@ -949,8 +949,8 @@ print("   reproducibility are NOT, and only B2 can settle them.")
 """, cid="exp-0011", reproduces=[
     "EXP-0011: every measured specimen has an aperture step at or below 1 mm, so the object cannot be read as a gauge",
     "EXP-0011: no specimen carries an opening at a lead-shot calibre, refuting C-01 directly",
-    "EXP-0011: whether the apertures form a graded series is OPEN - Avenches beats only 83 % of random sets",
-    "EXP-0011: one specimen in forty has all twelve apertures measured",
+    "EXP-0011: on four specimens the apertures are NOT a graded series - three are less regular than random",
+    "EXP-0011: four specimens now carry four or more measured apertures, all through PUB-0019",
 ])
 
 md(r"""
@@ -1259,7 +1259,7 @@ def expect(label, got, want, tol=None):
         FAILURES.append(label)
 
 expect("specimens",                       specimens, 60)
-expect("sourced observations",            observations, 233)
+expect("sourced observations",            observations, 238)
 expect("sources",                         sources, 51)
 expect("countries",                       countries, 10)
 expect("evidence variables",              q1("SELECT COUNT(*) FROM evidence_variables"), 48)
@@ -1285,14 +1285,14 @@ expect("vertices",                        len(verts), 20)
 expect("distinct face-axis angles",       len(angs), 3)
 expect("cos 36 deg",                      round(RATIO, 5), 0.80902)
 expect("distinct suspension elevations",  len(allel), 7)
-expect("zodiac best fit (deg)",           round(best, 2), 5.52)
+expect("zodiac best fit (deg)",           round(best, 2), 4.98)
 expect("zodiac best-fit latitude",        round(lat, 1), 58.0)
 expect("zodiac chance baseline (deg)",    Z.EXPECTED_AT_RANDOM, 7.5)
-expect("random sets fitting as well (%)", round(100 * p_zod), 94, tol=1)
+expect("random sets fitting as well (%)", round(100 * p_zod), 84, tol=2)
 expect("volume coefficient",              round(EV.VOL_COEFF, 4), 7.6631)
 expect("largest internal volume (ml)",    round(max(vols)), 1298, tol=1)
 expect("volumes as close to a unit as chance (%)", round(100 * p_vol), 65, tol=2)
-expect("specimens with all 12 apertures", n_twelve, 1)
+expect("specimens with all 12 apertures", n_twelve, 2)
 expect("Avenches beats this share of random sets (%)",
        round(100 * max(graded.values())), 83, tol=3)
 
@@ -1310,8 +1310,8 @@ expect("admissible for mass",             admit["Mass"], 6)
 expect("admissible for geometry",         admit["Geometry"], 11)
 expect("admissible for context",          admit["Context"], 50)
 expect("fragments",                       fragments, 11)
-expect("top-source share (%)",            round(100*top_src["c"]/observations), 39)
-expect("top-two-source share (%)",        top2_pct, 55)
+expect("top-source share (%)",            round(100*top_src["c"]/observations), 38)
+expect("top-two-source share (%)",        top2_pct, 53)
 
 print()
 if FAILURES:

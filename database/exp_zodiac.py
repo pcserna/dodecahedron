@@ -60,7 +60,25 @@ import itertools
 import math
 import random
 
-OBLIQUITY = 23.44          # degrees; mean obliquity, adequate at this precision
+def obliquity_at(year: float) -> float:
+    """Obliquity of the ecliptic, degrees, by the IAU secular expression.
+
+    THIS IS NOT A CONSTANT AND USING THE MODERN VALUE WAS AN ERROR. Obliquity
+    was 23.67 degrees in AD 200 against 23.44 today - a difference of 0.22
+    degrees, which is LARGER than every precision this project argues about:
+    Wagemans's reported deviations of 0.11 and 0.29 degrees, and the 0.18
+    degree sight tolerance of the best aperture pair in EXP-0004.
+
+    Valid for a few millennia either side of J2000, which is all that is
+    needed here.
+    """
+    T = (year - 2000) / 100.0
+    return 23.439291 - 0.0130042 * T - 1.64e-7 * T ** 2 + 5.04e-7 * T ** 3
+
+
+#: Mid-point of the corpus date range, 2nd to 4th century AD.
+ROMAN_EPOCH = 250
+OBLIQUITY = obliquity_at(ROMAN_EPOCH)     # 23.664 degrees, not the modern 23.44
 SIGN_ARC = 30.0            # degrees of solar longitude per zodiac sign
 PHI = (1 + math.sqrt(5)) / 2
 

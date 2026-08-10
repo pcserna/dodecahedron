@@ -175,16 +175,16 @@ The index links each finding to the notebook cell that establishes it.
 | EXP-0005: the model predicts Vienne’s decorated faces and fails on the undecorated pair |  | [`exp-0005`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0005) |
 | EXP-0006: 0-6 ring counts cannot label 12 faces; at least 5 must collide |  | [`exp-0006`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0006) |
 | EXP-0007: rotation group order 60; marking one axis leaves 10 orientations |  | [`exp-0007`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0007) |
-| EXP-0009: best zodiac fit 5.52 deg at 58.0 N, against 7.5 deg expected at random |  | [`exp-0009`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0009) |
-| EXP-0009: 94 % of random elevation sets fit the zodiac at least as well |  | [`exp-0009`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0009) |
+| EXP-0009: best zodiac fit 4.98 deg at 58.0 N, against 7.5 deg expected at random |  | [`exp-0009`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0009) |
+| EXP-0009: 84 % of random elevation sets fit the zodiac at least as well |  | [`exp-0009`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0009) |
 | EXP-0009: the statistic scores 0.0000 on a contrived on-boundary set, so it is sensitive |  | [`exp-0009`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0009) |
 | EXP-0010: internal volumes run 43 to 1298 ml across the measured corpus |  | [`exp-0010`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0010) |
 | EXP-0010: the fit to Roman capacity units is no better than chance (65 % of random volumes as close) |  | [`exp-0010`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0010) |
 | EXP-0010: retained volume is zero in every orientation, which refutes C-05 on the form |  | [`exp-0010`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0010) |
 | EXP-0011: every measured specimen has an aperture step at or below 1 mm, so the object cannot be read as a gauge |  | [`exp-0011`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0011) |
 | EXP-0011: no specimen carries an opening at a lead-shot calibre, refuting C-01 directly |  | [`exp-0011`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0011) |
-| EXP-0011: whether the apertures form a graded series is OPEN - Avenches beats only 83 % of random sets |  | [`exp-0011`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0011) |
-| EXP-0011: one specimen in forty has all twelve apertures measured |  | [`exp-0011`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0011) |
+| EXP-0011: on four specimens the apertures are NOT a graded series - three are less regular than random |  | [`exp-0011`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0011) |
+| EXP-0011: four specimens now carry four or more measured apertures, all through PUB-0019 |  | [`exp-0011`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0011) |
 | EXP-0012: Wagemans's 26.6 deg constant is exactly the face-rest elevation this project derives |  | [`exp-0012`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0012) |
 | EXP-0012: his deviation statistic is vacuous - random angle sets score as well or better |  | [`exp-0012`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0012) |
 | EXP-0012: the sowing-season match is forced by the geometry and latitude, not found |  | [`exp-0012`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0012) |
@@ -221,7 +221,7 @@ prose and is written by hand.
 | Specimens recorded | 60 |
 | Known corpus | 116 by 2016 (`PUB-0051`), 129 catalogued to 2021 (`PUB-0023`), c 134 by 2025 (`PUB-0003`) |
 | Coverage | 45 % of c 134 |
-| Sourced observations | 233 |
+| Sourced observations | 238 |
 | Sources | 51, of which 36 are graded A or B |
 | Evidence variables | 48 |
 | Hypotheses assessed | 14 |
@@ -293,7 +293,7 @@ weight, and pooling the two makes every mass statistic meaningless.
 <!-- RDORP:BEGIN rejections -->
 | Statistic | All recorded | Admissible only |
 | --------- | ------------ | --------------- |
-| Overall diameter | 44.0–127.7 mm, ratio 2.90:1 (n = 9) | **44.0–85.0 mm, ratio 1.93:1** (n = 8) |
+| Overall diameter | 44.0–127.7 mm, ratio 2.90:1 (n = 10) | **44.0–85.0 mm, ratio 1.93:1** (n = 9) |
 | Mass | 1.7–553.2 g (n = 16) | **39.8–553.2 g** (n = 6) |
 | Wall thickness | 1.1–3.7 mm (n = 5) | not separately restricted |
 <!-- RDORP:END rejections -->
@@ -346,7 +346,7 @@ exists anywhere — an argument from silence, recorded at confidence C, and stil
 contributing −4.5 apiece to the hypotheses that predict them.
 
 <!-- RDORP:BEGIN concentration -->
-**Source concentration.** 39 % of all 233 observations come from a single source, `PUB-0006`, the British Portable Antiquities Scheme database of metal-detector surface finds. Together with `PUB-0003`, two sources account for 55 %.
+**Source concentration.** 38 % of all 238 observations come from a single source, `PUB-0006`, the British Portable Antiquities Scheme database of metal-detector surface finds. Together with `PUB-0003`, two sources account for 53 %.
 <!-- RDORP:END concentration -->
 
 **A second voice on the corpus, from outside the two sources it leans on.**
@@ -891,17 +891,21 @@ carries an opening *at* a lead-shot calibre**: glandes of 20–60 g are
 15.0–21.6 mm across, and the apertures produce only the near-misses any spread
 produces, which refutes C-01 directly.
 
-*Withdrawn.* **The claim that the apertures are irregular is not supported by
-computation**, and this document should not imply that it is. Avenches beats
-83 % of random aperture sets on linearity — p = 0.17, not significant and not
-nothing. Whether two examples agree is equally open: the only comparison
-available is Mainz 3, four apertures spanning 3 mm.
+*Also established, once the evidence arrived.* **The apertures are not a graded
+series.** An earlier version of this section withdrew that claim for want of
+data; extracting `PUB-0019` tables I and V supplied two further aperture sets,
+and on four specimens the answer is clear. Jublains beats 26 % of random sets
+on linearity, Vienne 15 % and Mainz 3 31 % — **three of the four are *less*
+regular than a random set of the same size.** Only Avenches, at 83 %, is even
+suggestive, and one in four is what chance produces.
 
-*The reason is the evidence.* **One specimen in sixty has a full set of twelve
-measured apertures.** Both open questions would be settled at once by measuring
-one complete specimen — RDORP-013 item B2, an afternoon with a ruler and a
-lens — which this raises from the cheapest decisive test to the only route to
-two findings the project currently states more strongly than it can support.
+**Nor do two examples agree.** Six pairwise comparisons are now possible and
+four are worse than two unrelated sorted sets. Only Mainz 3 against Avenches
+agrees better than chance, and Mainz 3 has four apertures spanning 3 mm.
+
+*Why B2 still matters.* All four aperture sets reach this project through one
+publication, and three of them at one or two removes. A direct measurement
+would make the result independent of `PUB-0019`.
 
 ### 6.2 The strongest candidate, and why it is held back
 
@@ -1145,14 +1149,14 @@ intuition behind the reading. If the object were a calendar, the sun reaching
 one of its seven face-axis elevations at noon would mark a date; the zodiac
 divides the year into twelve 30° arcs. **Do those dates fall on sign
 boundaries?** Scanning latitude across the range the corpus covers, the best
-mean distance to a boundary is **5.52° at 58.0 °N**, against 7.5° expected of
+mean distance to a boundary is **4.98° at 58.0 °N**, against 7.5° expected of
 uniformly random dates.
 
 That looks like a fit, and it is not one. The latitude scan is free, so it is a
 maximisation over a nuisance parameter and will beat 7.5° for almost any set of
 elevations. Against the controlling comparison — 20,000 *random* elevation sets
-given the same free scan — **94 % do at least as well**, and the median random
-set scores 3.51° against the real solid's 5.52°. The dodecahedron's elevations
+given the same free scan — **84 % do at least as well**, and the median random
+set scores 3.55° against the real solid's 4.98°. The dodecahedron's elevations
 are, if anything, unusually badly placed for marking sign boundaries. The
 optimum also sits at the edge of the scanned range, a second sign that it is a
 boundary artefact.

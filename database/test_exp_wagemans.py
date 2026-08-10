@@ -85,8 +85,10 @@ def test_the_deviation_statistic_is_vacuous() -> None:
 
 def test_specimen_data_is_internally_consistent() -> None:
     for name, pairs, d, lat, _note in W.SPECIMENS:
-        check(f"{name.split()[0]} has six opposed pairs", len(pairs) == 6,
-              f"{len(pairs)}")
+        # Jublains contributes five: its sixth pair is elliptic and has no
+        # single diameter, so it is omitted rather than forced into the model.
+        check(f"{name.split()[0]} has five or six opposed pairs",
+              len(pairs) in (5, 6), f"{len(pairs)}")
         flat = [x for p in pairs for x in p]
         check(f"{name.split()[0]} apertures are plausible",
               all(3 < x < 45 for x in flat), f"{min(flat)}-{max(flat)} mm")

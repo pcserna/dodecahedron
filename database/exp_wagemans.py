@@ -41,27 +41,46 @@ from __future__ import annotations
 
 import argparse
 import math
+import os
 import random
+import sys
 
-OBLIQUITY = 23.44
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from exp_zodiac import obliquity_at, ROMAN_EPOCH   # noqa: E402
+
+#: The Roman-period value, not the modern one. See exp_zodiac.obliquity_at.
+OBLIQUITY = obliquity_at(ROMAN_EPOCH)
 #: Face-rest elevation of the five non-vertical face-pair axes, from EXP-0003.
 AXIS_ELEVATION = math.degrees(math.atan(0.5))     # 26.565...
 
 #: Specimens with BOTH published opposed pairs and a face-to-face distance.
 #: (name, [(d1, d2), ...], face_to_face_mm, latitude, note)
 SPECIMENS = [
+    ("Jublains (RD-0020)",
+     [(22.0, 21.5), (17.0, 16.5), (22.0, 21.0), (15.5, 11.5), (10.5, 17.0)],
+     50.0, 48.2,
+     "PUB-0019 table I. THE ONLY EXCAVATED, SEALED-CONTEXT SPECIMEN with a "
+     "published pairing. Baseline 48-52 mm depending on the axis; 50 used. "
+     "The sixth pair is elliptic and is omitted"),
+    ("Avenches (RD-0034)",
+     [(14.2, 15.4), (14.5, 13.4), (8.7, 10.4), (20.6, 18.3), (24.2, 26.5),
+      (20.2, 17.6)], 46.5, 46.9,
+     "PUB-0019 table II, measured at the Musee romain d'Avenches. Baseline "
+     "46.5 mm - an earlier version of this module ASSUMED 55 mm because the "
+     "figure had not been extracted"),
+    ("Vienne (RD-0035)",
+     [(24.0, 23.0), (22.0, 19.0), (20.0, 14.0), (20.0, 14.0), (22.0, 15.0),
+      (13.5, 22.0)], 44.0, 45.5,
+     "PUB-0019 table V. Provenance E, an unexcavated private-collection piece"),
     ("Carnuntum (RD-0036)",
      [(20.1, 20.3), (13.2, 13.7), (21.4, 22.4), (25.0, 26.5), (15.3, 17.3),
       (13.0, 10.5)], 40.0, 48.1,
-     "PUB-0019 tab III, at two removes; RD-0036 is rejected for geometry"),
+     "PUB-0019 table III, at two removes; RD-0036 is rejected for geometry"),
     ("Tongeren (RD-0006)",
      [(16.0, 16.2), (7.5, 8.5), (10.5, 12.5), (20.0, 22.5), (12.5, 15.5),
       (16.5, 12.5)], 63.0, 50.8,
-     "PUB-0019 tab IV; RD-0006 is rejected for all scoring, confidence E"),
-    ("Avenches (RD-0034)",
-     [(26.5, 24.2), (15.4, 20.15), (18.3, 8.7), (13.4, 14.5), (10.4, 20.6),
-      (17.6, 14.2)], 55.0, 46.9,
-     "PUB-0019 App B tab B1; face-to-face distance ASSUMED 55 mm, not published"),
+     "PUB-0019 table IV; RD-0006 is rejected for all scoring, confidence E"),
 ]
 
 

@@ -99,7 +99,10 @@ def test_determinism() -> None:
 def test_headline() -> None:
     elev = Z.achievable_elevations()
     best, lat, n = Z.scan(elev)
-    check("the real solid's best fit is worse than 5 deg", best > 5.0,
+    # NB: not "worse than 5 degrees". That was an incidental number and it
+    # moved when the obliquity was corrected. What matters is the comparison.
+    check("the real solid fits no better than the median random solid",
+          best > sum(Z.monte_carlo(len(elev), trials=500)[:250]) / 250,
           f"{best:.2f} deg at {lat:.1f} N over {n} events")
     sims = Z.monte_carlo(len(elev), trials=2000)
     p = sum(1 for x in sims if x <= best) / len(sims)

@@ -60,11 +60,11 @@ The known corpus, among specimens with a recorded find location, is more than ha
 
 | EV | Variable | Power | Specimen observations |
 | -- | -------- | ----- | --------------------- |
-| EV001 | Overall dimensions | High | 13 |
+| EV001 | Overall dimensions | High | 15 |
 | EV002 | Mass | High | 17 |
 | EV003 | Wall thickness | High | 6 |
 | EV004 | Hole diameter distribution | Very High | 18 |
-| EV005 | Opposite-hole relationships | Very High | 8 |
+| EV005 | Opposite-hole relationships | Very High | 11 |
 | EV006 | Hole profile | High | 5 |
 | EV007 | Hole edge radius | Medium | 1 |
 | EV008 | Knob diameter | Medium | 10 |

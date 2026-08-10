@@ -97,8 +97,10 @@ def test_corpus() -> None:
     check("at least one specimen has four or more measured apertures",
           len(series) >= 1, f"{len(series)} specimens")
     twelve = [v for v in series.values() if len(v) == 12]
-    check("exactly one specimen has all twelve measured", len(twelve) == 1,
-          f"{len(twelve)} - this is the evidence gap the experiment reports")
+    check("at least two specimens have all twelve measured", len(twelve) >= 2,
+          f"{len(twelve)}; PUB-0019 tables II and V supply them")
+    check("enough series to compare examples", len(series) >= 4,
+          f"{len(series)} - fewer than four and reproducibility is untestable")
     for name, vals in series.items():
         if G.smallest_gap(vals) > G.EYE_RESOLUTION_MM:
             check("no specimen's apertures are all separable by eye", False, name)

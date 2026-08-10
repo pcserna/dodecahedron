@@ -5094,8 +5094,8 @@ def build_database():
          None,
          "Copper alloy (bronze?)", "Lost-wax cast, then carefully finished",
          59.0, None, 74.0, 81.0, None, None,
-         None, None, None, None, None, None,
-         None, None, None, None, None, None,
+         None, 22.0, 17.0, 22.0, 15.5, 10.5,      # faces 1-6, PUB-0019 tab I
+         None, 21.5, 16.5, 21.0, 11.5, 17.0,      # faces 1'-6'; 1/1' elliptic
          "Concentric circles",
          "Ten faces have a circular opening underlined by concentric circles "
          "engraved in the metal; the two remaining faces carry no concentric "
@@ -5462,7 +5462,7 @@ def build_database():
          "Musee romain d'Avenches", "Avenches", "Switzerland",
          None,
          "Copper alloy", None,
-         None, None, None, None, None, None,
+         None, None, 58.5, None, None, None,
          26.5, 15.4, 18.3, 13.4, 10.4, 17.6,      # faces 1-6
          24.2, 20.15, 8.7, 14.5, 20.6, 14.2,      # faces 1'-6'
          None, None, None,
@@ -5488,8 +5488,8 @@ def build_database():
          None,
          "Copper alloy", None,
          None, None, 55.0, None, None, None,
-         None, None, None, None, None, None,
-         None, None, None, None, None, None,
+         24.0, 22.0, 20.0, 20.0, 22.0, 13.5,      # faces 1-6, PUB-0019 tab V
+         23.0, 19.0, 14.0, 14.0, 15.0, 22.0,      # faces 1'-6', opposed
          "Concentric circles",
          "Number of engraved concentric fillets increases as hole diameter "
          "decreases: 4 and 6 fillets around the 14 mm holes, 3 around the 22 mm "
@@ -5842,6 +5842,42 @@ def build_database():
     # Columns: rd_id, ev_id, observed_value, confidence, source_id, page, figure,
     #          extraction_date, notes
     OBSERVATIONS = [
+
+        # --- PUB-0019 tables I, II and V: opposed pairings and baselines.
+        #     Tables III and IV were already held; I, II and V were not, and
+        #     they are what EXP-0011 and EXP-0012 were short of.
+        ("RD-0020", "EV005",
+         "Six opposed pairs with baseline: (1,1') elliptic 26x21.5 and "
+         "25.5x21.5 mm; (6',2) 22/21.5; (5',3) 17/16.5; (4',4) 22/21; "
+         "(3',5) 15.5/11.5; (2',6) 10.5/17. Face-to-face baseline 48 to 52 mm "
+         "depending on the axis",
+         "C", "PUB-0019", "table I", None, "2026-08-10",
+         "THE FULL PAIRING FOR THE REFERENCE SPECIMEN. RD-0020 is the only "
+         "excavated, sealed-context object in the corpus, and this is the "
+         "only complete opposed pairing available for one"),
+        ("RD-0035", "EV005",
+         "Six opposed pairs with baseline: 24/23, 22/19, 20/14, 20/14, 22/15, "
+         "13.5/22 mm. Overall diameter 55 mm, face-to-face baseline 44 mm",
+         "D", "PUB-0019", "table V", None, "2026-08-10",
+         "Completes the Vienne pairing, which this project held only as prose. "
+         "RD-0035 is provenance E, an unexcavated private-collection piece"),
+        ("RD-0034", "EV001",
+         "Overall diameter 58.5 mm, face-to-face baseline 46.5 mm",
+         "C", "PUB-0019", "table II", None, "2026-08-10",
+         "The paper prints '58.5 cm', plainly a slip for mm; the baseline of "
+         "46.5 mm it derives is consistent with mm and with the aperture "
+         "sizes. Recorded as mm and the slip noted"),
+        ("RD-0034", "EV005",
+         "Six opposed pairs measured by Sandrine Bosse Buchanan at the Musee "
+         "romain d'Avenches: (6',2) 14.2/15.4; (4',4) 14.5/13.4; (3',5) "
+         "8.7/10.4; (5',3) 20.6/18.3; (1,1') 24.2/26.5; (2',6) 20.2/17.6 mm",
+         "C", "PUB-0019", "table II and appendix B", None, "2026-08-10",
+         "The only pairing in the corpus taken directly by a museum rather "
+         "than read off a publication. Sparavigna notes an apparent tolerance "
+         "of 0.1 mm. This project holds 20.15 where the table gives 20.2"),
+        ("RD-0035", "EV001",
+         "Overall diameter 55 mm; face-to-face baseline 44 mm",
+         "D", "PUB-0019", "table V", None, "2026-08-10", None),
 
         # --- PUB-0051 (Grull 2016): a second voice on specimens this
         #     project currently reads through PUB-0003 or PUB-0006 alone ---
