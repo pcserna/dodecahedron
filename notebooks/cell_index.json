@@ -152,6 +152,21 @@
    "part": "Part 8 — The computational experiments, from first principles"
   },
   {
+   "finding": "EXP-0009: best zodiac fit 5.52 deg at 58.0 N, against 7.5 deg expected at random",
+   "cell": "exp-0009",
+   "part": "Part 8 — The computational experiments, from first principles"
+  },
+  {
+   "finding": "EXP-0009: 94 % of random elevation sets fit the zodiac at least as well",
+   "cell": "exp-0009",
+   "part": "Part 8 — The computational experiments, from first principles"
+  },
+  {
+   "finding": "EXP-0009: the statistic scores 0.0000 on a contrived on-boundary set, so it is sensitive",
+   "cell": "exp-0009",
+   "part": "Part 8 — The computational experiments, from first principles"
+  },
+  {
    "finding": "A3b: 13/28 = 46 % direction agreement, 15/28 = 54 % confidence, 7/28 both",
    "cell": "blind-a3b",
    "part": "Part 9 — The blind protocols"

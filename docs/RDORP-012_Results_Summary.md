@@ -175,6 +175,9 @@ The index links each finding to the notebook cell that establishes it.
 | EXP-0005: the model predicts Vienne’s decorated faces and fails on the undecorated pair |  | [`exp-0005`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0005) |
 | EXP-0006: 0-6 ring counts cannot label 12 faces; at least 5 must collide |  | [`exp-0006`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0006) |
 | EXP-0007: rotation group order 60; marking one axis leaves 10 orientations |  | [`exp-0007`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0007) |
+| EXP-0009: best zodiac fit 5.52 deg at 58.0 N, against 7.5 deg expected at random |  | [`exp-0009`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0009) |
+| EXP-0009: 94 % of random elevation sets fit the zodiac at least as well |  | [`exp-0009`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0009) |
+| EXP-0009: the statistic scores 0.0000 on a contrived on-boundary set, so it is sensitive |  | [`exp-0009`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0009) |
 | A3b: 13/28 = 46 % direction agreement, 15/28 = 54 % confidence, 7/28 both | Part 9 — The blind protocols | [`blind-a3b`](../notebooks/RDORP_Reproduction.ipynb#cell-blind-a3b) |
 | A3b: four outright polarity reversals |  | [`blind-a3b`](../notebooks/RDORP_Reproduction.ipynb#cell-blind-a3b) |
 | A3a: 52 % cell agreement, and the blind matrix scores H012 six points lower |  | [`blind-a3a`](../notebooks/RDORP_Reproduction.ipynb#cell-blind-a3a) |
@@ -205,7 +208,7 @@ prose and is written by hand.
 | Evidence variables | 48 |
 | Hypotheses assessed | 14 |
 | Functional domains screened | 16 |
-| Experiments recorded | 8 |
+| Experiments recorded | 9 |
 | Pre-registered predictions | 11 |
 | Countries represented | 10 |
 | Evidence variables scored | 32 of 48 |
@@ -997,9 +1000,31 @@ specific to the Gallo-Roman north-west for two centuries.
 | C-15 Zodiac from solar altitude | −1.8, eliminated by computation |
 | Twelve apertures as twelve labelled categories | not refuted; the one live route |
 
-**Determining the zodiac from the sun is refuted twice by calculation** — by
-the face-axis separation and by the projection resolution, both reproduced in
-Part 8 of the notebook.
+**Determining the zodiac from the sun is refuted three times by calculation**
+— by the face-axis separation, by the projection resolution, and by the fit
+itself, all reproduced in Part 8 of the notebook.
+
+The third is worth stating plainly, because it is the one that answers the
+intuition behind the reading. If the object were a calendar, the sun reaching
+one of its seven face-axis elevations at noon would mark a date; the zodiac
+divides the year into twelve 30° arcs. **Do those dates fall on sign
+boundaries?** Scanning latitude across the range the corpus covers, the best
+mean distance to a boundary is **5.52° at 58.0 °N**, against 7.5° expected of
+uniformly random dates.
+
+That looks like a fit, and it is not one. The latitude scan is free, so it is a
+maximisation over a nuisance parameter and will beat 7.5° for almost any set of
+elevations. Against the controlling comparison — 20,000 *random* elevation sets
+given the same free scan — **94 % do at least as well**, and the median random
+set scores 3.51° against the real solid's 5.52°. The dodecahedron's elevations
+are, if anything, unusually badly placed for marking sign boundaries. The
+optimum also sits at the edge of the scanned range, a second sign that it is a
+boundary artefact.
+
+The computation is `EXP-0009`, at `database/exp_zodiac.py`, with tests at
+`database/test_exp_zodiac.py` — including a sensitivity check: a contrived
+elevation set placed deliberately on sign boundaries scores 0.0000°, so the
+statistic does distinguish a real alignment from a random one.
 
 What survives is the zodiac as a set of twelve *labels*, not as something read
 off the sky. A Roman dodecahedron with a zodiac sign engraved on each face is

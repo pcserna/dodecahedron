@@ -783,6 +783,65 @@ print("   Nothing observed distinguishes the two ends: there is no up and no dow
     'EXP-0007: rotation group order 60; marking one axis leaves 10 orientations',
 ])
 
+md(r"""
+### 8.8 EXP-0009 — does the geometry fit the zodiac better than chance?
+
+`EXP-0002` and `EXP-0003` refute the solar readings on resolution and on the
+number of reachable elevations. This asks the different question that motivates
+the reading in the first place: the dates the object *can* mark — do they fall
+on sign boundaries?
+
+The trap is the latitude scan. It is free, so it will beat the 7.5° chance
+baseline for almost any set of elevations. The controlling comparison is
+therefore a Monte Carlo over *random* elevation sets given the same freedom.
+""")
+
+code(r"""
+import exp_zodiac as Z
+
+elev = Z.achievable_elevations()
+print("face-axis elevations:", [round(e, 2) for e in elev])
+# 8.3 rounds to 2 dp for display; this module keeps 6. Compare on value.
+assert len(elev) == len(allel), f"{len(elev)} elevations here, {len(allel)} in 8.3"
+assert all(abs(a - b) < 0.01 for a, b in zip(elev, sorted(allel))),     "the elevations must agree with those derived independently in 8.3"
+print("  cross-checked against the seven derived in 8.3")
+
+best, lat, n_events = Z.scan(elev)
+print()
+print(f"best mean distance to a sign boundary  {best:.2f} deg")
+print(f"  at latitude                          {lat:.1f} N  over {n_events} events")
+print(f"  expected of uniform dates (exact)    {Z.EXPECTED_AT_RANDOM:.2f} deg")
+print(f"  optimum at the edge of the scan?     "
+      f"{abs(lat - Z.LAT_MAX) < Z.LAT_STEP or abs(lat - Z.LAT_MIN) < Z.LAT_STEP}")
+
+sims = Z.monte_carlo(len(elev), trials=5000)
+p_zod = sum(1 for x in sims if x <= best) / len(sims)
+median_random = sims[len(sims) // 2]
+print()
+print(f"{len(sims)} random elevation sets, same free scan:")
+print(f"  median best fit                      {median_random:.2f} deg")
+print(f"  do at least as well as the real solid {p_zod:.0%}")
+
+# the statistic must be able to detect a real alignment, or it proves nothing
+contrived = []
+for lam in (30.0, 60.0, 120.0, 150.0):
+    dec = math.degrees(math.asin(math.sin(math.radians(Z.OBLIQUITY))
+                                 * math.sin(math.radians(lam))))
+    contrived.append(90.0 - 50.0 + dec)
+m_contrived, _ = Z.fit(sorted(contrived), 50.0)
+print()
+print(f"sensitivity check: a set placed ON boundaries scores {m_contrived:.4f} deg")
+assert m_contrived < 0.01
+
+print()
+print("=> the fit is not better than chance; it is worse than the median")
+print("   random solid. The apparent alignment is the free latitude scan.")
+""", cid="exp-0009", reproduces=[
+    "EXP-0009: best zodiac fit 5.52 deg at 58.0 N, against 7.5 deg expected at random",
+    "EXP-0009: 94 % of random elevation sets fit the zodiac at least as well",
+    "EXP-0009: the statistic scores 0.0000 on a contrived on-boundary set, so it is sensitive",
+])
+
 # --------------------------------------------------------------- Part 9 ---
 md(r"""
 ## Part 9 — The blind protocols
@@ -992,6 +1051,8 @@ print(f"  ring limit cos36 = {RATIO:.5f} -> no ring beyond 80.9 % of the knob ra
 print(f"  ring counts span 0-6, so >= {collisions} of 12 faces must collide -> cannot label 12 signs")
 print(f"  rotation group order {len(group)}; marking one axis leaves {len(stab)} "
       f"-> an axis is not an orientation")
+print(f"  zodiac fit {best:.2f}deg vs {median_random:.2f}deg for the median random "
+      f"solid; {p_zod:.0%} of random sets fit as well -> the alignment is the scan")
 print(f"  best aperture pair levels to {sight_tolerance(14.2,14.5,46.5):.2f}deg "
       f"-> 10x too coarse for Nimes")
 
@@ -1019,8 +1080,12 @@ fails.**
 
 code(r"""
 FAILURES = []
-def expect(label, got, want, tol=0.05):
-    ok = abs(got - want) <= tol if isinstance(want, float) else got == want
+def expect(label, got, want, tol=None):
+    # A tolerance is given explicitly where a figure is sampled rather than
+    # exact - the Monte Carlo percentage moves by a point with the trial count.
+    if tol is None:
+        tol = 0.05 if isinstance(want, float) else 0
+    ok = abs(got - want) <= tol if isinstance(want, (int, float)) else got == want
     print(f"  {'OK  ' if ok else 'FAIL'}  {label:52} got {got}, expect {want}")
     if not ok:
         FAILURES.append(label)
@@ -1031,7 +1096,7 @@ expect("sources",                         sources, 49)
 expect("countries",                       countries, 10)
 expect("evidence variables",              q1("SELECT COUNT(*) FROM evidence_variables"), 48)
 expect("hypotheses",                      len(hyps), 14)
-expect("experiments",                     q1("SELECT COUNT(*) FROM experiments"), 8)
+expect("experiments",                     q1("SELECT COUNT(*) FROM experiments"), 9)
 expect("pre-registered predictions",      q1("SELECT COUNT(*) FROM predictions"), 11)
 expect("screened domains",                q1("SELECT COUNT(*) FROM screening_candidates"), 16)
 expect("scored variables",                len(disc), 32)
@@ -1052,6 +1117,10 @@ expect("vertices",                        len(verts), 20)
 expect("distinct face-axis angles",       len(angs), 3)
 expect("cos 36 deg",                      round(RATIO, 5), 0.80902)
 expect("distinct suspension elevations",  len(allel), 7)
+expect("zodiac best fit (deg)",           round(best, 2), 5.52)
+expect("zodiac best-fit latitude",        round(lat, 1), 58.0)
+expect("zodiac chance baseline (deg)",    Z.EXPECTED_AT_RANDOM, 7.5)
+expect("random sets fitting as well (%)", round(100 * p_zod), 94, tol=1)
 
 if blind:
     expect("A3b direction agreement",         len(same_d), 13)
@@ -1097,6 +1166,24 @@ Reproducibility is a floor, not a result.
 
 
 def build() -> dict:
+    """Assemble the notebook, refusing to emit a cell that will not compile.
+
+    Three times now a patch has turned an escaped newline into a real one
+    inside a cell's source. The cell then raised at execution and, once,
+    produced only an empty output that looked fine in a diff. Compiling each
+    cell here moves that failure to build time, where the message names the
+    cell instead of arriving as a traceback from nbconvert.
+    """
+    for kind, text, cid, _rep in CELLS:
+        if kind != "code":
+            continue
+        try:
+            compile(text, f"<cell {cid or '?'}>", "exec")
+        except SyntaxError as exc:
+            raise SystemExit(
+                f"cell {cid or '?'} will not compile: {exc.msg} "
+                f"at line {exc.lineno}: {(exc.text or '').rstrip()}") from None
+
     cells = []
     seen = set()
     for kind, text, cid, _rep in CELLS:
