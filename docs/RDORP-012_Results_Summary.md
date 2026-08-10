@@ -203,6 +203,14 @@ The index links each finding to the notebook cell that establishes it.
 
 ### 2.1 Composition
 
+**The corpus now has two tiers, and the composition table pools them.**
+Forty specimens carry measurements, context or both. Seventeen more, added from
+`PUB-0050`, are **findspot-only records at confidence D**: they were taken in
+to improve the distribution evidence, which is where this corpus is weakest,
+and they contribute to nothing else. Grade D has gone from 9 specimens to 26 as
+a result, and every figure about *measurement* still rests on the original
+forty. Section 2.2 gives the breakdown.
+
 **Tables between `RDORP:BEGIN` and `RDORP:END` markers are generated from the
 database by `database/render_docs.py` and rewritten on every pipeline run.**
 Editing one by hand achieves nothing: the next run overwrites it, and
@@ -210,9 +218,9 @@ Editing one by hand achieves nothing: the next run overwrites it, and
 prose and is written by hand.
 
 <!-- RDORP:BEGIN composition -->
-| Specimens recorded | 40 |
+| Specimens recorded | 57 |
 | Known corpus | 129 catalogued to 2021 (`PUB-0023`), c 134 by 2025 (`PUB-0003`) |
-| Coverage | 31 % |
+| Coverage | 44 % |
 | Sourced observations | 224 |
 | Sources | 50, of which 35 are graded A or B |
 | Evidence variables | 48 |
@@ -228,7 +236,7 @@ Twenty specimens now carry a Greiner/Guggenberger catalogue number and type,
 matched against the reference catalogue and assigned only where the catalogue
 entry is unique for that findspot.
 
-Geographic distribution of the recorded corpus is **50 % British**, against a
+Geographic distribution of the recorded corpus is **40 % British**, against a
 known corpus that is about 20 % British and about 70 % Gallic and Germanic. The
 recorded corpus is therefore not representative, and the skew is an artefact of
 accessibility: British Portable Antiquities Scheme records are online and carry
@@ -246,11 +254,11 @@ grade in `specimen_quality`.
 | A | Excavated from a stratified, dated deposit | 1 |
 | B | Excavated or reported find, documented findspot, institutional custody | 2 |
 | C | Findspot recorded, surface or detector find | 24 |
-| D | Institutional custody, no findspot | 9 |
+| D | Institutional custody, no findspot | 26 |
 | E | Private hands, or no findspot and no independent publication | 4 |
 <!-- RDORP:END quality -->
 
-**Eleven of the forty are fragments**, and one further specimen
+**Eleven of the fifty-seven are fragments**, and one further specimen
 (`RD-0002`) is substantially incomplete despite carrying no fragment label.
 
 ### 2.3 Admissibility rules
@@ -261,9 +269,9 @@ wholesale.
 <!-- RDORP:BEGIN admissibility -->
 | Rule | Requirement | Admissible |
 | ---- | ----------- | ---------- |
-| **Mass** | completeness = complete | **6 of 40** |
-| **Geometry** | completeness ∈ {complete, incomplete} and measurement ∈ {direct, one remove} | **11 of 40** |
-| **Context** | recorded findspot and provenance ≤ D | **30 of 40** |
+| **Mass** | completeness = complete | **6 of 57** |
+| **Geometry** | completeness ∈ {complete, incomplete} and measurement ∈ {direct, one remove} | **11 of 57** |
+| **Context** | recorded findspot and provenance ≤ D | **47 of 57** |
 <!-- RDORP:END admissibility -->
 
 The mass rule is the most consequential. Sixteen specimens carry a recorded
@@ -362,7 +370,7 @@ that every fact has one. They are discounted to half weight as Derived evidence
 and excluded from the observed-only scenario, but they are still in the
 baseline.
 
-**Thin specimens.** Median four observations per specimen; **13 of forty
+**Thin specimens.** Median four observations per specimen; **13 of fifty-seven
 have two or fewer**. A dozen entries amount to a findspot and a citation.
 
 **Empty variables.** Twelve of forty-eight have no observation at all, five of
@@ -591,7 +599,7 @@ hoards; c 4 % from rivers (`PUB-0003`, 33).
 
 ### 3.5 Nothing functional has ever been found alongside one
 
-Across forty specimens the recorded associations are bronze statuettes of
+Across the corpus the recorded associations are bronze statuettes of
 deities, a bone object in a grave, a cache attributed to a temple, rich grave
 goods, and a precision balance. There are no poles, pegs, cordage, nets, hooks,
 floats, rigging, farm tools, harness, shot, arrowheads, seal boxes, styli,
@@ -870,7 +878,7 @@ computation**, and this document should not imply that it is. Avenches beats
 nothing. Whether two examples agree is equally open: the only comparison
 available is Mainz 3, four apertures spanning 3 mm.
 
-*The reason is the evidence.* **One specimen in forty has a full set of twelve
+*The reason is the evidence.* **One specimen in fifty-seven has a full set of twelve
 measured apertures.** Both open questions would be settled at once by measuring
 one complete specimen — RDORP-013 item B2, an afternoon with a ruler and a
 lens — which this raises from the cheapest decisive test to the only route to
@@ -1219,7 +1227,7 @@ Whatever the explanation, it has to account for that silence.
 
 ## 9. Limits of the evidence
 
-1. **Coverage.** 31 % of the known corpus, skewed 50 % British against a known
+1. **Coverage.** 44 % of the known corpus, skewed 40 % British against a known
    corpus of about 20 % British.
 2. **Authenticity.** No specimen authenticated; two of the three with usable
    aperture data are unexcavated private-collection pieces; ancient imitation is

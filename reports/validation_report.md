@@ -25,7 +25,7 @@ None.
 
 | Rule | Entity | Detail |
 | ---- | ------ | ------ |
-| `context-missing` | specimens | 26 of 40 specimens have context_category 'Unknown' and cannot contribute to context variables |
+| `context-missing` | specimens | 43 of 57 specimens have context_category 'Unknown' and cannot contribute to context variables |
 | `corpus-without-specimen` | EV019 | scores 'absent' at Very High power on a corpus statement alone, with no specimen observation anywhere beneath it. Nothing in the corpus can currently contradict it |
 | `corpus-without-specimen` | EV020 | scores 'absent' at Very High power on a corpus statement alone, with no specimen observation anywhere beneath it. Nothing in the corpus can currently contradict it |
 | `corpus-without-specimen` | EV038 | scores 'weak_absent' at High power on a corpus statement alone, with no specimen observation anywhere beneath it. Nothing in the corpus can currently contradict it |
@@ -52,7 +52,7 @@ None.
 
 | Rule | Entity | Detail |
 | ---- | ------ | ------ |
-| `corpus-coverage` | specimens | 40 of about 134 known specimens recorded (30 per cent) |
+| `corpus-coverage` | specimens | 57 of about 134 known specimens recorded (43 per cent) |
 | `evidence-gap` | EV007 | Hole edge radius (Medium) has no corpus-level observation and is therefore unscored |
 | `evidence-gap` | EV015 | Repair evidence (Medium) has no corpus-level observation and is therefore unscored |
 | `evidence-gap` | EV021 | Impact damage (Medium) has no corpus-level observation and is therefore unscored |

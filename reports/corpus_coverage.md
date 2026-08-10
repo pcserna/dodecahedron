@@ -11,9 +11,9 @@ Generated file. Do not edit by hand: change the master data in `database/build_d
 
 ## 1. Coverage
 
-- Specimens recorded: **40**
+- Specimens recorded: **57**
 - Known corpus: about **134** (PUB-0003, 32)
-- Coverage: **30 per cent**
+- Coverage: **43 per cent**
 
 ## 2. Geographic representativeness
 
@@ -21,14 +21,14 @@ The known corpus is about 70 per cent Gallic and Germanic and about 20 per cent 
 
 | Country | Recorded | Share |
 | ------- | -------- | ----- |
-| United Kingdom | 20 | 50% |
-| France | 6 | 15% |
-| Germany | 5 | 12% |
-| Unknown | 2 | 5% |
-| Belgium | 2 | 5% |
-| Switzerland | 1 | 2% |
+| United Kingdom | 23 | 40% |
+| Germany | 10 | 18% |
+| France | 10 | 18% |
+| Switzerland | 5 | 9% |
+| Unknown | 2 | 4% |
+| Netherlands | 2 | 4% |
+| Belgium | 2 | 4% |
 | Serbia | 1 | 2% |
-| Netherlands | 1 | 2% |
 | Hungary | 1 | 2% |
 | Austria | 1 | 2% |
 
@@ -38,7 +38,7 @@ The known corpus, among specimens with a recorded find location, is more than ha
 
 | Context category | Recorded |
 | ---------------- | -------- |
-| Unknown | 26 |
+| Unknown | 43 |
 | Military | 4 |
 | Temple | 2 |
 | Settlement | 2 |
@@ -53,7 +53,7 @@ The known corpus, among specimens with a recorded find location, is more than ha
 | A | 2 |
 | B | 17 |
 | C | 18 |
-| D | 2 |
+| D | 19 |
 | E | 1 |
 
 ## 5. Observation density per evidence variable
