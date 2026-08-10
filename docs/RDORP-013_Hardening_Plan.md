@@ -1,7 +1,7 @@
 ---
 Document ID: RDORP-013
 Title: Hardening Plan and Next Steps
-Version: 1.10.0
+Version: 1.11.0
 Status: Draft
 Project: Roman Dodecahedron Open Research Project (RDORP)
 License: CC BY 4.0
@@ -23,7 +23,7 @@ companion: it assumes the results are wrong and asks what would show it.
 Items are ranked by **how much they would move the answer**, not by effort. Four
 of the top six require no laboratory and no new specimens.
 
-**Seven items are now closed and one of them was reported wrongly.**
+**Eight items are now closed and one of them was reported wrongly.**
 Clustering correlated evidence (A1) does *not* move the leader, as this
 document claimed until A16 was found; what it does is return 8.4 points to
 the rope-laying top, 4.7 to the textile tool and 4.2 to the parasol crown, and
@@ -34,6 +34,18 @@ enough that the items they generated — A11, A12 and A13 — now sit above
 everything else in this document, including the museum work. **A15 joins them**:
 the scale does not say where indifference ends and prediction begins, and the
 cells that turn on it are worth +4.1 to the leader and nothing to its rival.
+
+**Since version 1.9.0 the project has grown by outside work, not by its own
+reasoning.** Two sources were taken in from outside the academic literature it
+had been reading — a self-published quantitative model (`PUB-0050`) and a
+referenced survey chapter (`PUB-0051`) — and between them they supplied a
+hypothesis this project had not specified, twenty findspots it did not hold,
+and a second voice on facts it had from one source each. Four computational
+experiments were written in the same period, `EXP-0009` to `EXP-0012`.
+
+**None of it moved the ranking.** That is now the settled pattern: the analysis
+has become considerably better evidenced and no more certain about which
+reading is right.
 
 ---
 
@@ -49,11 +61,11 @@ cells that turn on it are worth +4.1 to the leader and nothing to its rival.
 | **A18** | Four scored variables carry no predictions at all | Method | **One of them, EV044, is counted among the 32 scored variables and contributes zero to all fourteen** |
 | ~~A17~~ | A ragged CSV row was silently truncated | Data | **FIXED. An unquoted comma cut a hypothesis name in half, and it reached the database, the exports and two documents** |
 | **B1** | Rope wear and rotational wear never observed | Evidence | Decides four refutations |
-| **B2** | Aperture and ring survey | Evidence | Cheapest decisive test in the project |
+| **B2** | Aperture and ring survey | Evidence | **Now the single highest-value action in the project: three separate findings wait on it** |
 | **A4** | Three scored variables have no source | Method | Removes a rule violation; moves H001 by −2.6 |
 | **B3** | Residue analysis | Evidence | Decides the two leading hypotheses |
 | **C1** | Guggenberger 1999 read directly | Evidence | Underwrites most single-source variables at a stroke |
-| **C2** | The three easternmost specimens have one observation each | Evidence | **They are the only thing keeping the eastern distribution visible, and the skew claim rests on them** |
+| ~~C2~~ | Continental specimens under-represented | Evidence | **PART DONE. Twenty findspots added from PUB-0050 and PUB-0051; British share 50 % to 38 %, coverage 31 % to 47 %. All are findspot-only** |
 | ~~A14~~ | Reported figures are maintained by hand | Method | **DONE. `render_docs.py` generates them; `--check` fails the build on drift; a notebook recomputes every finding** |
 | A6 | Argument from silence has no rule | Method | Separates *examined and absent* from *never looked* |
 | A7 | The screening threshold is crude | Method | The rule is known to produce false negatives |
@@ -736,7 +748,7 @@ consistent with cord under tension or with rotation.
 four recover by +2.6 to +6.9 points when the uncorroborated wear variables are
 removed (RDORP-012 §2.8), and by more again under A1.
 
-### B2. The aperture and ring survey — cheapest decisive test
+### B2. The aperture and ring survey — now the highest-value action in the project
 
 **Method.** Measure all twelve aperture diameters and count the engraved rings
 around each **separately**, recording which apertures are opposite which. Follow
@@ -750,6 +762,19 @@ disentangled before either can be said to label anything.
 
 The two measurable specimens currently disagree — Avenches confirms, Vienne
 partly refutes — and both are unexcavated.
+
+**Three findings now wait on this one afternoon's work**, which is why it has
+moved above B1.
+
+| Finding | What B2 would settle |
+| ------- | -------------------- |
+| `EXP-0011` — whether the apertures form a graded series | Avenches beats only 83 % of random sets, p = 0.17. One twelve-aperture specimen gives no power either way |
+| `EXP-0011` — whether two examples agree | The only comparison available is Mainz 3, four apertures spanning 3 mm |
+| `EXP-0012` — whether the Wagemans model can be tested at all | It needs the opposed **pairing** and the face-to-face distance on one specimen; the corpus publishes both for three objects, two of them rejected on quality |
+
+**One specimen in sixty carries a full set of twelve measured apertures.** The
+survey needs a ruler, a lens and the face-numbering convention in RDORP-011,
+and it would convert three open questions into answers at once.
 
 ### B3. Residue analysis
 
@@ -798,51 +823,52 @@ tallies — almost all of which currently reach this project at one remove throu
 
 Nouwen 1993 and Greiner 1996 follow for the same reasons.
 
-### C2. Continental specimens — three named targets
+### C2. Continental specimens — part done
 
-The recorded corpus is 50 % British against a known corpus about 20 % British.
-Every additional continental specimen with measurements *and* context improves
-representativeness directly.
+The recorded corpus was 50 % British against a known corpus about 20 % British.
+Twenty findspots have since been added, seventeen from `PUB-0050` and three
+from `PUB-0051`:
 
-**The skew is worse than the head-count suggests.** British specimens average
-6.3 observations each; continental ones average 4.8, and the three that mark
-the eastern edge of the distribution average **one**.
+| | |
+| - | - |
+| Germany | Bad Cannstatt, Bonn, Heidesheim, Marnheim, Mombach, Trier |
+| Switzerland | Conches-dessous, Radelfingen, Windisch, Zürich, Geneva |
+| France | Besançon, Poitiers, La Pérouse-Mornay, "Clément" |
+| Netherlands | Hartwerd, Nijmegen |
+| Britain | Kenchester, London, Newcastle |
 
-| Specimen | Country | Gugg. | Conf | Obs | What exists |
-| -------- | ------- | ----- | ---- | --- | ----------- |
-| `RD-0032` Brigetio | Hungary | 92, type 1a | C | **1** | Findspot only, at one remove via `PUB-0003`, 32 |
-| `RD-0033` Deonica | Serbia | 130 | C | **1** | Findspot only, same route |
-| `RD-0036` Carnuntum | Austria | — | D | **1** | Six opposed-hole pairs at **two** removes; no catalogue number |
+| | Before | Now |
+| - | ------ | --- |
+| Specimens | 40 | **60** |
+| British share | 50 % | **38 %** |
+| Coverage | 31 % | **47 %** |
 
-These three are the thinnest records in the corpus, and they are load-bearing
-in one specific way: **they are the only thing keeping the eastern half of the
-distribution visible.** The claim that the recorded corpus is unrepresentative
-rests on them, and each is a single line in a 2025 summary of an unpublished
-catalogue.
+**What this bought and what it cost.** It bought better evidence for the
+distribution and skew findings, which are load-bearing. It cost quality: every
+one of the twenty is findspot-only, seventeen at confidence D, so grade D has
+gone from 9 specimens to 26. **No score moved**, because a findspot touches no
+geometric or context variable. RDORP-012 §2.1 now states that the corpus has
+two tiers and that every measurement figure still rests on the original forty.
 
-**`RD-0032` Brigetio is the most tractable of the three.** Brigetio (Sőny, near
-Komárom) is a legionary fortress and civil town with a long excavation history
-and a substantial Hungarian literature, so this is a **documentation gap, not
-an evidence gap**: the object was found, reported and presumably accessioned,
-and none of that has reached this project.
+**Three of the twenty are worth more than a findspot.**
 
-What is needed, in order of value:
+- **Hartwerd** lies in Frisia, north of the Rhine and outside the provinces —
+  the only recorded findspot from unconquered territory. `PUB-0050` publishes
+  an angle table for it, so measurements exist and were not reproduced there.
+- **Windisch** is Vindonissa, whose excavation literature is extensive and
+  should yield a context category.
+- **Geneva** is the only specimen known in a precious metal.
 
-1. **The original find report.** Guggenberger's catalogue number 92 is the
-   route to the citation, which makes this dependent on C1.
-2. **An inventory number and a holding institution.** The plausible candidates
-   are the Hungarian National Museum and the Kuny Domokos Múzeum, Tata.
-3. **Measurements.** Any diameter, mass or wall thickness would move it from
-   `admit_context` alone to the geometry variables. At present
-   `admit_mass = 0` and `admit_geometry = 0`, and removing the specimen
-   entirely would change no score.
-4. **A context category.** Recorded as `Unknown`; a legionary or civil-town
-   attribution would feed `EV025`, which A5 has already respecified blind.
+**Two carry warnings rather than confidence.** "La Pérouse-Mornay" and
+"Clément" are not resolvable against any French commune and should not be used
+at any grain finer than *France* until checked. **Newcastle** is recorded as
+distinct from South Shields and Corbridge, but all three are Tyne-valley
+military sites and the double-counting risk is on the record.
 
-The same three questions apply to Deonica and Carnuntum. Carnuntum is the
-weakest of the three — confidence D, two removes, no catalogue number — and it
-is also the only one already carrying measurements, so a direct museum enquiry
-would improve it more than a library search would.
+**Still outstanding.** Croatia and Luxembourg appear in `PUB-0051`'s country
+list and this project holds no specimen from either. Brigetio, Deonica and
+Carnuntum still carry one observation each; Brigetio remains the most tractable
+target and still depends on C1.
 
 ### C3. Stratified contexts
 
@@ -882,6 +908,16 @@ direction, re-run, and see exactly how much the number moves.
    not an independent discipline, and the agreement rates are therefore an upper
    bound on what genuine independence would produce.
 
+**This has now happened once, and it worked.** `C-18`, the sowing-date sight,
+came from outside (`PUB-0050`) and turned out to be a mechanism this project
+had not specified: it rests the object on a face and sights through opposed
+apertures, where C-14 projects light inward and C-15 hangs the object from a
+knob. `EXP-0012` found the evidence offered for it is satisfied by chance, but
+the mechanism itself stands untested for want of B2. **A second source
+(`PUB-0051`) supplied twenty findspots and a second voice on five per-specimen
+facts.** Both were found by looking outside rather than by reasoning further
+inside.
+
 **What we should stop doing.** Proposing further hypotheses from inside the
 project. Six of fourteen are already contaminated, and each new one is authored
 by a party that knows the answers better than the last. New hypotheses should
@@ -894,7 +930,7 @@ come from outside, or from the literature.
 | Route | Blocked by |
 | ----- | ---------- |
 | Data paper — corpus, pipeline, provenance model | **Nothing.** A4 should be fixed first |
-| Short note — the computational refutations (`EXP-0002` to `EXP-0007`) | **Nothing.** Now genuinely checkable: [Part 8 of the notebook](../notebooks/RDORP_Reproduction.ipynb) recomputes all of them from first principles |
+| Short note — the computational refutations (`EXP-0002` to `EXP-0012`) | **Nothing.** Now genuinely checkable: [Part 8 of the notebook](../notebooks/RDORP_Reproduction.ipynb) recomputes all of them from first principles |
 | Methods paper — the framework, with its measured reliability as the result | **A11 and A13.** A1 and A2 are done; A3 has been run once and its figure is not yet quotable without the leak caveat |
 | Archaeology paper — a claim about what the object was for | Primary data (Part B), C1, and human verification of every judgement recorded here |
 
@@ -924,8 +960,10 @@ provisional until that is done.
 **Then, no new data required.** A18 unwritten predictions, A4 unsourced
 variables, A6 silence rule, A7 screening band.
 
-**Then, one museum visit.** B1, B2 and B3 on a single well-preserved specimen,
-`RD-0005` for preference.
+**Then, one museum visit — and B2 first within it.** B1, B2 and B3 on a single
+well-preserved specimen, `RD-0005` for preference. B2 has moved ahead of B1
+because three separate findings now wait on it, where B1 decides four
+refutations that clustering has already shown to be soft.
 
 **In parallel, library work.** C1 Guggenberger 1999, then Nouwen 1993 and
 Greiner 1996.
@@ -957,6 +995,8 @@ The analysis is hardened when:
 | 10 | Every reported figure is generated or checked against the database | **Met.** A14 |
 | 11 | No scored variable relies on an unwritten prediction | **Not met.** A18 |
 | 12 | Hand-maintained input files are validated on read | **Met.** A17 |
+| 13 | The corpus is not overwhelmingly British | **Part met.** 50 % to 38 %, against a known corpus near 20 % (C2) |
+| 14 | Every computational claim has committed code and a null | **Met.** `EXP-0002`–`EXP-0012`, four of them with an explicit control |
 
 
 None of these requires the answer to be found. They require the analysis to be
@@ -968,6 +1008,7 @@ worth trusting when it is.
 
 | Version | Date | Description |
 | ------- | ---- | ----------- |
+| 1.11.0 | 2026-08-10 | Regenerated against the corpus at 60 specimens. C2 part done: twenty continental findspots added, British share 50 % to 38 %. B2 repriced as the highest-value action, with the three findings that now wait on it. Recorded that C-18 and PUB-0051 came from outside the project, which Part D asks for. |
 | 1.10.0 | 2026-08-09 | A14 closed. render_docs.py generates the derived tables in RDORP-012 and fails the build on drift; a reproduction notebook recomputes every finding, including the seven computational experiments whose code had never been committed; findings are cross-referenced to notebook cells. |
 | 1.9.0 | 2026-08-09 | Named three acquisition targets under C2: Brigetio, Deonica and Carnuntum, the three easternmost records, each carrying a single observation. Brigetio identified as the most tractable. |
 | 1.8.0 | 2026-08-09 | Project-wide sanity check. Regenerated the A1 table after the A16 fix. Added A17 (ragged CSV rows, found truncating a hypothesis name) and A18 (four scored variables carry no predictions at all). |
