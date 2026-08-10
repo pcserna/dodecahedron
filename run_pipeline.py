@@ -6,11 +6,17 @@
     validate.py    check the datasets and write the validation report
     reports.py     write the analytical reports
     export.py      regenerate every CSV and JSON export
+    render_docs.py rewrite the derived tables inside RDORP-012
 
 Order matters and used not to be enforced anywhere. ``build_db.py`` drops and
 recreates ``hdm_scores``, so running it without re-scoring afterwards leaves the
 analysis empty; and exporting before scoring writes empty score files. Running
 this module is the only supported way to refresh the repository.
+
+``render_docs`` runs last, after the exports, because it reads the same scored
+database and writes the tables the results document publishes. Before it
+existed those tables were typed by hand and went stale on every corpus change;
+one such lapse put five wrong scores into a published document.
 
 Every run appends to ``logs/import_log.md``. The pipeline stops if validation
 reports an error.
@@ -30,6 +36,7 @@ sys.path.insert(0, os.path.join(ROOT, "database"))
 
 import build_db          # noqa: E402
 import export            # noqa: E402
+import render_docs       # noqa: E402
 import reports           # noqa: E402
 import score_hdm         # noqa: E402
 import validate          # noqa: E402
@@ -75,14 +82,14 @@ def main() -> int:
     started = datetime.now()
     entry = [f"## Run {started.isoformat(timespec='seconds')}", ""]
 
-    LOG.info("step 1/5 build")
+    LOG.info("step 1/6 build")
     build_db.build_database()
 
-    LOG.info("step 2/5 score")
+    LOG.info("step 2/6 score")
     report = score_hdm.run(DB_PATH)
     base = report["baseline"]
 
-    LOG.info("step 3/5 validate")
+    LOG.info("step 3/6 validate")
     findings = validate.run(DB_PATH)
     errors = [f for f in findings if f.level == "ERROR"]
     warnings = [f for f in findings if f.level == "WARNING"]
@@ -101,11 +108,18 @@ def main() -> int:
             print(f"ERROR [{f.rule}] {f.entity}: {f.detail}")
         return 1
 
-    LOG.info("step 4/5 reports")
+    LOG.info("step 4/6 reports")
     reports.run(DB_PATH)
 
-    LOG.info("step 5/5 export")
+    LOG.info("step 5/6 export")
     export.run(DB_PATH)
+
+    LOG.info("step 6/6 render documents")
+    rewritten = render_docs.run(DB_PATH)
+    if rewritten:
+        LOG.warning("RDORP-012 was stale and has been regenerated: %s. "
+                    "Re-run `python notebooks/build_notebook.py --exec` so the "
+                    "reproduction notebook matches.", ", ".join(rewritten))
 
     counts = table_counts(DB_PATH)
     elapsed = (datetime.now() - started).total_seconds()
@@ -116,6 +130,8 @@ def main() -> int:
         f"{len(findings) - len(errors) - len(warnings)} notes",
         f"- Scored {len(base.variables_used)} of {len(report['variables'])} "
         f"evidence variables; {len(report['unscored'])} have no corpus evidence",
+        "- Document tables rewritten: "
+        + (", ".join(rewritten) if rewritten else "none, already current"),
         "- Ranking (weighted): "
         + "  >  ".join(f"{h} ({base.totals[h]:+.1f})" for h in base.ranking),
         "- Leader across all scenarios: "
@@ -130,6 +146,8 @@ def main() -> int:
     print(f"\nPipeline complete in {elapsed:.1f} s")
     print(f"  validation : {len(errors)} errors, {len(warnings)} warnings")
     print(f"  scored     : {len(base.variables_used)}/{len(report['variables'])} variables")
+    print("  documents  : "
+          + (f"rewrote {', '.join(rewritten)}" if rewritten else "already current"))
     print("  ranking    : "
           + "  >  ".join(f"{h} ({base.totals[h]:+.1f})" for h in base.ranking))
     return 0

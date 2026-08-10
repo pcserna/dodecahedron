@@ -1,7 +1,7 @@
 ---
 Document ID: RDORP-013
 Title: Hardening Plan and Next Steps
-Version: 1.9.0
+Version: 1.10.0
 Status: Draft
 Project: Roman Dodecahedron Open Research Project (RDORP)
 License: CC BY 4.0
@@ -54,7 +54,7 @@ cells that turn on it are worth +4.1 to the leader and nothing to its rival.
 | **B3** | Residue analysis | Evidence | Decides the two leading hypotheses |
 | **C1** | Guggenberger 1999 read directly | Evidence | Underwrites most single-source variables at a stroke |
 | **C2** | The three easternmost specimens have one observation each | Evidence | **They are the only thing keeping the eastern distribution visible, and the skew claim rests on them** |
-| **A14** | Reported figures are maintained by hand | Method | Every rework has found stale numbers; generating them would end a recurring class of error |
+| ~~A14~~ | Reported figures are maintained by hand | Method | **DONE. `render_docs.py` generates them; `--check` fails the build on drift; a notebook recomputes every finding** |
 | A6 | Argument from silence has no rule | Method | Separates *examined and absent* from *never looked* |
 | A7 | The screening threshold is crude | Method | The rule is known to produce false negatives |
 | ~~A1~~ | Correlated evidence is scored as independent | Method | **DONE, and its headline was wrong.** It does not change the leader; it moves five hypotheses by 4 to 8 points |
@@ -320,7 +320,7 @@ hard contradictions.
 
 **Cost.** An hour.
 
-### A14. Reported figures are maintained by hand — NEW
+### A14. Reported figures are maintained by hand — DONE
 
 **The defect.** RDORP-012 states some two hundred numbers — corpus counts,
 scores, scenario results, coverage percentages, agreement rates. The files
@@ -341,6 +341,34 @@ erroring on drift.
 
 **Cost.** A day for the generated-fragment route. It pays for itself at the
 second rework, and the project is already past that.
+
+**Implemented, in three parts.**
+
+1. **`database/render_docs.py`.** The composition, results-band, clustering and
+   reproduction tables in RDORP-012 now sit between `RDORP:BEGIN` / `RDORP:END`
+   markers and are rewritten from the database on every pipeline run.
+   `--check` verifies without writing and exits non-zero on drift, so a
+   hand-edit inside a managed block fails the build rather than being silently
+   overwritten later. Band membership is **not** generated: it is a judgement,
+   declared in `BANDS` with its reasoning, and the renderer reports any score
+   inversion it creates so the judgement is revisited rather than left to decay.
+2. **`notebooks/RDORP_Reproduction.ipynb`.** Every quantitative claim in the
+   project, recomputed from the database and from first principles, ending in a
+   cell that asserts each headline figure. It does not read the documents: it
+   derives each number and checks it, so a corpus change not carried into the
+   prose makes the notebook fail rather than agree.
+3. **A cross-reference index.** `notebooks/cell_index.json` maps each finding to
+   the cell that establishes it; `render_docs` turns it into the table in
+   RDORP-012 §1A, and `test_render_docs.py` fails if any link points at a cell
+   that no longer exists.
+
+**What this closed that was not expected.** The computational experiments
+`EXP-0002` to `EXP-0007` were recorded as prose in the `experiments` table and
+**the code that produced them had never been committed** — so the "self-contained
+and checkable" short note in Part E was not checkable by anyone. Part 8 of the
+notebook now recomputes all of them: the dodecahedral rotation group, the
+vertex-transitivity check that caught an earlier error, the solar geometry, the
+ring constraint, the pigeonhole argument and the levelling tolerance.
 
 ### A8. No priors
 
@@ -866,7 +894,7 @@ come from outside, or from the literature.
 | Route | Blocked by |
 | ----- | ---------- |
 | Data paper — corpus, pipeline, provenance model | **Nothing.** A4 should be fixed first |
-| Short note — the computational refutations (`EXP-0002` to `EXP-0007`) | **Nothing.** Self-contained, checkable, and independent of every judgement in the matrix |
+| Short note — the computational refutations (`EXP-0002` to `EXP-0007`) | **Nothing.** Now genuinely checkable: [Part 8 of the notebook](../notebooks/RDORP_Reproduction.ipynb) recomputes all of them from first principles |
 | Methods paper — the framework, with its measured reliability as the result | **A11 and A13.** A1 and A2 are done; A3 has been run once and its figure is not yet quotable without the leak caveat |
 | Archaeology paper — a claim about what the object was for | Primary data (Part B), C1, and human verification of every judgement recorded here |
 
@@ -894,7 +922,7 @@ prompt. The reliability figures currently in this document should be treated as
 provisional until that is done.
 
 **Then, no new data required.** A18 unwritten predictions, A4 unsourced
-variables, A6 silence rule, A7 screening band, A14 generated figures.
+variables, A6 silence rule, A7 screening band.
 
 **Then, one museum visit.** B1, B2 and B3 on a single well-preserved specimen,
 `RD-0005` for preference.
@@ -926,7 +954,7 @@ The analysis is hardened when:
 | 7 | Rope wear, rotational wear, residues and aperture distinguishability measured on at least one specimen | **Not met.** Part B |
 | 8 | Guggenberger 1999 has been read | **Not met.** C1 |
 | 9 | Every pre-registered prediction has been resolved or is still genuinely open | **Not met.** Six of eleven are now testable and unresolved (A10) |
-| 10 | Every reported figure is generated or checked against the database | **Not met.** A14 |
+| 10 | Every reported figure is generated or checked against the database | **Met.** A14 |
 | 11 | No scored variable relies on an unwritten prediction | **Not met.** A18 |
 | 12 | Hand-maintained input files are validated on read | **Met.** A17 |
 
@@ -940,6 +968,7 @@ worth trusting when it is.
 
 | Version | Date | Description |
 | ------- | ---- | ----------- |
+| 1.10.0 | 2026-08-09 | A14 closed. render_docs.py generates the derived tables in RDORP-012 and fails the build on drift; a reproduction notebook recomputes every finding, including the seven computational experiments whose code had never been committed; findings are cross-referenced to notebook cells. |
 | 1.9.0 | 2026-08-09 | Named three acquisition targets under C2: Brigetio, Deonica and Carnuntum, the three easternmost records, each carrying a single observation. Brigetio identified as the most tractable. |
 | 1.8.0 | 2026-08-09 | Project-wide sanity check. Regenerated the A1 table after the A16 fix. Added A17 (ragged CSV rows, found truncating a hypothesis name) and A18 (four scored variables carry no predictions at all). |
 | 1.7.0 | 2026-08-09 | Added A16 and corrected A1 and A2. The cluster tie-break depended on dictionary iteration order and had reversed the reported leader; clustering does not change the leader. Regression test added. |

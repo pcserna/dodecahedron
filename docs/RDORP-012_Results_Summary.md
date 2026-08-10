@@ -29,7 +29,7 @@ and does not support. Every figure is reproducible by running
 
 ### 1.1 How much of this can be trusted
 
-**The method's reliability has been measured, and it is poor.** Three blind
+**The method's reliability has been measured, and it is poor** ([recompute the agreement rates](../notebooks/RDORP_Reproduction.ipynb#cell-blind-a3b)). Three blind
 protocols were run in separate sessions, each working only from a prompt and
 forbidden the project's own files.
 
@@ -49,7 +49,7 @@ not be read as differences at all.
 
 ### 1.2 What is nonetheless stable
 
-**The negative result.** Every hypothesis in which the object bears load, is
+**The negative result** ([notebook](../notebooks/RDORP_Reproduction.ipynb#cell-scenarios)). Every hypothesis in which the object bears load, is
 used in the field, or is issued as standard equipment has been tested and
 refuted. Sixteen further everyday uses across the military, maritime,
 agricultural, pastoral, commercial, administrative, metrological and craft
@@ -65,7 +65,7 @@ holds material softer than itself* is rewarded. The cause is structural: a
 gauge needs standardisation between examples and geometric fidelity within
 them, and the corpus has neither.
 
-**What computation settles.** Three candidates are refuted by arithmetic rather
+**What computation settles** ([EXP-0002](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0002), [EXP-0006](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0006), [EXP-0007](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0007)). Three candidates are refuted by arithmetic rather
 than by scoring, and those refutations do not depend on any judgement call: the
 object cannot index the zodiac or any twelve-fold calendar by solar means; its
 ring counts cannot encode twelve categories; and marking one opposed pair fixes
@@ -73,7 +73,7 @@ an axis but leaves ten orientations, so nothing determines a way up.
 
 ### 1.3 What is not stable
 
-**Which hypothesis leads is stable; how far ahead is not.** H012 leads under
+**Which hypothesis leads is stable; how far ahead is not** ([sweep](../notebooks/RDORP_Reproduction.ipynb#cell-weight-sweep), [sensitivity](../notebooks/RDORP_Reproduction.ipynb#cell-sensitivity)). H012 leads under
 all 45 weighting schemes, clustered and unclustered. But the margin is small
 and two identified defects both inflate it in the same direction: the
 prediction scale pays H012 +4.1 for cells that state indifference rather than
@@ -119,23 +119,94 @@ proposed in the literature and untested — and the absence of standardisation,
 the project's most load-bearing finding, has only ever been measured by pooling
 the whole corpus.
 
+## 1A. Reproducing every finding
+
+Everything in this document is recomputed, from the database and from first
+principles, by
+**[`notebooks/RDORP_Reproduction.ipynb`](../notebooks/RDORP_Reproduction.ipynb)**.
+
+The notebook does not read this document. It derives each figure independently
+and then *asserts* it against the value published here, so a corpus change that
+is not carried into the prose makes the notebook **fail** rather than agree.
+
+```
+python run_pipeline.py                       # rebuild, score, validate, render
+python notebooks/build_notebook.py --exec    # rebuild the notebook and run it
+python database/render_docs.py --check       # fail if this document is stale
+```
+
+Three of the tables below are generated rather than typed: they sit between
+`RDORP:BEGIN` / `RDORP:END` markers and are rewritten by
+`database/render_docs.py` on every pipeline run. Editing one by hand achieves
+nothing.
+
+The index links each finding to the notebook cell that establishes it.
+
+<!-- RDORP:BEGIN reproduction -->
+| Finding | Reproduced in | Cell |
+| ------- | ------------- | ---- |
+| Which database every figure below was computed from | Part 1 — Provenance | [`provenance`](../notebooks/RDORP_Reproduction.ipynb#cell-provenance) |
+| 40 specimens, 224 observations, 49 sources, 10 countries | Part 2 — The corpus | [`corpus-composition`](../notebooks/RDORP_Reproduction.ipynb#cell-corpus-composition) |
+| 31 % coverage of the 129 catalogued to 2021 |  | [`corpus-composition`](../notebooks/RDORP_Reproduction.ipynb#cell-corpus-composition) |
+| 50 % British against a known corpus about 20 % British |  | [`corpus-composition`](../notebooks/RDORP_Reproduction.ipynb#cell-corpus-composition) |
+| 40 % of all observations come from a single source |  | [`corpus-sources`](../notebooks/RDORP_Reproduction.ipynb#cell-corpus-sources) |
+| British specimens average 6.3 observations, continental 4.8 |  | [`corpus-sources`](../notebooks/RDORP_Reproduction.ipynb#cell-corpus-sources) |
+| The scoring formula, recomputed cell by cell and matched three ways | Part 3 — The scoring formula, from scratch | [`scoring-formula`](../notebooks/RDORP_Reproduction.ipynb#cell-scoring-formula) |
+| 56 cells on scored variables have no prediction written (A18) |  | [`unwritten-predictions`](../notebooks/RDORP_Reproduction.ipynb#cell-unwritten-predictions) |
+| The baseline ranking: H012 +24.0 > H014 +21.0 > H003 +12.2 | Part 4 — The ranking, and every scenario | [`ranking-baseline`](../notebooks/RDORP_Reproduction.ipynb#cell-ranking-baseline) |
+| The three tables RDORP-012 publishes, generated by render_docs.py |  | [`document-tables`](../notebooks/RDORP_Reproduction.ipynb#cell-document-tables) |
+| That the committed RDORP-012 matches the database |  | [`document-current`](../notebooks/RDORP_Reproduction.ipynb#cell-document-current) |
+| Every inclusion scenario, and that the leader is not stable across them |  | [`scenarios`](../notebooks/RDORP_Reproduction.ipynb#cell-scenarios) |
+| The five evidence clusters and the six opposite-sign ties inside them | Part 5 — Clustering, and the tie rule | [`clusters`](../notebooks/RDORP_Reproduction.ipynb#cell-clusters) |
+| That the old cluster rule made the leader depend on iteration order (A16) |  | [`tie-rule`](../notebooks/RDORP_Reproduction.ipynb#cell-tie-rule) |
+| That H012 leads under every deterministic tie rule but "favourable" |  | [`tie-rule`](../notebooks/RDORP_Reproduction.ipynb#cell-tie-rule) |
+| Clustering moves H013 +8.4, H005 +4.7, H010 +4.2 and H002 -6.1 |  | [`clustering-effect`](../notebooks/RDORP_Reproduction.ipynb#cell-clustering-effect) |
+| H012 leads in 45 of 45 weighting combinations, clustered and unclustered | Part 6 — The weighting sweep | [`weight-sweep`](../notebooks/RDORP_Reproduction.ipynb#cell-weight-sweep) |
+| What each hypothesis staked, and that the best ratios belong to those that staked least | Part 7 — Predictive commitment | [`commitment`](../notebooks/RDORP_Reproduction.ipynb#cell-commitment) |
+| That the solid is vertex-transitive, so the choice of knob conveys nothing (EXP-0003) | Part 8 — The computational experiments, from first principles | [`geometry-solid`](../notebooks/RDORP_Reproduction.ipynb#cell-geometry-solid) |
+| EXP-0002: face axes take only three angles, the smallest 1.35x the annual solar swing |  | [`exp-0002`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0002) |
+| EXP-0002: measured specimens resolve 4 to 6 divisions, not 12 |  | [`exp-0002`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0002) |
+| EXP-0003: seven distinct suspension elevations, four reachable, giving 8 events not 12 |  | [`exp-0003`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0003) |
+| EXP-0004: the best aperture pair levels to 0.18 deg, 10x too coarse for Nimes |  | [`exp-0004`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0004) |
+| EXP-0005: no ring may exceed cos 36 = 80.9 % of the knob radius |  | [`exp-0005`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0005) |
+| EXP-0005: the model predicts Vienne’s decorated faces and fails on the undecorated pair |  | [`exp-0005`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0005) |
+| EXP-0006: 0-6 ring counts cannot label 12 faces; at least 5 must collide |  | [`exp-0006`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0006) |
+| EXP-0007: rotation group order 60; marking one axis leaves 10 orientations |  | [`exp-0007`](../notebooks/RDORP_Reproduction.ipynb#cell-exp-0007) |
+| A3b: 13/28 = 46 % direction agreement, 15/28 = 54 % confidence, 7/28 both | Part 9 — The blind protocols | [`blind-a3b`](../notebooks/RDORP_Reproduction.ipynb#cell-blind-a3b) |
+| A3b: four outright polarity reversals |  | [`blind-a3b`](../notebooks/RDORP_Reproduction.ipynb#cell-blind-a3b) |
+| A3a: 52 % cell agreement, and the blind matrix scores H012 six points lower |  | [`blind-a3a`](../notebooks/RDORP_Reproduction.ipynb#cell-blind-a3a) |
+| EV039 is the only single variable that flips the leader | Part 10 — What would actually change the answer | [`sensitivity`](../notebooks/RDORP_Reproduction.ipynb#cell-sensitivity) |
+| The wear variables B1 would decide do not decide the leader |  | [`sensitivity`](../notebooks/RDORP_Reproduction.ipynb#cell-sensitivity) |
+| Every result above, in one place | Part 11 — All results in one place | [`consolidated`](../notebooks/RDORP_Reproduction.ipynb#cell-consolidated) |
+| That every headline figure in the documents matches this notebook | Part 12 — Assertions | [`assertions`](../notebooks/RDORP_Reproduction.ipynb#cell-assertions) |
+<!-- RDORP:END reproduction -->
+
+---
+
 ## 2. The corpus: composition, quality and admissibility
 
 ### 2.1 Composition
 
-| Measure | Value |
-| ------- | ----- |
+**Tables between `RDORP:BEGIN` and `RDORP:END` markers are generated from the
+database by `database/render_docs.py` and rewritten on every pipeline run.**
+Editing one by hand achieves nothing: the next run overwrites it, and
+`--check` fails the build in the meantime. Everything outside the markers is
+prose and is written by hand.
+
+<!-- RDORP:BEGIN composition -->
 | Specimens recorded | 40 |
 | Known corpus | 129 catalogued to 2021 (`PUB-0023`), c 134 by 2025 (`PUB-0003`) |
 | Coverage | 31 % |
 | Sourced observations | 224 |
-| Sources | 49, of which 31 directly consulted |
+| Sources | 49, of which 35 are graded A or B |
 | Evidence variables | 48 |
 | Hypotheses assessed | 14 |
 | Functional domains screened | 16 |
 | Experiments recorded | 8 |
 | Pre-registered predictions | 11 |
 | Countries represented | 10 |
+| Evidence variables scored | 32 of 48 |
+<!-- RDORP:END composition -->
 
 Twenty specimens now carry a Greiner/Guggenberger catalogue number and type,
 matched against the reference catalogue and assigned only where the catalogue
@@ -296,6 +367,7 @@ scored four times, three of them at Very High power.
 
 **The full clustered result — which does *not* change the leader:**
 
+<!-- RDORP:BEGIN clustering -->
 | Hypothesis | Unclustered | Clustered | Shift |
 | ---------- | ----------- | --------- | ----- |
 | **H012 Spool-knitting** | +24.0 (1) | **+23.5 (1)** | −0.6 |
@@ -305,6 +377,7 @@ scored four times, three of them at Very High power.
 | H002 Rangefinder | +3.5 (6) | −2.6 (11) | −6.1 |
 | H010 Parasol | −9.2 (13) | −5.0 (12) | +4.2 |
 | H009 Tent apex | −34.0 (14) | −31.4 (14) | +2.6 |
+<!-- RDORP:END clustering -->
 
 **Five clusters are declared, not one**: wear, corpus size range, aperture
 metrics, casting, and this project's own derived engineering assessments. Each
@@ -326,7 +399,7 @@ itself and that now share one budget. That is the correction working as
 intended: the reading most dependent on our own reasoning is the one
 deduplication punishes hardest.
 
-**The tie-break inside the cluster rule was undefined, and it mattered.** A
+**The tie-break inside the cluster rule was undefined, and it mattered** ([the failure and the fix, reproduced](../notebooks/RDORP_Reproduction.ipynb#cell-tie-rule)). A
 cluster contributes its strongest single cell. Where two cells have equal
 magnitude and opposite sign, "strongest" does not pick one — and the
 implementation kept whichever it saw first, making the result depend on
@@ -594,22 +667,24 @@ figure is shown for comparison. **The two now agree at the top**; they did not
 in earlier versions of this document, and the disagreement was a defect rather
 than a finding.
 
+<!-- RDORP:BEGIN bands -->
 | Band | Hypothesis | Clustered | Unclustered | Staked | Value |
 | ---- | ---------- | --------- | ----------- | ------ | ----- |
-| **Leading pair** | H012 Spool-knitting / cord-working frame | **+23** | +24 | 36 | −1 |
+| **Leading pair** | H012 Spool-knitting / cord-working frame (knob-based) | **+23** | +24 | 36 | −1 |
 |  | H014 Wax bulla / seal former | **+20** | +21 | 47 | +2 |
 | **Consistent but weakly testable** | H003 Ritual object | +10 | +12 | 22 | +6 |
 |  | H008 Portable shrine component | +10 | +11 | 23 | +6 |
-| **Partly supported** | H013 Rope-laying top | +17 | +9 | 53 | −1 |
+| **Partly supported** | H013 Rope-laying top (rotated, core through one aperture) | +17 | +9 | 53 | −1 |
 |  | H005 Textile / knitting tool | +5 | −0 | 39 | −1 |
-| **Unsupported** | H001 Structural connector | +4 | +2 | 68 | −1 |
+| **Unsupported** | H001 Structural connector / modular node | +4 | +2 | 68 | −1 |
 |  | H004 Candlestick / lamp support | −1 | −1 | 28 | −1 |
 |  | H002 Rangefinder / measuring instrument | −3 | +3 | 51 | −2 |
 |  | H006 Astronomical instrument | −1 | −1 | 43 | −1 |
 |  | H007 Military equipment | −2 | −2 | 29 | −1 |
-| **Refuted** | H010 Parasol / umbrella crown | −5 | −9 | 66 | 0 |
+| **Refuted** | H010 Parasol / umbrella crown fitting | −5 | −9 | 66 | +0 |
 |  | H011 Archery targeting / ranging aid | −10 | −9 | 68 | −2 |
-| **Eliminated** | H009 Tent apex / crown fitting | **−31** | −34 | 78 | −2 |
+| **Eliminated** | H009 Tent apex / crown fitting (mobile shelter node) | **−31** | −34 | 78 | −2 |
+<!-- RDORP:END bands -->
 
 **The bands are not a rank order, and not ordered by score alone.** H013
 scores above H003 and H008 on clustered evidence but sits in a lower band,
